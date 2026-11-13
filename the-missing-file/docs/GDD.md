@@ -235,7 +235,7 @@ After any ending except A the player may replay from the last checkpoint before 
 
 - **Palette:** midnight navy `#0E1420`, charcoal `#1B2230`, paper cream `#E8DFC8`, lamp amber `#E3A446`, evidence red `#B8413A` (threads, alerts), jade `#4FA58A` (confirmed insights).
 - **Scenes:** 3–4 parallax layers, Godot 2D lights for desk lamps and window light, rain on glass, dust motes, subtle film grain and vignette.
-- **Characters:** stylised half-length portraits, 3 expressions each (neutral, defensive, shaken).
+- **Characters:** stylised half-length portraits. Version 1.0 has one expression per character; alternative expressions (defensive, shaken) are a possible later addition.
 - **UI:** case-file metaphor — manila folders, typed labels, stamps, pins and red thread.
 - **Typography (open licence, full Turkish glyph coverage):** a typewriter face for documents, a clean sans for UI and dialogue, a serif for titles. Exact fonts are confirmed in Milestone 2 after checking ç ğ ı İ ö ş ü rendering.
 - **Animation:** card flips, stamp thumps, thread drawing, lamp flicker, portrait cross-fades. Nothing longer than 0.4 s on core actions.
@@ -342,8 +342,8 @@ Each milestone ends with something the owner can look at and approve.
 - [x] M4 Case 1 content: 4 locations, 19 evidence items (plus the damaged-file variant), 4 interviews, 12 conclusions, 5 verdicts, 3 decisions with consequences
 - [x] M5 Localization and polish: all text in English and Turkish, original sound effects, room ambience and music, volume settings, credits, Android back button
 - [x] M6 Testing: 2,580 automated checks including a full playthrough to the true ending and the alternative branches; smoke test of the real game flow; screens checked at 16:9, 20:9, 22:9 and 4:3 in both languages
-- [x] M7 Debug APK v1.0.0 built and signature verified; build, install and release-signing guides written
-- [ ] v1.0.0 played through on the owner's phone
+- [x] M7 Debug APK built and signature verified (v1.0.1: Board card titles wrap instead of being cut off); build, install and release-signing guides written
+- [ ] v1.0.1 played through on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

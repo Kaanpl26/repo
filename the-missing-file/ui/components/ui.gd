@@ -81,9 +81,9 @@ static func card_button(card_id: String) -> Button:
 	b.icon = load(CaseDB.card_icon(card_id))
 	b.add_theme_constant_override("icon_max_width", 72)
 	b.alignment = HORIZONTAL_ALIGNMENT_LEFT
-	b.clip_text = true
-	b.custom_minimum_size = Vector2(0, 104)
-	b.add_theme_font_size_override("font_size", 31)
+	b.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	b.custom_minimum_size = Vector2(0, 112)
+	b.add_theme_font_size_override("font_size", 30)
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	if CaseDB.card_kind(card_id) == "insight":
 		b.theme_type_variation = "InsightButton"
