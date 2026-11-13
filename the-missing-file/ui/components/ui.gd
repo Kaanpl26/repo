@@ -72,3 +72,40 @@ static func safe_container(node: Node) -> MarginContainer:
 
 static func scaled_font(control: Control, base_size: int) -> void:
 	control.add_theme_font_size_override("font_size", int(round(base_size * Settings.text_scale_factor())))
+
+
+## A button showing a card (evidence, statement or conclusion) with its icon.
+static func card_button(card_id: String) -> Button:
+	var b := button(CaseDB.card_title(card_id))
+	b.icon = load(CaseDB.card_icon(card_id))
+	b.add_theme_constant_override("icon_max_width", 72)
+	b.alignment = HORIZONTAL_ALIGNMENT_LEFT
+	b.clip_text = true
+	b.custom_minimum_size = Vector2(0, 112)
+	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	if CaseDB.card_kind(card_id) == "insight":
+		b.theme_type_variation = "InsightButton"
+	return b
+
+
+## Centered pop-up panel on a dimmed background. Returns [root, content VBox].
+static func popup(min_width: float = 900.0, alpha: float = 0.75) -> Array:
+	var root := dim(alpha)
+	var center := CenterContainer.new()
+	full_rect(center)
+	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	root.add_child(center)
+	var panel := PanelContainer.new()
+	center.add_child(panel)
+	var box := VBoxContainer.new()
+	box.custom_minimum_size = Vector2(min_width, 0)
+	box.add_theme_constant_override("separation", 24)
+	panel.add_child(box)
+	return [root, box]
+
+
+static func spacer(h: float = 16.0) -> Control:
+	var c := Control.new()
+	c.custom_minimum_size = Vector2(0, h)
+	c.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	return c

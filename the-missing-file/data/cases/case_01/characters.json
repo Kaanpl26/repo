@@ -1,4 +1,22 @@
 {
-  "mira": {"name": "C1_NAME_MIRA"},
-  "erdem": {"name": "C1_NAME_ERDEM", "portrait": "res://assets/portraits/erdem.png", "dialogue": "erdem.json"}
+  "mira": {
+    "name": "C1_NAME_MIRA"
+  },
+  "erdem": {
+    "name": "C1_NAME_ERDEM",
+    "portrait": "res://assets/portraits/erdem.png",
+    "dialogue": "erdem.json"
+  },
+  "vardar": {
+    "name": "C1_NAME_VARDAR",
+    "portrait": "res://assets/portraits/vardar.png"
+  },
+  "aras": {
+    "name": "C1_NAME_ARAS",
+    "portrait": "res://assets/portraits/aras.png"
+  },
+  "aydin": {
+    "name": "C1_NAME_AYDIN",
+    "portrait": "res://assets/portraits/aydin.png"
+  }
 }

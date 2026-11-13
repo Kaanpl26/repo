@@ -5,6 +5,6 @@ set -e
 cd "$(dirname "$0")/.."
 mkdir -p build
 godot --headless --path . --import
-godot --headless --path . res://tests/run_tests.tscn
+tools/run_tests.sh
 godot --headless --path . --export-debug "Android" build/the-missing-file-debug.apk
 ls -la build/*.apk

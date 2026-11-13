@@ -2,10 +2,146 @@
   "id": "case_01",
   "title": "C1_TITLE",
   "start_location": "lobby",
-  "intro": ["C1_INTRO_1", "C1_INTRO_2", "C1_INTRO_3"],
+  "intro": [
+    "C1_INTRO_1",
+    "C1_INTRO_2",
+    "C1_INTRO_3"
+  ],
   "testimony": {
-    "T_ERDEM_1": {"speaker": "erdem", "text": "C1_T_ERDEM_1"},
-    "T_ERDEM_2": {"speaker": "erdem", "text": "C1_T_ERDEM_2"},
-    "T_ERDEM_3": {"speaker": "erdem", "text": "C1_T_ERDEM_3"}
+    "T_ERDEM_1": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_1_TITLE",
+      "text": "C1_T_ERDEM_1"
+    },
+    "T_ERDEM_4": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_4_TITLE",
+      "text": "C1_T_ERDEM_4"
+    },
+    "T_ERDEM_2": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_2_TITLE",
+      "text": "C1_T_ERDEM_2"
+    },
+    "T_ERDEM_3": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_3_TITLE",
+      "text": "C1_T_ERDEM_3"
+    }
+  },
+  "objectives": [
+    {
+      "id": "O_LOBBY",
+      "text": "C1_OBJ_LOBBY",
+      "done": [
+        {
+          "has_evidence": "E01"
+        },
+        {
+          "has_evidence": "E02"
+        },
+        {
+          "has_evidence": "E03"
+        },
+        {
+          "has_evidence": "E04"
+        },
+        {
+          "has_evidence": "E05"
+        },
+        {
+          "has_evidence": "E15"
+        }
+      ]
+    },
+    {
+      "id": "O_GUARD",
+      "text": "C1_OBJ_GUARD",
+      "done": [
+        {
+          "flag": "erdem_met"
+        }
+      ]
+    },
+    {
+      "id": "O_PATROL",
+      "text": "C1_OBJ_PATROL",
+      "show": [
+        {
+          "has_evidence": "E04"
+        },
+        {
+          "flag": "erdem_met"
+        }
+      ],
+      "done": [
+        {
+          "flag": "erdem_confessed"
+        }
+      ]
+    },
+    {
+      "id": "O_BARRIER",
+      "text": "C1_OBJ_BARRIER",
+      "show": [
+        {
+          "flag": "erdem_confessed"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E06"
+        }
+      ]
+    },
+    {
+      "id": "O_BOARD",
+      "text": "C1_OBJ_BOARD",
+      "show": [
+        {
+          "flag": "erdem_met"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_UNGUARDED"
+        },
+        {
+          "has_insight": "I_VARDAR_RETURNED"
+        },
+        {
+          "has_insight": "I_ARAS_ELSEWHERE"
+        },
+        {
+          "has_insight": "I_AYDIN_STAYED"
+        },
+        {
+          "has_insight": "I_SIDE_DOOR"
+        }
+      ]
+    }
+  ],
+  "build_done": {
+    "conditions": [
+      {
+        "has_evidence": "E06"
+      },
+      {
+        "has_insight": "I_UNGUARDED"
+      },
+      {
+        "has_insight": "I_VARDAR_RETURNED"
+      },
+      {
+        "has_insight": "I_ARAS_ELSEWHERE"
+      },
+      {
+        "has_insight": "I_AYDIN_STAYED"
+      },
+      {
+        "has_insight": "I_SIDE_DOOR"
+      }
+    ],
+    "text": "BUILD_DONE"
   }
 }

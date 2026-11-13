@@ -266,5 +266,297 @@
   "C1_HINT_TERMINAL": {
     "en": "The last piece of evidence is on the locked terminal. Veysel's patrol log says he was in B2 at nine. Ask him about his nine o'clock patrol, and when he repeats the claim, tap Present Evidence and show what proves he was somewhere else.",
     "tr": "Son delil kilitli terminalde. Veysel'in devriye çizelgesine göre saat dokuzda B2'deymiş. Ona saat dokuzdaki devriyesini sorun; iddiasını tekrarladığında Delil Göster'e dokunun ve başka bir yerde olduğunu kanıtlayan delili gösterin."
+  },
+  "C1_NAME_VARDAR": {
+    "en": "Dr. Selin Vardar",
+    "tr": "Dr. Selin Vardar"
+  },
+  "C1_NAME_ARAS": {
+    "en": "Demir Aras",
+    "tr": "Demir Aras"
+  },
+  "C1_NAME_AYDIN": {
+    "en": "Leyla Aydın",
+    "tr": "Leyla Aydın"
+  },
+  "C1_T_ERDEM_1_TITLE": {
+    "en": "Erdem: “At my post all night”",
+    "tr": "Erdem: “Görevimin başındaydım”"
+  },
+  "C1_T_ERDEM_2_TITLE": {
+    "en": "Erdem: admits he went out",
+    "tr": "Erdem: itiraf — binadan çıkmış"
+  },
+  "C1_T_ERDEM_3_TITLE": {
+    "en": "Erdem: side door was unlocked",
+    "tr": "Erdem: yan kapı kilitsizdi"
+  },
+  "C1_T_ERDEM_4_TITLE": {
+    "en": "Erdem: who was in the building",
+    "tr": "Erdem: binada kimler vardı"
+  },
+  "C1_T_ERDEM_4": {
+    "en": "After seven only Ekrem Vural was still working. As far as he knows, Leyla Aydın went home around 19:30. The Director had left before the visitor arrived.",
+    "tr": "Yediden sonra yalnızca Ekrem Vural çalışıyormuş. Bildiği kadarıyla Leyla Aydın 19.30 sularında evine gitmiş. Müdür, ziyaretçi gelmeden önce çıkmış."
+  },
+  "C1_OBJ_LOBBY": {
+    "en": "Search the archive lobby for evidence.",
+    "tr": "Arşiv girişinde delil arayın."
+  },
+  "C1_OBJ_GUARD": {
+    "en": "Question the night guard, Veysel Erdem.",
+    "tr": "Gece güvenlik görevlisi Veysel Erdem'i sorgulayın."
+  },
+  "C1_OBJ_PATROL": {
+    "en": "Find out where Erdem really was at 21:00.",
+    "tr": "Erdem'in saat 21.00'de gerçekte nerede olduğunu bulun."
+  },
+  "C1_OBJ_BARRIER": {
+    "en": "Read the car park barrier log on the security desk.",
+    "tr": "Güvenlik masasındaki otopark bariyer kaydını okuyun."
+  },
+  "C1_OBJ_BOARD": {
+    "en": "Use the Board to work out who was really in the building that night.",
+    "tr": "Panoyu kullanarak o gece binada gerçekte kimlerin olduğunu çözün."
+  },
+  "C1_I_UNGUARDED_TITLE": {
+    "en": "The building was unguarded",
+    "tr": "Bina korumasız kaldı"
+  },
+  "C1_I_UNGUARDED": {
+    "en": "The door log matches Erdem's confession: the main door was released at 20:44 and 21:41. For almost an hour nobody was watching the building.",
+    "tr": "Kapı kaydı Erdem'in itirafıyla örtüşüyor: ana kapı 20.44'te ve 21.41'de masadan açılmış. Yaklaşık bir saat boyunca binayı gözeten kimse yokmuş."
+  },
+  "C1_I_UNGUARDED_W1": {
+    "en": "Erdem let a visitor in at 20:44 and showed them out at 21:41.",
+    "tr": "Erdem 20.44'te içeri bir ziyaretçi almış, 21.41'de de uğurlamış."
+  },
+  "C1_I_UNGUARDED_W2": {
+    "en": "The door system's clock is wrong, so the log proves nothing.",
+    "tr": "Kapı sisteminin saati yanlış, bu yüzden kayıt hiçbir şey kanıtlamıyor."
+  },
+  "C1_I_VARDAR_RETURNED_TITLE": {
+    "en": "The Director came back",
+    "tr": "Müdür geri döndü"
+  },
+  "C1_I_VARDAR_RETURNED": {
+    "en": "Dr. Vardar badged out at 18:32, but her car re-entered the staff car park at 20:52 and stayed for 42 minutes. She came back that night.",
+    "tr": "Dr. Vardar 18.32'de kartını okutup çıkmış, ama arabası 20.52'de personel otoparkına yeniden girmiş ve 42 dakika kalmış. O gece geri dönmüş."
+  },
+  "C1_I_VARDAR_RETURNED_W1": {
+    "en": "Someone else took Dr. Vardar's car out of the car park while she was working.",
+    "tr": "Dr. Vardar çalışırken başka biri arabasını otoparktan çıkarmış."
+  },
+  "C1_I_VARDAR_RETURNED_W2": {
+    "en": "Dr. Vardar never left the building at all that evening.",
+    "tr": "Dr. Vardar o akşam binadan hiç ayrılmamış."
+  },
+  "C1_I_ARAS_ELSEWHERE_TITLE": {
+    "en": "Aras was across town",
+    "tr": "Aras şehrin öbür ucundaydı"
+  },
+  "C1_I_ARAS_ELSEWHERE": {
+    "en": "Demir Aras signed out at 19:05 and was photographed on stage at the Liman Kulübü at 21:05. He was not in the archive late that evening.",
+    "tr": "Demir Aras 19.05'te çıkış yapmış, 21.05'te de Liman Kulübü'nde sahnede fotoğraflanmış. Akşamın geç saatlerinde arşivde değilmiş."
+  },
+  "C1_I_ARAS_ELSEWHERE_W1": {
+    "en": "Aras signed out but stayed hidden in the building until late.",
+    "tr": "Aras çıkış imzası atmış ama geç saate kadar binada saklanmış."
+  },
+  "C1_I_ARAS_ELSEWHERE_W2": {
+    "en": "The newspaper photograph was taken before his visit to the archive.",
+    "tr": "Gazetedeki fotoğraf, arşive gelmesinden önce çekilmiş."
+  },
+  "C1_I_AYDIN_STAYED_TITLE": {
+    "en": "Leyla Aydın stayed late",
+    "tr": "Leyla Aydın geç saate kadar kaldı"
+  },
+  "C1_I_AYDIN_STAYED": {
+    "en": "Erdem believes Leyla Aydın went home around 19:30, but the door log shows her leaving by the side door at 21:26. She was in the building for two more hours.",
+    "tr": "Erdem, Leyla Aydın'ın 19.30 sularında evine gittiğini sanıyor, ama kapı kaydına göre 21.26'da yan kapıdan çıkmış. İki saat daha binadaymış."
+  },
+  "C1_I_AYDIN_STAYED_W1": {
+    "en": "Leyla Aydın went home and came back at 21:26 to fetch something.",
+    "tr": "Leyla Aydın evine gitmiş, 21.26'da bir şey almak için geri gelmiş."
+  },
+  "C1_I_AYDIN_STAYED_W2": {
+    "en": "Erdem let Leyla Aydın out himself at 21:26.",
+    "tr": "Leyla Aydın'ı 21.26'da Erdem kendisi uğurlamış."
+  },
+  "C1_I_SIDE_DOOR_TITLE": {
+    "en": "The unlocked side door",
+    "tr": "Kilitlenmemiş yan kapı"
+  },
+  "C1_I_SIDE_DOOR": {
+    "en": "The side door Erdem found unlocked is explained: Leyla Aydın badged out through it at 21:26 and it stayed on the latch behind her. Nobody broke in.",
+    "tr": "Erdem'in kilitsiz bulduğu yan kapının açıklaması var: Leyla Aydın 21.26'da kartını okutup oradan çıkmış, kapı da ardından kilitlenmemiş. İçeri zorla giren olmamış."
+  },
+  "C1_I_SIDE_DOOR_W1": {
+    "en": "An intruder forced the side door while Erdem was away.",
+    "tr": "Erdem yokken biri yan kapıyı zorlayıp içeri girmiş."
+  },
+  "C1_I_SIDE_DOOR_W2": {
+    "en": "Erdem forgot to lock the side door at six and is covering for himself.",
+    "tr": "Erdem saat altıda yan kapıyı kilitlemeyi unutmuş, şimdi de kendini kurtarmaya çalışıyor."
+  },
+  "C1_SUS_VARDAR_ROLE": {
+    "en": "Director of the Archive · 58",
+    "tr": "Arşiv Müdürü · 58"
+  },
+  "C1_SUS_VARDAR_BIO": {
+    "en": "Has run the archive for eleven years and worked beside Ekrem Vural for more than twenty.",
+    "tr": "On bir yıldır arşivi yönetiyor; Ekrem Vural'la yirmi yılı aşkın süredir birlikte çalışıyordu."
+  },
+  "C1_SUS_VARDAR_N1": {
+    "en": "Badged out of the main door at 18:32.",
+    "tr": "18.32'de ana kapıdan kartını okutup çıkmış."
+  },
+  "C1_SUS_VARDAR_N2": {
+    "en": "Her car was back in the staff car park from 20:52 to 21:34.",
+    "tr": "Arabası 20.52 ile 21.34 arasında yeniden personel otoparkındaymış."
+  },
+  "C1_SUS_ARAS_ROLE": {
+    "en": "Deputy Mayor · 47",
+    "tr": "Belediye Başkan Yardımcısı · 47"
+  },
+  "C1_SUS_ARAS_BIO": {
+    "en": "Deputy mayor and heir to Aras Denizcilik, the oldest shipping firm in Karaliman.",
+    "tr": "Belediye başkan yardımcısı ve Karaliman'ın en eski denizcilik şirketi Aras Denizcilik'in vârisi."
+  },
+  "C1_SUS_ARAS_N1": {
+    "en": "Visited Ekrem Vural after closing time, 18:40 to 19:05.",
+    "tr": "Kapanıştan sonra, 18.40 ile 19.05 arasında Ekrem Vural'ı ziyaret etmiş."
+  },
+  "C1_SUS_ARAS_N2": {
+    "en": "On stage at the Liman Kulübü at 21:05.",
+    "tr": "21.05'te Liman Kulübü'nde sahnedeymiş."
+  },
+  "C1_SUS_AYDIN_ROLE": {
+    "en": "Archivist · 26",
+    "tr": "Arşivci · 26"
+  },
+  "C1_SUS_AYDIN_BIO": {
+    "en": "Junior archivist, two years in the job. She found the body at 07:10 this morning.",
+    "tr": "Genç arşivci, iki yıldır burada çalışıyor. Cesedi bu sabah 07.10'da o bulmuş."
+  },
+  "C1_SUS_AYDIN_N1": {
+    "en": "According to Erdem she went home around 19:30.",
+    "tr": "Erdem'e göre 19.30 sularında evine gitmiş."
+  },
+  "C1_SUS_AYDIN_N2": {
+    "en": "In fact she left by the side door at 21:26.",
+    "tr": "Aslında 21.26'da yan kapıdan çıkmış."
+  },
+  "C1_SUS_ERDEM_ROLE": {
+    "en": "Night Security · 54",
+    "tr": "Gece Güvenlik Görevlisi · 54"
+  },
+  "C1_SUS_ERDEM_BIO": {
+    "en": "Twenty-two years on the night desk. Knows the building's routines better than anyone.",
+    "tr": "Yirmi iki yıldır gece masasında. Binanın düzenini herkesten iyi bilir."
+  },
+  "C1_SUS_ERDEM_N1": {
+    "en": "Claims he was at his desk or on patrol all night.",
+    "tr": "Bütün gece ya masasında ya devriyede olduğunu söylüyor."
+  },
+  "C1_SUS_ERDEM_N2": {
+    "en": "Was at the betting shop from about 20:45 to 21:40 and falsified his patrol log.",
+    "tr": "20.45 ile 21.40 arasında bahis bayiindeymiş; devriye çizelgesine de sahte kayıt düşmüş."
+  },
+  "C1_TL_VARDAR_OUT": {
+    "en": "Dr. Vardar badges out of the main door.",
+    "tr": "Dr. Vardar kartını okutup ana kapıdan çıkıyor."
+  },
+  "C1_TL_ARAS_IN": {
+    "en": "Demir Aras arrives to see Ekrem Vural.",
+    "tr": "Demir Aras, Ekrem Vural'ı görmeye geliyor."
+  },
+  "C1_TL_ARAS_OUT": {
+    "en": "Aras signs out.",
+    "tr": "Aras çıkış yapıyor."
+  },
+  "C1_TL_AYDIN_HOME": {
+    "en": "Leyla Aydın goes home (according to Erdem).",
+    "tr": "Leyla Aydın evine gidiyor (Erdem'e göre)."
+  },
+  "C1_TL_DESK_RELEASE_1": {
+    "en": "Main door released from the security desk.",
+    "tr": "Ana kapı güvenlik masasından açılıyor."
+  },
+  "C1_TL_ERDEM_LEAVES": {
+    "en": "Erdem leaves for the betting shop.",
+    "tr": "Erdem bahis bayiine gitmek için çıkıyor."
+  },
+  "C1_TL_CAR_IN": {
+    "en": "Dr. Vardar's car enters the staff car park.",
+    "tr": "Dr. Vardar'ın arabası personel otoparkına giriyor."
+  },
+  "C1_TL_PATROL": {
+    "en": "Patrol log: stacks B1–B3 “all clear”.",
+    "tr": "Devriye çizelgesi: B1–B3 depoları “sorun yok”."
+  },
+  "C1_TL_ARAS_STAGE": {
+    "en": "Aras is photographed on stage at the Liman Kulübü.",
+    "tr": "Aras, Liman Kulübü'nde sahnede fotoğraflanıyor."
+  },
+  "C1_TL_SLIP": {
+    "en": "Betting slip stamped at Şanslı Çapa.",
+    "tr": "Şanslı Çapa'da bahis kuponu kesiliyor."
+  },
+  "C1_TL_AYDIN_OUT": {
+    "en": "Leyla Aydın badges out of the side door.",
+    "tr": "Leyla Aydın kartını okutup yan kapıdan çıkıyor."
+  },
+  "C1_TL_CAR_OUT": {
+    "en": "Dr. Vardar's car leaves the car park.",
+    "tr": "Dr. Vardar'ın arabası otoparktan çıkıyor."
+  },
+  "C1_TL_ERDEM_BACK": {
+    "en": "Erdem returns to his desk.",
+    "tr": "Erdem masasına dönüyor."
+  },
+  "C1_TL_AYDIN_IN": {
+    "en": "Leyla Aydın badges in (Friday).",
+    "tr": "Leyla Aydın kartını okutup giriyor (Cuma)."
+  },
+  "C1_END_A_TITLE": {
+    "en": "The Mirror Tells the Truth",
+    "tr": "Ayna Doğruyu Söyler"
+  },
+  "C1_END_A_TEXT": {
+    "en": "Faced with her own initials, the car park log and a jade earring, Dr. Selin Vardar stops arguing. She altered one page in 1998 and has been guarding it ever since. Ekrem Vural would not be talked out of the truth.\n\nFile 47-B goes to the prosecutor intact. Inside it is a routing slip listing six more file numbers. None of them are on their shelves.",
+    "tr": "Kendi parafı, otopark kaydı ve yeşim bir küpe önüne konunca Dr. Selin Vardar direnmeyi bırakıyor. 1998'de tek bir sayfayı değiştirmiş, o günden beri de o sayfayı korumuş. Ekrem Vural ise gerçeği söylemekten vazgeçirilememiş.\n\n47-B numaralı dosya savcılığa eksiksiz gidiyor. İçinden altı dosya numarasının daha yazılı olduğu bir sevk fişi çıkıyor. Hiçbiri rafında değil."
+  },
+  "C1_END_B_TITLE": {
+    "en": "Reasonable Doubt",
+    "tr": "Makul Şüphe"
+  },
+  "C1_END_B_TEXT": {
+    "en": "Dr. Vardar admits she came back that night. An argument, she says. A terrible accident on the stairs. Without a motive and without anything that puts her hands on him, her lawyer turns a killing into a misfortune.\n\nShe will lose her office. She may not lose much else. And whatever was in file 47-B stays buried.",
+    "tr": "Dr. Vardar o gece geri döndüğünü kabul ediyor. Bir tartışma, diyor. Merdivende korkunç bir kaza. Ortada bir sebep ve onu Ekrem Vural'a dokunmuş gösteren bir delil olmayınca, avukatı bir ölümü talihsizliğe çeviriyor.\n\nMakamını kaybedecek. Belki başka pek bir şey kaybetmeyecek. 47-B'nin içindekiler de gömülü kalacak."
+  },
+  "C1_END_C_TITLE": {
+    "en": "The Obvious Man",
+    "tr": "Akla İlk Gelen"
+  },
+  "C1_END_C_TEXT": {
+    "en": "Demir Aras is arrested on the steps of the town hall. Forty-eight hours later he walks out again: two hundred guests saw him at the Liman Kulübü when Ekrem Vural died.\n\nThe newspapers are not kind to you. And while everyone was looking at the deputy mayor, someone else had two quiet days in the archive.",
+    "tr": "Demir Aras belediye binasının merdivenlerinde gözaltına alınıyor. Kırk sekiz saat sonra serbest: Ekrem Vural öldüğü sırada iki yüz davetli onu Liman Kulübü'nde görmüş.\n\nGazeteler size hiç acımıyor. Herkes başkan yardımcısına bakarken de bir başkası arşivde iki sakin gün geçiriyor."
+  },
+  "C1_END_D_TITLE": {
+    "en": "The Easy Answer",
+    "tr": "Kolay Cevap"
+  },
+  "C1_END_D_TEXT": {
+    "en": "It is a tidy story: someone who lied about where they were that night. The prosecutor accepts it. So does the city.\n\nBut the lie was never about Ekrem Vural, and you knew the pieces did not quite fit. The person who was really on those stairs keeps their office, and file 47-B is never seen again.",
+    "tr": "Derli toplu bir hikâye: o gece nerede olduğu konusunda yalan söyleyen biri. Savcı bunu kabul ediyor. Şehir de.\n\nAma o yalanın Ekrem Vural'la hiçbir ilgisi yoktu, parçaların tam oturmadığını da biliyordunuz. O merdivende gerçekten bulunan kişi makamında kalıyor, 47-B'yi de bir daha gören olmuyor."
+  },
+  "C1_END_E_TITLE": {
+    "en": "Misadventure",
+    "tr": "Kaza"
+  },
+  "C1_END_E_TEXT": {
+    "en": "An elderly man, a steep staircase, a dark basement. You sign the report: accidental death.\n\nThe archive reopens on Monday. Nobody asks again about the empty box marked 47-B.",
+    "tr": "Yaşlı bir adam, dik bir merdiven, karanlık bir bodrum. Raporu imzalıyorsunuz: kaza sonucu ölüm.\n\nArşiv pazartesi günü yeniden açılıyor. Üzerinde 47-B yazan boş kutuyu bir daha soran olmuyor."
   }
 }

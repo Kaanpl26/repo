@@ -54,7 +54,7 @@ In Godot: **Project → Export → Android → Keystore → Release**: choose th
 ## 5. Automated tests
 
 ```
-godot --headless --path . res://tests/run_tests.tscn
+tools/run_tests.sh
 ```
 
 Checks that every text exists in both English and Turkish, that all case data refers to things that exist, that every dialogue branch is reachable, and plays through the critical path without a screen.

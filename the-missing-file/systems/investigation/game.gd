@@ -6,6 +6,9 @@ const TAP_SLOP := 26.0
 const EVIDENCE_CARD := preload("res://systems/investigation/evidence_card.tscn")
 const DIALOGUE_VIEW := preload("res://systems/dialogue/dialogue_view.tscn")
 const CASE_FILE := preload("res://systems/casefile/case_file.tscn")
+const BOARD := preload("res://systems/board/board.tscn")
+const ACCUSATION := preload("res://systems/verdict/accusation.tscn")
+const ENDING := preload("res://systems/verdict/ending.tscn")
 const SETTINGS_PANEL := preload("res://ui/menus/settings_panel.tscn")
 
 var _loc: Dictionary
@@ -54,6 +57,8 @@ func _ready() -> void:
 	resized.connect(_layout)
 	_layout()
 	GameState.evidence_added.connect(_on_evidence_added)
+	GameState.insight_added.connect(func(_id): _show_toast("TOAST_INSIGHT"))
+	GameState.testimony_added.connect(func(_id): _show_toast("TOAST_TESTIMONY"))
 	_refresh_counter()
 
 	if not GameState.has_flag("intro_seen"):
@@ -110,6 +115,8 @@ func _tap(screen_pos: Vector2) -> void:
 			_show_caption(hit["text"])
 		"talk":
 			_open_dialogue(hit["character"])
+		"exit":
+			_travel(hit["target"])
 
 
 func _hotspot_at(p: Vector2) -> Dictionary:
@@ -186,6 +193,11 @@ func _build_hud() -> void:
 	hint_btn.custom_minimum_size = Vector2(220, 110)
 	hint_btn.pressed.connect(_on_hint)
 	bottom.add_child(hint_btn)
+	var board_btn := UI.button("HUD_BOARD")
+	board_btn.size_flags_vertical = Control.SIZE_SHRINK_END
+	board_btn.custom_minimum_size = Vector2(220, 110)
+	board_btn.pressed.connect(_open_board)
+	bottom.add_child(board_btn)
 	var file_btn := UI.button("HUD_CASE_FILE", "AccentButton")
 	file_btn.size_flags_vertical = Control.SIZE_SHRINK_END
 	file_btn.custom_minimum_size = Vector2(320, 110)
@@ -254,8 +266,46 @@ func _open_dialogue(character: String) -> void:
 
 func _open_case_file() -> void:
 	var cf := CASE_FILE.instantiate()
-	cf.evidence_selected.connect(_open_evidence)
+	cf.card_selected.connect(_open_card)
+	cf.accuse_requested.connect(_open_accusation)
 	_overlays.add_child(cf)
+
+
+## Opens the right viewer for any card: evidence sheet, or a note for
+## statements and conclusions.
+func _open_card(id: String) -> void:
+	if CaseDB.card_kind(id) == "evidence":
+		_open_evidence(id)
+	else:
+		_overlays.add_child(NoteView.new(id))
+
+
+func _open_board() -> void:
+	var board := BOARD.instantiate()
+	board.view_requested.connect(_open_card)
+	board.closed.connect(_check_progress)
+	_overlays.add_child(board)
+
+
+func _open_accusation() -> void:
+	var acc := ACCUSATION.instantiate()
+	acc.resolved.connect(_open_ending)
+	_overlays.add_child(acc)
+
+
+func _open_ending(ending_id: String) -> void:
+	var e := ENDING.instantiate()
+	e.ending_id = ending_id
+	e.menu_requested.connect(func():
+		SaveManager.save_game()
+		SceneRouter.goto(SceneRouter.MAIN_MENU))
+	_overlays.add_child(e)
+
+
+func _travel(location_id: String) -> void:
+	GameState.location = location_id
+	GameState.changed.emit()
+	SceneRouter.goto(SceneRouter.GAME)
 
 
 func _open_pause() -> void:
@@ -358,17 +408,15 @@ func _point_at(h: Dictionary) -> void:
 		t.tween_interval(0.45)
 
 
-## Prototype only: tells the player when everything in this build has been found.
+## Tells the player when everything in the current build has been done.
 func _check_progress() -> void:
-	if GameState.has_flag("prototype_done"):
+	var done: Dictionary = CaseDB.meta.get("build_done", {})
+	if done.is_empty() or GameState.has_flag("build_done"):
 		return
-	for id in CaseDB.location_evidence(GameState.location):
-		if not GameState.has_evidence(id):
-			return
-	if not GameState.has_flag("erdem_confessed"):
+	if not GameState.check(done["conditions"]):
 		return
-	GameState.set_flag("prototype_done")
-	_narrate(["PROTOTYPE_DONE"], func(): pass)
+	GameState.set_flag("build_done")
+	_narrate([done["text"]], func(): pass)
 
 
 func _add_debug_rects() -> void:

@@ -302,6 +302,62 @@ def icons():
          f'<rect x="196" y="252" width="130" height="40" fill="none" stroke="{RED}" stroke-width="8" transform="rotate(-8 196 252)"/><rect x="212" y="266" width="98" height="12" fill="{RED}" transform="rotate(-8 196 252)"/></g>')
 
 
+# ------------------------------------------------------------------ generic suspect bust
+def bust(skin, skin_sh, jacket, jacket_l, shirt, hair_fn, extra_fn=None, brow_tilt=0, tie=None, s=2.05, cx=350, base=1010):
+    def P(x, y):
+        return f"{cx + x*s:.1f},{base + y*s:.1f}"
+    g = []
+    g.append(f'<path d="M{P(-150,0)} L{P(-150,-170)} Q{P(-145,-235)} {P(-70,-255)} L{P(70,-255)} Q{P(145,-235)} {P(150,-170)} L{P(150,0)} Z" fill="{jacket}"/>')
+    g.append(f'<path d="M{P(-150,0)} L{P(-150,-170)} Q{P(-145,-235)} {P(-70,-255)} L{P(-40,-255)} Q{P(-110,-220)} {P(-112,-160)} L{P(-112,0)} Z" fill="{jacket_l}"/>')
+    g.append(f'<path d="M{P(-40,-258)} L{P(0,-150)} L{P(40,-258)} Z" fill="{shirt}"/>')
+    if tie:
+        g.append(f'<path d="M{P(-11,-240)} L{P(11,-240)} L{P(14,-165)} L{P(0,-148)} L{P(-14,-165)} Z" fill="{tie}"/>')
+    g.append(f'<path d="M{P(-40,-258)} L{P(-66,-232)} L{P(-6,-150)} Z" fill="{jacket_l}"/><path d="M{P(40,-258)} L{P(66,-232)} L{P(6,-150)} Z" fill="{jacket}" stroke="#00000055" stroke-width="2"/>')
+    g.append(f'<path d="M{P(-34,-262)} L{P(-30,-300)} L{P(30,-300)} L{P(34,-262)} L{P(0,-232)} Z" fill="{skin_sh}"/>')
+    g.append(f'<path d="M{P(-62,-400)} Q{P(-66,-300)} {P(-28,-278)} Q{P(0,-266)} {P(28,-278)} Q{P(66,-300)} {P(62,-400)} Q{P(0,-440)} {P(-62,-400)} Z" fill="{skin}"/>')
+    g.append(f'<path d="M{P(8,-420)} Q{P(40,-420)} {P(62,-400)} Q{P(66,-300)} {P(28,-278)} Q{P(10,-270)} {P(0,-270)} Q{P(22,-300)} {P(14,-340)} Z" fill="{skin_sh}"/>')
+    g.append(f'<ellipse cx="{cx-64*s}" cy="{base-352*s}" rx="{9*s}" ry="{17*s}" fill="{skin}"/><ellipse cx="{cx+64*s}" cy="{base-352*s}" rx="{9*s}" ry="{17*s}" fill="{skin_sh}"/>')
+    t = brow_tilt
+    g.append(f'<path d="M{P(-48,-372+t)} L{P(-14,-372-t)} L{P(-14,-366-t)} L{P(-48,-365+t)} Z" fill="#2a2420"/><path d="M{P(48,-372+t)} L{P(14,-372-t)} L{P(14,-366-t)} L{P(48,-365+t)} Z" fill="#1b1714"/>')
+    g.append(f'<ellipse cx="{cx-30*s}" cy="{base-352*s}" rx="{7*s}" ry="{4.5*s}" fill="#15110f"/><ellipse cx="{cx+30*s}" cy="{base-352*s}" rx="{7*s}" ry="{4.5*s}" fill="#15110f"/>')
+    g.append(f'<path d="M{P(-4,-356)} L{P(-12,-318)} L{P(8,-314)} Z" fill="{skin_sh}" opacity="0.8"/>')
+    g.append(f'<path d="M{P(-18,-294)} Q{P(0,-290)} {P(18,-294)}" fill="none" stroke="#5a3a32" stroke-width="{4*s}" stroke-linecap="round"/>')
+    g.append(hair_fn(P, s, cx, base))
+    if extra_fn:
+        g.append(extra_fn(P, s, cx, base))
+    g.append(f'<path d="M{P(-150,0)} L{P(-150,-170)} Q{P(-145,-235)} {P(-70,-255)}" fill="none" stroke="{AMBER}" stroke-width="{5*s}" opacity="0.7"/>')
+    return "".join(g)
+
+
+def portraits():
+    # Dr. Selin Vardar: grey hair in a bun, glasses, burgundy blazer. No earrings today.
+    def hair_v(P, s, cx, base):
+        return (f'<circle cx="{cx+10*s}" cy="{base-452*s}" r="{30*s}" fill="#8e8a86"/>'
+                f'<path d="M{P(-70,-360)} Q{P(-84,-450)} {P(0,-452)} Q{P(84,-450)} {P(70,-360)} Q{P(60,-410)} {P(0,-416)} Q{P(-60,-410)} {P(-70,-360)} Z" fill="#a9a5a0"/>'
+                f'<path d="M{P(0,-452)} Q{P(84,-450)} {P(70,-360)} Q{P(60,-410)} {P(0,-416)} Z" fill="#7d7975"/>')
+    def glasses(P, s, cx, base):
+        return (f'<circle cx="{cx-30*s}" cy="{base-352*s}" r="{19*s}" fill="none" stroke="#1b1714" stroke-width="{4*s}"/>'
+                f'<circle cx="{cx+30*s}" cy="{base-352*s}" r="{19*s}" fill="none" stroke="#1b1714" stroke-width="{4*s}"/>'
+                f'<path d="M{P(-11,-354)} L{P(11,-354)}" stroke="#1b1714" stroke-width="{4*s}"/>'
+                f'<circle cx="{cx}" cy="{base-236*s}" r="{6*s}" fill="{PAPER}"/>')
+    save("vardar", 700, 1000, bust("#c9a48c", "#8a6a5a", "#4a1f2a", "#6b2f3d", "#e6dcc8", hair_v, glasses))
+    # Demir Aras: slick black hair, charcoal suit, amber tie.
+    def hair_a(P, s, cx, base):
+        return (f'<path d="M{P(-66,-372)} Q{P(-78,-452)} {P(-6,-456)} Q{P(74,-456)} {P(66,-372)} Q{P(58,-418)} {P(10,-420)} Q{P(-40,-424)} {P(-66,-372)} Z" fill="#17151a"/>'
+                f'<path d="M{P(-50,-430)} Q{P(0,-450)} {P(50,-430)}" fill="none" stroke="#3a3840" stroke-width="{4*s}"/>')
+    save("aras", 700, 1000, bust("#c79a78", "#7c5a46", "#23262e", "#3a3f4c", "#eef0f2", hair_a, None, brow_tilt=-2, tie=AMBER))
+    # Leyla Aydin: dark bob, mustard cardigan, worried brows.
+    def hair_l(P, s, cx, base):
+        return (f'<path d="M{P(-72,-300)} Q{P(-96,-456)} {P(0,-460)} Q{P(96,-456)} {P(72,-300)} L{P(56,-300)} Q{P(64,-396)} {P(20,-412)} Q{P(-30,-420)} {P(-58,-380)} L{P(-56,-300)} Z" fill="#2c1f1a"/>'
+                f'<path d="M{P(0,-460)} Q{P(96,-456)} {P(72,-300)} L{P(56,-300)} Q{P(64,-396)} {P(20,-412)} Z" fill="#1c1310"/>')
+    save("aydin", 700, 1000, bust("#d2a98c", "#94705c", "#8a6a1e", "#b08a2e", "#f1ece0", hair_l, None, brow_tilt=4))
+    # card icons for statements and conclusions
+    icon("card_testimony", f'<path d="M110 150 h292 a24 24 0 0 1 24 24 v150 a24 24 0 0 1 -24 24 h-150 l-70 60 v-60 h-72 a24 24 0 0 1 -24 -24 v-150 a24 24 0 0 1 24 -24Z" fill="{PAPER}"/>' + text_lines(140, 196, 232, 5, 30, seed=31, sw=8))
+    icon("card_insight", f'<circle cx="170" cy="190" r="26" fill="{RED}"/><circle cx="350" cy="330" r="26" fill="{RED}"/><path d="M170 190 Q300 170 350 330" fill="none" stroke="{RED}" stroke-width="10"/>'
+         f'<rect x="120" y="230" width="110" height="130" fill="{PAPER}" transform="rotate(-8 175 295)"/><rect x="290" y="130" width="110" height="130" fill="{PAPER}" transform="rotate(7 345 195)"/>'
+         f'<circle cx="170" cy="190" r="14" fill="{RED}"/><circle cx="350" cy="330" r="14" fill="{RED}"/>')
+
+
 if __name__ == "__main__":
-    lobby(); portrait_erdem(); menu_bg(); icons()
+    lobby(); portrait_erdem(); menu_bg(); icons(); portraits()
     print("SVG sources written to art_src/")

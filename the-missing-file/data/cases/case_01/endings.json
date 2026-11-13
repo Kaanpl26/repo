@@ -1,0 +1,59 @@
+{
+  "culprit": "vardar",
+  "suspects": [
+    "vardar",
+    "aras",
+    "aydin",
+    "erdem"
+  ],
+  "slots": [
+    "motive",
+    "opportunity",
+    "link"
+  ],
+  "proof": {
+    "vardar": {
+      "motive": [],
+      "opportunity": [
+        "I_VARDAR_RETURNED"
+      ],
+      "link": []
+    }
+  },
+  "full": "A",
+  "partial": "B",
+  "accident": "E",
+  "wrong": {
+    "aras": "C",
+    "aydin": "D",
+    "erdem": "D"
+  },
+  "spoiled_flag": "file_compromised",
+  "endings": {
+    "A": {
+      "title": "C1_END_A_TITLE",
+      "text": "C1_END_A_TEXT",
+      "solved": true
+    },
+    "B": {
+      "title": "C1_END_B_TITLE",
+      "text": "C1_END_B_TEXT",
+      "solved": false
+    },
+    "C": {
+      "title": "C1_END_C_TITLE",
+      "text": "C1_END_C_TEXT",
+      "solved": false
+    },
+    "D": {
+      "title": "C1_END_D_TITLE",
+      "text": "C1_END_D_TEXT",
+      "solved": false
+    },
+    "E": {
+      "title": "C1_END_E_TITLE",
+      "text": "C1_END_E_TEXT",
+      "solved": false
+    }
+  }
+}

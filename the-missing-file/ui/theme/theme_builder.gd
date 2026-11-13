@@ -96,6 +96,22 @@ static func build() -> Theme:
 	t.set_stylebox("hover", "AccentButton", box(Palette.AMBER.lightened(0.15), Palette.PAPER))
 	t.set_stylebox("pressed", "AccentButton", box(Palette.PAPER, Palette.PAPER))
 
+	t.set_type_variation("DangerButton", "Button")
+	t.set_stylebox("normal", "DangerButton", box(Palette.RED.darkened(0.25), Palette.RED))
+	t.set_stylebox("hover", "DangerButton", box(Palette.RED, Palette.PAPER))
+	t.set_stylebox("pressed", "DangerButton", box(Palette.PAPER, Palette.PAPER))
+
+	t.set_type_variation("InsightButton", "Button")
+	t.set_stylebox("normal", "InsightButton", box(Palette.JADE.darkened(0.65), Palette.JADE))
+	t.set_stylebox("hover", "InsightButton", box(Palette.JADE.darkened(0.5), Palette.JADE))
+	t.set_stylebox("pressed", "InsightButton", box(Palette.JADE, Palette.JADE))
+
+	t.set_type_variation("TabButton", "Button")
+	t.set_stylebox("normal", "TabButton", box(Color(0, 0, 0, 0), Color(0, 0, 0, 0), 0, 8, 30, 18))
+	t.set_stylebox("hover", "TabButton", box(Palette.SLATE, Palette.SLATE, 0, 8, 30, 18))
+	t.set_stylebox("pressed", "TabButton", box(Palette.AMBER, Palette.AMBER, 0, 8, 30, 18))
+	t.set_color("font_color", "TabButton", Palette.MUTED)
+
 	# Panels
 	t.set_stylebox("panel", "PanelContainer", box(Color(Palette.NAVY, 0.96), Palette.SLATE, 2, 14, 44, 36))
 	t.set_type_variation("PaperPanel", "PanelContainer")
@@ -103,6 +119,8 @@ static func build() -> Theme:
 	paper.shadow_color = Color(0, 0, 0, 0.45)
 	paper.shadow_size = 12
 	t.set_stylebox("panel", "PaperPanel", paper)
+	t.set_type_variation("BoardPanel", "PanelContainer")
+	t.set_stylebox("panel", "BoardPanel", box(Color("2b2018"), Color("5a4028"), 10, 6, 40, 30))
 	t.set_type_variation("BarPanel", "PanelContainer")
 	t.set_stylebox("panel", "BarPanel", box(Color(Palette.NAVY, 0.82), Color(Palette.SLATE, 0.9), 2, 10, 28, 14))
 

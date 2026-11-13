@@ -63,7 +63,7 @@ Explore scene → find evidence → examine it → interview people
 
 ### 3.3 Evidence Board
 - Corkboard with evidence cards, testimony cards and suspect cards.
-- The player **links two cards** by dragging a thread between them, then picks what the link means when the pair is valid.
+- The player **selects two cards and taps Connect** (more reliable on a phone than dragging a thread), then picks what the link means when the pair is valid.
 - A valid link creates an **Insight** card (a new fact) which can unlock hotspots, dialogue topics or accusation options.
 - Invalid links give a neutral "no clear connection" response; repeated wrong links slightly lower the rating. No brute-force benefit: insights also require the right prerequisite evidence.
 
@@ -182,20 +182,31 @@ Vardar drove back (car park barrier: in 20:52), found him in B2 at the top of th
 
 ### 5.6 Insights (valid Board links)
 
-| ID | Link | Insight | Unlocks |
+On the Board the player picks two cards and taps **Connect**. A valid pair then asks *what the two mean together*, with one right conclusion and two plausible wrong ones, so connections cannot be brute-forced. Cards are evidence (E), recorded statements (T) or earlier conclusions (I).
+
+**Implemented (lobby, Milestone 3)**
+
+| ID | Link | Conclusion | Used for |
 |---|---|---|---|
-| D1 | E04 + E05 | Erdem was not in the building at 21:00 | Confront Erdem → T-Erdem-2, E06 |
-| D2 | E02 + T-Leyla-1 | Leyla did not leave at 19:30 | Confront Leyla → T-Leyla-2 |
+| I_UNGUARDED | E02 + T-Erdem-2 | Door log matches the confession: nobody watched the building 20:44–21:41 | Timeline; context for everything after |
+| I_VARDAR_RETURNED | E02 + E06 | Vardar badged out 18:32 but her car was back 20:52–21:34 | Opportunity slot for Vardar |
+| I_ARAS_ELSEWHERE | E01 + E15 | Aras signed out 19:05 and was on stage at 21:05 | Clears Aras |
+| I_AYDIN_STAYED | E02 + T-Erdem-4 | Leyla did not go home at 19:30; she left at 21:26 | Confront Leyla (M4) |
+| I_SIDE_DOOR | E02 + T-Erdem-3 | The unlocked side door was Leyla leaving, not a break-in | Closes a red herring |
+
+**Planned (Milestone 4, with the remaining locations)**
+
+| ID | Link | Conclusion | Used for |
+|---|---|---|---|
 | D3 | E12 + E16 | Death at 21:17, and he was gripped — not an accident | Objective: "Find who was with him" |
 | D4 | E11 + E12 | Vural had his keys; someone else forced the desk after he fell | Topic "the search" for all suspects |
 | D5 | E08 + E18 | S.M. is Selin Maden — Director Vardar | Motive slot for Vardar |
-| D6 | E07 + E06 | Vardar read the email and came back; her alibi is false | Opportunity slot for Vardar |
+| D6 | E07 + I_VARDAR_RETURNED | She read the email and came back because of it | Strengthens opportunity |
 | D7 | T-Leyla-2 + E19 | Vural was already dead when the elevator ran; only Vardar's key could run it | Supports opportunity |
 | D8 | E13 + E03 | The earring is Vardar's | Physical-link slot for Vardar |
 | D9 | E09 + E14 | "Mirror" — 47-B reversed is 74-B | Hotspot: shelf 74-B → E17 |
-| D10 | E10 + E15 | Aras wanted the file but was on stage across town at 21:05 | Clears Aras |
 
-Every evidence item is used in at least one insight or contradiction. The solution has three independent legs (motive D5, opportunity D6/D7, physical link D8), so missing one optional testimony never makes the case unsolvable.
+Every evidence item is used in at least one conclusion or contradiction. The solution has three independent legs (motive, opportunity, physical link), so missing one optional testimony never makes the case unsolvable.
 
 ### 5.7 Key decisions
 
@@ -326,7 +337,8 @@ Each milestone ends with something the owner can look at and approve.
 - [x] M2 Automated tests passing; debug APK built and signature verified
 - [x] M2 Debug APK installed and runs on the owner's phone (v0.2.0)
 - [x] M2 Feedback fix (v0.2.1): Hint button, look-around tip, locked-terminal explanation
-- [ ] M3 Core systems
+- [x] M3 Core systems (v0.3.0): evidence board with conclusions, case file tabs (objectives, evidence, suspects, timeline), accusation with proof slots, five verdicts, rating, travel between locations (code ready, one location so far)
+- [ ] M3 checked on the owner's phone
 - [ ] M4 Case 1 content
 - [ ] M5 Localization & polish
 - [ ] M6 Testing

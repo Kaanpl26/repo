@@ -1,0 +1,62 @@
+{
+  "I_UNGUARDED": {
+    "cards": [
+      "E02",
+      "T_ERDEM_2"
+    ],
+    "title": "C1_I_UNGUARDED_TITLE",
+    "text": "C1_I_UNGUARDED",
+    "wrong": [
+      "C1_I_UNGUARDED_W1",
+      "C1_I_UNGUARDED_W2"
+    ]
+  },
+  "I_VARDAR_RETURNED": {
+    "cards": [
+      "E02",
+      "E06"
+    ],
+    "title": "C1_I_VARDAR_RETURNED_TITLE",
+    "text": "C1_I_VARDAR_RETURNED",
+    "wrong": [
+      "C1_I_VARDAR_RETURNED_W1",
+      "C1_I_VARDAR_RETURNED_W2"
+    ]
+  },
+  "I_ARAS_ELSEWHERE": {
+    "cards": [
+      "E01",
+      "E15"
+    ],
+    "title": "C1_I_ARAS_ELSEWHERE_TITLE",
+    "text": "C1_I_ARAS_ELSEWHERE",
+    "wrong": [
+      "C1_I_ARAS_ELSEWHERE_W1",
+      "C1_I_ARAS_ELSEWHERE_W2"
+    ]
+  },
+  "I_AYDIN_STAYED": {
+    "cards": [
+      "E02",
+      "T_ERDEM_4"
+    ],
+    "title": "C1_I_AYDIN_STAYED_TITLE",
+    "text": "C1_I_AYDIN_STAYED",
+    "wrong": [
+      "C1_I_AYDIN_STAYED_W1",
+      "C1_I_AYDIN_STAYED_W2"
+    ]
+  },
+  "I_SIDE_DOOR": {
+    "cards": [
+      "E02",
+      "T_ERDEM_3"
+    ],
+    "title": "C1_I_SIDE_DOOR_TITLE",
+    "text": "C1_I_SIDE_DOOR",
+    "wrong": [
+      "C1_I_SIDE_DOOR_W1",
+      "C1_I_SIDE_DOOR_W2"
+    ]
+  }
+}

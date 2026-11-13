@@ -139,10 +139,6 @@
     "en": "Your progress is saved automatically.",
     "tr": "İlerlemeniz otomatik olarak kaydedilir."
   },
-  "PROTOTYPE_DONE": {
-    "en": "You have found everything in this prototype build.\n\nThe rest of the archive opens in the next milestone.",
-    "tr": "Bu prototip sürümündeki her şeyi buldunuz.\n\nArşivin geri kalanı bir sonraki aşamada açılacak."
-  },
   "HUD_HINT": {
     "en": "Hint",
     "tr": "İpucu"
@@ -154,5 +150,189 @@
   "TUTORIAL_LOOK": {
     "en": "Drag left and right to look around the room. Tap anything that looks important. Stuck? Tap Hint.",
     "tr": "Odaya göz atmak için sağa sola sürükleyin. Önemli görünen her şeye dokunun. Takıldınız mı? İpucu'na dokunun."
+  },
+  "BUILD_DONE": {
+    "en": "You have found and worked out everything available in this build.\n\nThe stacks, the offices and the other suspects open in the next milestone. You can still try an accusation from the Case File to see how verdicts work.",
+    "tr": "Bu sürümde bulunabilecek ve çözülebilecek her şeyi tamamladınız.\n\nDepolar, odalar ve diğer şüpheliler bir sonraki aşamada açılacak. Kararların nasıl işlediğini görmek için Dava Dosyası'ndan suçlamada bulunmayı deneyebilirsiniz."
+  },
+  "HUD_BOARD": {
+    "en": "Board",
+    "tr": "Pano"
+  },
+  "TOAST_INSIGHT": {
+    "en": "New conclusion on the Board",
+    "tr": "Panoya yeni bir sonuç eklendi"
+  },
+  "TOAST_TESTIMONY": {
+    "en": "Statement recorded",
+    "tr": "İfade kayda geçti"
+  },
+  "TAB_OBJECTIVES": {
+    "en": "Objectives",
+    "tr": "Hedefler"
+  },
+  "TAB_EVIDENCE": {
+    "en": "Evidence",
+    "tr": "Deliller"
+  },
+  "TAB_SUSPECTS": {
+    "en": "Suspects",
+    "tr": "Şüpheliler"
+  },
+  "TAB_TIMELINE": {
+    "en": "Timeline",
+    "tr": "Zaman Çizelgesi"
+  },
+  "OBJ_DONE": {
+    "en": "Done",
+    "tr": "Tamamlandı"
+  },
+  "TIMELINE_EMPTY": {
+    "en": "Nothing on the timeline yet. Evidence with a time on it will appear here.",
+    "tr": "Zaman çizelgesi henüz boş. Üzerinde saat olan deliller burada görünecek."
+  },
+  "TIMELINE_DISPUTED": {
+    "en": "Contradicted",
+    "tr": "Çürütüldü"
+  },
+  "TIMELINE_THURSDAY": {
+    "en": "Thursday evening",
+    "tr": "Perşembe akşamı"
+  },
+  "SUSPECT_NO_NOTES": {
+    "en": "No notes yet.",
+    "tr": "Henüz not yok."
+  },
+  "SUSPECT_ACCUSE": {
+    "en": "Make an Accusation",
+    "tr": "Suçlamada Bulun"
+  },
+  "BOARD_TITLE": {
+    "en": "Evidence Board",
+    "tr": "Delil Panosu"
+  },
+  "BOARD_HELP": {
+    "en": "Choose two cards that belong together, then tap Connect.",
+    "tr": "Birbiriyle ilgili iki kart seçin, sonra Bağla'ya dokunun."
+  },
+  "BOARD_CONCLUSIONS": {
+    "en": "Conclusions",
+    "tr": "Sonuçlar"
+  },
+  "BOARD_STATEMENTS": {
+    "en": "Statements",
+    "tr": "İfadeler"
+  },
+  "BOARD_NO_CONCLUSIONS": {
+    "en": "No conclusions yet.",
+    "tr": "Henüz bir sonuca varılmadı."
+  },
+  "BOARD_CONNECT": {
+    "en": "Connect",
+    "tr": "Bağla"
+  },
+  "BOARD_VIEW": {
+    "en": "View",
+    "tr": "İncele"
+  },
+  "BOARD_CLEAR": {
+    "en": "Clear",
+    "tr": "Temizle"
+  },
+  "BOARD_SLOT_EMPTY": {
+    "en": "Choose a card",
+    "tr": "Bir kart seçin"
+  },
+  "BOARD_NO_LINK": {
+    "en": "There is no clear connection between these two.",
+    "tr": "Bu ikisi arasında belirgin bir bağlantı yok."
+  },
+  "BOARD_KNOWN": {
+    "en": "You have already connected these.",
+    "tr": "Bunları zaten bağladınız."
+  },
+  "BOARD_QUESTION": {
+    "en": "What do these two tell you together?",
+    "tr": "Bu ikisi birlikte size ne anlatıyor?"
+  },
+  "BOARD_WRONG": {
+    "en": "That does not follow from the evidence.",
+    "tr": "Deliller bunu göstermiyor."
+  },
+  "BOARD_RIGHT": {
+    "en": "Conclusion added.",
+    "tr": "Sonuç eklendi."
+  },
+  "BOARD_FROM": {
+    "en": "From:",
+    "tr": "Kaynak:"
+  },
+  "ACCUSE_TITLE": {
+    "en": "Who is responsible for the death of Ekrem Vural?",
+    "tr": "Ekrem Vural'ın ölümünden kim sorumlu?"
+  },
+  "ACCUSE_ACCIDENT": {
+    "en": "Nobody. It was an accident.",
+    "tr": "Hiç kimse. Bu bir kazaydı."
+  },
+  "ACCUSE_PROOF_TITLE": {
+    "en": "Build your case against %s",
+    "tr": "%s hakkındaki iddianızı kurun"
+  },
+  "ACCUSE_SLOT_MOTIVE": {
+    "en": "Motive — why?",
+    "tr": "Sebep — neden?"
+  },
+  "ACCUSE_SLOT_OPPORTUNITY": {
+    "en": "Opportunity — were they there?",
+    "tr": "Fırsat — orada mıydı?"
+  },
+  "ACCUSE_SLOT_LINK": {
+    "en": "Physical link — what ties them to the body?",
+    "tr": "Fiziksel bağ — onu olaya ne bağlıyor?"
+  },
+  "ACCUSE_CHOOSE": {
+    "en": "Choose proof…",
+    "tr": "Kanıt seçin…"
+  },
+  "ACCUSE_PICK_TITLE": {
+    "en": "Choose the proof",
+    "tr": "Kanıtı seçin"
+  },
+  "ACCUSE_WARNING": {
+    "en": "An accusation ends the investigation. Empty or wrong proof weakens your case.",
+    "tr": "Suçlama soruşturmayı bitirir. Boş ya da yanlış kanıt iddianızı zayıflatır."
+  },
+  "ACCUSE_CONFIRM": {
+    "en": "Accuse",
+    "tr": "Suçla"
+  },
+  "ACCUSE_CONFIRM_ACCIDENT": {
+    "en": "Close the case as an accident",
+    "tr": "Dosyayı kaza olarak kapat"
+  },
+  "COMMON_BACK": {
+    "en": "Back",
+    "tr": "Geri"
+  },
+  "ENDING_CASE_CLOSED": {
+    "en": "Case closed",
+    "tr": "Dosya kapandı"
+  },
+  "ENDING_RATING": {
+    "en": "Rating",
+    "tr": "Değerlendirme"
+  },
+  "ENDING_STATS": {
+    "en": "Evidence %d/%d   ·   Conclusions %d/%d   ·   Mistakes %d   ·   Hints %d",
+    "tr": "Delil %d/%d   ·   Sonuç %d/%d   ·   Hata %d   ·   İpucu %d"
+  },
+  "ENDING_RETURN": {
+    "en": "Go Back to the Investigation",
+    "tr": "Soruşturmaya Geri Dön"
+  },
+  "ENDING_RETURN_NOTE": {
+    "en": "This was not the truth. You can return to the moment before your accusation.",
+    "tr": "Gerçek bu değildi. Suçlamadan önceki ana dönebilirsiniz."
   }
 }
