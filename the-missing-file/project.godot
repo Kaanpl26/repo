@@ -1,0 +1,44 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="The Missing File"
+config/version="0.2.0"
+run/main_scene="res://ui/menus/boot.tscn"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/bg_color=Color(0.055, 0.078, 0.125, 1)
+boot_splash/show_image=false
+config/icon="res://assets/ui/icon.png"
+
+[autoload]
+
+Settings="*res://autoload/settings.gd"
+Loc="*res://autoload/loc.gd"
+CaseDB="*res://autoload/case_db.gd"
+GameState="*res://autoload/game_state.gd"
+SaveManager="*res://autoload/save_manager.gd"
+SceneRouter="*res://autoload/scene_router.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+
+theme/custom="res://ui/theme/theme.tres"
+
+pointing/emulate_touch_from_mouse=true
+
+[internationalization]
+
+locale/fallback="en"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.055, 0.078, 0.125, 1)

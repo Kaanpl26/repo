@@ -1,0 +1,4 @@
+{
+  "mira": {"name": "C1_NAME_MIRA"},
+  "erdem": {"name": "C1_NAME_ERDEM", "portrait": "res://assets/portraits/erdem.png", "dialogue": "erdem.json"}
+}

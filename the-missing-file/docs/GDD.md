@@ -27,11 +27,11 @@ linked and presented themselves.
 
 ## 2. Universe and Overarching Mystery
 
-**Setting:** Marlow Harbor, a fictional rain-soaked port city. Present day, but the city runs on old paper.
+**Setting:** Karaliman, a fictional rain-soaked Turkish port city. Present day, but the city runs on old paper.
 
-**Player character:** Detective **Mira Kaya**, newly transferred to the Marlow Harbor Major Crimes desk. (The name reads naturally in both Turkish and English.)
+**Player character:** Detective **Mira Kaya**, newly transferred to the Karaliman Major Crimes desk. (The name reads naturally in both Turkish and English.)
 
-**Recurring contact:** Dr. **Idris Noor**, coroner — delivers lab results by phone message.
+**Recurring contact:** Dr. **İdris Nur**, coroner — delivers lab results by phone message.
 
 **The overarching mystery — "The Lighthouse Ledger":**
 Across the city, specific official files have been quietly disappearing for years: fire reports, zoning rulings, an inquest. Each one, taken alone, looks like sloppy filing. Together they describe one hidden arrangement between city officials and an unnamed "client". Each case in the game revolves around one missing file. Case 1 hands the player the first thread: a routing slip listing six more file numbers, and one torn-out page.
@@ -111,57 +111,57 @@ UI rules: minimum touch target 96 px at base resolution; body text never under 2
 ## 5. Case 1 — "File 47-B" (full design, spoilers)
 
 ### 5.1 Premise
-Edgar Voss, senior archivist of the Marlow Harbor Municipal Archive, is found dead at the foot of the spiral staircase in basement stack B2. It looks like a night-time fall. But the file he was working on — **47-B, the 1998 Pier 9 warehouse fire inquiry** — is gone from its box.
+Ekrem Vural, senior archivist of the Karaliman Municipal Archive, is found dead at the foot of the spiral staircase in basement stack B2. It looks like a night-time fall. But the file he was working on — **47-B, the 1998 Pier 9 (9. İskele) warehouse fire inquiry** — is gone from its box.
 
 ### 5.2 The truth
-In 1998, a young records clerk, **Selin Marlowe**, was paid by Aras Shipping to retype one witness statement in the fire inquiry, turning an insurance arson into an accident. She kept the secret, married, and rose to become **Dr. Selin Ward, Director of the Archive**.
+In 1998, a young records clerk, **Selin Maden**, was paid by Aras Shipping to retype one witness statement in the fire inquiry, turning an insurance arson into an accident. She kept the secret, married, and rose to become **Dr. Selin Vardar, Director of the Archive**.
 
-Digitising old files, Voss noticed that page 12 of 47-B was typed on a different machine and carried the clerk initials **S.M.** He worked out who that was. At 20:03 on Thursday he emailed Ward: he would go to the prosecutor in the morning. Expecting trouble, he re-shelved the real file under a mirrored number, **74-B**, and left himself a note.
+Digitising old files, Vural noticed that page 12 of 47-B was typed on a different machine and carried the clerk initials **S.M.** He worked out who that was. At 20:03 on Thursday he emailed Vardar: he would go to the prosecutor in the morning. Expecting trouble, he re-shelved the real file under a mirrored number, **74-B**, and left himself a note.
 
-Ward drove back (car park barrier: in 20:52), found him in B2 at the top of the stairs and pleaded with him. He refused. She grabbed his arms; he went backwards down the stairs (watch stopped 21:17). She lost a jade earring in the struggle. She rode the freight elevator up with her master key, forced his desk drawers looking for the file, found nothing, and left (barrier: out 21:34). Next morning she plays the grieving, helpful colleague — and badly wants to know whether the detective finds the file first.
+Vardar drove back (car park barrier: in 20:52), found him in B2 at the top of the stairs and pleaded with him. He refused. She grabbed his arms; he went backwards down the stairs (watch stopped 21:17). She lost a jade earring in the struggle. She rode the freight elevator up with her master key, forced his desk drawers looking for the file, found nothing, and left (barrier: out 21:34). Next morning she plays the grieving, helpful colleague — and badly wants to know whether the detective finds the file first.
 
 ### 5.3 Characters
 
 | Character | Role | Temperament | What they hide | Truth |
 |---|---|---|---|---|
-| **Dr. Selin Ward** (58) | Archive director | Composed, precise; yields only to hard evidence | Came back that night; is "S.M." | **Culprit** |
-| **Daniel Aras** (47) | Deputy mayor, heir of Aras Shipping | Charming, lawyered-up; reacts to Direct | Tried to buy the file that evening | Motive, but solid alibi; implicated in the 1998 bribe |
-| **Lena Hartmann** (26) | Junior archivist, found the body | Anxious; opens up to Empathetic | Stayed late secretly copying zoning files for a journalist | Key ear-witness |
-| **Viktor Renn** (54) | Night guard | Gruff; respects Firm | Left his post for the betting shop and faked the patrol log | His absence gave the killer a free run |
+| **Dr. Selin Vardar** (58) | Archive director | Composed, precise; yields only to hard evidence | Came back that night; is "S.M." | **Culprit** |
+| **Demir Aras** (47) | Deputy mayor, heir of Aras Shipping | Charming, lawyered-up; reacts to Direct | Tried to buy the file that evening | Motive, but solid alibi; implicated in the 1998 bribe |
+| **Leyla Aydın** (26) | Junior archivist, found the body | Anxious; opens up to Empathetic | Stayed late secretly copying zoning files for a journalist | Key ear-witness |
+| **Veysel Erdem** (54) | Night guard | Gruff; respects Firm | Left his post for the betting shop and faked the patrol log | His absence gave the killer a free run |
 
 ### 5.4 True timeline (Thursday)
 
 | Time | Event | Evidence |
 |---|---|---|
-| 18:32 | Ward badges out | E02 |
-| 18:40–19:05 | Aras visits Voss; argument | E01, E10 |
-| 19:30 | Lena *claims* she left | T-Lena-1 |
-| 20:00–23:00 | Aras at Harbor Club charity dinner | E15 |
-| 20:03 | Voss emails Ward | E07 |
-| 20:45 | Renn leaves for betting shop | E05 |
-| 20:52 | Ward's car enters staff car park | E06 |
+| 18:32 | Vardar badges out | E02 |
+| 18:40–19:05 | Aras visits Vural; argument | E01, E10 |
+| 19:30 | Leyla *claims* she left | T-Leyla-1 |
+| 20:00–23:00 | Aras at Liman Kulübü charity dinner | E15 |
+| 20:03 | Vural emails Vardar | E07 |
+| 20:45 | Erdem leaves for betting shop | E05 |
+| 20:52 | Vardar's car enters staff car park | E06 |
 | 21:00 | Patrol log: "B2 all clear" (false) | E04 |
-| ~21:10 | Lena hears Voss arguing with a woman | T-Lena-2 |
-| 21:17 | Voss falls; watch stops | E12, E16 |
-| ~21:20 | Freight elevator runs | T-Lena-2, E19 |
-| 21:26 | Lena leaves by side door | E02 |
-| 21:34 | Ward's car exits | E06 |
-| 21:40 | Renn returns | T-Renn-2 |
-| 07:10 Fri | Lena finds the body | — |
+| ~21:10 | Leyla hears Vural arguing with a woman | T-Leyla-2 |
+| 21:17 | Vural falls; watch stops | E12, E16 |
+| ~21:20 | Freight elevator runs | T-Leyla-2, E19 |
+| 21:26 | Leyla leaves by side door | E02 |
+| 21:34 | Vardar's car exits | E06 |
+| 21:40 | Erdem returns | T-Erdem-2 |
+| 07:10 Fri | Leyla finds the body | — |
 
 ### 5.5 Locations and evidence
 
 **L1 Lobby & security desk**
-- **E01 Visitor log** — D. Aras, in 18:40, out 19:05, "to see E. Voss".
-- **E02 Keycard log** — Ward out 18:32; Hartmann out 21:26 (side door); no exit for Voss.
-- **E03 Staff portrait board** — Director Ward photographed wearing jade drop earrings.
-- **E04 Patrol log** — "21:00 — B2 stacks — all clear. V.R."
-- **E05 Betting slip** — Lucky Anchor, across the street, stamped 21:07 (bin under Renn's desk).
-- **E06 Car park barrier log** — plate MH-4471 (S. Ward) in 20:52, out 21:34. *Gated: Renn unlocks the terminal after his lie is exposed.*
-- **E15 Morning newspaper** — photo of Aras speaking at the Harbor Club dinner, wall clock reading 21:05.
+- **E01 Visitor log** — D. Aras, in 18:40, out 19:05, "to see E. Vural".
+- **E02 Keycard log** — Vardar out 18:32; Aydın out 21:26 (side door); no exit for Vural.
+- **E03 Staff portrait board** — Director Vardar photographed wearing jade drop earrings.
+- **E04 Patrol log** — "21:00 — B2 stacks — all clear. V.E."
+- **E05 Betting slip** — Şanslı Çapa, across the street, stamped 21:07 (bin under Erdem's desk).
+- **E06 Car park barrier log** — plate 82 KL 4471 (S. Vardar) in 20:52, out 21:34. *Gated: Erdem unlocks the terminal after his lie is exposed.*
+- **E15 Morning newspaper** — photo of Aras speaking at the Liman Kulübü dinner, wall clock reading 21:05.
 
-**L2 Voss's office**
-- **E07 Sent email, 20:03** — to S. Ward: "I know what was done to 47-B, and by whom. I go to the prosecutor tomorrow. I wanted you to hear it from me first."
+**L2 Vural's office**
+- **E07 Sent email, 20:03** — to S. Vardar: "I know what was done to 47-B, and by whom. I go to the prosecutor tomorrow. I wanted you to hear it from me first."
 - **E08 Digitisation notes** — "47-B p.12: retyped, different machine. Clerk initials S.M. Who was S.M. in '98?"
 - **E09 Desk calendar note** — "If anything happens — the mirror tells the truth."
 - **E10 Letter from Aras** — "Name your price for 47-B. Some history is better left in the box."
@@ -170,12 +170,12 @@ Ward drove back (car park barrier: in 20:52), found him in B2 at the top of the 
 **L3 Stack B2**
 - **E12 Personal effects** — watch, glass cracked, stopped at 21:17; his full key ring still on his belt.
 - **E13 Jade earring** — under the lowest shelf by the top of the staircase.
-- **E14 Box 47-B** — empty; checkout slip "E. Voss, Monday".
+- **E14 Box 47-B** — empty; checkout slip "E. Vural, Monday".
 - **E17 The real file** — shelved at 74-B. Original and retyped page 12 side by side; a routing slip listing six other file numbers; one page torn out long ago. *Gated by insight D9.*
 
 **L4 Director's office**
-- **E18 Framed diploma, 1996** — awarded to "Selin Marlowe".
-- **E19 Master key register** — two after-hours master keys exist: No.1 Voss, No.2 Ward. The freight elevator runs after 19:00 only with a master key.
+- **E18 Framed diploma, 1996** — awarded to "Selin Maden".
+- **E19 Master key register** — two after-hours master keys exist: No.1 Vural, No.2 Vardar. The freight elevator runs after 19:00 only with a master key.
 
 **Phone**
 - **E16 Coroner's preliminary note** — death between 21:00 and 21:30; grip bruising on both forearms, inconsistent with a simple fall.
@@ -184,14 +184,14 @@ Ward drove back (car park barrier: in 20:52), found him in B2 at the top of the 
 
 | ID | Link | Insight | Unlocks |
 |---|---|---|---|
-| D1 | E04 + E05 | Renn was not in the building at 21:00 | Confront Renn → T-Renn-2, E06 |
-| D2 | E02 + T-Lena-1 | Lena did not leave at 19:30 | Confront Lena → T-Lena-2 |
+| D1 | E04 + E05 | Erdem was not in the building at 21:00 | Confront Erdem → T-Erdem-2, E06 |
+| D2 | E02 + T-Leyla-1 | Leyla did not leave at 19:30 | Confront Leyla → T-Leyla-2 |
 | D3 | E12 + E16 | Death at 21:17, and he was gripped — not an accident | Objective: "Find who was with him" |
-| D4 | E11 + E12 | Voss had his keys; someone else forced the desk after he fell | Topic "the search" for all suspects |
-| D5 | E08 + E18 | S.M. is Selin Marlowe — Director Ward | Motive slot for Ward |
-| D6 | E07 + E06 | Ward read the email and came back; her alibi is false | Opportunity slot for Ward |
-| D7 | T-Lena-2 + E19 | Voss was already dead when the elevator ran; only Ward's key could run it | Supports opportunity |
-| D8 | E13 + E03 | The earring is Ward's | Physical-link slot for Ward |
+| D4 | E11 + E12 | Vural had his keys; someone else forced the desk after he fell | Topic "the search" for all suspects |
+| D5 | E08 + E18 | S.M. is Selin Maden — Director Vardar | Motive slot for Vardar |
+| D6 | E07 + E06 | Vardar read the email and came back; her alibi is false | Opportunity slot for Vardar |
+| D7 | T-Leyla-2 + E19 | Vural was already dead when the elevator ran; only Vardar's key could run it | Supports opportunity |
+| D8 | E13 + E03 | The earring is Vardar's | Physical-link slot for Vardar |
 | D9 | E09 + E14 | "Mirror" — 47-B reversed is 74-B | Hotspot: shelf 74-B → E17 |
 | D10 | E10 + E15 | Aras wanted the file but was on stage across town at 21:05 | Clears Aras |
 
@@ -199,19 +199,19 @@ Every evidence item is used in at least one insight or contradiction. The soluti
 
 ### 5.7 Key decisions
 
-1. **Ward's question.** Early on, Ward asks whether Edgar left any notes. If the player shares the calendar note (E09) before recovering E17, Ward reaches shelf 74-B first: the file is later found with the comparison pages removed.
-2. **How to treat Lena.** Empathetic → full testimony including the woman's voice. Pressure → she only admits staying late; the elevator detail must then come from confronting her with E02 later.
-3. **Renn's report.** After his confession the player may put his absence on record or let it go; changes his epilogue line and a later-case attitude flag.
+1. **Vardar's question.** Early on, Vardar asks whether Ekrem left any notes. If the player shares the calendar note (E09) before recovering E17, Vardar reaches shelf 74-B first: the file is later found with the comparison pages removed.
+2. **How to treat Leyla.** Empathetic → full testimony including the woman's voice. Pressure → she only admits staying late; the elevator detail must then come from confronting her with E02 later.
+3. **Erdem's report.** After his confession the player may put his absence on record or let it go; changes his epilogue line and a later-case attitude flag.
 4. **When to accuse.**
 
 ### 5.8 Endings
 
 | # | Condition | Result |
 |---|---|---|
-| A — **The Mirror Tells the Truth** | Ward accused, all three proof slots correct, file intact | Full confession. Aras faces the 1998 bribery charge. Routing slip opens the larger mystery. |
-| B — **Reasonable Doubt** | Ward accused, but weak proof or file compromised (decision 1) | Ward admits only "an argument"; lesser charge; the 1998 link is unprovable. |
-| C — **The Obvious Man** | Aras accused | Released in 48 hours on his alibi; Ward quietly destroys the file; Mira reprimanded. |
-| D — **The Easy Answer** | Lena or Renn accused | A scapegoat is charged; the real killer keeps her office. |
+| A — **The Mirror Tells the Truth** | Vardar accused, all three proof slots correct, file intact | Full confession. Aras faces the 1998 bribery charge. Routing slip opens the larger mystery. |
+| B — **Reasonable Doubt** | Vardar accused, but weak proof or file compromised (decision 1) | Vardar admits only "an argument"; lesser charge; the 1998 link is unprovable. |
+| C — **The Obvious Man** | Aras accused | Released in 48 hours on his alibi; Vardar quietly destroys the file; Mira reprimanded. |
+| D — **The Easy Answer** | Leyla or Erdem accused | A scapegoat is charged; the real killer keeps her office. |
 | E — **Misadventure** | Player closes the case as an accident | File never found. The bleakest epilogue. |
 
 After any ending except A the player may replay from the last checkpoint before the accusation.
@@ -250,6 +250,7 @@ the-missing-file/
 ├── export_presets.cfg
 ├── docs/                     GDD, checklist, build & install guides
 ├── autoload/
+│   ├── loc.gd                loads the string tables into TranslationServer
 │   ├── game_state.gd         flags, found evidence, insights, decisions
 │   ├── case_db.gd            loads and validates case JSON
 │   ├── save_manager.gd       versioned saves in user://
@@ -268,23 +269,25 @@ the-missing-file/
 │   └── components/           buttons, panels, toasts, document reader
 ├── data/
 │   └── cases/case_01/
-│       ├── case.json         meta, objectives, locations, unlock rules
+│       ├── case.json         meta, intro, testimony
+│       ├── locations.json    scenes and their hotspots
+│       ├── characters.json   names, portraits, dialogue files
 │       ├── evidence.json
-│       ├── suspects.json
+│       ├── suspects.json     (M3) suspect profiles
 │       ├── insights.json     valid links and what they unlock
 │       ├── timeline.json
 │       ├── endings.json
-│       └── dialogue/         ward.json, aras.json, hartmann.json, renn.json
+│       └── dialogue/         vardar.json, aras.json, aydin.json, erdem.json
 ├── localization/
-│   ├── ui.csv                key,en,tr
-│   └── case_01.csv           key,en,tr
+│   ├── ui.json               {"KEY": {"en": "...", "tr": "..."}}
+│   └── case_01.json
 ├── assets/
 │   ├── scenes/ portraits/ evidence/ ui/ audio/
 └── tests/                    data validation + automated playthrough
 ```
 
 ### 7.3 Key technical decisions
-- **Localization:** Godot's built-in CSV translations (`key,en,tr`). One file per case plus one for UI. A test fails the build if any key is missing in either language or any referenced key does not exist.
+- **Localization:** JSON string tables (`{"KEY": {"en": "…", "tr": "…"}}`) loaded into Godot's `TranslationServer` at startup, so the standard `tr()` and automatic UI translation work everywhere. One file per case plus one for UI. A test fails the build if any key is missing in either language or any referenced key does not exist.
 - **Dialogue format:** JSON nodes `{id, speaker, text_key, choices[], conditions[], effects[]}`. Conditions and effects use the same small vocabulary as insights and hotspots (`has_evidence`, `has_insight`, `flag`, `add_evidence`, `set_flag`, `unlock_topic`).
 - **Save/load:** single auto-save slot per case plus settings, JSON in `user://`, with a save-format version number and migration hook. Auto-saves after every state change; resumes exactly where the player left off.
 - **Rendering:** Compatibility renderer (OpenGL ES 3) for the widest Android device support; textures imported from SVG at fixed sizes; one scene loaded at a time.
@@ -300,7 +303,7 @@ Each milestone ends with something the owner can look at and approve.
 | # | Milestone | Deliverable | Owner checks |
 |---|---|---|---|
 | 1 | **Design** | This document | Story, style, architecture |
-| 2 | **Prototype + build pipeline** | Menu, language select, Lobby scene, evidence pickup, one Renn conversation — **and a first debug APK** to prove the Android toolchain early | Install APK, feel of touch controls |
+| 2 | **Prototype + build pipeline** | Menu, language select, Lobby scene, evidence pickup, one Erdem conversation — **and a first debug APK** to prove the Android toolchain early | Install APK, feel of touch controls |
 | 3 | **Core systems** | Case File, Evidence Board with insights, present-evidence interrogation, accusation flow, save/load | Board usability |
 | 4 | **Case 1 content** | All 4 locations, 19 evidence items, 4 full interviews, 5 endings | Play the case end to end |
 | 5 | **Localization & polish** | Complete EN + TR text, final art pass, animation, audio | Read the Turkish text as a native speaker |
@@ -318,8 +321,10 @@ Each milestone ends with something the owner can look at and approve.
 
 - [x] Development language chosen: English
 - [x] M1 GDD drafted
-- [ ] M1 GDD approved by owner
-- [ ] M2 Prototype + first debug APK
+- [x] M1 GDD approved by owner (Turkish names requested and applied)
+- [x] M2 Prototype built: menu, language select, settings, lobby scene, 7 evidence items, Erdem interview with present-evidence, case file list, auto-save
+- [x] M2 Automated tests passing; debug APK built and signature verified
+- [ ] M2 Debug APK installed and checked on the owner's phone
 - [ ] M3 Core systems
 - [ ] M4 Case 1 content
 - [ ] M5 Localization & polish
@@ -329,7 +334,7 @@ Each milestone ends with something the owner can look at and approve.
 ## 10. Decisions Awaiting Owner Approval
 
 1. Case 1 story and culprit as designed in section 5.
-2. Setting: fictional city Marlow Harbor, detective Mira Kaya.
+2. Setting: fictional Turkish port city Karaliman, detective Mira Kaya, all-Turkish cast (owner request).
 3. Visual style "Ink & Lamplight" (stylised vector, in-engine lighting).
 4. Landscape orientation.
 5. Game project lives in the `the-missing-file/` subfolder, leaving the existing website files in the repository untouched.

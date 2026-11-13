@@ -1,0 +1,11 @@
+{
+  "id": "case_01",
+  "title": "C1_TITLE",
+  "start_location": "lobby",
+  "intro": ["C1_INTRO_1", "C1_INTRO_2", "C1_INTRO_3"],
+  "testimony": {
+    "T_ERDEM_1": {"speaker": "erdem", "text": "C1_T_ERDEM_1"},
+    "T_ERDEM_2": {"speaker": "erdem", "text": "C1_T_ERDEM_2"},
+    "T_ERDEM_3": {"speaker": "erdem", "text": "C1_T_ERDEM_3"}
+  }
+}

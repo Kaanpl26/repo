@@ -1,0 +1,9 @@
+{
+  "E01": {"name": "C1_E01_NAME", "desc": "C1_E01_DESC", "body": "C1_E01_BODY", "icon": "res://assets/evidence/e01.png"},
+  "E02": {"name": "C1_E02_NAME", "desc": "C1_E02_DESC", "body": "C1_E02_BODY", "icon": "res://assets/evidence/e02.png"},
+  "E03": {"name": "C1_E03_NAME", "desc": "C1_E03_DESC", "body": "C1_E03_BODY", "icon": "res://assets/evidence/e03.png"},
+  "E04": {"name": "C1_E04_NAME", "desc": "C1_E04_DESC", "body": "C1_E04_BODY", "icon": "res://assets/evidence/e04.png"},
+  "E05": {"name": "C1_E05_NAME", "desc": "C1_E05_DESC", "body": "C1_E05_BODY", "icon": "res://assets/evidence/e05.png"},
+  "E06": {"name": "C1_E06_NAME", "desc": "C1_E06_DESC", "body": "C1_E06_BODY", "icon": "res://assets/evidence/e06.png"},
+  "E15": {"name": "C1_E15_NAME", "desc": "C1_E15_DESC", "body": "C1_E15_BODY", "icon": "res://assets/evidence/e15.png"}
+}
