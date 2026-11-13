@@ -101,6 +101,9 @@ func _test_data_references() -> void:
 		var l: Dictionary = CaseDB.locations[id]
 		_key(l["name"], "location " + id)
 		ok(ResourceLoader.exists(l["background"]), "location %s: background missing" % id)
+		for hint in l.get("hints", []):
+			_key(hint["text"], "location %s hint" % id)
+			_check_conditions(hint.get("conditions", []), "location %s hint" % id)
 		for h in l["hotspots"]:
 			var w := "hotspot %s.%s" % [id, h["id"]]
 			var r: Array = h["rect"]
@@ -217,6 +220,7 @@ func _test_playthrough() -> void:
 	GameState.new_game()
 	GameState.active = false
 	ok(not GameState.check(_hotspot("terminal")["conditions"]), "terminal must start locked")
+	ok(Hints.next("lobby").get("type") == "point", "hint points at evidence at the start")
 
 	var r := DialogueRunner.new("erdem")
 	var s := _advance_to_choices(r, r.start())
@@ -226,6 +230,8 @@ func _test_playthrough() -> void:
 
 	for id in ["E01", "E02", "E03", "E04", "E05", "E15"]:
 		GameState.add_evidence(id)
+	var h := Hints.next("lobby")
+	ok(h.get("type") == "text" and Loc.has_key(h.get("text", "")), "hint explains the locked terminal")
 	s = _pick(r, "patrol")
 	while not r.can_present() and s == DialogueRunner.LINE:
 		s = r.advance()
@@ -249,7 +255,10 @@ func _test_playthrough() -> void:
 
 	ok(GameState.check(_hotspot("terminal")["conditions"]), "terminal unlocks after confession")
 	ok(not GameState.check(_hotspot("terminal_locked")["conditions"]), "locked terminal text goes away")
+	h = Hints.next("lobby")
+	ok(h.get("type") == "point" and h["hotspot"]["id"] == "terminal", "hint points at the unlocked terminal")
 	GameState.add_evidence("E06")
+	ok(Hints.next("lobby").is_empty(), "no hint once everything is found")
 	ok(CaseDB.location_evidence("lobby").size() == 7, "lobby has 7 pieces of evidence")
 
 	var r2 := DialogueRunner.new("erdem")

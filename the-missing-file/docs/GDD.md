@@ -324,7 +324,8 @@ Each milestone ends with something the owner can look at and approve.
 - [x] M1 GDD approved by owner (Turkish names requested and applied)
 - [x] M2 Prototype built: menu, language select, settings, lobby scene, 7 evidence items, Erdem interview with present-evidence, case file list, auto-save
 - [x] M2 Automated tests passing; debug APK built and signature verified
-- [ ] M2 Debug APK installed and checked on the owner's phone
+- [x] M2 Debug APK installed and runs on the owner's phone (v0.2.0)
+- [x] M2 Feedback fix (v0.2.1): Hint button, look-around tip, locked-terminal explanation
 - [ ] M3 Core systems
 - [ ] M4 Case 1 content
 - [ ] M5 Localization & polish

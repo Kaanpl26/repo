@@ -13,6 +13,7 @@ var testimony: Array = []       # recorded testimony ids
 var flags: Dictionary = {}      # story flags
 var seen: Dictionary = {}       # dialogue choices already used
 var mistakes := 0               # wrong evidence presentations (affects final rating later)
+var hints := 0                  # hints used (affects final rating later)
 var active := false             # true while a game is in progress
 
 
@@ -24,6 +25,7 @@ func new_game() -> void:
 	flags = {}
 	seen = {}
 	mistakes = 0
+	hints = 0
 	active = true
 	changed.emit()
 
@@ -31,7 +33,7 @@ func new_game() -> void:
 func to_dict() -> Dictionary:
 	return {
 		"case_id": case_id, "location": location, "evidence": evidence,
-		"testimony": testimony, "flags": flags, "seen": seen, "mistakes": mistakes,
+		"testimony": testimony, "flags": flags, "seen": seen, "mistakes": mistakes, "hints": hints,
 	}
 
 
@@ -43,6 +45,7 @@ func from_dict(d: Dictionary) -> void:
 	flags = Dictionary(d.get("flags", {}))
 	seen = Dictionary(d.get("seen", {}))
 	mistakes = int(d.get("mistakes", 0))
+	hints = int(d.get("hints", 0))
 	active = true
 
 
@@ -81,6 +84,11 @@ func mark_seen(id: String) -> void:
 	if not seen.has(id):
 		seen[id] = true
 		changed.emit()
+
+
+func use_hint() -> void:
+	hints += 1
+	changed.emit()
 
 
 func add_mistake() -> void:

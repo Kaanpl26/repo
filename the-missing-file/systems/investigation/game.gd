@@ -181,6 +181,11 @@ func _build_hud() -> void:
 	_caption_panel.add_child(_caption)
 	_caption_panel.modulate.a = 0.0
 	bottom.add_child(_caption_panel)
+	var hint_btn := UI.button("HUD_HINT")
+	hint_btn.size_flags_vertical = Control.SIZE_SHRINK_END
+	hint_btn.custom_minimum_size = Vector2(220, 110)
+	hint_btn.pressed.connect(_on_hint)
+	bottom.add_child(hint_btn)
 	var file_btn := UI.button("HUD_CASE_FILE", "AccentButton")
 	file_btn.size_flags_vertical = Control.SIZE_SHRINK_END
 	file_btn.custom_minimum_size = Vector2(320, 110)
@@ -207,10 +212,10 @@ func _notification(what: int) -> void:
 		_refresh_counter()
 
 
-func _show_caption(key: String) -> void:
+func _show_caption(key: String, seconds: float = 6.0) -> void:
 	_caption.text = key
 	_caption_panel.modulate.a = 1.0
-	_caption_timer.start(6.0)
+	_caption_timer.start(seconds)
 
 
 func _hide_caption() -> void:
@@ -317,7 +322,40 @@ func _narrate(keys: Array, on_done: Callable) -> void:
 
 
 func _play_intro() -> void:
-	_narrate(CaseDB.meta["intro"], func(): GameState.set_flag("intro_seen"))
+	_narrate(CaseDB.meta["intro"], func():
+		GameState.set_flag("intro_seen")
+		_show_caption("TUTORIAL_LOOK", 10.0))
+
+
+# ---------------------------------------------------------------- hints
+
+func _on_hint() -> void:
+	var hint := Hints.next(GameState.location)
+	match hint.get("type", ""):
+		"point":
+			GameState.use_hint()
+			_point_at(hint["hotspot"])
+		"text":
+			GameState.use_hint()
+			_show_caption(hint["text"], 10.0)
+		_:
+			_show_caption("HINT_NOTHING_HERE")
+
+
+## Pans the scene to a hotspot and pulses rings over it.
+func _point_at(h: Dictionary) -> void:
+	_hide_caption()
+	var r: Array = h["rect"]
+	var center := Vector2(r[0] + r[2] / 2.0, r[1] + r[3] / 2.0)
+	var target := center.x * _scale - size.x / 2.0
+	var t := create_tween()
+	t.tween_method(func(v: float):
+		_pan = v
+		_apply_pan(), _pan, clampf(target, 0.0, _max_pan), 0.5).set_trans(Tween.TRANS_SINE)
+	var radius := maxf(r[2], r[3]) * 0.75
+	for i in 3:
+		t.tween_callback(func(): _fx.add_child(Ripple.new(center, Palette.AMBER, radius, 0.9)))
+		t.tween_interval(0.45)
 
 
 ## Prototype only: tells the player when everything in this build has been found.

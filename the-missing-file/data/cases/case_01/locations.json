@@ -6,19 +6,169 @@
     "height": 1080,
     "start_x": 1700,
     "hotspots": [
-      {"id": "door", "type": "detail", "rect": [80, 190, 450, 640], "text": "C1_LOBBY_DOOR"},
-      {"id": "newspaper", "type": "evidence", "rect": [585, 545, 200, 290], "evidence": "E15"},
-      {"id": "staff_board", "type": "evidence", "rect": [870, 180, 420, 300], "evidence": "E03"},
-      {"id": "clock", "type": "detail", "rect": [1345, 135, 150, 150], "text": "C1_LOBBY_CLOCK"},
-      {"id": "erdem", "type": "talk", "rect": [1560, 235, 240, 370], "character": "erdem"},
-      {"id": "visitor_log", "type": "evidence", "rect": [1285, 540, 240, 100], "evidence": "E01"},
-      {"id": "lamp", "type": "detail", "rect": [1490, 470, 70, 80], "text": "C1_LOBBY_LAMP"},
-      {"id": "patrol_log", "type": "evidence", "rect": [1835, 490, 145, 125], "evidence": "E04"},
-      {"id": "terminal_locked", "type": "detail", "rect": [1995, 435, 215, 180], "text": "C1_LOBBY_TERMINAL_LOCKED", "conditions": [{"not_flag": "erdem_confessed"}]},
-      {"id": "terminal", "type": "evidence", "rect": [1995, 435, 215, 180], "evidence": "E06", "conditions": [{"flag": "erdem_confessed"}]},
-      {"id": "bin", "type": "evidence", "rect": [2270, 725, 150, 185], "evidence": "E05"},
-      {"id": "card_reader", "type": "evidence", "rect": [2480, 410, 110, 170], "evidence": "E02"},
-      {"id": "stacks_door", "type": "detail", "rect": [2610, 150, 240, 680], "text": "C1_LOBBY_STACKS_DOOR"}
+      {
+        "id": "door",
+        "type": "detail",
+        "rect": [
+          80,
+          190,
+          450,
+          640
+        ],
+        "text": "C1_LOBBY_DOOR"
+      },
+      {
+        "id": "newspaper",
+        "type": "evidence",
+        "rect": [
+          585,
+          545,
+          200,
+          290
+        ],
+        "evidence": "E15"
+      },
+      {
+        "id": "staff_board",
+        "type": "evidence",
+        "rect": [
+          870,
+          180,
+          420,
+          300
+        ],
+        "evidence": "E03"
+      },
+      {
+        "id": "clock",
+        "type": "detail",
+        "rect": [
+          1345,
+          135,
+          150,
+          150
+        ],
+        "text": "C1_LOBBY_CLOCK"
+      },
+      {
+        "id": "erdem",
+        "type": "talk",
+        "rect": [
+          1560,
+          235,
+          240,
+          370
+        ],
+        "character": "erdem"
+      },
+      {
+        "id": "visitor_log",
+        "type": "evidence",
+        "rect": [
+          1285,
+          540,
+          240,
+          100
+        ],
+        "evidence": "E01"
+      },
+      {
+        "id": "lamp",
+        "type": "detail",
+        "rect": [
+          1490,
+          470,
+          70,
+          80
+        ],
+        "text": "C1_LOBBY_LAMP"
+      },
+      {
+        "id": "patrol_log",
+        "type": "evidence",
+        "rect": [
+          1835,
+          490,
+          145,
+          125
+        ],
+        "evidence": "E04"
+      },
+      {
+        "id": "terminal_locked",
+        "type": "detail",
+        "rect": [
+          1995,
+          435,
+          215,
+          180
+        ],
+        "text": "C1_LOBBY_TERMINAL_LOCKED",
+        "conditions": [
+          {
+            "not_flag": "erdem_confessed"
+          }
+        ]
+      },
+      {
+        "id": "terminal",
+        "type": "evidence",
+        "rect": [
+          1995,
+          435,
+          215,
+          180
+        ],
+        "evidence": "E06",
+        "conditions": [
+          {
+            "flag": "erdem_confessed"
+          }
+        ]
+      },
+      {
+        "id": "bin",
+        "type": "evidence",
+        "rect": [
+          2270,
+          725,
+          150,
+          185
+        ],
+        "evidence": "E05"
+      },
+      {
+        "id": "card_reader",
+        "type": "evidence",
+        "rect": [
+          2480,
+          410,
+          110,
+          170
+        ],
+        "evidence": "E02"
+      },
+      {
+        "id": "stacks_door",
+        "type": "detail",
+        "rect": [
+          2610,
+          150,
+          240,
+          680
+        ],
+        "text": "C1_LOBBY_STACKS_DOOR"
+      }
+    ],
+    "hints": [
+      {
+        "conditions": [
+          {
+            "not_flag": "erdem_confessed"
+          }
+        ],
+        "text": "C1_HINT_TERMINAL"
+      }
     ]
   }
 }

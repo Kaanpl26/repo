@@ -1,84 +1,270 @@
 {
-  "C1_TITLE": {"en": "File 47-B", "tr": "Dosya 47-B"},
-  "C1_INTRO_1": {"en": "Friday, 08:10.\nKaraliman Municipal Archive.", "tr": "Cuma, 08.10.\nKaraliman Belediye Arşivi."},
-  "C1_INTRO_2": {"en": "Senior archivist Ekrem Vural was found dead this morning at the foot of the staircase in basement stack B2. The first officers on the scene are calling it a fall.", "tr": "Başarşivci Ekrem Vural bu sabah B2 bodrum deposundaki merdivenin dibinde ölü bulundu. Olay yerine ilk gelen ekipler bunun bir düşme olduğunu söylüyor."},
-  "C1_INTRO_3": {"en": "But the file he was working on is missing.\n\nThat is why they called you, Detective Kaya.", "tr": "Ama üzerinde çalıştığı dosya ortada yok.\n\nSizi bu yüzden çağırdılar, Komiser Kaya."},
-
-  "C1_NAME_MIRA": {"en": "Mira Kaya", "tr": "Mira Kaya"},
-  "C1_NAME_ERDEM": {"en": "Veysel Erdem", "tr": "Veysel Erdem"},
-  "C1_LOC_LOBBY": {"en": "Archive Lobby", "tr": "Arşiv Girişi"},
-
-  "C1_LOBBY_DOOR": {"en": "The main entrance. It is still raining. After six in the evening this door only opens from the button on the security desk.", "tr": "Ana giriş. Yağmur hâlâ dinmedi. Akşam altıdan sonra bu kapı yalnızca güvenlik masasındaki düğmeyle açılıyor."},
-  "C1_LOBBY_CLOCK": {"en": "A quarter past eight. The archive will stay closed to the public today.", "tr": "Saat sekizi çeyrek geçiyor. Arşiv bugün ziyaretçiye kapalı kalacak."},
-  "C1_LOBBY_LAMP": {"en": "The desk lamp is still warm. It has been on all night.", "tr": "Masa lambası hâlâ sıcak. Bütün gece açık kalmış."},
-  "C1_LOBBY_TERMINAL_LOCKED": {"en": "A terminal for the staff car park barrier. It is locked with the guard's password.", "tr": "Personel otoparkının bariyer terminali. Güvenlik görevlisinin şifresiyle kilitlenmiş."},
-  "C1_LOBBY_STACKS_DOOR": {"en": "The stairs down to the stacks. The forensics team is still working on B2. I will go down once they clear the scene.", "tr": "Depolara inen merdiven. Olay yeri inceleme ekibi B2'de hâlâ çalışıyor. İşleri bitince aşağı ineceğim."},
-
-  "C1_E01_NAME": {"en": "Visitor Log", "tr": "Ziyaretçi Defteri"},
-  "C1_E01_DESC": {"en": "The handwritten visitor register on the security desk. One visitor came after closing time.", "tr": "Güvenlik masasındaki el yazısıyla tutulan ziyaretçi defteri. Kapanıştan sonra tek bir ziyaretçi gelmiş."},
-  "C1_E01_BODY": {"en": "KARALİMAN MUNICIPAL ARCHIVE\nVISITOR REGISTER — Thursday\n\n09:15  R. Tekin — reading room\n  out 11:40\n11:02  School group (14) — tour\n  out 12:10\n14:30  N. Çelik — land registry copies\n  out 15:05\n\n— closed to the public 18:00 —\n\n18:40  D. Aras, Deputy Mayor\n  to see: E. Vural\n  out 19:05", "tr": "KARALİMAN BELEDİYE ARŞİVİ\nZİYARETÇİ DEFTERİ — Perşembe\n\n09.15  R. Tekin — okuma salonu\n  çıkış 11.40\n11.02  Okul grubu (14) — gezi\n  çıkış 12.10\n14.30  N. Çelik — tapu kayıt örnekleri\n  çıkış 15.05\n\n— 18.00 ziyaretçiye kapanış —\n\n18.40  D. Aras, Belediye Başkan Yardımcısı\n  görüşülen: E. Vural\n  çıkış 19.05"},
-
-  "C1_E02_NAME": {"en": "Key-Card Log", "tr": "Kartlı Geçiş Kaydı"},
-  "C1_E02_DESC": {"en": "Printout from the door system. Staff badge in and out; the main door can also be released from the security desk.", "tr": "Kapı sisteminden alınan döküm. Personel kartla girip çıkıyor; ana kapı güvenlik masasından da açılabiliyor."},
-  "C1_E02_BODY": {"en": "DOOR SYSTEM — Thursday / Friday\n\n18:32  VARDAR S.   main door   OUT\n18:40  main door — released from desk\n19:05  main door — released from desk\n20:44  main door — released from desk\n21:26  AYDIN L.    side door   OUT\n21:41  main door — released from desk\n07:02  AYDIN L.    main door   IN\n\nNo OUT record: VURAL E.", "tr": "KAPI SİSTEMİ — Perşembe / Cuma\n\n18.32  VARDAR S.   ana kapı   ÇIKIŞ\n18.40  ana kapı — masadan açıldı\n19.05  ana kapı — masadan açıldı\n20.44  ana kapı — masadan açıldı\n21.26  AYDIN L.    yan kapı   ÇIKIŞ\n21.41  ana kapı — masadan açıldı\n07.02  AYDIN L.    ana kapı   GİRİŞ\n\nÇıkış kaydı yok: VURAL E."},
-
-  "C1_E03_NAME": {"en": "Staff Portraits", "tr": "Personel Fotoğrafları"},
-  "C1_E03_DESC": {"en": "The staff board in the lobby. Four people work in this building.", "tr": "Girişteki personel panosu. Bu binada dört kişi çalışıyor."},
-  "C1_E03_BODY": {"en": "OUR STAFF\n\nDr. Selin Vardar — Director\n(photographed wearing jade drop earrings)\n\nEkrem Vural — Senior Archivist\n\nLeyla Aydın — Archivist\n\nVeysel Erdem — Night Security", "tr": "PERSONELİMİZ\n\nDr. Selin Vardar — Müdür\n(fotoğrafta yeşim taşlı sallantılı küpeler takıyor)\n\nEkrem Vural — Başarşivci\n\nLeyla Aydın — Arşivci\n\nVeysel Erdem — Gece Güvenlik Görevlisi"},
-
-  "C1_E04_NAME": {"en": "Patrol Log", "tr": "Devriye Çizelgesi"},
-  "C1_E04_DESC": {"en": "The night guard's patrol sheet. Every entry is in the same pen, in the same steady hand.", "tr": "Gece güvenlik görevlisinin devriye çizelgesi. Bütün satırlar aynı kalemle, aynı düzgün el yazısıyla yazılmış."},
-  "C1_E04_BODY": {"en": "NIGHT PATROL — Thursday\n\n19:00  Ground floor, reading room\n  All clear.  V.E.\n\n21:00  Stacks B1, B2, B3\n  All clear.  V.E.\n\n23:00  Ground floor, offices\n  All clear.  V.E.\n\n01:00  Stacks B1\n  All clear.  V.E.", "tr": "GECE DEVRİYESİ — Perşembe\n\n19.00  Zemin kat, okuma salonu\n  Sorun yok.  V.E.\n\n21.00  B1, B2, B3 depoları\n  Sorun yok.  V.E.\n\n23.00  Zemin kat, odalar\n  Sorun yok.  V.E.\n\n01.00  B1 deposu\n  Sorun yok.  V.E."},
-
-  "C1_E05_NAME": {"en": "Betting Slip", "tr": "Bahis Kuponu"},
-  "C1_E05_DESC": {"en": "A crumpled slip from the bin beside the security desk. The betting shop is across the street.", "tr": "Güvenlik masasının yanındaki çöp kutusundan çıkan buruşuk bir kupon. Bayi tam karşı kaldırımda."},
-  "C1_E05_BODY": {"en": "ŞANSLI ÇAPA\nBetting shop — Rıhtım Street No. 12\n\nThursday      21:07\nCounter 2\n\n3 matches — combined\nStake: 200\n\nKeep this slip. No slip, no payout.", "tr": "ŞANSLI ÇAPA\nBahis bayii — Rıhtım Caddesi No: 12\n\nPerşembe      21.07\nGişe 2\n\n3 maç — kombine\nYatırılan: 200\n\nKuponunuzu saklayınız. Kuponsuz ödeme yapılmaz."},
-
-  "C1_E06_NAME": {"en": "Car Park Barrier Log", "tr": "Otopark Bariyer Kaydı"},
-  "C1_E06_DESC": {"en": "The staff car park barrier reads number plates and records every car on its own, whether or not anyone is at the desk.", "tr": "Personel otoparkının bariyeri plakaları okuyor ve masada kimse olsa da olmasa da her aracı kendiliğinden kaydediyor."},
-  "C1_E06_BODY": {"en": "STAFF CAR PARK — BARRIER\nThursday, after 18:00\n\n18:34  OUT   82 KL 4471\n20:52  IN    82 KL 4471\n21:34  OUT   82 KL 4471\n\nRegistered plates\n82 KL 4471  —  VARDAR S.\n82 AR 0963  —  VURAL E. (not moved)", "tr": "PERSONEL OTOPARKI — BARİYER\nPerşembe, 18.00 sonrası\n\n18.34  ÇIKIŞ  82 KL 4471\n20.52  GİRİŞ  82 KL 4471\n21.34  ÇIKIŞ  82 KL 4471\n\nKayıtlı plakalar\n82 KL 4471  —  VARDAR S.\n82 AR 0963  —  VURAL E. (hareket yok)"},
-
-  "C1_E15_NAME": {"en": "Morning Newspaper", "tr": "Sabah Gazetesi"},
-  "C1_E15_DESC": {"en": "Today's Karaliman Postası from the rack by the door. The front page covers last night's charity dinner.", "tr": "Kapının yanındaki standdan bugünün Karaliman Postası. Birinci sayfada dün geceki yardım yemeği var."},
-  "C1_E15_BODY": {"en": "KARALİMAN POSTASI — Friday\n\nARAS PROMISES A NEW WATERFRONT\n\nDeputy Mayor Demir Aras was guest of honour at the Liman Kulübü charity dinner last night. Guests sat down at 20:00 and the evening ran until 23:00.\n\nPhoto: Aras during his speech. The clock on the wall behind him reads 21:05.", "tr": "KARALİMAN POSTASI — Cuma\n\nARAS'TAN YENİ SAHİL SÖZÜ\n\nBelediye Başkan Yardımcısı Demir Aras dün gece Liman Kulübü'ndeki yardım yemeğinin onur konuğuydu. Davetliler 20.00'de sofraya oturdu, gece 23.00'e kadar sürdü.\n\nFotoğraf: Aras konuşma yaparken. Arkasındaki duvar saati 21.05'i gösteriyor."},
-
-  "C1_T_ERDEM_1": {"en": "A quiet night. After the deputy mayor left, it was only him in the lobby. He says he was at his desk or on patrol the whole time.", "tr": "Sakin bir geceymiş. Başkan yardımcısı gittikten sonra girişte yalnızca o varmış. Bütün gece ya masasında ya devriyede olduğunu söylüyor."},
-  "C1_T_ERDEM_2": {"en": "Admitted: he left the building at about 20:45 for the betting shop and came back at about 21:40. He wrote the 21:00 patrol entry afterwards.", "tr": "İtiraf etti: 20.45 sularında bahis bayiine gitmek için binadan çıkmış, 21.40 sularında dönmüş. 21.00 devriye kaydını sonradan yazmış."},
-  "C1_T_ERDEM_3": {"en": "When he came back, the side door was closed but not locked. He is sure he had locked it.", "tr": "Döndüğünde yan kapı kapalıymış ama kilitli değilmiş. Kilitlediğinden emin."},
-
-  "C1_ERDEM_INTRO_1": {"en": "You must be the detective. Veysel Erdem, night security. Twenty-two years at this desk and I have never seen a morning like this one.", "tr": "Komiser siz olmalısınız. Veysel Erdem, gece güvenliği. Yirmi iki yıldır bu masadayım, böyle bir sabah görmedim."},
-  "C1_ERDEM_INTRO_2": {"en": "Detective Mira Kaya. I need to go through last night with you, Veysel Bey.", "tr": "Komiser Mira Kaya. Dün geceyi sizinle baştan sona konuşmam gerek, Veysel Bey."},
-  "C1_ERDEM_INTRO_3": {"en": "Ask. I have nothing to hide. Poor Ekrem Bey.", "tr": "Sorun. Saklayacak bir şeyim yok. Zavallı Ekrem Bey."},
-  "C1_ERDEM_RETURN": {"en": "Detective. Something else?", "tr": "Komiserim. Başka bir şey mi var?"},
-
-  "C1_ERDEM_Q_NIGHT": {"en": "Tell me about last night.", "tr": "Dün geceyi anlatın."},
-  "C1_ERDEM_Q_PATROL": {"en": "About your nine o'clock patrol…", "tr": "Saat dokuzdaki devriyeniz hakkında…"},
-  "C1_ERDEM_Q_VURAL": {"en": "What kind of man was Ekrem Vural?", "tr": "Ekrem Vural nasıl biriydi?"},
-  "C1_ERDEM_Q_ABSENCE": {"en": "Go through the time you were away once more.", "tr": "Binada olmadığınız süreyi bir kez daha anlatın."},
-  "C1_ERDEM_Q_BYE": {"en": "That is all for now.", "tr": "Şimdilik bu kadar."},
-
-  "C1_ERDEM_NIGHT_1": {"en": "Quiet. We close to the public at six. The deputy mayor, Demir Bey, came to see Ekrem Bey at about twenty to seven. He did not stay long.", "tr": "Sakindi. Altıda ziyaretçiye kapatıyoruz. Başkan yardımcısı Demir Bey yediye yirmi kala Ekrem Bey'i görmeye geldi. Fazla kalmadı."},
-  "C1_ERDEM_NIGHT_2": {"en": "After that it was me, the rain and the radio. I was at this desk or on my rounds all night.", "tr": "Ondan sonra ben, yağmur, bir de radyo. Bütün gece ya bu masadaydım ya devriyede."},
-  "C1_ERDEM_NIGHT_FIRM": {"en": "Only you? Who else was in the building after seven?", "tr": "Yalnızca siz mi? Yediden sonra binada başka kim vardı?"},
-  "C1_ERDEM_NIGHT_KIND": {"en": "It must have been a hard morning for you.", "tr": "Sizin için zor bir sabah olmalı."},
-  "C1_ERDEM_NIGHT_FIRM_A": {"en": "Ekrem Bey, working late as always. Leyla Hanım went home around half past seven, as far as I know. The Director had left before the visitor even arrived.", "tr": "Ekrem Bey vardı, her zamanki gibi geç saate kadar çalışıyordu. Leyla Hanım bildiğim kadarıyla yedi buçuk gibi evine gitti. Müdür Hanım ziyaretçi gelmeden önce çıkmıştı zaten."},
-  "C1_ERDEM_NIGHT_KIND_A": {"en": "Leyla Hanım found him. I heard her scream from up here. It should have been me who found him. That is my job.", "tr": "Onu Leyla Hanım buldu. Çığlığını buradan duydum. Onu benim bulmam gerekirdi. Benim işim bu."},
-
-  "C1_ERDEM_PATROL_1": {"en": "Your log says you checked the stacks at nine. Including B2.", "tr": "Çizelgenize göre saat dokuzda depoları dolaşmışsınız. B2 dahil."},
-  "C1_ERDEM_PATROL_2": {"en": "Every two hours, top to bottom. At nine I was down in B2 and it was all clear. If he had fallen by then, I would have seen him.", "tr": "İki saatte bir, yukarıdan aşağıya dolaşırım. Dokuzda B2'deydim, bir sorun yoktu. O saatte düşmüş olsaydı görürdüm."},
-  "C1_ERDEM_PATROL_WRONG": {"en": "What has that got to do with my rounds? Do not waste my time, Detective.", "tr": "Bunun benim devriyemle ne ilgisi var? Vaktimi almayın, Komiserim."},
-
-  "C1_ERDEM_CONFESS_1": {"en": "Şanslı Çapa, across the street. Stamped 21:07. It was in the bin beside your desk.", "tr": "Şanslı Çapa, karşı kaldırımdaki bayi. Üzerinde 21.07 yazıyor. Masanızın yanındaki çöp kutusundaydı."},
-  "C1_ERDEM_CONFESS_2": {"en": "…", "tr": "…"},
-  "C1_ERDEM_CONFESS_3": {"en": "All right. I went out at a quarter to nine. I was back by twenty to ten. I wrote the nine o'clock line when I got back. Nothing ever happens here. Nothing ever did.", "tr": "Peki. Dokuza çeyrek kala çıktım. Ona yirmi kala dönmüştüm. Dokuz kaydını dönünce yazdım. Burada hiçbir şey olmaz. Hiç olmamıştı."},
-  "C1_ERDEM_CONFESS_FIRM": {"en": "A man died while your desk was empty.", "tr": "Masanız boşken bir adam öldü."},
-  "C1_ERDEM_CONFESS_KIND": {"en": "I am not after your job. I need to know who could have got in.", "tr": "Derdim sizin işiniz değil. Buraya kimin girmiş olabileceğini bilmem gerek."},
-  "C1_ERDEM_CONFESS_FIRM_A": {"en": "Do you think I do not know that? I will carry it for the rest of my life.", "tr": "Bunu bilmiyor muyum sanıyorsunuz? Ömrümün sonuna kadar taşıyacağım bunu."},
-  "C1_ERDEM_SIDE_DOOR": {"en": "There is one more thing. When I came back, the side door was shut but not locked. I locked it at six. I am certain of it.", "tr": "Bir şey daha var. Döndüğümde yan kapı kapalıydı ama kilitli değildi. Altıda ben kilitlemiştim. Bundan eminim."},
-  "C1_ERDEM_CONFESS_KIND_A": {"en": "I do not need your pity, Detective. But I will help you.", "tr": "Acımanıza ihtiyacım yok, Komiserim. Ama size yardım edeceğim."},
-  "C1_ERDEM_TERMINAL": {"en": "The staff car park has a barrier that reads number plates. It records every car whether I am here or not. The terminal is on my desk. I have unlocked it for you.", "tr": "Personel otoparkında plaka okuyan bir bariyer var. Ben burada olsam da olmasam da her aracı kaydeder. Terminali masamda. Sizin için kilidini açtım."},
-  "C1_ERDEM_ABSENCE_A": {"en": "Out at a quarter to nine, back at twenty to ten. I saw nobody come or go. The car park terminal will tell you more than I can.", "tr": "Dokuza çeyrek kala çıktım, ona yirmi kala döndüm. Giren çıkan kimseyi görmedim. Otopark terminali size benden fazlasını söyler."},
-
-  "C1_ERDEM_VURAL_1": {"en": "A careful man. He knew every box in this building. You could ask him for a file from forty years ago and he would walk straight to it.", "tr": "Titiz bir adamdı. Bu binadaki her kutuyu bilirdi. Kırk yıl öncesinin dosyasını sorsanız doğruca gidip bulurdu."},
-  "C1_ERDEM_VURAL_2": {"en": "This week he was on edge, though. He asked me twice whether the cameras in the stacks record anything. They do not. They have not worked for years.", "tr": "Ama bu hafta tedirgindi. Depolardaki kameralar kayıt yapıyor mu diye iki kere sordu. Yapmıyor. Yıllardır çalışmıyorlar."}
+  "C1_TITLE": {
+    "en": "File 47-B",
+    "tr": "Dosya 47-B"
+  },
+  "C1_INTRO_1": {
+    "en": "Friday, 08:10.\nKaraliman Municipal Archive.",
+    "tr": "Cuma, 08.10.\nKaraliman Belediye Arşivi."
+  },
+  "C1_INTRO_2": {
+    "en": "Senior archivist Ekrem Vural was found dead this morning at the foot of the staircase in basement stack B2. The first officers on the scene are calling it a fall.",
+    "tr": "Başarşivci Ekrem Vural bu sabah B2 bodrum deposundaki merdivenin dibinde ölü bulundu. Olay yerine ilk gelen ekipler bunun bir düşme olduğunu söylüyor."
+  },
+  "C1_INTRO_3": {
+    "en": "But the file he was working on is missing.\n\nThat is why they called you, Detective Kaya.",
+    "tr": "Ama üzerinde çalıştığı dosya ortada yok.\n\nSizi bu yüzden çağırdılar, Komiser Kaya."
+  },
+  "C1_NAME_MIRA": {
+    "en": "Mira Kaya",
+    "tr": "Mira Kaya"
+  },
+  "C1_NAME_ERDEM": {
+    "en": "Veysel Erdem",
+    "tr": "Veysel Erdem"
+  },
+  "C1_LOC_LOBBY": {
+    "en": "Archive Lobby",
+    "tr": "Arşiv Girişi"
+  },
+  "C1_LOBBY_DOOR": {
+    "en": "The main entrance. It is still raining. After six in the evening this door only opens from the button on the security desk.",
+    "tr": "Ana giriş. Yağmur hâlâ dinmedi. Akşam altıdan sonra bu kapı yalnızca güvenlik masasındaki düğmeyle açılıyor."
+  },
+  "C1_LOBBY_CLOCK": {
+    "en": "A quarter past eight. The archive will stay closed to the public today.",
+    "tr": "Saat sekizi çeyrek geçiyor. Arşiv bugün ziyaretçiye kapalı kalacak."
+  },
+  "C1_LOBBY_LAMP": {
+    "en": "The desk lamp is still warm. It has been on all night.",
+    "tr": "Masa lambası hâlâ sıcak. Bütün gece açık kalmış."
+  },
+  "C1_LOBBY_TERMINAL_LOCKED": {
+    "en": "A terminal for the staff car park barrier, locked with the guard's password. Veysel will not open it for me while he is still sticking to his story.",
+    "tr": "Personel otoparkının bariyer terminali, güvenlik görevlisinin şifresiyle kilitli. Veysel hikâyesinde direndiği sürece bunu benim için açmaz."
+  },
+  "C1_LOBBY_STACKS_DOOR": {
+    "en": "The stairs down to the stacks. The forensics team is still working on B2. I will go down once they clear the scene.",
+    "tr": "Depolara inen merdiven. Olay yeri inceleme ekibi B2'de hâlâ çalışıyor. İşleri bitince aşağı ineceğim."
+  },
+  "C1_E01_NAME": {
+    "en": "Visitor Log",
+    "tr": "Ziyaretçi Defteri"
+  },
+  "C1_E01_DESC": {
+    "en": "The handwritten visitor register on the security desk. One visitor came after closing time.",
+    "tr": "Güvenlik masasındaki el yazısıyla tutulan ziyaretçi defteri. Kapanıştan sonra tek bir ziyaretçi gelmiş."
+  },
+  "C1_E01_BODY": {
+    "en": "KARALİMAN MUNICIPAL ARCHIVE\nVISITOR REGISTER — Thursday\n\n09:15  R. Tekin — reading room\n  out 11:40\n11:02  School group (14) — tour\n  out 12:10\n14:30  N. Çelik — land registry copies\n  out 15:05\n\n— closed to the public 18:00 —\n\n18:40  D. Aras, Deputy Mayor\n  to see: E. Vural\n  out 19:05",
+    "tr": "KARALİMAN BELEDİYE ARŞİVİ\nZİYARETÇİ DEFTERİ — Perşembe\n\n09.15  R. Tekin — okuma salonu\n  çıkış 11.40\n11.02  Okul grubu (14) — gezi\n  çıkış 12.10\n14.30  N. Çelik — tapu kayıt örnekleri\n  çıkış 15.05\n\n— 18.00 ziyaretçiye kapanış —\n\n18.40  D. Aras, Belediye Başkan Yardımcısı\n  görüşülen: E. Vural\n  çıkış 19.05"
+  },
+  "C1_E02_NAME": {
+    "en": "Key-Card Log",
+    "tr": "Kartlı Geçiş Kaydı"
+  },
+  "C1_E02_DESC": {
+    "en": "Printout from the door system. Staff badge in and out; the main door can also be released from the security desk.",
+    "tr": "Kapı sisteminden alınan döküm. Personel kartla girip çıkıyor; ana kapı güvenlik masasından da açılabiliyor."
+  },
+  "C1_E02_BODY": {
+    "en": "DOOR SYSTEM — Thursday / Friday\n\n18:32  VARDAR S.   main door   OUT\n18:40  main door — released from desk\n19:05  main door — released from desk\n20:44  main door — released from desk\n21:26  AYDIN L.    side door   OUT\n21:41  main door — released from desk\n07:02  AYDIN L.    main door   IN\n\nNo OUT record: VURAL E.",
+    "tr": "KAPI SİSTEMİ — Perşembe / Cuma\n\n18.32  VARDAR S.   ana kapı   ÇIKIŞ\n18.40  ana kapı — masadan açıldı\n19.05  ana kapı — masadan açıldı\n20.44  ana kapı — masadan açıldı\n21.26  AYDIN L.    yan kapı   ÇIKIŞ\n21.41  ana kapı — masadan açıldı\n07.02  AYDIN L.    ana kapı   GİRİŞ\n\nÇıkış kaydı yok: VURAL E."
+  },
+  "C1_E03_NAME": {
+    "en": "Staff Portraits",
+    "tr": "Personel Fotoğrafları"
+  },
+  "C1_E03_DESC": {
+    "en": "The staff board in the lobby. Four people work in this building.",
+    "tr": "Girişteki personel panosu. Bu binada dört kişi çalışıyor."
+  },
+  "C1_E03_BODY": {
+    "en": "OUR STAFF\n\nDr. Selin Vardar — Director\n(photographed wearing jade drop earrings)\n\nEkrem Vural — Senior Archivist\n\nLeyla Aydın — Archivist\n\nVeysel Erdem — Night Security",
+    "tr": "PERSONELİMİZ\n\nDr. Selin Vardar — Müdür\n(fotoğrafta yeşim taşlı sallantılı küpeler takıyor)\n\nEkrem Vural — Başarşivci\n\nLeyla Aydın — Arşivci\n\nVeysel Erdem — Gece Güvenlik Görevlisi"
+  },
+  "C1_E04_NAME": {
+    "en": "Patrol Log",
+    "tr": "Devriye Çizelgesi"
+  },
+  "C1_E04_DESC": {
+    "en": "The night guard's patrol sheet. Every entry is in the same pen, in the same steady hand.",
+    "tr": "Gece güvenlik görevlisinin devriye çizelgesi. Bütün satırlar aynı kalemle, aynı düzgün el yazısıyla yazılmış."
+  },
+  "C1_E04_BODY": {
+    "en": "NIGHT PATROL — Thursday\n\n19:00  Ground floor, reading room\n  All clear.  V.E.\n\n21:00  Stacks B1, B2, B3\n  All clear.  V.E.\n\n23:00  Ground floor, offices\n  All clear.  V.E.\n\n01:00  Stacks B1\n  All clear.  V.E.",
+    "tr": "GECE DEVRİYESİ — Perşembe\n\n19.00  Zemin kat, okuma salonu\n  Sorun yok.  V.E.\n\n21.00  B1, B2, B3 depoları\n  Sorun yok.  V.E.\n\n23.00  Zemin kat, odalar\n  Sorun yok.  V.E.\n\n01.00  B1 deposu\n  Sorun yok.  V.E."
+  },
+  "C1_E05_NAME": {
+    "en": "Betting Slip",
+    "tr": "Bahis Kuponu"
+  },
+  "C1_E05_DESC": {
+    "en": "A crumpled slip from the bin beside the security desk. The betting shop is across the street.",
+    "tr": "Güvenlik masasının yanındaki çöp kutusundan çıkan buruşuk bir kupon. Bayi tam karşı kaldırımda."
+  },
+  "C1_E05_BODY": {
+    "en": "ŞANSLI ÇAPA\nBetting shop — Rıhtım Street No. 12\n\nThursday      21:07\nCounter 2\n\n3 matches — combined\nStake: 200\n\nKeep this slip. No slip, no payout.",
+    "tr": "ŞANSLI ÇAPA\nBahis bayii — Rıhtım Caddesi No: 12\n\nPerşembe      21.07\nGişe 2\n\n3 maç — kombine\nYatırılan: 200\n\nKuponunuzu saklayınız. Kuponsuz ödeme yapılmaz."
+  },
+  "C1_E06_NAME": {
+    "en": "Car Park Barrier Log",
+    "tr": "Otopark Bariyer Kaydı"
+  },
+  "C1_E06_DESC": {
+    "en": "The staff car park barrier reads number plates and records every car on its own, whether or not anyone is at the desk.",
+    "tr": "Personel otoparkının bariyeri plakaları okuyor ve masada kimse olsa da olmasa da her aracı kendiliğinden kaydediyor."
+  },
+  "C1_E06_BODY": {
+    "en": "STAFF CAR PARK — BARRIER\nThursday, after 18:00\n\n18:34  OUT   82 KL 4471\n20:52  IN    82 KL 4471\n21:34  OUT   82 KL 4471\n\nRegistered plates\n82 KL 4471  —  VARDAR S.\n82 AR 0963  —  VURAL E. (not moved)",
+    "tr": "PERSONEL OTOPARKI — BARİYER\nPerşembe, 18.00 sonrası\n\n18.34  ÇIKIŞ  82 KL 4471\n20.52  GİRİŞ  82 KL 4471\n21.34  ÇIKIŞ  82 KL 4471\n\nKayıtlı plakalar\n82 KL 4471  —  VARDAR S.\n82 AR 0963  —  VURAL E. (hareket yok)"
+  },
+  "C1_E15_NAME": {
+    "en": "Morning Newspaper",
+    "tr": "Sabah Gazetesi"
+  },
+  "C1_E15_DESC": {
+    "en": "Today's Karaliman Postası from the rack by the door. The front page covers last night's charity dinner.",
+    "tr": "Kapının yanındaki standdan bugünün Karaliman Postası. Birinci sayfada dün geceki yardım yemeği var."
+  },
+  "C1_E15_BODY": {
+    "en": "KARALİMAN POSTASI — Friday\n\nARAS PROMISES A NEW WATERFRONT\n\nDeputy Mayor Demir Aras was guest of honour at the Liman Kulübü charity dinner last night. Guests sat down at 20:00 and the evening ran until 23:00.\n\nPhoto: Aras during his speech. The clock on the wall behind him reads 21:05.",
+    "tr": "KARALİMAN POSTASI — Cuma\n\nARAS'TAN YENİ SAHİL SÖZÜ\n\nBelediye Başkan Yardımcısı Demir Aras dün gece Liman Kulübü'ndeki yardım yemeğinin onur konuğuydu. Davetliler 20.00'de sofraya oturdu, gece 23.00'e kadar sürdü.\n\nFotoğraf: Aras konuşma yaparken. Arkasındaki duvar saati 21.05'i gösteriyor."
+  },
+  "C1_T_ERDEM_1": {
+    "en": "A quiet night. After the deputy mayor left, it was only him in the lobby. He says he was at his desk or on patrol the whole time.",
+    "tr": "Sakin bir geceymiş. Başkan yardımcısı gittikten sonra girişte yalnızca o varmış. Bütün gece ya masasında ya devriyede olduğunu söylüyor."
+  },
+  "C1_T_ERDEM_2": {
+    "en": "Admitted: he left the building at about 20:45 for the betting shop and came back at about 21:40. He wrote the 21:00 patrol entry afterwards.",
+    "tr": "İtiraf etti: 20.45 sularında bahis bayiine gitmek için binadan çıkmış, 21.40 sularında dönmüş. 21.00 devriye kaydını sonradan yazmış."
+  },
+  "C1_T_ERDEM_3": {
+    "en": "When he came back, the side door was closed but not locked. He is sure he had locked it.",
+    "tr": "Döndüğünde yan kapı kapalıymış ama kilitli değilmiş. Kilitlediğinden emin."
+  },
+  "C1_ERDEM_INTRO_1": {
+    "en": "You must be the detective. Veysel Erdem, night security. Twenty-two years at this desk and I have never seen a morning like this one.",
+    "tr": "Komiser siz olmalısınız. Veysel Erdem, gece güvenliği. Yirmi iki yıldır bu masadayım, böyle bir sabah görmedim."
+  },
+  "C1_ERDEM_INTRO_2": {
+    "en": "Detective Mira Kaya. I need to go through last night with you, Veysel Bey.",
+    "tr": "Komiser Mira Kaya. Dün geceyi sizinle baştan sona konuşmam gerek, Veysel Bey."
+  },
+  "C1_ERDEM_INTRO_3": {
+    "en": "Ask. I have nothing to hide. Poor Ekrem Bey.",
+    "tr": "Sorun. Saklayacak bir şeyim yok. Zavallı Ekrem Bey."
+  },
+  "C1_ERDEM_RETURN": {
+    "en": "Detective. Something else?",
+    "tr": "Komiserim. Başka bir şey mi var?"
+  },
+  "C1_ERDEM_Q_NIGHT": {
+    "en": "Tell me about last night.",
+    "tr": "Dün geceyi anlatın."
+  },
+  "C1_ERDEM_Q_PATROL": {
+    "en": "About your nine o'clock patrol…",
+    "tr": "Saat dokuzdaki devriyeniz hakkında…"
+  },
+  "C1_ERDEM_Q_VURAL": {
+    "en": "What kind of man was Ekrem Vural?",
+    "tr": "Ekrem Vural nasıl biriydi?"
+  },
+  "C1_ERDEM_Q_ABSENCE": {
+    "en": "Go through the time you were away once more.",
+    "tr": "Binada olmadığınız süreyi bir kez daha anlatın."
+  },
+  "C1_ERDEM_Q_BYE": {
+    "en": "That is all for now.",
+    "tr": "Şimdilik bu kadar."
+  },
+  "C1_ERDEM_NIGHT_1": {
+    "en": "Quiet. We close to the public at six. The deputy mayor, Demir Bey, came to see Ekrem Bey at about twenty to seven. He did not stay long.",
+    "tr": "Sakindi. Altıda ziyaretçiye kapatıyoruz. Başkan yardımcısı Demir Bey yediye yirmi kala Ekrem Bey'i görmeye geldi. Fazla kalmadı."
+  },
+  "C1_ERDEM_NIGHT_2": {
+    "en": "After that it was me, the rain and the radio. I was at this desk or on my rounds all night.",
+    "tr": "Ondan sonra ben, yağmur, bir de radyo. Bütün gece ya bu masadaydım ya devriyede."
+  },
+  "C1_ERDEM_NIGHT_FIRM": {
+    "en": "Only you? Who else was in the building after seven?",
+    "tr": "Yalnızca siz mi? Yediden sonra binada başka kim vardı?"
+  },
+  "C1_ERDEM_NIGHT_KIND": {
+    "en": "It must have been a hard morning for you.",
+    "tr": "Sizin için zor bir sabah olmalı."
+  },
+  "C1_ERDEM_NIGHT_FIRM_A": {
+    "en": "Ekrem Bey, working late as always. Leyla Hanım went home around half past seven, as far as I know. The Director had left before the visitor even arrived.",
+    "tr": "Ekrem Bey vardı, her zamanki gibi geç saate kadar çalışıyordu. Leyla Hanım bildiğim kadarıyla yedi buçuk gibi evine gitti. Müdür Hanım ziyaretçi gelmeden önce çıkmıştı zaten."
+  },
+  "C1_ERDEM_NIGHT_KIND_A": {
+    "en": "Leyla Hanım found him. I heard her scream from up here. It should have been me who found him. That is my job.",
+    "tr": "Onu Leyla Hanım buldu. Çığlığını buradan duydum. Onu benim bulmam gerekirdi. Benim işim bu."
+  },
+  "C1_ERDEM_PATROL_1": {
+    "en": "Your log says you checked the stacks at nine. Including B2.",
+    "tr": "Çizelgenize göre saat dokuzda depoları dolaşmışsınız. B2 dahil."
+  },
+  "C1_ERDEM_PATROL_2": {
+    "en": "Every two hours, top to bottom. At nine I was down in B2 and it was all clear. If he had fallen by then, I would have seen him.",
+    "tr": "İki saatte bir, yukarıdan aşağıya dolaşırım. Dokuzda B2'deydim, bir sorun yoktu. O saatte düşmüş olsaydı görürdüm."
+  },
+  "C1_ERDEM_PATROL_WRONG": {
+    "en": "What has that got to do with my rounds? Do not waste my time, Detective.",
+    "tr": "Bunun benim devriyemle ne ilgisi var? Vaktimi almayın, Komiserim."
+  },
+  "C1_ERDEM_CONFESS_1": {
+    "en": "Şanslı Çapa, across the street. Stamped 21:07. It was in the bin beside your desk.",
+    "tr": "Şanslı Çapa, karşı kaldırımdaki bayi. Üzerinde 21.07 yazıyor. Masanızın yanındaki çöp kutusundaydı."
+  },
+  "C1_ERDEM_CONFESS_2": {
+    "en": "…",
+    "tr": "…"
+  },
+  "C1_ERDEM_CONFESS_3": {
+    "en": "All right. I went out at a quarter to nine. I was back by twenty to ten. I wrote the nine o'clock line when I got back. Nothing ever happens here. Nothing ever did.",
+    "tr": "Peki. Dokuza çeyrek kala çıktım. Ona yirmi kala dönmüştüm. Dokuz kaydını dönünce yazdım. Burada hiçbir şey olmaz. Hiç olmamıştı."
+  },
+  "C1_ERDEM_CONFESS_FIRM": {
+    "en": "A man died while your desk was empty.",
+    "tr": "Masanız boşken bir adam öldü."
+  },
+  "C1_ERDEM_CONFESS_KIND": {
+    "en": "I am not after your job. I need to know who could have got in.",
+    "tr": "Derdim sizin işiniz değil. Buraya kimin girmiş olabileceğini bilmem gerek."
+  },
+  "C1_ERDEM_CONFESS_FIRM_A": {
+    "en": "Do you think I do not know that? I will carry it for the rest of my life.",
+    "tr": "Bunu bilmiyor muyum sanıyorsunuz? Ömrümün sonuna kadar taşıyacağım bunu."
+  },
+  "C1_ERDEM_SIDE_DOOR": {
+    "en": "There is one more thing. When I came back, the side door was shut but not locked. I locked it at six. I am certain of it.",
+    "tr": "Bir şey daha var. Döndüğümde yan kapı kapalıydı ama kilitli değildi. Altıda ben kilitlemiştim. Bundan eminim."
+  },
+  "C1_ERDEM_CONFESS_KIND_A": {
+    "en": "I do not need your pity, Detective. But I will help you.",
+    "tr": "Acımanıza ihtiyacım yok, Komiserim. Ama size yardım edeceğim."
+  },
+  "C1_ERDEM_TERMINAL": {
+    "en": "The staff car park has a barrier that reads number plates. It records every car whether I am here or not. The terminal is on my desk. I have unlocked it for you.",
+    "tr": "Personel otoparkında plaka okuyan bir bariyer var. Ben burada olsam da olmasam da her aracı kaydeder. Terminali masamda. Sizin için kilidini açtım."
+  },
+  "C1_ERDEM_ABSENCE_A": {
+    "en": "Out at a quarter to nine, back at twenty to ten. I saw nobody come or go. The car park terminal will tell you more than I can.",
+    "tr": "Dokuza çeyrek kala çıktım, ona yirmi kala döndüm. Giren çıkan kimseyi görmedim. Otopark terminali size benden fazlasını söyler."
+  },
+  "C1_ERDEM_VURAL_1": {
+    "en": "A careful man. He knew every box in this building. You could ask him for a file from forty years ago and he would walk straight to it.",
+    "tr": "Titiz bir adamdı. Bu binadaki her kutuyu bilirdi. Kırk yıl öncesinin dosyasını sorsanız doğruca gidip bulurdu."
+  },
+  "C1_ERDEM_VURAL_2": {
+    "en": "This week he was on edge, though. He asked me twice whether the cameras in the stacks record anything. They do not. They have not worked for years.",
+    "tr": "Ama bu hafta tedirgindi. Depolardaki kameralar kayıt yapıyor mu diye iki kere sordu. Yapmıyor. Yıllardır çalışmıyorlar."
+  },
+  "C1_HINT_TERMINAL": {
+    "en": "The last piece of evidence is on the locked terminal. Veysel's patrol log says he was in B2 at nine. Ask him about his nine o'clock patrol, and when he repeats the claim, tap Present Evidence and show what proves he was somewhere else.",
+    "tr": "Son delil kilitli terminalde. Veysel'in devriye çizelgesine göre saat dokuzda B2'deymiş. Ona saat dokuzdaki devriyesini sorun; iddiasını tekrarladığında Delil Göster'e dokunun ve başka bir yerde olduğunu kanıtlayan delili gösterin."
+  }
 }

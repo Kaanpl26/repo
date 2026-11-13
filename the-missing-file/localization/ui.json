@@ -1,38 +1,158 @@
 {
-  "LANG_NAME_EN": {"en": "English", "tr": "English"},
-  "LANG_NAME_TR": {"en": "Türkçe", "tr": "Türkçe"},
-  "GAME_TITLE": {"en": "The Missing File", "tr": "Kayıp Dosya"},
-  "GAME_SUBTITLE": {"en": "A detective mystery", "tr": "Bir dedektiflik hikâyesi"},
-  "MENU_CONTINUE": {"en": "Continue", "tr": "Devam Et"},
-  "MENU_NEW_GAME": {"en": "New Game", "tr": "Yeni Oyun"},
-  "MENU_SETTINGS": {"en": "Settings", "tr": "Ayarlar"},
-  "MENU_OVERWRITE_WARNING": {"en": "Starting a new game will erase your current investigation. Continue?", "tr": "Yeni oyuna başlarsanız mevcut soruşturmanız silinir. Devam edilsin mi?"},
-  "MENU_OVERWRITE_CONFIRM": {"en": "Start Over", "tr": "Baştan Başla"},
-  "COMMON_CANCEL": {"en": "Cancel", "tr": "Vazgeç"},
-  "COMMON_CLOSE": {"en": "Close", "tr": "Kapat"},
-  "SETTINGS_TITLE": {"en": "Settings", "tr": "Ayarlar"},
-  "SETTINGS_LANGUAGE": {"en": "Language", "tr": "Dil"},
-  "SETTINGS_TEXT_SIZE": {"en": "Text size", "tr": "Yazı boyutu"},
-  "SETTINGS_TEXT_SMALL": {"en": "Small", "tr": "Küçük"},
-  "SETTINGS_TEXT_NORMAL": {"en": "Normal", "tr": "Normal"},
-  "SETTINGS_TEXT_LARGE": {"en": "Large", "tr": "Büyük"},
-  "HUD_MENU": {"en": "Menu", "tr": "Menü"},
-  "HUD_CASE_FILE": {"en": "Case File", "tr": "Dava Dosyası"},
-  "HUD_EVIDENCE_COUNT": {"en": "Evidence %d/%d", "tr": "Delil %d/%d"},
-  "TOAST_EVIDENCE_ADDED": {"en": "Added to the case file", "tr": "Dava dosyasına eklendi"},
-  "EVIDENCE_NEW": {"en": "New evidence", "tr": "Yeni delil"},
-  "EVIDENCE_ADD": {"en": "Add to Case File", "tr": "Dosyaya Ekle"},
-  "DLG_TAP_TO_CONTINUE": {"en": "Tap to continue", "tr": "Devam etmek için dokunun"},
-  "DLG_PRESENT": {"en": "Present Evidence", "tr": "Delil Göster"},
-  "DLG_PRESENT_TITLE": {"en": "Which evidence contradicts this?", "tr": "Bu ifadeyi hangi delil çürütüyor?"},
-  "CASEFILE_TITLE": {"en": "Case File", "tr": "Dava Dosyası"},
-  "CASEFILE_EVIDENCE": {"en": "Evidence", "tr": "Deliller"},
-  "CASEFILE_TESTIMONY": {"en": "Testimony", "tr": "İfadeler"},
-  "CASEFILE_NO_EVIDENCE": {"en": "Nothing collected yet. Tap things in the scene to examine them.", "tr": "Henüz delil toplanmadı. İncelemek için sahnedeki nesnelere dokunun."},
-  "CASEFILE_NO_TESTIMONY": {"en": "No statements recorded yet.", "tr": "Henüz kayda geçen ifade yok."},
-  "PAUSE_TITLE": {"en": "Paused", "tr": "Duraklatıldı"},
-  "PAUSE_RESUME": {"en": "Resume", "tr": "Devam Et"},
-  "PAUSE_MAIN_MENU": {"en": "Main Menu", "tr": "Ana Menü"},
-  "PAUSE_AUTOSAVE_NOTE": {"en": "Your progress is saved automatically.", "tr": "İlerlemeniz otomatik olarak kaydedilir."},
-  "PROTOTYPE_DONE": {"en": "You have found everything in this prototype build.\n\nThe rest of the archive opens in the next milestone.", "tr": "Bu prototip sürümündeki her şeyi buldunuz.\n\nArşivin geri kalanı bir sonraki aşamada açılacak."}
+  "LANG_NAME_EN": {
+    "en": "English",
+    "tr": "English"
+  },
+  "LANG_NAME_TR": {
+    "en": "Türkçe",
+    "tr": "Türkçe"
+  },
+  "GAME_TITLE": {
+    "en": "The Missing File",
+    "tr": "Kayıp Dosya"
+  },
+  "GAME_SUBTITLE": {
+    "en": "A detective mystery",
+    "tr": "Bir dedektiflik hikâyesi"
+  },
+  "MENU_CONTINUE": {
+    "en": "Continue",
+    "tr": "Devam Et"
+  },
+  "MENU_NEW_GAME": {
+    "en": "New Game",
+    "tr": "Yeni Oyun"
+  },
+  "MENU_SETTINGS": {
+    "en": "Settings",
+    "tr": "Ayarlar"
+  },
+  "MENU_OVERWRITE_WARNING": {
+    "en": "Starting a new game will erase your current investigation. Continue?",
+    "tr": "Yeni oyuna başlarsanız mevcut soruşturmanız silinir. Devam edilsin mi?"
+  },
+  "MENU_OVERWRITE_CONFIRM": {
+    "en": "Start Over",
+    "tr": "Baştan Başla"
+  },
+  "COMMON_CANCEL": {
+    "en": "Cancel",
+    "tr": "Vazgeç"
+  },
+  "COMMON_CLOSE": {
+    "en": "Close",
+    "tr": "Kapat"
+  },
+  "SETTINGS_TITLE": {
+    "en": "Settings",
+    "tr": "Ayarlar"
+  },
+  "SETTINGS_LANGUAGE": {
+    "en": "Language",
+    "tr": "Dil"
+  },
+  "SETTINGS_TEXT_SIZE": {
+    "en": "Text size",
+    "tr": "Yazı boyutu"
+  },
+  "SETTINGS_TEXT_SMALL": {
+    "en": "Small",
+    "tr": "Küçük"
+  },
+  "SETTINGS_TEXT_NORMAL": {
+    "en": "Normal",
+    "tr": "Normal"
+  },
+  "SETTINGS_TEXT_LARGE": {
+    "en": "Large",
+    "tr": "Büyük"
+  },
+  "HUD_MENU": {
+    "en": "Menu",
+    "tr": "Menü"
+  },
+  "HUD_CASE_FILE": {
+    "en": "Case File",
+    "tr": "Dava Dosyası"
+  },
+  "HUD_EVIDENCE_COUNT": {
+    "en": "Evidence %d/%d",
+    "tr": "Delil %d/%d"
+  },
+  "TOAST_EVIDENCE_ADDED": {
+    "en": "Added to the case file",
+    "tr": "Dava dosyasına eklendi"
+  },
+  "EVIDENCE_NEW": {
+    "en": "New evidence",
+    "tr": "Yeni delil"
+  },
+  "EVIDENCE_ADD": {
+    "en": "Add to Case File",
+    "tr": "Dosyaya Ekle"
+  },
+  "DLG_TAP_TO_CONTINUE": {
+    "en": "Tap to continue",
+    "tr": "Devam etmek için dokunun"
+  },
+  "DLG_PRESENT": {
+    "en": "Present Evidence",
+    "tr": "Delil Göster"
+  },
+  "DLG_PRESENT_TITLE": {
+    "en": "Which evidence contradicts this?",
+    "tr": "Bu ifadeyi hangi delil çürütüyor?"
+  },
+  "CASEFILE_TITLE": {
+    "en": "Case File",
+    "tr": "Dava Dosyası"
+  },
+  "CASEFILE_EVIDENCE": {
+    "en": "Evidence",
+    "tr": "Deliller"
+  },
+  "CASEFILE_TESTIMONY": {
+    "en": "Testimony",
+    "tr": "İfadeler"
+  },
+  "CASEFILE_NO_EVIDENCE": {
+    "en": "Nothing collected yet. Tap things in the scene to examine them.",
+    "tr": "Henüz delil toplanmadı. İncelemek için sahnedeki nesnelere dokunun."
+  },
+  "CASEFILE_NO_TESTIMONY": {
+    "en": "No statements recorded yet.",
+    "tr": "Henüz kayda geçen ifade yok."
+  },
+  "PAUSE_TITLE": {
+    "en": "Paused",
+    "tr": "Duraklatıldı"
+  },
+  "PAUSE_RESUME": {
+    "en": "Resume",
+    "tr": "Devam Et"
+  },
+  "PAUSE_MAIN_MENU": {
+    "en": "Main Menu",
+    "tr": "Ana Menü"
+  },
+  "PAUSE_AUTOSAVE_NOTE": {
+    "en": "Your progress is saved automatically.",
+    "tr": "İlerlemeniz otomatik olarak kaydedilir."
+  },
+  "PROTOTYPE_DONE": {
+    "en": "You have found everything in this prototype build.\n\nThe rest of the archive opens in the next milestone.",
+    "tr": "Bu prototip sürümündeki her şeyi buldunuz.\n\nArşivin geri kalanı bir sonraki aşamada açılacak."
+  },
+  "HUD_HINT": {
+    "en": "Hint",
+    "tr": "İpucu"
+  },
+  "HINT_NOTHING_HERE": {
+    "en": "There is nothing more to find here for now.",
+    "tr": "Şimdilik burada bulunacak başka bir şey yok."
+  },
+  "TUTORIAL_LOOK": {
+    "en": "Drag left and right to look around the room. Tap anything that looks important. Stuck? Tap Hint.",
+    "tr": "Odaya göz atmak için sağa sola sürükleyin. Önemli görünen her şeye dokunun. Takıldınız mı? İpucu'na dokunun."
+  }
 }
