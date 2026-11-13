@@ -61,8 +61,11 @@ func _ready() -> void:
 	GameState.testimony_added.connect(func(_id): _show_toast("TOAST_TESTIMONY"))
 	_refresh_counter()
 
+	Audio.ambience(_loc.get("ambience", ""))
 	if not GameState.has_flag("intro_seen"):
 		_play_intro()
+	else:
+		_enter_location()
 
 
 # ---------------------------------------------------------------- layout
@@ -193,6 +196,11 @@ func _build_hud() -> void:
 	hint_btn.custom_minimum_size = Vector2(220, 110)
 	hint_btn.pressed.connect(_on_hint)
 	bottom.add_child(hint_btn)
+	var map_btn := UI.button("HUD_MAP")
+	map_btn.size_flags_vertical = Control.SIZE_SHRINK_END
+	map_btn.custom_minimum_size = Vector2(200, 110)
+	map_btn.pressed.connect(_open_map)
+	bottom.add_child(map_btn)
 	var board_btn := UI.button("HUD_BOARD")
 	board_btn.size_flags_vertical = Control.SIZE_SHRINK_END
 	board_btn.custom_minimum_size = Vector2(220, 110)
@@ -222,9 +230,13 @@ func _refresh_counter() -> void:
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_TRANSLATION_CHANGED and _counter:
 		_refresh_counter()
+	elif what == NOTIFICATION_WM_GO_BACK_REQUEST:
+		_notification_back()
 
 
 func _show_caption(key: String, seconds: float = 6.0) -> void:
+	if Loc.has_key(key):
+		_caption.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_INHERIT
 	_caption.text = key
 	_caption_panel.modulate.a = 1.0
 	_caption_timer.start(seconds)
@@ -245,6 +257,7 @@ func _show_toast(key: String) -> void:
 # ---------------------------------------------------------------- overlays
 
 func _open_evidence(id: String) -> void:
+	Audio.sfx("paper")
 	var card := EVIDENCE_CARD.instantiate()
 	card.evidence_id = id
 	card.collect = not GameState.has_evidence(id)
@@ -253,6 +266,7 @@ func _open_evidence(id: String) -> void:
 
 
 func _on_evidence_added(_id: String) -> void:
+	Audio.sfx("found")
 	_refresh_counter()
 	_show_toast("TOAST_EVIDENCE_ADDED")
 
@@ -296,48 +310,28 @@ func _open_accusation() -> void:
 func _open_ending(ending_id: String) -> void:
 	var e := ENDING.instantiate()
 	e.ending_id = ending_id
+	e.set_meta("no_back", true)
 	e.menu_requested.connect(func():
 		SaveManager.save_game()
 		SceneRouter.goto(SceneRouter.MAIN_MENU))
 	_overlays.add_child(e)
 
 
-func _travel(location_id: String) -> void:
-	GameState.location = location_id
-	GameState.changed.emit()
-	SceneRouter.goto(SceneRouter.GAME)
-
-
-func _open_pause() -> void:
-	var dim := UI.dim(0.7)
-	_overlays.add_child(dim)
-	var center := CenterContainer.new()
-	UI.full_rect(center)
-	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	dim.add_child(center)
-	var panel := PanelContainer.new()
-	center.add_child(panel)
-	var box := VBoxContainer.new()
-	box.custom_minimum_size = Vector2(620, 0)
-	panel.add_child(box)
-	box.add_child(UI.label("PAUSE_TITLE", "HeaderLabel"))
-	var resume := UI.button("PAUSE_RESUME", "AccentButton")
-	resume.pressed.connect(dim.queue_free)
-	box.add_child(resume)
-	var settings := UI.button("MENU_SETTINGS")
-	settings.pressed.connect(func(): _overlays.add_child(SETTINGS_PANEL.instantiate()))
-	box.add_child(settings)
-	var quit := UI.button("PAUSE_MAIN_MENU")
-	quit.pressed.connect(func():
-		SaveManager.save_game()
-		SceneRouter.goto(SceneRouter.MAIN_MENU))
-	box.add_child(quit)
-	box.add_child(UI.label("PAUSE_AUTOSAVE_NOTE", "SmallLabel"))
+## Android back button / Escape: close the top window, or open the pause menu.
+func _notification_back() -> void:
+	var n := _overlays.get_child_count()
+	if n > 0:
+		var top := _overlays.get_child(n - 1)
+		if not top.has_meta("no_back"):
+			top.queue_free()
+	else:
+		_open_pause()
 
 
 ## Full-screen narration, one line at a time; tap to continue.
 func _narrate(keys: Array, on_done: Callable) -> void:
 	var bg := UI.dim(1.0)
+	bg.set_meta("no_back", true)
 	_overlays.add_child(bg)
 	var safe := UI.safe_container(self)
 	bg.add_child(safe)
@@ -374,7 +368,51 @@ func _narrate(keys: Array, on_done: Callable) -> void:
 func _play_intro() -> void:
 	_narrate(CaseDB.meta["intro"], func():
 		GameState.set_flag("intro_seen")
+		_enter_location()
 		_show_caption("TUTORIAL_LOOK", 10.0))
+
+
+# ---------------------------------------------------------------- places
+
+## Runs the location's first-visit effects and message.
+func _enter_location() -> void:
+	var flag := "visited_" + GameState.location
+	if GameState.has_flag(flag):
+		return
+	GameState.set_flag(flag)
+	var enter: Dictionary = _loc.get("on_enter", {})
+	GameState.apply(enter.get("effects", []))
+	if enter.has("caption"):
+		_show_caption(enter["caption"], 10.0)
+
+
+func _open_map() -> void:
+	var parts := UI.popup(900.0)
+	var root: Control = parts[0]
+	var box: VBoxContainer = parts[1]
+	_overlays.add_child(root)
+	box.add_child(UI.label("MAP_TITLE", "HeaderLabel"))
+	for id in CaseDB.locations:
+		if not CaseDB.location_unlocked(id):
+			continue
+		var here: bool = id == GameState.location
+		var b := UI.button(CaseDB.locations[id]["name"], "AccentButton" if here else "")
+		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
+		b.disabled = here
+		b.pressed.connect(_travel.bind(id))
+		box.add_child(b)
+	var close := UI.button("COMMON_CLOSE")
+	close.size_flags_horizontal = Control.SIZE_SHRINK_END
+	close.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)
+	close.pressed.connect(root.queue_free)
+	box.add_child(close)
+
+
+func _travel(location_id: String) -> void:
+	Audio.sfx("step")
+	GameState.location = location_id
+	GameState.changed.emit()
+	SceneRouter.goto(SceneRouter.GAME)
 
 
 # ---------------------------------------------------------------- hints
@@ -388,6 +426,9 @@ func _on_hint() -> void:
 		"text":
 			GameState.use_hint()
 			_show_caption(hint["text"], 10.0)
+		"objective":
+			_caption.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+			_show_caption(tr("HINT_NOTHING_HERE") + "\n" + tr("HINT_OBJECTIVE") % tr(hint["text"]), 10.0)
 		_:
 			_show_caption("HINT_NOTHING_HERE")
 

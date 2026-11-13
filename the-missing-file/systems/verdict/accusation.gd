@@ -117,11 +117,7 @@ func _show_proof() -> void:
 
 
 func _pick(slot: String) -> void:
-	var cards: Array = []
-	cards.append_array(GameState.insights)
-	cards.append_array(GameState.evidence)
-	cards.append_array(GameState.testimony)
-	var picker := CardPicker.new("ACCUSE_PICK_TITLE", cards)
+	var picker := CardPicker.new("ACCUSE_PICK_TITLE", GameState.all_cards())
 	picker.picked.connect(func(id: String):
 		_slots[slot] = id
 		_show_proof())
@@ -131,5 +127,8 @@ func _pick(slot: String) -> void:
 func _confirm() -> void:
 	var ending := Verdict.resolve(_suspect, _slots)
 	GameState.add_ending(ending)
+	if CaseDB.endings["endings"][ending]["solved"]:
+		GameState.set_flag("case_solved")
+	Audio.sfx("stamp")
 	resolved.emit(ending)
 	queue_free()

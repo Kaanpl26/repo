@@ -4,6 +4,7 @@ config_version=5
 [application]
 
 config/name="The Missing File"
+config/quit_on_go_back=false
 config/version="0.3.0"
 run/main_scene="res://ui/menus/boot.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
@@ -19,6 +20,7 @@ CaseDB="*res://autoload/case_db.gd"
 GameState="*res://autoload/game_state.gd"
 SaveManager="*res://autoload/save_manager.gd"
 SceneRouter="*res://autoload/scene_router.gd"
+Audio="*res://autoload/audio.gd"
 
 [display]
 

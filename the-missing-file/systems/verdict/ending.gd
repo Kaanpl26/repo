@@ -38,6 +38,12 @@ func _ready() -> void:
 	UI.scaled_font(text, 36)
 	box.add_child(text)
 
+	for key in Verdict.epilogue(ending_id):
+		var extra := UI.label(key, "", true)
+		UI.scaled_font(extra, 34)
+		extra.add_theme_color_override("font_color", Palette.PAPER_DARK)
+		box.add_child(extra)
+
 	var r := Verdict.rating()
 	var panel := PanelContainer.new()
 	panel.theme_type_variation = "BarPanel"

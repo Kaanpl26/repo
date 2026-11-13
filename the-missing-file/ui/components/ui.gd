@@ -11,6 +11,7 @@ static func button(key: String, variation: String = "") -> Button:
 	b.custom_minimum_size = Vector2(0, MIN_TOUCH)
 	if variation != "":
 		b.theme_type_variation = variation
+	b.pressed.connect(Audio.sfx.bind("click"))
 	return b
 
 

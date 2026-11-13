@@ -45,6 +45,29 @@ func _ready() -> void:
 		sizes.add_child(b)
 		_size_buttons.append(b)
 
+	for spec in [["SETTINGS_MUSIC", Settings.music_volume, true], ["SETTINGS_SFX", Settings.sfx_volume, false]]:
+		var row := HBoxContainer.new()
+		box.add_child(row)
+		var name_label := UI.label(spec[0], "SmallLabel")
+		name_label.custom_minimum_size = Vector2(260, 0)
+		row.add_child(name_label)
+		var slider := HSlider.new()
+		slider.min_value = 0.0
+		slider.max_value = 1.0
+		slider.step = 0.05
+		slider.value = spec[1]
+		slider.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		slider.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+		slider.custom_minimum_size = Vector2(0, 72)
+		var is_music: bool = spec[2]
+		slider.value_changed.connect(func(v: float):
+			if is_music:
+				Settings.set_volumes(v, Settings.sfx_volume)
+			else:
+				Settings.set_volumes(Settings.music_volume, v)
+				Audio.sfx("click"))
+		row.add_child(slider)
+
 	var close := UI.button("COMMON_CLOSE", "AccentButton")
 	close.size_flags_horizontal = Control.SIZE_SHRINK_END
 	close.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)

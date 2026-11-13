@@ -25,15 +25,24 @@ static func resolve(suspect: String, slots: Dictionary) -> String:
 	for slot in e["slots"]:
 		if not slot_ok(suspect, slot, slots.get(slot, "")):
 			return e["partial"]
-	if GameState.has_flag(e["spoiled_flag"]):
+	if GameState.has_flag(e["spoiled_flag"]) or not GameState.check(e.get("full_requires", [])):
 		return e["partial"]
 	return e["full"]
 
 
+## Extra closing lines that depend on the player's earlier decisions.
+static func epilogue(ending_id: String) -> Array:
+	var out: Array = []
+	for line in CaseDB.endings["endings"][ending_id].get("epilogue", []):
+		if GameState.check(line.get("conditions", [])):
+			out.append(line["text"])
+	return out
+
+
 static func rating() -> Dictionary:
-	var ev_total := CaseDB.evidence.size()
+	var ev_total := CaseDB.countable_evidence().size()
 	var in_total := CaseDB.insights.size()
-	var ev := GameState.evidence.size()
+	var ev := mini(GameState.evidence.size(), ev_total)
 	var ins := GameState.insights.size()
 	var score := 50.0 * ev / maxi(1, ev_total) + 50.0 * ins / maxi(1, in_total)
 	score -= 5.0 * GameState.mistakes + 4.0 * GameState.hints + 2.0 * mini(GameState.bad_links, 10)

@@ -63,9 +63,24 @@ func load_case(id: String) -> bool:
 func location_evidence(location_id: String) -> Array:
 	var out: Array = []
 	for h in locations[location_id]["hotspots"]:
-		if h.get("type", "") == "evidence" and h["evidence"] not in out:
+		if h.get("type", "") == "evidence" and h["evidence"] not in out \
+				and not evidence[h["evidence"]].get("alt", false):
 			out.append(h["evidence"])
 	return out
+
+
+## Evidence that counts towards totals ("alt" items replace another item in
+## some story branches and are not counted twice).
+func countable_evidence() -> Array:
+	var out: Array = []
+	for id in evidence:
+		if not evidence[id].get("alt", false):
+			out.append(id)
+	return out
+
+
+func location_unlocked(location_id: String) -> bool:
+	return GameState.check(locations[location_id].get("unlock", []))
 
 
 ## A "card" is anything the player can put on the board or use as proof:

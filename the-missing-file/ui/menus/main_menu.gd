@@ -12,7 +12,7 @@ func _ready() -> void:
 	var col := VBoxContainer.new()
 	col.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
 	col.size_flags_vertical = Control.SIZE_SHRINK_CENTER
-	col.add_theme_constant_override("separation", 22)
+	col.add_theme_constant_override("separation", 16)
 	var pad := MarginContainer.new()
 	pad.add_theme_constant_override("margin_left", 90)
 	pad.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -23,7 +23,7 @@ func _ready() -> void:
 	var sub := UI.label("GAME_SUBTITLE", "SmallLabel")
 	col.add_child(sub)
 	var gap := Control.new()
-	gap.custom_minimum_size = Vector2(0, 40)
+	gap.custom_minimum_size = Vector2(0, 16)
 	col.add_child(gap)
 
 	_continue = UI.button("MENU_CONTINUE", "AccentButton")
@@ -32,8 +32,10 @@ func _ready() -> void:
 	new_game.pressed.connect(_on_new_game)
 	var settings := UI.button("MENU_SETTINGS")
 	settings.pressed.connect(_on_settings)
-	for b in [_continue, new_game, settings]:
-		b.custom_minimum_size = Vector2(560, 104)
+	var credits := UI.button("MENU_CREDITS")
+	credits.pressed.connect(_on_credits)
+	for b in [_continue, new_game, settings, credits]:
+		b.custom_minimum_size = Vector2(560, 96)
 		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		col.add_child(b)
 	_continue.visible = SaveManager.has_save()
@@ -92,3 +94,24 @@ func _on_settings() -> void:
 	var s: Control = load("res://ui/menus/settings_panel.tscn").instantiate()
 	add_child(s)
 	s.closed.connect(func(): _continue.visible = SaveManager.has_save())
+
+
+func _on_credits() -> void:
+	var parts := UI.popup(1100.0)
+	var root: Control = parts[0]
+	var box: VBoxContainer = parts[1]
+	add_child(root)
+	box.add_child(UI.label("CREDITS_TITLE", "HeaderLabel"))
+	var text := UI.label("CREDITS_BODY", "", true)
+	UI.scaled_font(text, 32)
+	box.add_child(text)
+	var close := UI.button("COMMON_CLOSE", "AccentButton")
+	close.size_flags_horizontal = Control.SIZE_SHRINK_END
+	close.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)
+	close.pressed.connect(root.queue_free)
+	box.add_child(close)
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
+		get_tree().quit()

@@ -13,6 +13,7 @@ var _slot_labels: Array = []
 var _connect: Button
 var _view: Button
 var _message: Label
+var _scroll: ScrollContainer
 
 
 func _ready() -> void:
@@ -34,12 +35,17 @@ func _ready() -> void:
 	titles.add_child(UI.label("BOARD_TITLE", "HeaderLabel"))
 	titles.add_child(UI.label("BOARD_HELP", "SmallLabel"))
 	head.add_child(titles)
+	var hint := UI.button("HUD_HINT")
+	hint.custom_minimum_size = Vector2(220, UI.MIN_TOUCH)
+	hint.pressed.connect(_on_hint)
+	head.add_child(hint)
 	var close := UI.button("COMMON_CLOSE")
 	close.custom_minimum_size = Vector2(260, UI.MIN_TOUCH)
 	close.pressed.connect(_close)
 	head.add_child(close)
 
 	var scroll := ScrollContainer.new()
+	_scroll = scroll
 	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	col.add_child(scroll)
@@ -150,6 +156,21 @@ func _on_connect() -> void:
 			_ask(result["id"])
 
 
+## Selects two cards that can be connected. The player still has to work out
+## what they mean together.
+func _on_hint() -> void:
+	var id := Hints.next_link()
+	if id == "":
+		_say("BOARD_HINT_NONE", Palette.MUTED)
+		return
+	GameState.use_hint()
+	_selected = CaseDB.insights[id]["cards"].duplicate()
+	_refresh_selection()
+	_say("BOARD_HINT_PAIR", Palette.AMBER)
+	for card in _selected:
+		_scroll.ensure_control_visible.call_deferred(_buttons[card])
+
+
 func _say(key: String, color: Color) -> void:
 	_message.text = key
 	_message.add_theme_color_override("font_color", color)
@@ -169,10 +190,12 @@ func _ask(insight_id: String) -> void:
 		b.pressed.connect(func():
 			root.queue_free()
 			if Deduction.confirm(insight_id, key):
+				Audio.sfx("insight")
 				_selected.clear()
 				_rebuild()
 				_say("BOARD_RIGHT", Palette.JADE)
 			else:
+				Audio.sfx("wrong")
 				_say("BOARD_WRONG", Palette.RED))
 		box.add_child(b)
 	var cancel := UI.button("COMMON_CANCEL")

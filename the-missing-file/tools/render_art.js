@@ -10,6 +10,10 @@ const targets = {
   e01: 'assets/evidence/e01.png', e02: 'assets/evidence/e02.png', e03: 'assets/evidence/e03.png',
   e04: 'assets/evidence/e04.png', e05: 'assets/evidence/e05.png', e06: 'assets/evidence/e06.png',
   e15: 'assets/evidence/e15.png',
+  office: 'assets/scenes/office.png', stacks: 'assets/scenes/stacks.png', director: 'assets/scenes/director.png',
+  e07: 'assets/evidence/e07.png', e08: 'assets/evidence/e08.png', e09: 'assets/evidence/e09.png', e10: 'assets/evidence/e10.png',
+  e11: 'assets/evidence/e11.png', e12: 'assets/evidence/e12.png', e13: 'assets/evidence/e13.png', e14: 'assets/evidence/e14.png',
+  e16: 'assets/evidence/e16.png', e17: 'assets/evidence/e17.png', e18: 'assets/evidence/e18.png', e19: 'assets/evidence/e19.png',
   vardar: 'assets/portraits/vardar.png', aras: 'assets/portraits/aras.png', aydin: 'assets/portraits/aydin.png',
   card_testimony: 'assets/ui/card_testimony.png', card_insight: 'assets/ui/card_insight.png',
 };

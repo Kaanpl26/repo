@@ -9,7 +9,7 @@ extends RefCounted
 ##   "nodes": {
 ##     "intro": {
 ##       "lines": [ {"s": "erdem", "t": "TEXT_KEY", "effects": [...],
-##                   "present": {"accept": "E05", "next": "confess", "wrong": "wrong"}} ],
+##                   "present": {"accept": "E05" (or a list of card ids), "next": "confess", "wrong": "wrong"}} ],
 ##       "choices": [ {"id": "c1", "t": "TEXT_KEY", "next": "node", "conditions": [...], "effects": [...]} ],
 ##       "next": "hub"            (used when there are no choices)
 ##     }
@@ -85,7 +85,9 @@ func can_present() -> bool:
 ## Returns true when the evidence exposes the contradiction in the current line.
 func present(evidence_id: String) -> bool:
 	var p: Dictionary = line()["present"]
-	if evidence_id == p["accept"]:
+	var accept: Variant = p["accept"]
+	var accepted: Array = accept if accept is Array else [accept]
+	if evidence_id in accepted:
 		_enter(p["next"])
 		return true
 	GameState.add_mistake()

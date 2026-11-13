@@ -68,6 +68,7 @@ func add_evidence(id: String) -> void:
 	if id in evidence:
 		return
 	evidence.append(id)
+	apply(CaseDB.evidence[id].get("effects", []))
 	evidence_added.emit(id)
 	changed.emit()
 
@@ -78,6 +79,15 @@ func add_testimony(id: String) -> void:
 	testimony.append(id)
 	testimony_added.emit(id)
 	changed.emit()
+
+
+## All cards the player holds: conclusions first, then evidence, then statements.
+func all_cards() -> Array:
+	var out: Array = []
+	out.append_array(insights)
+	out.append_array(evidence)
+	out.append_array(testimony)
+	return out
 
 
 func has_insight(id: String) -> bool:

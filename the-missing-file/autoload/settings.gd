@@ -3,6 +3,7 @@ extends Node
 
 signal locale_changed
 signal text_scale_changed
+signal volume_changed
 
 const PATH := "user://settings.json"
 const LOCALES := ["en", "tr"]
@@ -10,6 +11,8 @@ const TEXT_SCALES := [0.85, 1.0, 1.2]
 
 var locale := ""          # "" means the player has not chosen yet (first run)
 var text_size := 1        # index into TEXT_SCALES
+var music_volume := 0.7   # 0..1
+var sfx_volume := 0.9     # 0..1
 
 
 func _ready() -> void:
@@ -25,12 +28,17 @@ func load_settings() -> void:
 	var loc := str(data.get("locale", ""))
 	locale = loc if loc in LOCALES else ""
 	text_size = clampi(int(data.get("text_size", 1)), 0, TEXT_SCALES.size() - 1)
+	music_volume = clampf(float(data.get("music_volume", 0.7)), 0.0, 1.0)
+	sfx_volume = clampf(float(data.get("sfx_volume", 0.9)), 0.0, 1.0)
 
 
 func save_settings() -> void:
 	var f := FileAccess.open(PATH, FileAccess.WRITE)
 	if f:
-		f.store_string(JSON.stringify({"locale": locale, "text_size": text_size}))
+		f.store_string(JSON.stringify({
+			"locale": locale, "text_size": text_size,
+			"music_volume": music_volume, "sfx_volume": sfx_volume,
+		}))
 
 
 func set_locale(value: String) -> void:
@@ -46,6 +54,13 @@ func set_text_size(index: int) -> void:
 	text_size = clampi(index, 0, TEXT_SCALES.size() - 1)
 	save_settings()
 	text_scale_changed.emit()
+
+
+func set_volumes(music: float, sfx: float) -> void:
+	music_volume = clampf(music, 0.0, 1.0)
+	sfx_volume = clampf(sfx, 0.0, 1.0)
+	save_settings()
+	volume_changed.emit()
 
 
 func text_scale_factor() -> float:

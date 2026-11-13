@@ -13,7 +13,6 @@ var _text: Label
 var _hint: Label
 var _choices: VBoxContainer
 var _present: Button
-var _picker: Control
 var _tween: Tween
 var _state := ""
 
@@ -115,7 +114,7 @@ func _show_line() -> void:
 	_portrait.modulate = Color.WHITE if speaker == character else Color(0.45, 0.45, 0.5)
 	_text.text = l["t"]
 	_hint.visible = true
-	_present.visible = _runner.can_present() and not GameState.evidence.is_empty()
+	_present.visible = _runner.can_present() and not GameState.all_cards().is_empty()
 	_text.visible_ratio = 0.0
 	if _tween:
 		_tween.kill()
@@ -139,39 +138,11 @@ func _on_choice(choice: Dictionary) -> void:
 
 
 func _open_picker() -> void:
-	_picker = UI.dim(0.75)
-	add_child(_picker)
-	var center := CenterContainer.new()
-	UI.full_rect(center)
-	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_picker.add_child(center)
-	var panel := PanelContainer.new()
-	center.add_child(panel)
-	var box := VBoxContainer.new()
-	panel.add_child(box)
-	box.add_child(UI.label("DLG_PRESENT_TITLE", "HeaderLabel"))
-	var grid := GridContainer.new()
-	grid.columns = 2
-	grid.add_theme_constant_override("h_separation", 18)
-	grid.add_theme_constant_override("v_separation", 18)
-	box.add_child(grid)
-	for id in GameState.evidence:
-		var def: Dictionary = CaseDB.evidence[id]
-		var b := UI.button(def["name"])
-		b.icon = load(def["icon"])
-		b.add_theme_constant_override("icon_max_width", 72)
-		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
-		b.custom_minimum_size = Vector2(620, 104)
-		b.pressed.connect(_on_present.bind(id))
-		grid.add_child(b)
-	var cancel := UI.button("COMMON_CANCEL")
-	cancel.size_flags_horizontal = Control.SIZE_SHRINK_END
-	cancel.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)
-	cancel.pressed.connect(_picker.queue_free)
-	box.add_child(cancel)
+	var picker := CardPicker.new("DLG_PRESENT_TITLE", GameState.all_cards())
+	picker.picked.connect(_on_present)
+	add_child(picker)
 
 
 func _on_present(evidence_id: String) -> void:
-	_picker.queue_free()
-	_runner.present(evidence_id)
+	Audio.sfx("found" if _runner.present(evidence_id) else "wrong")
 	_show_state(DialogueRunner.LINE)
