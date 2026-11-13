@@ -1,5 +1,19 @@
 [
   {
+    "time": "18:30",
+    "text": "C1_TL_VARDAR_HOME",
+    "conditions": [
+      {
+        "has_testimony": "T_VARDAR_1"
+      }
+    ],
+    "disputed": [
+      {
+        "has_insight": "I_VARDAR_RETURNED"
+      }
+    ]
+  },
+  {
     "time": "18:32",
     "text": "C1_TL_VARDAR_OUT",
     "conditions": [
@@ -14,6 +28,15 @@
     "conditions": [
       {
         "has_evidence": "E01"
+      }
+    ]
+  },
+  {
+    "time": "18:50",
+    "text": "C1_TL_ARGUMENT",
+    "conditions": [
+      {
+        "has_testimony": "T_AYDIN_4"
       }
     ]
   },
@@ -37,6 +60,15 @@
     "disputed": [
       {
         "has_insight": "I_AYDIN_STAYED"
+      }
+    ]
+  },
+  {
+    "time": "20:03",
+    "text": "C1_TL_EMAIL",
+    "conditions": [
+      {
+        "has_evidence": "E07"
       }
     ]
   },
@@ -100,6 +132,33 @@
     ]
   },
   {
+    "time": "21:10",
+    "text": "C1_TL_VOICES",
+    "conditions": [
+      {
+        "has_testimony": "T_AYDIN_2"
+      }
+    ]
+  },
+  {
+    "time": "21:17",
+    "text": "C1_TL_WATCH",
+    "conditions": [
+      {
+        "has_evidence": "E12"
+      }
+    ]
+  },
+  {
+    "time": "21:20",
+    "text": "C1_TL_ELEVATOR",
+    "conditions": [
+      {
+        "has_testimony": "T_AYDIN_2"
+      }
+    ]
+  },
+  {
     "time": "21:26",
     "text": "C1_TL_AYDIN_OUT",
     "conditions": [
@@ -132,6 +191,15 @@
     "conditions": [
       {
         "has_evidence": "E02"
+      }
+    ]
+  },
+  {
+    "time": "07:10",
+    "text": "C1_TL_FOUND",
+    "conditions": [
+      {
+        "flag": "aydin_met"
       }
     ]
   }

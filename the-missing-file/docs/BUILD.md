@@ -59,9 +59,18 @@ tools/run_tests.sh
 
 Checks that every text exists in both English and Turkish, that all case data refers to things that exist, that every dialogue branch is reachable, and plays through the critical path without a screen.
 
-## 6. Regenerating the art
+The same script runs before every build. There is also a smoke test that drives the real game (menus, travel, every tap area, the back button):
+
+```
+xvfb-run -a godot --path . --rendering-driver opengl3 res://tests/smoke.tscn
+```
+
+On a computer with a screen, leave out `xvfb-run -a`. It prints `SMOKE OK` when it passes.
+
+## 6. Regenerating the art and sound
 
 ```
 python3 tools/make_art.py      # writes SVG sources to art_src/
 node tools/render_art.js       # renders them to assets/ as PNG (needs Playwright)
+python3 tools/make_audio.py    # writes all sounds and music to assets/audio/ (needs numpy)
 ```

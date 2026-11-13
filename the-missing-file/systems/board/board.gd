@@ -111,7 +111,7 @@ func _section(title_key: String, cards: Array, empty_key: String) -> void:
 		_body.add_child(UI.label(empty_key, "SmallLabel"))
 		return
 	var grid := GridContainer.new()
-	grid.columns = 4 if size.x >= 2100 else 3
+	grid.columns = 3
 	grid.add_theme_constant_override("h_separation", 16)
 	grid.add_theme_constant_override("v_separation", 16)
 	_body.add_child(grid)

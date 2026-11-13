@@ -151,10 +151,6 @@
     "en": "Drag left and right to look around the room. Tap anything that looks important. Stuck? Tap Hint.",
     "tr": "Odaya göz atmak için sağa sola sürükleyin. Önemli görünen her şeye dokunun. Takıldınız mı? İpucu'na dokunun."
   },
-  "BUILD_DONE": {
-    "en": "You have found and worked out everything available in this build.\n\nThe stacks, the offices and the other suspects open in the next milestone. You can still try an accusation from the Case File to see how verdicts work.",
-    "tr": "Bu sürümde bulunabilecek ve çözülebilecek her şeyi tamamladınız.\n\nDepolar, odalar ve diğer şüpheliler bir sonraki aşamada açılacak. Kararların nasıl işlediğini görmek için Dava Dosyası'ndan suçlamada bulunmayı deneyebilirsiniz."
-  },
   "HUD_BOARD": {
     "en": "Board",
     "tr": "Pano"
@@ -334,5 +330,49 @@
   "ENDING_RETURN_NOTE": {
     "en": "This was not the truth. You can return to the moment before your accusation.",
     "tr": "Gerçek bu değildi. Suçlamadan önceki ana dönebilirsiniz."
+  },
+  "HUD_MAP": {
+    "en": "Map",
+    "tr": "Harita"
+  },
+  "MAP_TITLE": {
+    "en": "Where to?",
+    "tr": "Nereye?"
+  },
+  "HINT_OBJECTIVE": {
+    "en": "Current objective: %s",
+    "tr": "Şu anki hedef: %s"
+  },
+  "BOARD_HINT_PAIR": {
+    "en": "These two cards belong together. Tap Connect and work out what they mean.",
+    "tr": "Bu iki kart birbiriyle ilgili. Bağla'ya dokunun ve ne anlama geldiklerini çözün."
+  },
+  "BOARD_HINT_NONE": {
+    "en": "Nothing more can be connected with what you have. Look for more evidence, or get more statements.",
+    "tr": "Elinizdekilerle bağlanabilecek başka bir şey yok. Yeni delil arayın ya da yeni ifadeler alın."
+  },
+  "SETTINGS_MUSIC": {
+    "en": "Music",
+    "tr": "Müzik"
+  },
+  "SETTINGS_SFX": {
+    "en": "Sound effects",
+    "tr": "Ses efektleri"
+  },
+  "MENU_CREDITS": {
+    "en": "Credits",
+    "tr": "Emeği Geçenler"
+  },
+  "CREDITS_TITLE": {
+    "en": "Credits",
+    "tr": "Emeği Geçenler"
+  },
+  "CREDITS_BODY": {
+    "en": "The Missing File\n\nStory, design, art, sound and code: original work made for this game.\n\nBuilt with Godot Engine (MIT licence).\n\nFonts: Inter, Playfair Display and Courier Prime, used under the SIL Open Font License 1.1.",
+    "tr": "Kayıp Dosya\n\nHikâye, tasarım, görseller, sesler ve kod: bu oyun için üretilmiş özgün çalışmadır.\n\nGodot Engine ile geliştirilmiştir (MIT lisansı).\n\nYazı tipleri: Inter, Playfair Display ve Courier Prime; SIL Open Font License 1.1 kapsamında kullanılmıştır."
+  },
+  "HINT_BOARD": {
+    "en": "Some of your cards can be connected. Open the Board; the Hint button there will show you which.",
+    "tr": "Kartlarınızdan bazıları birbirine bağlanabilir. Pano'yu açın; oradaki İpucu düğmesi hangileri olduğunu gösterir."
   }
 }

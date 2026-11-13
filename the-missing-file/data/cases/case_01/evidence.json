@@ -1,9 +1,133 @@
 {
-  "E01": {"name": "C1_E01_NAME", "desc": "C1_E01_DESC", "body": "C1_E01_BODY", "icon": "res://assets/evidence/e01.png"},
-  "E02": {"name": "C1_E02_NAME", "desc": "C1_E02_DESC", "body": "C1_E02_BODY", "icon": "res://assets/evidence/e02.png"},
-  "E03": {"name": "C1_E03_NAME", "desc": "C1_E03_DESC", "body": "C1_E03_BODY", "icon": "res://assets/evidence/e03.png"},
-  "E04": {"name": "C1_E04_NAME", "desc": "C1_E04_DESC", "body": "C1_E04_BODY", "icon": "res://assets/evidence/e04.png"},
-  "E05": {"name": "C1_E05_NAME", "desc": "C1_E05_DESC", "body": "C1_E05_BODY", "icon": "res://assets/evidence/e05.png"},
-  "E06": {"name": "C1_E06_NAME", "desc": "C1_E06_DESC", "body": "C1_E06_BODY", "icon": "res://assets/evidence/e06.png"},
-  "E15": {"name": "C1_E15_NAME", "desc": "C1_E15_DESC", "body": "C1_E15_BODY", "icon": "res://assets/evidence/e15.png"}
+  "E01": {
+    "name": "C1_E01_NAME",
+    "desc": "C1_E01_DESC",
+    "body": "C1_E01_BODY",
+    "icon": "res://assets/evidence/e01.png"
+  },
+  "E02": {
+    "name": "C1_E02_NAME",
+    "desc": "C1_E02_DESC",
+    "body": "C1_E02_BODY",
+    "icon": "res://assets/evidence/e02.png"
+  },
+  "E03": {
+    "name": "C1_E03_NAME",
+    "desc": "C1_E03_DESC",
+    "body": "C1_E03_BODY",
+    "icon": "res://assets/evidence/e03.png"
+  },
+  "E04": {
+    "name": "C1_E04_NAME",
+    "desc": "C1_E04_DESC",
+    "body": "C1_E04_BODY",
+    "icon": "res://assets/evidence/e04.png"
+  },
+  "E05": {
+    "name": "C1_E05_NAME",
+    "desc": "C1_E05_DESC",
+    "body": "C1_E05_BODY",
+    "icon": "res://assets/evidence/e05.png"
+  },
+  "E06": {
+    "name": "C1_E06_NAME",
+    "desc": "C1_E06_DESC",
+    "body": "C1_E06_BODY",
+    "icon": "res://assets/evidence/e06.png"
+  },
+  "E15": {
+    "name": "C1_E15_NAME",
+    "desc": "C1_E15_DESC",
+    "body": "C1_E15_BODY",
+    "icon": "res://assets/evidence/e15.png"
+  },
+  "E07": {
+    "name": "C1_E07_NAME",
+    "desc": "C1_E07_DESC",
+    "body": "C1_E07_BODY",
+    "icon": "res://assets/evidence/e07.png"
+  },
+  "E08": {
+    "name": "C1_E08_NAME",
+    "desc": "C1_E08_DESC",
+    "body": "C1_E08_BODY",
+    "icon": "res://assets/evidence/e08.png"
+  },
+  "E09": {
+    "name": "C1_E09_NAME",
+    "desc": "C1_E09_DESC",
+    "body": "C1_E09_BODY",
+    "icon": "res://assets/evidence/e09.png"
+  },
+  "E10": {
+    "name": "C1_E10_NAME",
+    "desc": "C1_E10_DESC",
+    "body": "C1_E10_BODY",
+    "icon": "res://assets/evidence/e10.png"
+  },
+  "E11": {
+    "name": "C1_E11_NAME",
+    "desc": "C1_E11_DESC",
+    "body": "C1_E11_BODY",
+    "icon": "res://assets/evidence/e11.png"
+  },
+  "E12": {
+    "name": "C1_E12_NAME",
+    "desc": "C1_E12_DESC",
+    "body": "C1_E12_BODY",
+    "icon": "res://assets/evidence/e12.png"
+  },
+  "E13": {
+    "name": "C1_E13_NAME",
+    "desc": "C1_E13_DESC",
+    "body": "C1_E13_BODY",
+    "icon": "res://assets/evidence/e13.png"
+  },
+  "E14": {
+    "name": "C1_E14_NAME",
+    "desc": "C1_E14_DESC",
+    "body": "C1_E14_BODY",
+    "icon": "res://assets/evidence/e14.png"
+  },
+  "E16": {
+    "name": "C1_E16_NAME",
+    "desc": "C1_E16_DESC",
+    "body": "C1_E16_BODY",
+    "icon": "res://assets/evidence/e16.png"
+  },
+  "E17": {
+    "name": "C1_E17_NAME",
+    "desc": "C1_E17_DESC",
+    "body": "C1_E17_BODY",
+    "icon": "res://assets/evidence/e17.png",
+    "effects": [
+      {
+        "set_flag": "file_found"
+      }
+    ]
+  },
+  "E17X": {
+    "name": "C1_E17X_NAME",
+    "desc": "C1_E17X_DESC",
+    "body": "C1_E17X_BODY",
+    "icon": "res://assets/evidence/e17.png",
+    "alt": true,
+    "effects": [
+      {
+        "set_flag": "file_found"
+      }
+    ]
+  },
+  "E18": {
+    "name": "C1_E18_NAME",
+    "desc": "C1_E18_DESC",
+    "body": "C1_E18_BODY",
+    "icon": "res://assets/evidence/e18.png"
+  },
+  "E19": {
+    "name": "C1_E19_NAME",
+    "desc": "C1_E19_DESC",
+    "body": "C1_E19_BODY",
+    "icon": "res://assets/evidence/e19.png"
+  }
 }

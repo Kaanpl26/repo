@@ -19,7 +19,9 @@ func _ready() -> void:
 	var center := CenterContainer.new()
 	center.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	center.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	center.custom_minimum_size = Vector2(0, get_viewport_rect().size.y - 80)
+	var fit := func(): center.custom_minimum_size = Vector2(0, scroll.size.y)
+	scroll.resized.connect(fit)
+	fit.call_deferred()
 	scroll.add_child(center)
 	var box := VBoxContainer.new()
 	box.custom_minimum_size = Vector2(1400, 0)

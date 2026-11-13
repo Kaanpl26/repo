@@ -13,11 +13,19 @@
   ],
   "proof": {
     "vardar": {
-      "motive": [],
-      "opportunity": [
-        "I_VARDAR_RETURNED"
+      "motive": [
+        "I_SM"
       ],
-      "link": []
+      "opportunity": [
+        "I_VARDAR_RETURNED",
+        "I_EMAIL",
+        "I_ELEVATOR",
+        "E06"
+      ],
+      "link": [
+        "I_EARRING",
+        "E13"
+      ]
     }
   },
   "full": "A",
@@ -33,7 +41,39 @@
     "A": {
       "title": "C1_END_A_TITLE",
       "text": "C1_END_A_TEXT",
-      "solved": true
+      "solved": true,
+      "epilogue": [
+        {
+          "conditions": [
+            {
+              "flag": "erdem_reported"
+            }
+          ],
+          "text": "C1_EPI_ERDEM_REPORTED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "erdem_spared"
+            }
+          ],
+          "text": "C1_EPI_ERDEM_SPARED"
+        },
+        {
+          "conditions": [
+            {
+              "has_testimony": "T_AYDIN_2"
+            },
+            {
+              "flag": "aydin_told"
+            },
+            {
+              "not_flag": "aydin_pressured"
+            }
+          ],
+          "text": "C1_EPI_AYDIN"
+        }
+      ]
     },
     "B": {
       "title": "C1_END_B_TITLE",
@@ -55,5 +95,10 @@
       "text": "C1_END_E_TEXT",
       "solved": false
     }
-  }
+  },
+  "full_requires": [
+    {
+      "has_evidence": "E17"
+    }
+  ]
 }

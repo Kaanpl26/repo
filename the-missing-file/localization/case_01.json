@@ -196,8 +196,8 @@
     "tr": "Sizin için zor bir sabah olmalı."
   },
   "C1_ERDEM_NIGHT_FIRM_A": {
-    "en": "Ekrem Bey, working late as always. Leyla Hanım went home around half past seven, as far as I know. The Director had left before the visitor even arrived.",
-    "tr": "Ekrem Bey vardı, her zamanki gibi geç saate kadar çalışıyordu. Leyla Hanım bildiğim kadarıyla yedi buçuk gibi evine gitti. Müdür Hanım ziyaretçi gelmeden önce çıkmıştı zaten."
+    "en": "After seven it was only Ekrem Bey, working late as always. Leyla Hanım went home around half past seven, as far as I know. The Director had left before the visitor even arrived.",
+    "tr": "Yediden sonra yalnızca Ekrem Bey vardı, her zamanki gibi geç saate kadar çalışıyordu. Leyla Hanım bildiğim kadarıyla yedi buçuk gibi evine gitti. Müdür Hanım ziyaretçi gelmeden önce çıkmıştı zaten."
   },
   "C1_ERDEM_NIGHT_KIND_A": {
     "en": "Leyla Hanım found him. I heard her scream from up here. It should have been me who found him. That is my job.",
@@ -524,16 +524,16 @@
     "tr": "Ayna Doğruyu Söyler"
   },
   "C1_END_A_TEXT": {
-    "en": "Faced with her own initials, the car park log and a jade earring, Dr. Selin Vardar stops arguing. She altered one page in 1998 and has been guarding it ever since. Ekrem Vural would not be talked out of the truth.\n\nFile 47-B goes to the prosecutor intact. Inside it is a routing slip listing six more file numbers. None of them are on their shelves.",
-    "tr": "Kendi parafı, otopark kaydı ve yeşim bir küpe önüne konunca Dr. Selin Vardar direnmeyi bırakıyor. 1998'de tek bir sayfayı değiştirmiş, o günden beri de o sayfayı korumuş. Ekrem Vural ise gerçeği söylemekten vazgeçirilememiş.\n\n47-B numaralı dosya savcılığa eksiksiz gidiyor. İçinden altı dosya numarasının daha yazılı olduğu bir sevk fişi çıkıyor. Hiçbiri rafında değil."
+    "en": "Faced with her own initials, the car park log and a jade earring, Dr. Selin Vardar stops arguing. In 1998 she was paid to retype one page. She has guarded it ever since, and on Thursday night Ekrem Vural would not be talked out of the truth.\n\nFile 47-B goes to the prosecutor intact. Demir Aras will answer for what his father's company bought. And inside the cover is a routing slip listing six more file numbers. None of them are on their shelves.",
+    "tr": "Kendi parafı, otopark kaydı ve yeşim bir küpe önüne konunca Dr. Selin Vardar direnmeyi bırakıyor. 1998'de tek bir sayfayı yeniden yazması için ona para ödenmiş. O günden beri o sayfayı korumuş; perşembe gecesi de Ekrem Vural gerçeği söylemekten vazgeçirilememiş.\n\n47-B numaralı dosya savcılığa eksiksiz gidiyor. Demir Aras, babasının şirketinin satın aldığı şeyin hesabını verecek. Kapağın içinde ise altı dosya numarasının daha yazılı olduğu bir sevk fişi var. Hiçbiri rafında değil."
   },
   "C1_END_B_TITLE": {
     "en": "Reasonable Doubt",
     "tr": "Makul Şüphe"
   },
   "C1_END_B_TEXT": {
-    "en": "Dr. Vardar admits she came back that night. An argument, she says. A terrible accident on the stairs. Without a motive and without anything that puts her hands on him, her lawyer turns a killing into a misfortune.\n\nShe will lose her office. She may not lose much else. And whatever was in file 47-B stays buried.",
-    "tr": "Dr. Vardar o gece geri döndüğünü kabul ediyor. Bir tartışma, diyor. Merdivende korkunç bir kaza. Ortada bir sebep ve onu Ekrem Vural'a dokunmuş gösteren bir delil olmayınca, avukatı bir ölümü talihsizliğe çeviriyor.\n\nMakamını kaybedecek. Belki başka pek bir şey kaybetmeyecek. 47-B'nin içindekiler de gömülü kalacak."
+    "en": "Dr. Vardar admits she came back that night. An argument, she says. A terrible accident on the stairs. Without every piece in place — why she did it, that she was there, and something that puts her hands on him — her lawyer turns a killing into a misfortune.\n\nShe will lose her office. She may not lose much else. And what was done to file 47-B is never proved.",
+    "tr": "Dr. Vardar o gece geri döndüğünü kabul ediyor. Bir tartışma, diyor. Merdivende korkunç bir kaza. Bütün parçalar yerine oturmayınca — neden yaptığı, orada olduğu ve onu Ekrem Vural'a dokunmuş gösteren bir delil — avukatı bir ölümü talihsizliğe çeviriyor.\n\nMakamını kaybedecek. Belki başka pek bir şey kaybetmeyecek. 47-B'ye ne yapıldığı da asla kanıtlanamıyor."
   },
   "C1_END_C_TITLE": {
     "en": "The Obvious Man",
@@ -558,5 +558,897 @@
   "C1_END_E_TEXT": {
     "en": "An elderly man, a steep staircase, a dark basement. You sign the report: accidental death.\n\nThe archive reopens on Monday. Nobody asks again about the empty box marked 47-B.",
     "tr": "Yaşlı bir adam, dik bir merdiven, karanlık bir bodrum. Raporu imzalıyorsunuz: kaza sonucu ölüm.\n\nArşiv pazartesi günü yeniden açılıyor. Üzerinde 47-B yazan boş kutuyu bir daha soran olmuyor."
+  },
+  "C1_E07_NAME": {
+    "en": "Sent Email, 20:03",
+    "tr": "Gönderilmiş E-posta, 20.03"
+  },
+  "C1_E07_DESC": {
+    "en": "The last message Ekrem Vural sent from his office computer, to Director Vardar.",
+    "tr": "Ekrem Vural'ın oda bilgisayarından gönderdiği son ileti. Alıcı: Müdür Vardar."
+  },
+  "C1_E07_BODY": {
+    "en": "From: Ekrem Vural\nTo: Selin Vardar\nSent: Thursday 20:03\nSubject: 47-B\n\nSelin Hanım,\n\nI know what was done to 47-B, and by whom. Tomorrow morning I am taking it to the prosecutor.\n\nI wanted you to hear it from me first. After twenty years I owe you that much.\n\nEkrem",
+    "tr": "Kimden: Ekrem Vural\nKime: Selin Vardar\nGönderilme: Perşembe 20.03\nKonu: 47-B\n\nSelin Hanım,\n\n47-B'ye ne yapıldığını ve bunu kimin yaptığını biliyorum. Yarın sabah dosyayı savcılığa götürüyorum.\n\nBunu önce benden duymanızı istedim. Yirmi yıldan sonra size en azından bunu borçluyum.\n\nEkrem"
+  },
+  "C1_E08_NAME": {
+    "en": "Digitisation Notes",
+    "tr": "Dijitalleştirme Notları"
+  },
+  "C1_E08_DESC": {
+    "en": "Vural's working notebook for the scanning project. The last entries are about file 47-B.",
+    "tr": "Vural'ın tarama projesi için tuttuğu çalışma defteri. Son notlar 47-B numaralı dosya hakkında."
+  },
+  "C1_E08_BODY": {
+    "en": "47-B — Pier 9 warehouse fire inquiry, 1998\n\nMon: pp. 1-31 scanned.\n\nTue: p. 12 (night watchman's statement) is wrong. Different typewriter from the rest of the file. Paper is newer.\n\nThe page was retyped.\nClerk's initials in the corner: S.M.\n\nWed: Who was S.M. in the Records Office in '98?\n\nThu: I think I know. God help us.",
+    "tr": "47-B — 9. İskele depo yangını soruşturması, 1998\n\nPzt: s. 1-31 tarandı.\n\nSalı: s. 12 (gece bekçisinin ifadesi) tuhaf. Dosyanın geri kalanından farklı bir daktilo. Kâğıt daha yeni.\n\nSayfa yeniden yazılmış.\nKöşede kâtibin parafı: S.M.\n\nÇar: 98'de Kayıt Bürosu'ndaki S.M. kimdi?\n\nPer: Sanırım biliyorum. Allah yardımcımız olsun."
+  },
+  "C1_E09_NAME": {
+    "en": "Desk Calendar Note",
+    "tr": "Masa Takvimindeki Not"
+  },
+  "C1_E09_DESC": {
+    "en": "A line in red ink on Thursday's page of the desk calendar, underlined twice.",
+    "tr": "Masa takviminin perşembe sayfasında kırmızı mürekkeple yazılmış, altı iki kez çizilmiş bir satır."
+  },
+  "C1_E09_BODY": {
+    "en": "THURSDAY\n\n18:30  D. Aras (he insists)\n\n\nIf anything happens to me —\nthe mirror tells the truth.",
+    "tr": "PERŞEMBE\n\n18.30  D. Aras (ısrar ediyor)\n\n\nBaşıma bir şey gelirse —\nayna doğruyu söyler."
+  },
+  "C1_E10_NAME": {
+    "en": "Letter from Demir Aras",
+    "tr": "Demir Aras'ın Mektubu"
+  },
+  "C1_E10_DESC": {
+    "en": "A short letter on the deputy mayor's personal letterhead, in Vural's letter tray. Dated Monday.",
+    "tr": "Vural'ın evrak sepetinde, başkan yardımcısının özel antetli kâğıdına yazılmış kısa bir mektup. Pazartesi tarihli."
+  },
+  "C1_E10_BODY": {
+    "en": "Demir Aras\n\nEkrem Bey,\n\nI hear your scanning project has reached the Pier 9 inquiry. That file concerns my late father's company and nobody else.\n\nSome history is better left in its box. Name your price for 47-B and the archive will not want for funding again.\n\nI will call on you Thursday.\n\nD. A.",
+    "tr": "Demir Aras\n\nEkrem Bey,\n\nTarama projenizin 9. İskele soruşturmasına kadar geldiğini duydum. O dosya rahmetli babamın şirketini ilgilendirir, başka kimseyi değil.\n\nBazı geçmişler kutusunda kalsa daha iyidir. 47-B için fiyatınızı söyleyin, arşiv bir daha ödenek sıkıntısı çekmesin.\n\nPerşembe günü size uğrayacağım.\n\nD. A."
+  },
+  "C1_E11_NAME": {
+    "en": "Forced Desk Drawers",
+    "tr": "Zorlanmış Çekmeceler"
+  },
+  "C1_E11_DESC": {
+    "en": "The drawers of Vural's desk have been levered open. A bent letter opener lies on the floor.",
+    "tr": "Vural'ın masasının çekmeceleri zorlanarak açılmış. Yerde eğrilmiş bir mektup açacağı duruyor."
+  },
+  "C1_E11_BODY": {
+    "en": "SCENE NOTE — E. Vural's office\n\nAll three drawer locks forced with the letter opener from the desk set. Fresh scratches on the brass.\n\nFolders pulled out and put back in the wrong order. Someone searched in a hurry and tried to tidy up afterwards.\n\nNothing of value taken: wallet, phone charger and petty cash are untouched.",
+    "tr": "OLAY YERİ NOTU — E. Vural'ın odası\n\nÜç çekmecenin kilidi de masa takımındaki mektup açacağıyla zorlanmış. Pirinçte taze çizikler var.\n\nDosyalar çıkarılmış, yanlış sırayla geri konmuş. Biri aceleyle arama yapmış, sonra toparlamaya çalışmış.\n\nDeğerli hiçbir şey alınmamış: cüzdan, şarj aleti ve küçük kasa yerinde duruyor."
+  },
+  "C1_E12_NAME": {
+    "en": "Personal Effects",
+    "tr": "Kişisel Eşyalar"
+  },
+  "C1_E12_DESC": {
+    "en": "What Ekrem Vural had on him when he was found, laid out on the forensic tray.",
+    "tr": "Ekrem Vural bulunduğunda üzerinden çıkanlar, olay yeri inceleme tepsisine dizilmiş."
+  },
+  "C1_E12_BODY": {
+    "en": "PERSONAL EFFECTS — E. Vural\n\n1. Wristwatch. Glass cracked. Stopped at 21:17.\n\n2. Key ring, still clipped to his belt: master key No. 1, office key, three desk drawer keys.\n\n3. Reading glasses, one lens broken.\n\n4. Fountain pen.",
+    "tr": "KİŞİSEL EŞYALAR — E. Vural\n\n1. Kol saati. Camı çatlamış. 21.17'de durmuş.\n\n2. Anahtarlık, hâlâ kemerine takılı: 1 numaralı ana anahtar, oda anahtarı, üç adet çekmece anahtarı.\n\n3. Okuma gözlüğü, bir camı kırık.\n\n4. Dolma kalem."
+  },
+  "C1_E13_NAME": {
+    "en": "Jade Earring",
+    "tr": "Yeşim Küpe"
+  },
+  "C1_E13_DESC": {
+    "en": "A single jade drop earring, under the lowest shelf beside the staircase. The stair treads above are open steel grating.",
+    "tr": "Merdivenin yanındaki en alt rafın altında tek bir yeşim küpe. Yukarıdaki basamaklar delikli çelik ızgara."
+  },
+  "C1_E13_BODY": {
+    "en": "SCENE NOTE — B2, foot of the staircase\n\nOne jade drop earring, silver hook. The hook is bent open, as if pulled from the ear.\n\nNo dust on it. The floor under the shelf is thick with dust everywhere else.\n\nIt could have dropped through the open treads from the landing above.",
+    "tr": "OLAY YERİ NOTU — B2, merdivenin dibi\n\nGümüş kancalı, sallantılı tek bir yeşim küpe. Kancası açılmış; kulaktan çekilip kopmuş gibi.\n\nÜzerinde toz yok. Rafın altındaki zeminin geri kalanı kalın bir toz tabakasıyla kaplı.\n\nYukarıdaki sahanlıktan, ızgara basamakların arasından düşmüş olabilir."
+  },
+  "C1_E14_NAME": {
+    "en": "Empty Box 47-B",
+    "tr": "Boş Kutu: 47-B"
+  },
+  "C1_E14_DESC": {
+    "en": "The archive box for file 47-B. The lid is off and the box is empty.",
+    "tr": "47-B numaralı dosyanın arşiv kutusu. Kapağı açık, içi boş."
+  },
+  "C1_E14_BODY": {
+    "en": "BOX 47-B\nPier 9 warehouse fire inquiry — 1998\n\nContents: none.\n\nCheckout slip in the label holder:\n“47-B — E. Vural — Monday — digitisation”\n\nNo return entry.",
+    "tr": "KUTU 47-B\n9. İskele depo yangını soruşturması — 1998\n\nİçindekiler: yok.\n\nEtiket yuvasındaki ödünç fişi:\n“47-B — E. Vural — Pazartesi — dijitalleştirme”\n\nİade kaydı yok."
+  },
+  "C1_E16_NAME": {
+    "en": "Coroner's Preliminary Note",
+    "tr": "Adli Tabibin Ön Notu"
+  },
+  "C1_E16_DESC": {
+    "en": "Dr. İdris Nur's first findings, left on the forensic trolley.",
+    "tr": "Dr. İdris Nur'un ilk bulguları, olay yeri inceleme arabasına bırakılmış."
+  },
+  "C1_E16_BODY": {
+    "en": "PRELIMINARY — Dr. İ. Nur\n\nTime of death: between 21:00 and 21:30 Thursday.\n\nCause: head injury consistent with a fall down the staircase.\n\nHowever: bruising on both forearms in the pattern of fingers. He was gripped hard, from the front, shortly before death.\n\nNo defensive wounds. He was not expecting it.",
+    "tr": "ÖN RAPOR — Dr. İ. Nur\n\nÖlüm zamanı: Perşembe 21.00 ile 21.30 arası.\n\nÖlüm sebebi: merdivenden düşmeyle uyumlu kafa travması.\n\nAncak: her iki ön kolda parmak izi biçiminde morluklar var. Ölümünden kısa süre önce önden, sıkıca kavranmış.\n\nSavunma yarası yok. Bunu beklemiyormuş."
+  },
+  "C1_E17_NAME": {
+    "en": "File 47-B",
+    "tr": "Dosya 47-B"
+  },
+  "C1_E17_DESC": {
+    "en": "The missing file, shelved in the box marked 74-B. Vural hid it under a mirrored number.",
+    "tr": "Kayıp dosya, üzerinde 74-B yazan kutuya konmuş. Vural onu numarasının ayna görüntüsüne saklamış."
+  },
+  "C1_E17_BODY": {
+    "en": "FILE 47-B — Pier 9 warehouse fire inquiry, 1998\n\nPage 12 as filed (retyped):\n“I saw nothing unusual before the fire.”\nClerk's initials: S.M.\n\nTucked behind it, the original carbon copy of page 12:\n“An hour before the fire I saw two men from Aras Denizcilik carry fuel cans into the warehouse.”\n\nStapled inside the cover, a routing slip in the same hand, listing six more files:\n12-C, 31-A, 58-D, 66-B, 90-A, 103-F.\n\nOne page was torn out long ago. The stub reads: “Payment authorised by —”",
+    "tr": "DOSYA 47-B — 9. İskele depo yangını soruşturması, 1998\n\nDosyadaki 12. sayfa (yeniden yazılmış):\n“Yangından önce olağan dışı bir şey görmedim.”\nKâtibin parafı: S.M.\n\nArkasına sıkıştırılmış, 12. sayfanın asıl karbon kopyası:\n“Yangından bir saat önce Aras Denizcilik'ten iki adamın depoya yakıt bidonları taşıdığını gördüm.”\n\nKapağın içine zımbalanmış, aynı el yazısıyla altı dosya daha sıralanmış bir sevk fişi:\n12-C, 31-A, 58-D, 66-B, 90-A, 103-F.\n\nBir sayfa çok önce koparılmış. Kalan parçada şu yazıyor: “Ödemeyi onaylayan —”"
+  },
+  "C1_E17X_NAME": {
+    "en": "File 47-B (pages missing)",
+    "tr": "Dosya 47-B (sayfaları eksik)"
+  },
+  "C1_E17X_DESC": {
+    "en": "The missing file, in the box marked 74-B. Someone has been here before you.",
+    "tr": "Kayıp dosya, üzerinde 74-B yazan kutuda. Sizden önce biri buraya gelmiş."
+  },
+  "C1_E17X_BODY": {
+    "en": "FILE 47-B — Pier 9 warehouse fire inquiry, 1998\n\nPage 12 is gone. So is whatever was tucked behind it. The paper edges at the binding are fresh and white: these pages were removed in the last few hours.\n\nStapled inside the cover, a routing slip listing six more files:\n12-C, 31-A, 58-D, 66-B, 90-A, 103-F.\n\nOnly one person knew to look in a mirror.",
+    "tr": "DOSYA 47-B — 9. İskele depo yangını soruşturması, 1998\n\n12. sayfa yok. Arkasına sıkıştırılmış olan her neyse o da yok. Ciltteki kâğıt kenarları taze ve bembeyaz: bu sayfalar son birkaç saat içinde koparılmış.\n\nKapağın içine zımbalanmış, altı dosya daha sıralanmış bir sevk fişi:\n12-C, 31-A, 58-D, 66-B, 90-A, 103-F.\n\nAynaya bakmayı yalnızca bir kişi biliyordu."
+  },
+  "C1_E18_NAME": {
+    "en": "Diploma and Service Certificate",
+    "tr": "Diploma ve Hizmet Belgesi"
+  },
+  "C1_E18_DESC": {
+    "en": "Two frames on the Director's wall: a university diploma and a municipal long-service certificate.",
+    "tr": "Müdürün duvarında iki çerçeve: bir üniversite diploması ve bir belediye hizmet belgesi."
+  },
+  "C1_E18_BODY": {
+    "en": "KARALİMAN UNIVERSITY\nArchival Studies — 1996\nAwarded to: Selin Maden\n\n\nMUNICIPALITY OF KARALİMAN\nLong-service certificate\nS. Maden — Records Office\nJoined: 1997",
+    "tr": "KARALİMAN ÜNİVERSİTESİ\nArşivcilik — 1996\nMezun: Selin Maden\n\n\nKARALİMAN BELEDİYESİ\nHizmet belgesi\nS. Maden — Kayıt Bürosu\nGöreve başlama: 1997"
+  },
+  "C1_E19_NAME": {
+    "en": "Master Key Register",
+    "tr": "Ana Anahtar Kayıt Defteri"
+  },
+  "C1_E19_DESC": {
+    "en": "The register kept under the key cabinet in the Director's office. Two hooks in the cabinet are empty.",
+    "tr": "Müdürün odasındaki anahtar dolabının altında duran kayıt defteri. Dolaptaki iki kanca boş."
+  },
+  "C1_E19_BODY": {
+    "en": "MASTER KEYS\n\nNo. 1 — E. Vural (held)\nNo. 2 — S. Vardar (held)\n\nNo other master keys exist.\n\nSecurity key ring: outer doors only.\n\nNOTE: after 19:00 the freight elevator between the ground floor and the stacks runs only with a master key.",
+    "tr": "ANA ANAHTARLAR\n\nNo. 1 — E. Vural (zimmetli)\nNo. 2 — S. Vardar (zimmetli)\n\nBaşka ana anahtar yoktur.\n\nGüvenlik anahtarlığı: yalnızca dış kapılar.\n\nNOT: 19.00'dan sonra zemin kat ile depolar arasındaki yük asansörü yalnızca ana anahtarla çalışır."
+  },
+  "C1_LOC_OFFICE": {
+    "en": "Vural's Office",
+    "tr": "Vural'ın Odası"
+  },
+  "C1_LOC_STACKS": {
+    "en": "Stack B2",
+    "tr": "B2 Deposu"
+  },
+  "C1_LOC_DIRECTOR": {
+    "en": "Director's Office",
+    "tr": "Müdür Odası"
+  },
+  "C1_ENTER_OFFICE": {
+    "en": "A message from forensics: they have finished in stack B2. The stacks are open to you now.",
+    "tr": "Olay yeri incelemeden mesaj: B2 deposundaki işleri bitmiş. Depolar artık size açık."
+  },
+  "C1_D_OFFICE_WINDOW": {
+    "en": "The window looks onto the staff car park. In this rain you would not see who came and went.",
+    "tr": "Pencere personel otoparkına bakıyor. Bu yağmurda gelen gideni görmek mümkün değil."
+  },
+  "C1_D_OFFICE_SCANNER": {
+    "en": "The scanner for the digitisation project. Still switched on.",
+    "tr": "Dijitalleştirme projesinin tarayıcısı. Hâlâ açık."
+  },
+  "C1_D_OFFICE_COAT": {
+    "en": "His coat and umbrella are still on the stand. He never left the building.",
+    "tr": "Paltosu ve şemsiyesi hâlâ askıda. Binadan hiç çıkmamış."
+  },
+  "C1_D_OFFICE_CABINET": {
+    "en": "A filing cabinet full of index cards, each in the same neat hand. Nothing out of place here.",
+    "tr": "Hepsi aynı düzgün el yazısıyla doldurulmuş fişlerle dolu bir dosya dolabı. Burada yerinden oynamış bir şey yok."
+  },
+  "C1_D_STAIRS": {
+    "en": "A steep spiral staircase of open steel grating, up to B1. From the top landing it is a long way down.",
+    "tr": "Delikli çelik ızgaradan, B1'e çıkan dik bir döner merdiven. Üst sahanlıktan aşağısı epey yüksek."
+  },
+  "C1_D_OUTLINE": {
+    "en": "Where Leyla found him. He was lying on his back, feet towards the stairs. He went down backwards.",
+    "tr": "Leyla'nın onu bulduğu yer. Sırtüstü yatıyormuş, ayakları merdivene dönük. Arkaya doğru düşmüş."
+  },
+  "C1_D_SHELF_A": {
+    "en": "Rows 40 to 49. One box has been pulled out of line.",
+    "tr": "40 ile 49 arası sıralar. Kutulardan biri yerinden çekilmiş."
+  },
+  "C1_D_SHELF_B": {
+    "en": "Rows 70 to 79. Hundreds of identical grey-brown boxes.",
+    "tr": "70 ile 79 arası sıralar. Birbirinin aynısı yüzlerce boz kutu."
+  },
+  "C1_HINT_FILE": {
+    "en": "The file is not in its box. Did Ekrem Vural leave a message about where he put it? Search his office, then connect what you find with the empty box on the Board.",
+    "tr": "Dosya kutusunda değil. Ekrem Vural onu nereye koyduğuna dair bir not bırakmış olabilir mi? Odasını arayın, sonra bulduğunuzu Pano'da boş kutuyla bağlayın."
+  },
+  "C1_D_BOOKCASE": {
+    "en": "Archive science, municipal law, forty years of annual reports. Every spine is in order.",
+    "tr": "Arşivcilik, belediye mevzuatı, kırk yıllık faaliyet raporları. Bütün ciltler sırasıyla dizilmiş."
+  },
+  "C1_D_DIR_WINDOW": {
+    "en": "The staff car park is directly below this window. Her space is the one nearest the door.",
+    "tr": "Personel otoparkı bu pencerenin tam altında. Kapıya en yakın yer onun."
+  },
+  "C1_D_PHOTO": {
+    "en": "A framed photograph: a younger Selin Vardar and Ekrem Vural, cutting a ribbon outside this building.",
+    "tr": "Çerçeveli bir fotoğraf: genç bir Selin Vardar ile Ekrem Vural, bu binanın önünde kurdele kesiyor."
+  },
+  "C1_T_AYDIN_1_TITLE": {
+    "en": "Aydın: “I left at half past seven”",
+    "tr": "Aydın: “Yedi buçukta çıktım”"
+  },
+  "C1_T_AYDIN_1": {
+    "en": "Says she left at 19:30 and went straight home.",
+    "tr": "19.30'da çıkıp doğruca evine gittiğini söylüyor."
+  },
+  "C1_T_AYDIN_2_TITLE": {
+    "en": "Aydın: a woman's voice, then the elevator",
+    "tr": "Aydın: bir kadın sesi, sonra asansör"
+  },
+  "C1_T_AYDIN_2": {
+    "en": "She stayed late in the copy room. At about 21:10 she heard Ekrem Vural arguing with a woman in the stairwell: a low voice, not shouting. Then a crash. Then silence. At about 21:20 the freight elevator started. She ran out by the side door.",
+    "tr": "Geç saate kadar fotokopi odasında kalmış. 21.10 sularında merdiven boşluğunda Ekrem Vural'ın bir kadınla tartıştığını duymuş: alçak bir ses, bağırmıyormuş. Sonra bir gürültü. Sonra sessizlik. 21.20 sularında yük asansörü çalışmış. Yan kapıdan kaçmış."
+  },
+  "C1_T_AYDIN_3_TITLE": {
+    "en": "Aydın: stayed late, heard a noise",
+    "tr": "Aydın: geç saate kadar kaldı, bir gürültü duydu"
+  },
+  "C1_T_AYDIN_3": {
+    "en": "Admits she stayed late copying files. She heard a noise from the stacks, was frightened and left. She will not say more.",
+    "tr": "Dosya kopyalamak için geç saate kadar kaldığını kabul ediyor. Depolardan bir gürültü duymuş, korkup çıkmış. Fazlasını söylemiyor."
+  },
+  "C1_T_AYDIN_4_TITLE": {
+    "en": "Aydın: “Name your price”",
+    "tr": "Aydın: “Fiyatınızı söyleyin”"
+  },
+  "C1_T_AYDIN_4": {
+    "en": "Around 18:50 she heard raised voices from Vural's office. Aras said “Name your price.” Vural answered “Some things are not for sale.”",
+    "tr": "18.50 sularında Vural'ın odasından yükselen sesler duymuş. Aras “Fiyatınızı söyleyin” demiş. Vural “Bazı şeyler satılık değildir” diye cevap vermiş."
+  },
+  "C1_T_AYDIN_5_TITLE": {
+    "en": "Aydın: Vural asked about 1998",
+    "tr": "Aydın: Vural 1998'i sordu"
+  },
+  "C1_T_AYDIN_5": {
+    "en": "This week Vural asked her who the records clerks were in 1998. When she did not know, he said: “Never mind. I think I know.”",
+    "tr": "Vural bu hafta ona 1998'de kayıt kâtiplerinin kim olduğunu sormuş. Bilmediğini söyleyince “Boş ver. Sanırım biliyorum” demiş."
+  },
+  "C1_T_VARDAR_1_TITLE": {
+    "en": "Vardar: “Home all evening”",
+    "tr": "Vardar: “Bütün akşam evdeydim”"
+  },
+  "C1_T_VARDAR_1": {
+    "en": "Says she left at half past six, spent the evening at home alone and only read Vural's email this morning.",
+    "tr": "Altı buçukta çıktığını, akşamı evde yalnız geçirdiğini ve Vural'ın e-postasını ancak bu sabah okuduğunu söylüyor."
+  },
+  "C1_T_VARDAR_2_TITLE": {
+    "en": "Vardar: admits she came back",
+    "tr": "Vardar: geri döndüğünü kabul ediyor"
+  },
+  "C1_T_VARDAR_2": {
+    "en": "Now says she came back for budget papers, spent ten minutes in her own office, saw no one and never went down to the stacks.",
+    "tr": "Şimdi de bütçe evrakı için geri döndüğünü, kendi odasında on dakika kaldığını, kimseyi görmediğini ve depolara hiç inmediğini söylüyor."
+  },
+  "C1_T_VARDAR_3_TITLE": {
+    "en": "Vardar: knew the page was retyped",
+    "tr": "Vardar: sayfanın yeniden yazıldığını biliyordu"
+  },
+  "C1_T_VARDAR_3": {
+    "en": "She called it “a retyped page” before anyone told her what was wrong with the file. The email does not say it.",
+    "tr": "Dosyadaki sorunun ne olduğunu kimse söylemeden ona “yeniden yazılmış bir sayfa” dedi. E-postada böyle bir şey yazmıyor."
+  },
+  "C1_T_VARDAR_4_TITLE": {
+    "en": "Vardar: Maden is her maiden name",
+    "tr": "Vardar: Maden kızlık soyadı"
+  },
+  "C1_T_VARDAR_4": {
+    "en": "First said she was a student in 1998. Shown the certificate, admits she was S. Maden of the Records Office.",
+    "tr": "Önce 1998'de öğrenci olduğunu söyledi. Belge gösterilince Kayıt Bürosu'ndaki S. Maden'in kendisi olduğunu kabul etti."
+  },
+  "C1_T_ARAS_1_TITLE": {
+    "en": "Aras: on stage at nine",
+    "tr": "Aras: dokuzda sahnedeydi"
+  },
+  "C1_T_ARAS_1": {
+    "en": "Says he was at the Liman Kulübü dinner from 20:00 to 23:00, in front of two hundred guests.",
+    "tr": "20.00'den 23.00'e kadar Liman Kulübü'ndeki yemekte, iki yüz davetlinin önünde olduğunu söylüyor."
+  },
+  "C1_T_ARAS_2_TITLE": {
+    "en": "Aras: tried to buy the file",
+    "tr": "Aras: dosyayı satın almaya çalıştı"
+  },
+  "C1_T_ARAS_2": {
+    "en": "Admits he offered Vural money for file 47-B to protect his family's name. Vural refused. He left at 19:05.",
+    "tr": "Ailesinin adını korumak için 47-B karşılığında Vural'a para teklif ettiğini kabul ediyor. Vural reddetmiş. 19.05'te çıkmış."
+  },
+  "C1_T_ARAS_3_TITLE": {
+    "en": "Aras: “Not your name on page twelve”",
+    "tr": "Aras: “On ikinci sayfadaki sizin adınız değil”"
+  },
+  "C1_T_ARAS_3": {
+    "en": "When Vural turned him down he said: “It is not your name on page twelve anyway.”",
+    "tr": "Vural onu geri çevirirken şöyle demiş: “On ikinci sayfadaki zaten sizin adınız değil.”"
+  },
+  "C1_AYDIN_INTRO_1": {
+    "en": "I am sorry. I cannot stop shaking. I came in at seven like always, went down to fetch a box, and he was just… lying there.",
+    "tr": "Kusura bakmayın. Titremem geçmiyor. Her zamanki gibi yedide geldim, bir kutu almak için aşağı indim, o da… öylece yatıyordu."
+  },
+  "C1_AYDIN_INTRO_2": {
+    "en": "Take your time, Leyla Hanım. I only need to understand last night.",
+    "tr": "Acele etmeyin, Leyla Hanım. Yalnızca dün geceyi anlamam gerekiyor."
+  },
+  "C1_AYDIN_RETURN": {
+    "en": "Yes, Detective?",
+    "tr": "Buyurun, Komiserim?"
+  },
+  "C1_AYDIN_Q_LEFT": {
+    "en": "When did you leave last night?",
+    "tr": "Dün gece kaçta çıktınız?"
+  },
+  "C1_AYDIN_Q_HEARD": {
+    "en": "His watch stopped at 21:17. What exactly did you hear?",
+    "tr": "Saati 21.17'de durmuş. Tam olarak ne duydunuz?"
+  },
+  "C1_AYDIN_Q_WORK": {
+    "en": "What was Ekrem Bey working on this week?",
+    "tr": "Ekrem Bey bu hafta ne üzerinde çalışıyordu?"
+  },
+  "C1_AYDIN_Q_VISIT": {
+    "en": "Did you hear anything of the deputy mayor's visit?",
+    "tr": "Başkan yardımcısının ziyaretinden bir şey duydunuz mu?"
+  },
+  "C1_AYDIN_Q_BYE": {
+    "en": "Thank you. That is all for now.",
+    "tr": "Teşekkür ederim. Şimdilik bu kadar."
+  },
+  "C1_AYDIN_LEFT_1": {
+    "en": "Half past seven. Ekrem Bey was still at his desk. I said good night and went straight home.",
+    "tr": "Yedi buçukta. Ekrem Bey hâlâ masasındaydı. İyi geceler deyip doğruca eve gittim."
+  },
+  "C1_AYDIN_LEFT_WRONG": {
+    "en": "I… do not understand what that has to do with me.",
+    "tr": "Bunun… benimle ne ilgisi olduğunu anlamadım."
+  },
+  "C1_AYDIN_CAUGHT_1": {
+    "en": "The door system has you leaving by the side door at 21:26. Two hours later than you say.",
+    "tr": "Kapı sistemine göre 21.26'da yan kapıdan çıkmışsınız. Söylediğinizden iki saat sonra."
+  },
+  "C1_AYDIN_CAUGHT_2": {
+    "en": "…",
+    "tr": "…"
+  },
+  "C1_AYDIN_KIND": {
+    "en": "I think you were frightened, Leyla. Tell me what happened and I will help you.",
+    "tr": "Bence korktunuz, Leyla. Ne olduğunu anlatın, size yardım edeyim."
+  },
+  "C1_AYDIN_HARD": {
+    "en": "You lied to a detective in a death investigation. Shall we continue at the station?",
+    "tr": "Bir ölüm soruşturmasında komisere yalan söylediniz. Devamını karakolda mı konuşalım?"
+  },
+  "C1_AYDIN_KIND_1": {
+    "en": "I was in the copy room. A journalist pays me for copies of old zoning files. It is not illegal, they are public, but I would lose my job.",
+    "tr": "Fotokopi odasındaydım. Bir gazeteci eski imar dosyalarının kopyaları için bana para veriyor. Yasa dışı değil, hepsi kamuya açık, ama işimi kaybederim."
+  },
+  "C1_AYDIN_KIND_2": {
+    "en": "About ten past nine I heard Ekrem Bey in the stairwell, arguing with someone. A woman. She was not shouting. Her voice was low, and that was worse.",
+    "tr": "Dokuzu on geçe merdiven boşluğunda Ekrem Bey'in sesini duydum, biriyle tartışıyordu. Bir kadınla. Kadın bağırmıyordu. Sesi alçaktı, asıl korkutucu olan da buydu."
+  },
+  "C1_AYDIN_KIND_3": {
+    "en": "Then a crash, like a shelf falling. Then nothing at all. A few minutes later the freight elevator started up. I ran out of the side door and did not look back.",
+    "tr": "Sonra bir gürültü, raf devrilmiş gibi. Sonra hiçbir şey. Birkaç dakika sonra yük asansörü çalıştı. Yan kapıdan kaçtım, arkama bile bakmadım."
+  },
+  "C1_AYDIN_KIND_4": {
+    "en": "I told myself he had dropped a box. I told myself that all night.",
+    "tr": "Kendi kendime kutu düşürdü dedim. Bütün gece bunu söyledim."
+  },
+  "C1_AYDIN_HARD_1": {
+    "en": "No! Please. I stayed late to copy some files, that is all. I heard a noise from the stacks, I got scared and I left.",
+    "tr": "Hayır! Lütfen. Birkaç dosya kopyalamak için geç saate kadar kaldım, hepsi bu. Depolardan bir gürültü geldi, korktum ve çıktım."
+  },
+  "C1_AYDIN_HARD_2": {
+    "en": "I do not want to say anything else.",
+    "tr": "Başka bir şey söylemek istemiyorum."
+  },
+  "C1_AYDIN_HEARD_1": {
+    "en": "Twenty-one seventeen… then I heard him die. I heard it and I ran.",
+    "tr": "Yirmi bir on yedi… demek ölürken sesini duydum. Duydum ve kaçtım."
+  },
+  "C1_AYDIN_HEARD_2": {
+    "en": "He was arguing with a woman in the stairwell, about ten past nine. A low voice. Then the crash. A few minutes after that, the freight elevator. That is everything, I swear.",
+    "tr": "Dokuzu on geçe merdiven boşluğunda bir kadınla tartışıyordu. Alçak bir ses. Sonra o gürültü. Birkaç dakika sonra da yük asansörü. Hepsi bu, yemin ederim."
+  },
+  "C1_AYDIN_WORK_1": {
+    "en": "The old inquiry files. This week it was 47-B, the Pier 9 fire. He went very quiet on Tuesday. He stopped letting me scan with him.",
+    "tr": "Eski soruşturma dosyaları. Bu hafta 47-B'deydi, 9. İskele yangını. Salı günü birden sustu. Benimle birlikte tarama yapmayı bıraktı."
+  },
+  "C1_AYDIN_WORK_2": {
+    "en": "He asked me who the records clerks were in 1998. I was not even born, I said. He did not laugh. He said, “Never mind. I think I know.”",
+    "tr": "Bana 1998'de kayıt kâtiplerinin kim olduğunu sordu. Ben daha doğmamıştım, dedim. Gülmedi. “Boş ver. Sanırım biliyorum” dedi."
+  },
+  "C1_AYDIN_VISIT_1": {
+    "en": "I was in the corridor. Demir Bey said, “Name your price.” Ekrem Bey said, “Some things are not for sale.” Then the door opened and I walked away quickly.",
+    "tr": "Koridordaydım. Demir Bey “Fiyatınızı söyleyin” dedi. Ekrem Bey “Bazı şeyler satılık değildir” dedi. Sonra kapı açıldı, ben de hızla uzaklaştım."
+  },
+  "C1_VARDAR_TELL": {
+    "en": "He left a note on his calendar: “The mirror tells the truth.”",
+    "tr": "Takvimine bir not bırakmış: “Ayna doğruyu söyler.”"
+  },
+  "C1_VARDAR_KEEP": {
+    "en": "Nothing I can share while the investigation is open.",
+    "tr": "Soruşturma sürerken paylaşabileceğim bir şey yok."
+  },
+  "C1_VARDAR_INTRO_1": {
+    "en": "Detective Kaya. Selin Vardar. I have run this archive for eleven years, and Ekrem was here before me. Whatever you need, you will have it.",
+    "tr": "Komiser Kaya. Selin Vardar. On bir yıldır bu arşivi yönetiyorum, Ekrem benden de önce buradaydı. Neye ihtiyacınız varsa emrinizde."
+  },
+  "C1_VARDAR_INTRO_2": {
+    "en": "Thank you, Dr. Vardar. I am sorry for your loss.",
+    "tr": "Teşekkür ederim, Dr. Vardar. Başınız sağ olsun."
+  },
+  "C1_VARDAR_ASK_1": {
+    "en": "One thing, Detective. Ekrem wrote everything down. Did he leave anything? A note, a message? It would mean a great deal to me.",
+    "tr": "Bir şey soracağım, Komiserim. Ekrem her şeyi yazardı. Geride bir şey bıraktı mı? Bir not, bir mesaj? Benim için çok değerli olurdu."
+  },
+  "C1_VARDAR_ASK_TOLD": {
+    "en": "The mirror… How like him. Thank you, Detective. I will not keep you from your work.",
+    "tr": "Ayna… Tam ona göre. Teşekkür ederim, Komiserim. Sizi işinizden alıkoymayayım."
+  },
+  "C1_VARDAR_ASK_KEPT": {
+    "en": "Of course. I understand entirely.",
+    "tr": "Elbette. Gayet iyi anlıyorum."
+  },
+  "C1_VARDAR_RETURN": {
+    "en": "Detective. How can I help?",
+    "tr": "Komiserim. Nasıl yardımcı olabilirim?"
+  },
+  "C1_VARDAR_Q_NIGHT": {
+    "en": "Where were you last night?",
+    "tr": "Dün gece neredeydiniz?"
+  },
+  "C1_VARDAR_Q_STACKS": {
+    "en": "You say you never went down to the stacks.",
+    "tr": "Depolara hiç inmediğinizi söylüyorsunuz."
+  },
+  "C1_VARDAR_Q_EMAIL": {
+    "en": "Ekrem Bey sent you an email at 20:03.",
+    "tr": "Ekrem Bey size 20.03'te bir e-posta göndermiş."
+  },
+  "C1_VARDAR_Q_1998": {
+    "en": "Were you working for the municipality in 1998?",
+    "tr": "1998'de belediyede çalışıyor muydunuz?"
+  },
+  "C1_VARDAR_Q_EARRINGS": {
+    "en": "In the staff photograph you are wearing jade earrings.",
+    "tr": "Personel fotoğrafında yeşim küpeler takıyorsunuz."
+  },
+  "C1_VARDAR_Q_BYE": {
+    "en": "That is all for now.",
+    "tr": "Şimdilik bu kadar."
+  },
+  "C1_VARDAR_NIGHT_1": {
+    "en": "I left at half past six. Home, a book, an early night. I live alone, so you will have to take my word for it.",
+    "tr": "Altı buçukta çıktım. Ev, bir kitap, erken bir uyku. Yalnız yaşıyorum, bu yüzden sözüme güvenmeniz gerekecek."
+  },
+  "C1_VARDAR_NIGHT_2": {
+    "en": "I only read Ekrem's email this morning. By then it was too late to ask him what he meant.",
+    "tr": "Ekrem'in e-postasını ancak bu sabah okudum. Ne demek istediğini sormak için artık çok geçti."
+  },
+  "C1_VARDAR_WRONG": {
+    "en": "I am not sure what you expect me to say about that, Detective.",
+    "tr": "Bu konuda benden ne duymayı beklediğinizi anlamadım, Komiserim."
+  },
+  "C1_VARDAR_RET_1": {
+    "en": "Your car came back into the staff car park at 20:52 and left at 21:34. The barrier reads number plates.",
+    "tr": "Arabanız 20.52'de personel otoparkına geri girmiş, 21.34'te çıkmış. Bariyer plakaları okuyor."
+  },
+  "C1_VARDAR_RET_2": {
+    "en": "…Yes. I had forgotten. I came back for the budget papers for Monday. Ten minutes in my office. I saw no one and I certainly did not go down to the stacks.",
+    "tr": "…Evet. Aklımdan çıkmış. Pazartesi günkü bütçe evrakı için döndüm. Odamda on dakika kaldım. Kimseyi görmedim, depolara da kesinlikle inmedim."
+  },
+  "C1_VARDAR_RET_3": {
+    "en": "Ten minutes. The barrier says forty-two.",
+    "tr": "On dakika. Bariyere göre kırk iki."
+  },
+  "C1_VARDAR_RET_4": {
+    "en": "Then I read some correspondence. I do not time myself, Detective.",
+    "tr": "Öyleyse biraz yazışma okumuşumdur. Kendime kronometre tutmuyorum, Komiserim."
+  },
+  "C1_VARDAR_STACKS_1": {
+    "en": "I was in this office and nowhere else. I did not go down to the stacks and I did not see Ekrem.",
+    "tr": "Bu odadaydım, başka hiçbir yerde değil. Depolara inmedim, Ekrem'i de görmedim."
+  },
+  "C1_VARDAR_CORN_1": {
+    "en": "The freight elevator ran at about twenty past nine. After seven it only runs with a master key. There are two. One was on Ekrem Bey's belt.",
+    "tr": "Yük asansörü dokuzu yirmi geçe çalışmış. Yediden sonra yalnızca ana anahtarla çalışıyor. İki tane var. Biri Ekrem Bey'in kemerindeydi."
+  },
+  "C1_VARDAR_CORN_2": {
+    "en": "Then Ekrem ran it himself.",
+    "tr": "Öyleyse Ekrem kendisi çalıştırmıştır."
+  },
+  "C1_VARDAR_CORN_3": {
+    "en": "Ekrem Bey's watch stopped at 21:17.",
+    "tr": "Ekrem Bey'in saati 21.17'de durmuş."
+  },
+  "C1_VARDAR_CORN_4": {
+    "en": "…I think I would like a lawyer present before we continue, Detective.",
+    "tr": "…Devam etmeden önce yanımda bir avukat olmasını isterim, Komiserim."
+  },
+  "C1_VARDAR_EMAIL_1": {
+    "en": "He wrote that he knew what had been done to 47-B, and by whom.",
+    "tr": "47-B'ye ne yapıldığını ve bunu kimin yaptığını bildiğini yazmış."
+  },
+  "C1_VARDAR_EMAIL_2": {
+    "en": "Ekrem saw conspiracies in filing errors. A retyped page in a file from 1998 is not a crime. Clerks retyped pages every day.",
+    "tr": "Ekrem dosyalama hatalarında komplo görürdü. 1998'den kalma bir dosyada yeniden yazılmış bir sayfa suç değildir. Kâtipler her gün sayfa yazardı."
+  },
+  "C1_VARDAR_SLIP_1": {
+    "en": "The email does not mention a retyped page, Dr. Vardar. It does not say what was done at all. How do you know?",
+    "tr": "E-postada yeniden yazılmış bir sayfadan söz edilmiyor, Dr. Vardar. Ne yapıldığı hiç yazmıyor. Siz nereden biliyorsunuz?"
+  },
+  "C1_VARDAR_SLIP_2": {
+    "en": "…He mentioned it in passing. Days ago. I did not think it mattered.",
+    "tr": "…Laf arasında söylemişti. Günler önce. Önemli olduğunu düşünmedim."
+  },
+  "C1_VARDAR_1998_1": {
+    "en": "In 1998? I was still studying. I joined the municipality some years later.",
+    "tr": "1998'de mi? Hâlâ okuyordum. Belediyeye birkaç yıl sonra girdim."
+  },
+  "C1_VARDAR_MADEN_1": {
+    "en": "Your diploma is dated 1996. The certificate beside it says S. Maden joined the Records Office in 1997.",
+    "tr": "Diplomanız 1996 tarihli. Yanındaki belgede S. Maden'in Kayıt Bürosu'na 1997'de girdiği yazıyor."
+  },
+  "C1_VARDAR_MADEN_2": {
+    "en": "Maden is my maiden name. I misspoke about the year. Half this city has those initials, Detective.",
+    "tr": "Maden kızlık soyadım. Yılı yanlış söylemişim. Bu şehrin yarısının adının baş harfleri aynıdır, Komiserim."
+  },
+  "C1_VARDAR_EAR_1": {
+    "en": "A gift from my late husband. I have not worn them in months.",
+    "tr": "Rahmetli eşimin hediyesi. Aylardır takmıyorum."
+  },
+  "C1_VARDAR_EAR_2": {
+    "en": "One like them was under a shelf at the foot of the B2 stairs. There was no dust on it.",
+    "tr": "Onlardan biri B2 merdiveninin dibindeki bir rafın altındaydı. Üzerinde hiç toz yoktu."
+  },
+  "C1_VARDAR_EAR_3": {
+    "en": "I am in the stacks every week. Things get lost.",
+    "tr": "Her hafta depolara inerim. İnsan bir şeyler kaybeder."
+  },
+  "C1_ARAS_INTRO_1": {
+    "en": "Detective. Demir Aras. I came the moment I heard. Ekrem Bey was an institution in this city.",
+    "tr": "Komiserim. Demir Aras. Duyar duymaz geldim. Ekrem Bey bu şehrin bir kurumuydu."
+  },
+  "C1_ARAS_INTRO_2": {
+    "en": "You were one of the last people to see him alive, Mr. Aras.",
+    "tr": "Onu hayattayken gören son kişilerden birisiniz, Demir Bey."
+  },
+  "C1_ARAS_RETURN": {
+    "en": "Still here, Detective. Ask away.",
+    "tr": "Hâlâ buradayım, Komiserim. Buyurun sorun."
+  },
+  "C1_ARAS_Q_VISIT": {
+    "en": "Why did you visit Ekrem Bey yesterday evening?",
+    "tr": "Dün akşam Ekrem Bey'i neden ziyaret ettiniz?"
+  },
+  "C1_ARAS_Q_NINE": {
+    "en": "Where were you at nine o'clock last night?",
+    "tr": "Dün gece saat dokuzda neredeydiniz?"
+  },
+  "C1_ARAS_Q_TODAY": {
+    "en": "And why are you here this morning?",
+    "tr": "Peki bu sabah neden buradasınız?"
+  },
+  "C1_ARAS_Q_BYE": {
+    "en": "Do not leave the city, Mr. Aras.",
+    "tr": "Şehirden ayrılmayın, Demir Bey."
+  },
+  "C1_ARAS_VISIT_1": {
+    "en": "A courtesy call. The waterfront project needs the old harbour plans, and Ekrem Bey knew where everything was.",
+    "tr": "Bir nezaket ziyareti. Sahil projesi için eski liman planları gerekiyor, Ekrem Bey de her şeyin yerini bilirdi."
+  },
+  "C1_ARAS_WRONG": {
+    "en": "I am sure that is fascinating, Detective, but it has nothing to do with me.",
+    "tr": "Eminim çok ilginçtir, Komiserim, ama benimle bir ilgisi yok."
+  },
+  "C1_ARAS_ADMIT_1": {
+    "en": "“Name your price for 47-B.” That is not a request for harbour plans.",
+    "tr": "“47-B için fiyatınızı söyleyin.” Bu, liman planı istemek değil."
+  },
+  "C1_ARAS_ADMIT_2": {
+    "en": "…",
+    "tr": "…"
+  },
+  "C1_ARAS_DIRECT": {
+    "en": "You tried to buy a public record. Tell me why, now.",
+    "tr": "Resmî bir belgeyi satın almaya çalıştınız. Nedenini söyleyin, hemen."
+  },
+  "C1_ARAS_POLITE": {
+    "en": "I am sure there is an explanation, Mr. Aras.",
+    "tr": "Eminim bir açıklaması vardır, Demir Bey."
+  },
+  "C1_ARAS_DIR_1": {
+    "en": "Very well. The inquiry cleared my father's company in 1998. I did not want that reopened by a scanning project. I offered to fund the archive. He refused. I left at five past seven.",
+    "tr": "Peki. 1998'deki soruşturma babamın şirketini aklamıştı. Bir tarama projesi yüzünden bunun yeniden açılmasını istemedim. Arşive kaynak sağlamayı teklif ettim. Reddetti. Yediyi beş geçe çıktım."
+  },
+  "C1_ARAS_DIR_2": {
+    "en": "And since you ask so directly: when he turned me down he said something odd. “It is not your name on page twelve anyway.” I have no idea whose he meant.",
+    "tr": "Madem bu kadar açık soruyorsunuz: beni geri çevirirken tuhaf bir şey söyledi. “On ikinci sayfadaki zaten sizin adınız değil.” Kimi kastettiğini bilmiyorum."
+  },
+  "C1_ARAS_POL_1": {
+    "en": "There is. A son protecting his father's name. I offered the archive funding in return for discretion. Ekrem Bey refused, and I left at five past seven. That is all.",
+    "tr": "Var. Babasının adını koruyan bir evlat. Ketumluk karşılığında arşive kaynak teklif ettim. Ekrem Bey reddetti, ben de yediyi beş geçe çıktım. Hepsi bu."
+  },
+  "C1_ARAS_NINE_1": {
+    "en": "On a stage at the Liman Kulübü, in front of two hundred guests and a photographer. Read the morning paper, Detective.",
+    "tr": "Liman Kulübü'nde, iki yüz davetlinin ve bir fotoğrafçının önünde sahnedeydim. Sabah gazetesini okuyun, Komiserim."
+  },
+  "C1_ARAS_TODAY_1": {
+    "en": "To give Selin Hanım my condolences. And to ask whether a certain file had turned up… that is, whether the archive's work will continue.",
+    "tr": "Selin Hanım'a başsağlığı dilemeye. Bir de belli bir dosya ortaya çıktı mı diye… yani arşivin çalışmaları sürecek mi diye sormaya."
+  },
+  "C1_ERDEM_Q_REPORT": {
+    "en": "About what goes in my report…",
+    "tr": "Raporuma ne yazacağıma gelince…"
+  },
+  "C1_ERDEM_REPORT_1": {
+    "en": "I know. Write what you have to write. Twenty-two years, and I will be remembered for one betting slip.",
+    "tr": "Biliyorum. Ne yazmanız gerekiyorsa yazın. Yirmi iki yıl, sonunda bir bahis kuponuyla anılacağım."
+  },
+  "C1_ERDEM_REPORT_YES": {
+    "en": "Your absence goes in the report. A man died.",
+    "tr": "Görev yerinde olmadığınız rapora girecek. Bir adam öldü."
+  },
+  "C1_ERDEM_REPORT_NO": {
+    "en": "You told me the truth when it counted. The betting shop stays between us.",
+    "tr": "Gerektiği anda bana doğruyu söylediniz. Bahis bayii aramızda kalacak."
+  },
+  "C1_ERDEM_REPORT_YES_A": {
+    "en": "That is fair. I would write the same.",
+    "tr": "Haklısınız. Ben de olsam aynısını yazardım."
+  },
+  "C1_ERDEM_REPORT_NO_A": {
+    "en": "…Thank you, Detective. I will not forget it. And I will not leave this desk again.",
+    "tr": "…Sağ olun, Komiserim. Bunu unutmam. Bu masadan da bir daha ayrılmam."
+  },
+  "C1_I_NOT_ACCIDENT_TITLE": {
+    "en": "It was not an accident",
+    "tr": "Bu bir kaza değildi"
+  },
+  "C1_I_NOT_ACCIDENT": {
+    "en": "His watch stopped at 21:17, and the coroner found finger-shaped bruises on both forearms. Someone was holding him when he went down the stairs.",
+    "tr": "Saati 21.17'de durmuş; adli tabip iki ön kolunda da parmak izi biçiminde morluklar bulmuş. Merdivenden düştüğü sırada biri onu tutuyormuş."
+  },
+  "C1_I_NOT_ACCIDENT_W1": {
+    "en": "He slipped while carrying a heavy box and broke his watch in the fall.",
+    "tr": "Ağır bir kutu taşırken ayağı kaymış, düşerken de saati kırılmış."
+  },
+  "C1_I_NOT_ACCIDENT_W2": {
+    "en": "He was killed somewhere else and carried to the stairs afterwards.",
+    "tr": "Başka bir yerde öldürülmüş, sonra merdivenin dibine taşınmış."
+  },
+  "C1_I_SEARCH_TITLE": {
+    "en": "Someone else searched his desk",
+    "tr": "Masasını başkası aradı"
+  },
+  "C1_I_SEARCH": {
+    "en": "The drawer keys were still on Vural's belt, so he had no reason to force his own desk. Someone else broke it open, looking for something, after he fell.",
+    "tr": "Çekmece anahtarları Vural'ın kemerinde duruyordu; kendi masasını zorlaması için bir sebep yoktu. O düştükten sonra başka biri, bir şey ararken çekmeceleri kırmış."
+  },
+  "C1_I_SEARCH_W1": {
+    "en": "Vural lost his keys and broke into his own desk in a hurry.",
+    "tr": "Vural anahtarlarını kaybetmiş, aceleyle kendi masasını kırmış."
+  },
+  "C1_I_SEARCH_W2": {
+    "en": "A burglar came for the petty cash.",
+    "tr": "Bir hırsız küçük kasadaki para için gelmiş."
+  },
+  "C1_I_SM_TITLE": {
+    "en": "S.M. is Selin Maden",
+    "tr": "S.M., Selin Maden'dir"
+  },
+  "C1_I_SM": {
+    "en": "The clerk who initialled the retyped page was S.M. of the Records Office. Selin Maden joined that office in 1997. She is now Dr. Selin Vardar.",
+    "tr": "Yeniden yazılan sayfayı paraflayan kâtip, Kayıt Bürosu'ndan S.M. Selin Maden o büroya 1997'de girmiş. Bugünkü adı Dr. Selin Vardar."
+  },
+  "C1_I_SM_W1": {
+    "en": "S.M. stands for “Senior Manager”, a job title that no longer exists.",
+    "tr": "S.M. bir unvanın kısaltması; artık kullanılmayan bir görev adı."
+  },
+  "C1_I_SM_W2": {
+    "en": "The initials belong to the night watchman who gave the statement.",
+    "tr": "Paraf, ifadeyi veren gece bekçisine ait."
+  },
+  "C1_I_EMAIL_TITLE": {
+    "en": "She came back because of the email",
+    "tr": "E-posta yüzünden geri döndü"
+  },
+  "C1_I_EMAIL": {
+    "en": "Vural told her at 20:03 that he was going to the prosecutor. Forty-nine minutes later her car was in the car park. She read the email that evening, not the next morning.",
+    "tr": "Vural ona 20.03'te savcılığa gideceğini yazmış. Kırk dokuz dakika sonra arabası otoparktaymış. E-postayı ertesi sabah değil, o akşam okumuş."
+  },
+  "C1_I_EMAIL_W1": {
+    "en": "The email asked her to come in, and she came to help him.",
+    "tr": "E-postada ondan gelmesi istenmiş, o da yardım etmeye gelmiş."
+  },
+  "C1_I_EMAIL_W2": {
+    "en": "The timing is a coincidence: she came back for budget papers.",
+    "tr": "Zamanlama tesadüf: bütçe evrakı için dönmüş."
+  },
+  "C1_I_ELEVATOR_TITLE": {
+    "en": "Only her key could run the elevator",
+    "tr": "Asansörü yalnızca onun anahtarı çalıştırabilirdi"
+  },
+  "C1_I_ELEVATOR": {
+    "en": "The freight elevator ran after the crash, when Vural was already dead. It needs a master key. His was still on his belt. The only other one belongs to Dr. Vardar.",
+    "tr": "Yük asansörü gürültüden sonra, Vural çoktan ölmüşken çalışmış. Çalışması için ana anahtar gerekiyor. Onunki hâlâ kemerindeymiş. Diğer tek anahtar Dr. Vardar'da."
+  },
+  "C1_I_ELEVATOR_W1": {
+    "en": "Erdem ran the elevator with the security key ring when he came back.",
+    "tr": "Erdem döndüğünde asansörü güvenlik anahtarlığıyla çalıştırmış."
+  },
+  "C1_I_ELEVATOR_W2": {
+    "en": "Leyla Aydın took the elevator herself to get out faster.",
+    "tr": "Leyla Aydın daha hızlı çıkmak için asansöre kendisi binmiş."
+  },
+  "C1_I_EARRING_TITLE": {
+    "en": "The earring is Dr. Vardar's",
+    "tr": "Küpe Dr. Vardar'ın"
+  },
+  "C1_I_EARRING": {
+    "en": "The jade drop earring under the shelf matches the pair Dr. Vardar wears in the staff photograph. It was pulled off, and it has not been there long.",
+    "tr": "Rafın altındaki sallantılı yeşim küpe, Dr. Vardar'ın personel fotoğrafında taktığı çiftle aynı. Çekilip kopmuş ve orada uzun süredir durmuyor."
+  },
+  "C1_I_EARRING_W1": {
+    "en": "The earring belongs to Leyla Aydın, who dropped it when she found the body.",
+    "tr": "Küpe Leyla Aydın'ın; cesedi bulduğunda düşürmüş."
+  },
+  "C1_I_EARRING_W2": {
+    "en": "It has been lying there for years, since before the shelves were moved.",
+    "tr": "Yıllardır orada duruyor, raflar taşınmadan öncesinden kalma."
+  },
+  "C1_I_MIRROR_TITLE": {
+    "en": "47-B in the mirror is 74-B",
+    "tr": "47-B'nin aynadaki görüntüsü: 74-B"
+  },
+  "C1_I_MIRROR": {
+    "en": "“The mirror tells the truth.” Vural did not lose file 47-B. He re-shelved it under its mirrored number, 74-B, where nobody would think to look.",
+    "tr": "“Ayna doğruyu söyler.” Vural 47-B'yi kaybetmedi. Dosyayı kimsenin bakmayı akıl etmeyeceği bir yere, numarasının ayna görüntüsüne, 74-B'ye koydu."
+  },
+  "C1_I_MIRROR_W1": {
+    "en": "He hid the file behind the mirror in the staff washroom.",
+    "tr": "Dosyayı personel lavabosundaki aynanın arkasına saklamış."
+  },
+  "C1_I_MIRROR_W2": {
+    "en": "The note means he made a second, identical copy of the file.",
+    "tr": "Not, dosyanın birebir aynı ikinci bir kopyasını çıkardığı anlamına geliyor."
+  },
+  "C1_OBJ_OFFICE": {
+    "en": "Search Ekrem Vural's office.",
+    "tr": "Ekrem Vural'ın odasını arayın."
+  },
+  "C1_OBJ_PEOPLE": {
+    "en": "Speak to Leyla Aydın, Dr. Vardar and Demir Aras.",
+    "tr": "Leyla Aydın, Dr. Vardar ve Demir Aras'la konuşun."
+  },
+  "C1_OBJ_SCENE": {
+    "en": "Examine the scene in stack B2.",
+    "tr": "B2 deposundaki olay yerini inceleyin."
+  },
+  "C1_OBJ_ACCIDENT": {
+    "en": "Use the Board to decide whether this was really an accident.",
+    "tr": "Panoyu kullanarak bunun gerçekten bir kaza olup olmadığına karar verin."
+  },
+  "C1_OBJ_FILE": {
+    "en": "Find the missing file 47-B.",
+    "tr": "Kayıp 47-B dosyasını bulun."
+  },
+  "C1_OBJ_NIGHT": {
+    "en": "Use the Board to work out who was in the building that night.",
+    "tr": "Panoyu kullanarak o gece binada kimlerin olduğunu çözün."
+  },
+  "C1_OBJ_WHO": {
+    "en": "Find out who was with Ekrem Vural at 21:17.",
+    "tr": "Saat 21.17'de Ekrem Vural'ın yanında kimin olduğunu bulun."
+  },
+  "C1_OBJ_ACCUSE": {
+    "en": "When you can prove motive, opportunity and a physical link, make your accusation (Case File, Suspects).",
+    "tr": "Sebebi, fırsatı ve fiziksel bağı kanıtlayabildiğinizde suçlamada bulunun (Dava Dosyası, Şüpheliler)."
+  },
+  "C1_SUS_VARDAR_N3": {
+    "en": "Told you she was at home all evening.",
+    "tr": "Bütün akşam evde olduğunu söyledi."
+  },
+  "C1_SUS_VARDAR_N4": {
+    "en": "Now admits she came back, but says she stayed in her office.",
+    "tr": "Artık geri döndüğünü kabul ediyor, ama odasından çıkmadığını söylüyor."
+  },
+  "C1_SUS_VARDAR_N5": {
+    "en": "She was S. Maden, a records clerk in 1998.",
+    "tr": "1998'de kayıt kâtibi olan S. Maden oymuş."
+  },
+  "C1_SUS_VARDAR_N6": {
+    "en": "Holds master key No. 2, the only one besides Vural's.",
+    "tr": "2 numaralı ana anahtar onda; Vural'ınki dışındaki tek anahtar."
+  },
+  "C1_SUS_ARAS_N3": {
+    "en": "Offered Vural money for file 47-B. Vural refused.",
+    "tr": "47-B için Vural'a para teklif etmiş. Vural reddetmiş."
+  },
+  "C1_SUS_AYDIN_N3": {
+    "en": "Was copying files in secret. Heard the argument, the crash and the elevator.",
+    "tr": "Gizlice dosya kopyalıyormuş. Tartışmayı, gürültüyü ve asansörü duymuş."
+  },
+  "C1_SUS_ERDEM_N3": {
+    "en": "Carries the security key ring: outer doors only, no master key.",
+    "tr": "Güvenlik anahtarlığını taşıyor: yalnızca dış kapılar, ana anahtar yok."
+  },
+  "C1_TL_VARDAR_HOME": {
+    "en": "Dr. Vardar goes home for the night (her statement).",
+    "tr": "Dr. Vardar evine gidiyor ve bir daha çıkmıyor (kendi ifadesi)."
+  },
+  "C1_TL_ARGUMENT": {
+    "en": "Aras: “Name your price.” Vural: “Some things are not for sale.”",
+    "tr": "Aras: “Fiyatınızı söyleyin.” Vural: “Bazı şeyler satılık değildir.”"
+  },
+  "C1_TL_EMAIL": {
+    "en": "Vural emails Dr. Vardar: he is going to the prosecutor.",
+    "tr": "Vural, Dr. Vardar'a e-posta gönderiyor: savcılığa gidecek."
+  },
+  "C1_TL_VOICES": {
+    "en": "Vural argues with a woman in the stairwell.",
+    "tr": "Vural merdiven boşluğunda bir kadınla tartışıyor."
+  },
+  "C1_TL_WATCH": {
+    "en": "Vural's watch stops.",
+    "tr": "Vural'ın saati duruyor."
+  },
+  "C1_TL_ELEVATOR": {
+    "en": "The freight elevator runs.",
+    "tr": "Yük asansörü çalışıyor."
+  },
+  "C1_TL_FOUND": {
+    "en": "Leyla Aydın finds the body (Friday).",
+    "tr": "Leyla Aydın cesedi buluyor (Cuma)."
+  },
+  "C1_EPI_ERDEM_REPORTED": {
+    "en": "Veysel Erdem is dismissed for leaving his post. He testifies anyway, in his own suit, and does not look at the betting shop on his way out of court.",
+    "tr": "Veysel Erdem görev yerini terk ettiği için işten çıkarılıyor. Yine de kendi takım elbisesiyle tanıklık ediyor; adliyeden çıkarken bahis bayiine dönüp bakmıyor."
+  },
+  "C1_EPI_ERDEM_SPARED": {
+    "en": "Veysel Erdem is still at the night desk. He has not missed a patrol since, and the stack cameras were repaired within the week.",
+    "tr": "Veysel Erdem hâlâ gece masasında. O günden beri tek bir devriyeyi aksatmadı; depo kameraları da bir hafta içinde onarıldı."
+  },
+  "C1_EPI_AYDIN": {
+    "en": "Leyla Aydın gives evidence about the voice in the stairwell. The archive keeps her on. She is the one who starts looking for the other six files.",
+    "tr": "Leyla Aydın merdiven boşluğundaki ses hakkında tanıklık ediyor. Arşiv onu işten çıkarmıyor. Diğer altı dosyayı aramaya ilk başlayan da o oluyor."
+  },
+  "C1_HINT_GUARD": {
+    "en": "Start with the night guard at the security desk. Tap him to talk.",
+    "tr": "Önce güvenlik masasındaki gece görevlisiyle konuşun. Konuşmak için ona dokunun."
+  },
+  "C1_HINT_MAP": {
+    "en": "The offices upstairs are open to you now. Tap Map and go to Vural's office.",
+    "tr": "Üst kattaki odalar artık size açık. Harita'ya dokunup Vural'ın odasına gidin."
+  },
+  "C1_HINT_AYDIN": {
+    "en": "Leyla Aydın says she left at half past seven. The door log says otherwise. Ask her when she left, then tap Present Evidence and show the Key-Card Log.",
+    "tr": "Leyla Aydın yedi buçukta çıktığını söylüyor. Kapı kaydı öyle demiyor. Ona kaçta çıktığını sorun, sonra Delil Göster'e dokunup Kartlı Geçiş Kaydı'nı gösterin."
+  },
+  "C1_HINT_AYDIN2": {
+    "en": "Leyla is holding something back. Find out exactly when Ekrem Vural died, from his personal effects in stack B2, then ask her again.",
+    "tr": "Leyla bir şey saklıyor. Ekrem Vural'ın tam olarak ne zaman öldüğünü B2 deposundaki kişisel eşyalarından öğrenin, sonra ona yeniden sorun."
+  },
+  "C1_HINT_VARDAR": {
+    "en": "Dr. Vardar says she was at home all evening. Ask her where she was last night, then present what the car park barrier recorded.",
+    "tr": "Dr. Vardar bütün akşam evde olduğunu söylüyor. Ona dün gece nerede olduğunu sorun, sonra otopark bariyerinin kaydettiğini gösterin."
+  },
+  "C1_HINT_ACCUSE": {
+    "en": "You can now prove a motive, an opportunity and a physical link. Open the Case File, go to Suspects and make your accusation.",
+    "tr": "Artık sebebi, fırsatı ve fiziksel bağı kanıtlayabilirsiniz. Dava Dosyası'nı açın, Şüpheliler'e gidin ve suçlamada bulunun."
   }
 }

@@ -317,6 +317,26 @@ func _open_ending(ending_id: String) -> void:
 	_overlays.add_child(e)
 
 
+func _open_pause() -> void:
+	var parts := UI.popup(620.0, 0.7)
+	var root: Control = parts[0]
+	var box: VBoxContainer = parts[1]
+	_overlays.add_child(root)
+	box.add_child(UI.label("PAUSE_TITLE", "HeaderLabel"))
+	var resume := UI.button("PAUSE_RESUME", "AccentButton")
+	resume.pressed.connect(root.queue_free)
+	box.add_child(resume)
+	var settings := UI.button("MENU_SETTINGS")
+	settings.pressed.connect(func(): _overlays.add_child(SETTINGS_PANEL.instantiate()))
+	box.add_child(settings)
+	var quit := UI.button("PAUSE_MAIN_MENU")
+	quit.pressed.connect(func():
+		SaveManager.save_game()
+		SceneRouter.goto(SceneRouter.MAIN_MENU))
+	box.add_child(quit)
+	box.add_child(UI.label("PAUSE_AUTOSAVE_NOTE", "SmallLabel"))
+
+
 ## Android back button / Escape: close the top window, or open the pause menu.
 func _notification_back() -> void:
 	var n := _overlays.get_child_count()

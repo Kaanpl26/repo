@@ -1,6 +1,6 @@
 # The Missing File — Game Design Document
 
-**Version:** 0.1 (draft, awaiting owner approval)
+**Version:** 1.0 (matches game build 1.0.0)
 **Platform:** Android (phones first) · **Engine:** Godot 4.x · **Language:** GDScript
 **In-game languages:** English, Turkish
 
@@ -55,7 +55,7 @@ Explore scene → find evidence → examine it → interview people
 - Hotspot types: **evidence** (goes to the case file), **detail** (flavour/observation), **container** (opens a close-up sub-view: desk drawer, computer screen, logbook), **exit**.
 - Some hotspots are **gated**: they appear only after an insight or testimony (e.g. shelf 74-B).
 - A per-scene counter shows "evidence found 3/5" so the player is never pixel-hunting blind.
-- **Hint system:** optional; a hint pulses the general area of an unfound item. Using hints lowers the final rating, never blocks progress.
+- **Hint system:** optional. In a scene, Hint points at evidence that can be picked up now; otherwise it explains how to unlock gated evidence, sends the player to the Board when cards can be connected, names the conversation they have not finished, or states the current objective. On the Board, Hint selects two cards that belong together (the player still has to choose what they mean). Hints lower the final rating slightly and never block progress.
 
 ### 3.2 Evidence and examination
 - Each evidence item has: name, picture, short description, detailed examination text, source location, and tags (time, person, place).
@@ -118,7 +118,7 @@ In 1998, a young records clerk, **Selin Maden**, was paid by Aras Shipping to re
 
 Digitising old files, Vural noticed that page 12 of 47-B was typed on a different machine and carried the clerk initials **S.M.** He worked out who that was. At 20:03 on Thursday he emailed Vardar: he would go to the prosecutor in the morning. Expecting trouble, he re-shelved the real file under a mirrored number, **74-B**, and left himself a note.
 
-Vardar drove back (car park barrier: in 20:52), found him in B2 at the top of the stairs and pleaded with him. He refused. She grabbed his arms; he went backwards down the stairs (watch stopped 21:17). She lost a jade earring in the struggle. She rode the freight elevator up with her master key, forced his desk drawers looking for the file, found nothing, and left (barrier: out 21:34). Next morning she plays the grieving, helpful colleague — and badly wants to know whether the detective finds the file first.
+Vardar drove back (car park barrier: in 20:52), found him on the B1 landing at the top of the spiral staircase and pleaded with him. He refused. She grabbed his arms; he went backwards down the stairs (watch stopped 21:17). She lost a jade earring in the struggle; it fell through the open steel treads to the B2 floor. She rode the freight elevator up with her master key, forced his desk drawers looking for the file, found nothing, and left (barrier: out 21:34). Next morning she plays the grieving, helpful colleague — and badly wants to know whether the detective finds the file first.
 
 ### 5.3 Characters
 
@@ -169,7 +169,7 @@ Vardar drove back (car park barrier: in 20:52), found him in B2 at the top of th
 
 **L3 Stack B2**
 - **E12 Personal effects** — watch, glass cracked, stopped at 21:17; his full key ring still on his belt.
-- **E13 Jade earring** — under the lowest shelf by the top of the staircase.
+- **E13 Jade earring** — under the lowest shelf beside the foot of the staircase, dust-free, hook bent open.
 - **E14 Box 47-B** — empty; checkout slip "E. Vural, Monday".
 - **E17 The real file** — shelved at 74-B. Original and retyped page 12 side by side; a routing slip listing six other file numbers; one page torn out long ago. *Gated by insight D9.*
 
@@ -338,11 +338,13 @@ Each milestone ends with something the owner can look at and approve.
 - [x] M2 Debug APK installed and runs on the owner's phone (v0.2.0)
 - [x] M2 Feedback fix (v0.2.1): Hint button, look-around tip, locked-terminal explanation
 - [x] M3 Core systems (v0.3.0): evidence board with conclusions, case file tabs (objectives, evidence, suspects, timeline), accusation with proof slots, five verdicts, rating, travel between locations (code ready, one location so far)
-- [ ] M3 checked on the owner's phone
-- [ ] M4 Case 1 content
-- [ ] M5 Localization & polish
-- [ ] M6 Testing
-- [ ] M7 Android release
+- [x] M3 checked on the owner's phone ("goes well"); Board hint requested and added
+- [x] M4 Case 1 content: 4 locations, 19 evidence items (plus the damaged-file variant), 4 interviews, 12 conclusions, 5 verdicts, 3 decisions with consequences
+- [x] M5 Localization and polish: all text in English and Turkish, original sound effects, room ambience and music, volume settings, credits, Android back button
+- [x] M6 Testing: 2,580 automated checks including a full playthrough to the true ending and the alternative branches; smoke test of the real game flow; screens checked at 16:9, 20:9, 22:9 and 4:3 in both languages
+- [x] M7 Debug APK v1.0.0 built and signature verified; build, install and release-signing guides written
+- [ ] v1.0.0 played through on the owner's phone
+- [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval
 

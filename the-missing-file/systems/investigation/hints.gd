@@ -6,7 +6,10 @@ class_name Hints
 ## 1. If a piece of evidence in this location can be picked up right now, point at it.
 ## 2. Otherwise show the first location hint whose conditions hold
 ##    (these explain how to unlock gated evidence).
-## 3. Otherwise point the player at the current objective.
+## 3. Otherwise, if cards can be connected, send the player to the Board.
+## 4. Otherwise show the first case-wide hint that applies (usually a
+##    conversation the player has not finished).
+## 5. Otherwise name the current objective.
 static func next(location_id: String) -> Dictionary:
 	var loc: Dictionary = CaseDB.locations[location_id]
 	for h in loc["hotspots"]:
@@ -14,6 +17,11 @@ static func next(location_id: String) -> Dictionary:
 				and GameState.check(h.get("conditions", [])):
 			return {"type": "point", "hotspot": h}
 	for hint in loc.get("hints", []):
+		if GameState.check(hint.get("conditions", [])):
+			return {"type": "text", "text": hint["text"]}
+	if next_link() != "":
+		return {"type": "text", "text": "HINT_BOARD"}
+	for hint in CaseDB.meta.get("hints", []):
 		if GameState.check(hint.get("conditions", [])):
 			return {"type": "text", "text": hint["text"]}
 	var o := current_objective()

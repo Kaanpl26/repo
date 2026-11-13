@@ -1,0 +1,263 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "aydin_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "aydin_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C1_AYDIN_INTRO_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "left",
+          "t": "C1_AYDIN_Q_LEFT",
+          "next": "left",
+          "conditions": [
+            {
+              "not_flag": "aydin_caught"
+            }
+          ]
+        },
+        {
+          "id": "heard",
+          "t": "C1_AYDIN_Q_HEARD",
+          "next": "heard",
+          "conditions": [
+            {
+              "flag": "aydin_pressured"
+            },
+            {
+              "has_evidence": "E12"
+            },
+            {
+              "not_flag": "aydin_told"
+            }
+          ]
+        },
+        {
+          "id": "work",
+          "t": "C1_AYDIN_Q_WORK",
+          "next": "work"
+        },
+        {
+          "id": "visit",
+          "t": "C1_AYDIN_Q_VISIT",
+          "next": "visit",
+          "conditions": [
+            {
+              "has_evidence": "E01"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C1_AYDIN_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "left": {
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_LEFT_1",
+          "effects": [
+            {
+              "add_testimony": "T_AYDIN_1"
+            }
+          ],
+          "present": {
+            "accept": [
+              "E02",
+              "I_AYDIN_STAYED"
+            ],
+            "next": "caught",
+            "wrong": "left_wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "left_wrong": {
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_LEFT_WRONG"
+        }
+      ],
+      "next": "hub"
+    },
+    "caught": {
+      "effects": [
+        {
+          "set_flag": "aydin_caught"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_AYDIN_CAUGHT_1"
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_CAUGHT_2"
+        }
+      ],
+      "choices": [
+        {
+          "id": "kind",
+          "t": "C1_AYDIN_KIND",
+          "next": "kind"
+        },
+        {
+          "id": "hard",
+          "t": "C1_AYDIN_HARD",
+          "next": "hard"
+        }
+      ]
+    },
+    "kind": {
+      "effects": [
+        {
+          "set_flag": "aydin_told"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_KIND_1"
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_KIND_2"
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_KIND_3",
+          "effects": [
+            {
+              "add_testimony": "T_AYDIN_2"
+            }
+          ]
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_KIND_4"
+        }
+      ],
+      "next": "hub"
+    },
+    "hard": {
+      "effects": [
+        {
+          "set_flag": "aydin_pressured"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_HARD_1",
+          "effects": [
+            {
+              "add_testimony": "T_AYDIN_3"
+            }
+          ]
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_HARD_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "heard": {
+      "effects": [
+        {
+          "set_flag": "aydin_told"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_HEARD_1"
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_HEARD_2",
+          "effects": [
+            {
+              "add_testimony": "T_AYDIN_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "work": {
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_WORK_1"
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_WORK_2",
+          "effects": [
+            {
+              "add_testimony": "T_AYDIN_5"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "visit": {
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_VISIT_1",
+          "effects": [
+            {
+              "add_testimony": "T_AYDIN_4"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    }
+  }
+}

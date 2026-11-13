@@ -87,8 +87,11 @@ func _test_data_references() -> void:
 		_key(t["text"], "testimony " + id)
 		_key(t["title"], "testimony title " + id)
 		ok(CaseDB.characters.has(t["speaker"]), "testimony %s: unknown speaker" % id)
+	for name in Audio.SFX + ["music"]:
+		ok(ResourceLoader.exists("res://assets/audio/%s.wav" % name), "sound missing: " + name)
 	for id in CaseDB.evidence:
 		var e: Dictionary = CaseDB.evidence[id]
+		_check_effects(e.get("effects", []), "evidence " + id)
 		for field in ["name", "desc", "body"]:
 			_key(e[field], "evidence %s.%s" % [id, field])
 		ok(ResourceLoader.exists(e["icon"]), "evidence %s: icon missing" % id)
@@ -104,6 +107,13 @@ func _test_data_references() -> void:
 		var l: Dictionary = CaseDB.locations[id]
 		_key(l["name"], "location " + id)
 		ok(ResourceLoader.exists(l["background"]), "location %s: background missing" % id)
+		_check_conditions(l.get("unlock", []), "location %s unlock" % id)
+		if l.get("ambience", "") != "":
+			ok(ResourceLoader.exists("res://assets/audio/%s.wav" % l["ambience"]), "location %s: ambience sound missing" % id)
+		if l.has("on_enter"):
+			_check_effects(l["on_enter"].get("effects", []), "location %s on_enter" % id)
+			if l["on_enter"].has("caption"):
+				_key(l["on_enter"]["caption"], "location %s on_enter" % id)
 		for hint in l.get("hints", []):
 			_key(hint["text"], "location %s hint" % id)
 			_check_conditions(hint.get("conditions", []), "location %s hint" % id)
@@ -121,6 +131,8 @@ func _test_data_references() -> void:
 					_key(h["text"], w)
 				"talk":
 					ok(CaseDB.dialogues.has(h["character"]), w + ": character has no dialogue")
+				"exit":
+					ok(CaseDB.locations.has(h["target"]), w + ": unknown target location")
 				_:
 					ok(false, w + ": unknown type")
 	for id in CaseDB.evidence:
@@ -176,7 +188,9 @@ func _test_dialogue_graph() -> void:
 				_check_effects(l.get("effects", []), w)
 				if l.has("present"):
 					var p: Dictionary = l["present"]
-					ok(CaseDB.evidence.has(p["accept"]), w + ": present uses unknown evidence")
+					var accepted: Array = p["accept"] if p["accept"] is Array else [p["accept"]]
+					for card in accepted:
+						ok(CaseDB.card_kind(card) != "", w + ": present uses unknown card " + str(card))
 					for target in [p["next"], p["wrong"]]:
 						ok(nodes.has(target), w + ": present target missing: " + target)
 						queue.append(target)
@@ -200,13 +214,14 @@ func _test_dialogue_graph() -> void:
 # Objectives, insights, suspects, timeline and endings must be consistent.
 func _test_case_structure() -> void:
 	print("- objectives, insights, suspects, timeline, endings")
+	for hint in CaseDB.meta.get("hints", []):
+		_key(hint["text"], "case hint")
+		_check_conditions(hint.get("conditions", []), "case hint")
 	for o in CaseDB.meta["objectives"]:
 		_key(o["text"], "objective " + o["id"])
 		_check_conditions(o.get("show", []), "objective " + o["id"])
 		_check_conditions(o["done"], "objective " + o["id"])
 		ok(not o["done"].is_empty(), "objective %s can never be completed" % o["id"])
-	_key(CaseDB.meta["build_done"]["text"], "build_done")
-	_check_conditions(CaseDB.meta["build_done"]["conditions"], "build_done")
 
 	# every statement must be recorded by some dialogue
 	var granted := {}
@@ -260,8 +275,14 @@ func _test_case_structure() -> void:
 			_check_conditions(n.get("conditions", []), "suspect note " + s)
 	for slot in e["slots"]:
 		ok(Loc.has_key("ACCUSE_SLOT_" + slot.to_upper()), "no label for proof slot " + slot)
+		ok(not e["proof"][e["culprit"]].get(slot, []).is_empty(), "no valid proof exists for slot " + slot)
 		for card in e["proof"][e["culprit"]].get(slot, []):
 			ok(CaseDB.card_kind(card) != "", "proof uses unknown card " + card)
+	_check_conditions(e.get("full_requires", []), "endings full_requires")
+	for id in e["endings"]:
+		for line in e["endings"][id].get("epilogue", []):
+			_key(line["text"], "epilogue " + id)
+			_check_conditions(line.get("conditions", []), "epilogue " + id)
 	for id in [e["full"], e["partial"], e["accident"]] + e["wrong"].values():
 		ok(e["endings"].has(id), "ending %s is not defined" % id)
 	for id in e["endings"]:
@@ -277,9 +298,64 @@ func _test_case_structure() -> void:
 		_check_conditions(t.get("disputed", []), "timeline " + t["time"])
 
 
-# Board deductions and accusation outcomes, without any UI.
+# ---------------------------------------------------------------- helpers
+
+## Walks into a location the way the game does and picks up everything that
+## can be picked up there right now.
+func _visit(location_id: String) -> void:
+	ok(CaseDB.location_unlocked(location_id), "location %s should be unlocked by now" % location_id)
+	GameState.location = location_id
+	if not GameState.has_flag("visited_" + location_id):
+		GameState.set_flag("visited_" + location_id)
+		GameState.apply(CaseDB.locations[location_id].get("on_enter", {}).get("effects", []))
+	for h in CaseDB.locations[location_id]["hotspots"]:
+		if h["type"] == "evidence" and GameState.check(h.get("conditions", [])):
+			GameState.add_evidence(h["evidence"])
+
+
+## Opens a conversation and stops at the first list of choices.
+func _talk(character: String) -> DialogueRunner:
+	var r := DialogueRunner.new(character)
+	_advance_to_choices(r, r.start())
+	return r
+
+
+## Picks a topic, presents a card on the first presentable line, and returns
+## to the topic list. Returns whether the card was accepted.
+func _confront(r: DialogueRunner, topic: String, card: String) -> bool:
+	var s := _pick(r, topic)
+	while not r.can_present() and s == DialogueRunner.LINE:
+		s = r.advance()
+	ok(r.can_present(), "%s.%s should have a statement to challenge" % [r.character, topic])
+	if not r.can_present():
+		return false
+	var accepted := r.present(card)
+	_advance_to_choices(r, DialogueRunner.LINE)
+	return accepted
+
+
+func _ask(r: DialogueRunner, topic: String) -> void:
+	_advance_to_choices(r, _pick(r, topic))
+
+
+## Makes every conclusion the player's cards allow, using the Board hint the
+## way a player would. Returns how many were made.
+func _connect_all() -> int:
+	var made := 0
+	var id := Hints.next_link()
+	while id != "":
+		var cards: Array = CaseDB.insights[id]["cards"]
+		var res := Deduction.try_link(cards[0], cards[1])
+		ok(res["status"] == Deduction.FOUND and res["id"] == id, "board accepts the hinted pair for " + id)
+		ok(Deduction.confirm(id, CaseDB.insights[id]["text"]), "right conclusion accepted for " + id)
+		made += 1
+		id = Hints.next_link()
+	return made
+
+
+# Board rules, then the whole case from the lobby to the true ending.
 func _test_board_and_verdict() -> void:
-	print("- board and verdict")
+	print("- board rules")
 	var links := GameState.bad_links
 	ok(Deduction.try_link("E03", "E05")["status"] == Deduction.NONE, "unrelated cards do not connect")
 	ok(GameState.bad_links == links + 1, "a dead-end connection is counted")
@@ -292,32 +368,128 @@ func _test_board_and_verdict() -> void:
 	ok(GameState.mistakes == m + 1 and not GameState.has_insight("I_VARDAR_RETURNED"), "wrong conclusion costs a mistake")
 	ok(Deduction.confirm("I_VARDAR_RETURNED", CaseDB.insights["I_VARDAR_RETURNED"]["text"]), "right conclusion accepted")
 	ok(Deduction.try_link("E02", "E06")["status"] == Deduction.KNOWN, "same connection is not offered twice")
-	for id in CaseDB.insights:
-		var cards: Array = CaseDB.insights[id]["cards"]
-		ok(GameState.has_card(cards[0]) and GameState.has_card(cards[1]), "cards for %s are obtainable in this build" % id)
-		Deduction.confirm(id, CaseDB.insights[id]["text"])
-	for o in CaseDB.meta["objectives"]:
-		ok(GameState.check(o["done"]), "objective %s is complete after the full playthrough" % o["id"])
-	ok(GameState.check(CaseDB.meta["build_done"]["conditions"]), "build-complete message triggers")
+	ok(Verdict.resolve("vardar", {"opportunity": "I_VARDAR_RETURNED"}) == "B", "culprit with only one proof -> ending B")
 
+	print("- full case playthrough")
+	_connect_all()
+	ok(not CaseDB.location_unlocked("stacks"), "stacks stay closed until the office has been visited")
+	_visit("office")
+	for id in ["E07", "E08", "E09", "E10", "E11"]:
+		ok(GameState.has_evidence(id), "office evidence %s collected" % id)
+	ok(Hints.next("lobby").get("type") in ["text", "objective"], "lobby hint still works later in the case")
+
+	var leyla := _talk("aydin")
+	ok(Hints.next("lobby").get("text") == "HINT_BOARD", "new evidence makes the hint point at the Board again")
+	_connect_all()
+	ok(Hints.next("lobby").get("text") == "C1_HINT_AYDIN", "hint explains how to challenge Leyla")
+	ok(not _confront(leyla, "left", "E05"), "Leyla: unrelated evidence is rejected")
+	ok(_confront(leyla, "left", "E02"), "Leyla: the door log breaks her story")
+	_ask(leyla, "kind")
+	ok("T_AYDIN_2" in GameState.testimony, "Leyla tells everything when treated kindly")
+	_ask(leyla, "work")
+	_ask(leyla, "visit")
+	ok(_pick(leyla, "bye") == DialogueRunner.END, "Leyla: conversation ends")
+
+	_visit("director")
+	ok(GameState.has_evidence("E18") and GameState.has_evidence("E19"), "director's office evidence collected")
+	var vardar := _talk("vardar")
+	ok(vardar.node_id == "hub", "first meeting with Vardar reaches the topic list")
+	ok(_confront(vardar, "night", "E06"), "Vardar: the barrier log breaks her alibi")
+	ok(_confront(vardar, "email", "E07"), "Vardar: caught knowing about the retyped page")
+	ok(_confront(vardar, "y1998", "E18"), "Vardar: the certificate proves she was S. Maden")
+	_pick(vardar, "bye")
+	vardar = DialogueRunner.new("vardar")
+	vardar.start()
+	ok(vardar.node_id == "ask", "Vardar asks whether Vural left a note")
+	_advance_to_choices(vardar, DialogueRunner.LINE)
+	_ask(vardar, "keep")
+	ok(not GameState.has_flag("file_compromised"), "keeping the note back protects the file")
+
+	_visit("stacks")
+	for id in ["E12", "E13", "E14", "E16"]:
+		ok(GameState.has_evidence(id), "stacks evidence %s collected" % id)
+	ok(not GameState.has_evidence("E17"), "the file stays hidden until the mirror note is understood")
+	ok(Hints.next("stacks").get("type") == "text", "stacks hint explains how to find the file")
+	_connect_all()
+	for id in CaseDB.insights:
+		ok(GameState.has_insight(id), "conclusion %s can be reached" % id)
+	_visit("stacks")
+	ok(GameState.has_evidence("E17") and GameState.has_flag("file_found"), "file 47-B found at 74-B, intact")
+	ok(not GameState.has_evidence("E17X"), "the damaged file is not offered on this path")
+
+	ok(_confront(vardar, "stacks", "I_ELEVATOR"), "Vardar: the elevator conclusion corners her")
+	ok(GameState.has_flag("vardar_cornered"), "Vardar asks for a lawyer")
+	var aras := _talk("aras")
+	ok(_confront(aras, "visit", "E10"), "Aras: his own letter breaks the courtesy-call story")
+	_ask(aras, "direct")
+	ok("T_ARAS_3" in GameState.testimony, "Aras: the direct approach earns the page-twelve remark")
+	_ask(aras, "nine")
+	_ask(aras, "today")
+	var erdem := _talk("erdem")
+	_ask(erdem, "report")
+	_ask(erdem, "report_no")
+	ok(GameState.has_flag("erdem_spared"), "decision about Erdem's report is recorded")
+
+	for id in CaseDB.countable_evidence():
+		ok(GameState.has_evidence(id), "evidence %s was found on the main path" % id)
+	for id in CaseDB.meta["testimony"]:
+		if id != "T_AYDIN_3":
+			ok(id in GameState.testimony, "statement %s was recorded on the main path" % id)
+
+	print("- verdicts")
+	var proof := {"motive": "I_SM", "opportunity": "I_ELEVATOR", "link": "I_EARRING"}
 	ok(Verdict.resolve(Verdict.ACCIDENT, {}) == "E", "accident -> ending E")
-	ok(Verdict.resolve("aras", {}) == "C", "accusing Aras -> ending C")
-	ok(Verdict.resolve("erdem", {}) == "D" and Verdict.resolve("aydin", {}) == "D", "scapegoat -> ending D")
-	ok(Verdict.resolve("vardar", {"opportunity": "I_VARDAR_RETURNED"}) == "B", "culprit with weak proof -> ending B")
-	var proof: Dictionary = CaseDB.endings["proof"]["vardar"]
-	var saved := proof.duplicate(true)
-	proof["motive"] = ["E01"]
-	proof["link"] = ["E03"]
-	var full := {"motive": "E01", "opportunity": "I_VARDAR_RETURNED", "link": "E03"}
-	ok(Verdict.resolve("vardar", full) == "A", "culprit with full proof -> ending A")
-	ok(Verdict.resolve("vardar", {"motive": "E03", "opportunity": "I_VARDAR_RETURNED", "link": "E01"}) == "B", "proof in the wrong slots -> ending B")
-	GameState.flags["file_compromised"] = true
-	ok(Verdict.resolve("vardar", full) == "B", "compromised file downgrades to ending B")
-	GameState.flags.erase("file_compromised")
-	CaseDB.endings["proof"]["vardar"] = saved
+	ok(Verdict.resolve("aras", proof) == "C", "accusing Aras -> ending C")
+	ok(Verdict.resolve("erdem", proof) == "D" and Verdict.resolve("aydin", proof) == "D", "scapegoat -> ending D")
+	ok(Verdict.resolve("vardar", {}) == "B", "culprit without proof -> ending B")
+	ok(Verdict.resolve("vardar", {"motive": "I_EARRING", "opportunity": "I_SM", "link": "I_ELEVATOR"}) == "B", "proof in the wrong slots -> ending B")
+	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "E06", "link": "E13"}) == "A", "raw evidence also counts as proof")
+	ok(Verdict.resolve("vardar", proof) == "A", "culprit with full proof and the file -> ending A")
+	ok(not Verdict.epilogue("A").is_empty(), "true ending has epilogue lines for the player's decisions")
+	GameState.set_flag("case_solved")
+	for o in CaseDB.meta["objectives"]:
+		ok(GameState.check(o.get("show", [])) and GameState.check(o["done"]), "objective %s is complete at the end" % o["id"])
+	ok(Hints.next(GameState.location).is_empty(), "no hints remain when the case is solved")
 	var r := Verdict.rating()
 	ok(r["evidence"] == r["evidence_total"] and r["insights"] == r["insights_total"], "rating counts everything found")
 	ok(r["grade"] in ["S", "A", "B", "C"], "rating has a grade")
+	var solved_state := GameState.to_dict().duplicate(true)
+
+	print("- alternative branches")
+	# Telling Vardar about the note before finding the file lets her reach it first.
+	GameState.new_game()
+	GameState.active = false
+	for flag in ["intro_seen", "erdem_met", "visited_office", "vardar_met"]:
+		GameState.set_flag(flag)
+	for id in ["E02", "E03", "E06", "E08", "E09", "E13", "E14", "E18"]:
+		GameState.add_evidence(id)
+	var v2 := DialogueRunner.new("vardar")
+	v2.start()
+	_advance_to_choices(v2, DialogueRunner.LINE)
+	_ask(v2, "tell_early")
+	ok(GameState.has_flag("file_compromised"), "telling Vardar about the note compromises the file")
+	_connect_all()
+	_visit("stacks")
+	ok(GameState.has_evidence("E17X") and not GameState.has_evidence("E17"), "the file is found with pages removed")
+	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "E06", "link": "E13"}) == "B", "compromised file -> ending B even with full proof")
+	ok(Verdict.rating()["evidence"] <= Verdict.rating()["evidence_total"], "damaged file is not double counted")
+
+	# Pressuring Leyla loses the detail at first; the stopped watch gets it later.
+	GameState.new_game()
+	GameState.active = false
+	GameState.set_flag("erdem_met")
+	GameState.add_evidence("E02")
+	var l2 := _talk("aydin")
+	_confront(l2, "left", "E02")
+	_ask(l2, "hard")
+	ok("T_AYDIN_3" in GameState.testimony and "T_AYDIN_2" not in GameState.testimony, "pressure only gets a partial statement")
+	ok("heard" not in l2.choices().map(func(c): return c["id"]), "follow-up question needs the stopped watch")
+	GameState.add_evidence("E12")
+	_ask(l2, "heard")
+	ok("T_AYDIN_2" in GameState.testimony, "the full statement can still be obtained, so the case stays solvable")
+
+	GameState.from_dict(solved_state)
+	GameState.active = false
 
 
 func _advance_to_choices(r: DialogueRunner, state: String) -> String:
@@ -391,7 +563,7 @@ func _test_playthrough() -> void:
 	h = Hints.next("lobby")
 	ok(h.get("type") == "point" and h["hotspot"]["id"] == "terminal", "hint points at the unlocked terminal")
 	GameState.add_evidence("E06")
-	ok(Hints.next("lobby").is_empty(), "no hint once everything is found")
+	ok(Hints.next("lobby").get("text") == "HINT_BOARD", "hint sends the player to the Board when cards can be connected")
 	ok(CaseDB.location_evidence("lobby").size() == 7, "lobby has 7 pieces of evidence")
 
 	var r2 := DialogueRunner.new("erdem")

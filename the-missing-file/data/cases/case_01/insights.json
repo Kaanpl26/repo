@@ -58,5 +58,89 @@
       "C1_I_SIDE_DOOR_W1",
       "C1_I_SIDE_DOOR_W2"
     ]
+  },
+  "I_NOT_ACCIDENT": {
+    "cards": [
+      "E12",
+      "E16"
+    ],
+    "title": "C1_I_NOT_ACCIDENT_TITLE",
+    "text": "C1_I_NOT_ACCIDENT",
+    "wrong": [
+      "C1_I_NOT_ACCIDENT_W1",
+      "C1_I_NOT_ACCIDENT_W2"
+    ]
+  },
+  "I_SEARCH": {
+    "cards": [
+      "E11",
+      "E12"
+    ],
+    "title": "C1_I_SEARCH_TITLE",
+    "text": "C1_I_SEARCH",
+    "wrong": [
+      "C1_I_SEARCH_W1",
+      "C1_I_SEARCH_W2"
+    ]
+  },
+  "I_SM": {
+    "cards": [
+      "E08",
+      "E18"
+    ],
+    "title": "C1_I_SM_TITLE",
+    "text": "C1_I_SM",
+    "wrong": [
+      "C1_I_SM_W1",
+      "C1_I_SM_W2"
+    ]
+  },
+  "I_EMAIL": {
+    "cards": [
+      "E07",
+      "I_VARDAR_RETURNED"
+    ],
+    "title": "C1_I_EMAIL_TITLE",
+    "text": "C1_I_EMAIL",
+    "wrong": [
+      "C1_I_EMAIL_W1",
+      "C1_I_EMAIL_W2"
+    ]
+  },
+  "I_ELEVATOR": {
+    "cards": [
+      "T_AYDIN_2",
+      "E19"
+    ],
+    "title": "C1_I_ELEVATOR_TITLE",
+    "text": "C1_I_ELEVATOR",
+    "wrong": [
+      "C1_I_ELEVATOR_W1",
+      "C1_I_ELEVATOR_W2"
+    ]
+  },
+  "I_EARRING": {
+    "cards": [
+      "E13",
+      "E03"
+    ],
+    "title": "C1_I_EARRING_TITLE",
+    "text": "C1_I_EARRING",
+    "wrong": [
+      "C1_I_EARRING_W1",
+      "C1_I_EARRING_W2"
+    ]
+  },
+  "I_MIRROR": {
+    "cards": [
+      "E09",
+      "E14"
+    ],
+    "title": "C1_I_MIRROR_TITLE",
+    "text": "C1_I_MIRROR",
+    "wrong": [
+      "C1_I_MIRROR_W1",
+      "C1_I_MIRROR_W2"
+    ]
   }
 }

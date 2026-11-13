@@ -1,129 +1,121 @@
 extends Control
-## Developer tool: renders the main screens to PNG files for visual checking.
-##   xvfb-run -a godot --path . --rendering-driver opengl3 --resolution 2400x1080 res://tests/screenshots.tscn -- <output dir>
+## Developer tool: renders screens to PNG files for visual checking.
+##   xvfb-run -a godot --path . --rendering-driver opengl3 --resolution 2400x1080 \
+##       res://tests/screenshots.tscn -- <output dir> [scenes|ui] [--show-hotspots]
 
 var _out := "user://shots"
+var _mode := "ui"
 var _current: Node
 
 
 func _ready() -> void:
-	var args := OS.get_cmdline_user_args()
-	for a in args:
-		if not a.begins_with("--"):
+	for a in OS.get_cmdline_user_args():
+		if a in ["scenes", "ui"]:
+			_mode = a
+		elif not a.begins_with("--"):
 			_out = a
 	DirAccess.make_dir_recursive_absolute(_out)
 	GameState.active = false
-	await _run()
+	_fill_state()
+	if _mode == "scenes":
+		await _scenes()
+	else:
+		await _ui()
 	get_tree().quit()
 
 
-func _show(path: String, setup: Callable = Callable()) -> Node:
+## A late-game state so that every screen has content.
+func _fill_state() -> void:
+	GameState.new_game()
+	GameState.active = false
+	for f in ["intro_seen", "erdem_met", "erdem_confessed", "aydin_met", "vardar_met", "aras_met", "vardar_asked",
+			"visited_lobby", "visited_office", "visited_stacks", "visited_director"]:
+		GameState.set_flag(f)
+	for id in CaseDB.countable_evidence():
+		if id != "E17":
+			GameState.add_evidence(id)
+	for id in CaseDB.meta["testimony"]:
+		if id != "T_AYDIN_3":
+			GameState.add_testimony(id)
+	for id in ["I_UNGUARDED", "I_ARAS_ELSEWHERE", "I_NOT_ACCIDENT", "I_SM", "I_VARDAR_RETURNED"]:
+		GameState.add_insight(id)
+
+
+func _show(path: String) -> Node:
 	if _current:
 		_current.queue_free()
 		await get_tree().process_frame
 	_current = load(path).instantiate()
-	if setup.is_valid():
-		setup.call(_current)
 	add_child(_current)
 	return _current
 
 
-func _snap(name: String, wait: float = 0.9) -> void:
+func _snap(name: String, wait: float = 0.8) -> void:
 	await get_tree().create_timer(wait).timeout
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(_out.path_join(name + ".png"))
 	print("saved ", name)
 
 
-func _run() -> void:
-	TranslationServer.set_locale("en")
-	await _show("res://ui/menus/language_select.tscn")
-	await _snap("01_language")
-	Settings.locale = "tr"
-	TranslationServer.set_locale("tr")
-	await _show("res://ui/menus/main_menu.tscn")
-	await _snap("02_menu_tr")
-	var s: Node = load("res://ui/menus/settings_panel.tscn").instantiate()
-	_current.add_child(s)
-	await _snap("03_settings_tr")
+func _game(location: String) -> Node:
+	GameState.location = location
+	return await _show("res://systems/investigation/game.tscn")
 
-	GameState.new_game()
-	GameState.active = false
+
+func _scenes() -> void:
 	TranslationServer.set_locale("en")
-	var game := await _show("res://systems/investigation/game.tscn")
-	await _snap("04_intro_en")
-	GameState.set_flag("intro_seen")
-	for id in ["E01", "E04", "E05"]:
-		GameState.add_evidence(id)
-	game = await _show("res://systems/investigation/game.tscn")
-	await _snap("05_lobby_en")
-	game._on_hint()
-	await _snap("05b_hint_point_en", 1.1)
-	for id in ["E02", "E03", "E06", "E15"]:
-		GameState.add_evidence(id)
-	GameState.evidence.erase("E06")
-	game._on_hint()
-	await _snap("05c_hint_text_en")
-	GameState.evidence.erase("E02")
-	GameState.evidence.erase("E03")
-	GameState.evidence.erase("E15")
-	game._open_evidence("E02")
-	await _snap("06_evidence_en")
+	for id in CaseDB.locations:
+		var game := await _game(id)
+		for pan in [0.0, 99999.0]:
+			game._pan = pan
+			game._apply_pan()
+			await _snap("%s_%s" % [id, "left" if pan == 0.0 else "right"], 0.4)
+
+
+func _ui() -> void:
 	TranslationServer.set_locale("tr")
-	game = await _show("res://systems/investigation/game.tscn")
-	game._open_evidence("E05")
-	await _snap("07_evidence_tr")
-	game = await _show("res://systems/investigation/game.tscn")
-	game._open_dialogue("erdem")
-	await _snap("08_dialogue_tr", 2.5)
-	var view: Node = game._overlays.get_child(0)
-	view._show_state(view._runner.advance())
-	view._show_state(view._runner.advance())
-	view._show_state(view._runner.advance())
-	await _snap("09_choices_tr")
-	view._on_choice(view._runner.choices()[1])
-	view._show_state(view._runner.advance())
-	await _snap("10_present_tr", 3.0)
-	view._open_picker()
-	await _snap("11_picker_tr")
-	for id in ["E02", "E03", "E06", "E15"]:
-		GameState.add_evidence(id)
-	for id in ["T_ERDEM_1", "T_ERDEM_4", "T_ERDEM_2", "T_ERDEM_3"]:
-		GameState.add_testimony(id)
-	GameState.set_flag("erdem_met")
-	GameState.set_flag("erdem_confessed")
-	GameState.add_insight("I_ARAS_ELSEWHERE")
+	Settings.locale = "tr"
+	await _show("res://ui/menus/main_menu.tscn")
+	await _snap("01_menu_tr")
+	_current.add_child(load("res://ui/menus/settings_panel.tscn").instantiate())
+	await _snap("02_settings_tr")
+	var game := await _game("office")
+	await _snap("03_office_tr")
+	game._open_map()
+	await _snap("04_map_tr")
+	game = await _game("director")
+	game._open_dialogue("vardar")
+	await _snap("05_dialogue_tr", 2.0)
 	TranslationServer.set_locale("en")
-	game = await _show("res://systems/investigation/game.tscn")
+	game = await _game("stacks")
+	game._open_evidence("E16")
+	await _snap("06_evidence_en")
+	game = await _game("stacks")
 	game._open_board()
 	var board: Node = game._overlays.get_child(0)
-	board._on_card("E02")
-	board._on_card("E06")
-	await _snap("12_board_en")
-	board._on_connect()
-	await _snap("13_board_question_en")
-	TranslationServer.set_locale("tr")
-	game = await _show("res://systems/investigation/game.tscn")
+	board._on_hint()
+	await _snap("07_board_hint_en")
+	game = await _game("lobby")
 	game._open_case_file()
 	var cf: Node = game._overlays.get_child(0)
-	await _snap("14_objectives_tr")
+	await _snap("08_objectives_en")
 	cf._show_tab(2)
-	await _snap("15_suspects_tr")
+	await _snap("09_suspects_en")
 	cf._show_tab(3)
-	await _snap("16_timeline_tr")
-	cf._show_tab(1)
-	await _snap("17_evidence_tab_tr")
-	game = await _show("res://systems/investigation/game.tscn")
+	await _snap("10_timeline_en")
+	game = await _game("lobby")
 	game._open_accusation()
-	await _snap("18_accuse_tr")
 	var acc: Node = game._overlays.get_child(0)
 	acc._choose("vardar")
-	acc._slots["opportunity"] = "I_ARAS_ELSEWHERE"
+	acc._slots = {"motive": "I_SM", "opportunity": "I_VARDAR_RETURNED"}
 	acc._show_proof()
-	await _snap("19_proof_tr")
-	TranslationServer.set_locale("en")
-	game = await _show("res://systems/investigation/game.tscn")
-	game._open_ending("B")
-	await _snap("20_ending_en", 1.6)
-	game = await _show("res://systems/investigation/game.tscn")
-	await _snap("21_hud_en")
+	await _snap("11_proof_en")
+	GameState.add_evidence("E17")
+	GameState.set_flag("erdem_spared")
+	game = await _game("lobby")
+	game._open_ending("A")
+	await _snap("12_ending_a_en", 1.4)
+	TranslationServer.set_locale("tr")
+	game = await _game("lobby")
+	game._open_ending("A")
+	await _snap("13_ending_a_tr", 1.4)

@@ -80,6 +80,19 @@
           ]
         },
         {
+          "id": "report",
+          "t": "C1_ERDEM_Q_REPORT",
+          "next": "report",
+          "conditions": [
+            {
+              "flag": "erdem_confessed"
+            },
+            {
+              "not_flag": "erdem_decided"
+            }
+          ]
+        },
+        {
           "id": "bye",
           "t": "C1_ERDEM_Q_BYE",
           "end": true
@@ -134,6 +147,15 @@
         {
           "s": "erdem",
           "t": "C1_ERDEM_NIGHT_KIND_A"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_NIGHT_FIRM_A",
+          "effects": [
+            {
+              "add_testimony": "T_ERDEM_4"
+            }
+          ]
         }
       ],
       "next": "hub"
@@ -256,6 +278,59 @@
         {
           "s": "erdem",
           "t": "C1_ERDEM_VURAL_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "report": {
+      "effects": [
+        {
+          "set_flag": "erdem_decided"
+        }
+      ],
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_REPORT_1"
+        }
+      ],
+      "choices": [
+        {
+          "id": "report_yes",
+          "t": "C1_ERDEM_REPORT_YES",
+          "next": "report_yes",
+          "effects": [
+            {
+              "set_flag": "erdem_reported"
+            }
+          ]
+        },
+        {
+          "id": "report_no",
+          "t": "C1_ERDEM_REPORT_NO",
+          "next": "report_no",
+          "effects": [
+            {
+              "set_flag": "erdem_spared"
+            }
+          ]
+        }
+      ]
+    },
+    "report_yes": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_REPORT_YES_A"
+        }
+      ],
+      "next": "hub"
+    },
+    "report_no": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_REPORT_NO_A"
         }
       ],
       "next": "hub"
