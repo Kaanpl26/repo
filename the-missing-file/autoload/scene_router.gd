@@ -39,3 +39,16 @@ func goto(path: String) -> void:
 	await t2.finished
 	_fade.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_busy = false
+
+
+## The detective's office: the place between cases. It is stored like a case
+## of its own (cards, conclusions and layout are saved), but it is not in the
+## case list and never has a verdict.
+const OFFICE_ID := "office"
+
+
+func open_office() -> void:
+	SaveManager.save_game()
+	if not SaveManager.load_game(OFFICE_ID):
+		GameState.new_game(OFFICE_ID)
+	goto(GAME)

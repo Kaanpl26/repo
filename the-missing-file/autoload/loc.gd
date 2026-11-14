@@ -4,7 +4,7 @@ extends Node
 ## They are loaded into Godot's TranslationServer so tr("KEY") and automatic
 ## Control translation work everywhere.
 
-var tables: Array = ["ui"]   # "ui" plus one table per available case
+var tables: Array = ["ui", "office"]   # shared text, the office, plus one table per available case
 const DIR := "res://localization/"
 
 var keys: Dictionary = {}   # every known key -> true (used by tests)

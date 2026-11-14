@@ -163,7 +163,12 @@
     "desc": "C2_E23_DESC",
     "body": "C2_E23_BODY",
     "icon": "res://assets/evidence/e18.png",
-    "gist": "C2_E23_GIST"
+    "gist": "C2_E23_GIST",
+    "effects": [
+      {
+        "set_flag": "registry_seen"
+      }
+    ]
   },
   "E24": {
     "name": "C2_E24_NAME",

@@ -100,12 +100,14 @@
     }
   ],
   "carry": [
-    "erdem_spared",
-    "erdem_reported",
-    "aydin_told",
+    "aras_admitted",
     "aydin_pressured",
-    "vardar_cornered",
-    "aras_admitted"
+    "aydin_told",
+    "erdem_reported",
+    "erdem_spared",
+    "file_compromised",
+    "file_found",
+    "vardar_cornered"
   ],
   "question": "C1_ACCUSE_QUESTION"
 }

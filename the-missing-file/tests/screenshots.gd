@@ -19,8 +19,13 @@ func _ready() -> void:
 			_out = a
 	DirAccess.make_dir_recursive_absolute(_out)
 	GameState.active = false
+	SaveManager.enabled = false
 	Profile.persist = false
 	Profile.reset()
+	if _case == "case_office":
+		await _office_shots()
+		get_tree().quit()
+		return
 	if _case != "case_01":
 		await _other_case()
 		get_tree().quit()
@@ -217,3 +222,37 @@ func _other_case() -> void:
 	await _show("res://ui/menus/main_menu.tscn")
 	_current._open_cases()
 	await _snap("c_10_cases_en")
+
+
+func _office_shots() -> void:
+	Profile.record_verdict("case_01", "B", false, {"score": 40, "grade": "C"}, ["file_found"])
+	Profile.record_verdict("case_02", "A", true, {"score": 90, "grade": "S"}, ["file_found", "registry_seen", "guven_source", "soykan_remark"])
+	GameState.new_game("office")
+	GameState.active = false
+	GameState.set_flag("intro_seen")
+	TranslationServer.set_locale("tr")
+	Settings.locale = "tr"
+	var game := await _game("office")
+	await _snap("o_01_office_tr")
+	game._open_board()
+	var board: Node = game._overlays.get_child(0)
+	board._on_hint()
+	await _snap("o_02_ledger_tr")
+	game = await _game("office")
+	game._do_action("cases")
+	await _snap("o_03_cases_tr")
+	game = await _game("office")
+	game._open_case_file()
+	var cf: Node = game._overlays.get_child(0)
+	await _snap("o_04_objectives_tr")
+	cf._show_tab(3)
+	await _snap("o_05_timeline_tr")
+	TranslationServer.set_locale("en")
+	game = await _game("office")
+	game._do_action("achievements")
+	await _snap("o_06_achievements_en")
+	await _show("res://ui/menus/main_menu.tscn")
+	await _snap("o_07_menu_en")
+	if "--show-hotspots" in OS.get_cmdline_user_args():
+		game = await _game("office")
+		await _snap("o_08_hotspots")

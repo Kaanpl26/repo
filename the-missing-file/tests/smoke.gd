@@ -5,6 +5,7 @@ extends Node
 
 
 var runner := false
+var _finished := false
 
 
 func _ready() -> void:
@@ -15,10 +16,12 @@ func _ready() -> void:
 		get_tree().root.add_child.call_deferred(copy)
 		return
 	GameState.active = false
+	SaveManager.enabled = false
 	Profile.persist = false
 	Profile.reset()
 	await _run()
-	print("SMOKE OK")
+	# A script error ends _run early, so only report success if it reached its last line.
+	print("SMOKE OK" if _finished else "SMOKE FAILED: the run stopped early")
 	get_tree().quit()
 
 
@@ -55,8 +58,8 @@ func _run() -> void:
 	get_tree().change_scene_to_file(SceneRouter.MAIN_MENU)
 	await _wait(0.5)
 	var menu := get_tree().current_scene
-	menu._open_cases()
-	menu._open_achievements()
+	menu.add_child(CaseList.new())
+	menu.add_child(AchievementsList.new())
 	await _wait(0.4)
 	GameState.new_game()
 	GameState.active = false
@@ -114,8 +117,12 @@ func _run() -> void:
 	await _close_overlays()
 	await _case_two()
 	TranslationServer.set_locale("tr")
-	_game()._open_ending("B")
+	_game()._open_ending("B", {"weak": ["WEAK_LINK", "WEAK_FILE_MISSING"]})
 	await _wait(1.0)
+	await _close_overlays()
+	TranslationServer.set_locale("en")
+	await _office()
+	_finished = true
 
 
 func _touch(pos: Vector2, pressed: bool) -> void:
@@ -206,3 +213,25 @@ func _visible_card(board: Node, n: int) -> Control:
 			found.append(c)
 	assert(found.size() > n, "the Board shows at least %d cards without scrolling" % (n + 1))
 	return found[n]
+
+
+## The office between cases: cards arrive, the wall opens, the folders list the cases.
+func _office() -> void:
+	Profile.record_verdict("case_01", "B", false, {"score": 40, "grade": "C"}, ["file_found"])
+	Profile.record_verdict("case_02", "A", true, {"score": 90, "grade": "S"}, ["file_found", "registry_seen", "guven_source", "soykan_remark"])
+	SceneRouter.open_office()
+	await _wait(1.4)
+	assert(GameState.case_id == "office" and GameState.location == "office")
+	GameState.set_flag("intro_seen")
+	await _close_overlays()
+	assert(GameState.evidence.size() == CaseDB.evidence.size(), "carried cards arrive on entering the office")
+	for id in ["ledger", "folders", "frame", "shelf", "window"]:
+		_tap_hotspot(id)
+		await _wait(0.4)
+		assert(_game()._overlays.get_child_count() <= 1)
+		await _close_overlays()
+	_game()._on_hint()
+	_game()._open_case_file()
+	await _wait(0.3)
+	await _close_overlays()
+	print("office OK")

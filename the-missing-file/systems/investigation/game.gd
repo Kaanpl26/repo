@@ -45,6 +45,14 @@ func _ready() -> void:
 	bg.texture = load(_loc["background"])
 	bg.centered = false
 	_world.add_child(bg)
+	# Things that appear in the room once they have been earned.
+	for prop in _loc.get("props", []):
+		if GameState.check(prop.get("conditions", [])):
+			var sprite := Sprite2D.new()
+			sprite.texture = load(prop["image"])
+			sprite.centered = false
+			sprite.position = Vector2(prop["pos"][0], prop["pos"][1])
+			_world.add_child(sprite)
 	_fx = Node2D.new()
 	_world.add_child(_fx)
 	if "--show-hotspots" in OS.get_cmdline_user_args():
@@ -67,6 +75,11 @@ func _ready() -> void:
 	_refresh_guidance()
 	_refresh_counter()
 
+	# Entry events that are checked on every visit (the office receives new
+	# cards whenever a case has been closed since the last time).
+	for e in _loc.get("always", []):
+		if GameState.check(e.get("conditions", [])):
+			GameState.apply(e.get("effects", []))
 	Audio.ambience(_loc.get("ambience", ""))
 	if not GameState.has_flag("intro_seen"):
 		_play_intro()
@@ -126,6 +139,8 @@ func _tap(screen_pos: Vector2) -> void:
 			_open_dialogue(hit["character"])
 		"exit":
 			_travel(hit["target"])
+		"action":
+			_do_action(hit["action"])
 
 
 func _hotspot_at(p: Vector2) -> Dictionary:
@@ -226,6 +241,9 @@ func _build_hud() -> void:
 	bottom.add_child(board_btn)
 	_badges["board"] = _badge(board_btn)
 	_badges["map"] = _badge(map_btn)
+	map_btn.visible = CaseDB.locations.size() > 1
+	count_panel.visible = not CaseDB.location_evidence(GameState.location).is_empty()
+	board_btn.text = CaseDB.meta.get("board_button", "HUD_BOARD")
 	var file_btn := UI.button("HUD_CASE_FILE", "AccentButton")
 	file_btn.size_flags_vertical = Control.SIZE_SHRINK_END
 	file_btn.custom_minimum_size = Vector2(320, 110)
@@ -343,7 +361,7 @@ func _open_evidence(id: String) -> void:
 func _on_evidence_added(_id: String) -> void:
 	Audio.sfx("found")
 	_refresh_counter()
-	_show_toast("TOAST_EVIDENCE_ADDED")
+	_show_toast(CaseDB.meta.get("evidence_toast", "TOAST_EVIDENCE_ADDED"))
 
 
 func _open_dialogue(character: String) -> void:
@@ -387,10 +405,21 @@ func _open_ending(ending_id: String, result: Dictionary = {}) -> void:
 	e.ending_id = ending_id
 	e.result = result
 	e.set_meta("no_back", true)
-	e.menu_requested.connect(func():
-		SaveManager.save_game()
-		SceneRouter.goto(SceneRouter.MAIN_MENU))
+	e.menu_requested.connect(func(): SceneRouter.open_office())
 	_overlays.add_child(e)
+
+
+## Hotspots that open a screen instead of examining something.
+func _do_action(action: String) -> void:
+	match action:
+		"cases":
+			_overlays.add_child(CaseList.new())
+		"achievements":
+			_overlays.add_child(AchievementsList.new())
+		"board":
+			_open_board()
+		"howto":
+			_overlays.add_child(HowToPlay.new())
 
 
 func _open_pause() -> void:
@@ -408,6 +437,10 @@ func _open_pause() -> void:
 	var howto := UI.button("MENU_HOWTO")
 	howto.pressed.connect(func(): _overlays.add_child(HowToPlay.new()))
 	box.add_child(howto)
+	if GameState.case_id != SceneRouter.OFFICE_ID:
+		var office := UI.button("MENU_OFFICE")
+		office.pressed.connect(func(): SceneRouter.open_office())
+		box.add_child(office)
 	var quit := UI.button("PAUSE_MAIN_MENU")
 	quit.pressed.connect(func():
 		SaveManager.save_game()

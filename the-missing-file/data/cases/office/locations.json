@@ -1,0 +1,227 @@
+{
+  "office": {
+    "name": "OF_LOC",
+    "background": "res://assets/scenes/office_hub.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1650,
+    "ambience": "rain",
+    "always": [
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_01.file_found"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L01"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_01.file_found"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L02"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_02.file_found"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L03"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_02.registry_seen"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L04"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_02.guven_source"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L05"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "case_closed": "case_02"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L06"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_02.soykan_remark"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L07"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "case_closed": "case_02"
+          }
+        ],
+        "effects": [
+          {
+            "add_evidence": "L08"
+          }
+        ]
+      }
+    ],
+    "props": [
+      {
+        "image": "res://assets/props/prop_earring.png",
+        "pos": [
+          1640,
+          150
+        ],
+        "conditions": [
+          {
+            "case_closed": "case_01"
+          }
+        ]
+      },
+      {
+        "image": "res://assets/props/prop_frontpage.png",
+        "pos": [
+          1790,
+          110
+        ],
+        "conditions": [
+          {
+            "case_solved": "case_02"
+          }
+        ]
+      },
+      {
+        "image": "res://assets/props/prop_key.png",
+        "pos": [
+          1990,
+          150
+        ],
+        "conditions": [
+          {
+            "case_closed": "case_02"
+          }
+        ]
+      },
+      {
+        "image": "res://assets/props/prop_plaque.png",
+        "pos": [
+          1700,
+          340
+        ],
+        "conditions": [
+          {
+            "rank_at_least": 1
+          }
+        ]
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "window",
+        "type": "detail",
+        "rect": [
+          124,
+          164,
+          492,
+          472
+        ],
+        "text": "OF_D_WINDOW"
+      },
+      {
+        "id": "shelf",
+        "type": "detail",
+        "rect": [
+          1610,
+          100,
+          560,
+          400
+        ],
+        "text": "OF_D_SHELF"
+      },
+      {
+        "id": "cabinet",
+        "type": "detail",
+        "rect": [
+          2640,
+          360,
+          190,
+          470
+        ],
+        "text": "OF_D_CABINET"
+      },
+      {
+        "id": "ledger",
+        "type": "action",
+        "rect": [
+          760,
+          140,
+          760,
+          440
+        ],
+        "action": "board"
+      },
+      {
+        "id": "folders",
+        "type": "action",
+        "rect": [
+          1740,
+          560,
+          350,
+          90
+        ],
+        "action": "cases"
+      },
+      {
+        "id": "frame",
+        "type": "action",
+        "rect": [
+          2260,
+          170,
+          230,
+          290
+        ],
+        "action": "achievements"
+      }
+    ],
+    "hints": []
+  }
+}

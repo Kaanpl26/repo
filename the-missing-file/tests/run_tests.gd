@@ -9,6 +9,7 @@ var _checks := 0
 
 func _ready() -> void:
 	Profile.persist = false      # never touch the player's real profile
+	SaveManager.enabled = false  # and never write save files, except where a test says so
 	Profile.reset()
 	_test_scripts_load()
 	_test_localization()
@@ -19,6 +20,11 @@ func _ready() -> void:
 			_test_data_references()
 			_test_dialogue_graph()
 			_test_case_structure()
+	print("== data checks: office")
+	_open_case("office")
+	_test_data_references()
+	_test_dialogue_graph()
+	_test_case_structure()
 	print("== Case 1")
 	_open_case("case_01")
 	_test_playthrough()
@@ -29,6 +35,8 @@ func _ready() -> void:
 	_test_save_migration()
 	print("== Case 2")
 	_test_case_02()
+	print("== Office")
+	_test_office()
 	print("\n%d checks, %d failed" % [_checks, _fails])
 	get_tree().quit(1 if _fails > 0 else 0)
 
@@ -133,6 +141,13 @@ func _test_data_references() -> void:
 		_check_conditions(l.get("unlock", []), "location %s unlock" % id)
 		if l.get("ambience", "") != "":
 			ok(ResourceLoader.exists("res://assets/audio/%s.wav" % l["ambience"]), "location %s: ambience sound missing" % id)
+		for prop in l.get("props", []):
+			ok(ResourceLoader.exists(prop["image"]), "location %s: prop image missing" % id)
+			ok(prop["pos"].size() == 2, "location %s: prop needs a position" % id)
+			_check_conditions(prop.get("conditions", []), "location %s prop" % id)
+		for always in l.get("always", []):
+			_check_conditions(always.get("conditions", []), "location %s always" % id)
+			_check_effects(always.get("effects", []), "location %s always" % id)
 		for enter in _enter_entries(l):
 			_check_conditions(enter.get("conditions", []), "location %s on_enter" % id)
 			_check_effects(enter.get("effects", []), "location %s on_enter" % id)
@@ -157,6 +172,8 @@ func _test_data_references() -> void:
 					ok(CaseDB.dialogues.has(h["character"]), w + ": character has no dialogue")
 				"exit":
 					ok(CaseDB.locations.has(h["target"]), w + ": unknown target location")
+				"action":
+					ok(h["action"] in ["cases", "achievements", "board", "howto"], w + ": unknown action")
 				_:
 					ok(false, w + ": unknown type")
 	var record_ids := {}
@@ -199,6 +216,8 @@ func _all_effect_lists() -> Array:
 	for id in CaseDB.locations:
 		for enter in _enter_entries(CaseDB.locations[id]):
 			lists.append(enter.get("effects", []))
+		for always in CaseDB.locations[id].get("always", []):
+			lists.append(always.get("effects", []))
 	for id in CaseDB.evidence:
 		lists.append(CaseDB.evidence[id].get("effects", []))
 	for id in CaseDB.insights:
@@ -209,7 +228,7 @@ func _all_effect_lists() -> Array:
 func _check_conditions(list: Array, where: String) -> void:
 	for c in list:
 		for k in c:
-			ok(k in ["has_evidence", "no_evidence", "flag", "not_flag", "has_insight", "no_insight", "has_testimony", "profile_flag", "case_solved", "case_closed"], where + ": unknown condition " + k)
+			ok(k in ["has_evidence", "no_evidence", "flag", "not_flag", "has_insight", "no_insight", "has_testimony", "profile_flag", "case_solved", "case_closed", "rank_at_least"], where + ": unknown condition " + k)
 			if k in ["case_solved", "case_closed"]:
 				ok(not CaseDB.case_entry(c[k]).is_empty(), where + ": condition uses unknown case")
 			if k in ["has_insight", "no_insight"]:
@@ -335,7 +354,8 @@ func _test_case_structure() -> void:
 		ok(CaseDB.card_title(id) != "" and ResourceLoader.exists(CaseDB.card_icon(id)), w + ": card info")
 
 	var e: Dictionary = CaseDB.endings
-	ok(e["culprit"] in e["suspects"], "culprit must be a suspect")
+	var has_verdict: bool = not e["suspects"].is_empty()    # the office has nobody to accuse
+	ok(not has_verdict or e["culprit"] in e["suspects"], "culprit must be a suspect")
 	for s in e["suspects"]:
 		ok(CaseDB.characters.has(s) and CaseDB.characters[s].has("portrait"), "suspect %s needs a portrait" % s)
 		ok(CaseDB.suspects.has(s), "suspect %s has no profile" % s)
@@ -351,6 +371,7 @@ func _test_case_structure() -> void:
 	for slot in e["slots"]:
 		ok(Loc.has_key("ACCUSE_SLOT_" + slot.to_upper()), "no label for proof slot " + slot)
 		ok(not e["proof"][e["culprit"]].get(slot, []).is_empty(), "no valid proof exists for slot " + slot)
+		ok(Loc.has_key("WEAK_" + slot.to_upper()), "no weak-point text for slot " + slot)
 		for card in e["proof"][e["culprit"]].get(slot, []):
 			ok(CaseDB.card_kind(card) != "", "proof uses unknown card " + card)
 	_check_conditions(e.get("full_requires", []), "endings full_requires")
@@ -358,14 +379,18 @@ func _test_case_structure() -> void:
 		for line in e["endings"][id].get("epilogue", []):
 			_key(line["text"], "epilogue " + id)
 			_check_conditions(line.get("conditions", []), "epilogue " + id)
-	for id in [e["full"], e["partial"], e["accident"]] + e["wrong"].values():
-		ok(e["endings"].has(id), "ending %s is not defined" % id)
+	if has_verdict:
+		for id in [e["full"], e["partial"], e["accident"]] + e["wrong"].values():
+			ok(e["endings"].has(id), "ending %s is not defined" % id)
 	for id in e["endings"]:
 		_key(e["endings"][id]["title"], "ending " + id)
 		_key(e["endings"][id]["text"], "ending " + id)
 
 	_key(e["question"], "accusation question")
 	_key(CaseDB.meta["timeline_title"], "timeline title")
+	for optional in ["board_title", "board_button", "evidence_toast"]:
+		if CaseDB.meta.has(optional):
+			_key(CaseDB.meta[optional], "case " + optional)
 	for a in CaseDB.achievements:
 		if a.get("case", "") != CaseDB.case_id:
 			continue
@@ -376,7 +401,7 @@ func _test_case_structure() -> void:
 		ok(typeof(flag) == TYPE_STRING, "carried flags are names")
 
 	var rx := RegEx.new()
-	rx.compile("^[0-2][0-9]:[0-5][0-9]$")
+	rx.compile("^([0-2][0-9]:[0-5][0-9]|[12][0-9]{3})$")   # a time of day, or a year
 	for t in CaseDB.timeline:
 		ok(rx.search(t["time"]) != null, "timeline: bad time " + str(t["time"]))
 		_key(t["text"], "timeline " + t["time"])
@@ -396,6 +421,9 @@ func _visit(location_id: String) -> void:
 		for enter in _enter_entries(CaseDB.locations[location_id]):
 			if GameState.check(enter.get("conditions", [])):
 				GameState.apply(enter.get("effects", []))
+	for always in CaseDB.locations[location_id].get("always", []):
+		if GameState.check(always.get("conditions", [])):
+			GameState.apply(always.get("effects", []))
 	for h in CaseDB.locations[location_id]["hotspots"]:
 		if h["type"] == "evidence" and GameState.check(h.get("conditions", [])):
 			GameState.add_evidence(h["evidence"])
@@ -790,6 +818,56 @@ func _test_case_02() -> void:
 	_open_case("case_01")
 
 
+# The office: what is carried out of the cases, the Ledger wall, the mementos.
+func _test_office() -> void:
+	Profile.reset()
+	_open_case("office")
+	print("- carried cards and the Ledger wall")
+	ok(CaseDB.case_entry("office").is_empty(), "the office is not in the case list")
+	ok(CaseDB.endings["suspects"].is_empty(), "nobody can be accused from the office")
+	_visit("office")
+	ok(GameState.evidence.is_empty(), "the wall is empty before any case has been closed")
+	ok(Hints.current_objective().get("id") == "O_C1", "the office points at the first case")
+	var props: Array = CaseDB.locations["office"]["props"]
+	ok(props.filter(func(p): return GameState.check(p["conditions"])).is_empty(), "the shelf is empty at the start")
+
+	# Case 1 closed with the file found (any verdict).
+	Profile.record_verdict("case_01", "B", false, {"score": 40, "grade": "C"}, ["file_found", "erdem_spared"])
+	ok(Profile.has_flag("case_01.file_found"), "what was found is carried out of a case even after a weak verdict")
+	_visit("office")
+	ok(GameState.has_evidence("L01") and GameState.has_evidence("L02"), "the routing slip and the torn page arrive from File 47-B")
+	ok(not GameState.has_evidence("L03"), "nothing from File 58-D yet")
+	ok(Hints.link_count() == 0, "one case alone connects to nothing")
+	ok(props.filter(func(p): return GameState.check(p["conditions"])).size() == 1, "one memento after the first case")
+
+	# Case 2 solved with everything.
+	Profile.record_verdict("case_02", "A", true, {"score": 90, "grade": "S"}, ["file_found", "registry_seen", "guven_source", "soykan_remark", "kaplan_free"])
+	_visit("office")
+	for id in CaseDB.evidence:
+		ok(GameState.has_evidence(id), "card %s arrives on the wall" % id)
+	ok(Hints.link_count() == CaseDB.insights.size(), "every Ledger connection is possible with both cases closed")
+	ok(_connect_all() == CaseDB.insights.size(), "all Ledger conclusions can be reached")
+	ok("LEDGER_WALL" in Achievements.evaluate() or Profile.achievements.has("LEDGER_WALL"), "Ledger achievement earned")
+	ok(Profile.achievements.has("LEDGER_CHIEF"), "hidden achievement for noticing the chief")
+	ok(Hints.current_objective().get("id") == "O_NEXT", "the office points at the next case")
+	ok(props.filter(func(p): return GameState.check(p["conditions"])).size() == 4, "four mementos: both cases, the front page and the promotion")
+
+	# Missing pieces stay missing: no file in Case 1, so no slip on the wall.
+	Profile.reset()
+	Profile.record_verdict("case_01", "B", false, {"score": 20, "grade": "C"}, [])
+	_open_case("office")
+	_visit("office")
+	ok(not GameState.has_evidence("L01"), "without the file there is no routing slip to carry")
+
+	# A later verdict replaces what an earlier one carried.
+	Profile.set_carried("case_01", ["file_found"])
+	ok(Profile.has_flag("case_01.file_found"), "carried decisions can be refreshed from a save")
+	Profile.set_carried("case_01", [])
+	ok(not Profile.has_flag("case_01.file_found"), "and cleared")
+	Profile.reset()
+	_open_case("case_01")
+
+
 # Pressing statements and running out of patience.
 func _test_interrogation() -> void:
 	print("- interrogation: press and patience")
@@ -888,7 +966,7 @@ func _test_career() -> void:
 		ids[a["id"]] = true
 		_key(a["title"], "achievement " + a["id"])
 		_key(a["desc"], "achievement " + a["id"])
-		ok(not CaseDB.case_entry(a.get("case", "")).is_empty(), "achievement %s: unknown case" % a["id"])
+		ok(FileAccess.file_exists("res://data/cases/%s/case.json" % a.get("case", "")), "achievement %s: unknown case" % a["id"])
 	for key in ["ACH_SECRET_TITLE", "ACH_SECRET_DESC", "CASES_NUMBER"]:
 		ok(Loc.has_key(key), "missing text " + key)
 
@@ -955,6 +1033,7 @@ func _test_save_migration() -> void:
 	var f := FileAccess.open(old, FileAccess.WRITE)
 	f.store_string(JSON.stringify({"version": 1, "state": state}))
 	f.close()
+	SaveManager.enabled = true
 	SaveManager._migrate_v1()
 	ok(not FileAccess.file_exists(old), "old save file is removed after migration")
 	ok(SaveManager.has_save("case_01"), "old save is available as the Case 1 save")
@@ -966,6 +1045,7 @@ func _test_save_migration() -> void:
 	GameState.active = false
 	SaveManager.delete_save("case_01")
 	ok(not SaveManager.has_save("case_01"), "test save cleaned up")
+	SaveManager.enabled = false
 	Profile.reset()
 
 

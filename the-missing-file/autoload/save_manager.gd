@@ -6,11 +6,13 @@ const OLD_PATH := "user://save.json"   # single save used before version 2
 const VERSION := 2
 
 var _pending := false
+var enabled := true     # tests switch this off so they never write save files
 
 
 func _ready() -> void:
 	_migrate_v1()
 	_backfill_profile()
+	_refresh_carried()
 	GameState.changed.connect(_queue_save)
 
 
@@ -57,7 +59,27 @@ func _backfill_profile() -> void:
 				carried.append(flag)
 		for ending in seen:
 			var is_solved: bool = CaseDB.endings["endings"].get(ending, {}).get("solved", false)
-			Profile.record_verdict(id, ending, is_solved, rating, carried if is_solved else [])
+			Profile.record_verdict(id, ending, is_solved, rating, carried)
+	CaseDB.load_case(CaseDB.index[0]["id"])
+
+
+## Newer versions carry more decisions out of a case than older ones did.
+## For every case that has a verdict and still has its save, read them again.
+func _refresh_carried() -> void:
+	for entry in CaseDB.index:
+		var id: String = entry["id"]
+		if not Profile.is_closed(id):
+			continue
+		var data = _read(id)
+		if data == null or Array(data["state"].get("endings_seen", [])).is_empty():
+			continue
+		CaseDB.load_case(id)
+		var flags: Dictionary = Dictionary(data["state"].get("flags", {}))
+		var carried: Array = []
+		for flag in CaseDB.endings.get("carry", []):
+			if bool(flags.get(flag, false)):
+				carried.append(flag)
+		Profile.set_carried(id, carried)
 	CaseDB.load_case(CaseDB.index[0]["id"])
 
 
@@ -74,14 +96,15 @@ func _flush() -> void:
 
 
 func save_game() -> void:
-	if not GameState.active:
+	if not GameState.active or not enabled:
 		return
 	var f := FileAccess.open(path(GameState.case_id), FileAccess.WRITE)
 	if f == null:
 		push_error("Could not write save file")
 		return
 	f.store_string(JSON.stringify({"version": VERSION, "state": GameState.to_dict()}))
-	Profile.set_last_case(GameState.case_id)
+	if not CaseDB.case_entry(GameState.case_id).is_empty():
+		Profile.set_last_case(GameState.case_id)
 
 
 func has_save(case_id: String) -> bool:

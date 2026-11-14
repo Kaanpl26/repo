@@ -1,0 +1,47 @@
+[
+  {
+    "time": "1997",
+    "text": "OF_TL_FENER",
+    "conditions": [
+      {
+        "has_evidence": "L04"
+      }
+    ]
+  },
+  {
+    "time": "1998",
+    "text": "OF_TL_FIRE",
+    "conditions": [
+      {
+        "has_evidence": "L02"
+      }
+    ]
+  },
+  {
+    "time": "2004",
+    "text": "OF_TL_ZONING",
+    "conditions": [
+      {
+        "has_evidence": "L03"
+      }
+    ]
+  },
+  {
+    "time": "2026",
+    "text": "OF_TL_VURAL",
+    "conditions": [
+      {
+        "case_closed": "case_01"
+      }
+    ]
+  },
+  {
+    "time": "2026",
+    "text": "OF_TL_TUNC",
+    "conditions": [
+      {
+        "case_closed": "case_02"
+      }
+    ]
+  }
+]

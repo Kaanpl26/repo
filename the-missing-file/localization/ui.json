@@ -778,5 +778,41 @@
   "WEAK_FILE_DAMAGED": {
     "en": "The missing file: it reached you with its key pages removed. Someone learned where it was before you got there.",
     "tr": "Kayıp dosya: elinize kilit sayfaları koparılmış hâlde geçti. Siz ulaşmadan önce biri yerini öğrendi."
+  },
+  "MENU_OFFICE": {
+    "en": "Office",
+    "tr": "Ofis"
+  },
+  "ENDING_TO_OFFICE": {
+    "en": "Back to the Office",
+    "tr": "Ofise Dön"
+  },
+  "CASES_CLOSED_WRONG": {
+    "en": "Closed, but not solved. You can try again.",
+    "tr": "Kapandı ama çözülmedi. Yeniden deneyebilirsiniz."
+  },
+  "HOWTO_OFFICE_TITLE": {
+    "en": "Your office",
+    "tr": "Odanız"
+  },
+  "HOWTO_OFFICE_TEXT": {
+    "en": "Between cases you are in your office. The folders on the desk open the cases. What you carry out of each case goes up on the Ledger wall, where it can be connected like any other evidence.",
+    "tr": "Dosyalar arasında odanızdasınız. Masadaki dosyalar davaları açar. Her dosyadan çıkardıklarınız Defter duvarına asılır; orada diğer deliller gibi birbirine bağlanabilir."
+  },
+  "ACH_LEDGER_WALL_TITLE": {
+    "en": "Red Thread",
+    "tr": "Kırmızı İplik"
+  },
+  "ACH_LEDGER_WALL_DESC": {
+    "en": "On the Ledger wall, work out who pays, who delivers and whose hand is on both files.",
+    "tr": "Defter duvarında parayı kimin ödediğini, işi kimin getirdiğini ve iki dosyada kimin eli olduğunu çözün."
+  },
+  "ACH_LEDGER_CHIEF_TITLE": {
+    "en": "Tragic Timing",
+    "tr": "Talihsiz Zamanlama"
+  },
+  "ACH_LEDGER_CHIEF_DESC": {
+    "en": "Notice that someone was ahead of you twice in one morning.",
+    "tr": "Birinin aynı sabah iki kez sizden önde olduğunu fark edin."
   }
 }

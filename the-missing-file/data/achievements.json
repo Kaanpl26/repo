@@ -213,5 +213,35 @@
         "flag": "kaplan_free"
       }
     ]
+  },
+  {
+    "id": "LEDGER_WALL",
+    "title": "ACH_LEDGER_WALL_TITLE",
+    "desc": "ACH_LEDGER_WALL_DESC",
+    "hidden": false,
+    "case": "office",
+    "conditions": [
+      {
+        "has_insight": "LI_SAME_HAND"
+      },
+      {
+        "has_insight": "LI_FENER"
+      },
+      {
+        "has_insight": "LI_KARACA"
+      }
+    ]
+  },
+  {
+    "id": "LEDGER_CHIEF",
+    "title": "ACH_LEDGER_CHIEF_TITLE",
+    "desc": "ACH_LEDGER_CHIEF_DESC",
+    "hidden": true,
+    "case": "office",
+    "conditions": [
+      {
+        "has_insight": "LI_CHIEF"
+      }
+    ]
   }
 ]

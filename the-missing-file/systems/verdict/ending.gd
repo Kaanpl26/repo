@@ -99,7 +99,7 @@ func _ready() -> void:
 	var buttons := HBoxContainer.new()
 	buttons.alignment = BoxContainer.ALIGNMENT_CENTER
 	box.add_child(buttons)
-	var menu := UI.button("PAUSE_MAIN_MENU")
+	var menu := UI.button("ENDING_TO_OFFICE")
 	menu.pressed.connect(func(): menu_requested.emit())
 	buttons.add_child(menu)
 	if not def["solved"]:

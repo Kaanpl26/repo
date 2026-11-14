@@ -41,12 +41,16 @@
   },
   "spoiled_flag": "file_compromised",
   "carry": [
-    "kaplan_held",
-    "kaplan_free",
-    "aktas_spared",
     "aktas_charged",
-    "guven_protected",
+    "aktas_spared",
+    "file_found",
     "guven_named",
+    "guven_protected",
+    "guven_source",
+    "kaplan_free",
+    "kaplan_held",
+    "registry_seen",
+    "soykan_remark",
     "soylu_cornered"
   ],
   "endings": {

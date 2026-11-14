@@ -1,0 +1,93 @@
+{
+  "id": "office",
+  "title": "OF_TITLE",
+  "start_location": "office",
+  "timeline_title": "OF_TIMELINE_TITLE",
+  "board_title": "OF_BOARD_TITLE",
+  "board_button": "OF_BOARD_BUTTON",
+  "intro": [
+    "OF_INTRO_1",
+    "OF_INTRO_2"
+  ],
+  "testimony": {},
+  "objectives": [
+    {
+      "id": "O_C1",
+      "text": "OF_OBJ_C1",
+      "show": [],
+      "done": [
+        {
+          "case_closed": "case_01"
+        }
+      ]
+    },
+    {
+      "id": "O_C2",
+      "text": "OF_OBJ_C2",
+      "show": [
+        {
+          "case_closed": "case_01"
+        }
+      ],
+      "done": [
+        {
+          "case_closed": "case_02"
+        }
+      ]
+    },
+    {
+      "id": "O_WALL",
+      "text": "OF_OBJ_WALL",
+      "show": [
+        {
+          "case_closed": "case_02"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "LI_SAME_HAND"
+        },
+        {
+          "has_insight": "LI_FENER"
+        },
+        {
+          "has_insight": "LI_KARACA"
+        }
+      ]
+    },
+    {
+      "id": "O_NEXT",
+      "text": "OF_OBJ_NEXT",
+      "show": [
+        {
+          "has_insight": "LI_SAME_HAND"
+        },
+        {
+          "has_insight": "LI_FENER"
+        },
+        {
+          "has_insight": "LI_KARACA"
+        }
+      ],
+      "done": [
+        {
+          "case_closed": "case_03"
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "conditions": [
+        {
+          "case_closed": "case_02"
+        },
+        {
+          "no_insight": "LI_KARACA"
+        }
+      ],
+      "text": "OF_HINT_WALL"
+    }
+  ],
+  "evidence_toast": "OF_TOAST_CARD"
+}

@@ -29,6 +29,8 @@ func _ready() -> void:
 		_tabs.append("TAB_RECORDS")
 	for i in _tabs.size():
 		var b := UI.button(_tabs[i], "TabButton")
+		# A place with nobody to accuse (the office) has no Suspects tab.
+		b.visible = not (_tabs[i] == "TAB_SUSPECTS" and CaseDB.endings.get("suspects", []).is_empty())
 		b.pressed.connect(_show_tab.bind(i))
 		head.add_child(b)
 		_tab_buttons.append(b)

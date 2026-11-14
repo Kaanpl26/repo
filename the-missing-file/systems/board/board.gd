@@ -34,7 +34,7 @@ func _ready() -> void:
 	var titles := VBoxContainer.new()
 	titles.add_theme_constant_override("separation", 2)
 	titles.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	titles.add_child(UI.label("BOARD_TITLE", "HeaderLabel"))
+	titles.add_child(UI.label(CaseDB.meta.get("board_title", "BOARD_TITLE"), "HeaderLabel"))
 	titles.add_child(UI.label("BOARD_HELP", "SmallLabel"))
 	_possible = UI.label("", "SmallLabel")
 	_possible.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
@@ -122,7 +122,8 @@ func _rebuild() -> void:
 	_buttons.clear()
 	_section("BOARD_CONCLUSIONS", GameState.insights, "BOARD_NO_CONCLUSIONS")
 	_section("CASEFILE_EVIDENCE", GameState.evidence, "CASEFILE_NO_EVIDENCE")
-	_section("BOARD_STATEMENTS", GameState.testimony, "CASEFILE_NO_TESTIMONY")
+	if not CaseDB.meta["testimony"].is_empty():      # the office has no statements
+		_section("BOARD_STATEMENTS", GameState.testimony, "CASEFILE_NO_TESTIMONY")
 	_refresh_selection()
 
 

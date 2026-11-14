@@ -89,6 +89,9 @@
           "effects": [
             {
               "add_testimony": "T_SOYKAN_2"
+            },
+            {
+              "set_flag": "soykan_remark"
             }
           ],
           "press": "press_why"

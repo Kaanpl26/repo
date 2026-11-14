@@ -352,7 +352,9 @@ Each milestone ends with something the owner can look at and approve.
 - [x] v1.2.0: police database, and Case 2 "Dosya 58-D" (4 locations, 24 evidence items including 4 database records, 5 interviews, 12 conclusions, 5 verdicts, 3 decisions, 2 call-backs from Case 1 decisions)
 - [x] v1.2.0 played on the owner's phone; feedback: cards too brief to compare when connecting or presenting; the player feels lost between options
 - [x] v1.2.1: every card shows a short line saying what it proves (Board, Case File, pickers); the Board tray shows both chosen cards in full; the present-evidence picker quotes the statement being challenged and groups cards by kind; the current objective is always on screen; red dots mark buttons with something waiting; the Map shows evidence found per room; Present Evidence glows when the player holds something that fits; a weak verdict lists what was missing
-- [ ] v1.2.1 checked on the owner's phone on the owner's phone
+- [x] v1.2.1 checked on the owner's phone: summaries, text size, dots and glow all approved
+- [x] v1.3.0: the detective's office (hub between cases, reached from the menu, the pause menu and after every verdict), the Ledger wall (8 cards carried out of the cases, 6 cross-case conclusions), four mementos, season timeline and objectives; what was found in a case is now carried forward after any verdict
+- [ ] v1.3.0 checked on the owner's phone on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

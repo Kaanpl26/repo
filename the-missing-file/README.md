@@ -23,6 +23,7 @@ Search locations, question people, look things up in the police database, connec
 | `ui/` | Menus, shared UI helpers, theme and fonts |
 | `data/cases/<case>/` | Each case as JSON: locations, evidence, database records, dialogue, conclusions, suspects, timeline, endings |
 | `data/` | Case index, career ranks, achievements |
+| `data/cases/office/` | The detective's office between cases: the Ledger wall's cards and conclusions |
 | `localization/` | All player-facing text, English and Turkish |
 | `assets/` | Rendered art and generated audio |
 | `art_src/`, `tools/` | Art and audio generators, build and test scripts |

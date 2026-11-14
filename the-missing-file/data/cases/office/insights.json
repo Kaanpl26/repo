@@ -1,0 +1,74 @@
+{
+  "LI_LIST": {
+    "cards": [
+      "L01",
+      "L03"
+    ],
+    "title": "OF_LI_LIST_TITLE",
+    "text": "OF_LI_LIST",
+    "wrong": [
+      "OF_LI_LIST_W1",
+      "OF_LI_LIST_W2"
+    ]
+  },
+  "LI_SAME_HAND": {
+    "cards": [
+      "L02",
+      "L03"
+    ],
+    "title": "OF_LI_SAME_HAND_TITLE",
+    "text": "OF_LI_SAME_HAND",
+    "wrong": [
+      "OF_LI_SAME_HAND_W1",
+      "OF_LI_SAME_HAND_W2"
+    ]
+  },
+  "LI_FENER": {
+    "cards": [
+      "L03",
+      "L04"
+    ],
+    "title": "OF_LI_FENER_TITLE",
+    "text": "OF_LI_FENER",
+    "wrong": [
+      "OF_LI_FENER_W1",
+      "OF_LI_FENER_W2"
+    ]
+  },
+  "LI_LAW_OFFICE": {
+    "cards": [
+      "L05",
+      "L04"
+    ],
+    "title": "OF_LI_LAW_OFFICE_TITLE",
+    "text": "OF_LI_LAW_OFFICE",
+    "wrong": [
+      "OF_LI_LAW_OFFICE_W1",
+      "OF_LI_LAW_OFFICE_W2"
+    ]
+  },
+  "LI_KARACA": {
+    "cards": [
+      "L04",
+      "L06"
+    ],
+    "title": "OF_LI_KARACA_TITLE",
+    "text": "OF_LI_KARACA",
+    "wrong": [
+      "OF_LI_KARACA_W1",
+      "OF_LI_KARACA_W2"
+    ]
+  },
+  "LI_CHIEF": {
+    "cards": [
+      "L07",
+      "L08"
+    ],
+    "title": "OF_LI_CHIEF_TITLE",
+    "text": "OF_LI_CHIEF",
+    "wrong": [
+      "OF_LI_CHIEF_W1",
+      "OF_LI_CHIEF_W2"
+    ]
+  }
+}

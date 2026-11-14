@@ -1,0 +1,58 @@
+{
+  "L01": {
+    "name": "OF_L01_NAME",
+    "desc": "OF_L01_DESC",
+    "gist": "OF_L01_GIST",
+    "body": "OF_L01_BODY",
+    "icon": "res://assets/evidence/e02.png"
+  },
+  "L02": {
+    "name": "OF_L02_NAME",
+    "desc": "OF_L02_DESC",
+    "gist": "OF_L02_GIST",
+    "body": "OF_L02_BODY",
+    "icon": "res://assets/evidence/c2_ticket.png"
+  },
+  "L03": {
+    "name": "OF_L03_NAME",
+    "desc": "OF_L03_DESC",
+    "gist": "OF_L03_GIST",
+    "body": "OF_L03_BODY",
+    "icon": "res://assets/evidence/c2_ticket.png"
+  },
+  "L04": {
+    "name": "OF_L04_NAME",
+    "desc": "OF_L04_DESC",
+    "gist": "OF_L04_GIST",
+    "body": "OF_L04_BODY",
+    "icon": "res://assets/evidence/e18.png"
+  },
+  "L05": {
+    "name": "OF_L05_NAME",
+    "desc": "OF_L05_DESC",
+    "gist": "OF_L05_GIST",
+    "body": "OF_L05_BODY",
+    "icon": "res://assets/evidence/e08.png"
+  },
+  "L06": {
+    "name": "OF_L06_NAME",
+    "desc": "OF_L06_DESC",
+    "gist": "OF_L06_GIST",
+    "body": "OF_L06_BODY",
+    "icon": "res://assets/evidence/c2_person.png"
+  },
+  "L07": {
+    "name": "OF_L07_NAME",
+    "desc": "OF_L07_DESC",
+    "gist": "OF_L07_GIST",
+    "body": "OF_L07_BODY",
+    "icon": "res://assets/evidence/e04.png"
+  },
+  "L08": {
+    "name": "OF_L08_NAME",
+    "desc": "OF_L08_DESC",
+    "gist": "OF_L08_GIST",
+    "body": "OF_L08_BODY",
+    "icon": "res://assets/evidence/c2_pickup.png"
+  }
+}

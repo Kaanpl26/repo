@@ -101,14 +101,21 @@ func record_verdict(case_id: String, ending_id: String, is_solved: bool, rating:
 		var old: Dictionary = best.get(case_id, {"score": -1})
 		if int(rating["score"]) > int(old["score"]):
 			best[case_id] = {"score": int(rating["score"]), "grade": rating["grade"]}
-		# Decisions carried into later cases: the latest solved run wins.
-		for key in flags.keys():
-			if key.begins_with(case_id + "."):
-				flags.erase(key)
-		for flag in carried:
-			flags[case_id + "." + flag] = true
+	# What the detective did and found is carried into later cases whatever
+	# the verdict was. The latest verdict wins.
+	set_carried(case_id, carried, false)
 	save_profile()
 	return {"xp_gain": xp() - before_xp, "xp": xp(), "rank_up": rank_index() > before_rank}
+
+
+func set_carried(case_id: String, carried: Array, save: bool = true) -> void:
+	for key in flags.keys():
+		if key.begins_with(case_id + "."):
+			flags.erase(key)
+	for flag in carried:
+		flags[case_id + "." + flag] = true
+	if save:
+		save_profile()
 
 
 func has_flag(name: String) -> bool:

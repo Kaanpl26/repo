@@ -173,6 +173,7 @@ func add_mistake() -> void:
 ##   {"has_insight": "I_X"}  {"no_insight": "I_X"}  {"has_testimony": "T_X"}
 ##   {"profile_flag": "case_01.erdem_spared"}  {"case_solved": "case_01"}   (carried between cases)
 ##   {"case_closed": "case_01"}   any verdict reached, right or wrong
+##   {"rank_at_least": 1}         career rank index
 func check(conditions: Array) -> bool:
 	for c in conditions:
 		if c.has("has_evidence") and not has_evidence(c["has_evidence"]):
@@ -190,6 +191,8 @@ func check(conditions: Array) -> bool:
 		if c.has("case_solved") and not Profile.is_solved(c["case_solved"]):
 			return false
 		if c.has("case_closed") and not Profile.is_closed(c["case_closed"]):
+			return false
+		if c.has("rank_at_least") and Profile.rank_index() < int(c["rank_at_least"]):
 			return false
 		if c.has("flag") and not has_flag(c["flag"]):
 			return false
