@@ -52,6 +52,10 @@
         {
           "s": "vardar",
           "t": "C1_VARDAR_ASK_1"
+        },
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_ASK_2"
         }
       ],
       "choices": [

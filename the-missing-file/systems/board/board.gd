@@ -10,6 +10,8 @@ var _selected: Array = []        # up to two card ids
 var _buttons := {}               # card id -> Button
 var _body: VBoxContainer
 var _slot_labels: Array = []
+var _slot_gists: Array = []
+var _possible: Label
 var _connect: Button
 var _view: Button
 var _message: Label
@@ -34,6 +36,9 @@ func _ready() -> void:
 	titles.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	titles.add_child(UI.label("BOARD_TITLE", "HeaderLabel"))
 	titles.add_child(UI.label("BOARD_HELP", "SmallLabel"))
+	_possible = UI.label("", "SmallLabel")
+	_possible.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+	titles.add_child(_possible)
 	head.add_child(titles)
 	var hint := UI.button("HUD_HINT")
 	hint.custom_minimum_size = Vector2(220, UI.MIN_TOUCH)
@@ -65,29 +70,46 @@ func _ready() -> void:
 		var slot := PanelContainer.new()
 		slot.theme_type_variation = "PaperPanel"
 		slot.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		var l := UI.label("BOARD_SLOT_EMPTY", "PaperLabel")
-		l.clip_text = true
-		slot.add_child(l)
+		slot.size_flags_stretch_ratio = 3.0
+		var sc := VBoxContainer.new()
+		sc.add_theme_constant_override("separation", 2)
+		slot.add_child(sc)
+		var l := UI.label("BOARD_SLOT_EMPTY", "PaperTitle", true)
+		l.add_theme_font_size_override("font_size", 30)
+		sc.add_child(l)
+		var g := UI.label("", "PaperLabel", true)
+		g.add_theme_constant_override("line_spacing", 2)
+		UI.scaled_font(g, 26)
+		sc.add_child(g)
 		_slot_labels.append(l)
+		_slot_gists.append(g)
 		row.add_child(slot)
 		if i == 0:
 			var thread := ColorRect.new()
 			thread.color = Palette.RED
-			thread.custom_minimum_size = Vector2(70, 6)
+			thread.custom_minimum_size = Vector2(40, 6)
 			thread.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 			row.add_child(thread)
+	var actions := VBoxContainer.new()
+	actions.add_theme_constant_override("separation", 10)
+	row.add_child(actions)
 	_view = UI.button("BOARD_VIEW")
 	_view.pressed.connect(func(): view_requested.emit(_selected[-1]))
-	row.add_child(_view)
+	_view.custom_minimum_size = Vector2(150, 76)
 	var clear := UI.button("BOARD_CLEAR")
 	clear.pressed.connect(func():
 		_selected.clear()
 		_refresh_selection())
-	row.add_child(clear)
+	clear.custom_minimum_size = Vector2(150, 76)
+	var small := HBoxContainer.new()
+	small.add_theme_constant_override("separation", 10)
+	small.add_child(_view)
+	small.add_child(clear)
 	_connect = UI.button("BOARD_CONNECT", "AccentButton")
-	_connect.custom_minimum_size = Vector2(260, UI.MIN_TOUCH)
+	_connect.custom_minimum_size = Vector2(310, UI.MIN_TOUCH)
 	_connect.pressed.connect(_on_connect)
-	row.add_child(_connect)
+	actions.add_child(_connect)
+	actions.add_child(small)
 	_message = UI.label("", "SmallLabel", true)
 	tcol.add_child(_message)
 
@@ -110,7 +132,7 @@ func _section(title_key: String, cards: Array, empty_key: String) -> void:
 		_body.add_child(UI.label(empty_key, "SmallLabel"))
 		return
 	var grid := GridContainer.new()
-	grid.columns = 3
+	grid.columns = 2
 	grid.add_theme_constant_override("h_separation", 16)
 	grid.add_theme_constant_override("v_separation", 16)
 	_body.add_child(grid)
@@ -135,13 +157,19 @@ func _on_card(id: String) -> void:
 
 func _refresh_selection() -> void:
 	for id in _buttons:
-		var b: Button = _buttons[id]
-		var base := "InsightButton" if CaseDB.card_kind(id) == "insight" else ""
-		b.theme_type_variation = "AccentButton" if id in _selected else base
+		_buttons[id].set_state(id in _selected, Hints.card_used_up(id))
 	for i in 2:
-		_slot_labels[i].text = CaseDB.card_title(_selected[i]) if i < _selected.size() else "BOARD_SLOT_EMPTY"
+		var chosen: bool = i < _selected.size()
+		_slot_labels[i].text = CaseDB.card_title(_selected[i]) if chosen else "BOARD_SLOT_EMPTY"
+		_slot_gists[i].text = CaseDB.card_gist(_selected[i]) if chosen else ""
+		_slot_gists[i].visible = chosen
 	_connect.disabled = _selected.size() < 2
 	_view.disabled = _selected.is_empty()
+	# Tells the player whether the Board has anything left to give right now,
+	# without saying which cards.
+	var n := Hints.link_count()
+	_possible.text = tr("BOARD_POSSIBLE") % n if n > 0 else tr("BOARD_POSSIBLE_NONE")
+	_possible.add_theme_color_override("font_color", Palette.AMBER if n > 0 else Palette.MUTED)
 
 
 func _on_connect() -> void:

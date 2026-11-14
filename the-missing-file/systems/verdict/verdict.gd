@@ -30,6 +30,23 @@ static func resolve(suspect: String, slots: Dictionary) -> String:
 	return e["full"]
 
 
+## For an accusation against the right person that fell short: which parts of
+## the case were weak. Returns text keys.
+static func weak_points(suspect: String, slots: Dictionary) -> Array:
+	var e: Dictionary = CaseDB.endings
+	var out: Array = []
+	if suspect != e["culprit"]:
+		return out
+	for slot in e["slots"]:
+		if not slot_ok(suspect, slot, slots.get(slot, "")):
+			out.append("WEAK_" + slot.to_upper())
+	if GameState.has_flag(e["spoiled_flag"]):
+		out.append("WEAK_FILE_DAMAGED")
+	elif not GameState.check(e.get("full_requires", [])):
+		out.append("WEAK_FILE_MISSING")
+	return out
+
+
 ## Extra closing lines that depend on the player's earlier decisions.
 static func epilogue(ending_id: String) -> Array:
 	var out: Array = []

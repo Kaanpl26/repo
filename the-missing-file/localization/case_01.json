@@ -1570,5 +1570,89 @@
   "C1_TIMELINE_TITLE": {
     "en": "Thursday evening",
     "tr": "Perşembe akşamı"
+  },
+  "C1_E01_GIST": {
+    "en": "Demir Aras visited E. Vural after closing time: in 18:40, out 19:05.",
+    "tr": "Demir Aras kapanıştan sonra E. Vural'ı ziyaret etmiş: giriş 18.40, çıkış 19.05."
+  },
+  "C1_E02_GIST": {
+    "en": "Vardar out 18:32. Main door released from the desk at 20:44 and 21:41. Aydın out by the side door at 21:26. Vural never left.",
+    "tr": "Vardar 18.32'de çıkmış. Ana kapı 20.44 ve 21.41'de masadan açılmış. Aydın 21.26'da yan kapıdan çıkmış. Vural hiç çıkmamış."
+  },
+  "C1_E03_GIST": {
+    "en": "In the staff photograph Dr. Vardar is wearing jade drop earrings.",
+    "tr": "Personel fotoğrafında Dr. Vardar sallantılı yeşim küpeler takıyor."
+  },
+  "C1_E04_GIST": {
+    "en": "Erdem wrote that he checked stacks B1 to B3 at 21:00: “all clear”.",
+    "tr": "Erdem 21.00'de B1–B3 depolarını dolaştığını yazmış: “sorun yok”."
+  },
+  "C1_E05_GIST": {
+    "en": "Stamped at the Şanslı Çapa betting shop across the street, Thursday 21:07.",
+    "tr": "Karşıdaki Şanslı Çapa bayiinde kesilmiş: perşembe 21.07."
+  },
+  "C1_E06_GIST": {
+    "en": "Vardar's car, 82 KL 4471: out 18:34, back in 20:52, out again 21:34.",
+    "tr": "Vardar'ın arabası, 82 KL 4471: 18.34 çıkış, 20.52 yeniden giriş, 21.34 çıkış."
+  },
+  "C1_E15_GIST": {
+    "en": "Aras was photographed on stage at the Liman Kulübü dinner at 21:05.",
+    "tr": "Aras 21.05'te Liman Kulübü'ndeki yemekte sahnede fotoğraflanmış."
+  },
+  "C1_E07_GIST": {
+    "en": "At 20:03 Vural wrote to Vardar: he knows what was done to 47-B and by whom, and goes to the prosecutor in the morning.",
+    "tr": "Vural 20.03'te Vardar'a yazmış: 47-B'ye ne yapıldığını ve kimin yaptığını biliyor, sabah savcılığa gidecek."
+  },
+  "C1_E08_GIST": {
+    "en": "Page 12 of file 47-B was retyped. The clerk's initials are S.M. “Who was S.M. in the Records Office in '98?”",
+    "tr": "47-B'nin 12. sayfası yeniden yazılmış. Kâtibin parafı S.M. “98'de Kayıt Bürosu'ndaki S.M. kimdi?”"
+  },
+  "C1_E09_GIST": {
+    "en": "In Vural's hand: “If anything happens to me — the mirror tells the truth.”",
+    "tr": "Vural'ın el yazısıyla: “Başıma bir şey gelirse — ayna doğruyu söyler.”"
+  },
+  "C1_E10_GIST": {
+    "en": "Aras offered Vural money for the file: “Name your price for 47-B.”",
+    "tr": "Aras dosya için Vural'a para teklif etmiş: “47-B için fiyatınızı söyleyin.”"
+  },
+  "C1_E11_GIST": {
+    "en": "Vural's desk drawers were forced with a letter opener and searched. Nothing of value was taken.",
+    "tr": "Vural'ın çekmeceleri mektup açacağıyla zorlanıp aranmış. Değerli hiçbir şey alınmamış."
+  },
+  "C1_E12_GIST": {
+    "en": "His watch stopped at 21:17. His keys, with master key No. 1 and the drawer keys, were still on his belt.",
+    "tr": "Saati 21.17'de durmuş. 1 numaralı ana anahtarın ve çekmece anahtarlarının takılı olduğu anahtarlık hâlâ kemerindeydi."
+  },
+  "C1_E13_GIST": {
+    "en": "One jade drop earring under the shelf by the stairs. The hook is bent open and there is no dust on it.",
+    "tr": "Merdivenin yanındaki rafın altında tek bir yeşim küpe. Kancası açılmış, üzerinde toz yok."
+  },
+  "C1_E14_GIST": {
+    "en": "Box 47-B is empty. Vural checked the file out on Monday and never returned it.",
+    "tr": "47-B kutusu boş. Vural dosyayı pazartesi günü almış, iade etmemiş."
+  },
+  "C1_E16_GIST": {
+    "en": "Death between 21:00 and 21:30. Finger-shaped bruises on both forearms: he was gripped hard just before he died.",
+    "tr": "Ölüm 21.00 ile 21.30 arası. İki ön kolunda parmak izi biçiminde morluklar: ölmeden hemen önce sıkıca kavranmış."
+  },
+  "C1_E17_GIST": {
+    "en": "The original page 12 points at Aras Denizcilik. The retyped page, initialled S.M., says nothing was seen. A slip lists six more files.",
+    "tr": "12. sayfanın aslı Aras Denizcilik'i işaret ediyor. S.M. paraflı yeniden yazılmış sayfa bir şey görülmediğini söylüyor. Bir fişte altı dosya daha sıralanmış."
+  },
+  "C1_E17X_GIST": {
+    "en": "Page 12 and whatever was behind it have been freshly torn out. Only the slip listing six more files is left.",
+    "tr": "12. sayfa ve arkasındaki her şey yeni koparılmış. Geriye yalnızca altı dosyanın sıralandığı fiş kalmış."
+  },
+  "C1_E18_GIST": {
+    "en": "Selin Maden graduated in 1996 and joined the Records Office in 1997.",
+    "tr": "Selin Maden 1996'da mezun olmuş, 1997'de Kayıt Bürosu'na girmiş."
+  },
+  "C1_E19_GIST": {
+    "en": "Only two master keys exist: No. 1 Vural, No. 2 Vardar. After 19:00 the freight elevator runs only with a master key.",
+    "tr": "Yalnızca iki ana anahtar var: No. 1 Vural, No. 2 Vardar. 19.00'dan sonra yük asansörü yalnızca ana anahtarla çalışır."
+  },
+  "C1_VARDAR_ASK_2": {
+    "en": "(She wants this badly. And I have not yet seen where that note leads.)",
+    "tr": "(Bunu çok istiyor. Ben ise o notun nereye çıktığını henüz görmedim.)"
   }
 }

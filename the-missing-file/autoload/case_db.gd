@@ -162,3 +162,11 @@ func available_records() -> Array:
 		if GameState.check(r.get("conditions", [])):
 			out.append(r)
 	return out
+
+
+## One or two sentences saying what a card actually shows: the key facts of a
+## piece of evidence, or the statement or conclusion itself.
+func card_gist(id: String) -> String:
+	if card_kind(id) == "evidence":
+		return evidence[id].get("gist", evidence[id]["desc"])
+	return card_text(id)

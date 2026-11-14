@@ -51,3 +51,48 @@ static func next_link() -> String:
 		if GameState.has_card(cards[0]) and GameState.has_card(cards[1]):
 			return id
 	return ""
+
+
+## How many conclusions the player could reach right now with the cards held.
+static func link_count() -> int:
+	var n := 0
+	for id in CaseDB.insights:
+		if GameState.has_insight(id):
+			continue
+		var cards: Array = CaseDB.insights[id]["cards"]
+		if GameState.has_card(cards[0]) and GameState.has_card(cards[1]):
+			n += 1
+	return n
+
+
+## True when every connection this card takes part in has already been made.
+## Cards that connect to nothing at all are never "used up".
+static func card_used_up(card_id: String) -> bool:
+	var takes_part := false
+	for id in CaseDB.insights:
+		if card_id in CaseDB.insights[id]["cards"]:
+			takes_part = true
+			if not GameState.has_insight(id):
+				return false
+	return takes_part
+
+
+## Database records waiting to be read.
+static func lookup_count() -> int:
+	var n := 0
+	for record in CaseDB.available_records():
+		if not GameState.has_evidence(record["evidence"]):
+			n += 1
+	return n
+
+
+## Evidence in a location that can be picked up right now.
+static func evidence_waiting(location_id: String) -> int:
+	var n := 0
+	var seen := {}
+	for h in CaseDB.locations[location_id]["hotspots"]:
+		if h["type"] == "evidence" and not seen.has(h["evidence"]) and not GameState.has_evidence(h["evidence"]) \
+				and GameState.check(h.get("conditions", [])):
+			seen[h["evidence"]] = true
+			n += 1
+	return n

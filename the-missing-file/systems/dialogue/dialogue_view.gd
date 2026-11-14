@@ -14,6 +14,7 @@ var _hint: Label
 var _choices: VBoxContainer
 var _present: Button
 var _press: Button
+var _pulse: Tween
 var _pips: HBoxContainer
 var _portraits := {}
 var _tween: Tween
@@ -139,6 +140,7 @@ func _show_line() -> void:
 	if speaker == character:
 		_portrait.texture = _portraits[l.get("mood", "neutral")]
 	_press.visible = _runner.can_press()
+	_pulse_present(_present.visible and _runner.holds_answer())
 	_text.text = l["t"]
 	_hint.visible = true
 	_present.visible = _runner.can_present() and not GameState.all_cards().is_empty()
@@ -147,6 +149,20 @@ func _show_line() -> void:
 		_tween.kill()
 	_tween = create_tween()
 	_tween.tween_property(_text, "visible_ratio", 1.0, maxf(0.2, tr(l["t"]).length() / 70.0))
+
+
+## A slow glow on Present Evidence when something the player holds would break
+## this statement. It never says which card.
+func _pulse_present(on: bool) -> void:
+	if _pulse:
+		_pulse.kill()
+		_pulse = null
+	_present.modulate = Color.WHITE
+	if not on:
+		return
+	_pulse = create_tween().set_loops()
+	_pulse.tween_property(_present, "modulate", Color(1.35, 1.25, 1.0), 0.7).set_trans(Tween.TRANS_SINE)
+	_pulse.tween_property(_present, "modulate", Color.WHITE, 0.7).set_trans(Tween.TRANS_SINE)
 
 
 ## Small pips beside the name: how many careless challenges this person will
@@ -185,7 +201,8 @@ func _on_choice(choice: Dictionary) -> void:
 
 
 func _open_picker() -> void:
-	var picker := CardPicker.new("DLG_PRESENT_TITLE", GameState.all_cards())
+	var said := _runner.challenged_line()
+	var picker := CardPicker.new("DLG_PRESENT_TITLE", GameState.all_cards(), CaseDB.characters[said["s"]]["name"], said["t"])
 	picker.picked.connect(_on_present)
 	add_child(picker)
 

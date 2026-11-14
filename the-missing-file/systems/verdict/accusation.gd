@@ -90,14 +90,15 @@ func _show_proof() -> void:
 			row.add_theme_constant_override("separation", 24)
 			_content.add_child(row)
 			var l := UI.label("ACCUSE_SLOT_" + slot.to_upper())
-			l.custom_minimum_size = Vector2(760, 0)
+			l.custom_minimum_size = Vector2(620, 0)
 			row.add_child(l)
-			var b: Button
+			var b: Control
 			if _slots.get(slot, "") != "":
-				b = UI.card_button(_slots[slot])
+				b = UI.card_button(_slots[slot], 2)
 			else:
 				b = UI.button("ACCUSE_CHOOSE")
-			b.custom_minimum_size = Vector2(760, 112)
+			b.custom_minimum_size = Vector2(980, 112)
+			b.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
 			b.pressed.connect(_pick.bind(slot))
 			row.add_child(b)
 	_note = UI.label("ACCUSE_ONLY_CONCLUSIONS", "SmallLabel", true)
@@ -146,6 +147,7 @@ func _confirm() -> void:
 			carried.append(flag)
 	var result := Profile.record_verdict(GameState.case_id, ending, is_solved, Verdict.rating(), carried)
 	result["achievements"] = Achievements.evaluate(ending)
+	result["weak"] = Verdict.weak_points(_suspect, _slots)
 	Audio.sfx("stamp")
 	resolved.emit(ending, result)
 	queue_free()

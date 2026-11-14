@@ -96,8 +96,8 @@
     "tr": "Delil Göster"
   },
   "DLG_PRESENT_TITLE": {
-    "en": "Which evidence contradicts this?",
-    "tr": "Bu ifadeyi hangi delil çürütüyor?"
+    "en": "Which card contradicts this?",
+    "tr": "Bu ifadeyi hangi kart çürütüyor?"
   },
   "CASEFILE_TITLE": {
     "en": "Case File",
@@ -200,8 +200,8 @@
     "tr": "Delil Panosu"
   },
   "BOARD_HELP": {
-    "en": "Choose two cards that belong together, then tap Connect.",
-    "tr": "Birbiriyle ilgili iki kart seçin, sonra Bağla'ya dokunun."
+    "en": "Choose two cards that belong together, then tap Connect. Faded cards have nothing more to give.",
+    "tr": "Birbiriyle ilgili iki kart seçin, sonra Bağla'ya dokunun. Soluk kartlardan çıkacak başka bir şey kalmadı."
   },
   "BOARD_CONCLUSIONS": {
     "en": "Conclusions",
@@ -396,8 +396,8 @@
     "tr": "Delilleri bağlayın"
   },
   "HOWTO_BOARD_TEXT": {
-    "en": "Open the Board, choose two cards that belong together and tap Connect. Then pick what they mean together. A correct answer becomes a conclusion, and conclusions are your proof.",
-    "tr": "Pano'yu açın, birbiriyle ilgili iki kart seçin ve Bağla'ya dokunun. Sonra ikisinin birlikte ne anlattığını seçin. Doğru cevap bir sonuca dönüşür; sonuçlar sizin kanıtınızdır."
+    "en": "Open the Board. Each card says what it shows. Choose two that belong together and tap Connect, then pick what they mean together. A correct answer becomes a conclusion, and conclusions are your proof.",
+    "tr": "Pano'yu açın. Her kartın üzerinde neyi gösterdiği yazar. Birbiriyle ilgili iki kart seçip Bağla'ya dokunun, sonra ikisinin birlikte ne anlattığını seçin. Doğru cevap bir sonuca dönüşür; sonuçlar sizin kanıtınızdır."
   },
   "HOWTO_MAP_TITLE": {
     "en": "Move around",
@@ -420,8 +420,8 @@
     "tr": "Takıldınız mı?"
   },
   "HOWTO_HINT_TEXT": {
-    "en": "Tap Hint in a room or on the Board. Hints never block you, but they lower your final rating a little.",
-    "tr": "Bir odada ya da Pano'da İpucu'na dokunun. İpuçları sizi asla engellemez, ama son değerlendirmenizi biraz düşürür."
+    "en": "Your current objective is always at the top of the screen. A red dot on a button means something is waiting there. If you are still stuck, tap Hint in a room or on the Board: hints never block you, but they lower your final rating a little.",
+    "tr": "Şu anki hedefiniz her zaman ekranın üstünde yazar. Bir düğmedeki kırmızı nokta, orada sizi bekleyen bir şey olduğunu gösterir. Yine de takılırsanız bir odada ya da Pano'da İpucu'na dokunun: ipuçları sizi asla engellemez, ama son değerlendirmenizi biraz düşürür."
   },
   "ACCUSE_ONLY_CONCLUSIONS": {
     "en": "Proof must be a conclusion you reached on the Board.",
@@ -742,5 +742,41 @@
   "ACH_C2_NOT_OBVIOUS_DESC": {
     "en": "Solve File 58-D without having the chief's suspect brought in.",
     "tr": "Müdürün şüphelisini getirtmeden 58-D dosyasını çözün."
+  },
+  "HUD_OBJECTIVE": {
+    "en": "Objective: %s",
+    "tr": "Hedef: %s"
+  },
+  "BOARD_POSSIBLE": {
+    "en": "Connections you can make now: %d",
+    "tr": "Şu an kurabileceğiniz bağlantı: %d"
+  },
+  "BOARD_POSSIBLE_NONE": {
+    "en": "No connections left with what you hold. Look for more evidence or statements.",
+    "tr": "Elinizdekilerle kurulacak bağlantı kalmadı. Yeni delil ya da ifade arayın."
+  },
+  "ENDING_WEAK": {
+    "en": "Where the case fell short",
+    "tr": "Dosyanın zayıf kaldığı yerler"
+  },
+  "WEAK_MOTIVE": {
+    "en": "Motive: the conclusion you gave did not show why they did it.",
+    "tr": "Sebep: sunduğunuz sonuç bunu neden yaptığını göstermedi."
+  },
+  "WEAK_OPPORTUNITY": {
+    "en": "Opportunity: the conclusion you gave did not put them at the scene.",
+    "tr": "Fırsat: sunduğunuz sonuç onu olay yerine yerleştirmedi."
+  },
+  "WEAK_LINK": {
+    "en": "Physical link: the conclusion you gave did not tie them to the victim.",
+    "tr": "Fiziksel bağ: sunduğunuz sonuç onu maktule bağlamadı."
+  },
+  "WEAK_FILE_MISSING": {
+    "en": "The missing file: you never found it, so what was done to it could not be proved.",
+    "tr": "Kayıp dosya: onu bulamadınız, bu yüzden dosyaya ne yapıldığı kanıtlanamadı."
+  },
+  "WEAK_FILE_DAMAGED": {
+    "en": "The missing file: it reached you with its key pages removed. Someone learned where it was before you got there.",
+    "tr": "Kayıp dosya: elinize kilit sayfaları koparılmış hâlde geçti. Siz ulaşmadan önce biri yerini öğrendi."
   }
 }

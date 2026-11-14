@@ -3,73 +3,85 @@
     "name": "C2_E01_NAME",
     "desc": "C2_E01_DESC",
     "body": "C2_E01_BODY",
-    "icon": "res://assets/evidence/e04.png"
+    "icon": "res://assets/evidence/e04.png",
+    "gist": "C2_E01_GIST"
   },
   "E02": {
     "name": "C2_E02_NAME",
     "desc": "C2_E02_DESC",
     "body": "C2_E02_BODY",
-    "icon": "res://assets/evidence/c2_paint.png"
+    "icon": "res://assets/evidence/c2_paint.png",
+    "gist": "C2_E02_GIST"
   },
   "E03": {
     "name": "C2_E03_NAME",
     "desc": "C2_E03_DESC",
     "body": "C2_E03_BODY",
-    "icon": "res://assets/evidence/c2_phone.png"
+    "icon": "res://assets/evidence/c2_phone.png",
+    "gist": "C2_E03_GIST"
   },
   "E04": {
     "name": "C2_E04_NAME",
     "desc": "C2_E04_DESC",
     "body": "C2_E04_BODY",
-    "icon": "res://assets/evidence/e19.png"
+    "icon": "res://assets/evidence/e19.png",
+    "gist": "C2_E04_GIST"
   },
   "E05": {
     "name": "C2_E05_NAME",
     "desc": "C2_E05_DESC",
     "body": "C2_E05_BODY",
-    "icon": "res://assets/evidence/c2_pass.png"
+    "icon": "res://assets/evidence/c2_pass.png",
+    "gist": "C2_E05_GIST"
   },
   "E06": {
     "name": "C2_E06_NAME",
     "desc": "C2_E06_DESC",
     "body": "C2_E06_BODY",
-    "icon": "res://assets/evidence/c2_ecall.png"
+    "icon": "res://assets/evidence/c2_ecall.png",
+    "gist": "C2_E06_GIST"
   },
   "E07": {
     "name": "C2_E07_NAME",
     "desc": "C2_E07_DESC",
     "body": "C2_E07_BODY",
-    "icon": "res://assets/evidence/e02.png"
+    "icon": "res://assets/evidence/e02.png",
+    "gist": "C2_E07_GIST"
   },
   "E08": {
     "name": "C2_E08_NAME",
     "desc": "C2_E08_DESC",
     "body": "C2_E08_BODY",
-    "icon": "res://assets/evidence/c2_desk.png"
+    "icon": "res://assets/evidence/c2_desk.png",
+    "gist": "C2_E08_GIST"
   },
   "E09": {
     "name": "C2_E09_NAME",
     "desc": "C2_E09_DESC",
     "body": "C2_E09_BODY",
-    "icon": "res://assets/evidence/e04.png"
+    "icon": "res://assets/evidence/e04.png",
+    "gist": "C2_E09_GIST"
   },
   "E10": {
     "name": "C2_E10_NAME",
     "desc": "C2_E10_DESC",
     "body": "C2_E10_BODY",
-    "icon": "res://assets/evidence/c2_index.png"
+    "icon": "res://assets/evidence/c2_index.png",
+    "gist": "C2_E10_GIST"
   },
   "E11": {
     "name": "C2_E11_NAME",
     "desc": "C2_E11_DESC",
     "body": "C2_E11_BODY",
-    "icon": "res://assets/evidence/e10.png"
+    "icon": "res://assets/evidence/e10.png",
+    "gist": "C2_E11_GIST"
   },
   "E12": {
     "name": "C2_E12_NAME",
     "desc": "C2_E12_DESC",
     "body": "C2_E12_BODY",
-    "icon": "res://assets/evidence/c2_laptop.png"
+    "icon": "res://assets/evidence/c2_laptop.png",
+    "gist": "C2_E12_GIST"
   },
   "E13": {
     "name": "C2_E13_NAME",
@@ -80,72 +92,84 @@
       {
         "set_flag": "file_found"
       }
-    ]
+    ],
+    "gist": "C2_E13_GIST"
   },
   "E14": {
     "name": "C2_E14_NAME",
     "desc": "C2_E14_DESC",
     "body": "C2_E14_BODY",
-    "icon": "res://assets/evidence/e01.png"
+    "icon": "res://assets/evidence/e01.png",
+    "gist": "C2_E14_GIST"
   },
   "E15": {
     "name": "C2_E15_NAME",
     "desc": "C2_E15_DESC",
     "body": "C2_E15_BODY",
-    "icon": "res://assets/evidence/c2_camera.png"
+    "icon": "res://assets/evidence/c2_camera.png",
+    "gist": "C2_E15_GIST"
   },
   "E16": {
     "name": "C2_E16_NAME",
     "desc": "C2_E16_DESC",
     "body": "C2_E16_BODY",
-    "icon": "res://assets/evidence/c2_pickup.png"
+    "icon": "res://assets/evidence/c2_pickup.png",
+    "gist": "C2_E16_GIST"
   },
   "E17": {
     "name": "C2_E17_NAME",
     "desc": "C2_E17_DESC",
     "body": "C2_E17_BODY",
-    "icon": "res://assets/evidence/e08.png"
+    "icon": "res://assets/evidence/e08.png",
+    "gist": "C2_E17_GIST"
   },
   "E18": {
     "name": "C2_E18_NAME",
     "desc": "C2_E18_DESC",
     "body": "C2_E18_BODY",
-    "icon": "res://assets/evidence/c2_ticket.png"
+    "icon": "res://assets/evidence/c2_ticket.png",
+    "gist": "C2_E18_GIST"
   },
   "E19": {
     "name": "C2_E19_NAME",
     "desc": "C2_E19_DESC",
     "body": "C2_E19_BODY",
-    "icon": "res://assets/evidence/e01.png"
+    "icon": "res://assets/evidence/e01.png",
+    "gist": "C2_E19_GIST"
   },
   "E20": {
     "name": "C2_E20_NAME",
     "desc": "C2_E20_DESC",
     "body": "C2_E20_BODY",
-    "icon": "res://assets/evidence/e09.png"
+    "icon": "res://assets/evidence/e09.png",
+    "gist": "C2_E20_GIST"
   },
   "E21": {
     "name": "C2_E21_NAME",
     "desc": "C2_E21_DESC",
     "body": "C2_E21_BODY",
-    "icon": "res://assets/evidence/c2_car.png"
+    "icon": "res://assets/evidence/c2_car.png",
+    "gist": "C2_E21_GIST"
   },
   "E22": {
     "name": "C2_E22_NAME",
     "desc": "C2_E22_DESC",
     "body": "C2_E22_BODY",
-    "icon": "res://assets/evidence/c2_phone.png"
+    "icon": "res://assets/evidence/c2_phone.png",
+    "gist": "C2_E22_GIST"
   },
   "E23": {
     "name": "C2_E23_NAME",
     "desc": "C2_E23_DESC",
     "body": "C2_E23_BODY",
-    "icon": "res://assets/evidence/e18.png"
+    "icon": "res://assets/evidence/e18.png",
+    "gist": "C2_E23_GIST"
   },
   "E24": {
     "name": "C2_E24_NAME",
     "desc": "C2_E24_DESC",
     "body": "C2_E24_BODY",
-    "icon": "res://assets/evidence/c2_person.png"
+    "icon": "res://assets/evidence/c2_person.png",
+    "gist": "C2_E24_GIST"
   }
 }

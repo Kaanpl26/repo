@@ -127,6 +127,27 @@ func _present_rule() -> Dictionary:
 	return {}
 
 
+## True when the player holds a card that would break the current statement.
+## Used only to draw attention to the Present button, never to say which card.
+func holds_answer() -> bool:
+	var rule := _present_rule()
+	if rule.is_empty():
+		return false
+	var accept: Variant = rule["accept"]
+	var accepted: Array = accept if accept is Array else [accept]
+	for card in accepted:
+		if GameState.has_card(card):
+			return true
+	return false
+
+
+## The statement a challenge would be aimed at: {"s": speaker, "t": text key}.
+func challenged_line() -> Dictionary:
+	if line().has("present") or _resume.is_empty():
+		return line()
+	return data["nodes"][_resume[0]]["lines"][_resume[1]]
+
+
 ## Returns true when the evidence exposes the contradiction in the current line.
 func present(evidence_id: String) -> bool:
 	var p: Dictionary = _present_rule()

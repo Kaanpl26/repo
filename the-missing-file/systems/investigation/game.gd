@@ -29,6 +29,9 @@ var _caption: Label
 var _caption_timer: Timer
 var _toast_panel: PanelContainer
 var _toast: Label
+var _objective: Label
+var _objective_panel: PanelContainer
+var _badges := {}
 var _overlays: Control
 
 
@@ -60,6 +63,8 @@ func _ready() -> void:
 	GameState.insight_added.connect(func(_id): _show_toast("TOAST_INSIGHT"))
 	GameState.testimony_added.connect(func(_id): _show_toast("TOAST_TESTIMONY"))
 	GameState.changed.connect(_queue_achievement_check)
+	GameState.changed.connect(_refresh_guidance)
+	_refresh_guidance()
 	_refresh_counter()
 
 	Audio.ambience(_loc.get("ambience", ""))
@@ -165,6 +170,18 @@ func _build_hud() -> void:
 	pause.pressed.connect(_open_pause)
 	top.add_child(pause)
 
+	# The current objective, always in view.
+	_objective_panel = PanelContainer.new()
+	_objective_panel.theme_type_variation = "BarPanel"
+	_objective_panel.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+	_objective_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_objective = UI.label("", "SmallLabel", true)
+	_objective.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+	_objective.custom_minimum_size = Vector2(760, 0)
+	_objective.add_theme_color_override("font_color", Palette.PAPER)
+	_objective_panel.add_child(_objective)
+	col.add_child(_objective_panel)
+
 	_toast_panel = PanelContainer.new()
 	_toast_panel.theme_type_variation = "BarPanel"
 	_toast_panel.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
@@ -207,16 +224,50 @@ func _build_hud() -> void:
 	board_btn.custom_minimum_size = Vector2(220, 110)
 	board_btn.pressed.connect(_open_board)
 	bottom.add_child(board_btn)
+	_badges["board"] = _badge(board_btn)
+	_badges["map"] = _badge(map_btn)
 	var file_btn := UI.button("HUD_CASE_FILE", "AccentButton")
 	file_btn.size_flags_vertical = Control.SIZE_SHRINK_END
 	file_btn.custom_minimum_size = Vector2(320, 110)
 	file_btn.pressed.connect(_open_case_file)
 	bottom.add_child(file_btn)
+	_badges["file"] = _badge(file_btn)
 
 	_caption_timer = Timer.new()
 	_caption_timer.one_shot = true
 	_caption_timer.timeout.connect(_hide_caption)
 	add_child(_caption_timer)
+
+
+## A small dot in the corner of a button: "there is something here for you".
+func _badge(button: Button) -> ColorRect:
+	var dot := ColorRect.new()
+	dot.color = Palette.RED
+	dot.custom_minimum_size = Vector2(22, 22)
+	dot.size = Vector2(22, 22)
+	dot.set_anchors_preset(Control.PRESET_TOP_RIGHT)
+	dot.position = Vector2(-30, 8)
+	dot.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	dot.visible = false
+	button.add_child(dot)
+	return dot
+
+
+## Quiet guidance: the current objective, and dots on the buttons that have
+## something waiting (cards that can be connected, records to look up, another
+## room with evidence that can be collected now).
+func _refresh_guidance() -> void:
+	var o := Hints.current_objective()
+	_objective_panel.visible = not o.is_empty()
+	if not o.is_empty():
+		_objective.text = tr("HUD_OBJECTIVE") % tr(o["text"])
+	_badges["board"].visible = Hints.link_count() > 0
+	_badges["file"].visible = Hints.lookup_count() > 0
+	var elsewhere := false
+	for id in CaseDB.locations:
+		if id != GameState.location and CaseDB.location_unlocked(id) and Hints.evidence_waiting(id) > 0:
+			elsewhere = true
+	_badges["map"].visible = elsewhere and Hints.evidence_waiting(GameState.location) == 0
 
 
 func _refresh_counter() -> void:
@@ -231,6 +282,7 @@ func _refresh_counter() -> void:
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_TRANSLATION_CHANGED and _counter:
 		_refresh_counter()
+		_refresh_guidance()
 	elif what == NOTIFICATION_WM_GO_BACK_REQUEST:
 		_notification_back()
 
@@ -448,7 +500,7 @@ func _enter_location() -> void:
 
 
 func _open_map() -> void:
-	var parts := UI.popup(900.0)
+	var parts := UI.popup(1150.0)
 	var root: Control = parts[0]
 	var box: VBoxContainer = parts[1]
 	_overlays.add_child(root)
@@ -457,11 +509,27 @@ func _open_map() -> void:
 		if not CaseDB.location_unlocked(id):
 			continue
 		var here: bool = id == GameState.location
+		var all := CaseDB.location_evidence(id)
+		var found := 0
+		for e in all:
+			if GameState.has_evidence(e):
+				found += 1
+		var row := HBoxContainer.new()
+		box.add_child(row)
 		var b := UI.button(CaseDB.locations[id]["name"], "AccentButton" if here else "")
 		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
+		b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		b.disabled = here
 		b.pressed.connect(_travel.bind(id))
-		box.add_child(b)
+		row.add_child(b)
+		var count := UI.label("", "NameLabel")
+		count.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+		count.text = tr("HUD_EVIDENCE_COUNT") % [found, all.size()]
+		count.custom_minimum_size = Vector2(230, 0)
+		count.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		# Amber while something can be picked up there right now, grey otherwise.
+		count.add_theme_color_override("font_color", Palette.AMBER if Hints.evidence_waiting(id) > 0 else Palette.MUTED)
+		row.add_child(count)
 	var close := UI.button("COMMON_CLOSE")
 	close.size_flags_horizontal = Control.SIZE_SHRINK_END
 	close.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)

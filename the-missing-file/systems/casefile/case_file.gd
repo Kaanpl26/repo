@@ -102,7 +102,7 @@ func _build_objectives() -> void:
 
 func _card_grid(cards: Array) -> void:
 	var grid := GridContainer.new()
-	grid.columns = 3
+	grid.columns = 2
 	grid.add_theme_constant_override("h_separation", 16)
 	grid.add_theme_constant_override("v_separation", 16)
 	_body.add_child(grid)

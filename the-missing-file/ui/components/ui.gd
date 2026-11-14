@@ -75,19 +75,10 @@ static func scaled_font(control: Control, base_size: int) -> void:
 	control.add_theme_font_size_override("font_size", int(round(base_size * Settings.text_scale_factor())))
 
 
-## A button showing a card (evidence, statement or conclusion) with its icon.
-static func card_button(card_id: String) -> Button:
-	var b := button(CaseDB.card_title(card_id))
-	b.icon = load(CaseDB.card_icon(card_id))
-	b.add_theme_constant_override("icon_max_width", 72)
-	b.alignment = HORIZONTAL_ALIGNMENT_LEFT
-	b.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	b.custom_minimum_size = Vector2(0, 112)
-	b.add_theme_font_size_override("font_size", 30)
-	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	if CaseDB.card_kind(card_id) == "insight":
-		b.theme_type_variation = "InsightButton"
-	return b
+## A card (evidence, statement or conclusion) with its icon, title and a short
+## line saying what it shows.
+static func card_button(card_id: String, gist_lines: int = 3) -> CardButton:
+	return CardButton.new(card_id, gist_lines)
 
 
 ## Centered pop-up panel on a dimmed background. Returns [root, content VBox].

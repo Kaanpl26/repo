@@ -136,7 +136,7 @@ func _test_finger_scroll() -> void:
 	_game()._open_board()
 	await _wait(0.5)
 	var board: Node = _game()._overlays.get_child(0)
-	var card: Button = board._buttons[GameState.evidence[4]]
+	var card: Control = _visible_card(board, 1)
 	var start: Vector2 = card.get_global_rect().get_center()
 	_touch(start, true)
 	await _wait(0.05)
@@ -152,7 +152,7 @@ func _test_finger_scroll() -> void:
 	print("finger scroll moved list by ", board._scroll.scroll_vertical, " px; cards selected: ", board._selected.size())
 	assert(board._scroll.scroll_vertical > 100, "dragging over buttons scrolls the list")
 	assert(board._selected.is_empty(), "a drag must not select a card")
-	card = board._buttons[GameState.evidence[6]]
+	card = _visible_card(board, 0)
 	_touch(card.get_global_rect().get_center(), true)
 	await _wait(0.05)
 	_touch(card.get_global_rect().get_center(), false)
@@ -194,3 +194,15 @@ func _case_two() -> void:
 	await _wait(0.4)
 	await _close_overlays()
 	print("case 2 walk OK")
+
+
+## The n-th card whose centre is inside the visible part of the Board's list.
+func _visible_card(board: Node, n: int) -> Control:
+	var area: Rect2 = board._scroll.get_global_rect().grow(-40)
+	var found: Array = []
+	for id in board._buttons:
+		var c: Control = board._buttons[id]
+		if area.has_point(c.get_global_rect().get_center()):
+			found.append(c)
+	assert(found.size() > n, "the Board shows at least %d cards without scrolling" % (n + 1))
+	return found[n]

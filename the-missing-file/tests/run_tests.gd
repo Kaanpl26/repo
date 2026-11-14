@@ -110,6 +110,10 @@ func _test_data_references() -> void:
 		ok(ResourceLoader.exists("res://assets/audio/%s.wav" % name), "sound missing: " + name)
 	for id in CaseDB.evidence:
 		var e: Dictionary = CaseDB.evidence[id]
+		ok(e.has("gist"), "evidence %s has no one-line summary" % id)
+		_key(e.get("gist", ""), "evidence %s.gist" % id)
+		ok(tr(e.get("gist", "")).length() <= 170, "evidence %s: summary too long for a card" % id)
+		ok(CaseDB.card_gist(id) == e.get("gist", ""), "card summary for %s" % id)
 		_check_effects(e.get("effects", []), "evidence " + id)
 		for field in ["name", "desc", "body"]:
 			_key(e[field], "evidence %s.%s" % [id, field])
@@ -453,6 +457,11 @@ func _test_board_and_verdict() -> void:
 	ok(Deduction.confirm("I_VARDAR_RETURNED", CaseDB.insights["I_VARDAR_RETURNED"]["text"]), "right conclusion accepted")
 	ok(Deduction.try_link("E02", "E06")["status"] == Deduction.KNOWN, "same connection is not offered twice")
 	ok(Verdict.resolve("vardar", {"opportunity": "I_VARDAR_RETURNED"}) == "B", "culprit with only one proof -> ending B")
+	ok(Verdict.weak_points("vardar", {"opportunity": "I_VARDAR_RETURNED"}) == ["WEAK_MOTIVE", "WEAK_LINK", "WEAK_FILE_MISSING"], "a weak verdict says what was missing")
+	ok(Verdict.weak_points("aras", {}).is_empty(), "no weak points are listed for the wrong person")
+	ok(Hints.link_count() > 0, "the Board knows more connections are possible")
+	ok(not Hints.card_used_up("E02") and not Hints.card_used_up("E03"), "cards with connections left are not faded")
+	ok(Hints.card_used_up("E06"), "a card whose only connection is made is faded")
 
 	print("- full case playthrough")
 	_connect_all()
@@ -539,6 +548,10 @@ func _test_board_and_verdict() -> void:
 		for card in CaseDB.endings["proof"]["vardar"][slot]:
 			ok(CaseDB.card_kind(card) == "insight", "proof for %s must be a Board conclusion" % slot)
 	ok(Verdict.resolve("vardar", proof) == "A", "culprit with full proof and the file -> ending A")
+	ok(Verdict.weak_points("vardar", proof).is_empty(), "a complete case has no weak points")
+	ok(Hints.link_count() == 0, "no connections remain at the end")
+	ok(Hints.card_used_up("E02") and Hints.card_used_up("I_VARDAR_RETURNED"), "cards with nothing left to give are faded")
+	ok(not Hints.card_used_up("E10"), "a card that connects to nothing is never marked as used up")
 	ok(not Verdict.epilogue("A").is_empty(), "true ending has epilogue lines for the player's decisions")
 	GameState.set_flag("case_solved")
 	for o in CaseDB.meta["objectives"]:
@@ -566,6 +579,7 @@ func _test_board_and_verdict() -> void:
 	_visit("stacks")
 	ok(GameState.has_evidence("E17X") and not GameState.has_evidence("E17"), "the file is found with pages removed")
 	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "I_VARDAR_RETURNED", "link": "I_EARRING"}) == "B", "compromised file -> ending B even with full proof")
+	ok(Verdict.weak_points("vardar", {"motive": "I_SM", "opportunity": "I_VARDAR_RETURNED", "link": "I_EARRING"}) == ["WEAK_FILE_DAMAGED"], "the verdict explains that the file was spoiled")
 	ok(Verdict.rating()["evidence"] <= Verdict.rating()["evidence_total"], "damaged file is not double counted")
 
 	# Pressuring Leyla loses the detail at first; the stopped watch gets it later.
@@ -632,6 +646,8 @@ func _test_case_02() -> void:
 	for id in ["E01", "E02", "E03", "E04", "E05", "E06"]:
 		ok(GameState.has_evidence(id), "road evidence %s collected" % id)
 	ok(Hints.next("road").get("text") == "HINT_DATABASE", "hint sends the player to the database")
+	ok(Hints.lookup_count() == 3, "three records are waiting to be read")
+	ok(Hints.evidence_waiting("road") == 0, "nothing left to pick up on the road")
 	ok(_look_up_all() == 3, "phone, company and person can be looked up after the road")
 	ok(not GameState.has_evidence("E21"), "the plate cannot be looked up before the camera still is found")
 	_connect_all()
@@ -788,6 +804,8 @@ func _test_interrogation() -> void:
 	while not r.can_present() and s == DialogueRunner.LINE:
 		s = r.advance()
 	ok(r.can_press() and r.can_present(), "the patrol statement can be pressed and challenged")
+	ok(not r.holds_answer(), "Present does not glow when the player holds nothing that fits")
+	ok(r.challenged_line()["t"] == r.line()["t"], "the picker quotes the statement on screen")
 	var statement: String = r.line()["t"]
 	s = r.press()
 	ok(s == DialogueRunner.LINE and r.line()["t"] != statement, "pressing plays the follow-up")
@@ -818,6 +836,16 @@ func _test_interrogation() -> void:
 	ok(r2.node_id == "closed" and r2.advance() == DialogueRunner.END, "they refuse to talk until something changes")
 	GameState.add_evidence("E05")
 	ok(GameState.patience_left("erdem") == full, "learning something new restores patience")
+	var glow := _talk("erdem")
+	var gs := _pick(glow, "patrol")
+	while not glow.can_present() and gs == DialogueRunner.LINE:
+		gs = glow.advance()
+	ok(glow.holds_answer(), "Present glows once the player holds the card that fits")
+	var said: String = glow.line()["t"]
+	glow.press()
+	while glow.line_index != glow.node().get("lines", []).size() - 1:
+		glow.advance()
+	ok(glow.challenged_line()["t"] == said, "after pressing, the picker still quotes the original statement")
 	r2 = _talk("erdem")
 	s = _pick(r2, "patrol")
 	while not r2.can_press() and s == DialogueRunner.LINE:

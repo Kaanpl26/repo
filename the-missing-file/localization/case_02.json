@@ -1490,5 +1490,101 @@
   "C2_END_E_TEXT": {
     "en": "A wet bend, a tired man, a car a little too fast. You sign the traffic unit's report.\n\nThe chief thanks you for not wasting anyone's time. A week later the small brass key is returned to the family with the rest of his things. Nobody knows what it opens.",
     "tr": "Islak bir viraj, yorgun bir adam, biraz fazla hızlı bir araba. Trafik ekibinin raporunu imzalıyorsunuz.\n\nMüdür kimsenin vaktini almadığınız için teşekkür ediyor. Bir hafta sonra küçük pirinç anahtar, diğer eşyalarıyla birlikte ailesine teslim ediliyor. Neyi açtığını bilen yok."
+  },
+  "C2_E01_GIST": {
+    "en": "No braking marks from his car. A second set of tyre marks runs beside it for forty metres.",
+    "tr": "Arabasına ait fren izi yok. Yanında kırk metre boyunca ikinci bir lastik izi uzanıyor."
+  },
+  "C2_E02_GIST": {
+    "en": "Dark red paint in the dent at his rear left corner, at the bumper height of another saloon.",
+    "tr": "Sol arka köşedeki ezikte koyu kırmızı boya var; başka bir sedanın tampon hizasında."
+  },
+  "C2_E03_GIST": {
+    "en": "A call from 0 282 555 01 00 at 21:15. At 21:18 he texted “T.”: ten o'clock at the tower gate, “as your office said”.",
+    "tr": "21.15'te 0 282 555 01 00 numarasından arama. 21.18'de “T.” kişisine mesaj: saat onda kule kapısında, “ofisinizin dediği gibi”."
+  },
+  "C2_E04_GIST": {
+    "en": "A small cabinet key tagged 117. It fits nothing in his car or his flat.",
+    "tr": "117 etiketli küçük bir dolap anahtarı. Arabasında da evinde de hiçbir yere uymuyor."
+  },
+  "C2_E05_GIST": {
+    "en": "He signed in at the Kıyı Yapı tower site at 22:02. The “to see” line is blank.",
+    "tr": "22.02'de Kıyı Yapı'nın kule şantiyesine giriş yapmış. “Görüşeceği kişi” satırı boş."
+  },
+  "C2_E06_GIST": {
+    "en": "Struck at the rear left at 22:41, at 68 km/h. No braking before the impact.",
+    "tr": "22.41'de, saatte 68 km hızla giderken sol arkadan darbe almış. Darbeden önce fren yok."
+  },
+  "C2_E07_GIST": {
+    "en": "The editor's extension, 14, rang one mobile at 21:05 and Kerem's mobile at 21:15. People called see only the main number.",
+    "tr": "Yayın yönetmeninin dahilisi (14) 21.05'te bir cep telefonunu, 21.15'te Kerem'in cebini aramış. Arananlar yalnızca ana numarayı görür."
+  },
+  "C2_E08_GIST": {
+    "en": "His laptop and notebook are gone. The laptop stood on the desk until at least Tuesday.",
+    "tr": "Bilgisayarı ve not defteri yok. Bilgisayar en azından salı gününe kadar masadaydı."
+  },
+  "C2_E09_GIST": {
+    "en": "Tuesday out: Kerem 21:20, Soylu 21:40, Aktaş 22:10. Wednesday in: Aktaş at 07:00, two hours before anyone else.",
+    "tr": "Salı çıkış: Kerem 21.20, Soylu 21.40, Aktaş 22.10. Çarşamba giriş: Aktaş 07.00, herkesten iki saat önce."
+  },
+  "C2_E10_GIST": {
+    "en": "Drawer 117 of the newspaper archive: spiked stories from 2004.",
+    "tr": "Gazete arşivinin 117 numaralı çekmecesi: 2004'te rafa kaldırılan haberler."
+  },
+  "C2_E11_GIST": {
+    "en": "The Aras group, including Kıyı Yapı, pays for 41% of the paper's advertising. “Do not upset. — N.S.”",
+    "tr": "Kıyı Yapı dahil Aras grubu, gazetenin reklam gelirinin %41'ini sağlıyor. “Küstürmeyelim. — N.S.”"
+  },
+  "C2_E12_GIST": {
+    "en": "His draft: the paper spiked this story in 2004 and its reporter was paid by Fener Danışmanlık. The name is unfinished. Last opened Tuesday 20:31.",
+    "tr": "Taslağı: gazete bu haberi 2004'te rafa kaldırmış, yazan muhabire Fener Danışmanlık ödeme yapmış. İsim yarım kalmış. Son açılış salı 20.31."
+  },
+  "C2_E13_GIST": {
+    "en": "The original ruling said no to building. With it: Soylu's spiked 2004 article and a payment to her from Fener Danışmanlık.",
+    "tr": "Kararın aslı inşaata hayır diyor. Yanında: Soylu'nun 2004'te rafa kaldırılan haberi ve Fener Danışmanlık'tan ona yapılmış bir ödeme."
+  },
+  "C2_E14_GIST": {
+    "en": "Kerem was at the gate from 22:02 to 22:28 and nobody came for him. No site vehicle left between 21:00 and 02:00.",
+    "tr": "Kerem 22.02'den 22.28'e kadar kapıdaymış, onu almaya gelen olmamış. 21.00 ile 02.00 arasında hiçbir şantiye aracı çıkmamış."
+  },
+  "C2_E15_GIST": {
+    "en": "A dark red saloon waited opposite the gate from 22:10 and pulled out behind him at 22:29. Plate: 82 N? 04??.",
+    "tr": "Koyu kırmızı bir sedan 22.10'dan itibaren kapının karşısında beklemiş, 22.29'da onun arkasından hareket etmiş. Plaka: 82 N? 04??."
+  },
+  "C2_E16_GIST": {
+    "en": "A white pickup. The dent is at the rear, and the paint in it is yellow, from a gate post.",
+    "tr": "Beyaz bir kamyonet. Ezik arkada; içindeki boya da kapı direğinden gelen sarı."
+  },
+  "C2_E17_GIST": {
+    "en": "On Monday Kaplan reversed the pickup into a gate post. Signed by the gate guard.",
+    "tr": "Kaplan pazartesi günü kamyonetle geri geri giderken kapı direğine çarpmış. Kapı görevlisi imzalamış."
+  },
+  "C2_E18_GIST": {
+    "en": "Kaplan signed for concrete on site at 21:10, 22:20, 23:30 and 00:45.",
+    "tr": "Kaplan 21.10, 22.20, 23.30 ve 00.45'te şantiyede beton teslim almış."
+  },
+  "C2_E19_GIST": {
+    "en": "File 58-D was removed “for correction” in 2004 by T.G. and never returned. “The original is kept safe.”",
+    "tr": "58-D dosyası 2004'te T.G. tarafından “düzeltme için” alınmış, iade edilmemiş. “Aslı güvende saklanıyor.”"
+  },
+  "C2_E20_GIST": {
+    "en": "Güven was to meet K.T. at the tower gate at 22:00. At 21:05 the paper rang him: K.T. cannot come.",
+    "tr": "Güven 22.00'de kule kapısında K.T. ile buluşacakmış. 21.05'te gazeteden aramışlar: K.T. gelemiyor."
+  },
+  "C2_E21_GIST": {
+    "en": "The only dark red saloon that fits the plate belongs to Nilgün Soylu. She claimed for front-right damage on Wednesday morning.",
+    "tr": "Plakaya uyan tek koyu kırmızı sedan Nilgün Soylu'nun. Çarşamba sabahı sağ ön hasarı için dosya açtırmış."
+  },
+  "C2_E22_GIST": {
+    "en": "0 282 555 01 00 is the Karaliman Postası switchboard. Every call from inside the building shows this number.",
+    "tr": "0 282 555 01 00, Karaliman Postası'nın santrali. Binanın içinden yapılan her arama bu numarayla görünür."
+  },
+  "C2_E23_GIST": {
+    "en": "Fener Danışmanlık owns 15% of the firm building the tower. Its address is Nedim Karaca's law office.",
+    "tr": "Fener Danışmanlık, kuleyi yapan şirketin %15'ine sahip. Adresi Nedim Karaca'nın hukuk bürosu."
+  },
+  "C2_E24_GIST": {
+    "en": "Bora Kaplan has one conviction, for reckless driving in 2011. Nothing since.",
+    "tr": "Bora Kaplan'ın tek sabıkası var: 2011'de tehlikeli araç kullanma. Sonrasında kayıt yok."
   }
 }

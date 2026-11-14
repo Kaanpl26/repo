@@ -77,6 +77,21 @@ func _ready() -> void:
 		line.add_child(tag)
 		line.add_child(UI.label(a["title"], "NameLabel"))
 
+	var weak: Array = result.get("weak", [])
+	if not weak.is_empty():
+		var wp := PanelContainer.new()
+		wp.theme_type_variation = "BarPanel"
+		box.add_child(wp)
+		var wc := VBoxContainer.new()
+		wc.add_theme_constant_override("separation", 4)
+		wp.add_child(wc)
+		var head := UI.label("ENDING_WEAK", "NameLabel")
+		wc.add_child(head)
+		for key in weak:
+			var line := UI.label(key, "", true)
+			UI.scaled_font(line, 31)
+			wc.add_child(line)
+
 	if not def["solved"]:
 		var note := UI.label("ENDING_RETURN_NOTE", "SmallLabel", true)
 		note.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
