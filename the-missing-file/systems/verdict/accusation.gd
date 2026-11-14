@@ -28,7 +28,7 @@ func _clear() -> void:
 
 func _show_who() -> void:
 	_clear()
-	var title := UI.label("ACCUSE_TITLE", "HeaderLabel")
+	var title := UI.label(CaseDB.endings.get("question", "ACCUSE_TITLE"), "HeaderLabel")
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_content.add_child(title)
 	var row := HBoxContainer.new()

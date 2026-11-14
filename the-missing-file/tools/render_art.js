@@ -18,9 +18,15 @@ const targets = {
   vardar: 'assets/portraits/vardar.png', aras: 'assets/portraits/aras.png', aydin: 'assets/portraits/aydin.png',
   card_testimony: 'assets/ui/card_testimony.png', card_insight: 'assets/ui/card_insight.png',
 };
+// Extra targets written by the per-case art generators (art_src/targets_*.json).
+for (const f of fs.readdirSync(path.join(root, 'art_src'))) {
+  if (/^targets_.*\.json$/.test(f)) Object.assign(targets, JSON.parse(fs.readFileSync(path.join(root, 'art_src', f), 'utf8')));
+}
+const only = process.argv[2];   // optional: render only names starting with this prefix
 (async () => {
   const browser = await chromium.launch();
   for (const [name, out] of Object.entries(targets)) {
+    if (only && !only.split(',').some(p => name.startsWith(p))) continue;
     const svg = fs.readFileSync(path.join(root, 'art_src', name + '.svg'), 'utf8');
     const m = svg.match(/width="(\d+)" height="(\d+)"/);
     const page = await browser.newPage({ viewport: { width: +m[1], height: +m[2] }, deviceScaleFactor: 1 });

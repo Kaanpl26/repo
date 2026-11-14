@@ -187,10 +187,6 @@
     "en": "Contradicted",
     "tr": "Çürütüldü"
   },
-  "TIMELINE_THURSDAY": {
-    "en": "Thursday evening",
-    "tr": "Perşembe akşamı"
-  },
   "SUSPECT_NO_NOTES": {
     "en": "No notes yet.",
     "tr": "Henüz not yok."
@@ -258,10 +254,6 @@
   "BOARD_FROM": {
     "en": "From:",
     "tr": "Kaynak:"
-  },
-  "ACCUSE_TITLE": {
-    "en": "Who is responsible for the death of Ekrem Vural?",
-    "tr": "Ekrem Vural'ın ölümünden kim sorumlu?"
   },
   "ACCUSE_ACCIDENT": {
     "en": "Nobody. It was an accident.",
@@ -642,5 +634,65 @@
   "ACH_EVERY_ENDING_DESC": {
     "en": "See all five endings of File 47-B.",
     "tr": "47-B dosyasının beş sonunu da görün."
+  },
+  "ACCUSE_TITLE": {
+    "en": "Who is responsible?",
+    "tr": "Sorumlu kim?"
+  },
+  "TIMELINE_DEFAULT": {
+    "en": "Timeline",
+    "tr": "Zaman Çizelgesi"
+  },
+  "TAB_RECORDS": {
+    "en": "Database",
+    "tr": "Kayıtlar"
+  },
+  "RECORDS_TITLE": {
+    "en": "Police Database",
+    "tr": "Polis Veri Tabanı"
+  },
+  "RECORDS_HELP": {
+    "en": "New lookups appear here when you find something worth checking. What you read is added to your evidence.",
+    "tr": "Araştırmaya değer bir şey bulduğunuzda yeni sorgular burada belirir. Okuduğunuz kayıt delillerinize eklenir."
+  },
+  "RECORDS_EMPTY": {
+    "en": "Nothing to look up yet.",
+    "tr": "Henüz sorgulanacak bir şey yok."
+  },
+  "RECORDS_LOOK_UP": {
+    "en": "Look Up",
+    "tr": "Sorgula"
+  },
+  "RECORDS_OPEN": {
+    "en": "Read Again",
+    "tr": "Yeniden Oku"
+  },
+  "RECORD_TYPE_VEHICLE": {
+    "en": "Vehicle registration",
+    "tr": "Araç tescil kaydı"
+  },
+  "RECORD_TYPE_PHONE": {
+    "en": "Telephone subscriber",
+    "tr": "Telefon abone kaydı"
+  },
+  "RECORD_TYPE_COMPANY": {
+    "en": "Trade registry",
+    "tr": "Ticaret sicili"
+  },
+  "RECORD_TYPE_PERSON": {
+    "en": "Criminal record",
+    "tr": "Adli sicil kaydı"
+  },
+  "HINT_DATABASE": {
+    "en": "There is something to look up. Open the Case File and go to Database.",
+    "tr": "Sorgulanabilecek bir şey var. Dava Dosyası'nı açın ve Kayıtlar'a gidin."
+  },
+  "HOWTO_DATABASE_TITLE": {
+    "en": "Look things up",
+    "tr": "Kayıtları sorgulayın"
+  },
+  "HOWTO_DATABASE_TEXT": {
+    "en": "Some cases give you the police database: number plates, phone numbers, companies, criminal records. Open it from the Case File. A lookup appears once you have found a reason to ask.",
+    "tr": "Bazı dosyalarda polis veri tabanı elinizin altındadır: plakalar, telefon numaraları, şirketler, adli siciller. Dava Dosyası'ndan açılır. Sormak için bir sebep bulduğunuzda sorgu belirir."
   }
 }

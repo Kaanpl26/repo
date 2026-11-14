@@ -1562,5 +1562,13 @@
   "C1_T_VARDAR_5": {
     "en": "First said she had not worn the jade earrings in months. Pressed, she admits she lost one of them and only noticed this morning.",
     "tr": "Önce yeşim küpeleri aylardır takmadığını söyledi. Üstüne gidilince birini kaybettiğini ve bunu ancak bu sabah fark ettiğini kabul etti."
+  },
+  "C1_ACCUSE_QUESTION": {
+    "en": "Who is responsible for the death of Ekrem Vural?",
+    "tr": "Ekrem Vural'ın ölümünden kim sorumlu?"
+  },
+  "C1_TIMELINE_TITLE": {
+    "en": "Thursday evening",
+    "tr": "Perşembe akşamı"
   }
 }

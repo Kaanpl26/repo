@@ -106,5 +106,6 @@
     "aydin_pressured",
     "vardar_cornered",
     "aras_admitted"
-  ]
+  ],
+  "question": "C1_ACCUSE_QUESTION"
 }

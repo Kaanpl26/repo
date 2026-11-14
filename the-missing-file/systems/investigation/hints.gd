@@ -19,6 +19,9 @@ static func next(location_id: String) -> Dictionary:
 	for hint in loc.get("hints", []):
 		if GameState.check(hint.get("conditions", [])):
 			return {"type": "text", "text": hint["text"]}
+	for record in CaseDB.available_records():
+		if not GameState.has_evidence(record["evidence"]):
+			return {"type": "text", "text": "HINT_DATABASE"}
 	if next_link() != "":
 		return {"type": "text", "text": "HINT_BOARD"}
 	for hint in CaseDB.meta.get("hints", []):

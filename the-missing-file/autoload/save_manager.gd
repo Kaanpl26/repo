@@ -10,6 +10,7 @@ var _pending := false
 
 func _ready() -> void:
 	_migrate_v1()
+	_backfill_profile()
 	GameState.changed.connect(_queue_save)
 
 
@@ -32,6 +33,32 @@ func _migrate_v1() -> void:
 		if Profile.last_case == "":
 			Profile.set_last_case(id)
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(OLD_PATH))
+
+
+## Saves made before version 1.1 know which verdicts were reached, but the
+## profile did not exist yet. Copy that across once, so finished cases count.
+func _backfill_profile() -> void:
+	for entry in CaseDB.index:
+		var id: String = entry["id"]
+		if Profile.endings.has(id):
+			continue
+		var data = _read(id)
+		if data == null:
+			continue
+		var seen: Array = Array(data["state"].get("endings_seen", []))
+		if seen.is_empty():
+			continue
+		GameState.from_dict(data["state"])
+		GameState.active = false
+		var rating := Verdict.rating()
+		var carried: Array = []
+		for flag in CaseDB.endings.get("carry", []):
+			if GameState.has_flag(flag):
+				carried.append(flag)
+		for ending in seen:
+			var is_solved: bool = CaseDB.endings["endings"].get(ending, {}).get("solved", false)
+			Profile.record_verdict(id, ending, is_solved, rating, carried if is_solved else [])
+	CaseDB.load_case(CaseDB.index[0]["id"])
 
 
 func _queue_save() -> void:

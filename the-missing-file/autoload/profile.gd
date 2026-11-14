@@ -119,6 +119,11 @@ func is_solved(case_id: String) -> bool:
 	return bool(solved.get(case_id, false))
 
 
+## True once any verdict has been reached in the case, right or wrong.
+func is_closed(case_id: String) -> bool:
+	return not Array(endings.get(case_id, [])).is_empty()
+
+
 func unlock(achievement_id: String) -> bool:
 	if achievements.has(achievement_id):
 		return false

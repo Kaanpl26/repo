@@ -11,6 +11,7 @@ var insights: Dictionary = {}     # id -> conclusion the player can reach on the
 var suspects: Dictionary = {}     # character id -> profile
 var timeline: Array = []          # entries that appear as evidence is found
 var endings: Dictionary = {}      # accusation rules and verdict texts
+var records: Array = []           # police database entries for this case (optional file)
 
 const ICON_TESTIMONY := "res://assets/ui/card_testimony.png"
 const ICON_INSIGHT := "res://assets/ui/card_insight.png"
@@ -65,6 +66,11 @@ func load_case(id: String) -> bool:
 	var v = read_json(dir + "endings.json")
 	if m == null or e == null or l == null or c == null or i == null or s == null or t == null or v == null:
 		return false
+	records = []
+	if FileAccess.file_exists(dir + "records.json"):
+		var r = read_json(dir + "records.json")
+		if r != null:
+			records = r
 	insights = i
 	suspects = s
 	timeline = t
@@ -147,3 +153,12 @@ func card_icon(id: String) -> String:
 		"testimony":
 			return ICON_TESTIMONY
 	return ICON_INSIGHT
+
+
+## Database records the player can look up right now.
+func available_records() -> Array:
+	var out: Array = []
+	for r in records:
+		if GameState.check(r.get("conditions", [])):
+			out.append(r)
+	return out

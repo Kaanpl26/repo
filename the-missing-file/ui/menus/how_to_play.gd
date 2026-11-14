@@ -5,7 +5,7 @@ extends Control
 
 signal closed
 
-const STEPS := ["LOOK", "TALK", "BOARD", "MAP", "ACCUSE", "HINT"]
+const STEPS := ["LOOK", "TALK", "BOARD", "DATABASE", "MAP", "ACCUSE", "HINT"]
 
 
 func _init() -> void:

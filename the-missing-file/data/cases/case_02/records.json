@@ -1,0 +1,46 @@
+[
+  {
+    "id": "R_PHONE",
+    "type": "phone",
+    "query": "C2_R_PHONE",
+    "conditions": [
+      {
+        "has_evidence": "E03"
+      }
+    ],
+    "evidence": "E22"
+  },
+  {
+    "id": "R_COMPANY",
+    "type": "company",
+    "query": "C2_R_COMPANY",
+    "conditions": [
+      {
+        "has_evidence": "E05"
+      }
+    ],
+    "evidence": "E23"
+  },
+  {
+    "id": "R_PERSON",
+    "type": "person",
+    "query": "C2_R_PERSON",
+    "conditions": [
+      {
+        "has_testimony": "T_SOYKAN_1"
+      }
+    ],
+    "evidence": "E24"
+  },
+  {
+    "id": "R_VEHICLE",
+    "type": "vehicle",
+    "query": "C2_R_VEHICLE",
+    "conditions": [
+      {
+        "has_evidence": "E15"
+      }
+    ],
+    "evidence": "E21"
+  }
+]

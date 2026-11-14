@@ -6,7 +6,7 @@ signal closed
 signal card_selected(id: String)
 signal accuse_requested
 
-const TABS := ["TAB_OBJECTIVES", "TAB_EVIDENCE", "TAB_SUSPECTS", "TAB_TIMELINE"]
+var _tabs: Array = ["TAB_OBJECTIVES", "TAB_EVIDENCE", "TAB_SUSPECTS", "TAB_TIMELINE"]
 
 var _tab := 0
 var _tab_buttons: Array = []
@@ -25,8 +25,10 @@ func _ready() -> void:
 	var head := HBoxContainer.new()
 	head.add_theme_constant_override("separation", 10)
 	col.add_child(head)
-	for i in TABS.size():
-		var b := UI.button(TABS[i], "TabButton")
+	if not CaseDB.records.is_empty():
+		_tabs.append("TAB_RECORDS")
+	for i in _tabs.size():
+		var b := UI.button(_tabs[i], "TabButton")
 		b.pressed.connect(_show_tab.bind(i))
 		head.add_child(b)
 		_tab_buttons.append(b)
@@ -59,6 +61,7 @@ func _show_tab(index: int) -> void:
 		1: _build_evidence()
 		2: _build_suspects()
 		3: _build_timeline()
+		4: _build_records()
 
 
 func _wrapped(key: String, size_px: int = 34) -> Label:
@@ -173,7 +176,7 @@ func _build_suspects() -> void:
 # ---------------------------------------------------------------- timeline
 
 func _build_timeline() -> void:
-	_body.add_child(UI.label("TIMELINE_THURSDAY", "HeaderLabel"))
+	_body.add_child(UI.label(CaseDB.meta.get("timeline_title", "TIMELINE_DEFAULT"), "HeaderLabel"))
 	var any := false
 	for e in CaseDB.timeline:
 		if not GameState.check(e.get("conditions", [])):
@@ -198,6 +201,40 @@ func _build_timeline() -> void:
 		row.add_child(text)
 	if not any:
 		_body.add_child(UI.label("TIMELINE_EMPTY", "SmallLabel"))
+
+
+# ---------------------------------------------------------------- police database
+
+## Things the detective can look up. A record appears once there is a reason
+## to ask about it; reading it adds it to the case file as evidence.
+func _build_records() -> void:
+	_body.add_child(UI.label("RECORDS_TITLE", "HeaderLabel"))
+	_body.add_child(UI.label("RECORDS_HELP", "SmallLabel"))
+	var available := CaseDB.available_records()
+	if available.is_empty():
+		_body.add_child(UI.spacer())
+		_body.add_child(UI.label("RECORDS_EMPTY", "SmallLabel"))
+		return
+	for r in available:
+		var read: bool = GameState.has_evidence(r["evidence"])
+		var row := PanelContainer.new()
+		row.theme_type_variation = "BarPanel"
+		_body.add_child(row)
+		var h := HBoxContainer.new()
+		h.add_theme_constant_override("separation", 24)
+		row.add_child(h)
+		var v := VBoxContainer.new()
+		v.add_theme_constant_override("separation", 2)
+		v.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		h.add_child(v)
+		v.add_child(UI.label("RECORD_TYPE_" + str(r["type"]).to_upper(), "SmallLabel"))
+		v.add_child(UI.label(r["query"], "NameLabel", true))
+		var b := UI.button("RECORDS_OPEN" if read else "RECORDS_LOOK_UP", "" if read else "AccentButton")
+		b.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)
+		b.pressed.connect(func():
+			card_selected.emit(r["evidence"])
+			queue_free())
+		h.add_child(b)
 
 
 func _close() -> void:

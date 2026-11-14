@@ -416,9 +416,10 @@ func _play_intro() -> void:
 	_narrate(CaseDB.meta["intro"], func():
 		GameState.set_flag("intro_seen")
 		_enter_location()
-		var guide := HowToPlay.new()
-		guide.closed.connect(func(): _show_caption("TUTORIAL_LOOK", 10.0))
-		_overlays.add_child(guide))
+		if Profile.endings.is_empty():
+			var guide := HowToPlay.new()
+			guide.closed.connect(func(): _show_caption("TUTORIAL_LOOK", 10.0))
+			_overlays.add_child(guide))
 
 
 # ---------------------------------------------------------------- places
@@ -429,10 +430,21 @@ func _enter_location() -> void:
 	if GameState.has_flag(flag):
 		return
 	GameState.set_flag(flag)
-	var enter: Dictionary = _loc.get("on_enter", {})
-	GameState.apply(enter.get("effects", []))
-	if enter.has("caption"):
-		_show_caption(enter["caption"], 10.0)
+	var enter: Variant = _loc.get("on_enter", [])
+	var entries: Array = enter if enter is Array else [enter]
+	var captions: Array = []
+	for e in entries:
+		if not GameState.check(e.get("conditions", [])):
+			continue
+		GameState.apply(e.get("effects", []))
+		if e.has("caption"):
+			captions.append(e["caption"])
+	if not captions.is_empty():
+		_caption.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+		var text := ""
+		for key in captions:
+			text += ("\n" if text != "" else "") + tr(key)
+		_show_caption(text, 12.0)
 
 
 func _open_map() -> void:
