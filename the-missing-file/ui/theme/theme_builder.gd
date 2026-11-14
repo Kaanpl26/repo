@@ -124,6 +124,14 @@ static func build() -> Theme:
 	t.set_type_variation("BarPanel", "PanelContainer")
 	t.set_stylebox("panel", "BarPanel", box(Color(Palette.NAVY, 0.82), Color(Palette.SLATE, 0.9), 2, 10, 28, 14))
 
+	# Scroll bars: wide enough to see and to grab with a thumb
+	var track := box(Color(Palette.SLATE, 0.55), Color(0, 0, 0, 0), 0, 14, 14, 0)
+	t.set_stylebox("scroll", "VScrollBar", track)
+	t.set_stylebox("scroll_focus", "VScrollBar", track)
+	t.set_stylebox("grabber", "VScrollBar", box(Palette.AMBER.darkened(0.25), Color(0, 0, 0, 0), 0, 14, 14, 0))
+	t.set_stylebox("grabber_highlight", "VScrollBar", box(Palette.AMBER, Color(0, 0, 0, 0), 0, 14, 14, 0))
+	t.set_stylebox("grabber_pressed", "VScrollBar", box(Palette.PAPER, Color(0, 0, 0, 0), 0, 14, 14, 0))
+
 	t.set_constant("separation", "VBoxContainer", 20)
 	t.set_constant("separation", "HBoxContainer", 20)
 	return t

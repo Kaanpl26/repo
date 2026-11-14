@@ -11,8 +11,7 @@ func _init(title_key: String, cards: Array) -> void:
 	add_child(parts[0])
 	var box: VBoxContainer = parts[1]
 	box.add_child(UI.label(title_key, "HeaderLabel"))
-	var scroll := ScrollContainer.new()
-	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	var scroll := TouchScroll.new()
 	scroll.custom_minimum_size = Vector2(0, 560)
 	box.add_child(scroll)
 	var grid := GridContainer.new()

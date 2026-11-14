@@ -12,7 +12,7 @@ func _ready() -> void:
 	var col := VBoxContainer.new()
 	col.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
 	col.size_flags_vertical = Control.SIZE_SHRINK_CENTER
-	col.add_theme_constant_override("separation", 16)
+	col.add_theme_constant_override("separation", 12)
 	var pad := MarginContainer.new()
 	pad.add_theme_constant_override("margin_left", 90)
 	pad.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -34,8 +34,10 @@ func _ready() -> void:
 	settings.pressed.connect(_on_settings)
 	var credits := UI.button("MENU_CREDITS")
 	credits.pressed.connect(_on_credits)
-	for b in [_continue, new_game, settings, credits]:
-		b.custom_minimum_size = Vector2(560, 96)
+	var howto := UI.button("MENU_HOWTO")
+	howto.pressed.connect(func(): add_child(HowToPlay.new()))
+	for b in [_continue, new_game, howto, settings, credits]:
+		b.custom_minimum_size = Vector2(560, 88)
 		b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		col.add_child(b)
 	_continue.visible = SaveManager.has_save()

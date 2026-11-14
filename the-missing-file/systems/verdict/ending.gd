@@ -13,8 +13,7 @@ func _ready() -> void:
 	add_child(UI.dim(1.0))
 	var safe := UI.safe_container(self)
 	add_child(safe)
-	var scroll := ScrollContainer.new()
-	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	var scroll := TouchScroll.new()
 	safe.add_child(scroll)
 	var center := CenterContainer.new()
 	center.size_flags_horizontal = Control.SIZE_EXPAND_FILL

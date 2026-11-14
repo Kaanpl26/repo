@@ -83,6 +83,53 @@ func _run() -> void:
 		_game()._notification_back()
 		await _wait(0.3)
 		assert(_game()._overlays.get_child_count() == 0, "back button closes " + opener)
+	await _test_finger_scroll()
+	_game().add_child(HowToPlay.new())
+	await _wait(0.4)
 	TranslationServer.set_locale("tr")
 	_game()._open_ending("B")
 	await _wait(1.0)
+
+
+func _touch(pos: Vector2, pressed: bool) -> void:
+	var e := InputEventScreenTouch.new()
+	e.index = 0
+	e.position = pos
+	e.pressed = pressed
+	Input.parse_input_event(e)
+
+
+## Drags a finger up the Board's card list, starting on a card button.
+## The list must scroll and the card must not be selected.
+func _test_finger_scroll() -> void:
+	for id in CaseDB.countable_evidence():
+		GameState.add_evidence(id)
+	for id in CaseDB.meta["testimony"]:
+		GameState.add_testimony(id)
+	_game()._open_board()
+	await _wait(0.5)
+	var board: Node = _game()._overlays.get_child(0)
+	var card: Button = board._buttons[GameState.evidence[4]]
+	var start: Vector2 = card.get_global_rect().get_center()
+	_touch(start, true)
+	await _wait(0.05)
+	for i in 12:
+		var d := InputEventScreenDrag.new()
+		d.index = 0
+		d.relative = Vector2(0, -30)
+		d.position = start + Vector2(0, -30 * (i + 1))
+		Input.parse_input_event(d)
+		await get_tree().process_frame
+	_touch(start + Vector2(0, -360), false)
+	await _wait(0.3)
+	print("finger scroll moved list by ", board._scroll.scroll_vertical, " px; cards selected: ", board._selected.size())
+	assert(board._scroll.scroll_vertical > 100, "dragging over buttons scrolls the list")
+	assert(board._selected.is_empty(), "a drag must not select a card")
+	card = board._buttons[GameState.evidence[6]]
+	_touch(card.get_global_rect().get_center(), true)
+	await _wait(0.05)
+	_touch(card.get_global_rect().get_center(), false)
+	await _wait(0.2)
+	assert(board._selected.size() == 1, "a plain tap still selects a card")
+	print("tap still selects: ", board._selected.size())
+	await _close_overlays()

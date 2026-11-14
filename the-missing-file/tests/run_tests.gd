@@ -443,7 +443,11 @@ func _test_board_and_verdict() -> void:
 	ok(Verdict.resolve("erdem", proof) == "D" and Verdict.resolve("aydin", proof) == "D", "scapegoat -> ending D")
 	ok(Verdict.resolve("vardar", {}) == "B", "culprit without proof -> ending B")
 	ok(Verdict.resolve("vardar", {"motive": "I_EARRING", "opportunity": "I_SM", "link": "I_ELEVATOR"}) == "B", "proof in the wrong slots -> ending B")
-	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "E06", "link": "E13"}) == "A", "raw evidence also counts as proof")
+	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "I_EMAIL", "link": "I_EARRING"}) == "A", "any of the opportunity conclusions counts")
+	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "E06", "link": "E13"}) == "B", "raw evidence is not proof; it must be a conclusion")
+	for slot in CaseDB.endings["slots"]:
+		for card in CaseDB.endings["proof"]["vardar"][slot]:
+			ok(CaseDB.card_kind(card) == "insight", "proof for %s must be a Board conclusion" % slot)
 	ok(Verdict.resolve("vardar", proof) == "A", "culprit with full proof and the file -> ending A")
 	ok(not Verdict.epilogue("A").is_empty(), "true ending has epilogue lines for the player's decisions")
 	GameState.set_flag("case_solved")
@@ -471,7 +475,7 @@ func _test_board_and_verdict() -> void:
 	_connect_all()
 	_visit("stacks")
 	ok(GameState.has_evidence("E17X") and not GameState.has_evidence("E17"), "the file is found with pages removed")
-	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "E06", "link": "E13"}) == "B", "compromised file -> ending B even with full proof")
+	ok(Verdict.resolve("vardar", {"motive": "I_SM", "opportunity": "I_VARDAR_RETURNED", "link": "I_EARRING"}) == "B", "compromised file -> ending B even with full proof")
 	ok(Verdict.rating()["evidence"] <= Verdict.rating()["evidence_total"], "damaged file is not double counted")
 
 	# Pressuring Leyla loses the detail at first; the stopped watch gets it later.

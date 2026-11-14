@@ -50,8 +50,7 @@ func _ready() -> void:
 	paper.theme_type_variation = "PaperPanel"
 	paper.custom_minimum_size = Vector2(860, 560)
 	row.add_child(paper)
-	var scroll := ScrollContainer.new()
-	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	var scroll := TouchScroll.new()
 	paper.add_child(scroll)
 	var body := UI.label(def["body"], "PaperLabel", true)
 	body.size_flags_horizontal = Control.SIZE_EXPAND_FILL

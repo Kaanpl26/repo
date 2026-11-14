@@ -80,7 +80,7 @@ The timeline fills itself as time-tagged evidence is found, with conflicts marke
 
 ### 3.6 Accusation and verdict
 - Available at any time from the Case File (so a premature accusation is a real, bad choice).
-- Three steps: **Who** → **Proof** (fill three slots: Motive, Opportunity, Physical link) → **Confirm**.
+- Three steps: **Who** → **Proof** (fill three slots: Motive, Opportunity, Physical link; only conclusions reached on the Board can be used as proof) → **Confirm**.
 - Outcome depends on the suspect chosen, the strength of the proof, and earlier decisions.
 - End-of-case evaluation: rating (S/A/B/C) from evidence found, insights made, contradictions exposed, mistakes and hints.
 
@@ -343,7 +343,9 @@ Each milestone ends with something the owner can look at and approve.
 - [x] M5 Localization and polish: all text in English and Turkish, original sound effects, room ambience and music, volume settings, credits, Android back button
 - [x] M6 Testing: 2,580 automated checks including a full playthrough to the true ending and the alternative branches; smoke test of the real game flow; screens checked at 16:9, 20:9, 22:9 and 4:3 in both languages
 - [x] M7 Debug APK built and signature verified (v1.0.1: Board card titles wrap instead of being cut off); build, install and release-signing guides written
-- [ ] v1.0.1 played through on the owner's phone
+- [x] v1.0.1 played on the owner's phone; feedback: scrolling was hard, proof picker showed cards that can never be proof, no how-to-play guide
+- [x] v1.0.2: lists scroll by dragging anywhere (buttons and panels no longer swallow the touch), thicker scroll bars, accusation offers Board conclusions only, How to Play screen (first game, main menu, pause menu)
+- [ ] v1.0.2 checked on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

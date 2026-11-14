@@ -288,12 +288,12 @@
     "tr": "Fiziksel bağ — onu olaya ne bağlıyor?"
   },
   "ACCUSE_CHOOSE": {
-    "en": "Choose proof…",
-    "tr": "Kanıt seçin…"
+    "en": "Choose a conclusion…",
+    "tr": "Bir sonuç seçin…"
   },
   "ACCUSE_PICK_TITLE": {
-    "en": "Choose the proof",
-    "tr": "Kanıtı seçin"
+    "en": "Choose the conclusion that proves it",
+    "tr": "Bunu kanıtlayan sonucu seçin"
   },
   "ACCUSE_WARNING": {
     "en": "An accusation ends the investigation. Empty or wrong proof weakens your case.",
@@ -374,5 +374,73 @@
   "HINT_BOARD": {
     "en": "Some of your cards can be connected. Open the Board; the Hint button there will show you which.",
     "tr": "Kartlarınızdan bazıları birbirine bağlanabilir. Pano'yu açın; oradaki İpucu düğmesi hangileri olduğunu gösterir."
+  },
+  "MENU_HOWTO": {
+    "en": "How to Play",
+    "tr": "Nasıl Oynanır"
+  },
+  "HOWTO_TITLE": {
+    "en": "How to Play",
+    "tr": "Nasıl Oynanır"
+  },
+  "HOWTO_START": {
+    "en": "Got it",
+    "tr": "Anladım"
+  },
+  "HOWTO_LOOK_TITLE": {
+    "en": "Search the room",
+    "tr": "Odayı arayın"
+  },
+  "HOWTO_LOOK_TEXT": {
+    "en": "Drag left and right to look around. Tap anything that looks important. Evidence goes into your Case File, where you can read it again at any time.",
+    "tr": "Etrafa bakmak için sağa sola sürükleyin. Önemli görünen her şeye dokunun. Deliller Dava Dosyası'na eklenir; oradan istediğiniz zaman yeniden okuyabilirsiniz."
+  },
+  "HOWTO_TALK_TITLE": {
+    "en": "Question people",
+    "tr": "İnsanları sorgulayın"
+  },
+  "HOWTO_TALK_TEXT": {
+    "en": "Tap a person to talk. When someone says something your evidence contradicts, tap Present Evidence and show it. People who are caught lying tell you more.",
+    "tr": "Konuşmak için bir kişiye dokunun. Biri, elinizdeki delille çelişen bir şey söylerse Delil Göster'e dokunup o delili gösterin. Yalanı yakalanan kişi daha fazlasını anlatır."
+  },
+  "HOWTO_BOARD_TITLE": {
+    "en": "Connect the evidence",
+    "tr": "Delilleri bağlayın"
+  },
+  "HOWTO_BOARD_TEXT": {
+    "en": "Open the Board, choose two cards that belong together and tap Connect. Then pick what they mean together. A correct answer becomes a conclusion, and conclusions are your proof.",
+    "tr": "Pano'yu açın, birbiriyle ilgili iki kart seçin ve Bağla'ya dokunun. Sonra ikisinin birlikte ne anlattığını seçin. Doğru cevap bir sonuca dönüşür; sonuçlar sizin kanıtınızdır."
+  },
+  "HOWTO_MAP_TITLE": {
+    "en": "Move around",
+    "tr": "Mekân değiştirin"
+  },
+  "HOWTO_MAP_TEXT": {
+    "en": "Use the Map to go to other rooms. New rooms open as the investigation moves on.",
+    "tr": "Diğer odalara gitmek için Harita'yı kullanın. Soruşturma ilerledikçe yeni odalar açılır."
+  },
+  "HOWTO_ACCUSE_TITLE": {
+    "en": "Make your accusation",
+    "tr": "Suçlamada bulunun"
+  },
+  "HOWTO_ACCUSE_TEXT": {
+    "en": "When you are sure, open the Case File, go to Suspects and accuse. You need three conclusions from the Board: a motive, an opportunity and a physical link. A wrong accusation has consequences.",
+    "tr": "Emin olduğunuzda Dava Dosyası'nı açın, Şüpheliler'e gidin ve suçlayın. Pano'dan üç sonuca ihtiyacınız var: sebep, fırsat ve fiziksel bağ. Yanlış suçlamanın sonuçları olur."
+  },
+  "HOWTO_HINT_TITLE": {
+    "en": "Stuck?",
+    "tr": "Takıldınız mı?"
+  },
+  "HOWTO_HINT_TEXT": {
+    "en": "Tap Hint in a room or on the Board. Hints never block you, but they lower your final rating a little.",
+    "tr": "Bir odada ya da Pano'da İpucu'na dokunun. İpuçları sizi asla engellemez, ama son değerlendirmenizi biraz düşürür."
+  },
+  "ACCUSE_ONLY_CONCLUSIONS": {
+    "en": "Proof must be a conclusion you reached on the Board.",
+    "tr": "Kanıt, Pano'da vardığınız bir sonuç olmalıdır."
+  },
+  "ACCUSE_NO_CONCLUSIONS": {
+    "en": "You have no conclusions yet. Connect evidence on the Board first.",
+    "tr": "Henüz bir sonuca varmadınız. Önce Pano'da delilleri bağlayın."
   }
 }

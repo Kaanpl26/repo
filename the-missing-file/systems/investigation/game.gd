@@ -329,6 +329,9 @@ func _open_pause() -> void:
 	var settings := UI.button("MENU_SETTINGS")
 	settings.pressed.connect(func(): _overlays.add_child(SETTINGS_PANEL.instantiate()))
 	box.add_child(settings)
+	var howto := UI.button("MENU_HOWTO")
+	howto.pressed.connect(func(): _overlays.add_child(HowToPlay.new()))
+	box.add_child(howto)
 	var quit := UI.button("PAUSE_MAIN_MENU")
 	quit.pressed.connect(func():
 		SaveManager.save_game()
@@ -389,7 +392,9 @@ func _play_intro() -> void:
 	_narrate(CaseDB.meta["intro"], func():
 		GameState.set_flag("intro_seen")
 		_enter_location()
-		_show_caption("TUTORIAL_LOOK", 10.0))
+		var guide := HowToPlay.new()
+		guide.closed.connect(func(): _show_caption("TUTORIAL_LOOK", 10.0))
+		_overlays.add_child(guide))
 
 
 # ---------------------------------------------------------------- places

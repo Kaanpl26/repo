@@ -19,12 +19,10 @@
       "opportunity": [
         "I_VARDAR_RETURNED",
         "I_EMAIL",
-        "I_ELEVATOR",
-        "E06"
+        "I_ELEVATOR"
       ],
       "link": [
-        "I_EARRING",
-        "E13"
+        "I_EARRING"
       ]
     }
   },

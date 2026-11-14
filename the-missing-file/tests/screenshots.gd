@@ -79,6 +79,8 @@ func _ui() -> void:
 	await _snap("01_menu_tr")
 	_current.add_child(load("res://ui/menus/settings_panel.tscn").instantiate())
 	await _snap("02_settings_tr")
+	_current.add_child(HowToPlay.new())
+	await _snap("02b_howto_tr")
 	var game := await _game("office")
 	await _snap("03_office_tr")
 	game._open_map()

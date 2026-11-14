@@ -6,6 +6,7 @@ signal resolved(ending_id: String)
 var _suspect := ""
 var _slots := {}
 var _content: VBoxContainer
+var _note: Label
 
 
 func _ready() -> void:
@@ -99,6 +100,11 @@ func _show_proof() -> void:
 			b.custom_minimum_size = Vector2(760, 112)
 			b.pressed.connect(_pick.bind(slot))
 			row.add_child(b)
+	_note = UI.label("ACCUSE_ONLY_CONCLUSIONS", "SmallLabel", true)
+	_note.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_note.custom_minimum_size = Vector2(1200, 0)
+	_note.add_theme_color_override("font_color", Palette.AMBER)
+	_content.add_child(_note)
 	var warn := UI.label("ACCUSE_WARNING", "SmallLabel", true)
 	warn.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	warn.custom_minimum_size = Vector2(1200, 0)
@@ -117,7 +123,11 @@ func _show_proof() -> void:
 
 
 func _pick(slot: String) -> void:
-	var picker := CardPicker.new("ACCUSE_PICK_TITLE", GameState.all_cards())
+	# Proof is always a conclusion reached on the Board, so only those are offered.
+	if GameState.insights.is_empty():
+		_note.text = "ACCUSE_NO_CONCLUSIONS"
+		return
+	var picker := CardPicker.new("ACCUSE_PICK_TITLE", GameState.insights)
 	picker.picked.connect(func(id: String):
 		_slots[slot] = id
 		_show_proof())
