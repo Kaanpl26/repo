@@ -8,6 +8,8 @@ var _checks := 0
 
 
 func _ready() -> void:
+	Profile.persist = false      # never touch the player's real profile
+	Profile.reset()
 	_test_scripts_load()
 	_test_localization()
 	_test_data_references()
@@ -15,7 +17,10 @@ func _ready() -> void:
 	_test_case_structure()
 	_test_playthrough()
 	_test_board_and_verdict()
+	_test_interrogation()
+	_test_career()
 	_test_save_roundtrip()
+	_test_save_migration()
 	print("\n%d checks, %d failed" % [_checks, _fails])
 	get_tree().quit(1 if _fails > 0 else 0)
 
@@ -38,7 +43,7 @@ func _test_scripts_load() -> void:
 # Every key must have non-empty English and Turkish text.
 func _test_localization() -> void:
 	print("- localization tables")
-	for table in Loc.TABLES:
+	for table in Loc.tables:
 		var data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(Loc.DIR + table + ".json"))
 		for key in data:
 			for code in Settings.LOCALES:
@@ -142,7 +147,9 @@ func _test_data_references() -> void:
 func _check_conditions(list: Array, where: String) -> void:
 	for c in list:
 		for k in c:
-			ok(k in ["has_evidence", "no_evidence", "flag", "not_flag", "has_insight", "no_insight", "has_testimony"], where + ": unknown condition " + k)
+			ok(k in ["has_evidence", "no_evidence", "flag", "not_flag", "has_insight", "no_insight", "has_testimony", "profile_flag", "case_solved"], where + ": unknown condition " + k)
+			if k == "case_solved":
+				ok(not CaseDB.case_entry(c[k]).is_empty(), where + ": condition uses unknown case")
 			if k in ["has_insight", "no_insight"]:
 				ok(CaseDB.insights.has(c[k]), where + ": condition uses unknown insight")
 			if k == "has_testimony":
@@ -173,6 +180,11 @@ func _test_dialogue_graph() -> void:
 			_check_conditions(s.get("conditions", []), ch + " start")
 			queue.append(s["node"])
 		ok(not d["start"][-1].has("conditions"), "%s: last start entry must be unconditional" % ch)
+		if d.has("closed"):
+			ok(nodes.has(d["closed"]), "%s: closed node missing" % ch)
+			queue.append(d["closed"])
+			ok(not nodes[d["closed"]].has("next") and not nodes[d["closed"]].has("choices"), "%s: closed node must end the conversation" % ch)
+			ok(int(CaseDB.characters[ch].get("patience", 0)) >= 2, "%s: needs a patience of at least 2" % ch)
 		while not queue.is_empty():
 			var id: String = queue.pop_back()
 			if reached.has(id) or not nodes.has(id):
@@ -185,6 +197,15 @@ func _test_dialogue_graph() -> void:
 			for l in n.get("lines", []):
 				_key(l["t"], w)
 				ok(CaseDB.characters.has(l["s"]), w + ": unknown speaker")
+				if l.has("mood"):
+					ok(l["mood"] in ["defensive", "shaken"], w + ": unknown mood")
+					if CaseDB.characters[l["s"]].has("portrait"):
+						ok(ResourceLoader.exists(CaseDB.characters[l["s"]]["portrait"].replace(".png", "_%s.png" % l["mood"])), w + ": portrait for mood missing")
+				if l.has("press"):
+					ok(nodes.has(l["press"]), w + ": press target missing")
+					queue.append(l["press"])
+					if nodes.has(l["press"]):
+						ok(not nodes[l["press"]].has("next") and not nodes[l["press"]].has("choices"), w + ": a pressed node must return to the statement")
 				_check_effects(l.get("effects", []), w)
 				if l.has("present"):
 					var p: Dictionary = l["present"]
@@ -418,6 +439,12 @@ func _test_board_and_verdict() -> void:
 	ok(not GameState.has_evidence("E17X"), "the damaged file is not offered on this path")
 
 	ok(_confront(vardar, "stacks", "I_ELEVATOR"), "Vardar: the elevator conclusion corners her")
+	var s2 := _pick(vardar, "earrings")
+	while not vardar.can_press() and s2 == DialogueRunner.LINE:
+		s2 = vardar.advance()
+	ok(vardar.can_press(), "Vardar: the earring statement can be pressed")
+	_advance_to_choices(vardar, vardar.press())
+	ok("T_VARDAR_5" in GameState.testimony, "Vardar: pressing gets the admission that one earring is lost")
 	ok(GameState.has_flag("vardar_cornered"), "Vardar asks for a lawyer")
 	var aras := _talk("aras")
 	ok(_confront(aras, "visit", "E10"), "Aras: his own letter breaks the courtesy-call story")
@@ -494,6 +521,162 @@ func _test_board_and_verdict() -> void:
 
 	GameState.from_dict(solved_state)
 	GameState.active = false
+
+
+# Pressing statements and running out of patience.
+func _test_interrogation() -> void:
+	print("- interrogation: press and patience")
+	var keep := GameState.to_dict().duplicate(true)
+	GameState.new_game()
+	GameState.active = false
+	GameState.set_flag("erdem_met")
+	GameState.add_evidence("E04")
+	GameState.add_evidence("E01")
+	var r := _talk("erdem")
+	var s := _pick(r, "patrol")
+	while not r.can_present() and s == DialogueRunner.LINE:
+		s = r.advance()
+	ok(r.can_press() and r.can_present(), "the patrol statement can be pressed and challenged")
+	var statement: String = r.line()["t"]
+	s = r.press()
+	ok(s == DialogueRunner.LINE and r.line()["t"] != statement, "pressing plays the follow-up")
+	var guard := 0
+	while r.line()["t"] != statement and guard < 20:
+		s = r.advance()
+		guard += 1
+	ok(r.line()["t"] == statement and r.can_present(), "after pressing, the same statement is back and can still be challenged")
+
+	var full := GameState.patience_left("erdem")
+	ok(full == 3, "Erdem starts with full patience")
+	ok(not r.present("E01"), "unrelated card rejected")
+	ok(GameState.patience_left("erdem") == full - 1, "a careless challenge costs patience")
+	for i in full - 1:
+		_advance_to_choices(r, DialogueRunner.LINE)
+		_confront(r, "patrol", "E01")
+	ok(GameState.patience_left("erdem") == 0, "patience can run out")
+	ok(r.node_id == "closed", "out of patience: the person ends the conversation")
+	var r2 := DialogueRunner.new("erdem")
+	r2.start()
+	ok(r2.node_id == "closed" and r2.advance() == DialogueRunner.END, "they refuse to talk until something changes")
+	GameState.add_evidence("E05")
+	ok(GameState.patience_left("erdem") == full, "learning something new restores patience")
+	r2 = _talk("erdem")
+	ok(_confront(r2, "patrol", "E05"), "the case stays solvable after running out of patience")
+	for ch in CaseDB.dialogues:
+		ok(CaseDB.dialogues[ch].has("closed"), "%s has a line for when patience runs out" % ch)
+
+	for i in 5:
+		GameState.mark_seen("x.press.%d" % i)
+	var r3 := _talk("erdem")
+	_ask(r3, "vural")
+	s = _pick(r3, "vural")
+	while not r3.can_press() and s == DialogueRunner.LINE:
+		s = r3.advance()
+	r3.press()
+	ok(GameState.has_flag("pressed_five"), "pressing five statements is recorded")
+	GameState.from_dict(keep)
+	GameState.active = false
+
+
+# Ranks, experience, achievements and decisions carried between cases.
+func _test_career() -> void:
+	print("- career, achievements, case list")
+	Profile.reset()
+	var ranks: Array = CaseDB.career["ranks"]
+	ok(ranks.size() >= 4 and int(ranks[0]["xp"]) == 0, "career has ranks starting at 0 XP")
+	for i in ranks.size():
+		_key(ranks[i]["name"], "rank")
+		if i > 0:
+			ok(int(ranks[i]["xp"]) > int(ranks[i - 1]["xp"]), "rank thresholds increase")
+	ok(Profile.rank()["id"] == ranks[0]["id"] and Profile.xp() == 0, "a new detective starts at the first rank")
+
+	var ids := {}
+	for a in CaseDB.achievements:
+		ok(not ids.has(a["id"]), "duplicate achievement " + a["id"])
+		ids[a["id"]] = true
+		_key(a["title"], "achievement " + a["id"])
+		_key(a["desc"], "achievement " + a["id"])
+		_check_conditions(a.get("conditions", []), "achievement " + a["id"])
+		if a.has("ending"):
+			ok(CaseDB.endings["endings"].has(a["ending"]), "achievement %s: unknown ending" % a["id"])
+	for key in ["ACH_SECRET_TITLE", "ACH_SECRET_DESC", "CASES_NUMBER"]:
+		ok(Loc.has_key(key), "missing text " + key)
+
+	ok(CaseDB.index.size() >= 4, "the season lists four cases")
+	for entry in CaseDB.index:
+		_key(entry["title"], "case index " + entry["id"])
+		_check_conditions(entry.get("unlock", []), "case index " + entry["id"])
+		if entry.get("available", false):
+			ok(FileAccess.file_exists("res://data/cases/%s/case.json" % entry["id"]), "case data missing for " + entry["id"])
+			ok(entry["id"] in Loc.tables, "text table not loaded for " + entry["id"])
+	ok(CaseDB.case_open("case_01"), "the first case is open from the start")
+	ok(not CaseDB.case_open("case_02"), "a case that is not in this build cannot be opened")
+	for flag in CaseDB.endings.get("carry", []):
+		ok(typeof(flag) == TYPE_STRING, "carried flags are names")
+
+	# A wrong verdict earns nothing but is remembered.
+	var res := Profile.record_verdict("case_01", "C", false, Verdict.rating(), [])
+	ok(res["xp_gain"] == 0 and not Profile.is_solved("case_01"), "a wrong verdict gives no experience")
+	ok("OBVIOUS_MAN" in Achievements.evaluate("C"), "hidden achievement for arresting the deputy mayor")
+	ok(Achievements.evaluate("C").is_empty(), "an achievement is only awarded once")
+
+	# The solved state left by the full playthrough: true ending.
+	var rating := Verdict.rating()
+	ok(rating["score"] >= 0 and rating["score"] <= 100, "rating has a score from 0 to 100")
+	res = Profile.record_verdict("case_01", "A", true, rating, ["erdem_spared", "aydin_told"])
+	ok(res["xp_gain"] == rating["score"] and Profile.xp() == rating["score"], "solving a case awards its score as experience")
+	ok(Profile.is_solved("case_01") and Profile.best["case_01"]["grade"] == rating["grade"], "best grade is stored")
+	ok(GameState.check([{"case_solved": "case_01"}, {"profile_flag": "case_01.erdem_spared"}]), "decisions are carried forward for later cases")
+	ok(not GameState.check([{"profile_flag": "case_01.erdem_reported"}]), "decisions not taken are not carried")
+	var unlocked := Achievements.evaluate("A")
+	for id in ["FIRST_CASE", "MIRROR", "CORNERED", "GENTLE", "CONFESSION", "MERCY"]:
+		ok(id in unlocked or Profile.achievements.has(id), "achievement %s earned on the main path" % id)
+	ok(not Profile.achievements.has("NO_HINTS") or GameState.hints == 0, "no-hint achievement respects hints used")
+	ok(not Profile.achievements.has("EVERY_ENDING"), "all-endings achievement needs all five endings")
+	for e in ["B", "D", "E"]:
+		Profile.record_verdict("case_01", e, false, rating, [])
+	ok("EVERY_ENDING" in Achievements.evaluate(""), "all-endings achievement after seeing every ending")
+
+	# Replaying: a worse run does not lower the best, a different decision replaces the old one.
+	var worse := rating.duplicate()
+	worse["score"] = 10
+	worse["grade"] = "C"
+	res = Profile.record_verdict("case_01", "A", true, worse, ["erdem_reported"])
+	ok(res["xp_gain"] == 0 and Profile.best["case_01"]["score"] == rating["score"], "a worse replay keeps the best score")
+	ok(Profile.has_flag("case_01.erdem_reported") and not Profile.has_flag("case_01.erdem_spared"), "the latest solved run decides what is carried")
+	var top := {"score": 100, "grade": "S"}
+	Profile.best = {"case_01": top, "case_02": top, "case_03": top, "case_04": top}
+	ok(Profile.rank()["id"] == ranks[-1]["id"] and Profile.next_rank().is_empty(), "four excellent cases reach the top rank")
+	Profile.best = {"case_01": top}
+	ok(Profile.rank_index() == 1, "one excellent case earns the first promotion")
+	Profile.reset()
+
+
+# A save made by version 1 (single file) must still open.
+func _test_save_migration() -> void:
+	print("- save migration from version 1")
+	var old := SaveManager.OLD_PATH
+	var target := SaveManager.path("case_01")
+	if FileAccess.file_exists(old) or FileAccess.file_exists(target):
+		print("  (skipped: real save files present)")
+		return
+	var state := GameState.to_dict()
+	state.erase("patience")
+	var f := FileAccess.open(old, FileAccess.WRITE)
+	f.store_string(JSON.stringify({"version": 1, "state": state}))
+	f.close()
+	SaveManager._migrate_v1()
+	ok(not FileAccess.file_exists(old), "old save file is removed after migration")
+	ok(SaveManager.has_save("case_01"), "old save is available as the Case 1 save")
+	ok(Profile.last_case == "case_01", "Continue points at the migrated case")
+	var evidence_before: int = GameState.evidence.size()
+	GameState.new_game()
+	GameState.active = false
+	ok(SaveManager.load_game("case_01") and GameState.evidence.size() == evidence_before, "migrated save loads with its progress")
+	GameState.active = false
+	SaveManager.delete_save("case_01")
+	ok(not SaveManager.has_save("case_01"), "test save cleaned up")
+	Profile.reset()
 
 
 func _advance_to_choices(r: DialogueRunner, state: String) -> String:

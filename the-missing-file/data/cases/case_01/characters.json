@@ -5,21 +5,25 @@
   "erdem": {
     "name": "C1_NAME_ERDEM",
     "portrait": "res://assets/portraits/erdem.png",
-    "dialogue": "erdem.json"
+    "dialogue": "erdem.json",
+    "patience": 3
   },
   "vardar": {
     "name": "C1_NAME_VARDAR",
     "portrait": "res://assets/portraits/vardar.png",
-    "dialogue": "vardar.json"
+    "dialogue": "vardar.json",
+    "patience": 3
   },
   "aras": {
     "name": "C1_NAME_ARAS",
     "portrait": "res://assets/portraits/aras.png",
-    "dialogue": "aras.json"
+    "dialogue": "aras.json",
+    "patience": 2
   },
   "aydin": {
     "name": "C1_NAME_AYDIN",
     "portrait": "res://assets/portraits/aydin.png",
-    "dialogue": "aydin.json"
+    "dialogue": "aydin.json",
+    "patience": 2
   }
 }

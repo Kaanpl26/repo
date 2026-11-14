@@ -13,6 +13,9 @@ var _text: Label
 var _hint: Label
 var _choices: VBoxContainer
 var _present: Button
+var _press: Button
+var _pips: HBoxContainer
+var _portraits := {}
 var _tween: Tween
 var _state := ""
 
@@ -45,10 +48,16 @@ func _ready() -> void:
 	_choices.add_theme_constant_override("separation", 14)
 	col.add_child(_choices)
 
+	var actions := HBoxContainer.new()
+	actions.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	actions.alignment = BoxContainer.ALIGNMENT_END
+	col.add_child(actions)
+	_press = UI.button("DLG_PRESS")
+	_press.pressed.connect(func(): _show_state(_runner.press()))
+	actions.add_child(_press)
 	_present = UI.button("DLG_PRESENT", "AccentButton")
-	_present.size_flags_horizontal = Control.SIZE_SHRINK_END
 	_present.pressed.connect(_open_picker)
-	col.add_child(_present)
+	actions.add_child(_present)
 
 	var panel := PanelContainer.new()
 	panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -58,8 +67,16 @@ func _ready() -> void:
 	box.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	box.add_theme_constant_override("separation", 10)
 	panel.add_child(box)
+	var head := HBoxContainer.new()
+	head.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	box.add_child(head)
 	_name = UI.label("", "NameLabel")
-	box.add_child(_name)
+	_name.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	head.add_child(_name)
+	_pips = HBoxContainer.new()
+	_pips.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_pips.add_theme_constant_override("separation", 8)
+	head.add_child(_pips)
 	_text = UI.label("", "", true)
 	_text.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	UI.scaled_font(_text, 36)
@@ -69,7 +86,12 @@ func _ready() -> void:
 	box.add_child(_hint)
 
 	var ch: Dictionary = CaseDB.characters[character]
-	_portrait.texture = load(ch["portrait"])
+	var base: String = ch["portrait"]
+	_portraits["neutral"] = load(base)
+	for mood in ["defensive", "shaken"]:
+		var path := base.replace(".png", "_%s.png" % mood)
+		_portraits[mood] = load(path) if ResourceLoader.exists(path) else _portraits["neutral"]
+	_portrait.texture = _portraits["neutral"]
 	_layout_portrait()
 	resized.connect(_layout_portrait)
 
@@ -89,6 +111,8 @@ func _show_state(state: String) -> void:
 	for c in _choices.get_children():
 		c.queue_free()
 	_present.visible = false
+	_press.visible = false
+	_refresh_patience()
 	match state:
 		DialogueRunner.LINE:
 			_show_line()
@@ -112,6 +136,9 @@ func _show_line() -> void:
 	var speaker: String = l["s"]
 	_name.text = CaseDB.characters[speaker]["name"]
 	_portrait.modulate = Color.WHITE if speaker == character else Color(0.45, 0.45, 0.5)
+	if speaker == character:
+		_portrait.texture = _portraits[l.get("mood", "neutral")]
+	_press.visible = _runner.can_press()
 	_text.text = l["t"]
 	_hint.visible = true
 	_present.visible = _runner.can_present() and not GameState.all_cards().is_empty()
@@ -120,6 +147,26 @@ func _show_line() -> void:
 		_tween.kill()
 	_tween = create_tween()
 	_tween.tween_property(_text, "visible_ratio", 1.0, maxf(0.2, tr(l["t"]).length() / 70.0))
+
+
+## Small pips beside the name: how many careless challenges this person will
+## still put up with.
+func _refresh_patience() -> void:
+	for c in _pips.get_children():
+		c.queue_free()
+	if not _runner or not _runner.has_patience():
+		return
+	var label := UI.label("DLG_PATIENCE", "SmallLabel")
+	_pips.add_child(label)
+	var full := int(CaseDB.characters[character].get("patience", 3))
+	var left := GameState.patience_left(character)
+	for i in full:
+		var pip := ColorRect.new()
+		pip.custom_minimum_size = Vector2(22, 22)
+		pip.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+		pip.color = Palette.AMBER if i < left else Palette.SLATE
+		pip.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_pips.add_child(pip)
 
 
 func _on_tap_input(event: InputEvent) -> void:

@@ -1,6 +1,17 @@
 # The Missing File — Expansion Plan
 
-**Status:** proposal, awaiting owner approval. Nothing in this document is implemented yet.
+**Status:** approved by the owner. Decisions: order as proposed; four cases; Case 1 interviews reworked; authentic Turkish police ranks; monetization possibly later; generated vector art continues; 32-bit phones stay supported.
+
+**Progress**
+
+| Phase | State |
+|---|---|
+| 0 Foundation | Done in 1.1.0 |
+| 1 Deeper interrogation (Case 1 reworked) | Done in 1.1.0 |
+| 2 Career, ranking and achievements | Done in 1.1.0 |
+| 3 Police database | Next; waits for story approval because records are story content |
+| 4 Case 2 | Waits for approval of `STORY_PROPOSAL.md` |
+| 5 to 8 | Not started |
 **Baseline:** game build 1.0.2 (Case 1 complete, English and Turkish, Android debug APK).
 
 Effort sizes used below, measured against work already done on this project:

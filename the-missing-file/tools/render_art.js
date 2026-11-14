@@ -14,6 +14,7 @@ const targets = {
   e07: 'assets/evidence/e07.png', e08: 'assets/evidence/e08.png', e09: 'assets/evidence/e09.png', e10: 'assets/evidence/e10.png',
   e11: 'assets/evidence/e11.png', e12: 'assets/evidence/e12.png', e13: 'assets/evidence/e13.png', e14: 'assets/evidence/e14.png',
   e16: 'assets/evidence/e16.png', e17: 'assets/evidence/e17.png', e18: 'assets/evidence/e18.png', e19: 'assets/evidence/e19.png',
+  erdem_defensive: 'assets/portraits/erdem_defensive.png', erdem_shaken: 'assets/portraits/erdem_shaken.png', vardar_defensive: 'assets/portraits/vardar_defensive.png', vardar_shaken: 'assets/portraits/vardar_shaken.png', aras_defensive: 'assets/portraits/aras_defensive.png', aras_shaken: 'assets/portraits/aras_shaken.png', aydin_defensive: 'assets/portraits/aydin_defensive.png', aydin_shaken: 'assets/portraits/aydin_shaken.png',
   vardar: 'assets/portraits/vardar.png', aras: 'assets/portraits/aras.png', aydin: 'assets/portraits/aydin.png',
   card_testimony: 'assets/ui/card_testimony.png', card_insight: 'assets/ui/card_insight.png',
 };

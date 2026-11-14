@@ -90,7 +90,8 @@
       "lines": [
         {
           "s": "aras",
-          "t": "C1_ARAS_WRONG"
+          "t": "C1_ARAS_WRONG",
+          "mood": "defensive"
         }
       ],
       "next": "hub"
@@ -108,7 +109,8 @@
         },
         {
           "s": "aras",
-          "t": "C1_ARAS_ADMIT_2"
+          "t": "C1_ARAS_ADMIT_2",
+          "mood": "shaken"
         }
       ],
       "choices": [
@@ -133,7 +135,8 @@
             {
               "add_testimony": "T_ARAS_2"
             }
-          ]
+          ],
+          "mood": "defensive"
         },
         {
           "s": "aras",
@@ -170,7 +173,8 @@
             {
               "add_testimony": "T_ARAS_1"
             }
-          ]
+          ],
+          "press": "press_nine"
         }
       ],
       "next": "hub"
@@ -179,10 +183,46 @@
       "lines": [
         {
           "s": "aras",
-          "t": "C1_ARAS_TODAY_1"
+          "t": "C1_ARAS_TODAY_1",
+          "press": "press_file"
         }
       ],
       "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_nine": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ARAS_P_NINE_1"
+        },
+        {
+          "s": "aras",
+          "t": "C1_ARAS_P_NINE_2"
+        }
+      ]
+    },
+    "press_file": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ARAS_P_FILE_1"
+        },
+        {
+          "s": "aras",
+          "t": "C1_ARAS_P_FILE_2",
+          "mood": "defensive"
+        }
+      ]
     }
-  }
+  },
+  "closed": "closed"
 }

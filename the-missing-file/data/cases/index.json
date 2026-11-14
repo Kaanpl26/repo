@@ -1,0 +1,42 @@
+[
+  {
+    "id": "case_01",
+    "number": 1,
+    "title": "C1_TITLE",
+    "available": true,
+    "unlock": []
+  },
+  {
+    "id": "case_02",
+    "number": 2,
+    "title": "CASE_COMING_SOON",
+    "available": false,
+    "unlock": [
+      {
+        "case_solved": "case_01"
+      }
+    ]
+  },
+  {
+    "id": "case_03",
+    "number": 3,
+    "title": "CASE_COMING_SOON",
+    "available": false,
+    "unlock": [
+      {
+        "case_solved": "case_02"
+      }
+    ]
+  },
+  {
+    "id": "case_04",
+    "number": 4,
+    "title": "CASE_COMING_SOON",
+    "available": false,
+    "unlock": [
+      {
+        "case_solved": "case_03"
+      }
+    ]
+  }
+]

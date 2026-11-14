@@ -235,7 +235,7 @@ After any ending except A the player may replay from the last checkpoint before 
 
 - **Palette:** midnight navy `#0E1420`, charcoal `#1B2230`, paper cream `#E8DFC8`, lamp amber `#E3A446`, evidence red `#B8413A` (threads, alerts), jade `#4FA58A` (confirmed insights).
 - **Scenes:** 3–4 parallax layers, Godot 2D lights for desk lamps and window light, rain on glass, dust motes, subtle film grain and vignette.
-- **Characters:** stylised half-length portraits. Version 1.0 has one expression per character; alternative expressions (defensive, shaken) are a possible later addition.
+- **Characters:** stylised half-length portraits with three expressions each (neutral, defensive, shaken), chosen per line of dialogue.
 - **UI:** case-file metaphor — manila folders, typed labels, stamps, pins and red thread.
 - **Typography (open licence, full Turkish glyph coverage):** a typewriter face for documents, a clean sans for UI and dialogue, a serif for titles. Exact fonts are confirmed in Milestone 2 after checking ç ğ ı İ ö ş ü rendering.
 - **Animation:** card flips, stamp thumps, thread drawing, lamp flicker, portrait cross-fades. Nothing longer than 0.4 s on core actions.
@@ -345,7 +345,10 @@ Each milestone ends with something the owner can look at and approve.
 - [x] M7 Debug APK built and signature verified (v1.0.1: Board card titles wrap instead of being cut off); build, install and release-signing guides written
 - [x] v1.0.1 played on the owner's phone; feedback: scrolling was hard, proof picker showed cards that can never be proof, no how-to-play guide
 - [x] v1.0.2: lists scroll by dragging anywhere (buttons and panels no longer swallow the touch), thicker scroll bars, accusation offers Board conclusions only, How to Play screen (first game, main menu, pause menu)
-- [ ] v1.0.2 checked on the owner's phone
+- [x] Expansion plan approved (docs/EXPANSION_PLAN.md)
+- [x] v1.1.0: multi-case foundation (case list, player profile, one save per case with migration of old saves), deeper interrogation (press a statement, patience, three portrait expressions; Case 1 interviews reworked), career ranks (Komiser to 4. Sınıf Emniyet Müdürü) and 13 achievements
+- [ ] v1.1.0 checked on the owner's phone
+- [ ] Season story approved (docs/STORY_PROPOSAL.md) on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

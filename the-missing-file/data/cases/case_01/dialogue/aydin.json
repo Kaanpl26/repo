@@ -107,7 +107,8 @@
             ],
             "next": "caught",
             "wrong": "left_wrong"
-          }
+          },
+          "press": "press_left"
         }
       ],
       "next": "hub"
@@ -134,7 +135,8 @@
         },
         {
           "s": "aydin",
-          "t": "C1_AYDIN_CAUGHT_2"
+          "t": "C1_AYDIN_CAUGHT_2",
+          "mood": "shaken"
         }
       ],
       "choices": [
@@ -172,7 +174,8 @@
             {
               "add_testimony": "T_AYDIN_2"
             }
-          ]
+          ],
+          "mood": "shaken"
         },
         {
           "s": "aydin",
@@ -195,11 +198,13 @@
             {
               "add_testimony": "T_AYDIN_3"
             }
-          ]
+          ],
+          "mood": "shaken"
         },
         {
           "s": "aydin",
-          "t": "C1_AYDIN_HARD_2"
+          "t": "C1_AYDIN_HARD_2",
+          "mood": "defensive"
         }
       ],
       "next": "hub"
@@ -213,7 +218,8 @@
       "lines": [
         {
           "s": "aydin",
-          "t": "C1_AYDIN_HEARD_1"
+          "t": "C1_AYDIN_HEARD_1",
+          "mood": "shaken"
         },
         {
           "s": "aydin",
@@ -240,7 +246,8 @@
             {
               "add_testimony": "T_AYDIN_5"
             }
-          ]
+          ],
+          "press": "press_work"
         }
       ],
       "next": "hub"
@@ -258,6 +265,41 @@
         }
       ],
       "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_CLOSED",
+          "mood": "shaken"
+        }
+      ]
+    },
+    "press_left": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_AYDIN_P_LEFT_1"
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_P_LEFT_2",
+          "mood": "shaken"
+        }
+      ]
+    },
+    "press_work": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_AYDIN_P_WORK_1"
+        },
+        {
+          "s": "aydin",
+          "t": "C1_AYDIN_P_WORK_2"
+        }
+      ]
     }
-  }
+  },
+  "closed": "closed"
 }

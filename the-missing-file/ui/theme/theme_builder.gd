@@ -132,6 +132,9 @@ static func build() -> Theme:
 	t.set_stylebox("grabber_highlight", "VScrollBar", box(Palette.AMBER, Color(0, 0, 0, 0), 0, 14, 14, 0))
 	t.set_stylebox("grabber_pressed", "VScrollBar", box(Palette.PAPER, Color(0, 0, 0, 0), 0, 14, 14, 0))
 
+	t.set_stylebox("background", "ProgressBar", box(Palette.SLATE, Color(0, 0, 0, 0), 0, 9, 0, 0))
+	t.set_stylebox("fill", "ProgressBar", box(Palette.AMBER, Color(0, 0, 0, 0), 0, 9, 0, 0))
+
 	t.set_constant("separation", "VBoxContainer", 20)
 	t.set_constant("separation", "HBoxContainer", 20)
 	return t

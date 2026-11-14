@@ -54,6 +54,6 @@ static func rating() -> Dictionary:
 	elif score >= 55.0:
 		grade = "B"
 	return {
-		"grade": grade, "evidence": ev, "evidence_total": ev_total, "insights": ins,
+		"score": int(clampf(round(score), 0.0, 100.0)), "grade": grade, "evidence": ev, "evidence_total": ev_total, "insights": ins,
 		"insights_total": in_total, "mistakes": GameState.mistakes + GameState.bad_links, "hints": GameState.hints,
 	}

@@ -16,8 +16,29 @@ const ICON_TESTIMONY := "res://assets/ui/card_testimony.png"
 const ICON_INSIGHT := "res://assets/ui/card_insight.png"
 
 
+var index: Array = []             # all cases in order (data/cases/index.json)
+var career: Dictionary = {}       # ranks (data/career.json)
+var achievements: Array = []      # data/achievements.json
+
+
 func _ready() -> void:
-	load_case("case_01")
+	index = read_json("res://data/cases/index.json")
+	career = read_json("res://data/career.json")
+	achievements = read_json("res://data/achievements.json")
+	load_case(index[0]["id"])
+
+
+func case_entry(id: String) -> Dictionary:
+	for entry in index:
+		if entry["id"] == id:
+			return entry
+	return {}
+
+
+## A case can be opened when it exists in this build and its unlock conditions hold.
+func case_open(id: String) -> bool:
+	var entry := case_entry(id)
+	return entry.get("available", false) and GameState.check(entry.get("unlock", []))
 
 
 static func read_json(path: String) -> Variant:
@@ -31,6 +52,8 @@ static func read_json(path: String) -> Variant:
 
 
 func load_case(id: String) -> bool:
+	if id == case_id:
+		return true
 	var dir := "res://data/cases/%s/" % id
 	var m = read_json(dir + "case.json")
 	var e = read_json(dir + "evidence.json")

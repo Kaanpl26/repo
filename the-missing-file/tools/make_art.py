@@ -40,7 +40,7 @@ def text_lines(x, y, w, n, gap=14, color=INK, op=0.55, seed=1, sw=4):
 
 
 # ------------------------------------------------------------------ guard figure
-def guard(cx, base, s=1.0, portrait=False):
+def guard(cx, base, s=1.0, portrait=False, mood=None):
     """Veysel Erdem: night guard, cap, heavy moustache. cx = centre x, base = bottom y."""
     def P(x, y):
         return f"{cx + x*s:.1f},{base + y*s:.1f}"
@@ -65,7 +65,10 @@ def guard(cx, base, s=1.0, portrait=False):
     # ears
     g.append(f'<ellipse cx="{cx-64*s}" cy="{base-352*s}" rx="{9*s}" ry="{17*s}" fill="{skin}"/><ellipse cx="{cx+64*s}" cy="{base-352*s}" rx="{9*s}" ry="{17*s}" fill="{skin_sh}"/>')
     # brows, eyes, nose
-    g.append(f'<path d="M{P(-48,-374)} L{P(-14,-368)} L{P(-14,-361)} L{P(-48,-365)} Z" fill="#2a2420"/><path d="M{P(48,-374)} L{P(14,-368)} L{P(14,-361)} L{P(48,-365)} Z" fill="#1b1714"/>')
+    bo, bi = {"defensive": (-382, -363), "shaken": (-364, -377)}.get(mood, (-374, -368))
+    g.append(f'<path d="M{P(-48,bo)} L{P(-14,bi)} L{P(-14,bi+7)} L{P(-48,bo+9)} Z" fill="#2a2420"/><path d="M{P(48,bo)} L{P(14,bi)} L{P(14,bi+7)} L{P(48,bo+9)} Z" fill="#1b1714"/>')
+    if mood == "shaken":
+        g.append(SWEAT(P, s))
     g.append(f'<ellipse cx="{cx-30*s}" cy="{base-352*s}" rx="{7*s}" ry="{4*s}" fill="#15110f"/><ellipse cx="{cx+30*s}" cy="{base-352*s}" rx="{7*s}" ry="{4*s}" fill="#15110f"/>')
     g.append(f'<path d="M{P(-4,-356)} L{P(-12,-318)} L{P(8,-314)} Z" fill="{skin_sh}" opacity="0.8"/>')
     # moustache + mouth
@@ -303,7 +306,15 @@ def icons():
 
 
 # ------------------------------------------------------------------ generic suspect bust
-def bust(skin, skin_sh, jacket, jacket_l, shirt, hair_fn, extra_fn=None, brow_tilt=0, tie=None, s=2.05, cx=350, base=1010):
+def SWEAT(P, s):
+    return f'<path d="M{P(-52,-398)} q{-9*s},{16*s} 0,{22*s} q{9*s},{-6*s} 0,{-22*s}Z" fill="#bfe3ff" opacity="0.9"/>'
+
+
+def bust(skin, skin_sh, jacket, jacket_l, shirt, hair_fn, extra_fn=None, brow_tilt=0, tie=None, s=2.05, cx=350, base=1010, mood=None):
+    if mood == "defensive":
+        brow_tilt = -8
+    elif mood == "shaken":
+        brow_tilt = 9
     def P(x, y):
         return f"{cx + x*s:.1f},{base + y*s:.1f}"
     g = []
@@ -319,10 +330,17 @@ def bust(skin, skin_sh, jacket, jacket_l, shirt, hair_fn, extra_fn=None, brow_ti
     g.append(f'<ellipse cx="{cx-64*s}" cy="{base-352*s}" rx="{9*s}" ry="{17*s}" fill="{skin}"/><ellipse cx="{cx+64*s}" cy="{base-352*s}" rx="{9*s}" ry="{17*s}" fill="{skin_sh}"/>')
     t = brow_tilt
     g.append(f'<path d="M{P(-48,-372+t)} L{P(-14,-372-t)} L{P(-14,-366-t)} L{P(-48,-365+t)} Z" fill="#2a2420"/><path d="M{P(48,-372+t)} L{P(14,-372-t)} L{P(14,-366-t)} L{P(48,-365+t)} Z" fill="#1b1714"/>')
-    g.append(f'<ellipse cx="{cx-30*s}" cy="{base-352*s}" rx="{7*s}" ry="{4.5*s}" fill="#15110f"/><ellipse cx="{cx+30*s}" cy="{base-352*s}" rx="{7*s}" ry="{4.5*s}" fill="#15110f"/>')
+    ey = {"defensive": 3.2, "shaken": 6.5}.get(mood, 4.5)
+    g.append(f'<ellipse cx="{cx-30*s}" cy="{base-352*s}" rx="{7*s}" ry="{ey*s}" fill="#15110f"/><ellipse cx="{cx+30*s}" cy="{base-352*s}" rx="{7*s}" ry="{ey*s}" fill="#15110f"/>')
     g.append(f'<path d="M{P(-4,-356)} L{P(-12,-318)} L{P(8,-314)} Z" fill="{skin_sh}" opacity="0.8"/>')
-    g.append(f'<path d="M{P(-18,-294)} Q{P(0,-290)} {P(18,-294)}" fill="none" stroke="#5a3a32" stroke-width="{4*s}" stroke-linecap="round"/>')
+    if mood == "shaken":
+        g.append(f'<ellipse cx="{cx}" cy="{base-292*s}" rx="{9*s}" ry="{6*s}" fill="#3a221c"/>')
+    else:
+        my = -299 if mood == "defensive" else -290
+        g.append(f'<path d="M{P(-18,-294)} Q{P(0,my)} {P(18,-294)}" fill="none" stroke="#5a3a32" stroke-width="{4*s}" stroke-linecap="round"/>')
     g.append(hair_fn(P, s, cx, base))
+    if mood == "shaken":
+        g.append(SWEAT(P, s))
     if extra_fn:
         g.append(extra_fn(P, s, cx, base))
     g.append(f'<path d="M{P(-150,0)} L{P(-150,-170)} Q{P(-145,-235)} {P(-70,-255)}" fill="none" stroke="{AMBER}" stroke-width="{5*s}" opacity="0.7"/>')
@@ -353,27 +371,17 @@ def HAIR_L(P, s, cx, base):
 
 
 def portraits():
-    # Dr. Selin Vardar: grey hair in a bun, glasses, burgundy blazer. No earrings today.
-    def hair_v(P, s, cx, base):
-        return (f'<circle cx="{cx+10*s}" cy="{base-452*s}" r="{30*s}" fill="#8e8a86"/>'
-                f'<path d="M{P(-70,-360)} Q{P(-84,-450)} {P(0,-452)} Q{P(84,-450)} {P(70,-360)} Q{P(60,-410)} {P(0,-416)} Q{P(-60,-410)} {P(-70,-360)} Z" fill="#a9a5a0"/>'
-                f'<path d="M{P(0,-452)} Q{P(84,-450)} {P(70,-360)} Q{P(60,-410)} {P(0,-416)} Z" fill="#7d7975"/>')
-    def glasses(P, s, cx, base):
-        return (f'<circle cx="{cx-30*s}" cy="{base-352*s}" r="{19*s}" fill="none" stroke="#1b1714" stroke-width="{4*s}"/>'
-                f'<circle cx="{cx+30*s}" cy="{base-352*s}" r="{19*s}" fill="none" stroke="#1b1714" stroke-width="{4*s}"/>'
-                f'<path d="M{P(-11,-354)} L{P(11,-354)}" stroke="#1b1714" stroke-width="{4*s}"/>'
-                f'<circle cx="{cx}" cy="{base-236*s}" r="{6*s}" fill="{PAPER}"/>')
-    save("vardar", 700, 1000, bust("#c9a48c", "#8a6a5a", "#4a1f2a", "#6b2f3d", "#e6dcc8", hair_v, glasses))
-    # Demir Aras: slick black hair, charcoal suit, amber tie.
-    def hair_a(P, s, cx, base):
-        return (f'<path d="M{P(-66,-372)} Q{P(-78,-452)} {P(-6,-456)} Q{P(74,-456)} {P(66,-372)} Q{P(58,-418)} {P(10,-420)} Q{P(-40,-424)} {P(-66,-372)} Z" fill="#17151a"/>'
-                f'<path d="M{P(-50,-430)} Q{P(0,-450)} {P(50,-430)}" fill="none" stroke="#3a3840" stroke-width="{4*s}"/>')
-    save("aras", 700, 1000, bust("#c79a78", "#7c5a46", "#23262e", "#3a3f4c", "#eef0f2", hair_a, None, brow_tilt=-2, tie=AMBER))
-    # Leyla Aydin: dark bob, mustard cardigan, worried brows.
-    def hair_l(P, s, cx, base):
-        return (f'<path d="M{P(-72,-300)} Q{P(-96,-456)} {P(0,-460)} Q{P(96,-456)} {P(72,-300)} L{P(56,-300)} Q{P(64,-396)} {P(20,-412)} Q{P(-30,-420)} {P(-58,-380)} L{P(-56,-300)} Z" fill="#2c1f1a"/>'
-                f'<path d="M{P(0,-460)} Q{P(96,-456)} {P(72,-300)} L{P(56,-300)} Q{P(64,-396)} {P(20,-412)} Z" fill="#1c1310"/>')
-    save("aydin", 700, 1000, bust("#d2a98c", "#94705c", "#8a6a1e", "#b08a2e", "#f1ece0", hair_l, None, brow_tilt=4))
+    # One neutral portrait per character plus "defensive" and "shaken" variants.
+    for mood in (None, "defensive", "shaken"):
+        tag = "" if mood is None else "_" + mood
+        # Dr. Selin Vardar: grey hair in a bun, glasses, burgundy blazer. No earrings today.
+        save("vardar" + tag, 700, 1000, bust("#c9a48c", "#8a6a5a", "#4a1f2a", "#6b2f3d", "#e6dcc8", HAIR_V, GLASSES, mood=mood))
+        # Demir Aras: slick black hair, charcoal suit, amber tie.
+        save("aras" + tag, 700, 1000, bust("#c79a78", "#7c5a46", "#23262e", "#3a3f4c", "#eef0f2", HAIR_A, None, brow_tilt=-2, tie=AMBER, mood=mood))
+        # Leyla Aydin: dark bob, mustard cardigan, worried brows.
+        save("aydin" + tag, 700, 1000, bust("#d2a98c", "#94705c", "#8a6a1e", "#b08a2e", "#f1ece0", HAIR_L, None, brow_tilt=4, mood=mood))
+        if mood:
+            save("erdem" + tag, 700, 1000, guard(350, 1010, 2.05, portrait=True, mood=mood))
     # card icons for statements and conclusions
     icon("card_testimony", f'<path d="M110 150 h292 a24 24 0 0 1 24 24 v150 a24 24 0 0 1 -24 24 h-150 l-70 60 v-60 h-72 a24 24 0 0 1 -24 -24 v-150 a24 24 0 0 1 24 -24Z" fill="{PAPER}"/>' + text_lines(140, 196, 232, 5, 30, seed=31, sw=8))
     icon("card_insight", f'<circle cx="170" cy="190" r="26" fill="{RED}"/><circle cx="350" cy="330" r="26" fill="{RED}"/><path d="M170 190 Q300 170 350 330" fill="none" stroke="{RED}" stroke-width="10"/>'

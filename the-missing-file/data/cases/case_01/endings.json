@@ -98,5 +98,13 @@
     {
       "has_evidence": "E17"
     }
+  ],
+  "carry": [
+    "erdem_spared",
+    "erdem_reported",
+    "aydin_told",
+    "aydin_pressured",
+    "vardar_cornered",
+    "aras_admitted"
   ]
 }

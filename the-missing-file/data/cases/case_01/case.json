@@ -87,6 +87,11 @@
       "speaker": "aras",
       "title": "C1_T_ARAS_3_TITLE",
       "text": "C1_T_ARAS_3"
+    },
+    "T_VARDAR_5": {
+      "speaker": "vardar",
+      "title": "C1_T_VARDAR_5_TITLE",
+      "text": "C1_T_VARDAR_5"
     }
   },
   "objectives": [

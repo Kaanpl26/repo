@@ -6,6 +6,7 @@ signal return_requested
 signal menu_requested
 
 var ending_id := ""      # set before adding to the tree
+var result: Dictionary = {}   # from Profile.record_verdict, plus "achievements"
 
 
 func _ready() -> void:
@@ -62,6 +63,20 @@ func _ready() -> void:
 	stats.text = tr("ENDING_STATS") % [r["evidence"], r["evidence_total"], r["insights"], r["insights_total"], r["mistakes"], r["hints"]]
 	row.add_child(stats)
 
+	if def["solved"]:
+		box.add_child(_career_panel())
+	for id in result.get("achievements", []):
+		var a := Achievements.find(id)
+		var got := PanelContainer.new()
+		got.theme_type_variation = "BarPanel"
+		box.add_child(got)
+		var line := HBoxContainer.new()
+		got.add_child(line)
+		var tag := UI.label("ACH_UNLOCKED", "SmallLabel")
+		tag.add_theme_color_override("font_color", Palette.JADE)
+		line.add_child(tag)
+		line.add_child(UI.label(a["title"], "NameLabel"))
+
 	if not def["solved"]:
 		var note := UI.label("ENDING_RETURN_NOTE", "SmallLabel", true)
 		note.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -81,3 +96,38 @@ func _ready() -> void:
 
 	modulate.a = 0.0
 	create_tween().tween_property(self, "modulate:a", 1.0, 0.8)
+
+
+## Experience gained, current rank and progress to the next one.
+func _career_panel() -> Control:
+	var panel := PanelContainer.new()
+	panel.theme_type_variation = "BarPanel"
+	var col := VBoxContainer.new()
+	col.add_theme_constant_override("separation", 8)
+	panel.add_child(col)
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override("separation", 24)
+	col.add_child(row)
+	row.add_child(UI.label(Profile.rank()["name"], "NameLabel"))
+	var xp := UI.label("", "SmallLabel")
+	xp.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+	xp.text = tr("CAREER_XP_GAIN") % [int(result.get("xp_gain", 0)), Profile.xp()]
+	row.add_child(xp)
+	if result.get("rank_up", false):
+		var up := UI.label("CAREER_RANK_UP", "SmallLabel")
+		up.add_theme_color_override("font_color", Palette.JADE)
+		row.add_child(up)
+	var next := Profile.next_rank()
+	if not next.is_empty():
+		var bar := ProgressBar.new()
+		bar.min_value = float(Profile.rank()["xp"])
+		bar.max_value = float(next["xp"])
+		bar.value = float(Profile.xp())
+		bar.show_percentage = false
+		bar.custom_minimum_size = Vector2(0, 18)
+		col.add_child(bar)
+		var to_next := UI.label("", "SmallLabel")
+		to_next.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+		to_next.text = tr("CAREER_NEXT") % [tr(next["name"]), int(next["xp"]) - Profile.xp()]
+		col.add_child(to_next)
+	return panel

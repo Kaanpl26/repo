@@ -112,7 +112,8 @@
             {
               "add_testimony": "T_ERDEM_1"
             }
-          ]
+          ],
+          "press": "press_radio"
         }
       ],
       "choices": [
@@ -173,7 +174,8 @@
             "accept": "E05",
             "next": "confess",
             "wrong": "patrol_wrong"
-          }
+          },
+          "press": "press_patrol"
         }
       ],
       "next": "hub"
@@ -182,7 +184,8 @@
       "lines": [
         {
           "s": "erdem",
-          "t": "C1_ERDEM_PATROL_WRONG"
+          "t": "C1_ERDEM_PATROL_WRONG",
+          "mood": "defensive"
         }
       ],
       "next": "hub"
@@ -200,7 +203,8 @@
         },
         {
           "s": "erdem",
-          "t": "C1_ERDEM_CONFESS_2"
+          "t": "C1_ERDEM_CONFESS_2",
+          "mood": "shaken"
         },
         {
           "s": "erdem",
@@ -209,7 +213,8 @@
             {
               "add_testimony": "T_ERDEM_2"
             }
-          ]
+          ],
+          "mood": "shaken"
         }
       ],
       "choices": [
@@ -229,7 +234,8 @@
       "lines": [
         {
           "s": "erdem",
-          "t": "C1_ERDEM_CONFESS_FIRM_A"
+          "t": "C1_ERDEM_CONFESS_FIRM_A",
+          "mood": "shaken"
         },
         {
           "s": "erdem",
@@ -277,7 +283,8 @@
         },
         {
           "s": "erdem",
-          "t": "C1_ERDEM_VURAL_2"
+          "t": "C1_ERDEM_VURAL_2",
+          "press": "press_cameras"
         }
       ],
       "next": "hub"
@@ -334,6 +341,71 @@
         }
       ],
       "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_radio": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_RADIO_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_RADIO_2",
+          "mood": "defensive"
+        },
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_RADIO_3"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_RADIO_4"
+        }
+      ]
+    },
+    "press_patrol": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_PATROL_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_PATROL_2",
+          "mood": "defensive"
+        },
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_PATROL_3"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_PATROL_4",
+          "mood": "shaken"
+        }
+      ]
+    },
+    "press_cameras": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_CAM_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_CAM_2"
+        }
+      ]
     }
-  }
+  },
+  "closed": "closed"
 }

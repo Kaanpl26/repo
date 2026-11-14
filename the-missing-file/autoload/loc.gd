@@ -4,7 +4,7 @@ extends Node
 ## They are loaded into Godot's TranslationServer so tr("KEY") and automatic
 ## Control translation work everywhere.
 
-const TABLES := ["ui", "case_01"]
+var tables: Array = ["ui"]   # "ui" plus one table per available case
 const DIR := "res://localization/"
 
 var keys: Dictionary = {}   # every known key -> true (used by tests)
@@ -16,7 +16,11 @@ func _ready() -> void:
 		var t := Translation.new()
 		t.locale = code
 		translations[code] = t
-	for table in TABLES:
+	var index = JSON.parse_string(FileAccess.get_file_as_string("res://data/cases/index.json"))
+	for entry in index:
+		if entry.get("available", false):
+			tables.append(entry["id"])
+	for table in tables:
 		var data = JSON.parse_string(FileAccess.get_file_as_string(DIR + table + ".json"))
 		if typeof(data) != TYPE_DICTIONARY:
 			push_error("Localization table could not be read: " + table)

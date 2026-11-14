@@ -59,6 +59,7 @@ func _ready() -> void:
 	GameState.evidence_added.connect(_on_evidence_added)
 	GameState.insight_added.connect(func(_id): _show_toast("TOAST_INSIGHT"))
 	GameState.testimony_added.connect(func(_id): _show_toast("TOAST_TESTIMONY"))
+	GameState.changed.connect(_queue_achievement_check)
 	_refresh_counter()
 
 	Audio.ambience(_loc.get("ambience", ""))
@@ -247,11 +248,33 @@ func _hide_caption() -> void:
 
 
 func _show_toast(key: String) -> void:
+	if Loc.has_key(key):
+		_toast.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_INHERIT
 	_toast.text = key
 	var t := create_tween()
 	t.tween_property(_toast_panel, "modulate:a", 1.0, 0.2)
 	t.tween_interval(2.2)
 	t.tween_property(_toast_panel, "modulate:a", 0.0, 0.5)
+
+
+# ---------------------------------------------------------------- achievements
+
+var _achievement_check_pending := false
+
+
+func _queue_achievement_check() -> void:
+	if _achievement_check_pending:
+		return
+	_achievement_check_pending = true
+	_check_achievements.call_deferred()
+
+
+func _check_achievements() -> void:
+	_achievement_check_pending = false
+	for id in Achievements.evaluate():
+		Audio.sfx("insight")
+		_toast.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+		_show_toast(tr("ACH_UNLOCKED") + "  " + tr(Achievements.find(id)["title"]))
 
 
 # ---------------------------------------------------------------- overlays
@@ -307,9 +330,10 @@ func _open_accusation() -> void:
 	_overlays.add_child(acc)
 
 
-func _open_ending(ending_id: String) -> void:
+func _open_ending(ending_id: String, result: Dictionary = {}) -> void:
 	var e := ENDING.instantiate()
 	e.ending_id = ending_id
+	e.result = result
 	e.set_meta("no_back", true)
 	e.menu_requested.connect(func():
 		SaveManager.save_game()

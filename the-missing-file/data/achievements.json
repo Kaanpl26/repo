@@ -1,0 +1,142 @@
+[
+  {
+    "id": "FIRST_CASE",
+    "title": "ACH_FIRST_CASE_TITLE",
+    "desc": "ACH_FIRST_CASE_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A"
+  },
+  {
+    "id": "NO_HINTS",
+    "title": "ACH_NO_HINTS_TITLE",
+    "desc": "ACH_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "FLAWLESS",
+    "title": "ACH_FLAWLESS_TITLE",
+    "desc": "ACH_FLAWLESS_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A",
+    "max_mistakes": 0
+  },
+  {
+    "id": "TOP_GRADE",
+    "title": "ACH_TOP_GRADE_TITLE",
+    "desc": "ACH_TOP_GRADE_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A",
+    "grade": "S"
+  },
+  {
+    "id": "CONFESSION",
+    "title": "ACH_CONFESSION_TITLE",
+    "desc": "ACH_CONFESSION_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "erdem_confessed"
+      }
+    ]
+  },
+  {
+    "id": "CORNERED",
+    "title": "ACH_CORNERED_TITLE",
+    "desc": "ACH_CORNERED_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "vardar_cornered"
+      }
+    ]
+  },
+  {
+    "id": "GENTLE",
+    "title": "ACH_GENTLE_TITLE",
+    "desc": "ACH_GENTLE_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "aydin_told"
+      },
+      {
+        "not_flag": "aydin_pressured"
+      }
+    ]
+  },
+  {
+    "id": "MIRROR",
+    "title": "ACH_MIRROR_TITLE",
+    "desc": "ACH_MIRROR_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "has_evidence": "E17"
+      }
+    ]
+  },
+  {
+    "id": "PERSISTENT",
+    "title": "ACH_PERSISTENT_TITLE",
+    "desc": "ACH_PERSISTENT_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "pressed_five"
+      }
+    ]
+  },
+  {
+    "id": "MERCY",
+    "title": "ACH_MERCY_TITLE",
+    "desc": "ACH_MERCY_DESC",
+    "hidden": true,
+    "case": "case_01",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "erdem_spared"
+      }
+    ]
+  },
+  {
+    "id": "BY_THE_BOOK",
+    "title": "ACH_BY_THE_BOOK_TITLE",
+    "desc": "ACH_BY_THE_BOOK_DESC",
+    "hidden": true,
+    "case": "case_01",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "erdem_reported"
+      }
+    ]
+  },
+  {
+    "id": "OBVIOUS_MAN",
+    "title": "ACH_OBVIOUS_MAN_TITLE",
+    "desc": "ACH_OBVIOUS_MAN_DESC",
+    "hidden": true,
+    "case": "case_01",
+    "ending": "C"
+  },
+  {
+    "id": "EVERY_ENDING",
+    "title": "ACH_EVERY_ENDING_TITLE",
+    "desc": "ACH_EVERY_ENDING_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "all_endings": true
+  }
+]

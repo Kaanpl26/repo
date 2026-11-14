@@ -9,12 +9,18 @@ extends RefCounted
 ##   "nodes": {
 ##     "intro": {
 ##       "lines": [ {"s": "erdem", "t": "TEXT_KEY", "effects": [...],
+##                   "mood": "defensive" | "shaken"   (portrait expression, optional)
+##                   "press": "node"                  (the player may press this statement for more)
 ##                   "present": {"accept": "E05" (or a list of card ids), "next": "confess", "wrong": "wrong"}} ],
 ##       "choices": [ {"id": "c1", "t": "TEXT_KEY", "next": "node", "conditions": [...], "effects": [...]} ],
 ##       "next": "hub"            (used when there are no choices)
 ##     }
-##   }
+##   },
+##   "closed": "node"   (optional) what the person says when they have run out of patience
 ## }
+##
+## Pressing a statement plays the "press" node and then returns to the same
+## statement, so it can still be challenged with evidence afterwards.
 
 const LINE := "line"
 const CHOICES := "choices"
@@ -24,6 +30,7 @@ var character := ""
 var data: Dictionary = {}
 var node_id := ""
 var line_index := -1
+var _resume: Array = []      # [node id, line index] to return to after a pressed node
 
 
 func _init(character_id: String) -> void:
@@ -31,7 +38,14 @@ func _init(character_id: String) -> void:
 	data = CaseDB.dialogues[character_id]
 
 
+func has_patience() -> bool:
+	return data.has("closed")
+
+
 func start() -> String:
+	_resume = []
+	if has_patience() and GameState.patience_left(character) <= 0:
+		return _enter(data["closed"])
 	for entry in data["start"]:
 		if GameState.check(entry.get("conditions", [])):
 			return _enter(entry["node"])
@@ -78,6 +92,24 @@ func choose(choice: Dictionary) -> String:
 	return _enter(choice["next"])
 
 
+func can_press() -> bool:
+	return line().has("press")
+
+
+## Asks the person to say more about the current statement.
+func press() -> String:
+	var target: String = line()["press"]
+	_resume = [node_id, line_index]
+	GameState.mark_seen("%s.press.%s" % [character, target])
+	var pressed := 0
+	for key in GameState.seen:
+		if ".press." in key:
+			pressed += 1
+	if pressed >= 5:
+		GameState.set_flag("pressed_five")
+	return _enter(target)
+
+
 func can_present() -> bool:
 	return line().has("present")
 
@@ -91,6 +123,12 @@ func present(evidence_id: String) -> bool:
 		_enter(p["next"])
 		return true
 	GameState.add_mistake()
+	_resume = []
+	if has_patience():
+		GameState.lose_patience(character)
+		if GameState.patience_left(character) <= 0:
+			_enter(data["closed"])
+			return false
 	_enter(p["wrong"])
 	return false
 
@@ -113,4 +151,9 @@ func _after_lines() -> String:
 		return CHOICES
 	if n.has("next"):
 		return _enter(n["next"])
+	if not _resume.is_empty():
+		node_id = _resume[0]
+		line_index = _resume[1]
+		_resume = []
+		return LINE
 	return END

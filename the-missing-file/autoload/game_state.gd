@@ -18,11 +18,16 @@ var mistakes := 0               # wrong evidence presentations (affects final ra
 var hints := 0                  # hints used (affects final rating later)
 var bad_links := 0              # board connections that led nowhere
 var endings_seen: Array = []    # verdicts the player has reached
+var patience: Dictionary = {}   # character id -> patience left (missing means full)
 var active := false             # true while a game is in progress
 
 
-func new_game() -> void:
-	case_id = "case_01"
+func new_game(id: String = "") -> void:
+	if id == "":
+		id = CaseDB.index[0]["id"]
+	CaseDB.load_case(id)
+	case_id = id
+	patience = {}
 	location = CaseDB.meta.get("start_location", "lobby")
 	evidence = []
 	testimony = []
@@ -42,11 +47,14 @@ func to_dict() -> Dictionary:
 		"case_id": case_id, "location": location, "evidence": evidence,
 		"testimony": testimony, "flags": flags, "seen": seen, "mistakes": mistakes, "hints": hints,
 		"insights": insights, "bad_links": bad_links, "endings_seen": endings_seen,
+		"patience": patience,
 	}
 
 
 func from_dict(d: Dictionary) -> void:
-	case_id = str(d.get("case_id", "case_01"))
+	case_id = str(d.get("case_id", CaseDB.index[0]["id"]))
+	CaseDB.load_case(case_id)
+	patience = Dictionary(d.get("patience", {}))
 	location = str(d.get("location", "lobby"))
 	evidence = Array(d.get("evidence", []))
 	testimony = Array(d.get("testimony", []))
@@ -68,6 +76,7 @@ func add_evidence(id: String) -> void:
 	if id in evidence:
 		return
 	evidence.append(id)
+	patience = {}
 	apply(CaseDB.evidence[id].get("effects", []))
 	evidence_added.emit(id)
 	changed.emit()
@@ -77,6 +86,7 @@ func add_testimony(id: String) -> void:
 	if id in testimony:
 		return
 	testimony.append(id)
+	patience = {}
 	testimony_added.emit(id)
 	changed.emit()
 
@@ -98,7 +108,20 @@ func add_insight(id: String) -> void:
 	if id in insights:
 		return
 	insights.append(id)
+	patience = {}
 	insight_added.emit(id)
+	changed.emit()
+
+
+## How many more careless challenges this person will put up with. It refills
+## whenever the player learns something new, so nobody is ever shut out for good.
+func patience_left(character: String) -> int:
+	var full := int(CaseDB.characters[character].get("patience", 3))
+	return int(patience.get(character, full))
+
+
+func lose_patience(character: String) -> void:
+	patience[character] = maxi(0, patience_left(character) - 1)
 	changed.emit()
 
 
@@ -148,6 +171,7 @@ func add_mistake() -> void:
 ## Conditions: an array of single-key dictionaries, all of which must hold.
 ##   {"has_evidence": "E05"}  {"no_evidence": "E06"}  {"flag": "x"}  {"not_flag": "x"}
 ##   {"has_insight": "I_X"}  {"no_insight": "I_X"}  {"has_testimony": "T_X"}
+##   {"profile_flag": "case_01.erdem_spared"}  {"case_solved": "case_01"}   (carried between cases)
 func check(conditions: Array) -> bool:
 	for c in conditions:
 		if c.has("has_evidence") and not has_evidence(c["has_evidence"]):
@@ -159,6 +183,10 @@ func check(conditions: Array) -> bool:
 		if c.has("no_insight") and has_insight(c["no_insight"]):
 			return false
 		if c.has("has_testimony") and c["has_testimony"] not in testimony:
+			return false
+		if c.has("profile_flag") and not Profile.has_flag(c["profile_flag"]):
+			return false
+		if c.has("case_solved") and not Profile.is_solved(c["case_solved"]):
 			return false
 		if c.has("flag") and not has_flag(c["flag"]):
 			return false

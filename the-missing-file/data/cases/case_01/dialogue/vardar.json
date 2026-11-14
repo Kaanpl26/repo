@@ -200,7 +200,8 @@
       "lines": [
         {
           "s": "vardar",
-          "t": "C1_VARDAR_NIGHT_1"
+          "t": "C1_VARDAR_NIGHT_1",
+          "press": "press_book"
         },
         {
           "s": "vardar",
@@ -227,7 +228,8 @@
       "lines": [
         {
           "s": "vardar",
-          "t": "C1_VARDAR_WRONG"
+          "t": "C1_VARDAR_WRONG",
+          "mood": "defensive"
         }
       ],
       "next": "hub"
@@ -250,7 +252,8 @@
             {
               "add_testimony": "T_VARDAR_2"
             }
-          ]
+          ],
+          "mood": "shaken"
         },
         {
           "s": "mira",
@@ -258,7 +261,8 @@
         },
         {
           "s": "vardar",
-          "t": "C1_VARDAR_RET_4"
+          "t": "C1_VARDAR_RET_4",
+          "mood": "defensive"
         }
       ],
       "next": "hub"
@@ -300,7 +304,8 @@
         },
         {
           "s": "vardar",
-          "t": "C1_VARDAR_CORN_4"
+          "t": "C1_VARDAR_CORN_4",
+          "mood": "shaken"
         }
       ],
       "next": "hub"
@@ -338,7 +343,8 @@
             {
               "add_testimony": "T_VARDAR_3"
             }
-          ]
+          ],
+          "mood": "shaken"
         }
       ],
       "next": "hub"
@@ -378,7 +384,8 @@
             {
               "add_testimony": "T_VARDAR_4"
             }
-          ]
+          ],
+          "mood": "defensive"
         }
       ],
       "next": "hub"
@@ -395,10 +402,53 @@
         },
         {
           "s": "vardar",
-          "t": "C1_VARDAR_EAR_3"
+          "t": "C1_VARDAR_EAR_3",
+          "press": "press_earring",
+          "mood": "defensive"
         }
       ],
       "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_book": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_P_BOOK_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_P_BOOK_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_earring": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_P_EAR_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_P_EAR_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_VARDAR_5"
+            }
+          ]
+        }
+      ]
     }
-  }
+  },
+  "closed": "closed"
 }

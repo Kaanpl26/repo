@@ -15,6 +15,8 @@ func _ready() -> void:
 		get_tree().root.add_child.call_deferred(copy)
 		return
 	GameState.active = false
+	Profile.persist = false
+	Profile.reset()
 	await _run()
 	print("SMOKE OK")
 	get_tree().quit()
@@ -52,6 +54,10 @@ func _run() -> void:
 	TranslationServer.set_locale("en")
 	get_tree().change_scene_to_file(SceneRouter.MAIN_MENU)
 	await _wait(0.5)
+	var menu := get_tree().current_scene
+	menu._open_cases()
+	menu._open_achievements()
+	await _wait(0.4)
 	GameState.new_game()
 	GameState.active = false
 	GameState.set_flag("intro_seen")
@@ -86,6 +92,26 @@ func _run() -> void:
 	await _test_finger_scroll()
 	_game().add_child(HowToPlay.new())
 	await _wait(0.4)
+	# a conversation with press, a wrong challenge and the verdict screen with career data
+	_game()._open_dialogue("erdem")
+	await _wait(0.4)
+	var view: Node = _game()._overlays.get_child(0)
+	for i in 8:
+		if view._runner.can_press():
+			view._show_state(view._runner.press())
+			break
+		if view._state == DialogueRunner.CHOICES:
+			view._on_choice(view._runner.choices()[0])
+		else:
+			view._show_state(view._runner.advance())
+		await _wait(0.1)
+	await _wait(0.3)
+	await _close_overlays()
+	var result := Profile.record_verdict("case_01", "A", true, Verdict.rating(), [])
+	result["achievements"] = Achievements.evaluate("A")
+	_game()._open_ending("A", result)
+	await _wait(1.0)
+	await _close_overlays()
 	TranslationServer.set_locale("tr")
 	_game()._open_ending("B")
 	await _wait(1.0)

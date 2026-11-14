@@ -1,0 +1,24 @@
+{
+  "ranks": [
+    {
+      "id": "komiser",
+      "name": "RANK_KOMISER",
+      "xp": 0
+    },
+    {
+      "id": "baskomiser",
+      "name": "RANK_BASKOMISER",
+      "xp": 80
+    },
+    {
+      "id": "emniyet_amiri",
+      "name": "RANK_EMNIYET_AMIRI",
+      "xp": 200
+    },
+    {
+      "id": "emniyet_muduru",
+      "name": "RANK_EMNIYET_MUDURU",
+      "xp": 320
+    }
+  ]
+}

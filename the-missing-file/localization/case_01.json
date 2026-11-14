@@ -1450,5 +1450,117 @@
   "C1_HINT_ACCUSE": {
     "en": "You can now prove a motive, an opportunity and a physical link. Open the Case File, go to Suspects and make your accusation.",
     "tr": "Artık sebebi, fırsatı ve fiziksel bağı kanıtlayabilirsiniz. Dava Dosyası'nı açın, Şüpheliler'e gidin ve suçlamada bulunun."
+  },
+  "C1_ERDEM_CLOSED": {
+    "en": "I have had enough of being shown things that have nothing to do with me. Come back when you have something real, Detective.",
+    "tr": "Benimle ilgisi olmayan şeyleri önüme koymanızdan bıktım. Elinizde gerçek bir şey olduğunda gelin, Komiserim."
+  },
+  "C1_ERDEM_P_RADIO_1": {
+    "en": "What was on the radio?",
+    "tr": "Radyoda ne vardı?"
+  },
+  "C1_ERDEM_P_RADIO_2": {
+    "en": "The match. Karaliman lost again. The second half was a disgrace.",
+    "tr": "Maç. Karaliman yine kaybetti. İkinci yarı rezaletti."
+  },
+  "C1_ERDEM_P_RADIO_3": {
+    "en": "You follow the football closely.",
+    "tr": "Futbolu yakından takip ediyorsunuz."
+  },
+  "C1_ERDEM_P_RADIO_4": {
+    "en": "A man needs something to pass the night with.",
+    "tr": "İnsanın geceyi geçirecek bir şeye ihtiyacı var."
+  },
+  "C1_ERDEM_P_PATROL_1": {
+    "en": "What did you see in B2 at nine?",
+    "tr": "Dokuzda B2'de ne gördünüz?"
+  },
+  "C1_ERDEM_P_PATROL_2": {
+    "en": "Shelves. Boxes. The same as every night. Lights off, nobody there.",
+    "tr": "Raflar. Kutular. Her geceki gibi. Işıklar kapalı, kimse yok."
+  },
+  "C1_ERDEM_P_PATROL_3": {
+    "en": "Ekrem Bey was working late. Where was he?",
+    "tr": "Ekrem Bey geç saate kadar çalışıyordu. O neredeydi?"
+  },
+  "C1_ERDEM_P_PATROL_4": {
+    "en": "In… his office, I suppose. I did not look in.",
+    "tr": "Odasında… herhalde. İçeri bakmadım."
+  },
+  "C1_ERDEM_P_CAM_1": {
+    "en": "Why did he want to know about the cameras?",
+    "tr": "Kameraları neden merak ediyordu?"
+  },
+  "C1_ERDEM_P_CAM_2": {
+    "en": "When I told him they were dead he said, “Good. Then nobody will see where I put things.” I thought he meant his lunch.",
+    "tr": "Çalışmadıklarını söyleyince “İyi. O zaman bir şeyi nereye koyduğumu kimse görmez” dedi. Öğle yemeğinden bahsediyor sandım."
+  },
+  "C1_AYDIN_CLOSED": {
+    "en": "Please. I cannot think when you keep doing that. Can we stop for a while?",
+    "tr": "Lütfen. Böyle yaptıkça düşünemiyorum. Biraz ara verebilir miyiz?"
+  },
+  "C1_AYDIN_P_LEFT_1": {
+    "en": "Did anyone see you leave?",
+    "tr": "Çıktığınızı gören oldu mu?"
+  },
+  "C1_AYDIN_P_LEFT_2": {
+    "en": "Veysel Bey was at the desk. I… I think he was. I did not really look.",
+    "tr": "Veysel Bey masadaydı. Yani… sanırım oradaydı. Pek bakmadım."
+  },
+  "C1_AYDIN_P_WORK_1": {
+    "en": "How did he seem when he said it?",
+    "tr": "Bunu söylerken nasıl görünüyordu?"
+  },
+  "C1_AYDIN_P_WORK_2": {
+    "en": "Sad. Not angry. He looked like someone had already died.",
+    "tr": "Üzgün. Kızgın değil. Biri çoktan ölmüş gibi bakıyordu."
+  },
+  "C1_VARDAR_CLOSED": {
+    "en": "I have a building to reopen and a colleague to bury, Detective. When you have a question that makes sense, my door is open.",
+    "tr": "Yeniden açmam gereken bir bina ve defnetmem gereken bir meslektaşım var, Komiserim. Anlamlı bir sorunuz olduğunda kapım açık."
+  },
+  "C1_VARDAR_P_BOOK_1": {
+    "en": "Which book?",
+    "tr": "Hangi kitap?"
+  },
+  "C1_VARDAR_P_BOOK_2": {
+    "en": "…A history of the port. I could not tell you the chapter.",
+    "tr": "…Limanın tarihi üzerine bir kitap. Hangi bölümdeydim, söyleyemem."
+  },
+  "C1_VARDAR_P_EAR_1": {
+    "en": "Did you lose both, or one?",
+    "tr": "İkisini mi kaybettiniz, birini mi?"
+  },
+  "C1_VARDAR_P_EAR_2": {
+    "en": "…One. I noticed this morning.",
+    "tr": "…Birini. Bu sabah fark ettim."
+  },
+  "C1_ARAS_CLOSED": {
+    "en": "I think we are finished for now. Any further questions can go through my lawyer, Nedim Karaca.",
+    "tr": "Sanırım şimdilik bu kadar. Bundan sonraki sorularınızı avukatım Nedim Karaca'ya iletebilirsiniz."
+  },
+  "C1_ARAS_P_NINE_1": {
+    "en": "When did you arrive at the club?",
+    "tr": "Kulübe kaçta geldiniz?"
+  },
+  "C1_ARAS_P_NINE_2": {
+    "en": "A quarter to eight. My driver and the doorman will both tell you so.",
+    "tr": "Sekize çeyrek kala. Şoförüm de kapıdaki görevli de bunu doğrular."
+  },
+  "C1_ARAS_P_FILE_1": {
+    "en": "A certain file?",
+    "tr": "Belli bir dosya mı?"
+  },
+  "C1_ARAS_P_FILE_2": {
+    "en": "A slip of the tongue, Detective. And if you intend to make something of it, my lawyer, Nedim Karaca, will be glad to hear from you.",
+    "tr": "Dil sürçmesi, Komiserim. Bundan bir anlam çıkarmaya niyetliyseniz avukatım Nedim Karaca sizinle seve seve görüşür."
+  },
+  "C1_T_VARDAR_5_TITLE": {
+    "en": "Vardar: lost one earring",
+    "tr": "Vardar: bir küpesini kaybetmiş"
+  },
+  "C1_T_VARDAR_5": {
+    "en": "First said she had not worn the jade earrings in months. Pressed, she admits she lost one of them and only noticed this morning.",
+    "tr": "Önce yeşim küpeleri aylardır takmadığını söyledi. Üstüne gidilince birini kaybettiğini ve bunu ancak bu sabah fark ettiğini kabul etti."
   }
 }

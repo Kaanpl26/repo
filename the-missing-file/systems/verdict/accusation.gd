@@ -1,7 +1,7 @@
 extends Control
 ## Accusation flow: choose who is responsible, then back it up with proof.
 
-signal resolved(ending_id: String)
+signal resolved(ending_id: String, result: Dictionary)
 
 var _suspect := ""
 var _slots := {}
@@ -137,8 +137,15 @@ func _pick(slot: String) -> void:
 func _confirm() -> void:
 	var ending := Verdict.resolve(_suspect, _slots)
 	GameState.add_ending(ending)
-	if CaseDB.endings["endings"][ending]["solved"]:
+	var is_solved: bool = CaseDB.endings["endings"][ending]["solved"]
+	if is_solved:
 		GameState.set_flag("case_solved")
+	var carried: Array = []
+	for flag in CaseDB.endings.get("carry", []):
+		if GameState.has_flag(flag):
+			carried.append(flag)
+	var result := Profile.record_verdict(GameState.case_id, ending, is_solved, Verdict.rating(), carried)
+	result["achievements"] = Achievements.evaluate(ending)
 	Audio.sfx("stamp")
-	resolved.emit(ending)
+	resolved.emit(ending, result)
 	queue_free()

@@ -19,17 +19,13 @@
     "en": "Continue",
     "tr": "Devam Et"
   },
-  "MENU_NEW_GAME": {
-    "en": "New Game",
-    "tr": "Yeni Oyun"
-  },
   "MENU_SETTINGS": {
     "en": "Settings",
     "tr": "Ayarlar"
   },
   "MENU_OVERWRITE_WARNING": {
-    "en": "Starting a new game will erase your current investigation. Continue?",
-    "tr": "Yeni oyuna başlarsanız mevcut soruşturmanız silinir. Devam edilsin mi?"
+    "en": "Starting over erases your current progress in this case. Your rank, best grade and achievements are kept. Continue?",
+    "tr": "Baştan başlarsanız bu dosyadaki mevcut ilerlemeniz silinir. Rütbeniz, en iyi değerlendirmeniz ve başarılarınız korunur. Devam edilsin mi?"
   },
   "MENU_OVERWRITE_CONFIRM": {
     "en": "Start Over",
@@ -400,8 +396,8 @@
     "tr": "İnsanları sorgulayın"
   },
   "HOWTO_TALK_TEXT": {
-    "en": "Tap a person to talk. When someone says something your evidence contradicts, tap Present Evidence and show it. People who are caught lying tell you more.",
-    "tr": "Konuşmak için bir kişiye dokunun. Biri, elinizdeki delille çelişen bir şey söylerse Delil Göster'e dokunup o delili gösterin. Yalanı yakalanan kişi daha fazlasını anlatır."
+    "en": "Tap a person to talk. Press a statement to make them say more. When a statement contradicts one of your cards, tap Present Evidence and show it. Careless challenges wear out their patience; it returns when you learn something new.",
+    "tr": "Konuşmak için bir kişiye dokunun. Daha fazlasını söyletmek için bir ifadenin Üstüne Gidin. Bir ifade elinizdeki kartlardan biriyle çelişiyorsa Delil Göster'e dokunup o kartı gösterin. Özensiz itirazlar kişinin sabrını tüketir; yeni bir şey öğrendiğinizde sabrı geri gelir."
   },
   "HOWTO_BOARD_TITLE": {
     "en": "Connect the evidence",
@@ -442,5 +438,209 @@
   "ACCUSE_NO_CONCLUSIONS": {
     "en": "You have no conclusions yet. Connect evidence on the Board first.",
     "tr": "Henüz bir sonuca varmadınız. Önce Pano'da delilleri bağlayın."
+  },
+  "DLG_PRESS": {
+    "en": "Press",
+    "tr": "Üstüne Git"
+  },
+  "DLG_PATIENCE": {
+    "en": "Patience",
+    "tr": "Sabır"
+  },
+  "MENU_CASES": {
+    "en": "Cases",
+    "tr": "Dosyalar"
+  },
+  "MENU_ACHIEVEMENTS": {
+    "en": "Achievements",
+    "tr": "Başarılar"
+  },
+  "CASES_TITLE": {
+    "en": "Case Files",
+    "tr": "Dava Dosyaları"
+  },
+  "CASES_NUMBER": {
+    "en": "Case %d — %s",
+    "tr": "Dosya %d — %s"
+  },
+  "CASE_COMING_SOON": {
+    "en": "In preparation",
+    "tr": "Hazırlanıyor"
+  },
+  "CASES_NOT_IN_BUILD": {
+    "en": "Not in this version yet.",
+    "tr": "Bu sürümde henüz yok."
+  },
+  "CASES_LOCKED": {
+    "en": "Solve the previous case to open this one.",
+    "tr": "Bu dosyayı açmak için önceki dosyayı çözün."
+  },
+  "CASES_SOLVED": {
+    "en": "Solved — best grade %s",
+    "tr": "Çözüldü — en iyi değerlendirme %s"
+  },
+  "CASES_IN_PROGRESS": {
+    "en": "Investigation in progress",
+    "tr": "Soruşturma sürüyor"
+  },
+  "CASES_NEW": {
+    "en": "Not started",
+    "tr": "Başlanmadı"
+  },
+  "CASES_START": {
+    "en": "Start",
+    "tr": "Başla"
+  },
+  "CASES_RESTART": {
+    "en": "Start Over",
+    "tr": "Baştan Başla"
+  },
+  "RANK_KOMISER": {
+    "en": "Inspector (Komiser)",
+    "tr": "Komiser"
+  },
+  "RANK_BASKOMISER": {
+    "en": "Chief Inspector (Başkomiser)",
+    "tr": "Başkomiser"
+  },
+  "RANK_EMNIYET_AMIRI": {
+    "en": "Superintendent (Emniyet Amiri)",
+    "tr": "Emniyet Amiri"
+  },
+  "RANK_EMNIYET_MUDURU": {
+    "en": "Police Chief, 4th Class (4. Sınıf Emniyet Müdürü)",
+    "tr": "4. Sınıf Emniyet Müdürü"
+  },
+  "CAREER_XP_GAIN": {
+    "en": "+%d XP   ·   %d XP in total",
+    "tr": "+%d XP   ·   toplam %d XP"
+  },
+  "CAREER_RANK_UP": {
+    "en": "Promoted!",
+    "tr": "Terfi ettiniz!"
+  },
+  "CAREER_NEXT": {
+    "en": "Next rank: %s, in %d XP",
+    "tr": "Sonraki rütbe: %s, %d XP sonra"
+  },
+  "ACH_TITLE": {
+    "en": "Achievements",
+    "tr": "Başarılar"
+  },
+  "ACH_UNLOCKED": {
+    "en": "Achievement unlocked:",
+    "tr": "Başarı kazanıldı:"
+  },
+  "ACH_SECRET_TITLE": {
+    "en": "Secret",
+    "tr": "Gizli"
+  },
+  "ACH_SECRET_DESC": {
+    "en": "Keep playing to find out.",
+    "tr": "Öğrenmek için oynamaya devam edin."
+  },
+  "ACH_FIRST_CASE_TITLE": {
+    "en": "Case Closed",
+    "tr": "Dosya Kapandı"
+  },
+  "ACH_FIRST_CASE_DESC": {
+    "en": "Solve File 47-B and reach the true ending.",
+    "tr": "47-B dosyasını çözüp gerçek sona ulaşın."
+  },
+  "ACH_NO_HINTS_TITLE": {
+    "en": "Unaided",
+    "tr": "Yardımsız"
+  },
+  "ACH_NO_HINTS_DESC": {
+    "en": "Reach the true ending of File 47-B without using a single hint.",
+    "tr": "47-B dosyasının gerçek sonuna tek bir ipucu kullanmadan ulaşın."
+  },
+  "ACH_FLAWLESS_TITLE": {
+    "en": "Not a Step Wrong",
+    "tr": "Tek Yanlış Adım Yok"
+  },
+  "ACH_FLAWLESS_DESC": {
+    "en": "Reach the true ending of File 47-B without a wrong presentation, a wrong conclusion or a dead-end connection.",
+    "tr": "47-B dosyasının gerçek sonuna yanlış delil, yanlış sonuç ya da boşa çıkan bağlantı olmadan ulaşın."
+  },
+  "ACH_TOP_GRADE_TITLE": {
+    "en": "Exemplary Service",
+    "tr": "Üstün Hizmet"
+  },
+  "ACH_TOP_GRADE_DESC": {
+    "en": "Finish File 47-B with grade S.",
+    "tr": "47-B dosyasını S değerlendirmesiyle bitirin."
+  },
+  "ACH_CONFESSION_TITLE": {
+    "en": "Forty Minutes",
+    "tr": "Kırk Dakika"
+  },
+  "ACH_CONFESSION_DESC": {
+    "en": "Get the night guard to admit where he really was.",
+    "tr": "Gece bekçisine gerçekte nerede olduğunu itiraf ettirin."
+  },
+  "ACH_CORNERED_TITLE": {
+    "en": "“I Would Like a Lawyer”",
+    "tr": "“Avukatımı İstiyorum”"
+  },
+  "ACH_CORNERED_DESC": {
+    "en": "Leave Dr. Vardar with no answer for the freight elevator.",
+    "tr": "Dr. Vardar'ı yük asansörü konusunda cevapsız bırakın."
+  },
+  "ACH_GENTLE_TITLE": {
+    "en": "A Kind Word",
+    "tr": "Tatlı Dil"
+  },
+  "ACH_GENTLE_DESC": {
+    "en": "Get Leyla Aydın's full statement without threatening her.",
+    "tr": "Leyla Aydın'ın tam ifadesini onu tehdit etmeden alın."
+  },
+  "ACH_MIRROR_TITLE": {
+    "en": "Through the Looking Glass",
+    "tr": "Aynanın Ardı"
+  },
+  "ACH_MIRROR_DESC": {
+    "en": "Find file 47-B intact.",
+    "tr": "47-B dosyasını sağlam bulun."
+  },
+  "ACH_PERSISTENT_TITLE": {
+    "en": "And Then?",
+    "tr": "Peki Sonra?"
+  },
+  "ACH_PERSISTENT_DESC": {
+    "en": "Press five different statements for more detail.",
+    "tr": "Beş farklı ifadenin üstüne gidin."
+  },
+  "ACH_MERCY_TITLE": {
+    "en": "Between Us",
+    "tr": "Aramızda Kalsın"
+  },
+  "ACH_MERCY_DESC": {
+    "en": "Solve the case and keep the guard's absence out of your report.",
+    "tr": "Dosyayı çözün ve bekçinin yokluğunu rapora yazmayın."
+  },
+  "ACH_BY_THE_BOOK_TITLE": {
+    "en": "By the Book",
+    "tr": "Kitabına Göre"
+  },
+  "ACH_BY_THE_BOOK_DESC": {
+    "en": "Solve the case and put the guard's absence in your report.",
+    "tr": "Dosyayı çözün ve bekçinin yokluğunu rapora yazın."
+  },
+  "ACH_OBVIOUS_MAN_TITLE": {
+    "en": "Front-Page News",
+    "tr": "Manşetlik Haber"
+  },
+  "ACH_OBVIOUS_MAN_DESC": {
+    "en": "Arrest the deputy mayor.",
+    "tr": "Başkan yardımcısını tutuklayın."
+  },
+  "ACH_EVERY_ENDING_TITLE": {
+    "en": "Every Version of the Truth",
+    "tr": "Gerçeğin Her Hâli"
+  },
+  "ACH_EVERY_ENDING_DESC": {
+    "en": "See all five endings of File 47-B.",
+    "tr": "47-B dosyasının beş sonunu da görün."
   }
 }
