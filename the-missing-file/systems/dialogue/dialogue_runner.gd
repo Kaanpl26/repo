@@ -19,8 +19,10 @@ extends RefCounted
 ##   "closed": "node"   (optional) what the person says when they have run out of patience
 ## }
 ##
-## Pressing a statement plays the "press" node and then returns to the same
-## statement, so it can still be challenged with evidence afterwards.
+## Pressing a statement plays the "press" node and then carries on with
+## whatever followed the statement. The statement itself is not repeated.
+## If the statement could be challenged with evidence, it can still be
+## challenged on the last line of the follow-up.
 
 const LINE := "line"
 const CHOICES := "choices"
@@ -111,15 +113,27 @@ func press() -> String:
 
 
 func can_present() -> bool:
-	return line().has("present")
+	return not _present_rule().is_empty()
+
+
+## The challenge that applies right now: the current line's own, or, on the
+## last line of a pressed follow-up, the one of the statement that was pressed.
+func _present_rule() -> Dictionary:
+	if line().has("present"):
+		return line()["present"]
+	if not _resume.is_empty() and line_index == node().get("lines", []).size() - 1:
+		var pressed: Dictionary = data["nodes"][_resume[0]]["lines"][_resume[1]]
+		return pressed.get("present", {})
+	return {}
 
 
 ## Returns true when the evidence exposes the contradiction in the current line.
 func present(evidence_id: String) -> bool:
-	var p: Dictionary = line()["present"]
+	var p: Dictionary = _present_rule()
 	var accept: Variant = p["accept"]
 	var accepted: Array = accept if accept is Array else [accept]
 	if evidence_id in accepted:
+		_resume = []
 		_enter(p["next"])
 		return true
 	GameState.add_mistake()
@@ -152,8 +166,9 @@ func _after_lines() -> String:
 	if n.has("next"):
 		return _enter(n["next"])
 	if not _resume.is_empty():
+		# Back to where the pressed statement was, and straight on past it.
 		node_id = _resume[0]
 		line_index = _resume[1]
 		_resume = []
-		return LINE
+		return advance()
 	return END

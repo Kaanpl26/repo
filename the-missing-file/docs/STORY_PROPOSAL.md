@@ -1,6 +1,6 @@
 # Season Story Proposal — "The Lighthouse Ledger" / "Fener Defteri"
 
-**Status:** proposal, awaiting owner approval. No content from Cases 2 to 4 has been written.
+**Status:** approved by the owner. Decisions: the hidden antagonist is the police chief (candidate A); Nedim Karaca is the recurring lawyer; the three case premises are approved in this order; Dr. Selin Vardar dies in the finale; no names or themes to avoid.
 **Spoilers:** this document reveals the intended season ending.
 
 ---

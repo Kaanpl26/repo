@@ -540,11 +540,18 @@ func _test_interrogation() -> void:
 	var statement: String = r.line()["t"]
 	s = r.press()
 	ok(s == DialogueRunner.LINE and r.line()["t"] != statement, "pressing plays the follow-up")
-	var guard := 0
-	while r.line()["t"] != statement and guard < 20:
+	var shown: Array = []
+	var last_follow_up := false
+	while s == DialogueRunner.LINE and r.node_id == "press_patrol":
+		shown.append(r.line()["t"])
+		last_follow_up = r.can_present()
 		s = r.advance()
-		guard += 1
-	ok(r.line()["t"] == statement and r.can_present(), "after pressing, the same statement is back and can still be challenged")
+	ok(last_follow_up, "the statement can still be challenged on the last line of the follow-up")
+	ok(statement not in shown, "the pressed statement is not repeated")
+	ok(s == DialogueRunner.CHOICES and r.node_id == "hub", "after the follow-up the conversation carries on")
+	s = _pick(r, "patrol")
+	while not r.can_present() and s == DialogueRunner.LINE:
+		s = r.advance()
 
 	var full := GameState.patience_left("erdem")
 	ok(full == 3, "Erdem starts with full patience")
@@ -561,7 +568,13 @@ func _test_interrogation() -> void:
 	GameState.add_evidence("E05")
 	ok(GameState.patience_left("erdem") == full, "learning something new restores patience")
 	r2 = _talk("erdem")
-	ok(_confront(r2, "patrol", "E05"), "the case stays solvable after running out of patience")
+	s = _pick(r2, "patrol")
+	while not r2.can_press() and s == DialogueRunner.LINE:
+		s = r2.advance()
+	r2.press()
+	while r2.line_index != r2.node().get("lines", []).size() - 1:
+		r2.advance()
+	ok(r2.present("E05") and GameState.has_flag("erdem_confessed"), "challenging from the follow-up works, and the case stays solvable after running out of patience")
 	for ch in CaseDB.dialogues:
 		ok(CaseDB.dialogues[ch].has("closed"), "%s has a line for when patience runs out" % ch)
 
