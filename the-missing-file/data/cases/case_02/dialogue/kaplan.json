@@ -1,0 +1,204 @@
+{
+  "start": [
+    {
+      "node": "intro_held",
+      "conditions": [
+        {
+          "not_flag": "kaplan_met"
+        },
+        {
+          "flag": "kaplan_held"
+        }
+      ]
+    },
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "kaplan_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "kaplan_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C2_KAPLAN_INTRO_2"
+        },
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_INTRO_3"
+        }
+      ],
+      "next": "hub"
+    },
+    "intro_held": {
+      "effects": [
+        {
+          "set_flag": "kaplan_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C2_KAPLAN_HELD_1"
+        },
+        {
+          "s": "karaca",
+          "t": "C2_KAPLAN_HELD_2"
+        },
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_HELD_3",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "where",
+          "t": "C2_KAPLAN_Q_WHERE",
+          "next": "where"
+        },
+        {
+          "id": "truck",
+          "t": "C2_KAPLAN_Q_TRUCK",
+          "next": "truck",
+          "conditions": [
+            {
+              "has_evidence": "E16"
+            }
+          ]
+        },
+        {
+          "id": "seen",
+          "t": "C2_KAPLAN_Q_SEEN",
+          "next": "seen",
+          "conditions": [
+            {
+              "not_flag": "kaplan_held"
+            }
+          ]
+        },
+        {
+          "id": "seen_held",
+          "t": "C2_KAPLAN_Q_SEEN",
+          "next": "seen_held",
+          "conditions": [
+            {
+              "flag": "kaplan_held"
+            }
+          ]
+        },
+        {
+          "id": "owner",
+          "t": "C2_KAPLAN_Q_OWNER",
+          "next": "owner"
+        },
+        {
+          "id": "bye",
+          "t": "C2_KAPLAN_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "where": {
+      "lines": [
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_WHERE_1",
+          "effects": [
+            {
+              "add_testimony": "T_KAPLAN_1"
+            }
+          ],
+          "press": "press_where"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_where": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_KAPLAN_P_WHERE_1"
+        },
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_P_WHERE_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "truck": {
+      "lines": [
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_TRUCK_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "seen": {
+      "lines": [
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_SEEN_1"
+        },
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_SEEN_2",
+          "effects": [
+            {
+              "add_testimony": "T_KAPLAN_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "seen_held": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C2_KAPLAN_SEENH_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "owner": {
+      "lines": [
+        {
+          "s": "kaplan",
+          "t": "C2_KAPLAN_OWNER_1"
+        }
+      ],
+      "next": "hub"
+    }
+  }
+}

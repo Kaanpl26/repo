@@ -12,17 +12,31 @@ func _ready() -> void:
 	Profile.reset()
 	_test_scripts_load()
 	_test_localization()
-	_test_data_references()
-	_test_dialogue_graph()
-	_test_case_structure()
+	for entry in CaseDB.index:
+		if entry.get("available", false):
+			print("== data checks: ", entry["id"])
+			_open_case(entry["id"])
+			_test_data_references()
+			_test_dialogue_graph()
+			_test_case_structure()
+	print("== Case 1")
+	_open_case("case_01")
 	_test_playthrough()
 	_test_board_and_verdict()
 	_test_interrogation()
 	_test_career()
 	_test_save_roundtrip()
 	_test_save_migration()
+	print("== Case 2")
+	_test_case_02()
 	print("\n%d checks, %d failed" % [_checks, _fails])
 	get_tree().quit(1 if _fails > 0 else 0)
+
+
+func _open_case(id: String) -> void:
+	GameState.new_game(id)
+	GameState.active = false
+	ok(CaseDB.case_id == id and GameState.case_id == id, "case %s loads" % id)
 
 
 func ok(cond: bool, msg: String) -> void:
@@ -115,10 +129,11 @@ func _test_data_references() -> void:
 		_check_conditions(l.get("unlock", []), "location %s unlock" % id)
 		if l.get("ambience", "") != "":
 			ok(ResourceLoader.exists("res://assets/audio/%s.wav" % l["ambience"]), "location %s: ambience sound missing" % id)
-		if l.has("on_enter"):
-			_check_effects(l["on_enter"].get("effects", []), "location %s on_enter" % id)
-			if l["on_enter"].has("caption"):
-				_key(l["on_enter"]["caption"], "location %s on_enter" % id)
+		for enter in _enter_entries(l):
+			_check_conditions(enter.get("conditions", []), "location %s on_enter" % id)
+			_check_effects(enter.get("effects", []), "location %s on_enter" % id)
+			if enter.has("caption"):
+				_key(enter["caption"], "location %s on_enter" % id)
 		for hint in l.get("hints", []):
 			_key(hint["text"], "location %s hint" % id)
 			_check_conditions(hint.get("conditions", []), "location %s hint" % id)
@@ -140,15 +155,58 @@ func _test_data_references() -> void:
 					ok(CaseDB.locations.has(h["target"]), w + ": unknown target location")
 				_:
 					ok(false, w + ": unknown type")
+	var record_ids := {}
+	for r in CaseDB.records:
+		var w := "record " + str(r.get("id", "?"))
+		ok(not record_ids.has(r["id"]), w + ": duplicate id")
+		record_ids[r["id"]] = true
+		ok(CaseDB.evidence.has(r["evidence"]), w + ": unknown evidence")
+		ok(not placed.has(r["evidence"]), w + ": its evidence is also lying in a scene")
+		placed[r["evidence"]] = true
+		_key(r["query"], w)
+		ok(Loc.has_key("RECORD_TYPE_" + str(r["type"]).to_upper()), w + ": no label for type " + str(r["type"]))
+		_check_conditions(r.get("conditions", []), w)
+		ok(not r.get("conditions", []).is_empty(), w + ": a lookup needs a reason (conditions)")
+	for effects in _all_effect_lists():
+		for e in effects:
+			if e.has("add_evidence"):
+				placed[e["add_evidence"]] = true
 	for id in CaseDB.evidence:
 		ok(placed.has(id), "evidence %s cannot be found anywhere" % id)
+
+
+func _enter_entries(location: Dictionary) -> Array:
+	var enter: Variant = location.get("on_enter", [])
+	return enter if enter is Array else [enter]
+
+
+## Every list of effects in the open case: dialogue nodes, lines and choices,
+## location entry events, evidence pick-ups and conclusions.
+func _all_effect_lists() -> Array:
+	var lists: Array = []
+	for ch in CaseDB.dialogues:
+		for id in CaseDB.dialogues[ch]["nodes"]:
+			var n: Dictionary = CaseDB.dialogues[ch]["nodes"][id]
+			lists.append(n.get("effects", []))
+			for l in n.get("lines", []):
+				lists.append(l.get("effects", []))
+			for c in n.get("choices", []):
+				lists.append(c.get("effects", []))
+	for id in CaseDB.locations:
+		for enter in _enter_entries(CaseDB.locations[id]):
+			lists.append(enter.get("effects", []))
+	for id in CaseDB.evidence:
+		lists.append(CaseDB.evidence[id].get("effects", []))
+	for id in CaseDB.insights:
+		lists.append(CaseDB.insights[id].get("effects", []))
+	return lists
 
 
 func _check_conditions(list: Array, where: String) -> void:
 	for c in list:
 		for k in c:
-			ok(k in ["has_evidence", "no_evidence", "flag", "not_flag", "has_insight", "no_insight", "has_testimony", "profile_flag", "case_solved"], where + ": unknown condition " + k)
-			if k == "case_solved":
+			ok(k in ["has_evidence", "no_evidence", "flag", "not_flag", "has_insight", "no_insight", "has_testimony", "profile_flag", "case_solved", "case_closed"], where + ": unknown condition " + k)
+			if k in ["case_solved", "case_closed"]:
 				ok(not CaseDB.case_entry(c[k]).is_empty(), where + ": condition uses unknown case")
 			if k in ["has_insight", "no_insight"]:
 				ok(CaseDB.insights.has(c[k]), where + ": condition uses unknown insight")
@@ -244,20 +302,12 @@ func _test_case_structure() -> void:
 		_check_conditions(o["done"], "objective " + o["id"])
 		ok(not o["done"].is_empty(), "objective %s can never be completed" % o["id"])
 
-	# every statement must be recorded by some dialogue
+	# every statement must be recorded somewhere
 	var granted := {}
-	for ch in CaseDB.dialogues:
-		for id in CaseDB.dialogues[ch]["nodes"]:
-			var n: Dictionary = CaseDB.dialogues[ch]["nodes"][id]
-			var lists: Array = [n.get("effects", [])]
-			for l in n.get("lines", []):
-				lists.append(l.get("effects", []))
-			for c in n.get("choices", []):
-				lists.append(c.get("effects", []))
-			for list in lists:
-				for e in list:
-					if e.has("add_testimony"):
-						granted[e["add_testimony"]] = true
+	for list in _all_effect_lists():
+		for e in list:
+			if e.has("add_testimony"):
+				granted[e["add_testimony"]] = true
 	for id in CaseDB.meta["testimony"]:
 		ok(granted.has(id), "statement %s is never recorded" % id)
 
@@ -310,6 +360,17 @@ func _test_case_structure() -> void:
 		_key(e["endings"][id]["title"], "ending " + id)
 		_key(e["endings"][id]["text"], "ending " + id)
 
+	_key(e["question"], "accusation question")
+	_key(CaseDB.meta["timeline_title"], "timeline title")
+	for a in CaseDB.achievements:
+		if a.get("case", "") != CaseDB.case_id:
+			continue
+		_check_conditions(a.get("conditions", []), "achievement " + a["id"])
+		if a.has("ending"):
+			ok(e["endings"].has(a["ending"]), "achievement %s: unknown ending" % a["id"])
+	for flag in e.get("carry", []):
+		ok(typeof(flag) == TYPE_STRING, "carried flags are names")
+
 	var rx := RegEx.new()
 	rx.compile("^[0-2][0-9]:[0-5][0-9]$")
 	for t in CaseDB.timeline:
@@ -328,7 +389,9 @@ func _visit(location_id: String) -> void:
 	GameState.location = location_id
 	if not GameState.has_flag("visited_" + location_id):
 		GameState.set_flag("visited_" + location_id)
-		GameState.apply(CaseDB.locations[location_id].get("on_enter", {}).get("effects", []))
+		for enter in _enter_entries(CaseDB.locations[location_id]):
+			if GameState.check(enter.get("conditions", [])):
+				GameState.apply(enter.get("effects", []))
 	for h in CaseDB.locations[location_id]["hotspots"]:
 		if h["type"] == "evidence" and GameState.check(h.get("conditions", [])):
 			GameState.add_evidence(h["evidence"])
@@ -523,6 +586,194 @@ func _test_board_and_verdict() -> void:
 	GameState.active = false
 
 
+## Reads every database record that can be looked up right now.
+func _look_up_all() -> int:
+	var n := 0
+	for r in CaseDB.available_records():
+		if not GameState.has_evidence(r["evidence"]):
+			GameState.add_evidence(r["evidence"])
+			n += 1
+	return n
+
+
+## Presses the first pressable statement of a topic and returns to the topic list.
+func _press(r: DialogueRunner, topic: String) -> void:
+	var s := _pick(r, topic)
+	while not r.can_press() and s == DialogueRunner.LINE:
+		s = r.advance()
+	ok(r.can_press(), "%s.%s should have a statement to press" % [r.character, topic])
+	if r.can_press():
+		_advance_to_choices(r, r.press())
+
+
+# The whole of Case 2, its database, its decisions and what Case 1 carries into it.
+func _test_case_02() -> void:
+	Profile.reset()
+	_open_case("case_02")
+	print("- database and full playthrough")
+	ok(CaseDB.records.size() == 4, "Case 2 has four database records")
+	ok(CaseDB.available_records().is_empty(), "nothing can be looked up before there is a reason to")
+	ok(Hints.next("road").get("type") == "point", "hint points at evidence at the start")
+	ok(not CaseDB.location_unlocked("newsroom"), "other places open after reporting to the chief")
+
+	var chief := _talk("soykan")
+	_ask(chief, "what")
+	_press(chief, "why")
+	ok("T_SOYKAN_2" in GameState.testimony, "the chief's remark about the appointment is recorded")
+	_advance_to_choices(chief, _pick(chief, "who"))
+	_ask(chief, "wait")
+	ok(GameState.has_flag("kaplan_free") and not GameState.has_flag("kaplan_held"), "decision: the site manager is not brought in")
+	_advance_to_choices(chief, _pick(chief, "who"))
+	ok("hold" not in chief.choices().map(func(c): return c["id"]), "the decision is only offered once")
+	_ask(chief, "back")
+	_pick(chief, "bye")
+
+	_visit("road")
+	for id in ["E01", "E02", "E03", "E04", "E05", "E06"]:
+		ok(GameState.has_evidence(id), "road evidence %s collected" % id)
+	ok(Hints.next("road").get("text") == "HINT_DATABASE", "hint sends the player to the database")
+	ok(_look_up_all() == 3, "phone, company and person can be looked up after the road")
+	ok(not GameState.has_evidence("E21"), "the plate cannot be looked up before the camera still is found")
+	_connect_all()
+	ok(GameState.has_insight("I_NOT_ACCIDENT") and GameState.has_insight("I_CALLER"), "road conclusions reached")
+
+	_visit("newsroom")
+	for id in ["E07", "E08", "E09", "E10", "E11"]:
+		ok(GameState.has_evidence(id), "newsroom evidence %s collected" % id)
+	ok(not GameState.has_evidence("E13"), "drawer 117 stays shut until the key is understood")
+	ok(not ("T_AYDIN_TIP" in GameState.testimony), "no call from Leyla without the Case 1 decision")
+	var deniz := _talk("aktas")
+	ok(not _confront(deniz, "morning", "E08"), "Deniz: unrelated card rejected")
+	ok(_confront(deniz, "morning", "E09"), "Deniz: the sign-in sheet breaks her story")
+	_ask(deniz, "spare")
+	ok(GameState.has_evidence("E12") and "T_AKTAS_2" in GameState.testimony, "sparing Deniz gets the laptop and what she saw")
+	_ask(deniz, "story")
+	_press(deniz, "editor")
+	_pick(deniz, "bye")
+
+	_visit("site")
+	for id in ["E14", "E15", "E16", "E17", "E18"]:
+		ok(GameState.has_evidence(id), "site evidence %s collected" % id)
+	ok(_look_up_all() == 1 and GameState.has_evidence("E21"), "the plate can be looked up after the camera still")
+	var kaplan := _talk("kaplan")
+	ok(kaplan.node_id == "hub", "Kaplan talks freely when he was not brought in")
+	_press(kaplan, "where")
+	_ask(kaplan, "truck")
+	_ask(kaplan, "seen")
+	ok("T_KAPLAN_2" in GameState.testimony, "Kaplan describes the woman in the red car")
+	_ask(kaplan, "owner")
+	_pick(kaplan, "bye")
+
+	_visit("planning")
+	ok(GameState.has_evidence("E19") and GameState.has_evidence("E20"), "planning office evidence collected")
+	var guven := _talk("guven")
+	ok(Hints.next("planning").get("text") in ["HINT_BOARD", "C2_HINT_GUVEN"], "hint works in the planning office")
+	ok(_confront(guven, "knew", "E20"), "Güven: his own calendar makes him admit he was the source")
+	_press(guven, "meet")
+	_ask(guven, "told")
+	_advance_to_choices(guven, _pick(guven, "now"))
+	_ask(guven, "protect")
+	ok(GameState.has_flag("guven_protected"), "decision about Güven recorded")
+	_pick(guven, "bye")
+
+	_connect_all()
+	ok(GameState.has_insight("I_DRAWER"), "the key and the index give the drawer")
+	_visit("newsroom")
+	ok(GameState.has_evidence("E13") and GameState.has_flag("file_found"), "file 58-D found in drawer 117")
+	_connect_all()
+	for id in CaseDB.insights:
+		ok(GameState.has_insight(id), "conclusion %s can be reached" % id)
+
+	var soylu := _talk("soylu")
+	_press(soylu, "call")
+	ok(_confront(soylu, "call", "I_LURE"), "Soylu: the two calls break her story")
+	ok(_confront(soylu, "home", "I_CAR"), "Soylu: her car at the gate breaks her alibi")
+	_press(soylu, "damage")
+	ok(_confront(soylu, "damage", "I_PAINT"), "Soylu: the paint corners her")
+	ok(GameState.has_flag("soylu_cornered"), "Soylu asks for Karaca")
+	_press(soylu, "spiked")
+	_pick(soylu, "bye")
+
+	for id in CaseDB.countable_evidence():
+		ok(GameState.has_evidence(id), "evidence %s was found on the main path" % id)
+	for id in CaseDB.meta["testimony"]:
+		if id not in ["T_ERDEM_TIP", "T_AYDIN_TIP"]:
+			ok(id in GameState.testimony, "statement %s was recorded on the main path" % id)
+
+	print("- verdicts")
+	var proof := {"motive": "I_MOTIVE", "opportunity": "I_CAR", "link": "I_PAINT"}
+	ok(Verdict.resolve(Verdict.ACCIDENT, {}) == "E", "accident -> ending E")
+	ok(Verdict.resolve("kaplan", proof) == "C", "accusing the chief's suspect -> ending C")
+	ok(Verdict.resolve("guven", proof) == "D" and Verdict.resolve("aktas", proof) == "D", "scapegoat -> ending D")
+	ok(Verdict.resolve("soylu", {"motive": "I_MOTIVE", "opportunity": "I_CAR"}) == "B", "one proof missing -> ending B")
+	ok(Verdict.resolve("soylu", {"motive": "I_MOTIVE", "opportunity": "I_LURE", "link": "I_PAINT"}) == "A", "either opportunity conclusion counts")
+	ok(Verdict.resolve("soylu", proof) == "A", "full proof and the file -> ending A")
+	ok(Verdict.epilogue("A").size() == 3, "true ending has an epilogue line for each of the three decisions")
+	GameState.set_flag("case_solved")
+	for o in CaseDB.meta["objectives"]:
+		ok(GameState.check(o.get("show", [])) and GameState.check(o["done"]), "objective %s is complete at the end" % o["id"])
+	ok(Hints.next(GameState.location).is_empty(), "no hints remain when the case is solved")
+	var rating := Verdict.rating()
+	ok(rating["evidence"] == rating["evidence_total"] and rating["insights"] == rating["insights_total"], "rating counts everything found")
+	var carried: Array = []
+	for flag in CaseDB.endings["carry"]:
+		if GameState.has_flag(flag):
+			carried.append(flag)
+	Profile.record_verdict("case_02", "A", true, rating, carried)
+	var earned := Achievements.evaluate("A")
+	for id in ["C2_SOLVED", "C2_CORNERED", "C2_FENER", "C2_LOOKUP", "C2_NOT_OBVIOUS"]:
+		ok(id in earned or Profile.achievements.has(id), "achievement %s earned on the main path" % id)
+	ok(not Profile.achievements.has("FIRST_CASE"), "Case 1 achievements are not awarded in Case 2")
+	ok(Profile.has_flag("case_02.guven_protected") and Profile.has_flag("case_02.kaplan_free"), "Case 2 decisions are carried forward")
+
+	print("- alternative branches")
+	# The file is required for the true ending.
+	_open_case("case_02")
+	for id in CaseDB.insights:
+		GameState.insights.append(id)
+	ok(Verdict.resolve("soylu", proof) == "B", "without file 58-D the best verdict is ending B")
+
+	# Having the site manager brought in costs his statement, not the case.
+	_open_case("case_02")
+	chief = _talk("soykan")
+	_advance_to_choices(chief, _pick(chief, "who"))
+	_ask(chief, "hold")
+	ok(GameState.has_flag("kaplan_held"), "decision: the site manager is brought in")
+	_visit("site")
+	kaplan = DialogueRunner.new("kaplan")
+	kaplan.start()
+	ok(kaplan.node_id == "intro_held" and kaplan.line()["s"] == "karaca", "Karaca speaks for Kaplan when he was brought in")
+	_advance_to_choices(kaplan, DialogueRunner.LINE)
+	_ask(kaplan, "seen_held")
+	ok("T_KAPLAN_2" not in GameState.testimony, "the red-car statement is lost when he was brought in")
+	_look_up_all()
+	_connect_all()
+	ok(GameState.has_insight("I_CAR"), "the case stays solvable: the camera and the plate still identify the car")
+
+	# Charging Deniz: she still tells what she saw, when asked.
+	_open_case("case_02")
+	GameState.set_flag("soykan_met")
+	_visit("newsroom")
+	deniz = _talk("aktas")
+	_confront(deniz, "morning", "I_LAPTOP" if GameState.has_insight("I_LAPTOP") else "E09")
+	_ask(deniz, "charge")
+	ok(GameState.has_evidence("E12") and "T_AKTAS_2" not in GameState.testimony, "charging Deniz gets the laptop but not what she saw")
+	_ask(deniz, "desk")
+	ok("T_AKTAS_2" in GameState.testimony, "she tells it when asked directly, so the conclusion stays reachable")
+
+	# Decisions from Case 1 change who helps.
+	_open_case("case_02")
+	GameState.set_flag("soykan_met")
+	Profile.flags["case_01.erdem_spared"] = true
+	Profile.flags["case_01.aydin_told"] = true
+	_visit("site")
+	_visit("newsroom")
+	ok("T_ERDEM_TIP" in GameState.testimony, "sparing the guard in Case 1 earns his call in Case 2")
+	ok("T_AYDIN_TIP" in GameState.testimony, "kindness to Leyla in Case 1 earns her call in Case 2")
+	Profile.reset()
+	_open_case("case_01")
+
+
 # Pressing statements and running out of patience.
 func _test_interrogation() -> void:
 	print("- interrogation: press and patience")
@@ -609,9 +860,7 @@ func _test_career() -> void:
 		ids[a["id"]] = true
 		_key(a["title"], "achievement " + a["id"])
 		_key(a["desc"], "achievement " + a["id"])
-		_check_conditions(a.get("conditions", []), "achievement " + a["id"])
-		if a.has("ending"):
-			ok(CaseDB.endings["endings"].has(a["ending"]), "achievement %s: unknown ending" % a["id"])
+		ok(not CaseDB.case_entry(a.get("case", "")).is_empty(), "achievement %s: unknown case" % a["id"])
 	for key in ["ACH_SECRET_TITLE", "ACH_SECRET_DESC", "CASES_NUMBER"]:
 		ok(Loc.has_key(key), "missing text " + key)
 
@@ -623,13 +872,13 @@ func _test_career() -> void:
 			ok(FileAccess.file_exists("res://data/cases/%s/case.json" % entry["id"]), "case data missing for " + entry["id"])
 			ok(entry["id"] in Loc.tables, "text table not loaded for " + entry["id"])
 	ok(CaseDB.case_open("case_01"), "the first case is open from the start")
-	ok(not CaseDB.case_open("case_02"), "a case that is not in this build cannot be opened")
-	for flag in CaseDB.endings.get("carry", []):
-		ok(typeof(flag) == TYPE_STRING, "carried flags are names")
+	ok(not CaseDB.case_open("case_02"), "Case 2 stays closed until Case 1 has a verdict")
+	ok(not CaseDB.case_open("case_03"), "a case that is not in this build cannot be opened")
 
 	# A wrong verdict earns nothing but is remembered.
 	var res := Profile.record_verdict("case_01", "C", false, Verdict.rating(), [])
 	ok(res["xp_gain"] == 0 and not Profile.is_solved("case_01"), "a wrong verdict gives no experience")
+	ok(CaseDB.case_open("case_02"), "any verdict in Case 1, even a wrong one, opens Case 2")
 	ok("OBVIOUS_MAN" in Achievements.evaluate("C"), "hidden achievement for arresting the deputy mayor")
 	ok(Achievements.evaluate("C").is_empty(), "an achievement is only awarded once")
 

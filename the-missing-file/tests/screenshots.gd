@@ -5,6 +5,7 @@ extends Control
 
 var _out := "user://shots"
 var _mode := "ui"
+var _case := "case_01"
 var _current: Node
 
 
@@ -12,12 +13,18 @@ func _ready() -> void:
 	for a in OS.get_cmdline_user_args():
 		if a in ["scenes", "ui"]:
 			_mode = a
+		elif a.begins_with("case_"):
+			_case = a
 		elif not a.begins_with("--"):
 			_out = a
 	DirAccess.make_dir_recursive_absolute(_out)
 	GameState.active = false
 	Profile.persist = false
 	Profile.reset()
+	if _case != "case_01":
+		await _other_case()
+		get_tree().quit()
+		return
 	_fill_state()
 	if _mode == "scenes":
 		await _scenes()
@@ -139,3 +146,56 @@ func _ui() -> void:
 	game = await _game("lobby")
 	game._open_ending("A")
 	await _snap("13_ending_a_tr", 1.4)
+
+
+## Late-game state for any other case: everything found, everyone met.
+func _other_case() -> void:
+	GameState.new_game(_case)
+	GameState.active = false
+	GameState.set_flag("intro_seen")
+	for id in CaseDB.locations:
+		GameState.set_flag("visited_" + id)
+	for ch in CaseDB.characters:
+		GameState.set_flag(ch + "_met")
+	for id in CaseDB.countable_evidence():
+		GameState.add_evidence(id)
+	for id in CaseDB.meta["testimony"]:
+		GameState.add_testimony(id)
+	var n := 0
+	for id in CaseDB.insights:
+		if n % 2 == 0:
+			GameState.add_insight(id)
+		n += 1
+	TranslationServer.set_locale("en")
+	if _mode == "scenes":
+		await _scenes()
+		return
+	TranslationServer.set_locale("tr")
+	var game := await _game(CaseDB.meta["start_location"])
+	await _snap("c_01_start_tr")
+	game._open_map()
+	await _snap("c_02_map_tr")
+	game = await _game(CaseDB.meta["start_location"])
+	game._open_case_file()
+	var cf: Node = game._overlays.get_child(0)
+	cf._show_tab(4)
+	await _snap("c_03_records_tr")
+	cf._show_tab(2)
+	await _snap("c_04_suspects_tr")
+	cf._show_tab(3)
+	await _snap("c_05_timeline_tr")
+	cf._show_tab(0)
+	await _snap("c_06_objectives_tr")
+	game = await _game(CaseDB.meta["start_location"])
+	game._open_evidence("E21")
+	await _snap("c_07_record_card_tr")
+	game = await _game(CaseDB.meta["start_location"])
+	game._open_dialogue("soykan")
+	await _snap("c_08_chief_tr", 2.0)
+	TranslationServer.set_locale("en")
+	game = await _game(CaseDB.meta["start_location"])
+	game._open_accusation()
+	await _snap("c_09_accuse_en")
+	await _show("res://ui/menus/main_menu.tscn")
+	_current._open_cases()
+	await _snap("c_10_cases_en")

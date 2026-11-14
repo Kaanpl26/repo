@@ -464,8 +464,8 @@
     "tr": "Bu sürümde henüz yok."
   },
   "CASES_LOCKED": {
-    "en": "Solve the previous case to open this one.",
-    "tr": "Bu dosyayı açmak için önceki dosyayı çözün."
+    "en": "Reach a verdict in the previous case to open this one.",
+    "tr": "Bu dosyayı açmak için önceki dosyada bir karara varın."
   },
   "CASES_SOLVED": {
     "en": "Solved — best grade %s",
@@ -694,5 +694,53 @@
   "HOWTO_DATABASE_TEXT": {
     "en": "Some cases give you the police database: number plates, phone numbers, companies, criminal records. Open it from the Case File. A lookup appears once you have found a reason to ask.",
     "tr": "Bazı dosyalarda polis veri tabanı elinizin altındadır: plakalar, telefon numaraları, şirketler, adli siciller. Dava Dosyası'ndan açılır. Sormak için bir sebep bulduğunuzda sorgu belirir."
+  },
+  "ACH_C2_SOLVED_TITLE": {
+    "en": "Front Page",
+    "tr": "Birinci Sayfa"
+  },
+  "ACH_C2_SOLVED_DESC": {
+    "en": "Solve File 58-D and reach the true ending.",
+    "tr": "58-D dosyasını çözüp gerçek sona ulaşın."
+  },
+  "ACH_C2_NO_HINTS_TITLE": {
+    "en": "Own Sources",
+    "tr": "Kendi Kaynakları"
+  },
+  "ACH_C2_NO_HINTS_DESC": {
+    "en": "Reach the true ending of File 58-D without using a single hint.",
+    "tr": "58-D dosyasının gerçek sonuna tek bir ipucu kullanmadan ulaşın."
+  },
+  "ACH_C2_CORNERED_TITLE": {
+    "en": "Off the Record",
+    "tr": "Kayıt Dışı"
+  },
+  "ACH_C2_CORNERED_DESC": {
+    "en": "Leave Nilgün Soylu with no answer for the paint.",
+    "tr": "Nilgün Soylu'yu boya konusunda cevapsız bırakın."
+  },
+  "ACH_C2_FENER_TITLE": {
+    "en": "Follow the Money",
+    "tr": "Paranın İzini Sür"
+  },
+  "ACH_C2_FENER_DESC": {
+    "en": "Connect the firm that paid in 2004 with the firm that owns part of the tower.",
+    "tr": "2004'te ödeme yapan şirketle kulenin ortağı olan şirketi birbirine bağlayın."
+  },
+  "ACH_C2_LOOKUP_TITLE": {
+    "en": "On File",
+    "tr": "Kayıtlarda Var"
+  },
+  "ACH_C2_LOOKUP_DESC": {
+    "en": "Read every record in the police database for File 58-D.",
+    "tr": "58-D dosyası için polis veri tabanındaki bütün kayıtları okuyun."
+  },
+  "ACH_C2_NOT_OBVIOUS_TITLE": {
+    "en": "Your Case, Komiser",
+    "tr": "Dosya Sizin, Komiser"
+  },
+  "ACH_C2_NOT_OBVIOUS_DESC": {
+    "en": "Solve File 58-D without having the chief's suspect brought in.",
+    "tr": "Müdürün şüphelisini getirtmeden 58-D dosyasını çözün."
   }
 }

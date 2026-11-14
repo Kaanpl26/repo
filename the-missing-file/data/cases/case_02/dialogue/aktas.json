@@ -1,0 +1,272 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "aktas_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "aktas_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C2_AKTAS_INTRO_2"
+        },
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_INTRO_3"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "morning",
+          "t": "C2_AKTAS_Q_MORNING",
+          "next": "morning",
+          "conditions": [
+            {
+              "not_flag": "aktas_caught"
+            }
+          ]
+        },
+        {
+          "id": "desk",
+          "t": "C2_AKTAS_Q_DESK",
+          "next": "desk",
+          "conditions": [
+            {
+              "flag": "aktas_charged"
+            },
+            {
+              "not_flag": "aktas_told"
+            }
+          ]
+        },
+        {
+          "id": "story",
+          "t": "C2_AKTAS_Q_STORY",
+          "next": "story"
+        },
+        {
+          "id": "editor",
+          "t": "C2_AKTAS_Q_EDITOR",
+          "next": "editor"
+        },
+        {
+          "id": "bye",
+          "t": "C2_AKTAS_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "morning": {
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_MORNING_1",
+          "effects": [
+            {
+              "add_testimony": "T_AKTAS_1"
+            }
+          ],
+          "present": {
+            "accept": [
+              "E09",
+              "I_LAPTOP"
+            ],
+            "next": "caught",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "caught": {
+      "effects": [
+        {
+          "set_flag": "aktas_caught"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_AKTAS_CAUGHT_1"
+        },
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_CAUGHT_2",
+          "mood": "shaken"
+        },
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_CAUGHT_3",
+          "effects": [
+            {
+              "add_testimony": "T_AKTAS_3"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "spare",
+          "t": "C2_AKTAS_SPARE",
+          "next": "spare",
+          "effects": [
+            {
+              "set_flag": "aktas_spared"
+            }
+          ]
+        },
+        {
+          "id": "charge",
+          "t": "C2_AKTAS_CHARGE",
+          "next": "charge",
+          "effects": [
+            {
+              "set_flag": "aktas_charged"
+            }
+          ]
+        }
+      ]
+    },
+    "spare": {
+      "effects": [
+        {
+          "add_evidence": "E12"
+        },
+        {
+          "set_flag": "aktas_told"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_SPARE_1"
+        },
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_SPARE_2",
+          "effects": [
+            {
+              "add_testimony": "T_AKTAS_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "charge": {
+      "effects": [
+        {
+          "add_evidence": "E12"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_CHARGE_1",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "desk": {
+      "effects": [
+        {
+          "set_flag": "aktas_told"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_DESK_1",
+          "effects": [
+            {
+              "add_testimony": "T_AKTAS_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "story": {
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_STORY_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "editor": {
+      "lines": [
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_EDITOR_1",
+          "press": "press_editor"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_editor": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_AKTAS_P_EDITOR_1"
+        },
+        {
+          "s": "aktas",
+          "t": "C2_AKTAS_P_EDITOR_2"
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

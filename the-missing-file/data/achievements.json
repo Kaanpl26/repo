@@ -138,5 +138,80 @@
     "hidden": false,
     "case": "case_01",
     "all_endings": true
+  },
+  {
+    "id": "C2_SOLVED",
+    "title": "ACH_C2_SOLVED_TITLE",
+    "desc": "ACH_C2_SOLVED_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "ending": "A"
+  },
+  {
+    "id": "C2_NO_HINTS",
+    "title": "ACH_C2_NO_HINTS_TITLE",
+    "desc": "ACH_C2_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "C2_CORNERED",
+    "title": "ACH_C2_CORNERED_TITLE",
+    "desc": "ACH_C2_CORNERED_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "conditions": [
+      {
+        "flag": "soylu_cornered"
+      }
+    ]
+  },
+  {
+    "id": "C2_FENER",
+    "title": "ACH_C2_FENER_TITLE",
+    "desc": "ACH_C2_FENER_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "conditions": [
+      {
+        "has_insight": "I_FENER"
+      }
+    ]
+  },
+  {
+    "id": "C2_LOOKUP",
+    "title": "ACH_C2_LOOKUP_TITLE",
+    "desc": "ACH_C2_LOOKUP_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "conditions": [
+      {
+        "has_evidence": "E21"
+      },
+      {
+        "has_evidence": "E22"
+      },
+      {
+        "has_evidence": "E23"
+      },
+      {
+        "has_evidence": "E24"
+      }
+    ]
+  },
+  {
+    "id": "C2_NOT_OBVIOUS",
+    "title": "ACH_C2_NOT_OBVIOUS_TITLE",
+    "desc": "ACH_C2_NOT_OBVIOUS_DESC",
+    "hidden": true,
+    "case": "case_02",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "kaplan_free"
+      }
+    ]
   }
 ]

@@ -9,11 +9,11 @@
   {
     "id": "case_02",
     "number": 2,
-    "title": "CASE_COMING_SOON",
-    "available": false,
+    "title": "C2_TITLE",
+    "available": true,
     "unlock": [
       {
-        "case_solved": "case_01"
+        "case_closed": "case_01"
       }
     ]
   },
@@ -24,7 +24,7 @@
     "available": false,
     "unlock": [
       {
-        "case_solved": "case_02"
+        "case_closed": "case_02"
       }
     ]
   },
@@ -35,7 +35,7 @@
     "available": false,
     "unlock": [
       {
-        "case_solved": "case_03"
+        "case_closed": "case_03"
       }
     ]
   }

@@ -1,0 +1,151 @@
+[
+  {
+    "time": "18:40",
+    "text": "C2_TL_CALL_T",
+    "conditions": [
+      {
+        "has_evidence": "E03"
+      }
+    ]
+  },
+  {
+    "time": "20:02",
+    "text": "C2_TL_CALL_DA",
+    "conditions": [
+      {
+        "has_evidence": "E03"
+      }
+    ]
+  },
+  {
+    "time": "20:31",
+    "text": "C2_TL_DRAFT",
+    "conditions": [
+      {
+        "has_evidence": "E12"
+      }
+    ]
+  },
+  {
+    "time": "21:05",
+    "text": "C2_TL_EXT_GUVEN",
+    "conditions": [
+      {
+        "has_evidence": "E07"
+      }
+    ]
+  },
+  {
+    "time": "21:15",
+    "text": "C2_TL_EXT_KEREM",
+    "conditions": [
+      {
+        "has_evidence": "E07"
+      }
+    ]
+  },
+  {
+    "time": "21:20",
+    "text": "C2_TL_KEREM_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E09"
+      }
+    ]
+  },
+  {
+    "time": "21:40",
+    "text": "C2_TL_SOYLU_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E09"
+      }
+    ]
+  },
+  {
+    "time": "21:45",
+    "text": "C2_TL_SOYLU_HOME",
+    "conditions": [
+      {
+        "has_testimony": "T_SOYLU_4"
+      }
+    ],
+    "disputed": [
+      {
+        "has_insight": "I_CAR"
+      }
+    ]
+  },
+  {
+    "time": "22:02",
+    "text": "C2_TL_GATE_IN",
+    "conditions": [
+      {
+        "has_evidence": "E14"
+      }
+    ]
+  },
+  {
+    "time": "22:10",
+    "text": "C2_TL_RED_CAR",
+    "conditions": [
+      {
+        "has_evidence": "E15"
+      }
+    ]
+  },
+  {
+    "time": "22:20",
+    "text": "C2_TL_LOAD2",
+    "conditions": [
+      {
+        "has_evidence": "E18"
+      }
+    ]
+  },
+  {
+    "time": "22:28",
+    "text": "C2_TL_GATE_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E14"
+      }
+    ]
+  },
+  {
+    "time": "22:29",
+    "text": "C2_TL_RED_FOLLOWS",
+    "conditions": [
+      {
+        "has_evidence": "E15"
+      }
+    ]
+  },
+  {
+    "time": "22:41",
+    "text": "C2_TL_IMPACT",
+    "conditions": [
+      {
+        "has_evidence": "E06"
+      }
+    ]
+  },
+  {
+    "time": "07:00",
+    "text": "C2_TL_AKTAS_IN",
+    "conditions": [
+      {
+        "has_evidence": "E09"
+      }
+    ]
+  },
+  {
+    "time": "08:40",
+    "text": "C2_TL_CLAIM",
+    "conditions": [
+      {
+        "has_evidence": "E21"
+      }
+    ]
+  }
+]

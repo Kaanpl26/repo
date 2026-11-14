@@ -70,7 +70,8 @@ On a computer with a screen, leave out `xvfb-run -a`. It prints `SMOKE OK` when 
 ## 6. Regenerating the art and sound
 
 ```
-python3 tools/make_art.py      # writes SVG sources to art_src/
+python3 tools/make_art.py      # Case 1 and shared art: writes SVG sources to art_src/
+(cd tools && python3 make_art_case02.py)   # Case 2 art
 node tools/render_art.js       # renders them to assets/ as PNG (needs Playwright)
 python3 tools/make_audio.py    # writes all sounds and music to assets/audio/ (needs numpy)
 ```

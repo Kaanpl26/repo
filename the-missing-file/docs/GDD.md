@@ -347,8 +347,10 @@ Each milestone ends with something the owner can look at and approve.
 - [x] v1.0.2: lists scroll by dragging anywhere (buttons and panels no longer swallow the touch), thicker scroll bars, accusation offers Board conclusions only, How to Play screen (first game, main menu, pause menu)
 - [x] Expansion plan approved (docs/EXPANSION_PLAN.md)
 - [x] v1.1.0: multi-case foundation (case list, player profile, one save per case with migration of old saves), deeper interrogation (press a statement, patience, three portrait expressions; Case 1 interviews reworked), career ranks (Komiser to 4. Sınıf Emniyet Müdürü) and 13 achievements
-- [ ] v1.1.0 checked on the owner's phone
-- [ ] Season story approved (docs/STORY_PROPOSAL.md) on the owner's phone
+- [x] v1.1.0 checked on the owner's phone; feedback: after Press the suspect repeated the statement (fixed in v1.1.1)
+- [x] Season story approved (docs/STORY_PROPOSAL.md): police chief as hidden antagonist, Karaca as recurring lawyer, Vardar dies in the finale
+- [x] v1.2.0: police database, and Case 2 "Dosya 58-D" (4 locations, 24 evidence items including 4 database records, 5 interviews, 12 conclusions, 5 verdicts, 3 decisions, 2 call-backs from Case 1 decisions)
+- [ ] v1.2.0 checked on the owner's phone on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

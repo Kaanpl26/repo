@@ -112,6 +112,7 @@ func _run() -> void:
 	_game()._open_ending("A", result)
 	await _wait(1.0)
 	await _close_overlays()
+	await _case_two()
 	TranslationServer.set_locale("tr")
 	_game()._open_ending("B")
 	await _wait(1.0)
@@ -159,3 +160,37 @@ func _test_finger_scroll() -> void:
 	assert(board._selected.size() == 1, "a plain tap still selects a card")
 	print("tap still selects: ", board._selected.size())
 	await _close_overlays()
+
+
+## Walks through every location of Case 2, taps everything, opens the database.
+func _case_two() -> void:
+	GameState.new_game("case_02")
+	GameState.active = false
+	GameState.set_flag("intro_seen")
+	GameState.set_flag("soykan_met")
+	SceneRouter.goto(SceneRouter.GAME)
+	await _wait(1.3)
+	assert(GameState.case_id == "case_02" and GameState.location == "road")
+	for target in ["newsroom", "site", "planning", "road"]:
+		_game()._travel(target)
+		await _wait(1.2)
+		assert(GameState.location == target)
+		for h in _game()._loc["hotspots"]:
+			if GameState.check(h.get("conditions", [])) and h["type"] != "exit":
+				_tap_hotspot(h["id"])
+				await _wait(0.15)
+				await _close_overlays()
+		_game()._on_hint()
+	for id in ["E03", "E05", "E15"]:
+		GameState.add_evidence(id)
+	_game()._open_case_file()
+	await _wait(0.3)
+	var cf: Node = _game()._overlays.get_child(0)
+	assert(cf._tabs.size() == 5, "Case 2 has a Database tab")
+	cf._show_tab(4)
+	await _wait(0.3)
+	await _close_overlays()
+	_game()._open_evidence("E21")
+	await _wait(0.4)
+	await _close_overlays()
+	print("case 2 walk OK")
