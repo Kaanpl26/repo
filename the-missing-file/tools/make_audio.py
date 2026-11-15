@@ -79,6 +79,29 @@ for i in range(2):
     k = int(SR * 0.12); place(step, lowpass(rng.normal(size=k), 0.12) * env(k, 0.002, 0.03), i * 0.3)
 save("step", step, 0.6)
 
+# ---- speech: short voice-like syllables. The game plays them in a random
+# order while a line of dialogue appears, at a different pitch for each
+# character, so that people sound as if they are talking without saying words.
+VOWELS = [(700, 1200), (500, 1800), (300, 2300), (450, 850), (320, 800), (400, 1500), (300, 1700), (350, 1300)]
+for i, (f1, f2) in enumerate(VOWELS):
+    dur = 0.085 + 0.012 * (i % 3)
+    x = t(dur)
+    f0 = 150.0 * (1.0 + 0.07 * np.sin(2 * np.pi * (i * 0.37)))            # each syllable sits a little higher or lower
+    glide = 1.0 + (0.06 if i % 2 == 0 else -0.06) * x / dur               # and rises or falls slightly
+    phase = 2 * np.pi * np.cumsum(f0 * glide) / SR
+    y = np.zeros_like(x)
+    for k in range(1, 26):
+        fk = f0 * k
+        weight = np.exp(-((fk - f1) / 190.0) ** 2) + 0.7 * np.exp(-((fk - f2) / 260.0) ** 2) + 0.05 / k
+        y += weight * np.sin(k * phase)
+    n = len(x)
+    shape = np.minimum(x / 0.012, 1.0) * np.minimum((dur - x) / 0.03, 1.0)   # soft start, soft stop
+    y *= shape
+    if i % 3 == 0:                                                        # a breath of consonant on some
+        k = int(SR * 0.018)
+        y[:k] += highpass(rng.normal(size=k), 0.5) * np.linspace(0.5, 0.0, k) * 0.6
+    save("voice_%d" % i, y, 0.5)
+
 # ---- rain loop (lobby, offices)
 sec = 9.0; n = int(SR * sec)
 hiss = highpass(lowpass(rng.normal(size=n), 0.5), 0.05)

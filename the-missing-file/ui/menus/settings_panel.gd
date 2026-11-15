@@ -5,6 +5,7 @@ signal closed
 
 var _lang_buttons := {}
 var _size_buttons: Array = []
+var _voice_buttons: Array = []   # [on, off]
 
 
 func _ready() -> void:
@@ -68,6 +69,23 @@ func _ready() -> void:
 				Audio.sfx("click"))
 		row.add_child(slider)
 
+	var speech := HBoxContainer.new()
+	box.add_child(speech)
+	var speech_label := UI.label("SETTINGS_VOICES", "SmallLabel")
+	speech_label.custom_minimum_size = Vector2(260, 0)
+	speech.add_child(speech_label)
+	for on in [true, false]:
+		var b := UI.button("SETTINGS_ON" if on else "SETTINGS_OFF")
+		b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		b.custom_minimum_size = Vector2(0, 80)
+		b.pressed.connect(func():
+			Settings.set_voices(on)
+			if on:
+				Audio.voice(1.0)
+			_refresh())
+		speech.add_child(b)
+		_voice_buttons.append(b)
+
 	var close := UI.button("COMMON_CLOSE", "AccentButton")
 	close.size_flags_horizontal = Control.SIZE_SHRINK_END
 	close.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)
@@ -89,6 +107,8 @@ func _set_text_size(i: int) -> void:
 func _refresh() -> void:
 	for code in _lang_buttons:
 		_lang_buttons[code].theme_type_variation = "AccentButton" if code == Settings.locale else ""
+	for i in _voice_buttons.size():
+		_voice_buttons[i].theme_type_variation = "AccentButton" if (i == 0) == Settings.voices else ""
 	for i in _size_buttons.size():
 		_size_buttons[i].theme_type_variation = "AccentButton" if i == Settings.text_size else ""
 

@@ -139,7 +139,7 @@ func _ui() -> void:
 		v2._show_state(v2._runner.advance())
 	v2._on_choice(v2._runner.choices()[0])
 	v2._show_state(v2._runner.advance())
-	v2._text.visible_ratio = 1.0
+	v2._finish_typing()
 	await _snap("07b_present_glow_en", 1.2)
 	v2._open_picker()
 	await _snap("07c_present_picker_en")

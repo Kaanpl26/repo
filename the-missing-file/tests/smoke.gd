@@ -108,9 +108,25 @@ func _run() -> void:
 	_game().add_child(HowToPlay.new())
 	await _wait(0.4)
 	# a conversation with press, a wrong challenge and the verdict screen with career data
+	var spoken_before: int = Audio.syllables_spoken
 	_game()._open_dialogue("erdem")
-	await _wait(0.4)
+	await _wait(0.12)
 	var view: Node = _game()._overlays.get_child(0)
+	_check(view._typing, "a line is typed out letter by letter")
+	await _wait(2.5)
+	var first_line: String = tr(view._runner.line()["t"])
+	var spoken: int = Audio.syllables_spoken - spoken_before
+	_check(not view._typing and view._text.visible_characters == -1, "the line finishes typing by itself")
+	_check(spoken >= first_line.length() / 8 and spoken <= first_line.length() / 4, "the speaker makes speech sounds while the line appears (%d syllables for %d characters)" % [spoken, first_line.length()])
+	Settings.voices = false
+	spoken_before = Audio.syllables_spoken
+	view._show_state(view._runner.advance())
+	await _wait(0.5)
+	view._finish_typing()
+	_check(Audio.syllables_spoken == spoken_before, "speech sounds can be switched off")
+	_check(view._text.visible_characters == -1, "a tap shows the whole line at once")
+	Settings.voices = true
+	print("speech OK: %d syllables" % spoken)
 	for i in 8:
 		if view._runner.can_press():
 			view._show_state(view._runner.press())

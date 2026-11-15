@@ -356,7 +356,9 @@ Each milestone ends with something the owner can look at and approve.
 - [x] v1.3.0: the detective's office (hub between cases, reached from the menu, the pause menu and after every verdict), the Ledger wall (8 cards carried out of the cases, 6 cross-case conclusions), four mementos, season timeline and objectives; what was found in a case is now carried forward after any verdict
 - [x] v1.3.0 checked on the owner's phone: Ledger wall filled from earlier verdicts, office navigation clear
 - [x] v1.4.0: evidence wall. The Board (and the Ledger) can be shown as a wall of pinned notes with red thread from each conclusion to its two cards: drag to pan, pinch or + and − to zoom, drag a note to move it (remembered per case), Tidy to reset, Hint frames the pair. The list view remains one tap away and the choice is remembered
-- [ ] v1.4.0 checked on the owner's phone on the owner's phone
+- [x] v1.4.0 checked on the owner's phone: the wall works fine
+- [x] v1.4.1: wordless speech (a short voice-like syllable every few letters while a line appears, at a different pitch for each character; can be switched off in Settings); room pictures stored as lossy WebP; screenshots in build/ are no longer packed into the APK (they had been adding about 19 MB)
+- [ ] v1.4.1 checked on the owner's phone on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

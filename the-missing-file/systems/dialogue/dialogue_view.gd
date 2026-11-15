@@ -18,6 +18,10 @@ var _pulse: Tween
 var _pips: HBoxContainer
 var _portraits := {}
 var _tween: Tween
+var _typing := false
+var _typed_text := ""
+var _voice_pitch := 1.0
+var _letters := 0
 var _state := ""
 
 
@@ -144,11 +148,44 @@ func _show_line() -> void:
 	_text.text = l["t"]
 	_hint.visible = true
 	_present.visible = _runner.can_present() and not GameState.all_cards().is_empty()
-	_text.visible_ratio = 0.0
+	_start_typing(tr(l["t"]), float(CaseDB.characters[speaker].get("voice", 1.0)))
+
+
+## Reveals the line letter by letter. Every few letters the speaker makes a
+## short wordless sound at their own pitch, so each person has a voice.
+const LETTERS_PER_SYLLABLE := 5
+const LETTERS_PER_SECOND := 62.0
+
+
+func _start_typing(shown: String, pitch: float) -> void:
 	if _tween:
 		_tween.kill()
+	_typed_text = shown
+	_voice_pitch = pitch
+	_letters = 0
+	_typing = true
+	_text.visible_characters = 0
 	_tween = create_tween()
-	_tween.tween_property(_text, "visible_ratio", 1.0, maxf(0.2, tr(l["t"]).length() / 70.0))
+	_tween.tween_method(_type_to, 0.0, float(shown.length()), maxf(0.2, shown.length() / LETTERS_PER_SECOND))
+	_tween.tween_callback(_finish_typing)
+
+
+func _type_to(position: float) -> void:
+	var count := int(position)
+	for i in range(_text.visible_characters, mini(count, _typed_text.length())):
+		var ch := _typed_text[i]
+		if ch.to_lower() != ch.to_upper() or ch.is_valid_int():     # letters and digits are spoken
+			if _letters % LETTERS_PER_SYLLABLE == 0:
+				Audio.voice(_voice_pitch)
+			_letters += 1
+	_text.visible_characters = count
+
+
+func _finish_typing() -> void:
+	if _tween:
+		_tween.kill()
+	_typing = false
+	_text.visible_characters = -1
 
 
 ## A slow glow on Present Evidence when something the player holds would break
@@ -189,9 +226,8 @@ func _on_tap_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and not event.pressed:
 		if _state != DialogueRunner.LINE:
 			return
-		if _text.visible_ratio < 1.0:
-			_tween.kill()
-			_text.visible_ratio = 1.0
+		if _typing:
+			_finish_typing()
 		else:
 			_show_state(_runner.advance())
 

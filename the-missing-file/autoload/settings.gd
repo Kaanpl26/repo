@@ -15,6 +15,7 @@ var text_size := 1        # index into TEXT_SCALES
 var music_volume := 0.7   # 0..1
 var sfx_volume := 0.9     # 0..1
 var board_view := "wall"  # "wall" (free canvas) or "list"
+var voices := true        # wordless speech sounds while people talk
 
 
 func _ready() -> void:
@@ -33,6 +34,7 @@ func load_settings() -> void:
 	music_volume = clampf(float(data.get("music_volume", 0.7)), 0.0, 1.0)
 	sfx_volume = clampf(float(data.get("sfx_volume", 0.9)), 0.0, 1.0)
 	board_view = "list" if str(data.get("board_view", "wall")) == "list" else "wall"
+	voices = bool(data.get("voices", true))
 
 
 func save_settings() -> void:
@@ -42,7 +44,7 @@ func save_settings() -> void:
 	if f:
 		f.store_string(JSON.stringify({
 			"locale": locale, "text_size": text_size,
-			"music_volume": music_volume, "sfx_volume": sfx_volume, "board_view": board_view,
+			"music_volume": music_volume, "sfx_volume": sfx_volume, "board_view": board_view, "voices": voices,
 		}))
 
 
@@ -59,6 +61,11 @@ func set_text_size(index: int) -> void:
 	text_size = clampi(index, 0, TEXT_SCALES.size() - 1)
 	save_settings()
 	text_scale_changed.emit()
+
+
+func set_voices(on: bool) -> void:
+	voices = on
+	save_settings()
 
 
 func set_board_view(view: String) -> void:

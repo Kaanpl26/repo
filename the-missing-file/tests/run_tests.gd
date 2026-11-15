@@ -13,6 +13,7 @@ func _ready() -> void:
 	Settings.persist = false
 	Profile.reset()
 	_test_scripts_load()
+	_test_build_folder_is_ignored()
 	_test_localization()
 	for entry in CaseDB.index:
 		if entry.get("available", false):
@@ -61,6 +62,14 @@ func _test_scripts_load() -> void:
 	for ext in [".gd", ".tscn"]:
 		for path in _files("res://", ext):
 			ok(load(path) != null, "cannot load " + path)
+
+
+# Nothing from the build folder (APKs, screenshots) may be part of the project.
+func _test_build_folder_is_ignored() -> void:
+	print("- build folder is not part of the project")
+	ok(_files("res://build", ".png").is_empty() or FileAccess.file_exists("res://build/.gdignore"), "build/ must contain .gdignore so its files are never packed into the game")
+	var preset := FileAccess.get_file_as_string("res://export_presets.cfg")
+	ok("build/*" in preset, "the export preset must exclude build/")
 
 
 # Every key must have non-empty English and Turkish text.
@@ -127,9 +136,12 @@ func _test_data_references() -> void:
 		for field in ["name", "desc", "body"]:
 			_key(e[field], "evidence %s.%s" % [id, field])
 		ok(ResourceLoader.exists(e["icon"]), "evidence %s: icon missing" % id)
+	for i in Audio.VOICE_SYLLABLES:
+		ok(ResourceLoader.exists("res://assets/audio/voice_%d.wav" % i), "speech syllable %d missing" % i)
 	for id in CaseDB.characters:
 		var c: Dictionary = CaseDB.characters[id]
 		_key(c["name"], "character " + id)
+		ok(c.has("voice") and float(c["voice"]) >= 0.5 and float(c["voice"]) <= 1.8, "character %s needs a voice pitch between 0.5 and 1.8" % id)
 		if c.has("portrait"):
 			ok(ResourceLoader.exists(c["portrait"]), "character %s: portrait missing" % id)
 		if c.has("dialogue"):

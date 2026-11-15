@@ -830,5 +830,17 @@
   "BOARD_HELP_WALL": {
     "en": "Tap two notes that belong together, then tap Connect. Drag the cork to move around, pinch or use + and − to zoom, drag a note to move it.",
     "tr": "Birbiriyle ilgili iki nota dokunun, sonra Bağla'ya dokunun. Gezinmek için panoyu sürükleyin, yakınlaştırmak için iki parmağınızı ya da + ve − düğmelerini kullanın, bir notu taşımak için sürükleyin."
+  },
+  "SETTINGS_VOICES": {
+    "en": "Speech sounds",
+    "tr": "Konuşma sesleri"
+  },
+  "SETTINGS_ON": {
+    "en": "On",
+    "tr": "Açık"
+  },
+  "SETTINGS_OFF": {
+    "en": "Off",
+    "tr": "Kapalı"
   }
 }

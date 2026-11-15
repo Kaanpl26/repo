@@ -9,7 +9,7 @@
 All artwork is original to this project, generated from `tools/make_art.py`.
 
 ## Sound and music
-All sound effects, room ambience and music are original to this project, synthesised by `tools/make_audio.py`.
+All sound effects, speech sounds, room ambience and music are original to this project, synthesised by `tools/make_audio.py`.
 
 ## Engine
 Godot Engine (MIT licence) — https://godotengine.org/license

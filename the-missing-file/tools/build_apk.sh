@@ -4,6 +4,7 @@
 set -e
 cd "$(dirname "$0")/.."
 mkdir -p build
+touch build/.gdignore      # keeps Godot from importing (and shipping) anything in build/
 godot --headless --path . --import
 tools/run_tests.sh
 godot --headless --path . --export-debug "Android" build/the-missing-file-debug.apk

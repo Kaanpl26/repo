@@ -4,8 +4,14 @@ extends Node
 
 const DIR := "res://assets/audio/"
 const SFX := ["click", "paper", "found", "insight", "wrong", "stamp", "step"]
+const VOICE_SYLLABLES := 8
 
 var _sfx := {}
+var _voice: Array = []           # syllable sounds
+var _voice_players: Array = []
+var _voice_next := 0
+var _last_syllable := -1
+var syllables_spoken := 0        # counted so tests can tell that people talk
 var _players: Array = []
 var _next := 0
 var _music: AudioStreamPlayer
@@ -24,6 +30,14 @@ func _ready() -> void:
 		p.bus = "Sfx"
 		add_child(p)
 		_players.append(p)
+	for i in VOICE_SYLLABLES:
+		_voice.append(load(DIR + "voice_%d.wav" % i))
+	for i in 3:
+		var v := AudioStreamPlayer.new()
+		v.bus = "Sfx"
+		v.volume_db = -7.0
+		add_child(v)
+		_voice_players.append(v)
 	_music = _looping_player("music", "Music", -8.0)
 	_ambience = AudioStreamPlayer.new()
 	_ambience.bus = "Sfx"
@@ -80,3 +94,20 @@ func ambience(name: String) -> void:
 	if name != "":
 		_ambience.stream = _loop_stream(name)
 		_ambience.play()
+
+
+## One syllable of wordless speech. pitch: the speaker's voice (1.0 is neutral,
+## lower is deeper). Never the same syllable twice in a row.
+func voice(pitch: float) -> void:
+	if not Settings.voices:
+		return
+	var i := randi() % VOICE_SYLLABLES
+	if i == _last_syllable:
+		i = (i + 1) % VOICE_SYLLABLES
+	_last_syllable = i
+	syllables_spoken += 1
+	var p: AudioStreamPlayer = _voice_players[_voice_next]
+	_voice_next = (_voice_next + 1) % _voice_players.size()
+	p.stream = _voice[i]
+	p.pitch_scale = pitch * randf_range(0.94, 1.07)
+	p.play()
