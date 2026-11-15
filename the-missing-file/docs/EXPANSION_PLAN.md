@@ -12,8 +12,9 @@
 | 3 Police database | Done in 1.2.0 (a Database tab in the Case File; lookups are chosen, not typed) |
 | 4 Case 2, "Dosya 58-D" | Done in 1.2.0, with decisions carried from Case 1 and the first appearance of the chief and of Karaca |
 | 5 Detective office and Ledger board | Done in 1.3.0 |
-| 6 Advanced evidence board | Next |
-| 7 and 8 | Not started |
+| 6 Advanced evidence board | Done in 1.4.0: a wall view (pan, pinch or buttons to zoom, movable notes, red thread) beside the list view. Not built: filter chips by person, which need per-card tags |
+| 7 Cases 3 and 4 | Next |
+| 8 Monetization | Not started |
 **Baseline:** game build 1.0.2 (Case 1 complete, English and Turkish, Android debug APK).
 
 Effort sizes used below, measured against work already done on this project:

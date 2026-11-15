@@ -354,7 +354,9 @@ Each milestone ends with something the owner can look at and approve.
 - [x] v1.2.1: every card shows a short line saying what it proves (Board, Case File, pickers); the Board tray shows both chosen cards in full; the present-evidence picker quotes the statement being challenged and groups cards by kind; the current objective is always on screen; red dots mark buttons with something waiting; the Map shows evidence found per room; Present Evidence glows when the player holds something that fits; a weak verdict lists what was missing
 - [x] v1.2.1 checked on the owner's phone: summaries, text size, dots and glow all approved
 - [x] v1.3.0: the detective's office (hub between cases, reached from the menu, the pause menu and after every verdict), the Ledger wall (8 cards carried out of the cases, 6 cross-case conclusions), four mementos, season timeline and objectives; what was found in a case is now carried forward after any verdict
-- [ ] v1.3.0 checked on the owner's phone on the owner's phone
+- [x] v1.3.0 checked on the owner's phone: Ledger wall filled from earlier verdicts, office navigation clear
+- [x] v1.4.0: evidence wall. The Board (and the Ledger) can be shown as a wall of pinned notes with red thread from each conclusion to its two cards: drag to pan, pinch or + and − to zoom, drag a note to move it (remembered per case), Tidy to reset, Hint frames the pair. The list view remains one tap away and the choice is remembered
+- [ ] v1.4.0 checked on the owner's phone on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

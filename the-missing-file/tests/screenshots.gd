@@ -20,6 +20,7 @@ func _ready() -> void:
 	DirAccess.make_dir_recursive_absolute(_out)
 	GameState.active = false
 	SaveManager.enabled = false
+	Settings.persist = false
 	Profile.persist = false
 	Profile.reset()
 	if _case == "case_office":
@@ -94,12 +95,12 @@ func _ui() -> void:
 	_current.add_child(load("res://ui/menus/settings_panel.tscn").instantiate())
 	await _snap("02_settings_tr")
 	await _show("res://ui/menus/main_menu.tscn")
-	_current._open_cases()
+	_current.add_child(CaseList.new())
 	await _snap("02c_cases_tr")
 	Profile.unlock("CONFESSION")
 	Profile.unlock("GENTLE")
 	await _show("res://ui/menus/main_menu.tscn")
-	_current._open_achievements()
+	_current.add_child(AchievementsList.new())
 	await _snap("02d_achievements_tr")
 	var game := await _game("office")
 	await _snap("03_office_tr")
@@ -121,9 +122,15 @@ func _ui() -> void:
 	game._open_evidence("E16")
 	await _snap("06_evidence_en")
 	game = await _game("stacks")
+	Settings.board_view = "wall"
 	game._open_board()
 	var board: Node = game._overlays.get_child(0)
+	await _snap("07_wall_en")
 	board._on_hint()
+	await _snap("07_wall_hint_en")
+	board._wall.zoom_by(1.5)
+	await _snap("07_wall_zoom_en")
+	board._set_view("list")
 	await _snap("07_board_hint_en")
 	game = await _game("director")
 	game._open_dialogue("vardar")
@@ -220,7 +227,7 @@ func _other_case() -> void:
 	game._open_accusation()
 	await _snap("c_09_accuse_en")
 	await _show("res://ui/menus/main_menu.tscn")
-	_current._open_cases()
+	_current.add_child(CaseList.new())
 	await _snap("c_10_cases_en")
 
 
@@ -234,9 +241,12 @@ func _office_shots() -> void:
 	Settings.locale = "tr"
 	var game := await _game("office")
 	await _snap("o_01_office_tr")
+	Settings.board_view = "wall"
 	game._open_board()
 	var board: Node = game._overlays.get_child(0)
-	board._on_hint()
+	for id in ["LI_SAME_HAND", "LI_FENER", "LI_KARACA"]:
+		GameState.add_insight(id)
+	board._rebuild()
 	await _snap("o_02_ledger_tr")
 	game = await _game("office")
 	game._do_action("cases")

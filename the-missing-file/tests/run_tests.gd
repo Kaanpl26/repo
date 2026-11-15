@@ -10,6 +10,7 @@ var _checks := 0
 func _ready() -> void:
 	Profile.persist = false      # never touch the player's real profile
 	SaveManager.enabled = false  # and never write save files, except where a test says so
+	Settings.persist = false
 	Profile.reset()
 	_test_scripts_load()
 	_test_localization()
@@ -577,6 +578,7 @@ func _test_board_and_verdict() -> void:
 			ok(CaseDB.card_kind(card) == "insight", "proof for %s must be a Board conclusion" % slot)
 	ok(Verdict.resolve("vardar", proof) == "A", "culprit with full proof and the file -> ending A")
 	ok(Verdict.weak_points("vardar", proof).is_empty(), "a complete case has no weak points")
+	_test_wall_layout("Case 1")
 	ok(Hints.link_count() == 0, "no connections remain at the end")
 	ok(Hints.card_used_up("E02") and Hints.card_used_up("I_VARDAR_RETURNED"), "cards with nothing left to give are faded")
 	ok(not Hints.card_used_up("E10"), "a card that connects to nothing is never marked as used up")
@@ -753,6 +755,7 @@ func _test_case_02() -> void:
 	ok(Verdict.resolve("soylu", {"motive": "I_MOTIVE", "opportunity": "I_LURE", "link": "I_PAINT"}) == "A", "either opportunity conclusion counts")
 	ok(Verdict.resolve("soylu", proof) == "A", "full proof and the file -> ending A")
 	ok(Verdict.epilogue("A").size() == 3, "true ending has an epilogue line for each of the three decisions")
+	_test_wall_layout("Case 2")
 	GameState.set_flag("case_solved")
 	for o in CaseDB.meta["objectives"]:
 		ok(GameState.check(o.get("show", [])) and GameState.check(o["done"]), "objective %s is complete at the end" % o["id"])
@@ -818,6 +821,32 @@ func _test_case_02() -> void:
 	_open_case("case_01")
 
 
+## The automatic layout of the evidence wall for the cards held right now:
+## every card has a place, nothing overlaps, everything is on the wall, and a
+## note the player has moved stays where they put it.
+func _test_wall_layout(label: String) -> void:
+	GameState.board_layout = {}
+	var pos := BoardLayout.positions()
+	var size := BoardLayout.canvas_size()
+	var held := GameState.all_cards()
+	ok(pos.size() == held.size(), "%s wall: every card has a note (%d of %d)" % [label, pos.size(), held.size()])
+	var rects := {}
+	for id in pos:
+		rects[id] = Rect2(pos[id], BoardLayout.note_size(id))
+		ok(Rect2(Vector2.ZERO, size).encloses(rects[id]), "%s wall: note %s is on the wall" % [label, id])
+	var ids: Array = rects.keys()
+	var overlaps := 0
+	for i in ids.size():
+		for j in range(i + 1, ids.size()):
+			if rects[ids[i]].intersects(rects[ids[j]]):
+				overlaps += 1
+	ok(overlaps == 0, "%s wall: no notes overlap (%d overlaps)" % [label, overlaps])
+	var moved: String = held[0]
+	GameState.board_layout = {moved: [777.0, 555.0]}
+	ok(BoardLayout.positions()[moved] == Vector2(777, 555), "%s wall: a moved note keeps its place" % label)
+	GameState.board_layout = {}
+
+
 # The office: what is carried out of the cases, the Ledger wall, the mementos.
 func _test_office() -> void:
 	Profile.reset()
@@ -848,6 +877,7 @@ func _test_office() -> void:
 	ok(Hints.link_count() == CaseDB.insights.size(), "every Ledger connection is possible with both cases closed")
 	ok(_connect_all() == CaseDB.insights.size(), "all Ledger conclusions can be reached")
 	ok("LEDGER_WALL" in Achievements.evaluate() or Profile.achievements.has("LEDGER_WALL"), "Ledger achievement earned")
+	_test_wall_layout("Ledger")
 	ok(Profile.achievements.has("LEDGER_CHIEF"), "hidden achievement for noticing the chief")
 	ok(Hints.current_objective().get("id") == "O_NEXT", "the office points at the next case")
 	ok(props.filter(func(p): return GameState.check(p["conditions"])).size() == 4, "four mementos: both cases, the front page and the promotion")
@@ -1130,6 +1160,7 @@ func _test_playthrough() -> void:
 
 func _test_save_roundtrip() -> void:
 	print("- save / load")
+	GameState.board_layout = {"E01": [120.0, 340.0]}
 	var before := GameState.to_dict()
 	var text := JSON.stringify({"version": 1, "state": before})
 	GameState.new_game()

@@ -396,8 +396,8 @@
     "tr": "Delilleri bağlayın"
   },
   "HOWTO_BOARD_TEXT": {
-    "en": "Open the Board. Each card says what it shows. Choose two that belong together and tap Connect, then pick what they mean together. A correct answer becomes a conclusion, and conclusions are your proof.",
-    "tr": "Pano'yu açın. Her kartın üzerinde neyi gösterdiği yazar. Birbiriyle ilgili iki kart seçip Bağla'ya dokunun, sonra ikisinin birlikte ne anlattığını seçin. Doğru cevap bir sonuca dönüşür; sonuçlar sizin kanıtınızdır."
+    "en": "Open the Board. Each card says what it shows. Choose two that belong together and tap Connect, then pick what they mean together. A correct answer becomes a conclusion, joined to its cards with red thread. Conclusions are your proof. The Wall and List buttons switch between two ways of looking at the same cards.",
+    "tr": "Pano'yu açın. Her kartın üzerinde neyi gösterdiği yazar. Birbiriyle ilgili iki kart seçip Bağla'ya dokunun, sonra ikisinin birlikte ne anlattığını seçin. Doğru cevap bir sonuca dönüşür ve kartlarına kırmızı iplikle bağlanır. Sonuçlar sizin kanıtınızdır. Duvar ve Liste düğmeleri aynı kartlara iki farklı bakış arasında geçiş yapar."
   },
   "HOWTO_MAP_TITLE": {
     "en": "Move around",
@@ -814,5 +814,21 @@
   "ACH_LEDGER_CHIEF_DESC": {
     "en": "Notice that someone was ahead of you twice in one morning.",
     "tr": "Birinin aynı sabah iki kez sizden önde olduğunu fark edin."
+  },
+  "BOARD_VIEW_WALL": {
+    "en": "Wall",
+    "tr": "Duvar"
+  },
+  "BOARD_VIEW_LIST": {
+    "en": "List",
+    "tr": "Liste"
+  },
+  "BOARD_TIDY": {
+    "en": "Tidy",
+    "tr": "Düzenle"
+  },
+  "BOARD_HELP_WALL": {
+    "en": "Tap two notes that belong together, then tap Connect. Drag the cork to move around, pinch or use + and − to zoom, drag a note to move it.",
+    "tr": "Birbiriyle ilgili iki nota dokunun, sonra Bağla'ya dokunun. Gezinmek için panoyu sürükleyin, yakınlaştırmak için iki parmağınızı ya da + ve − düğmelerini kullanın, bir notu taşımak için sürükleyin."
   }
 }

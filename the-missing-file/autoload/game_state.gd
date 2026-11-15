@@ -19,6 +19,7 @@ var hints := 0                  # hints used (affects final rating later)
 var bad_links := 0              # board connections that led nowhere
 var endings_seen: Array = []    # verdicts the player has reached
 var patience: Dictionary = {}   # character id -> patience left (missing means full)
+var board_layout: Dictionary = {}   # card id -> [x, y]: notes the player has moved on the wall
 var active := false             # true while a game is in progress
 
 
@@ -28,6 +29,7 @@ func new_game(id: String = "") -> void:
 	CaseDB.load_case(id)
 	case_id = id
 	patience = {}
+	board_layout = {}
 	location = CaseDB.meta.get("start_location", "lobby")
 	evidence = []
 	testimony = []
@@ -47,7 +49,7 @@ func to_dict() -> Dictionary:
 		"case_id": case_id, "location": location, "evidence": evidence,
 		"testimony": testimony, "flags": flags, "seen": seen, "mistakes": mistakes, "hints": hints,
 		"insights": insights, "bad_links": bad_links, "endings_seen": endings_seen,
-		"patience": patience,
+		"patience": patience, "board_layout": board_layout,
 	}
 
 
@@ -55,6 +57,7 @@ func from_dict(d: Dictionary) -> void:
 	case_id = str(d.get("case_id", CaseDB.index[0]["id"]))
 	CaseDB.load_case(case_id)
 	patience = Dictionary(d.get("patience", {}))
+	board_layout = Dictionary(d.get("board_layout", {}))
 	location = str(d.get("location", "lobby"))
 	evidence = Array(d.get("evidence", []))
 	testimony = Array(d.get("testimony", []))
@@ -123,6 +126,17 @@ func patience_left(character: String) -> int:
 func lose_patience(character: String) -> void:
 	patience[character] = maxi(0, patience_left(character) - 1)
 	changed.emit()
+
+
+func set_board_pos(card_id: String, pos: Vector2) -> void:
+	board_layout[card_id] = [roundf(pos.x), roundf(pos.y)]
+	changed.emit()
+
+
+func clear_board_layout() -> void:
+	if not board_layout.is_empty():
+		board_layout = {}
+		changed.emit()
 
 
 func add_bad_link() -> void:

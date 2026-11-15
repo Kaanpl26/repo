@@ -6,6 +6,7 @@ extends Node
 
 var runner := false
 var _finished := false
+var _failed := false
 
 
 func _ready() -> void:
@@ -17,12 +18,23 @@ func _ready() -> void:
 		return
 	GameState.active = false
 	SaveManager.enabled = false
+	Settings.persist = false
 	Profile.persist = false
 	Profile.reset()
 	await _run()
 	# A script error ends _run early, so only report success if it reached its last line.
-	print("SMOKE OK" if _finished else "SMOKE FAILED: the run stopped early")
+	if _failed:
+		print("SMOKE FAILED: a check failed")
+	else:
+		print("SMOKE OK" if _finished else "SMOKE FAILED: the run stopped early")
 	get_tree().quit()
+
+
+func _check(condition: bool, message: String = "") -> void:
+	if not condition:
+		_failed = true
+		print("SMOKE CHECK FAILED: ", message)
+		push_error("smoke check failed: " + message)
 
 
 func _wait(sec: float) -> void:
@@ -79,7 +91,7 @@ func _run() -> void:
 		await _wait(0.2)
 		_game()._travel(target)
 		await _wait(1.2)
-		assert(GameState.location == target)
+		_check(GameState.location == target)
 		_game()._on_hint()
 		for h in _game()._loc["hotspots"]:
 			if GameState.check(h.get("conditions", [])) and h["type"] != "exit":
@@ -91,7 +103,7 @@ func _run() -> void:
 		await _wait(0.3)
 		_game()._notification_back()
 		await _wait(0.3)
-		assert(_game()._overlays.get_child_count() == 0, "back button closes " + opener)
+		_check(_game()._overlays.get_child_count() == 0, "back button closes " + opener)
 	await _test_finger_scroll()
 	_game().add_child(HowToPlay.new())
 	await _wait(0.4)
@@ -140,9 +152,13 @@ func _test_finger_scroll() -> void:
 		GameState.add_evidence(id)
 	for id in CaseDB.meta["testimony"]:
 		GameState.add_testimony(id)
+	Settings.board_view = "wall"
 	_game()._open_board()
-	await _wait(0.5)
+	await _wait(0.6)
 	var board: Node = _game()._overlays.get_child(0)
+	await _test_wall(board)
+	board._set_view("list")
+	await _wait(0.3)
 	var card: Control = _visible_card(board, 1)
 	var start: Vector2 = card.get_global_rect().get_center()
 	_touch(start, true)
@@ -157,14 +173,14 @@ func _test_finger_scroll() -> void:
 	_touch(start + Vector2(0, -360), false)
 	await _wait(0.3)
 	print("finger scroll moved list by ", board._scroll.scroll_vertical, " px; cards selected: ", board._selected.size())
-	assert(board._scroll.scroll_vertical > 100, "dragging over buttons scrolls the list")
-	assert(board._selected.is_empty(), "a drag must not select a card")
+	_check(board._scroll.scroll_vertical > 100, "dragging over buttons scrolls the list")
+	_check(board._selected.is_empty(), "a drag must not select a card")
 	card = _visible_card(board, 0)
 	_touch(card.get_global_rect().get_center(), true)
 	await _wait(0.05)
 	_touch(card.get_global_rect().get_center(), false)
 	await _wait(0.2)
-	assert(board._selected.size() == 1, "a plain tap still selects a card")
+	_check(board._selected.size() == 1, "a plain tap still selects a card")
 	print("tap still selects: ", board._selected.size())
 	await _close_overlays()
 
@@ -177,11 +193,11 @@ func _case_two() -> void:
 	GameState.set_flag("soykan_met")
 	SceneRouter.goto(SceneRouter.GAME)
 	await _wait(1.3)
-	assert(GameState.case_id == "case_02" and GameState.location == "road")
+	_check(GameState.case_id == "case_02" and GameState.location == "road")
 	for target in ["newsroom", "site", "planning", "road"]:
 		_game()._travel(target)
 		await _wait(1.2)
-		assert(GameState.location == target)
+		_check(GameState.location == target)
 		for h in _game()._loc["hotspots"]:
 			if GameState.check(h.get("conditions", [])) and h["type"] != "exit":
 				_tap_hotspot(h["id"])
@@ -193,7 +209,7 @@ func _case_two() -> void:
 	_game()._open_case_file()
 	await _wait(0.3)
 	var cf: Node = _game()._overlays.get_child(0)
-	assert(cf._tabs.size() == 5, "Case 2 has a Database tab")
+	_check(cf._tabs.size() == 5, "Case 2 has a Database tab")
 	cf._show_tab(4)
 	await _wait(0.3)
 	await _close_overlays()
@@ -211,7 +227,7 @@ func _visible_card(board: Node, n: int) -> Control:
 		var c: Control = board._buttons[id]
 		if area.has_point(c.get_global_rect().get_center()):
 			found.append(c)
-	assert(found.size() > n, "the Board shows at least %d cards without scrolling" % (n + 1))
+	_check(found.size() > n, "the Board shows at least %d cards without scrolling" % (n + 1))
 	return found[n]
 
 
@@ -221,17 +237,124 @@ func _office() -> void:
 	Profile.record_verdict("case_02", "A", true, {"score": 90, "grade": "S"}, ["file_found", "registry_seen", "guven_source", "soykan_remark"])
 	SceneRouter.open_office()
 	await _wait(1.4)
-	assert(GameState.case_id == "office" and GameState.location == "office")
+	_check(GameState.case_id == "office" and GameState.location == "office")
 	GameState.set_flag("intro_seen")
 	await _close_overlays()
-	assert(GameState.evidence.size() == CaseDB.evidence.size(), "carried cards arrive on entering the office")
+	_check(GameState.evidence.size() == CaseDB.evidence.size(), "carried cards arrive on entering the office")
 	for id in ["ledger", "folders", "frame", "shelf", "window"]:
 		_tap_hotspot(id)
 		await _wait(0.4)
-		assert(_game()._overlays.get_child_count() <= 1)
+		_check(_game()._overlays.get_child_count() <= 1)
 		await _close_overlays()
 	_game()._on_hint()
 	_game()._open_case_file()
 	await _wait(0.3)
 	await _close_overlays()
 	print("office OK")
+
+
+func _mouse(pos: Vector2, pressed: bool) -> void:
+	var e := InputEventMouseButton.new()
+	e.button_index = MOUSE_BUTTON_LEFT
+	e.position = pos
+	e.global_position = pos
+	e.pressed = pressed
+	Input.parse_input_event(e)
+
+
+func _mouse_drag(from: Vector2, delta: Vector2, steps: int = 10) -> void:
+	_mouse(from, true)
+	await _wait(0.05)
+	for i in steps:
+		var m := InputEventMouseMotion.new()
+		m.position = from + delta * float(i + 1) / steps
+		m.global_position = m.position
+		m.relative = delta / steps
+		m.button_mask = MOUSE_BUTTON_MASK_LEFT
+		Input.parse_input_event(m)
+		await get_tree().process_frame
+	_mouse(from + delta, false)
+	await _wait(0.15)
+
+
+func _finger(index: int, pos: Vector2, pressed: bool) -> void:
+	var e := InputEventScreenTouch.new()
+	e.index = index
+	e.position = pos
+	e.pressed = pressed
+	Input.parse_input_event(e)
+
+
+func _finger_move(index: int, pos: Vector2, relative: Vector2) -> void:
+	var d := InputEventScreenDrag.new()
+	d.index = index
+	d.position = pos
+	d.relative = relative
+	Input.parse_input_event(d)
+
+
+## The evidence wall: tap selects, dragging a note moves it and is remembered,
+## dragging the cork pans, two fingers zoom, the buttons zoom, Tidy resets.
+func _test_wall(board: Node) -> void:
+	var wall: BoardCanvas = board._wall
+	_check(wall.visible and not board._scroll.visible, "the board opens on the wall")
+	_check(wall._notes.size() == GameState.all_cards().size(), "one note per card")
+	var id: String = GameState.evidence[0]
+	var n: BoardNote = wall.note(id)
+	var at: Vector2 = n.get_global_rect().get_center()
+
+	_mouse(at, true)
+	await _wait(0.05)
+	_mouse(at, false)
+	await _wait(0.2)
+	_check(board._selected == [id], "tapping a note selects it")
+	board._selected.clear()
+	board._refresh_selection()
+
+	var before: Vector2 = n.position
+	await _mouse_drag(at, Vector2(160, 90))
+	_check(n.position.distance_to(before) > 100, "dragging a note moves it")
+	_check(board._selected.is_empty(), "dragging a note does not select it")
+	_check(GameState.board_layout.has(id), "the new place is remembered")
+	var moved_by: Vector2 = (n.position - before) * wall.zoom
+	_check(moved_by.distance_to(Vector2(160, 90)) < 12, "the note follows the finger exactly at any zoom (moved %s)" % moved_by)
+
+	var pan_from: Vector2 = wall.get_global_rect().position + Vector2(wall.size.x - 60, wall.size.y - 40)
+	var content_before: Vector2 = wall._content.position
+	await _mouse_drag(pan_from, Vector2(-40, -220))
+	_check(wall._content.position.distance_to(content_before) > 100, "dragging the cork pans the wall")
+
+	var z := wall.zoom
+	var c: Vector2 = wall.get_global_rect().get_center()
+	_finger(0, c + Vector2(-150, 0), true)
+	_finger(1, c + Vector2(150, 0), true)
+	await get_tree().process_frame
+	for i in 8:
+		_finger_move(0, c + Vector2(-150 - 20 * (i + 1), 0), Vector2(-20, 0))
+		_finger_move(1, c + Vector2(150 + 20 * (i + 1), 0), Vector2(20, 0))
+		await get_tree().process_frame
+	_finger(0, c + Vector2(-310, 0), false)
+	_finger(1, c + Vector2(310, 0), false)
+	await _wait(0.15)
+	_check(wall.zoom > z * 1.3, "spreading two fingers zooms in (%.2f -> %.2f)" % [z, wall.zoom])
+	_check(board._selected.is_empty(), "a pinch selects nothing")
+	z = wall.zoom
+	wall.zoom_by(0.8)
+	_check(wall.zoom < z, "the minus button zooms out")
+
+	GameState.clear_board_layout()
+	wall.build()
+	wall.fit()
+	await _wait(0.2)
+	_check(wall.note(id).position == BoardLayout.positions()[id], "Tidy puts notes back")
+	board._on_hint()
+	await _wait(0.3)
+	_check(board._selected.size() == 2, "Hint selects a pair on the wall")
+	var view := Rect2(Vector2.ZERO, wall.size)
+	var first_note: BoardNote = wall.note(board._selected[0])
+	var r: Rect2 = Rect2(wall._content.position + first_note.position * wall.zoom, first_note.size * wall.zoom)
+	_check(view.encloses(r), "Hint brings the first note fully into view")
+	_check(wall.zoom >= BoardCanvas.READABLE - 0.01, "Hint never zooms out too far to read (zoom %.2f)" % wall.zoom)
+	board._selected.clear()
+	board._refresh_selection()
+	print("wall OK: zoom %.2f, %d notes" % [wall.zoom, wall._notes.size()])
