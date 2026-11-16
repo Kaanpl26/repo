@@ -1,0 +1,228 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "aras_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "aras_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C1_ARAS_INTRO_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "visit",
+          "t": "C1_ARAS_Q_VISIT",
+          "next": "visit",
+          "conditions": [
+            {
+              "not_flag": "aras_admitted"
+            }
+          ]
+        },
+        {
+          "id": "nine",
+          "t": "C1_ARAS_Q_NINE",
+          "next": "nine"
+        },
+        {
+          "id": "today",
+          "t": "C1_ARAS_Q_TODAY",
+          "next": "today"
+        },
+        {
+          "id": "bye",
+          "t": "C1_ARAS_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "visit": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_VISIT_1",
+          "present": {
+            "accept": [
+              "E10",
+              "T_AYDIN_4"
+            ],
+            "next": "admit",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "admit": {
+      "effects": [
+        {
+          "set_flag": "aras_admitted"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ARAS_ADMIT_1"
+        },
+        {
+          "s": "aras",
+          "t": "C1_ARAS_ADMIT_2",
+          "mood": "shaken"
+        }
+      ],
+      "choices": [
+        {
+          "id": "direct",
+          "t": "C1_ARAS_DIRECT",
+          "next": "direct"
+        },
+        {
+          "id": "polite",
+          "t": "C1_ARAS_POLITE",
+          "next": "polite"
+        }
+      ]
+    },
+    "direct": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_DIR_1",
+          "effects": [
+            {
+              "add_testimony": "T_ARAS_2"
+            }
+          ],
+          "mood": "defensive"
+        },
+        {
+          "s": "aras",
+          "t": "C1_ARAS_DIR_2",
+          "effects": [
+            {
+              "add_testimony": "T_ARAS_3"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "polite": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_POL_1",
+          "effects": [
+            {
+              "add_testimony": "T_ARAS_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "nine": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_NINE_1",
+          "effects": [
+            {
+              "add_testimony": "T_ARAS_1"
+            }
+          ],
+          "press": "press_nine"
+        }
+      ],
+      "next": "hub"
+    },
+    "today": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_TODAY_1",
+          "press": "press_file"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C1_ARAS_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_nine": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ARAS_P_NINE_1"
+        },
+        {
+          "s": "aras",
+          "t": "C1_ARAS_P_NINE_2"
+        }
+      ]
+    },
+    "press_file": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ARAS_P_FILE_1"
+        },
+        {
+          "s": "aras",
+          "t": "C1_ARAS_P_FILE_2",
+          "mood": "defensive"
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

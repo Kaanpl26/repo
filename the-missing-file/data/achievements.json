@@ -1,0 +1,389 @@
+[
+  {
+    "id": "FIRST_CASE",
+    "title": "ACH_FIRST_CASE_TITLE",
+    "desc": "ACH_FIRST_CASE_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A"
+  },
+  {
+    "id": "NO_HINTS",
+    "title": "ACH_NO_HINTS_TITLE",
+    "desc": "ACH_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "FLAWLESS",
+    "title": "ACH_FLAWLESS_TITLE",
+    "desc": "ACH_FLAWLESS_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A",
+    "max_mistakes": 0
+  },
+  {
+    "id": "TOP_GRADE",
+    "title": "ACH_TOP_GRADE_TITLE",
+    "desc": "ACH_TOP_GRADE_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "ending": "A",
+    "grade": "S"
+  },
+  {
+    "id": "CONFESSION",
+    "title": "ACH_CONFESSION_TITLE",
+    "desc": "ACH_CONFESSION_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "erdem_confessed"
+      }
+    ]
+  },
+  {
+    "id": "CORNERED",
+    "title": "ACH_CORNERED_TITLE",
+    "desc": "ACH_CORNERED_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "vardar_cornered"
+      }
+    ]
+  },
+  {
+    "id": "GENTLE",
+    "title": "ACH_GENTLE_TITLE",
+    "desc": "ACH_GENTLE_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "aydin_told"
+      },
+      {
+        "not_flag": "aydin_pressured"
+      }
+    ]
+  },
+  {
+    "id": "MIRROR",
+    "title": "ACH_MIRROR_TITLE",
+    "desc": "ACH_MIRROR_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "has_evidence": "E17"
+      }
+    ]
+  },
+  {
+    "id": "PERSISTENT",
+    "title": "ACH_PERSISTENT_TITLE",
+    "desc": "ACH_PERSISTENT_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "conditions": [
+      {
+        "flag": "pressed_five"
+      }
+    ]
+  },
+  {
+    "id": "MERCY",
+    "title": "ACH_MERCY_TITLE",
+    "desc": "ACH_MERCY_DESC",
+    "hidden": true,
+    "case": "case_01",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "erdem_spared"
+      }
+    ]
+  },
+  {
+    "id": "BY_THE_BOOK",
+    "title": "ACH_BY_THE_BOOK_TITLE",
+    "desc": "ACH_BY_THE_BOOK_DESC",
+    "hidden": true,
+    "case": "case_01",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "erdem_reported"
+      }
+    ]
+  },
+  {
+    "id": "OBVIOUS_MAN",
+    "title": "ACH_OBVIOUS_MAN_TITLE",
+    "desc": "ACH_OBVIOUS_MAN_DESC",
+    "hidden": true,
+    "case": "case_01",
+    "ending": "C"
+  },
+  {
+    "id": "EVERY_ENDING",
+    "title": "ACH_EVERY_ENDING_TITLE",
+    "desc": "ACH_EVERY_ENDING_DESC",
+    "hidden": false,
+    "case": "case_01",
+    "all_endings": true
+  },
+  {
+    "id": "C2_SOLVED",
+    "title": "ACH_C2_SOLVED_TITLE",
+    "desc": "ACH_C2_SOLVED_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "ending": "A"
+  },
+  {
+    "id": "C2_NO_HINTS",
+    "title": "ACH_C2_NO_HINTS_TITLE",
+    "desc": "ACH_C2_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "C2_CORNERED",
+    "title": "ACH_C2_CORNERED_TITLE",
+    "desc": "ACH_C2_CORNERED_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "conditions": [
+      {
+        "flag": "soylu_cornered"
+      }
+    ]
+  },
+  {
+    "id": "C2_FENER",
+    "title": "ACH_C2_FENER_TITLE",
+    "desc": "ACH_C2_FENER_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "conditions": [
+      {
+        "has_insight": "I_FENER"
+      }
+    ]
+  },
+  {
+    "id": "C2_LOOKUP",
+    "title": "ACH_C2_LOOKUP_TITLE",
+    "desc": "ACH_C2_LOOKUP_DESC",
+    "hidden": false,
+    "case": "case_02",
+    "conditions": [
+      {
+        "has_evidence": "E21"
+      },
+      {
+        "has_evidence": "E22"
+      },
+      {
+        "has_evidence": "E23"
+      },
+      {
+        "has_evidence": "E24"
+      }
+    ]
+  },
+  {
+    "id": "C2_NOT_OBVIOUS",
+    "title": "ACH_C2_NOT_OBVIOUS_TITLE",
+    "desc": "ACH_C2_NOT_OBVIOUS_DESC",
+    "hidden": true,
+    "case": "case_02",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "kaplan_free"
+      }
+    ]
+  },
+  {
+    "id": "C3_SOLVED",
+    "title": "ACH_C3_SOLVED_TITLE",
+    "desc": "ACH_C3_SOLVED_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "ending": "A"
+  },
+  {
+    "id": "C3_ALL_ENDINGS",
+    "title": "ACH_C3_ALL_ENDINGS_TITLE",
+    "desc": "ACH_C3_ALL_ENDINGS_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "all_endings": true
+  },
+  {
+    "id": "C3_NO_HINTS",
+    "title": "ACH_C3_NO_HINTS_TITLE",
+    "desc": "ACH_C3_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "C3_CORNERED",
+    "title": "ACH_C3_CORNERED_TITLE",
+    "desc": "ACH_C3_CORNERED_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "conditions": [
+      {
+        "flag": "bulut_cornered"
+      }
+    ]
+  },
+  {
+    "id": "C3_NUR_CLEAR",
+    "title": "ACH_C3_NUR_CLEAR_TITLE",
+    "desc": "ACH_C3_NUR_CLEAR_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "conditions": [
+      {
+        "has_insight": "I_NUR_CLEAR"
+      }
+    ]
+  },
+  {
+    "id": "C3_SIGNATURE",
+    "title": "ACH_C3_SIGNATURE_TITLE",
+    "desc": "ACH_C3_SIGNATURE_DESC",
+    "hidden": true,
+    "case": "case_03",
+    "conditions": [
+      {
+        "has_insight": "I_SIGNATURE"
+      }
+    ]
+  },
+  {
+    "id": "C3_QUIET",
+    "title": "ACH_C3_QUIET_TITLE",
+    "desc": "ACH_C3_QUIET_DESC",
+    "hidden": true,
+    "case": "case_03",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "chief_kept_out"
+      }
+    ]
+  },
+  {
+    "id": "C4_SOLVED",
+    "title": "ACH_C4_SOLVED_TITLE",
+    "desc": "ACH_C4_SOLVED_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "ending": "A"
+  },
+  {
+    "id": "C4_ALL_ENDINGS",
+    "title": "ACH_C4_ALL_ENDINGS_TITLE",
+    "desc": "ACH_C4_ALL_ENDINGS_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "all_endings": true
+  },
+  {
+    "id": "C4_NO_HINTS",
+    "title": "ACH_C4_NO_HINTS_TITLE",
+    "desc": "ACH_C4_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "C4_DEAL",
+    "title": "ACH_C4_DEAL_TITLE",
+    "desc": "ACH_C4_DEAL_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "conditions": [
+      {
+        "has_testimony": "T_YILDIZ_3"
+      }
+    ]
+  },
+  {
+    "id": "C4_GREEN",
+    "title": "ACH_C4_GREEN_TITLE",
+    "desc": "ACH_C4_GREEN_DESC",
+    "hidden": true,
+    "case": "case_04",
+    "conditions": [
+      {
+        "has_insight": "I_SIGNATURE"
+      }
+    ]
+  },
+  {
+    "id": "SEASON",
+    "title": "ACH_SEASON_TITLE",
+    "desc": "ACH_SEASON_DESC",
+    "hidden": true,
+    "case": "case_04",
+    "ending": "A",
+    "conditions": [
+      {
+        "profile_flag": "case_01.file_found"
+      },
+      {
+        "profile_flag": "case_02.file_found"
+      },
+      {
+        "profile_flag": "case_03.file_found"
+      }
+    ]
+  },
+  {
+    "id": "LEDGER_WALL",
+    "title": "ACH_LEDGER_WALL_TITLE",
+    "desc": "ACH_LEDGER_WALL_DESC",
+    "hidden": false,
+    "case": "office",
+    "conditions": [
+      {
+        "has_insight": "LI_SAME_HAND"
+      },
+      {
+        "has_insight": "LI_FENER"
+      },
+      {
+        "has_insight": "LI_KARACA"
+      }
+    ]
+  },
+  {
+    "id": "LEDGER_CHIEF",
+    "title": "ACH_LEDGER_CHIEF_TITLE",
+    "desc": "ACH_LEDGER_CHIEF_DESC",
+    "hidden": true,
+    "case": "office",
+    "conditions": [
+      {
+        "has_insight": "LI_CHIEF"
+      }
+    ]
+  }
+]

@@ -1,0 +1,392 @@
+{
+  "id": "case_01",
+  "title": "C1_TITLE",
+  "start_location": "lobby",
+  "intro": [
+    "C1_INTRO_1",
+    "C1_INTRO_2",
+    "C1_INTRO_3"
+  ],
+  "testimony": {
+    "T_ERDEM_1": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_1_TITLE",
+      "text": "C1_T_ERDEM_1"
+    },
+    "T_ERDEM_4": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_4_TITLE",
+      "text": "C1_T_ERDEM_4"
+    },
+    "T_ERDEM_2": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_2_TITLE",
+      "text": "C1_T_ERDEM_2"
+    },
+    "T_ERDEM_3": {
+      "speaker": "erdem",
+      "title": "C1_T_ERDEM_3_TITLE",
+      "text": "C1_T_ERDEM_3"
+    },
+    "T_AYDIN_1": {
+      "speaker": "aydin",
+      "title": "C1_T_AYDIN_1_TITLE",
+      "text": "C1_T_AYDIN_1"
+    },
+    "T_AYDIN_2": {
+      "speaker": "aydin",
+      "title": "C1_T_AYDIN_2_TITLE",
+      "text": "C1_T_AYDIN_2"
+    },
+    "T_AYDIN_3": {
+      "speaker": "aydin",
+      "title": "C1_T_AYDIN_3_TITLE",
+      "text": "C1_T_AYDIN_3"
+    },
+    "T_AYDIN_4": {
+      "speaker": "aydin",
+      "title": "C1_T_AYDIN_4_TITLE",
+      "text": "C1_T_AYDIN_4"
+    },
+    "T_AYDIN_5": {
+      "speaker": "aydin",
+      "title": "C1_T_AYDIN_5_TITLE",
+      "text": "C1_T_AYDIN_5"
+    },
+    "T_VARDAR_1": {
+      "speaker": "vardar",
+      "title": "C1_T_VARDAR_1_TITLE",
+      "text": "C1_T_VARDAR_1"
+    },
+    "T_VARDAR_2": {
+      "speaker": "vardar",
+      "title": "C1_T_VARDAR_2_TITLE",
+      "text": "C1_T_VARDAR_2"
+    },
+    "T_VARDAR_3": {
+      "speaker": "vardar",
+      "title": "C1_T_VARDAR_3_TITLE",
+      "text": "C1_T_VARDAR_3"
+    },
+    "T_VARDAR_4": {
+      "speaker": "vardar",
+      "title": "C1_T_VARDAR_4_TITLE",
+      "text": "C1_T_VARDAR_4"
+    },
+    "T_ARAS_1": {
+      "speaker": "aras",
+      "title": "C1_T_ARAS_1_TITLE",
+      "text": "C1_T_ARAS_1"
+    },
+    "T_ARAS_2": {
+      "speaker": "aras",
+      "title": "C1_T_ARAS_2_TITLE",
+      "text": "C1_T_ARAS_2"
+    },
+    "T_ARAS_3": {
+      "speaker": "aras",
+      "title": "C1_T_ARAS_3_TITLE",
+      "text": "C1_T_ARAS_3"
+    },
+    "T_VARDAR_5": {
+      "speaker": "vardar",
+      "title": "C1_T_VARDAR_5_TITLE",
+      "text": "C1_T_VARDAR_5"
+    }
+  },
+  "objectives": [
+    {
+      "id": "O_LOBBY",
+      "text": "C1_OBJ_LOBBY",
+      "done": [
+        {
+          "has_evidence": "E01"
+        },
+        {
+          "has_evidence": "E02"
+        },
+        {
+          "has_evidence": "E03"
+        },
+        {
+          "has_evidence": "E04"
+        },
+        {
+          "has_evidence": "E05"
+        },
+        {
+          "has_evidence": "E15"
+        }
+      ]
+    },
+    {
+      "id": "O_GUARD",
+      "text": "C1_OBJ_GUARD",
+      "done": [
+        {
+          "flag": "erdem_met"
+        }
+      ]
+    },
+    {
+      "id": "O_PATROL",
+      "text": "C1_OBJ_PATROL",
+      "show": [
+        {
+          "has_evidence": "E04"
+        },
+        {
+          "flag": "erdem_met"
+        }
+      ],
+      "done": [
+        {
+          "flag": "erdem_confessed"
+        }
+      ]
+    },
+    {
+      "id": "O_BARRIER",
+      "text": "C1_OBJ_BARRIER",
+      "show": [
+        {
+          "flag": "erdem_confessed"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E06"
+        }
+      ]
+    },
+    {
+      "id": "O_OFFICE",
+      "text": "C1_OBJ_OFFICE",
+      "show": [
+        {
+          "flag": "erdem_met"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E07"
+        },
+        {
+          "has_evidence": "E08"
+        },
+        {
+          "has_evidence": "E09"
+        },
+        {
+          "has_evidence": "E10"
+        },
+        {
+          "has_evidence": "E11"
+        }
+      ]
+    },
+    {
+      "id": "O_PEOPLE",
+      "text": "C1_OBJ_PEOPLE",
+      "show": [
+        {
+          "flag": "erdem_met"
+        }
+      ],
+      "done": [
+        {
+          "flag": "aydin_met"
+        },
+        {
+          "flag": "vardar_met"
+        },
+        {
+          "flag": "aras_met"
+        }
+      ]
+    },
+    {
+      "id": "O_SCENE",
+      "text": "C1_OBJ_SCENE",
+      "show": [
+        {
+          "flag": "visited_office"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E12"
+        },
+        {
+          "has_evidence": "E13"
+        },
+        {
+          "has_evidence": "E14"
+        },
+        {
+          "has_evidence": "E16"
+        }
+      ]
+    },
+    {
+      "id": "O_ACCIDENT",
+      "text": "C1_OBJ_ACCIDENT",
+      "show": [
+        {
+          "has_evidence": "E12"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_NOT_ACCIDENT"
+        }
+      ]
+    },
+    {
+      "id": "O_FILE",
+      "text": "C1_OBJ_FILE",
+      "show": [
+        {
+          "has_evidence": "E14"
+        }
+      ],
+      "done": [
+        {
+          "flag": "file_found"
+        }
+      ]
+    },
+    {
+      "id": "O_NIGHT",
+      "text": "C1_OBJ_NIGHT",
+      "show": [
+        {
+          "flag": "erdem_met"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_UNGUARDED"
+        },
+        {
+          "has_insight": "I_VARDAR_RETURNED"
+        },
+        {
+          "has_insight": "I_ARAS_ELSEWHERE"
+        },
+        {
+          "has_insight": "I_AYDIN_STAYED"
+        }
+      ]
+    },
+    {
+      "id": "O_WHO",
+      "text": "C1_OBJ_WHO",
+      "show": [
+        {
+          "has_insight": "I_NOT_ACCIDENT"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_ELEVATOR"
+        }
+      ]
+    },
+    {
+      "id": "O_ACCUSE",
+      "text": "C1_OBJ_ACCUSE",
+      "show": [
+        {
+          "has_insight": "I_NOT_ACCIDENT"
+        }
+      ],
+      "done": [
+        {
+          "flag": "case_solved"
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "conditions": [
+        {
+          "not_flag": "erdem_met"
+        }
+      ],
+      "text": "C1_HINT_GUARD"
+    },
+    {
+      "conditions": [
+        {
+          "flag": "erdem_met"
+        },
+        {
+          "not_flag": "visited_office"
+        }
+      ],
+      "text": "C1_HINT_MAP"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E02"
+        },
+        {
+          "flag": "aydin_met"
+        },
+        {
+          "not_flag": "aydin_caught"
+        }
+      ],
+      "text": "C1_HINT_AYDIN"
+    },
+    {
+      "conditions": [
+        {
+          "flag": "aydin_pressured"
+        },
+        {
+          "not_flag": "aydin_told"
+        }
+      ],
+      "text": "C1_HINT_AYDIN2"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E06"
+        },
+        {
+          "flag": "vardar_met"
+        },
+        {
+          "not_flag": "vardar_returned"
+        }
+      ],
+      "text": "C1_HINT_VARDAR"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_SM"
+        },
+        {
+          "has_insight": "I_EARRING"
+        },
+        {
+          "has_insight": "I_VARDAR_RETURNED"
+        },
+        {
+          "flag": "file_found"
+        },
+        {
+          "not_flag": "case_solved"
+        }
+      ],
+      "text": "C1_HINT_ACCUSE"
+    }
+  ],
+  "timeline_title": "C1_TIMELINE_TITLE"
+}

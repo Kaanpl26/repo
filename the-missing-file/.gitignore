@@ -1,0 +1,7 @@
+build/
+.godot/
+*.apk
+*.aab
+*.keystore
+*.jks
+*.tmp

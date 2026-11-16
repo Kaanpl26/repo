@@ -1,0 +1,251 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "guven_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "guven_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_INTRO_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_CLOSED",
+          "mood": "shaken"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "knew",
+          "t": "C2_GUVEN_Q_KNEW",
+          "next": "knew",
+          "conditions": [
+            {
+              "not_flag": "guven_source"
+            }
+          ]
+        },
+        {
+          "id": "meet",
+          "t": "C2_GUVEN_Q_MEET",
+          "next": "meet",
+          "conditions": [
+            {
+              "flag": "guven_source"
+            }
+          ]
+        },
+        {
+          "id": "told",
+          "t": "C2_GUVEN_Q_TOLD",
+          "next": "told",
+          "conditions": [
+            {
+              "flag": "guven_source"
+            }
+          ]
+        },
+        {
+          "id": "now",
+          "t": "C2_GUVEN_Q_NOW",
+          "next": "now",
+          "conditions": [
+            {
+              "flag": "guven_source"
+            },
+            {
+              "not_flag": "guven_decided"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C2_GUVEN_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "knew": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_KNEW_1",
+          "present": {
+            "accept": [
+              "E20",
+              "E03",
+              "I_LURE"
+            ],
+            "next": "source",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "source": {
+      "effects": [
+        {
+          "set_flag": "guven_source"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_GUVEN_SOURCE_1"
+        },
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_SOURCE_2",
+          "mood": "shaken"
+        },
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_SOURCE_3"
+        },
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_SOURCE_4",
+          "effects": [
+            {
+              "add_testimony": "T_GUVEN_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "meet": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_MEET_1",
+          "effects": [
+            {
+              "add_testimony": "T_GUVEN_1"
+            }
+          ],
+          "press": "press_meet"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_meet": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_GUVEN_P_MEET_1"
+        },
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_P_MEET_2"
+        }
+      ]
+    },
+    "told": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_TOLD_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "now": {
+      "effects": [
+        {
+          "set_flag": "guven_decided"
+        }
+      ],
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_NOW_1"
+        }
+      ],
+      "choices": [
+        {
+          "id": "protect",
+          "t": "C2_GUVEN_PROTECT",
+          "next": "protect",
+          "effects": [
+            {
+              "set_flag": "guven_protected"
+            }
+          ]
+        },
+        {
+          "id": "name",
+          "t": "C2_GUVEN_NAME",
+          "next": "name",
+          "effects": [
+            {
+              "set_flag": "guven_named"
+            }
+          ]
+        }
+      ]
+    },
+    "protect": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_PROTECT_A"
+        }
+      ],
+      "next": "hub"
+    },
+    "name": {
+      "lines": [
+        {
+          "s": "guven",
+          "t": "C2_GUVEN_NAME_A"
+        }
+      ],
+      "next": "hub"
+    }
+  },
+  "closed": "closed"
+}

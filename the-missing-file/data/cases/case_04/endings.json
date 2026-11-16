@@ -1,0 +1,160 @@
+{
+  "question": "C4_ACCUSE_QUESTION",
+  "culprit": "soykan",
+  "suspects": [
+    "yildiz",
+    "karaca",
+    "aras",
+    "soykan"
+  ],
+  "slots": [
+    "motive",
+    "opportunity",
+    "link"
+  ],
+  "proof": {
+    "soykan": {
+      "motive": [
+        "I_MOTIVE",
+        "I_AUTHORISED"
+      ],
+      "opportunity": [
+        "I_PRESENT"
+      ],
+      "link": [
+        "I_BLIND",
+        "I_ALONE"
+      ]
+    }
+  },
+  "full_requires": [
+    {
+      "has_evidence": "E14"
+    }
+  ],
+  "full": "A",
+  "partial": "B",
+  "accident": "E",
+  "wrong": {
+    "karaca": "C",
+    "yildiz": "D",
+    "aras": "D"
+  },
+  "accident_label": "C4_ACCUSE_FALL",
+  "accident_confirm": "C4_ACCUSE_FALL_CONFIRM",
+  "spoiled_flag": "ledger_burnt",
+  "carry": [
+    "aras_held",
+    "aras_released",
+    "chief_informed",
+    "chief_kept_out",
+    "file_found",
+    "karaca_offer",
+    "ledger_burnt",
+    "yildiz_deal",
+    "yildiz_threatened"
+  ],
+  "endings": {
+    "A": {
+      "title": "C4_END_A_TITLE",
+      "solved": true,
+      "epilogue": [
+        {
+          "conditions": [
+            {
+              "flag": "yildiz_deal"
+            }
+          ],
+          "text": "C4_EPI_YILDIZ_DEAL"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "yildiz_threatened"
+            }
+          ],
+          "text": "C4_EPI_YILDIZ_THREAT"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "aras_held"
+            }
+          ],
+          "text": "C4_EPI_ARAS_HELD"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "aras_released"
+            }
+          ],
+          "text": "C4_EPI_ARAS_GONE"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "chief_kept_out"
+            }
+          ],
+          "text": "C4_EPI_KEPT_OUT"
+        }
+      ],
+      "text": "C4_END_A_TEXT"
+    },
+    "B": {
+      "title": "C4_END_B_TITLE",
+      "solved": false,
+      "epilogue": [
+        {
+          "conditions": [
+            {
+              "flag": "yildiz_deal"
+            }
+          ],
+          "text": "C4_EPI_YILDIZ_DEAL"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "yildiz_threatened"
+            }
+          ],
+          "text": "C4_EPI_YILDIZ_THREAT"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "aras_held"
+            }
+          ],
+          "text": "C4_EPI_ARAS_HELD"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "aras_released"
+            }
+          ],
+          "text": "C4_EPI_ARAS_GONE"
+        }
+      ],
+      "text": "C4_END_B_TEXT"
+    },
+    "C": {
+      "title": "C4_END_C_TITLE",
+      "solved": false,
+      "text": "C4_END_C_TEXT"
+    },
+    "D": {
+      "title": "C4_END_D_TITLE",
+      "solved": false,
+      "text": "C4_END_D_TEXT"
+    },
+    "E": {
+      "title": "C4_END_E_TITLE",
+      "solved": false,
+      "text": "C4_END_E_TEXT"
+    }
+  }
+}

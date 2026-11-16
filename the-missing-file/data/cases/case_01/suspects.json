@@ -1,0 +1,152 @@
+{
+  "vardar": {
+    "role": "C1_SUS_VARDAR_ROLE",
+    "bio": "C1_SUS_VARDAR_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_evidence": "E02"
+          }
+        ],
+        "text": "C1_SUS_VARDAR_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_VARDAR_RETURNED"
+          }
+        ],
+        "text": "C1_SUS_VARDAR_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_VARDAR_1"
+          },
+          {
+            "not_flag": "vardar_returned"
+          }
+        ],
+        "text": "C1_SUS_VARDAR_N3"
+      },
+      {
+        "conditions": [
+          {
+            "flag": "vardar_returned"
+          }
+        ],
+        "text": "C1_SUS_VARDAR_N4"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_SM"
+          }
+        ],
+        "text": "C1_SUS_VARDAR_N5"
+      },
+      {
+        "conditions": [
+          {
+            "has_evidence": "E19"
+          }
+        ],
+        "text": "C1_SUS_VARDAR_N6"
+      }
+    ]
+  },
+  "aras": {
+    "role": "C1_SUS_ARAS_ROLE",
+    "bio": "C1_SUS_ARAS_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_evidence": "E01"
+          }
+        ],
+        "text": "C1_SUS_ARAS_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_ARAS_ELSEWHERE"
+          }
+        ],
+        "text": "C1_SUS_ARAS_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_ARAS_2"
+          }
+        ],
+        "text": "C1_SUS_ARAS_N3"
+      }
+    ]
+  },
+  "aydin": {
+    "role": "C1_SUS_AYDIN_ROLE",
+    "bio": "C1_SUS_AYDIN_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_ERDEM_4"
+          }
+        ],
+        "text": "C1_SUS_AYDIN_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_AYDIN_STAYED"
+          }
+        ],
+        "text": "C1_SUS_AYDIN_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_AYDIN_2"
+          }
+        ],
+        "text": "C1_SUS_AYDIN_N3"
+      }
+    ]
+  },
+  "erdem": {
+    "role": "C1_SUS_ERDEM_ROLE",
+    "bio": "C1_SUS_ERDEM_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_ERDEM_1"
+          },
+          {
+            "not_flag": "erdem_confessed"
+          }
+        ],
+        "text": "C1_SUS_ERDEM_N1"
+      },
+      {
+        "conditions": [
+          {
+            "flag": "erdem_confessed"
+          }
+        ],
+        "text": "C1_SUS_ERDEM_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_evidence": "E19"
+          }
+        ],
+        "text": "C1_SUS_ERDEM_N3"
+      }
+    ]
+  }
+}

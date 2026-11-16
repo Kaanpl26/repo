@@ -1,0 +1,21 @@
+{
+ "karaca": "assets/portraits/karaca.png",
+ "karaca_defensive": "assets/portraits/karaca_defensive.png",
+ "karaca_shaken": "assets/portraits/karaca_shaken.png",
+ "arikan": "assets/portraits/arikan.png",
+ "arikan_defensive": "assets/portraits/arikan_defensive.png",
+ "arikan_shaken": "assets/portraits/arikan_shaken.png",
+ "yildiz": "assets/portraits/yildiz.png",
+ "yildiz_defensive": "assets/portraits/yildiz_defensive.png",
+ "yildiz_shaken": "assets/portraits/yildiz_shaken.png",
+ "prison": "assets/scenes/prison.png",
+ "lawoffice": "assets/scenes/lawoffice.png",
+ "chief": "assets/scenes/chief.png",
+ "lighthouse": "assets/scenes/lighthouse.png",
+ "c4_ledger": "assets/evidence/c4_ledger.png",
+ "c4_camera": "assets/evidence/c4_camera.png",
+ "c4_key": "assets/evidence/c4_key.png",
+ "c4_photo": "assets/evidence/c4_photo.png",
+ "c4_can": "assets/evidence/c4_can.png",
+ "c4_stairs": "assets/evidence/c4_stairs.png"
+}

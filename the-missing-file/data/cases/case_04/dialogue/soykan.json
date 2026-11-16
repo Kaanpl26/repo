@@ -1,0 +1,257 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "soykan_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C4_SOYKAN_INTRO_2"
+        },
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_INTRO_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "soykan_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "where": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_WHERE_1",
+          "effects": [
+            {
+              "add_testimony": "T_SOYKAN_5"
+            }
+          ],
+          "press": "press_where",
+          "present": {
+            "accept": [
+              "E03",
+              "I_PRESENT",
+              "E11"
+            ],
+            "next": "caught",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_where": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_SOYKAN_P_WHERE_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_P_WHERE_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "caught": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_SOYKAN_CAUGHT_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_CAUGHT_2",
+          "mood": "defensive",
+          "effects": [
+            {
+              "add_testimony": "T_SOYKAN_6"
+            }
+          ]
+        },
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_CAUGHT_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "soykan_caught"
+        }
+      ]
+    },
+    "notes": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_NOTES_1"
+        },
+        {
+          "s": "mira",
+          "t": "C4_SOYKAN_NOTES_THINK"
+        }
+      ],
+      "choices": [
+        {
+          "id": "inform",
+          "t": "C4_SOYKAN_CHOICE_INFORM",
+          "next": "inform",
+          "effects": [
+            {
+              "set_flag": "chief_informed"
+            },
+            {
+              "set_flag": "chief_decided"
+            }
+          ]
+        },
+        {
+          "id": "hold",
+          "t": "C4_SOYKAN_CHOICE_HOLD",
+          "next": "hold",
+          "effects": [
+            {
+              "set_flag": "chief_kept_out"
+            },
+            {
+              "set_flag": "chief_decided"
+            }
+          ]
+        }
+      ]
+    },
+    "inform": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_INFORM_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "hold": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_HOLD_1",
+          "mood": "defensive"
+        },
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_HOLD_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "order": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_ORDER_1",
+          "press": "press_order"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_order": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_SOYKAN_P_ORDER_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C4_SOYKAN_P_ORDER_2"
+        }
+      ]
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "where",
+          "t": "C4_SOYKAN_Q_WHERE",
+          "next": "where",
+          "conditions": [
+            {
+              "not_flag": "soykan_caught"
+            }
+          ]
+        },
+        {
+          "id": "notes",
+          "t": "C4_SOYKAN_Q_NOTES",
+          "next": "notes",
+          "conditions": [
+            {
+              "not_flag": "chief_decided"
+            }
+          ]
+        },
+        {
+          "id": "order",
+          "t": "C4_SOYKAN_Q_ORDER",
+          "next": "order",
+          "conditions": [
+            {
+              "has_evidence": "E13"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C4_SOYKAN_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

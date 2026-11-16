@@ -1,0 +1,146 @@
+{
+  "LI_LIST": {
+    "cards": [
+      "L01",
+      "L03"
+    ],
+    "title": "OF_LI_LIST_TITLE",
+    "text": "OF_LI_LIST",
+    "wrong": [
+      "OF_LI_LIST_W1",
+      "OF_LI_LIST_W2"
+    ],
+    "question": "OF_LI_LIST_Q",
+    "key": "OF_LI_LIST_KEY",
+    "wrong_short": [
+      "OF_LI_LIST_WS1",
+      "OF_LI_LIST_WS2"
+    ]
+  },
+  "LI_SAME_HAND": {
+    "cards": [
+      "L02",
+      "L03"
+    ],
+    "title": "OF_LI_SAME_HAND_TITLE",
+    "text": "OF_LI_SAME_HAND",
+    "wrong": [
+      "OF_LI_SAME_HAND_W1",
+      "OF_LI_SAME_HAND_W2"
+    ],
+    "question": "OF_LI_SAME_HAND_Q",
+    "key": "OF_LI_SAME_HAND_KEY",
+    "wrong_short": [
+      "OF_LI_SAME_HAND_WS1",
+      "OF_LI_SAME_HAND_WS2"
+    ]
+  },
+  "LI_FENER": {
+    "cards": [
+      "L03",
+      "L04"
+    ],
+    "title": "OF_LI_FENER_TITLE",
+    "text": "OF_LI_FENER",
+    "wrong": [
+      "OF_LI_FENER_W1",
+      "OF_LI_FENER_W2"
+    ],
+    "question": "OF_LI_FENER_Q",
+    "key": "OF_LI_FENER_KEY",
+    "wrong_short": [
+      "OF_LI_FENER_WS1",
+      "OF_LI_FENER_WS2"
+    ]
+  },
+  "LI_LAW_OFFICE": {
+    "cards": [
+      "L05",
+      "L04"
+    ],
+    "title": "OF_LI_LAW_OFFICE_TITLE",
+    "text": "OF_LI_LAW_OFFICE",
+    "wrong": [
+      "OF_LI_LAW_OFFICE_W1",
+      "OF_LI_LAW_OFFICE_W2"
+    ],
+    "question": "OF_LI_LAW_OFFICE_Q",
+    "key": "OF_LI_LAW_OFFICE_KEY",
+    "wrong_short": [
+      "OF_LI_LAW_OFFICE_WS1",
+      "OF_LI_LAW_OFFICE_WS2"
+    ]
+  },
+  "LI_KARACA": {
+    "cards": [
+      "L04",
+      "L06"
+    ],
+    "title": "OF_LI_KARACA_TITLE",
+    "text": "OF_LI_KARACA",
+    "wrong": [
+      "OF_LI_KARACA_W1",
+      "OF_LI_KARACA_W2"
+    ],
+    "question": "OF_LI_KARACA_Q",
+    "key": "OF_LI_KARACA_KEY",
+    "wrong_short": [
+      "OF_LI_KARACA_WS1",
+      "OF_LI_KARACA_WS2"
+    ]
+  },
+  "LI_CHIEF": {
+    "cards": [
+      "L07",
+      "L08"
+    ],
+    "title": "OF_LI_CHIEF_TITLE",
+    "text": "OF_LI_CHIEF",
+    "wrong": [
+      "OF_LI_CHIEF_W1",
+      "OF_LI_CHIEF_W2"
+    ],
+    "question": "OF_LI_CHIEF_Q",
+    "key": "OF_LI_CHIEF_KEY",
+    "wrong_short": [
+      "OF_LI_CHIEF_WS1",
+      "OF_LI_CHIEF_WS2"
+    ]
+  },
+  "LI_OFFICER": {
+    "cards": [
+      "L09",
+      "L10"
+    ],
+    "title": "OF_LI_OFFICER_TITLE",
+    "text": "OF_LI_OFFICER",
+    "wrong": [
+      "OF_LI_OFFICER_W1",
+      "OF_LI_OFFICER_W2"
+    ],
+    "question": "OF_LI_OFFICER_Q",
+    "key": "OF_LI_OFFICER_KEY",
+    "wrong_short": [
+      "OF_LI_OFFICER_WS1",
+      "OF_LI_OFFICER_WS2"
+    ]
+  },
+  "LI_PAYROLL": {
+    "cards": [
+      "L11",
+      "L04"
+    ],
+    "title": "OF_LI_PAYROLL_TITLE",
+    "text": "OF_LI_PAYROLL",
+    "wrong": [
+      "OF_LI_PAYROLL_W1",
+      "OF_LI_PAYROLL_W2"
+    ],
+    "question": "OF_LI_PAYROLL_Q",
+    "key": "OF_LI_PAYROLL_KEY",
+    "wrong_short": [
+      "OF_LI_PAYROLL_WS1",
+      "OF_LI_PAYROLL_WS2"
+    ]
+  }
+}

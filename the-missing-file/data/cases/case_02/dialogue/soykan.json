@@ -1,0 +1,210 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "soykan_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "soykan_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C2_SOYKAN_INTRO_2"
+        },
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_INTRO_3"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "what",
+          "t": "C2_SOYKAN_Q_WHAT",
+          "next": "what"
+        },
+        {
+          "id": "why",
+          "t": "C2_SOYKAN_Q_WHY",
+          "next": "why"
+        },
+        {
+          "id": "who",
+          "t": "C2_SOYKAN_Q_WHO",
+          "next": "who"
+        },
+        {
+          "id": "bye",
+          "t": "C2_SOYKAN_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "what": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_WHAT_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_WHAT_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "why": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_WHY_1",
+          "effects": [
+            {
+              "add_testimony": "T_SOYKAN_2"
+            },
+            {
+              "set_flag": "soykan_remark"
+            }
+          ],
+          "press": "press_why"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_why": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_SOYKAN_P_WHY_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_P_WHY_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "who": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_WHO_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_WHO_2",
+          "effects": [
+            {
+              "add_testimony": "T_SOYKAN_1"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "hold",
+          "t": "C2_SOYKAN_HOLD",
+          "next": "hold",
+          "conditions": [
+            {
+              "not_flag": "kaplan_held"
+            },
+            {
+              "not_flag": "kaplan_free"
+            }
+          ],
+          "effects": [
+            {
+              "set_flag": "kaplan_held"
+            }
+          ]
+        },
+        {
+          "id": "wait",
+          "t": "C2_SOYKAN_WAIT",
+          "next": "wait",
+          "conditions": [
+            {
+              "not_flag": "kaplan_held"
+            },
+            {
+              "not_flag": "kaplan_free"
+            }
+          ],
+          "effects": [
+            {
+              "set_flag": "kaplan_free"
+            }
+          ]
+        },
+        {
+          "id": "back",
+          "t": "C2_SOYKAN_BACK",
+          "next": "hub",
+          "conditions": [
+            {
+              "flag": "soykan_decided"
+            }
+          ]
+        }
+      ]
+    },
+    "hold": {
+      "effects": [
+        {
+          "set_flag": "soykan_decided"
+        }
+      ],
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_HOLD_A"
+        }
+      ],
+      "next": "hub"
+    },
+    "wait": {
+      "effects": [
+        {
+          "set_flag": "soykan_decided"
+        }
+      ],
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C2_SOYKAN_WAIT_A",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    }
+  }
+}

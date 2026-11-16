@@ -1,0 +1,252 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "soykan_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C3_SOYKAN_INTRO_2"
+        },
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_INTRO_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "soykan_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "report": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_REPORT_1",
+          "effects": [
+            {
+              "add_testimony": "T_SOYKAN_3"
+            }
+          ],
+          "press": "press_report",
+          "present": {
+            "accept": [
+              "E18"
+            ],
+            "next": "register",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_report": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_SOYKAN_P_REPORT_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_P_REPORT_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "register": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_SOYKAN_REGISTER_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_REGISTER_2",
+          "mood": "defensive",
+          "effects": [
+            {
+              "add_testimony": "T_SOYKAN_4"
+            }
+          ]
+        },
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_REGISTER_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "soykan_register"
+        }
+      ]
+    },
+    "notes": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_NOTES_1"
+        },
+        {
+          "s": "mira",
+          "t": "C3_SOYKAN_NOTES_THINK"
+        }
+      ],
+      "choices": [
+        {
+          "id": "inform",
+          "t": "C3_SOYKAN_CHOICE_INFORM",
+          "next": "inform",
+          "effects": [
+            {
+              "set_flag": "chief_informed"
+            },
+            {
+              "set_flag": "chief_decided"
+            }
+          ]
+        },
+        {
+          "id": "hold",
+          "t": "C3_SOYKAN_CHOICE_HOLD",
+          "next": "hold",
+          "effects": [
+            {
+              "set_flag": "chief_kept_out"
+            },
+            {
+              "set_flag": "chief_decided"
+            }
+          ]
+        }
+      ]
+    },
+    "inform": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_INFORM_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "hold": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_HOLD_1",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "nur": {
+      "lines": [
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_NUR_1",
+          "press": "press_nur"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_nur": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_SOYKAN_P_NUR_1"
+        },
+        {
+          "s": "soykan",
+          "t": "C3_SOYKAN_P_NUR_2",
+          "mood": "defensive",
+          "effects": [
+            {
+              "set_flag": "soykan_slip"
+            }
+          ]
+        }
+      ]
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "report",
+          "t": "C3_SOYKAN_Q_REPORT",
+          "next": "report",
+          "conditions": [
+            {
+              "not_flag": "soykan_register"
+            }
+          ]
+        },
+        {
+          "id": "notes",
+          "t": "C3_SOYKAN_Q_NOTES",
+          "next": "notes",
+          "conditions": [
+            {
+              "not_flag": "chief_decided"
+            }
+          ]
+        },
+        {
+          "id": "nur",
+          "t": "C3_SOYKAN_Q_NUR",
+          "next": "nur"
+        },
+        {
+          "id": "bye",
+          "t": "C3_SOYKAN_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

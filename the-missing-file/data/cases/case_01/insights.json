@@ -1,0 +1,218 @@
+{
+  "I_UNGUARDED": {
+    "cards": [
+      "E02",
+      "T_ERDEM_2"
+    ],
+    "title": "C1_I_UNGUARDED_TITLE",
+    "text": "C1_I_UNGUARDED",
+    "wrong": [
+      "C1_I_UNGUARDED_W1",
+      "C1_I_UNGUARDED_W2"
+    ],
+    "question": "C1_I_UNGUARDED_Q",
+    "key": "C1_I_UNGUARDED_KEY",
+    "wrong_short": [
+      "C1_I_UNGUARDED_WS1",
+      "C1_I_UNGUARDED_WS2"
+    ]
+  },
+  "I_VARDAR_RETURNED": {
+    "cards": [
+      "E02",
+      "E06"
+    ],
+    "title": "C1_I_VARDAR_RETURNED_TITLE",
+    "text": "C1_I_VARDAR_RETURNED",
+    "wrong": [
+      "C1_I_VARDAR_RETURNED_W1",
+      "C1_I_VARDAR_RETURNED_W2"
+    ],
+    "question": "C1_I_VARDAR_RETURNED_Q",
+    "key": "C1_I_VARDAR_RETURNED_KEY",
+    "wrong_short": [
+      "C1_I_VARDAR_RETURNED_WS1",
+      "C1_I_VARDAR_RETURNED_WS2"
+    ]
+  },
+  "I_ARAS_ELSEWHERE": {
+    "cards": [
+      "E01",
+      "E15"
+    ],
+    "title": "C1_I_ARAS_ELSEWHERE_TITLE",
+    "text": "C1_I_ARAS_ELSEWHERE",
+    "wrong": [
+      "C1_I_ARAS_ELSEWHERE_W1",
+      "C1_I_ARAS_ELSEWHERE_W2"
+    ],
+    "question": "C1_I_ARAS_ELSEWHERE_Q",
+    "key": "C1_I_ARAS_ELSEWHERE_KEY",
+    "wrong_short": [
+      "C1_I_ARAS_ELSEWHERE_WS1",
+      "C1_I_ARAS_ELSEWHERE_WS2"
+    ]
+  },
+  "I_AYDIN_STAYED": {
+    "cards": [
+      "E02",
+      "T_ERDEM_4"
+    ],
+    "title": "C1_I_AYDIN_STAYED_TITLE",
+    "text": "C1_I_AYDIN_STAYED",
+    "wrong": [
+      "C1_I_AYDIN_STAYED_W1",
+      "C1_I_AYDIN_STAYED_W2"
+    ],
+    "question": "C1_I_AYDIN_STAYED_Q",
+    "key": "C1_I_AYDIN_STAYED_KEY",
+    "wrong_short": [
+      "C1_I_AYDIN_STAYED_WS1",
+      "C1_I_AYDIN_STAYED_WS2"
+    ]
+  },
+  "I_SIDE_DOOR": {
+    "cards": [
+      "E02",
+      "T_ERDEM_3"
+    ],
+    "title": "C1_I_SIDE_DOOR_TITLE",
+    "text": "C1_I_SIDE_DOOR",
+    "wrong": [
+      "C1_I_SIDE_DOOR_W1",
+      "C1_I_SIDE_DOOR_W2"
+    ],
+    "question": "C1_I_SIDE_DOOR_Q",
+    "key": "C1_I_SIDE_DOOR_KEY",
+    "wrong_short": [
+      "C1_I_SIDE_DOOR_WS1",
+      "C1_I_SIDE_DOOR_WS2"
+    ]
+  },
+  "I_NOT_ACCIDENT": {
+    "cards": [
+      "E12",
+      "E16"
+    ],
+    "title": "C1_I_NOT_ACCIDENT_TITLE",
+    "text": "C1_I_NOT_ACCIDENT",
+    "wrong": [
+      "C1_I_NOT_ACCIDENT_W1",
+      "C1_I_NOT_ACCIDENT_W2"
+    ],
+    "question": "C1_I_NOT_ACCIDENT_Q",
+    "key": "C1_I_NOT_ACCIDENT_KEY",
+    "wrong_short": [
+      "C1_I_NOT_ACCIDENT_WS1",
+      "C1_I_NOT_ACCIDENT_WS2"
+    ]
+  },
+  "I_SEARCH": {
+    "cards": [
+      "E11",
+      "E12"
+    ],
+    "title": "C1_I_SEARCH_TITLE",
+    "text": "C1_I_SEARCH",
+    "wrong": [
+      "C1_I_SEARCH_W1",
+      "C1_I_SEARCH_W2"
+    ],
+    "question": "C1_I_SEARCH_Q",
+    "key": "C1_I_SEARCH_KEY",
+    "wrong_short": [
+      "C1_I_SEARCH_WS1",
+      "C1_I_SEARCH_WS2"
+    ]
+  },
+  "I_SM": {
+    "cards": [
+      "E08",
+      "E18"
+    ],
+    "title": "C1_I_SM_TITLE",
+    "text": "C1_I_SM",
+    "wrong": [
+      "C1_I_SM_W1",
+      "C1_I_SM_W2"
+    ],
+    "question": "C1_I_SM_Q",
+    "key": "C1_I_SM_KEY",
+    "wrong_short": [
+      "C1_I_SM_WS1",
+      "C1_I_SM_WS2"
+    ]
+  },
+  "I_EMAIL": {
+    "cards": [
+      "E07",
+      "I_VARDAR_RETURNED"
+    ],
+    "title": "C1_I_EMAIL_TITLE",
+    "text": "C1_I_EMAIL",
+    "wrong": [
+      "C1_I_EMAIL_W1",
+      "C1_I_EMAIL_W2"
+    ],
+    "question": "C1_I_EMAIL_Q",
+    "key": "C1_I_EMAIL_KEY",
+    "wrong_short": [
+      "C1_I_EMAIL_WS1",
+      "C1_I_EMAIL_WS2"
+    ]
+  },
+  "I_ELEVATOR": {
+    "cards": [
+      "T_AYDIN_2",
+      "E19"
+    ],
+    "title": "C1_I_ELEVATOR_TITLE",
+    "text": "C1_I_ELEVATOR",
+    "wrong": [
+      "C1_I_ELEVATOR_W1",
+      "C1_I_ELEVATOR_W2"
+    ],
+    "question": "C1_I_ELEVATOR_Q",
+    "key": "C1_I_ELEVATOR_KEY",
+    "wrong_short": [
+      "C1_I_ELEVATOR_WS1",
+      "C1_I_ELEVATOR_WS2"
+    ]
+  },
+  "I_EARRING": {
+    "cards": [
+      "E13",
+      "E03"
+    ],
+    "title": "C1_I_EARRING_TITLE",
+    "text": "C1_I_EARRING",
+    "wrong": [
+      "C1_I_EARRING_W1",
+      "C1_I_EARRING_W2"
+    ],
+    "question": "C1_I_EARRING_Q",
+    "key": "C1_I_EARRING_KEY",
+    "wrong_short": [
+      "C1_I_EARRING_WS1",
+      "C1_I_EARRING_WS2"
+    ]
+  },
+  "I_MIRROR": {
+    "cards": [
+      "E09",
+      "E14"
+    ],
+    "title": "C1_I_MIRROR_TITLE",
+    "text": "C1_I_MIRROR",
+    "wrong": [
+      "C1_I_MIRROR_W1",
+      "C1_I_MIRROR_W2"
+    ],
+    "question": "C1_I_MIRROR_Q",
+    "key": "C1_I_MIRROR_KEY",
+    "wrong_short": [
+      "C1_I_MIRROR_WS1",
+      "C1_I_MIRROR_WS2"
+    ]
+  }
+}

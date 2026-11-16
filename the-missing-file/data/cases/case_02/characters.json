@@ -1,0 +1,43 @@
+{
+  "mira": {
+    "name": "C2_NAME_MIRA",
+    "voice": 1.24
+  },
+  "karaca": {
+    "name": "C2_NAME_KARACA",
+    "voice": 0.8
+  },
+  "soykan": {
+    "name": "C2_NAME_SOYKAN",
+    "portrait": "res://assets/portraits/soykan.png",
+    "dialogue": "soykan.json",
+    "voice": 0.66
+  },
+  "soylu": {
+    "name": "C2_NAME_SOYLU",
+    "portrait": "res://assets/portraits/soylu.png",
+    "dialogue": "soylu.json",
+    "patience": 3,
+    "voice": 1.1
+  },
+  "aktas": {
+    "name": "C2_NAME_AKTAS",
+    "portrait": "res://assets/portraits/aktas.png",
+    "dialogue": "aktas.json",
+    "patience": 2,
+    "voice": 1.36
+  },
+  "kaplan": {
+    "name": "C2_NAME_KAPLAN",
+    "portrait": "res://assets/portraits/kaplan.png",
+    "dialogue": "kaplan.json",
+    "voice": 0.76
+  },
+  "guven": {
+    "name": "C2_NAME_GUVEN",
+    "portrait": "res://assets/portraits/guven.png",
+    "dialogue": "guven.json",
+    "patience": 3,
+    "voice": 0.86
+  }
+}

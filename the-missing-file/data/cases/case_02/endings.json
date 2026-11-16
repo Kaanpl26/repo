@@ -1,0 +1,125 @@
+{
+  "question": "C2_ACCUSE_QUESTION",
+  "culprit": "soylu",
+  "suspects": [
+    "soylu",
+    "kaplan",
+    "guven",
+    "aktas"
+  ],
+  "slots": [
+    "motive",
+    "opportunity",
+    "link"
+  ],
+  "proof": {
+    "soylu": {
+      "motive": [
+        "I_MOTIVE"
+      ],
+      "opportunity": [
+        "I_LURE",
+        "I_CAR"
+      ],
+      "link": [
+        "I_PAINT"
+      ]
+    }
+  },
+  "full_requires": [
+    {
+      "has_evidence": "E13"
+    }
+  ],
+  "full": "A",
+  "partial": "B",
+  "accident": "E",
+  "wrong": {
+    "kaplan": "C",
+    "guven": "D",
+    "aktas": "D"
+  },
+  "spoiled_flag": "file_compromised",
+  "carry": [
+    "aktas_charged",
+    "aktas_spared",
+    "file_found",
+    "guven_named",
+    "guven_protected",
+    "guven_source",
+    "kaplan_free",
+    "kaplan_held",
+    "registry_seen",
+    "soykan_remark",
+    "soylu_cornered"
+  ],
+  "endings": {
+    "A": {
+      "title": "C2_END_A_TITLE",
+      "text": "C2_END_A_TEXT",
+      "solved": true,
+      "epilogue": [
+        {
+          "conditions": [
+            {
+              "flag": "kaplan_held"
+            }
+          ],
+          "text": "C2_EPI_KAPLAN_HELD"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "kaplan_free"
+            }
+          ],
+          "text": "C2_EPI_KAPLAN_FREE"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "guven_protected"
+            }
+          ],
+          "text": "C2_EPI_GUVEN_PROTECTED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "guven_named"
+            }
+          ],
+          "text": "C2_EPI_GUVEN_NAMED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "aktas_spared"
+            }
+          ],
+          "text": "C2_EPI_AKTAS"
+        }
+      ]
+    },
+    "B": {
+      "title": "C2_END_B_TITLE",
+      "text": "C2_END_B_TEXT",
+      "solved": false
+    },
+    "C": {
+      "title": "C2_END_C_TITLE",
+      "text": "C2_END_C_TEXT",
+      "solved": false
+    },
+    "D": {
+      "title": "C2_END_D_TITLE",
+      "text": "C2_END_D_TEXT",
+      "solved": false
+    },
+    "E": {
+      "title": "C2_END_E_TITLE",
+      "text": "C2_END_E_TEXT",
+      "solved": false
+    }
+  }
+}

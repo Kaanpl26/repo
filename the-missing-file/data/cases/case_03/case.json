@@ -1,0 +1,320 @@
+{
+  "id": "case_03",
+  "title": "C3_TITLE",
+  "start_location": "house",
+  "timeline_title": "C3_TIMELINE_TITLE",
+  "intro": [
+    "C3_INTRO_1",
+    "C3_INTRO_2",
+    "C3_INTRO_3"
+  ],
+  "testimony": {
+    "T_HATICE_1": {
+      "speaker": "hatice",
+      "title": "C3_T_HATICE_1_TITLE",
+      "text": "C3_T_HATICE_1"
+    },
+    "T_HATICE_2": {
+      "speaker": "hatice",
+      "title": "C3_T_HATICE_2_TITLE",
+      "text": "C3_T_HATICE_2"
+    },
+    "T_HATICE_3": {
+      "speaker": "hatice",
+      "title": "C3_T_HATICE_3_TITLE",
+      "text": "C3_T_HATICE_3"
+    },
+    "T_HATICE_4": {
+      "speaker": "hatice",
+      "title": "C3_T_HATICE_4_TITLE",
+      "text": "C3_T_HATICE_4"
+    },
+    "T_HATICE_5": {
+      "speaker": "hatice",
+      "title": "C3_T_HATICE_5_TITLE",
+      "text": "C3_T_HATICE_5"
+    },
+    "T_CEM_1": {
+      "speaker": "cem",
+      "title": "C3_T_CEM_1_TITLE",
+      "text": "C3_T_CEM_1"
+    },
+    "T_CEM_2": {
+      "speaker": "cem",
+      "title": "C3_T_CEM_2_TITLE",
+      "text": "C3_T_CEM_2"
+    },
+    "T_NUR_1": {
+      "speaker": "nur",
+      "title": "C3_T_NUR_1_TITLE",
+      "text": "C3_T_NUR_1"
+    },
+    "T_NUR_2": {
+      "speaker": "nur",
+      "title": "C3_T_NUR_2_TITLE",
+      "text": "C3_T_NUR_2"
+    },
+    "T_NUR_3": {
+      "speaker": "nur",
+      "title": "C3_T_NUR_3_TITLE",
+      "text": "C3_T_NUR_3"
+    },
+    "T_BULUT_1": {
+      "speaker": "bulut",
+      "title": "C3_T_BULUT_1_TITLE",
+      "text": "C3_T_BULUT_1"
+    },
+    "T_BULUT_2": {
+      "speaker": "bulut",
+      "title": "C3_T_BULUT_2_TITLE",
+      "text": "C3_T_BULUT_2"
+    },
+    "T_BULUT_3": {
+      "speaker": "bulut",
+      "title": "C3_T_BULUT_3_TITLE",
+      "text": "C3_T_BULUT_3"
+    },
+    "T_SOYKAN_3": {
+      "speaker": "soykan",
+      "title": "C3_T_SOYKAN_3_TITLE",
+      "text": "C3_T_SOYKAN_3"
+    },
+    "T_SOYKAN_4": {
+      "speaker": "soykan",
+      "title": "C3_T_SOYKAN_4_TITLE",
+      "text": "C3_T_SOYKAN_4"
+    },
+    "T_GUVEN_TIP": {
+      "speaker": "mira",
+      "title": "C3_T_GUVEN_TIP_TITLE",
+      "text": "C3_T_GUVEN_TIP"
+    }
+  },
+  "objectives": [
+    {
+      "id": "O_HATICE",
+      "text": "C3_OBJ_HATICE",
+      "show": [],
+      "done": [
+        {
+          "flag": "hatice_met"
+        }
+      ]
+    },
+    {
+      "id": "O_SCENE",
+      "text": "C3_OBJ_SCENE",
+      "show": [],
+      "done": [
+        {
+          "has_evidence": "E01"
+        },
+        {
+          "has_evidence": "E02"
+        },
+        {
+          "has_evidence": "E03"
+        },
+        {
+          "has_evidence": "E04"
+        },
+        {
+          "has_evidence": "E05"
+        },
+        {
+          "has_evidence": "E06"
+        },
+        {
+          "has_evidence": "E07"
+        },
+        {
+          "has_evidence": "E08"
+        }
+      ]
+    },
+    {
+      "id": "O_CAUSE",
+      "text": "C3_OBJ_CAUSE",
+      "show": [
+        {
+          "flag": "hatice_met"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_NOT_NATURAL"
+        }
+      ]
+    },
+    {
+      "id": "O_VISITORS",
+      "text": "C3_OBJ_VISITORS",
+      "show": [
+        {
+          "has_evidence": "E06"
+        }
+      ],
+      "done": [
+        {
+          "has_testimony": "T_CEM_2"
+        },
+        {
+          "has_testimony": "T_NUR_2"
+        },
+        {
+          "has_insight": "I_CALLER"
+        }
+      ]
+    },
+    {
+      "id": "O_FILE",
+      "text": "C3_OBJ_FILE",
+      "show": [
+        {
+          "has_evidence": "E06"
+        }
+      ],
+      "done": [
+        {
+          "flag": "file_found"
+        }
+      ]
+    },
+    {
+      "id": "O_POISON",
+      "text": "C3_OBJ_POISON",
+      "show": [
+        {
+          "has_insight": "I_NOT_NATURAL"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_POISON"
+        }
+      ]
+    },
+    {
+      "id": "O_WHO",
+      "text": "C3_OBJ_WHO",
+      "show": [
+        {
+          "has_insight": "I_CALLER"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_VISIT"
+        }
+      ]
+    },
+    {
+      "id": "O_ACCUSE",
+      "text": "C3_OBJ_ACCUSE",
+      "show": [
+        {
+          "has_insight": "I_NOT_NATURAL"
+        }
+      ],
+      "done": [
+        {
+          "flag": "case_solved"
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "conditions": [
+        {
+          "not_flag": "hatice_met"
+        }
+      ],
+      "text": "C3_HINT_HATICE"
+    },
+    {
+      "conditions": [
+        {
+          "flag": "hatice_met"
+        },
+        {
+          "not_flag": "visited_institute"
+        }
+      ],
+      "text": "C3_HINT_MAP"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E06"
+        },
+        {
+          "flag": "nur_met"
+        },
+        {
+          "not_flag": "nur_admit"
+        }
+      ],
+      "text": "C3_HINT_NUR"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E23"
+        },
+        {
+          "flag": "cem_met"
+        },
+        {
+          "not_flag": "cem_admit"
+        }
+      ],
+      "text": "C3_HINT_CEM"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E24"
+        },
+        {
+          "has_evidence": "E06"
+        },
+        {
+          "not_flag": "hatice_told"
+        }
+      ],
+      "text": "C3_HINT_TOLD"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_VISIT"
+        },
+        {
+          "flag": "bulut_met"
+        },
+        {
+          "not_flag": "bulut_out"
+        }
+      ],
+      "text": "C3_HINT_BULUT"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_MOTIVE"
+        },
+        {
+          "has_insight": "I_VISIT"
+        },
+        {
+          "has_insight": "I_POISON"
+        },
+        {
+          "not_flag": "case_solved"
+        }
+      ],
+      "text": "C3_HINT_ACCUSE"
+    }
+  ]
+}

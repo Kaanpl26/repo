@@ -1,0 +1,370 @@
+{
+  "id": "case_02",
+  "title": "C2_TITLE",
+  "start_location": "road",
+  "timeline_title": "C2_TIMELINE_TITLE",
+  "intro": [
+    "C2_INTRO_1",
+    "C2_INTRO_2",
+    "C2_INTRO_3"
+  ],
+  "testimony": {
+    "T_SOYKAN_1": {
+      "speaker": "soykan",
+      "title": "C2_T_SOYKAN_1_TITLE",
+      "text": "C2_T_SOYKAN_1"
+    },
+    "T_SOYKAN_2": {
+      "speaker": "soykan",
+      "title": "C2_T_SOYKAN_2_TITLE",
+      "text": "C2_T_SOYKAN_2"
+    },
+    "T_SOYLU_1": {
+      "speaker": "soylu",
+      "title": "C2_T_SOYLU_1_TITLE",
+      "text": "C2_T_SOYLU_1"
+    },
+    "T_SOYLU_2": {
+      "speaker": "soylu",
+      "title": "C2_T_SOYLU_2_TITLE",
+      "text": "C2_T_SOYLU_2"
+    },
+    "T_SOYLU_3": {
+      "speaker": "soylu",
+      "title": "C2_T_SOYLU_3_TITLE",
+      "text": "C2_T_SOYLU_3"
+    },
+    "T_SOYLU_4": {
+      "speaker": "soylu",
+      "title": "C2_T_SOYLU_4_TITLE",
+      "text": "C2_T_SOYLU_4"
+    },
+    "T_AKTAS_1": {
+      "speaker": "aktas",
+      "title": "C2_T_AKTAS_1_TITLE",
+      "text": "C2_T_AKTAS_1"
+    },
+    "T_AKTAS_2": {
+      "speaker": "aktas",
+      "title": "C2_T_AKTAS_2_TITLE",
+      "text": "C2_T_AKTAS_2"
+    },
+    "T_AKTAS_3": {
+      "speaker": "aktas",
+      "title": "C2_T_AKTAS_3_TITLE",
+      "text": "C2_T_AKTAS_3"
+    },
+    "T_KAPLAN_1": {
+      "speaker": "kaplan",
+      "title": "C2_T_KAPLAN_1_TITLE",
+      "text": "C2_T_KAPLAN_1"
+    },
+    "T_KAPLAN_2": {
+      "speaker": "kaplan",
+      "title": "C2_T_KAPLAN_2_TITLE",
+      "text": "C2_T_KAPLAN_2"
+    },
+    "T_GUVEN_1": {
+      "speaker": "guven",
+      "title": "C2_T_GUVEN_1_TITLE",
+      "text": "C2_T_GUVEN_1"
+    },
+    "T_GUVEN_2": {
+      "speaker": "guven",
+      "title": "C2_T_GUVEN_2_TITLE",
+      "text": "C2_T_GUVEN_2"
+    },
+    "T_ERDEM_TIP": {
+      "speaker": "mira",
+      "title": "C2_T_ERDEM_TIP_TITLE",
+      "text": "C2_T_ERDEM_TIP"
+    },
+    "T_AYDIN_TIP": {
+      "speaker": "mira",
+      "title": "C2_T_AYDIN_TIP_TITLE",
+      "text": "C2_T_AYDIN_TIP"
+    }
+  },
+  "objectives": [
+    {
+      "id": "O_CHIEF",
+      "text": "C2_OBJ_CHIEF",
+      "show": [],
+      "done": [
+        {
+          "flag": "soykan_met"
+        }
+      ]
+    },
+    {
+      "id": "O_SCENE",
+      "text": "C2_OBJ_SCENE",
+      "show": [],
+      "done": [
+        {
+          "has_evidence": "E01"
+        },
+        {
+          "has_evidence": "E02"
+        },
+        {
+          "has_evidence": "E03"
+        },
+        {
+          "has_evidence": "E04"
+        },
+        {
+          "has_evidence": "E05"
+        },
+        {
+          "has_evidence": "E06"
+        }
+      ]
+    },
+    {
+      "id": "O_ACCIDENT",
+      "text": "C2_OBJ_ACCIDENT",
+      "show": [
+        {
+          "has_evidence": "E01"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_NOT_ACCIDENT"
+        }
+      ]
+    },
+    {
+      "id": "O_NEWSROOM",
+      "text": "C2_OBJ_NEWSROOM",
+      "show": [
+        {
+          "flag": "soykan_met"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E07"
+        },
+        {
+          "has_evidence": "E08"
+        },
+        {
+          "has_evidence": "E09"
+        },
+        {
+          "has_evidence": "E10"
+        },
+        {
+          "has_evidence": "E11"
+        }
+      ]
+    },
+    {
+      "id": "O_SITE",
+      "text": "C2_OBJ_SITE",
+      "show": [
+        {
+          "flag": "soykan_met"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E14"
+        },
+        {
+          "has_evidence": "E15"
+        },
+        {
+          "has_evidence": "E16"
+        },
+        {
+          "has_evidence": "E17"
+        },
+        {
+          "has_evidence": "E18"
+        }
+      ]
+    },
+    {
+      "id": "O_PLANNING",
+      "text": "C2_OBJ_PLANNING",
+      "show": [
+        {
+          "flag": "soykan_met"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E19"
+        },
+        {
+          "has_evidence": "E20"
+        }
+      ]
+    },
+    {
+      "id": "O_PEOPLE",
+      "text": "C2_OBJ_PEOPLE",
+      "show": [
+        {
+          "flag": "soykan_met"
+        }
+      ],
+      "done": [
+        {
+          "flag": "soylu_met"
+        },
+        {
+          "flag": "aktas_met"
+        },
+        {
+          "flag": "kaplan_met"
+        },
+        {
+          "flag": "guven_met"
+        }
+      ]
+    },
+    {
+      "id": "O_DATABASE",
+      "text": "C2_OBJ_DATABASE",
+      "show": [
+        {
+          "has_evidence": "E03"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E21"
+        },
+        {
+          "has_evidence": "E22"
+        }
+      ]
+    },
+    {
+      "id": "O_LAPTOP",
+      "text": "C2_OBJ_LAPTOP",
+      "show": [
+        {
+          "has_evidence": "E08"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E12"
+        }
+      ]
+    },
+    {
+      "id": "O_KEY",
+      "text": "C2_OBJ_KEY",
+      "show": [
+        {
+          "has_evidence": "E04"
+        }
+      ],
+      "done": [
+        {
+          "flag": "file_found"
+        }
+      ]
+    },
+    {
+      "id": "O_WHO",
+      "text": "C2_OBJ_WHO",
+      "show": [
+        {
+          "has_insight": "I_NOT_ACCIDENT"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_CAR"
+        }
+      ]
+    },
+    {
+      "id": "O_ACCUSE",
+      "text": "C2_OBJ_ACCUSE",
+      "show": [
+        {
+          "has_insight": "I_NOT_ACCIDENT"
+        }
+      ],
+      "done": [
+        {
+          "flag": "case_solved"
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "conditions": [
+        {
+          "not_flag": "soykan_met"
+        }
+      ],
+      "text": "C2_HINT_CHIEF"
+    },
+    {
+      "conditions": [
+        {
+          "flag": "soykan_met"
+        },
+        {
+          "not_flag": "visited_newsroom"
+        }
+      ],
+      "text": "C2_HINT_MAP"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E09"
+        },
+        {
+          "flag": "aktas_met"
+        },
+        {
+          "not_flag": "aktas_caught"
+        }
+      ],
+      "text": "C2_HINT_AKTAS"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E20"
+        },
+        {
+          "flag": "guven_met"
+        },
+        {
+          "not_flag": "guven_source"
+        }
+      ],
+      "text": "C2_HINT_GUVEN"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_MOTIVE"
+        },
+        {
+          "has_insight": "I_PAINT"
+        },
+        {
+          "has_insight": "I_CAR"
+        },
+        {
+          "not_flag": "case_solved"
+        }
+      ],
+      "text": "C2_HINT_ACCUSE"
+    }
+  ]
+}

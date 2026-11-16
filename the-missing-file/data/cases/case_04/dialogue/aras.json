@@ -1,0 +1,193 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "aras_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C4_ARAS_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C4_ARAS_INTRO_2"
+        },
+        {
+          "s": "aras",
+          "t": "C4_ARAS_INTRO_3",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "aras_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C4_ARAS_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C4_ARAS_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C4_ARAS_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "fener": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C4_ARAS_FENER_1",
+          "effects": [
+            {
+              "add_testimony": "T_ARAS_1"
+            }
+          ],
+          "press": "press_fener",
+          "present": {
+            "accept": [
+              "E12",
+              "I_COMMITTEE"
+            ],
+            "next": "halil",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_fener": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_ARAS_P_FENER_1"
+        },
+        {
+          "s": "aras",
+          "t": "C4_ARAS_P_FENER_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "halil": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_ARAS_HALIL_1"
+        },
+        {
+          "s": "aras",
+          "t": "C4_ARAS_HALIL_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_ARAS_2"
+            }
+          ]
+        },
+        {
+          "s": "mira",
+          "t": "C4_ARAS_HALIL_THINK"
+        }
+      ],
+      "effects": [
+        {
+          "set_flag": "aras_talked"
+        }
+      ],
+      "choices": [
+        {
+          "id": "hold",
+          "t": "C4_ARAS_CHOICE_HOLD",
+          "next": "hold",
+          "effects": [
+            {
+              "set_flag": "aras_held"
+            }
+          ]
+        },
+        {
+          "id": "release",
+          "t": "C4_ARAS_CHOICE_RELEASE",
+          "next": "release",
+          "effects": [
+            {
+              "set_flag": "aras_released"
+            }
+          ]
+        }
+      ]
+    },
+    "hold": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C4_ARAS_HOLD_1",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "release": {
+      "lines": [
+        {
+          "s": "aras",
+          "t": "C4_ARAS_RELEASE_1",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "fener",
+          "t": "C4_ARAS_Q_FENER",
+          "next": "fener",
+          "conditions": [
+            {
+              "not_flag": "aras_talked"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C4_ARAS_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

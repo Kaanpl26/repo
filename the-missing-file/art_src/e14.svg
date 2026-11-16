@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><defs><filter id="grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.07 0"/></filter>
+<filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+<filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter></defs><circle cx="256" cy="256" r="236" fill="#1b2230" stroke="#2a3446" stroke-width="6"/><path d="M110 200 L402 200 L402 410 L110 410 Z" fill="#7a6850"/><path d="M130 220 L382 220 L382 300 L130 300 Z" fill="#05070b"/><rect x="150" y="330" width="130" height="50" fill="#e8dfc8"/><rect x="162" y="346" width="80" height="10" fill="#1d1a16"/><path d="M96 150 L416 150 L402 200 L110 200 Z" fill="#84705a" transform="rotate(-10 256 175) translate(20 -36)"/><circle cx="340" cy="356" r="14" fill="#00000066"/></svg>

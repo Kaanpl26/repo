@@ -1,0 +1,42 @@
+[
+  {
+    "id": "case_01",
+    "number": 1,
+    "title": "C1_TITLE",
+    "available": true,
+    "unlock": []
+  },
+  {
+    "id": "case_02",
+    "number": 2,
+    "title": "C2_TITLE",
+    "available": true,
+    "unlock": [
+      {
+        "case_closed": "case_01"
+      }
+    ]
+  },
+  {
+    "id": "case_03",
+    "number": 3,
+    "title": "C3_TITLE",
+    "available": true,
+    "unlock": [
+      {
+        "case_closed": "case_02"
+      }
+    ]
+  },
+  {
+    "id": "case_04",
+    "number": 4,
+    "title": "C4_TITLE",
+    "available": true,
+    "unlock": [
+      {
+        "case_closed": "case_03"
+      }
+    ]
+  }
+]

@@ -1,0 +1,575 @@
+{
+  "lobby": {
+    "name": "C1_LOC_LOBBY",
+    "background": "res://assets/scenes/lobby.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1700,
+    "hotspots": [
+      {
+        "id": "door",
+        "type": "detail",
+        "rect": [
+          80,
+          190,
+          450,
+          640
+        ],
+        "text": "C1_LOBBY_DOOR"
+      },
+      {
+        "id": "newspaper",
+        "type": "evidence",
+        "rect": [
+          585,
+          545,
+          200,
+          290
+        ],
+        "evidence": "E15"
+      },
+      {
+        "id": "staff_board",
+        "type": "evidence",
+        "rect": [
+          870,
+          180,
+          420,
+          300
+        ],
+        "evidence": "E03"
+      },
+      {
+        "id": "clock",
+        "type": "detail",
+        "rect": [
+          1345,
+          135,
+          150,
+          150
+        ],
+        "text": "C1_LOBBY_CLOCK"
+      },
+      {
+        "id": "erdem",
+        "type": "talk",
+        "rect": [
+          1560,
+          235,
+          240,
+          370
+        ],
+        "character": "erdem"
+      },
+      {
+        "id": "visitor_log",
+        "type": "evidence",
+        "rect": [
+          1285,
+          540,
+          240,
+          100
+        ],
+        "evidence": "E01"
+      },
+      {
+        "id": "lamp",
+        "type": "detail",
+        "rect": [
+          1490,
+          470,
+          70,
+          80
+        ],
+        "text": "C1_LOBBY_LAMP"
+      },
+      {
+        "id": "patrol_log",
+        "type": "evidence",
+        "rect": [
+          1835,
+          490,
+          145,
+          125
+        ],
+        "evidence": "E04"
+      },
+      {
+        "id": "terminal_locked",
+        "type": "detail",
+        "rect": [
+          1995,
+          435,
+          215,
+          180
+        ],
+        "text": "C1_LOBBY_TERMINAL_LOCKED",
+        "conditions": [
+          {
+            "not_flag": "erdem_confessed"
+          }
+        ]
+      },
+      {
+        "id": "terminal",
+        "type": "evidence",
+        "rect": [
+          1995,
+          435,
+          215,
+          180
+        ],
+        "evidence": "E06",
+        "conditions": [
+          {
+            "flag": "erdem_confessed"
+          }
+        ]
+      },
+      {
+        "id": "bin",
+        "type": "evidence",
+        "rect": [
+          2270,
+          725,
+          150,
+          185
+        ],
+        "evidence": "E05"
+      },
+      {
+        "id": "card_reader",
+        "type": "evidence",
+        "rect": [
+          2480,
+          410,
+          110,
+          170
+        ],
+        "evidence": "E02"
+      },
+      {
+        "id": "stacks_door",
+        "type": "detail",
+        "rect": [
+          2610,
+          150,
+          240,
+          680
+        ],
+        "text": "C1_LOBBY_STACKS_DOOR",
+        "conditions": [
+          {
+            "not_flag": "visited_office"
+          }
+        ]
+      },
+      {
+        "id": "stacks_exit",
+        "type": "exit",
+        "rect": [
+          2610,
+          150,
+          240,
+          680
+        ],
+        "target": "stacks",
+        "conditions": [
+          {
+            "flag": "visited_office"
+          }
+        ]
+      }
+    ],
+    "hints": [
+      {
+        "conditions": [
+          {
+            "not_flag": "erdem_confessed"
+          }
+        ],
+        "text": "C1_HINT_TERMINAL"
+      }
+    ],
+    "ambience": "rain"
+  },
+  "office": {
+    "name": "C1_LOC_OFFICE",
+    "background": "res://assets/scenes/office.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1700,
+    "ambience": "rain",
+    "unlock": [
+      {
+        "flag": "erdem_met"
+      }
+    ],
+    "on_enter": {
+      "caption": "C1_ENTER_OFFICE"
+    },
+    "hotspots": [
+      {
+        "id": "office_window",
+        "type": "detail",
+        "rect": [
+          114,
+          164,
+          432,
+          452
+        ],
+        "text": "C1_D_OFFICE_WINDOW"
+      },
+      {
+        "id": "office_scanner",
+        "type": "detail",
+        "rect": [
+          890,
+          655,
+          150,
+          75
+        ],
+        "text": "C1_D_OFFICE_SCANNER"
+      },
+      {
+        "id": "aydin",
+        "type": "talk",
+        "rect": [
+          690,
+          350,
+          270,
+          300
+        ],
+        "character": "aydin"
+      },
+      {
+        "id": "email",
+        "type": "evidence",
+        "rect": [
+          1370,
+          425,
+          240,
+          180
+        ],
+        "evidence": "E07"
+      },
+      {
+        "id": "notebook",
+        "type": "evidence",
+        "rect": [
+          1650,
+          535,
+          180,
+          80
+        ],
+        "evidence": "E08"
+      },
+      {
+        "id": "calendar",
+        "type": "evidence",
+        "rect": [
+          1845,
+          505,
+          130,
+          105
+        ],
+        "evidence": "E09"
+      },
+      {
+        "id": "letter",
+        "type": "evidence",
+        "rect": [
+          2020,
+          535,
+          195,
+          80
+        ],
+        "evidence": "E10"
+      },
+      {
+        "id": "drawers",
+        "type": "evidence",
+        "rect": [
+          1895,
+          650,
+          340,
+          240
+        ],
+        "evidence": "E11"
+      },
+      {
+        "id": "office_coat",
+        "type": "detail",
+        "rect": [
+          2470,
+          210,
+          210,
+          620
+        ],
+        "text": "C1_D_OFFICE_COAT"
+      },
+      {
+        "id": "office_cabinet",
+        "type": "detail",
+        "rect": [
+          2700,
+          370,
+          170,
+          460
+        ],
+        "text": "C1_D_OFFICE_CABINET"
+      }
+    ],
+    "hints": []
+  },
+  "stacks": {
+    "name": "C1_LOC_STACKS",
+    "background": "res://assets/scenes/stacks.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1300,
+    "ambience": "basement",
+    "unlock": [
+      {
+        "flag": "visited_office"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "stairs",
+        "type": "detail",
+        "rect": [
+          130,
+          0,
+          520,
+          780
+        ],
+        "text": "C1_D_STAIRS"
+      },
+      {
+        "id": "outline",
+        "type": "detail",
+        "rect": [
+          420,
+          860,
+          470,
+          160
+        ],
+        "text": "C1_D_OUTLINE"
+      },
+      {
+        "id": "shelf_a",
+        "type": "detail",
+        "rect": [
+          1720,
+          120,
+          500,
+          600
+        ],
+        "text": "C1_D_SHELF_A"
+      },
+      {
+        "id": "shelf_b",
+        "type": "detail",
+        "rect": [
+          2330,
+          120,
+          500,
+          600
+        ],
+        "text": "C1_D_SHELF_B"
+      },
+      {
+        "id": "earring",
+        "type": "evidence",
+        "rect": [
+          880,
+          770,
+          150,
+          90
+        ],
+        "evidence": "E13"
+      },
+      {
+        "id": "effects",
+        "type": "evidence",
+        "rect": [
+          1300,
+          630,
+          180,
+          80
+        ],
+        "evidence": "E12"
+      },
+      {
+        "id": "coroner",
+        "type": "evidence",
+        "rect": [
+          1545,
+          640,
+          130,
+          170
+        ],
+        "evidence": "E16"
+      },
+      {
+        "id": "box47",
+        "type": "evidence",
+        "rect": [
+          1830,
+          300,
+          150,
+          140
+        ],
+        "evidence": "E14"
+      },
+      {
+        "id": "box74",
+        "type": "evidence",
+        "rect": [
+          2545,
+          420,
+          145,
+          140
+        ],
+        "evidence": "E17",
+        "conditions": [
+          {
+            "has_insight": "I_MIRROR"
+          },
+          {
+            "not_flag": "file_compromised"
+          }
+        ]
+      },
+      {
+        "id": "box74x",
+        "type": "evidence",
+        "rect": [
+          2545,
+          420,
+          145,
+          140
+        ],
+        "evidence": "E17X",
+        "conditions": [
+          {
+            "has_insight": "I_MIRROR"
+          },
+          {
+            "flag": "file_compromised"
+          }
+        ]
+      }
+    ],
+    "hints": [
+      {
+        "conditions": [
+          {
+            "has_evidence": "E14"
+          },
+          {
+            "no_insight": "I_MIRROR"
+          },
+          {
+            "not_flag": "file_found"
+          }
+        ],
+        "text": "C1_HINT_FILE"
+      }
+    ]
+  },
+  "director": {
+    "name": "C1_LOC_DIRECTOR",
+    "background": "res://assets/scenes/director.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "unlock": [
+      {
+        "flag": "erdem_met"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "bookcase",
+        "type": "detail",
+        "rect": [
+          70,
+          150,
+          330,
+          680
+        ],
+        "text": "C1_D_BOOKCASE"
+      },
+      {
+        "id": "dir_window",
+        "type": "detail",
+        "rect": [
+          2114,
+          144,
+          612,
+          492
+        ],
+        "text": "C1_D_DIR_WINDOW"
+      },
+      {
+        "id": "diploma",
+        "type": "evidence",
+        "rect": [
+          510,
+          190,
+          390,
+          260
+        ],
+        "evidence": "E18"
+      },
+      {
+        "id": "vardar",
+        "type": "talk",
+        "rect": [
+          1130,
+          230,
+          260,
+          400
+        ],
+        "character": "vardar"
+      },
+      {
+        "id": "photo",
+        "type": "detail",
+        "rect": [
+          1460,
+          556,
+          110,
+          90
+        ],
+        "text": "C1_D_PHOTO"
+      },
+      {
+        "id": "keys",
+        "type": "evidence",
+        "rect": [
+          1650,
+          210,
+          220,
+          240
+        ],
+        "evidence": "E19"
+      },
+      {
+        "id": "aras",
+        "type": "talk",
+        "rect": [
+          1920,
+          280,
+          240,
+          310
+        ],
+        "character": "aras"
+      }
+    ],
+    "hints": []
+  }
+}

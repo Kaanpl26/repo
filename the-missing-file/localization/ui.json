@@ -1,0 +1,1074 @@
+{
+  "LANG_NAME_EN": {
+    "en": "English",
+    "tr": "English"
+  },
+  "LANG_NAME_TR": {
+    "en": "Türkçe",
+    "tr": "Türkçe"
+  },
+  "GAME_TITLE": {
+    "en": "The Missing File",
+    "tr": "Kayıp Dosya"
+  },
+  "GAME_SUBTITLE": {
+    "en": "A detective mystery",
+    "tr": "Bir dedektiflik hikâyesi"
+  },
+  "MENU_CONTINUE": {
+    "en": "Continue",
+    "tr": "Devam Et"
+  },
+  "MENU_SETTINGS": {
+    "en": "Settings",
+    "tr": "Ayarlar"
+  },
+  "MENU_OVERWRITE_WARNING": {
+    "en": "Starting over erases your current progress in this case. Your rank, best grade and achievements are kept. Continue?",
+    "tr": "Baştan başlarsanız bu dosyadaki mevcut ilerlemeniz silinir. Rütbeniz, en iyi değerlendirmeniz ve başarılarınız korunur. Devam edilsin mi?"
+  },
+  "MENU_OVERWRITE_CONFIRM": {
+    "en": "Start Over",
+    "tr": "Baştan Başla"
+  },
+  "COMMON_CANCEL": {
+    "en": "Cancel",
+    "tr": "Vazgeç"
+  },
+  "COMMON_CLOSE": {
+    "en": "Close",
+    "tr": "Kapat"
+  },
+  "SETTINGS_TITLE": {
+    "en": "Settings",
+    "tr": "Ayarlar"
+  },
+  "SETTINGS_LANGUAGE": {
+    "en": "Language",
+    "tr": "Dil"
+  },
+  "SETTINGS_TEXT_SIZE": {
+    "en": "Text size",
+    "tr": "Yazı boyutu"
+  },
+  "SETTINGS_TEXT_SMALL": {
+    "en": "Small",
+    "tr": "Küçük"
+  },
+  "SETTINGS_TEXT_NORMAL": {
+    "en": "Normal",
+    "tr": "Normal"
+  },
+  "SETTINGS_TEXT_LARGE": {
+    "en": "Large",
+    "tr": "Büyük"
+  },
+  "HUD_MENU": {
+    "en": "Menu",
+    "tr": "Menü"
+  },
+  "HUD_CASE_FILE": {
+    "en": "Case File",
+    "tr": "Dava Dosyası"
+  },
+  "HUD_EVIDENCE_COUNT": {
+    "en": "Evidence %d/%d",
+    "tr": "Delil %d/%d"
+  },
+  "TOAST_EVIDENCE_ADDED": {
+    "en": "Added to the case file",
+    "tr": "Dava dosyasına eklendi"
+  },
+  "EVIDENCE_NEW": {
+    "en": "New evidence",
+    "tr": "Yeni delil"
+  },
+  "EVIDENCE_ADD": {
+    "en": "Add to Case File",
+    "tr": "Dosyaya Ekle"
+  },
+  "DLG_TAP_TO_CONTINUE": {
+    "en": "Tap to continue",
+    "tr": "Devam etmek için dokunun"
+  },
+  "DLG_PRESENT": {
+    "en": "Present Evidence",
+    "tr": "Delil Göster"
+  },
+  "DLG_PRESENT_TITLE": {
+    "en": "Which card contradicts this?",
+    "tr": "Bu ifadeyi hangi kart çürütüyor?"
+  },
+  "CASEFILE_TITLE": {
+    "en": "Case File",
+    "tr": "Dava Dosyası"
+  },
+  "CASEFILE_EVIDENCE": {
+    "en": "Evidence",
+    "tr": "Deliller"
+  },
+  "CASEFILE_TESTIMONY": {
+    "en": "Testimony",
+    "tr": "İfadeler"
+  },
+  "CASEFILE_NO_EVIDENCE": {
+    "en": "Nothing collected yet. Tap things in the scene to examine them.",
+    "tr": "Henüz delil toplanmadı. İncelemek için sahnedeki nesnelere dokunun."
+  },
+  "CASEFILE_NO_TESTIMONY": {
+    "en": "No statements recorded yet.",
+    "tr": "Henüz kayda geçen ifade yok."
+  },
+  "PAUSE_TITLE": {
+    "en": "Paused",
+    "tr": "Duraklatıldı"
+  },
+  "PAUSE_RESUME": {
+    "en": "Resume",
+    "tr": "Devam Et"
+  },
+  "PAUSE_MAIN_MENU": {
+    "en": "Main Menu",
+    "tr": "Ana Menü"
+  },
+  "PAUSE_AUTOSAVE_NOTE": {
+    "en": "Your progress is saved automatically.",
+    "tr": "İlerlemeniz otomatik olarak kaydedilir."
+  },
+  "HUD_HINT": {
+    "en": "Hint",
+    "tr": "İpucu"
+  },
+  "HINT_NOTHING_HERE": {
+    "en": "There is nothing more to find here for now.",
+    "tr": "Şimdilik burada bulunacak başka bir şey yok."
+  },
+  "TUTORIAL_LOOK": {
+    "en": "Drag left and right to look around the room. Tap anything that looks important. Stuck? Tap Hint.",
+    "tr": "Odaya göz atmak için sağa sola sürükleyin. Önemli görünen her şeye dokunun. Takıldınız mı? İpucu'na dokunun."
+  },
+  "HUD_BOARD": {
+    "en": "Board",
+    "tr": "Pano"
+  },
+  "TOAST_INSIGHT": {
+    "en": "New conclusion on the Board",
+    "tr": "Panoya yeni bir sonuç eklendi"
+  },
+  "TOAST_TESTIMONY": {
+    "en": "Statement recorded",
+    "tr": "İfade kayda geçti"
+  },
+  "TAB_OBJECTIVES": {
+    "en": "Objectives",
+    "tr": "Hedefler"
+  },
+  "TAB_EVIDENCE": {
+    "en": "Evidence",
+    "tr": "Deliller"
+  },
+  "TAB_SUSPECTS": {
+    "en": "Suspects",
+    "tr": "Şüpheliler"
+  },
+  "TAB_TIMELINE": {
+    "en": "Timeline",
+    "tr": "Zaman Çizelgesi"
+  },
+  "OBJ_DONE": {
+    "en": "Done",
+    "tr": "Tamamlandı"
+  },
+  "TIMELINE_EMPTY": {
+    "en": "Nothing on the timeline yet. Evidence with a time on it will appear here.",
+    "tr": "Zaman çizelgesi henüz boş. Üzerinde saat olan deliller burada görünecek."
+  },
+  "TIMELINE_DISPUTED": {
+    "en": "Contradicted",
+    "tr": "Çürütüldü"
+  },
+  "SUSPECT_NO_NOTES": {
+    "en": "No notes yet.",
+    "tr": "Henüz not yok."
+  },
+  "SUSPECT_ACCUSE": {
+    "en": "Make an Accusation",
+    "tr": "Suçlamada Bulun"
+  },
+  "BOARD_TITLE": {
+    "en": "Evidence Board",
+    "tr": "Delil Panosu"
+  },
+  "BOARD_HELP": {
+    "en": "Tap two cards and press Connect. Tap a question above to see which cards matter.",
+    "tr": "İki karta dokunup Bağla'ya basın. Hangi kartların önemli olduğunu görmek için yukarıdaki bir soruya dokunun."
+  },
+  "BOARD_CONCLUSIONS": {
+    "en": "Conclusions",
+    "tr": "Sonuçlar"
+  },
+  "BOARD_STATEMENTS": {
+    "en": "Statements",
+    "tr": "İfadeler"
+  },
+  "BOARD_NO_CONCLUSIONS": {
+    "en": "No conclusions yet.",
+    "tr": "Henüz bir sonuca varılmadı."
+  },
+  "BOARD_CONNECT": {
+    "en": "Connect",
+    "tr": "Bağla"
+  },
+  "BOARD_VIEW": {
+    "en": "View",
+    "tr": "İncele"
+  },
+  "BOARD_CLEAR": {
+    "en": "Clear",
+    "tr": "Temizle"
+  },
+  "BOARD_SLOT_EMPTY": {
+    "en": "Choose a card",
+    "tr": "Bir kart seçin"
+  },
+  "BOARD_NO_LINK": {
+    "en": "There is no clear connection between these two.",
+    "tr": "Bu ikisi arasında belirgin bir bağlantı yok."
+  },
+  "BOARD_KNOWN": {
+    "en": "You have already connected these.",
+    "tr": "Bunları zaten bağladınız."
+  },
+  "BOARD_QUESTION": {
+    "en": "What do these two tell you together?",
+    "tr": "Bu ikisi birlikte size ne anlatıyor?"
+  },
+  "BOARD_WRONG": {
+    "en": "That does not follow from the evidence.",
+    "tr": "Deliller bunu göstermiyor."
+  },
+  "BOARD_RIGHT": {
+    "en": "Conclusion added.",
+    "tr": "Sonuç eklendi."
+  },
+  "BOARD_FROM": {
+    "en": "From:",
+    "tr": "Kaynak:"
+  },
+  "ACCUSE_ACCIDENT": {
+    "en": "Nobody. It was an accident.",
+    "tr": "Hiç kimse. Bu bir kazaydı."
+  },
+  "ACCUSE_PROOF_TITLE": {
+    "en": "Build your case against %s",
+    "tr": "%s hakkındaki iddianızı kurun"
+  },
+  "ACCUSE_SLOT_MOTIVE": {
+    "en": "Motive — why?",
+    "tr": "Sebep — neden?"
+  },
+  "ACCUSE_SLOT_OPPORTUNITY": {
+    "en": "Opportunity — were they there?",
+    "tr": "Fırsat — orada mıydı?"
+  },
+  "ACCUSE_SLOT_LINK": {
+    "en": "Physical link — what ties them to the body?",
+    "tr": "Fiziksel bağ — onu olaya ne bağlıyor?"
+  },
+  "ACCUSE_CHOOSE": {
+    "en": "Choose a conclusion…",
+    "tr": "Bir sonuç seçin…"
+  },
+  "ACCUSE_PICK_TITLE": {
+    "en": "Choose the conclusion that proves it",
+    "tr": "Bunu kanıtlayan sonucu seçin"
+  },
+  "ACCUSE_WARNING": {
+    "en": "An accusation ends the investigation. Empty or wrong proof weakens your case.",
+    "tr": "Suçlama soruşturmayı bitirir. Boş ya da yanlış kanıt iddianızı zayıflatır."
+  },
+  "ACCUSE_CONFIRM": {
+    "en": "Accuse",
+    "tr": "Suçla"
+  },
+  "ACCUSE_CONFIRM_ACCIDENT": {
+    "en": "Close the case as an accident",
+    "tr": "Dosyayı kaza olarak kapat"
+  },
+  "COMMON_BACK": {
+    "en": "Back",
+    "tr": "Geri"
+  },
+  "ENDING_CASE_CLOSED": {
+    "en": "Case closed",
+    "tr": "Dosya kapandı"
+  },
+  "ENDING_RATING": {
+    "en": "Rating",
+    "tr": "Değerlendirme"
+  },
+  "ENDING_STATS": {
+    "en": "Evidence %d/%d   ·   Conclusions %d/%d   ·   Mistakes %d   ·   Hints %d",
+    "tr": "Delil %d/%d   ·   Sonuç %d/%d   ·   Hata %d   ·   İpucu %d"
+  },
+  "ENDING_RETURN": {
+    "en": "Go Back to the Investigation",
+    "tr": "Soruşturmaya Geri Dön"
+  },
+  "ENDING_RETURN_NOTE": {
+    "en": "This was not the truth. You can return to the moment before your accusation.",
+    "tr": "Gerçek bu değildi. Suçlamadan önceki ana dönebilirsiniz."
+  },
+  "HUD_MAP": {
+    "en": "Map",
+    "tr": "Harita"
+  },
+  "MAP_TITLE": {
+    "en": "Where to?",
+    "tr": "Nereye?"
+  },
+  "HINT_OBJECTIVE": {
+    "en": "Current objective: %s",
+    "tr": "Şu anki hedef: %s"
+  },
+  "BOARD_HINT_PAIR": {
+    "en": "These two cards belong together. Tap Connect and work out what they mean.",
+    "tr": "Bu iki kart birbiriyle ilgili. Bağla'ya dokunun ve ne anlama geldiklerini çözün."
+  },
+  "BOARD_HINT_NONE": {
+    "en": "Nothing more can be connected with what you have. Look for more evidence, or get more statements.",
+    "tr": "Elinizdekilerle bağlanabilecek başka bir şey yok. Yeni delil arayın ya da yeni ifadeler alın."
+  },
+  "SETTINGS_MUSIC": {
+    "en": "Music",
+    "tr": "Müzik"
+  },
+  "SETTINGS_SFX": {
+    "en": "Sound effects",
+    "tr": "Ses efektleri"
+  },
+  "MENU_CREDITS": {
+    "en": "Credits",
+    "tr": "Emeği Geçenler"
+  },
+  "CREDITS_TITLE": {
+    "en": "Credits",
+    "tr": "Emeği Geçenler"
+  },
+  "CREDITS_BODY": {
+    "en": "The Missing File\n\nStory, design, art, sound and code: original work made for this game.\n\nBuilt with Godot Engine (MIT licence).\n\nFonts: Inter, Playfair Display and Courier Prime, used under the SIL Open Font License 1.1.",
+    "tr": "Kayıp Dosya\n\nHikâye, tasarım, görseller, sesler ve kod: bu oyun için üretilmiş özgün çalışmadır.\n\nGodot Engine ile geliştirilmiştir (MIT lisansı).\n\nYazı tipleri: Inter, Playfair Display ve Courier Prime; SIL Open Font License 1.1 kapsamında kullanılmıştır."
+  },
+  "HINT_BOARD": {
+    "en": "Some of your cards can be connected. Open the Board; the Hint button there will show you which.",
+    "tr": "Kartlarınızdan bazıları birbirine bağlanabilir. Pano'yu açın; oradaki İpucu düğmesi hangileri olduğunu gösterir."
+  },
+  "MENU_HOWTO": {
+    "en": "How to Play",
+    "tr": "Nasıl Oynanır"
+  },
+  "HOWTO_TITLE": {
+    "en": "How to Play",
+    "tr": "Nasıl Oynanır"
+  },
+  "HOWTO_START": {
+    "en": "Got it",
+    "tr": "Anladım"
+  },
+  "HOWTO_LOOK_TITLE": {
+    "en": "Search the room",
+    "tr": "Odayı arayın"
+  },
+  "HOWTO_LOOK_TEXT": {
+    "en": "Drag left and right to look around. Tap anything that looks important. Evidence goes into your Case File, where you can read it again at any time.",
+    "tr": "Etrafa bakmak için sağa sola sürükleyin. Önemli görünen her şeye dokunun. Deliller Dava Dosyası'na eklenir; oradan istediğiniz zaman yeniden okuyabilirsiniz."
+  },
+  "HOWTO_TALK_TITLE": {
+    "en": "Question people",
+    "tr": "İnsanları sorgulayın"
+  },
+  "HOWTO_TALK_TEXT": {
+    "en": "Tap a person to talk. Press a statement to make them say more. When a statement contradicts one of your cards, tap Present Evidence and show it. Careless challenges wear out their patience; it returns when you learn something new.",
+    "tr": "Konuşmak için bir kişiye dokunun. Daha fazlasını söyletmek için bir ifadenin Üstüne Gidin. Bir ifade elinizdeki kartlardan biriyle çelişiyorsa Delil Göster'e dokunup o kartı gösterin. Özensiz itirazlar kişinin sabrını tüketir; yeni bir şey öğrendiğinizde sabrı geri gelir."
+  },
+  "HOWTO_BOARD_TITLE": {
+    "en": "Connect the evidence",
+    "tr": "Delilleri bağlayın"
+  },
+  "HOWTO_BOARD_TEXT": {
+    "en": "Open the Board. Each card says what it shows. Choose two that belong together and tap Connect, then pick what they mean together. A correct answer becomes a conclusion, joined to its cards with red thread. Conclusions are your proof. The Wall and List buttons switch between two ways of looking at the same cards.",
+    "tr": "Pano'yu açın. Her kartın üzerinde neyi gösterdiği yazar. Birbiriyle ilgili iki kart seçip Bağla'ya dokunun, sonra ikisinin birlikte ne anlattığını seçin. Doğru cevap bir sonuca dönüşür ve kartlarına kırmızı iplikle bağlanır. Sonuçlar sizin kanıtınızdır. Duvar ve Liste düğmeleri aynı kartlara iki farklı bakış arasında geçiş yapar."
+  },
+  "HOWTO_MAP_TITLE": {
+    "en": "Move around",
+    "tr": "Mekân değiştirin"
+  },
+  "HOWTO_MAP_TEXT": {
+    "en": "Use the Map to go to other rooms. New rooms open as the investigation moves on.",
+    "tr": "Diğer odalara gitmek için Harita'yı kullanın. Soruşturma ilerledikçe yeni odalar açılır."
+  },
+  "HOWTO_ACCUSE_TITLE": {
+    "en": "Make your accusation",
+    "tr": "Suçlamada bulunun"
+  },
+  "HOWTO_ACCUSE_TEXT": {
+    "en": "When you are sure, open the Case File, go to Suspects and accuse. You need three conclusions from the Board: a motive, an opportunity and a physical link. A wrong accusation has consequences.",
+    "tr": "Emin olduğunuzda Dava Dosyası'nı açın, Şüpheliler'e gidin ve suçlayın. Pano'dan üç sonuca ihtiyacınız var: sebep, fırsat ve fiziksel bağ. Yanlış suçlamanın sonuçları olur."
+  },
+  "HOWTO_HINT_TITLE": {
+    "en": "Stuck?",
+    "tr": "Takıldınız mı?"
+  },
+  "HOWTO_HINT_TEXT": {
+    "en": "Your current objective is always at the top of the screen. A red dot on a button means something is waiting there. If you are still stuck, tap Hint in a room or on the Board: hints never block you, but they lower your final rating a little.",
+    "tr": "Şu anki hedefiniz her zaman ekranın üstünde yazar. Bir düğmedeki kırmızı nokta, orada sizi bekleyen bir şey olduğunu gösterir. Yine de takılırsanız bir odada ya da Pano'da İpucu'na dokunun: ipuçları sizi asla engellemez, ama son değerlendirmenizi biraz düşürür."
+  },
+  "ACCUSE_ONLY_CONCLUSIONS": {
+    "en": "Proof must be a conclusion you reached on the Board.",
+    "tr": "Kanıt, Pano'da vardığınız bir sonuç olmalıdır."
+  },
+  "ACCUSE_NO_CONCLUSIONS": {
+    "en": "You have no conclusions yet. Connect evidence on the Board first.",
+    "tr": "Henüz bir sonuca varmadınız. Önce Pano'da delilleri bağlayın."
+  },
+  "DLG_PRESS": {
+    "en": "Press",
+    "tr": "Üstüne Git"
+  },
+  "DLG_PATIENCE": {
+    "en": "Patience",
+    "tr": "Sabır"
+  },
+  "MENU_CASES": {
+    "en": "Cases",
+    "tr": "Dosyalar"
+  },
+  "MENU_ACHIEVEMENTS": {
+    "en": "Achievements",
+    "tr": "Başarılar"
+  },
+  "CASES_TITLE": {
+    "en": "Case Files",
+    "tr": "Dava Dosyaları"
+  },
+  "CASES_NUMBER": {
+    "en": "Case %d — %s",
+    "tr": "Dosya %d — %s"
+  },
+  "CASE_COMING_SOON": {
+    "en": "In preparation",
+    "tr": "Hazırlanıyor"
+  },
+  "CASES_NOT_IN_BUILD": {
+    "en": "Not in this version yet.",
+    "tr": "Bu sürümde henüz yok."
+  },
+  "CASES_LOCKED": {
+    "en": "Reach a verdict in the previous case to open this one.",
+    "tr": "Bu dosyayı açmak için önceki dosyada bir karara varın."
+  },
+  "CASES_SOLVED": {
+    "en": "Solved — best grade %s",
+    "tr": "Çözüldü — en iyi değerlendirme %s"
+  },
+  "CASES_IN_PROGRESS": {
+    "en": "Investigation in progress",
+    "tr": "Soruşturma sürüyor"
+  },
+  "CASES_NEW": {
+    "en": "Not started",
+    "tr": "Başlanmadı"
+  },
+  "CASES_START": {
+    "en": "Start",
+    "tr": "Başla"
+  },
+  "CASES_RESTART": {
+    "en": "Start Over",
+    "tr": "Baştan Başla"
+  },
+  "RANK_KOMISER": {
+    "en": "Inspector (Komiser)",
+    "tr": "Komiser"
+  },
+  "RANK_BASKOMISER": {
+    "en": "Chief Inspector (Başkomiser)",
+    "tr": "Başkomiser"
+  },
+  "RANK_EMNIYET_AMIRI": {
+    "en": "Superintendent (Emniyet Amiri)",
+    "tr": "Emniyet Amiri"
+  },
+  "RANK_EMNIYET_MUDURU": {
+    "en": "Police Chief, 4th Class (4. Sınıf Emniyet Müdürü)",
+    "tr": "4. Sınıf Emniyet Müdürü"
+  },
+  "CAREER_XP_GAIN": {
+    "en": "+%d XP   ·   %d XP in total",
+    "tr": "+%d XP   ·   toplam %d XP"
+  },
+  "CAREER_RANK_UP": {
+    "en": "Promoted!",
+    "tr": "Terfi ettiniz!"
+  },
+  "CAREER_NEXT": {
+    "en": "Next rank: %s, in %d XP",
+    "tr": "Sonraki rütbe: %s, %d XP sonra"
+  },
+  "ACH_TITLE": {
+    "en": "Achievements",
+    "tr": "Başarılar"
+  },
+  "ACH_UNLOCKED": {
+    "en": "Achievement unlocked:",
+    "tr": "Başarı kazanıldı:"
+  },
+  "ACH_SECRET_TITLE": {
+    "en": "Secret",
+    "tr": "Gizli"
+  },
+  "ACH_SECRET_DESC": {
+    "en": "Keep playing to find out.",
+    "tr": "Öğrenmek için oynamaya devam edin."
+  },
+  "ACH_FIRST_CASE_TITLE": {
+    "en": "Case Closed",
+    "tr": "Dosya Kapandı"
+  },
+  "ACH_FIRST_CASE_DESC": {
+    "en": "Solve File 47-B and reach the true ending.",
+    "tr": "47-B dosyasını çözüp gerçek sona ulaşın."
+  },
+  "ACH_NO_HINTS_TITLE": {
+    "en": "Unaided",
+    "tr": "Yardımsız"
+  },
+  "ACH_NO_HINTS_DESC": {
+    "en": "Reach the true ending of File 47-B without using a single hint.",
+    "tr": "47-B dosyasının gerçek sonuna tek bir ipucu kullanmadan ulaşın."
+  },
+  "ACH_FLAWLESS_TITLE": {
+    "en": "Not a Step Wrong",
+    "tr": "Tek Yanlış Adım Yok"
+  },
+  "ACH_FLAWLESS_DESC": {
+    "en": "Reach the true ending of File 47-B without a wrong presentation, a wrong conclusion or a dead-end connection.",
+    "tr": "47-B dosyasının gerçek sonuna yanlış delil, yanlış sonuç ya da boşa çıkan bağlantı olmadan ulaşın."
+  },
+  "ACH_TOP_GRADE_TITLE": {
+    "en": "Exemplary Service",
+    "tr": "Üstün Hizmet"
+  },
+  "ACH_TOP_GRADE_DESC": {
+    "en": "Finish File 47-B with grade S.",
+    "tr": "47-B dosyasını S değerlendirmesiyle bitirin."
+  },
+  "ACH_CONFESSION_TITLE": {
+    "en": "Forty Minutes",
+    "tr": "Kırk Dakika"
+  },
+  "ACH_CONFESSION_DESC": {
+    "en": "Get the night guard to admit where he really was.",
+    "tr": "Gece bekçisine gerçekte nerede olduğunu itiraf ettirin."
+  },
+  "ACH_CORNERED_TITLE": {
+    "en": "“I Would Like a Lawyer”",
+    "tr": "“Avukatımı İstiyorum”"
+  },
+  "ACH_CORNERED_DESC": {
+    "en": "Leave Dr. Vardar with no answer for the freight elevator.",
+    "tr": "Dr. Vardar'ı yük asansörü konusunda cevapsız bırakın."
+  },
+  "ACH_GENTLE_TITLE": {
+    "en": "A Kind Word",
+    "tr": "Tatlı Dil"
+  },
+  "ACH_GENTLE_DESC": {
+    "en": "Get Leyla Aydın's full statement without threatening her.",
+    "tr": "Leyla Aydın'ın tam ifadesini onu tehdit etmeden alın."
+  },
+  "ACH_MIRROR_TITLE": {
+    "en": "Through the Looking Glass",
+    "tr": "Aynanın Ardı"
+  },
+  "ACH_MIRROR_DESC": {
+    "en": "Find file 47-B intact.",
+    "tr": "47-B dosyasını sağlam bulun."
+  },
+  "ACH_PERSISTENT_TITLE": {
+    "en": "And Then?",
+    "tr": "Peki Sonra?"
+  },
+  "ACH_PERSISTENT_DESC": {
+    "en": "Press five different statements for more detail.",
+    "tr": "Beş farklı ifadenin üstüne gidin."
+  },
+  "ACH_MERCY_TITLE": {
+    "en": "Between Us",
+    "tr": "Aramızda Kalsın"
+  },
+  "ACH_MERCY_DESC": {
+    "en": "Solve the case and keep the guard's absence out of your report.",
+    "tr": "Dosyayı çözün ve bekçinin yokluğunu rapora yazmayın."
+  },
+  "ACH_BY_THE_BOOK_TITLE": {
+    "en": "By the Book",
+    "tr": "Kitabına Göre"
+  },
+  "ACH_BY_THE_BOOK_DESC": {
+    "en": "Solve the case and put the guard's absence in your report.",
+    "tr": "Dosyayı çözün ve bekçinin yokluğunu rapora yazın."
+  },
+  "ACH_OBVIOUS_MAN_TITLE": {
+    "en": "Front-Page News",
+    "tr": "Manşetlik Haber"
+  },
+  "ACH_OBVIOUS_MAN_DESC": {
+    "en": "Arrest the deputy mayor.",
+    "tr": "Başkan yardımcısını tutuklayın."
+  },
+  "ACH_EVERY_ENDING_TITLE": {
+    "en": "Every Version of the Truth",
+    "tr": "Gerçeğin Her Hâli"
+  },
+  "ACH_EVERY_ENDING_DESC": {
+    "en": "See all five endings of File 47-B.",
+    "tr": "47-B dosyasının beş sonunu da görün."
+  },
+  "ACCUSE_TITLE": {
+    "en": "Who is responsible?",
+    "tr": "Sorumlu kim?"
+  },
+  "TIMELINE_DEFAULT": {
+    "en": "Timeline",
+    "tr": "Zaman Çizelgesi"
+  },
+  "TAB_RECORDS": {
+    "en": "Database",
+    "tr": "Kayıtlar"
+  },
+  "RECORDS_TITLE": {
+    "en": "Police Database",
+    "tr": "Polis Veri Tabanı"
+  },
+  "RECORDS_HELP": {
+    "en": "New lookups appear here when you find something worth checking. What you read is added to your evidence.",
+    "tr": "Araştırmaya değer bir şey bulduğunuzda yeni sorgular burada belirir. Okuduğunuz kayıt delillerinize eklenir."
+  },
+  "RECORDS_EMPTY": {
+    "en": "Nothing to look up yet.",
+    "tr": "Henüz sorgulanacak bir şey yok."
+  },
+  "RECORDS_LOOK_UP": {
+    "en": "Look Up",
+    "tr": "Sorgula"
+  },
+  "RECORDS_OPEN": {
+    "en": "Read Again",
+    "tr": "Yeniden Oku"
+  },
+  "RECORD_TYPE_VEHICLE": {
+    "en": "Vehicle registration",
+    "tr": "Araç tescil kaydı"
+  },
+  "RECORD_TYPE_PHONE": {
+    "en": "Telephone subscriber",
+    "tr": "Telefon abone kaydı"
+  },
+  "RECORD_TYPE_COMPANY": {
+    "en": "Trade registry",
+    "tr": "Ticaret sicili"
+  },
+  "RECORD_TYPE_PERSON": {
+    "en": "Criminal record",
+    "tr": "Adli sicil kaydı"
+  },
+  "HINT_DATABASE": {
+    "en": "There is something to look up. Open the Case File and go to Database.",
+    "tr": "Sorgulanabilecek bir şey var. Dava Dosyası'nı açın ve Kayıtlar'a gidin."
+  },
+  "HOWTO_DATABASE_TITLE": {
+    "en": "Look things up",
+    "tr": "Kayıtları sorgulayın"
+  },
+  "HOWTO_DATABASE_TEXT": {
+    "en": "Some cases give you the police database: number plates, phone numbers, companies, criminal records. Open it from the Case File. A lookup appears once you have found a reason to ask.",
+    "tr": "Bazı dosyalarda polis veri tabanı elinizin altındadır: plakalar, telefon numaraları, şirketler, adli siciller. Dava Dosyası'ndan açılır. Sormak için bir sebep bulduğunuzda sorgu belirir."
+  },
+  "ACH_C2_SOLVED_TITLE": {
+    "en": "Front Page",
+    "tr": "Birinci Sayfa"
+  },
+  "ACH_C2_SOLVED_DESC": {
+    "en": "Solve File 58-D and reach the true ending.",
+    "tr": "58-D dosyasını çözüp gerçek sona ulaşın."
+  },
+  "ACH_C2_NO_HINTS_TITLE": {
+    "en": "Own Sources",
+    "tr": "Kendi Kaynakları"
+  },
+  "ACH_C2_NO_HINTS_DESC": {
+    "en": "Reach the true ending of File 58-D without using a single hint.",
+    "tr": "58-D dosyasının gerçek sonuna tek bir ipucu kullanmadan ulaşın."
+  },
+  "ACH_C2_CORNERED_TITLE": {
+    "en": "Off the Record",
+    "tr": "Kayıt Dışı"
+  },
+  "ACH_C2_CORNERED_DESC": {
+    "en": "Leave Nilgün Soylu with no answer for the paint.",
+    "tr": "Nilgün Soylu'yu boya konusunda cevapsız bırakın."
+  },
+  "ACH_C2_FENER_TITLE": {
+    "en": "Follow the Money",
+    "tr": "Paranın İzini Sür"
+  },
+  "ACH_C2_FENER_DESC": {
+    "en": "Connect the firm that paid in 2004 with the firm that owns part of the tower.",
+    "tr": "2004'te ödeme yapan şirketle kulenin ortağı olan şirketi birbirine bağlayın."
+  },
+  "ACH_C2_LOOKUP_TITLE": {
+    "en": "On File",
+    "tr": "Kayıtlarda Var"
+  },
+  "ACH_C2_LOOKUP_DESC": {
+    "en": "Read every record in the police database for File 58-D.",
+    "tr": "58-D dosyası için polis veri tabanındaki bütün kayıtları okuyun."
+  },
+  "ACH_C2_NOT_OBVIOUS_TITLE": {
+    "en": "Your Case, Komiser",
+    "tr": "Dosya Sizin, Komiser"
+  },
+  "ACH_C2_NOT_OBVIOUS_DESC": {
+    "en": "Solve File 58-D without having the chief's suspect brought in.",
+    "tr": "Müdürün şüphelisini getirtmeden 58-D dosyasını çözün."
+  },
+  "HUD_OBJECTIVE": {
+    "en": "Objective: %s",
+    "tr": "Hedef: %s"
+  },
+  "BOARD_POSSIBLE": {
+    "en": "Connections you can make now: %d",
+    "tr": "Şu an kurabileceğiniz bağlantı: %d"
+  },
+  "BOARD_POSSIBLE_NONE": {
+    "en": "No connections left with what you hold. Look for more evidence or statements.",
+    "tr": "Elinizdekilerle kurulacak bağlantı kalmadı. Yeni delil ya da ifade arayın."
+  },
+  "ENDING_WEAK": {
+    "en": "Where the case fell short",
+    "tr": "Dosyanın zayıf kaldığı yerler"
+  },
+  "WEAK_MOTIVE": {
+    "en": "Motive: the conclusion you gave did not show why they did it.",
+    "tr": "Sebep: sunduğunuz sonuç bunu neden yaptığını göstermedi."
+  },
+  "WEAK_OPPORTUNITY": {
+    "en": "Opportunity: the conclusion you gave did not put them at the scene.",
+    "tr": "Fırsat: sunduğunuz sonuç onu olay yerine yerleştirmedi."
+  },
+  "WEAK_LINK": {
+    "en": "Physical link: the conclusion you gave did not tie them to the victim.",
+    "tr": "Fiziksel bağ: sunduğunuz sonuç onu maktule bağlamadı."
+  },
+  "WEAK_FILE_MISSING": {
+    "en": "The missing file: you never found it, so what was done to it could not be proved.",
+    "tr": "Kayıp dosya: onu bulamadınız, bu yüzden dosyaya ne yapıldığı kanıtlanamadı."
+  },
+  "WEAK_FILE_DAMAGED": {
+    "en": "The missing file: it reached you with its key pages removed. Someone learned where it was before you got there.",
+    "tr": "Kayıp dosya: elinize kilit sayfaları koparılmış hâlde geçti. Siz ulaşmadan önce biri yerini öğrendi."
+  },
+  "MENU_OFFICE": {
+    "en": "Office",
+    "tr": "Ofis"
+  },
+  "ENDING_TO_OFFICE": {
+    "en": "Back to the Office",
+    "tr": "Ofise Dön"
+  },
+  "CASES_CLOSED_WRONG": {
+    "en": "Closed, but not solved. You can try again.",
+    "tr": "Kapandı ama çözülmedi. Yeniden deneyebilirsiniz."
+  },
+  "HOWTO_OFFICE_TITLE": {
+    "en": "Your office",
+    "tr": "Odanız"
+  },
+  "HOWTO_OFFICE_TEXT": {
+    "en": "Between cases you are in your office. The folders on the desk open the cases. What you carry out of each case goes up on the Ledger wall, where it can be connected like any other evidence.",
+    "tr": "Dosyalar arasında odanızdasınız. Masadaki dosyalar davaları açar. Her dosyadan çıkardıklarınız Defter duvarına asılır; orada diğer deliller gibi birbirine bağlanabilir."
+  },
+  "ACH_LEDGER_WALL_TITLE": {
+    "en": "Red Thread",
+    "tr": "Kırmızı İplik"
+  },
+  "ACH_LEDGER_WALL_DESC": {
+    "en": "On the Ledger wall, work out who pays, who delivers and whose hand is on both files.",
+    "tr": "Defter duvarında parayı kimin ödediğini, işi kimin getirdiğini ve iki dosyada kimin eli olduğunu çözün."
+  },
+  "ACH_LEDGER_CHIEF_TITLE": {
+    "en": "Tragic Timing",
+    "tr": "Talihsiz Zamanlama"
+  },
+  "ACH_LEDGER_CHIEF_DESC": {
+    "en": "Notice that someone was ahead of you twice in one morning.",
+    "tr": "Birinin aynı sabah iki kez sizden önde olduğunu fark edin."
+  },
+  "BOARD_VIEW_WALL": {
+    "en": "Wall",
+    "tr": "Duvar"
+  },
+  "BOARD_VIEW_LIST": {
+    "en": "List",
+    "tr": "Liste"
+  },
+  "BOARD_TIDY": {
+    "en": "Tidy",
+    "tr": "Düzenle"
+  },
+  "BOARD_HELP_WALL": {
+    "en": "Drag from one card to another to tie them with string. Tap a question above to see which cards matter.",
+    "tr": "Bir karttan diğerine sürükleyerek ip bağlayın. Hangi kartların önemli olduğunu görmek için yukarıdaki bir soruya dokunun."
+  },
+  "SETTINGS_VOICES": {
+    "en": "Speech sounds",
+    "tr": "Konuşma sesleri"
+  },
+  "SETTINGS_ON": {
+    "en": "On",
+    "tr": "Açık"
+  },
+  "SETTINGS_OFF": {
+    "en": "Off",
+    "tr": "Kapalı"
+  },
+  "RECORD_TYPE_PHARMACY": {
+    "en": "Pharmacy",
+    "tr": "Eczane"
+  },
+  "ACH_C3_SOLVED_TITLE": {
+    "en": "Fresh Water",
+    "tr": "Tatlı Su"
+  },
+  "ACH_C3_SOLVED_DESC": {
+    "en": "Close File 12-C with the full proof.",
+    "tr": "Dosya 12-C'yi eksiksiz kanıtla kapatın."
+  },
+  "ACH_C3_ALL_ENDINGS_TITLE": {
+    "en": "Every Verdict: 12-C",
+    "tr": "Bütün Kararlar: 12-C"
+  },
+  "ACH_C3_ALL_ENDINGS_DESC": {
+    "en": "See all five endings of File 12-C.",
+    "tr": "Dosya 12-C'nin beş sonunu da görün."
+  },
+  "ACH_C3_NO_HINTS_TITLE": {
+    "en": "Second Opinion Not Needed",
+    "tr": "İkinci Görüşe Gerek Yok"
+  },
+  "ACH_C3_NO_HINTS_DESC": {
+    "en": "Solve File 12-C without using a hint.",
+    "tr": "Dosya 12-C'yi hiç ipucu kullanmadan çözün."
+  },
+  "ACH_C3_CORNERED_TITLE": {
+    "en": "Two Glasses",
+    "tr": "İki Kadeh"
+  },
+  "ACH_C3_CORNERED_DESC": {
+    "en": "Make Rıza Bulut ask for his lawyer.",
+    "tr": "Rıza Bulut'a avukatını istetin."
+  },
+  "ACH_C3_NUR_CLEAR_TITLE": {
+    "en": "Not His Bench",
+    "tr": "Onun Tezgâhı Değil"
+  },
+  "ACH_C3_NUR_CLEAR_DESC": {
+    "en": "Prove the poison did not come from the laboratory.",
+    "tr": "Zehrin laboratuvardan çıkmadığını kanıtlayın."
+  },
+  "ACH_C3_SIGNATURE_TITLE": {
+    "en": "The Same Name, Twice",
+    "tr": "Aynı İsim, İki Kez"
+  },
+  "ACH_C3_SIGNATURE_DESC": {
+    "en": "Notice who investigated in 1999 and who emptied the shelf in 2003.",
+    "tr": "1999'da soruşturmayı kimin yürüttüğünü ve 2003'te rafı kimin boşalttığını fark edin."
+  },
+  "ACH_C3_QUIET_TITLE": {
+    "en": "Not Before",
+    "tr": "Daha Önce Değil"
+  },
+  "ACH_C3_QUIET_DESC": {
+    "en": "Solve File 12-C without sending the chief your notes.",
+    "tr": "Dosya 12-C'yi müdüre notlarınızı göndermeden çözün."
+  },
+  "TREE_BUTTON": {
+    "en": "Decisions",
+    "tr": "Kararlar"
+  },
+  "TREE_TITLE": {
+    "en": "Your Decisions",
+    "tr": "Kararlarınız"
+  },
+  "TREE_FOUND": {
+    "en": "Routes found: %d / %d",
+    "tr": "Bulunan yollar: %d / %d"
+  },
+  "TREE_HELP": {
+    "en": "Your last route is highlighted. Routes you have never taken stay hidden until you take them.",
+    "tr": "Son izlediğiniz yol vurgulanır. Hiç seçmediğiniz yollar, seçene kadar gizli kalır."
+  },
+  "TREE_HIDDEN": {
+    "en": "?  ?  ?",
+    "tr": "?  ?  ?"
+  },
+  "TREE_VERDICT": {
+    "en": "The verdict",
+    "tr": "Karar"
+  },
+  "ACH_C4_SOLVED_TITLE": {
+    "en": "Under the Lamp",
+    "tr": "Lambanın Altında"
+  },
+  "ACH_C4_SOLVED_DESC": {
+    "en": "Close File 103-F with the ledger intact.",
+    "tr": "Dosya 103-F'yi defter sağlamken kapatın."
+  },
+  "ACH_C4_ALL_ENDINGS_TITLE": {
+    "en": "Every Verdict: 103-F",
+    "tr": "Bütün Kararlar: 103-F"
+  },
+  "ACH_C4_ALL_ENDINGS_DESC": {
+    "en": "See all five endings of File 103-F.",
+    "tr": "Dosya 103-F'nin beş sonunu da görün."
+  },
+  "ACH_C4_NO_HINTS_TITLE": {
+    "en": "Her Own Detective",
+    "tr": "Kendi Dedektifi"
+  },
+  "ACH_C4_NO_HINTS_DESC": {
+    "en": "Solve File 103-F without using a hint.",
+    "tr": "Dosya 103-F'yi hiç ipucu kullanmadan çözün."
+  },
+  "ACH_C4_DEAL_TITLE": {
+    "en": "The Hand Speaks",
+    "tr": "El Konuşuyor"
+  },
+  "ACH_C4_DEAL_DESC": {
+    "en": "Get Kenan Yıldız to describe the voice on the telephone.",
+    "tr": "Kenan Yıldız'a telefondaki sesi anlattırın."
+  },
+  "ACH_C4_GREEN_TITLE": {
+    "en": "Green Ink",
+    "tr": "Yeşil Mürekkep"
+  },
+  "ACH_C4_GREEN_DESC": {
+    "en": "Match the initials on your transfer order to the ledger.",
+    "tr": "Tayin emrinizdeki parafı defterle eşleştirin."
+  },
+  "ACH_SEASON_TITLE": {
+    "en": "The Lighthouse Ledger",
+    "tr": "Fener Defteri"
+  },
+  "ACH_SEASON_DESC": {
+    "en": "Recover every file from the routing slip and name the man who authorised the payments.",
+    "tr": "Sevk pusulasındaki bütün dosyaları bulun ve ödemeleri onaylayan adamın adını verin."
+  },
+  "BOARD_QUESTIONS": {
+    "en": "Open questions",
+    "tr": "Açık sorular"
+  },
+  "BOARD_QUESTIONS_NONE": {
+    "en": "No question can be answered with the cards you hold. Find more evidence.",
+    "tr": "Elinizdeki kartlarla cevaplanabilecek soru yok. Daha fazla delil bulun."
+  },
+  "BOARD_QUESTION_FOCUS": {
+    "en": "The answer is in the bright cards. Connect two of them.",
+    "tr": "Cevap parlayan kartlarda. İkisini birbirine bağlayın."
+  },
+  "BOARD_QUESTION_ALL": {
+    "en": "All",
+    "tr": "Tümü"
+  },
+  "BOARD_DRAWER": {
+    "en": "Drawer (%d)",
+    "tr": "Çekmece (%d)"
+  },
+  "BOARD_DRAWER_CLOSE": {
+    "en": "Hide drawer",
+    "tr": "Çekmeceyi gizle"
+  },
+  "BOARD_PROGRESS": {
+    "en": "Proof:",
+    "tr": "Kanıt:"
+  },
+  "BOARD_RIGHT_TITLE": {
+    "en": "New conclusion",
+    "tr": "Yeni sonuç"
+  },
+  "BOARD_CONTINUE": {
+    "en": "Continue",
+    "tr": "Devam"
+  },
+  "BOARD_MIRA_1": {
+    "en": "Mira: “That's it. That's how it fits.”",
+    "tr": "Mira: “İşte bu. Böyle oturuyor.”"
+  },
+  "BOARD_MIRA_2": {
+    "en": "Mira: “Now we're getting somewhere.”",
+    "tr": "Mira: “Şimdi bir yere varıyoruz.”"
+  },
+  "BOARD_MIRA_3": {
+    "en": "Mira: “One more thread pulled tight.”",
+    "tr": "Mira: “Bir ip daha gerildi.”"
+  },
+  "BOARD_MIRA_4": {
+    "en": "Mira: “They didn't think anyone would put those two together.”",
+    "tr": "Mira: “Kimsenin bu ikisini yan yana koyacağını düşünmemişler.”"
+  },
+  "BOARD_WARM": {
+    "en": "Close. The “%s” matters, but it goes with %s.",
+    "tr": "Yaklaştınız. “%s” önemli ama şununla birlikte: %s."
+  },
+  "BOARD_WARM_LATER": {
+    "en": "The “%s” matters, but you haven't found what it goes with yet.",
+    "tr": "“%s” önemli ama neyle birlikte olduğunu henüz bulmadınız."
+  },
+  "BOARD_COLD": {
+    "en": "Cold. These two have nothing more to tell you.",
+    "tr": "Soğuk. Bu ikisinin size söyleyecek başka bir şeyi yok."
+  },
+  "BOARD_FROM_PLACE": {
+    "en": "something from %s",
+    "tr": "bir delil (%s)"
+  },
+  "BOARD_FROM_DATABASE": {
+    "en": "a database search",
+    "tr": "bir veri tabanı sorgusu"
+  },
+  "BOARD_FROM_PERSON": {
+    "en": "something %s said",
+    "tr": "bir ifade (%s)"
+  },
+  "BOARD_FROM_CONCLUSION": {
+    "en": "one of your conclusions",
+    "tr": "sonuçlarınızdan biri"
+  },
+  "BOARD_FROM_CARD": {
+    "en": "another card",
+    "tr": "başka bir kart"
+  },
+  "BOARD_SLOT_MOTIVE": {
+    "en": "Motive",
+    "tr": "Sebep"
+  },
+  "BOARD_SLOT_OPPORTUNITY": {
+    "en": "Opportunity",
+    "tr": "Fırsat"
+  },
+  "BOARD_SLOT_LINK": {
+    "en": "Link",
+    "tr": "Bağlantı"
+  }
+}

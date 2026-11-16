@@ -1,0 +1,130 @@
+{
+  "soylu": {
+    "role": "C2_SUS_SOYLU_ROLE",
+    "bio": "C2_SUS_SOYLU_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_SOYLU_1"
+          }
+        ],
+        "text": "C2_SUS_SOYLU_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_evidence": "E09"
+          }
+        ],
+        "text": "C2_SUS_SOYLU_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_LURE"
+          }
+        ],
+        "text": "C2_SUS_SOYLU_N3"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_CAR"
+          }
+        ],
+        "text": "C2_SUS_SOYLU_N4"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_MOTIVE"
+          }
+        ],
+        "text": "C2_SUS_SOYLU_N5"
+      }
+    ]
+  },
+  "kaplan": {
+    "role": "C2_SUS_KAPLAN_ROLE",
+    "bio": "C2_SUS_KAPLAN_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_SOYKAN_1"
+          }
+        ],
+        "text": "C2_SUS_KAPLAN_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_KAPLAN_PAINT"
+          }
+        ],
+        "text": "C2_SUS_KAPLAN_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_KAPLAN_ALIBI"
+          }
+        ],
+        "text": "C2_SUS_KAPLAN_N3"
+      }
+    ]
+  },
+  "guven": {
+    "role": "C2_SUS_GUVEN_ROLE",
+    "bio": "C2_SUS_GUVEN_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_evidence": "E19"
+          }
+        ],
+        "text": "C2_SUS_GUVEN_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_GUVEN_2"
+          }
+        ],
+        "text": "C2_SUS_GUVEN_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_GUVEN_1"
+          }
+        ],
+        "text": "C2_SUS_GUVEN_N3"
+      }
+    ]
+  },
+  "aktas": {
+    "role": "C2_SUS_AKTAS_ROLE",
+    "bio": "C2_SUS_AKTAS_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_evidence": "E09"
+          }
+        ],
+        "text": "C2_SUS_AKTAS_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_AKTAS_3"
+          }
+        ],
+        "text": "C2_SUS_AKTAS_N2"
+      }
+    ]
+  }
+}

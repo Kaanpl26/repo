@@ -1,0 +1,211 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "karaca_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C4_KARACA_INTRO_2"
+        },
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_INTRO_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "karaca_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "visit": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_VISIT_1",
+          "effects": [
+            {
+              "add_testimony": "T_KARACA_1"
+            }
+          ],
+          "press": "press_visit"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_visit": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_KARACA_P_VISIT_1"
+        },
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_P_VISIT_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "fener": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_FENER_1",
+          "press": "press_fener",
+          "present": {
+            "accept": [
+              "I_COMMITTEE",
+              "E12"
+            ],
+            "next": "minutes",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_fener": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_KARACA_P_FENER_1"
+        },
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_P_FENER_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "minutes": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_KARACA_MINUTES_1"
+        },
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_MINUTES_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_KARACA_2"
+            }
+          ]
+        },
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_MINUTES_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "karaca_offer"
+        }
+      ]
+    },
+    "evening": {
+      "lines": [
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_EVENING_1",
+          "press": "press_evening"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_evening": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_KARACA_P_EVENING_1"
+        },
+        {
+          "s": "karaca",
+          "t": "C4_KARACA_P_EVENING_2"
+        }
+      ]
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "visit",
+          "t": "C4_KARACA_Q_VISIT",
+          "next": "visit"
+        },
+        {
+          "id": "fener",
+          "t": "C4_KARACA_Q_FENER",
+          "next": "fener",
+          "conditions": [
+            {
+              "has_evidence": "E08"
+            }
+          ]
+        },
+        {
+          "id": "evening",
+          "t": "C4_KARACA_Q_EVENING",
+          "next": "evening",
+          "conditions": [
+            {
+              "has_evidence": "E07"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C4_KARACA_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

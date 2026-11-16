@@ -1,0 +1,181 @@
+{
+  "E01": {
+    "name": "C3_E01_NAME",
+    "desc": "C3_E01_DESC",
+    "gist": "C3_E01_GIST",
+    "body": "C3_E01_BODY",
+    "icon": "res://assets/evidence/e16.png"
+  },
+  "E02": {
+    "name": "C3_E02_NAME",
+    "desc": "C3_E02_DESC",
+    "gist": "C3_E02_GIST",
+    "body": "C3_E02_BODY",
+    "icon": "res://assets/evidence/c3_pills.png"
+  },
+  "E03": {
+    "name": "C3_E03_NAME",
+    "desc": "C3_E03_DESC",
+    "gist": "C3_E03_GIST",
+    "body": "C3_E03_BODY",
+    "icon": "res://assets/evidence/c3_raki.png"
+  },
+  "E04": {
+    "name": "C3_E04_NAME",
+    "desc": "C3_E04_DESC",
+    "gist": "C3_E04_GIST",
+    "body": "C3_E04_BODY",
+    "icon": "res://assets/evidence/c3_glass.png"
+  },
+  "E05": {
+    "name": "C3_E05_NAME",
+    "desc": "C3_E05_DESC",
+    "gist": "C3_E05_GIST",
+    "body": "C3_E05_BODY",
+    "icon": "res://assets/evidence/c3_fish.png"
+  },
+  "E06": {
+    "name": "C3_E06_NAME",
+    "desc": "C3_E06_DESC",
+    "gist": "C3_E06_GIST",
+    "body": "C3_E06_BODY",
+    "icon": "res://assets/evidence/e09.png"
+  },
+  "E07": {
+    "name": "C3_E07_NAME",
+    "desc": "C3_E07_DESC",
+    "gist": "C3_E07_GIST",
+    "body": "C3_E07_BODY",
+    "icon": "res://assets/evidence/c2_phone.png"
+  },
+  "E08": {
+    "name": "C3_E08_NAME",
+    "desc": "C3_E08_DESC",
+    "gist": "C3_E08_GIST",
+    "body": "C3_E08_BODY",
+    "icon": "res://assets/evidence/e10.png"
+  },
+  "E09": {
+    "name": "C3_E09_NAME",
+    "desc": "C3_E09_DESC",
+    "gist": "C3_E09_GIST",
+    "body": "C3_E09_BODY",
+    "icon": "res://assets/evidence/e16.png"
+  },
+  "E10": {
+    "name": "C3_E10_NAME",
+    "desc": "C3_E10_DESC",
+    "gist": "C3_E10_GIST",
+    "body": "C3_E10_BODY",
+    "icon": "res://assets/evidence/c3_ampoule.png"
+  },
+  "E11": {
+    "name": "C3_E11_NAME",
+    "desc": "C3_E11_DESC",
+    "gist": "C3_E11_GIST",
+    "body": "C3_E11_BODY",
+    "icon": "res://assets/evidence/c3_raki.png"
+  },
+  "E12": {
+    "name": "C3_E12_NAME",
+    "desc": "C3_E12_DESC",
+    "gist": "C3_E12_GIST",
+    "body": "C3_E12_BODY",
+    "icon": "res://assets/evidence/e01.png"
+  },
+  "E13": {
+    "name": "C3_E13_NAME",
+    "desc": "C3_E13_DESC",
+    "gist": "C3_E13_GIST",
+    "body": "C3_E13_BODY",
+    "icon": "res://assets/evidence/e17.png",
+    "effects": [
+      {
+        "set_flag": "file_found"
+      }
+    ]
+  },
+  "E14": {
+    "name": "C3_E14_NAME",
+    "desc": "C3_E14_DESC",
+    "gist": "C3_E14_GIST",
+    "body": "C3_E14_BODY",
+    "icon": "res://assets/evidence/c3_tally.png"
+  },
+  "E15": {
+    "name": "C3_E15_NAME",
+    "desc": "C3_E15_DESC",
+    "gist": "C3_E15_GIST",
+    "body": "C3_E15_BODY",
+    "icon": "res://assets/evidence/c3_slips.png"
+  },
+  "E16": {
+    "name": "C3_E16_NAME",
+    "desc": "C3_E16_DESC",
+    "gist": "C3_E16_GIST",
+    "body": "C3_E16_BODY",
+    "icon": "res://assets/evidence/c3_blister.png"
+  },
+  "E16X": {
+    "name": "C3_E16X_NAME",
+    "desc": "C3_E16X_DESC",
+    "gist": "C3_E16X_GIST",
+    "body": "C3_E16X_BODY",
+    "icon": "res://assets/evidence/c3_blister.png",
+    "alt": true
+  },
+  "E17": {
+    "name": "C3_E17_NAME",
+    "desc": "C3_E17_DESC",
+    "gist": "C3_E17_GIST",
+    "body": "C3_E17_BODY",
+    "icon": "res://assets/evidence/c3_papers.png"
+  },
+  "E18": {
+    "name": "C3_E18_NAME",
+    "desc": "C3_E18_DESC",
+    "gist": "C3_E18_GIST",
+    "body": "C3_E18_BODY",
+    "icon": "res://assets/evidence/e01.png",
+    "effects": [
+      {
+        "set_flag": "register_seen"
+      }
+    ]
+  },
+  "E19": {
+    "name": "C3_E19_NAME",
+    "desc": "C3_E19_DESC",
+    "gist": "C3_E19_GIST",
+    "body": "C3_E19_BODY",
+    "icon": "res://assets/evidence/c3_card.png"
+  },
+  "E21": {
+    "name": "C3_E21_NAME",
+    "desc": "C3_E21_DESC",
+    "gist": "C3_E21_GIST",
+    "body": "C3_E21_BODY",
+    "icon": "res://assets/evidence/c2_phone.png"
+  },
+  "E22": {
+    "name": "C3_E22_NAME",
+    "desc": "C3_E22_DESC",
+    "gist": "C3_E22_GIST",
+    "body": "C3_E22_BODY",
+    "icon": "res://assets/evidence/c3_pills.png"
+  },
+  "E23": {
+    "name": "C3_E23_NAME",
+    "desc": "C3_E23_DESC",
+    "gist": "C3_E23_GIST",
+    "body": "C3_E23_BODY",
+    "icon": "res://assets/evidence/c3_parking.png"
+  },
+  "E24": {
+    "name": "C3_E24_NAME",
+    "desc": "C3_E24_DESC",
+    "gist": "C3_E24_GIST",
+    "body": "C3_E24_BODY",
+    "icon": "res://assets/evidence/c2_phone.png"
+  }
+}

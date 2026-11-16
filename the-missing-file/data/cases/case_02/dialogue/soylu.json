@@ -1,0 +1,311 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "soylu_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "soylu_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_INTRO_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "call",
+          "t": "C2_SOYLU_Q_CALL",
+          "next": "call",
+          "conditions": [
+            {
+              "not_flag": "soylu_lure"
+            }
+          ]
+        },
+        {
+          "id": "home",
+          "t": "C2_SOYLU_Q_HOME",
+          "next": "home",
+          "conditions": [
+            {
+              "not_flag": "soylu_car"
+            }
+          ]
+        },
+        {
+          "id": "damage",
+          "t": "C2_SOYLU_Q_DAMAGE",
+          "next": "damage",
+          "conditions": [
+            {
+              "has_evidence": "E21"
+            },
+            {
+              "not_flag": "soylu_cornered"
+            }
+          ]
+        },
+        {
+          "id": "spiked",
+          "t": "C2_SOYLU_Q_SPIKED",
+          "next": "spiked"
+        },
+        {
+          "id": "bye",
+          "t": "C2_SOYLU_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "call": {
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_CALL_1",
+          "effects": [
+            {
+              "add_testimony": "T_SOYLU_1"
+            }
+          ],
+          "press": "press_call",
+          "present": {
+            "accept": [
+              "I_LURE",
+              "E20"
+            ],
+            "next": "lure",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_call": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_P_CALL_1"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_P_CALL_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "lure": {
+      "effects": [
+        {
+          "set_flag": "soylu_lure"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_LURE_1"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_LURE_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_SOYLU_2"
+            }
+          ]
+        },
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_LURE_3"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_LURE_4",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "home": {
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_HOME_1",
+          "effects": [
+            {
+              "add_testimony": "T_SOYLU_4"
+            }
+          ],
+          "present": {
+            "accept": [
+              "I_CAR"
+            ],
+            "next": "car",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "car": {
+      "effects": [
+        {
+          "set_flag": "soylu_car"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_CAR_1"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_CAR_2",
+          "mood": "defensive"
+        },
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_CAR_3"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_CAR_4",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "damage": {
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_DAMAGE_1",
+          "effects": [
+            {
+              "add_testimony": "T_SOYLU_3"
+            }
+          ],
+          "press": "press_damage",
+          "present": {
+            "accept": [
+              "I_PAINT"
+            ],
+            "next": "paint",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_damage": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_P_DAMAGE_1"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_P_DAMAGE_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "paint": {
+      "effects": [
+        {
+          "set_flag": "soylu_cornered"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_PAINT_1"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_PAINT_2",
+          "mood": "shaken"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_PAINT_3",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "spiked": {
+      "lines": [
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_SPIKED_1",
+          "press": "press_spiked"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_spiked": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C2_SOYLU_P_SPIKED_1"
+        },
+        {
+          "s": "soylu",
+          "t": "C2_SOYLU_P_SPIKED_2",
+          "mood": "defensive"
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

@@ -1,0 +1,154 @@
+{
+  "nur": {
+    "role": "C3_SUS_NUR_ROLE",
+    "bio": "C3_SUS_NUR_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_NUR_1"
+          }
+        ],
+        "text": "C3_SUS_NUR_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_evidence": "E10"
+          }
+        ],
+        "text": "C3_SUS_NUR_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_NUR_2"
+          }
+        ],
+        "text": "C3_SUS_NUR_N3"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_NUR_CLEAR"
+          }
+        ],
+        "text": "C3_SUS_NUR_N4"
+      }
+    ]
+  },
+  "cem": {
+    "role": "C3_SUS_CEM_ROLE",
+    "bio": "C3_SUS_CEM_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_CEM_1"
+          }
+        ],
+        "text": "C3_SUS_CEM_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_evidence": "E23"
+          }
+        ],
+        "text": "C3_SUS_CEM_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_CEM_2"
+          }
+        ],
+        "text": "C3_SUS_CEM_N3"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_ALIVE"
+          }
+        ],
+        "text": "C3_SUS_CEM_N4"
+      }
+    ]
+  },
+  "hatice": {
+    "role": "C3_SUS_HATICE_ROLE",
+    "bio": "C3_SUS_HATICE_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_HATICE_1"
+          }
+        ],
+        "text": "C3_SUS_HATICE_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_evidence": "E02"
+          }
+        ],
+        "text": "C3_SUS_HATICE_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_HATICE_4"
+          }
+        ],
+        "text": "C3_SUS_HATICE_N3"
+      }
+    ]
+  },
+  "bulut": {
+    "role": "C3_SUS_BULUT_ROLE",
+    "bio": "C3_SUS_BULUT_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_BULUT_1"
+          }
+        ],
+        "text": "C3_SUS_BULUT_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_CALLER"
+          }
+        ],
+        "text": "C3_SUS_BULUT_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_VISIT"
+          }
+        ],
+        "text": "C3_SUS_BULUT_N3"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_POISON"
+          }
+        ],
+        "text": "C3_SUS_BULUT_N4"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_MOTIVE"
+          }
+        ],
+        "text": "C3_SUS_BULUT_N5"
+      }
+    ]
+  }
+}

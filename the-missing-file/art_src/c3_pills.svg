@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><defs><filter id="grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.07 0"/></filter>
+<filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+<filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter></defs><circle cx="256" cy="256" r="236" fill="#1b2230" stroke="#2a3446" stroke-width="6"/><rect x="96" y="200" width="40" height="110" rx="6" fill="#7fa8c9"/><rect x="142" y="200" width="40" height="110" rx="6" fill="#c9a27f"/><rect x="188" y="200" width="40" height="110" rx="6" fill="#9fc98f"/><rect x="234" y="200" width="40" height="110" rx="6" fill="#c98f9f"/><rect x="280" y="200" width="40" height="110" rx="6" fill="#c9c27f"/><rect x="326" y="200" width="40" height="110" rx="6" fill="#8f9fc9"/><rect x="372" y="200" width="40" height="110" rx="6" fill="#aab2be"/><rect x="88" y="300" width="336" height="18" fill="#39424f"/><rect x="210" y="336" width="90" height="84" rx="10" fill="#b06a2a"/><rect x="210" y="326" width="90" height="22" rx="6" fill="#e8dfc8"/><rect x="220" y="366" width="70" height="34" fill="#e8dfc8"/></svg>

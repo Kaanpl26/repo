@@ -1,0 +1,330 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "hatice_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C3_HATICE_INTRO_2"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_INTRO_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "hatice_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "found": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_FOUND_1",
+          "effects": [
+            {
+              "add_testimony": "T_HATICE_1"
+            }
+          ],
+          "press": "press_found"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_found": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_HATICE_P_FOUND_1"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_P_FOUND_2"
+        }
+      ]
+    },
+    "call": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_CALL_1",
+          "effects": [
+            {
+              "add_testimony": "T_HATICE_2"
+            }
+          ],
+          "press": "press_call"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_call": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_HATICE_P_CALL_1"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_P_CALL_2"
+        }
+      ]
+    },
+    "monday": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_MONDAY_1",
+          "mood": "defensive",
+          "effects": [
+            {
+              "add_testimony": "T_HATICE_3"
+            }
+          ],
+          "press": "press_monday",
+          "present": {
+            "accept": [
+              "E24"
+            ],
+            "next": "told",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_monday": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_HATICE_P_MONDAY_1"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_P_MONDAY_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "told": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_HATICE_TOLD_1"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_TOLD_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_HATICE_4"
+            }
+          ]
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_TOLD_3",
+          "mood": "shaken"
+        },
+        {
+          "s": "mira",
+          "t": "C3_HATICE_TOLD_THINK"
+        }
+      ],
+      "effects": [
+        {
+          "set_flag": "hatice_told"
+        }
+      ],
+      "choices": [
+        {
+          "id": "comfort",
+          "t": "C3_HATICE_CHOICE_COMFORT",
+          "next": "comfort",
+          "effects": [
+            {
+              "set_flag": "hatice_comforted"
+            }
+          ]
+        },
+        {
+          "id": "blame",
+          "t": "C3_HATICE_CHOICE_BLAME",
+          "next": "blame",
+          "effects": [
+            {
+              "set_flag": "hatice_blamed"
+            }
+          ]
+        }
+      ]
+    },
+    "comfort": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_COMFORT_1",
+          "mood": "shaken"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_COMFORT_2",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "blame": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_BLAME_1",
+          "mood": "shaken"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_BLAME_2",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "y1999": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_Y1999_1",
+          "effects": [
+            {
+              "add_testimony": "T_HATICE_5"
+            }
+          ],
+          "press": "press_1999"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_1999": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_HATICE_P_1999_1"
+        },
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_P_1999_2"
+        }
+      ]
+    },
+    "cem": {
+      "lines": [
+        {
+          "s": "hatice",
+          "t": "C3_HATICE_CEM_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "found",
+          "t": "C3_HATICE_Q_FOUND",
+          "next": "found"
+        },
+        {
+          "id": "call",
+          "t": "C3_HATICE_Q_CALL",
+          "next": "call",
+          "conditions": [
+            {
+              "has_evidence": "E07"
+            }
+          ]
+        },
+        {
+          "id": "monday",
+          "t": "C3_HATICE_Q_MONDAY",
+          "next": "monday",
+          "conditions": [
+            {
+              "has_evidence": "E06"
+            },
+            {
+              "not_flag": "hatice_told"
+            }
+          ]
+        },
+        {
+          "id": "y1999",
+          "t": "C3_HATICE_Q_Y1999",
+          "next": "y1999",
+          "conditions": [
+            {
+              "has_evidence": "E12"
+            }
+          ]
+        },
+        {
+          "id": "cem",
+          "t": "C3_HATICE_Q_CEM",
+          "next": "cem"
+        },
+        {
+          "id": "bye",
+          "t": "C3_HATICE_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

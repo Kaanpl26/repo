@@ -1,0 +1,1670 @@
+{
+  "C4_E01_NAME": {
+    "en": "Incident Report",
+    "tr": "Olay Tutanağı"
+  },
+  "C4_E01_DESC": {
+    "en": "Officer Kenan Yıldız: at 18:10 he was escorting Dr. Vardar down the service stairs alone. She “slipped on the wet steps and fell forwards”.",
+    "tr": "Memur Kenan Yıldız: 18.10'da Dr. Vardar'ı servis merdiveninden tek başına indiriyormuş. Kadın “ıslak basamakta kayıp öne doğru düşmüş”."
+  },
+  "C4_E01_GIST": {
+    "en": "Officer Kenan Yıldız: at 18:10 he was escorting Dr. Vardar down the service stairs alone. She “slipped on the wet steps and fell forwards”.",
+    "tr": "Memur Kenan Yıldız: 18.10'da Dr. Vardar'ı servis merdiveninden tek başına indiriyormuş. Kadın “ıslak basamakta kayıp öne doğru düşmüş”."
+  },
+  "C4_E01_BODY": {
+    "en": "KARALİMAN CLOSED PRISON — incident\nThursday 18:10\n\nReporting officer: Başgardiyan K. YILDIZ\n\n“I was escorting remand prisoner S. VARDAR from the visiting block to her wing by the service stairs. The steps were wet. She slipped and fell forwards down the flight. I was one step behind and could not reach her.”\n\nSecond escort: none (called to the gate).\nCamera 3: under maintenance.",
+    "tr": "KARALİMAN KAPALI CEZAEVİ — olay tutanağı\nPerşembe 18.10\n\nTutanağı tutan: Başgardiyan K. YILDIZ\n\n“Tutuklu S. VARDAR'ı görüş bloğundan koğuşuna servis merdiveniyle götürüyordum. Basamaklar ıslaktı. Ayağı kaydı, merdivenden öne doğru düştü. Bir basamak arkasındaydım, yetişemedim.”\n\nİkinci refakatçi: yok (kapıya çağrıldı).\nKamera 3: bakımda."
+  },
+  "C4_E02_NAME": {
+    "en": "The Foot of the Stairs",
+    "tr": "Merdivenin Dibi"
+  },
+  "C4_E02_DESC": {
+    "en": "She lay on her back, head towards the wall. The injury is to the back of her skull, and both upper arms carry fresh grip marks. The steps are dry.",
+    "tr": "Sırtüstü yatıyormuş, başı duvara doğru. Yara kafatasının arkasında; iki üst kolunda da taze kavrama izleri var. Basamaklar kuru."
+  },
+  "C4_E02_GIST": {
+    "en": "She lay on her back, head towards the wall. The injury is to the back of her skull, and both upper arms carry fresh grip marks. The steps are dry.",
+    "tr": "Sırtüstü yatıyormuş, başı duvara doğru. Yara kafatasının arkasında; iki üst kolunda da taze kavrama izleri var. Basamaklar kuru."
+  },
+  "C4_E02_BODY": {
+    "en": "SCENE NOTE — service stairs\n\nBody outline: on her back, head to the wall, feet towards the steps.\n\nInjury: one blow, back of the skull.\nBoth upper arms: four finger marks and a thumb, each side. Fresh.\n\nNo injury to hands, knees or face.\n\nSteps: steel, ribbed, dry. The floor log shows no cleaning since Tuesday.",
+    "tr": "OLAY YERİ NOTU — servis merdiveni\n\nCeset çizgisi: sırtüstü, baş duvara, ayaklar basamaklara doğru.\n\nYara: tek darbe, kafatasının arkası.\nİki üst kolda: her yanda dört parmak ve bir başparmak izi. Taze.\n\nEllerde, dizlerde, yüzde yara yok.\n\nBasamaklar: çelik, tırtıklı, kuru. Kat defterine göre salıdan beri temizlik yapılmamış."
+  },
+  "C4_E03_NAME": {
+    "en": "Visitors' Book",
+    "tr": "Ziyaretçi Defteri"
+  },
+  "C4_E03_DESC": {
+    "en": "Thursday: Av. N. Karaca saw Dr. Vardar from 17:00 to 17:30. At 17:50 “H. Soykan, Emniyet Müdürü — inspection” signed in. He signed out at 18:25.",
+    "tr": "Perşembe: Av. N. Karaca, Dr. Vardar'la 17.00–17.30 arasında görüşmüş. 17.50'de “H. Soykan, Emniyet Müdürü — denetim” giriş yapmış, 18.25'te çıkmış."
+  },
+  "C4_E03_GIST": {
+    "en": "Thursday: Av. N. Karaca saw Dr. Vardar from 17:00 to 17:30. At 17:50 “H. Soykan, Emniyet Müdürü — inspection” signed in. He signed out at 18:25.",
+    "tr": "Perşembe: Av. N. Karaca, Dr. Vardar'la 17.00–17.30 arasında görüşmüş. 17.50'de “H. Soykan, Emniyet Müdürü — denetim” giriş yapmış, 18.25'te çıkmış."
+  },
+  "C4_E03_BODY": {
+    "en": "VISITORS — Thursday\n\n17:00  Av. N. KARACA — legal visit, S. Vardar\n17:30  out\n\n17:50  H. SOYKAN, Emniyet Müdürü — “inspection”\n18:25  out\n\nNo inspection is listed in the prison's programme for this month.",
+    "tr": "ZİYARETÇİLER — Perşembe\n\n17.00  Av. N. KARACA — avukat görüşü, S. Vardar\n17.30  çıkış\n\n17.50  H. SOYKAN, Emniyet Müdürü — “denetim”\n18.25  çıkış\n\nCezaevinin bu ayki programında denetim görünmüyor."
+  },
+  "C4_E04_NAME": {
+    "en": "Camera Log",
+    "tr": "Kamera Kaydı"
+  },
+  "C4_E04_DESC": {
+    "en": "Camera 3, the one over the service stairs, was switched off from 18:00 to 18:20 for “maintenance, authorised by telephone”. No technician signed in.",
+    "tr": "Servis merdivenini gören 3 numaralı kamera 18.00–18.20 arasında “telefonla onaylanan bakım” için kapatılmış. Giriş yapan teknisyen yok."
+  },
+  "C4_E04_GIST": {
+    "en": "Camera 3, the one over the service stairs, was switched off from 18:00 to 18:20 for “maintenance, authorised by telephone”. No technician signed in.",
+    "tr": "Servis merdivenini gören 3 numaralı kamera 18.00–18.20 arasında “telefonla onaylanan bakım” için kapatılmış. Giriş yapan teknisyen yok."
+  },
+  "C4_E04_BODY": {
+    "en": "CONTROL ROOM — cameras\n\nCAM 3 (service stairs)\n18:00  OFF — “maintenance, authorised by telephone”\n18:20  ON\n\nAll other cameras: no interruption.\n\nTechnicians on site Thursday: none.",
+    "tr": "KONTROL ODASI — kameralar\n\nKAM 3 (servis merdiveni)\n18.00  KAPALI — “bakım, telefonla onaylandı”\n18.20  AÇIK\n\nDiğer kameralar: kesinti yok.\n\nPerşembe günü cezaevine giren teknisyen: yok."
+  },
+  "C4_E05_NAME": {
+    "en": "Her Unsent Letter",
+    "tr": "Gönderilmemiş Mektubu"
+  },
+  "C4_E05_DESC": {
+    "en": "Hidden in her library book, addressed to the prosecutor: the ledger is not in any office. “Fener means lighthouse. It is under the lamp.”",
+    "tr": "Kütüphane kitabının arasına saklanmış, savcıya yazılmış: defter hiçbir büroda değil. “Fener, deniz feneri demek. Lambanın altında.”"
+  },
+  "C4_E05_GIST": {
+    "en": "Hidden in her library book, addressed to the prosecutor: the ledger is not in any office. “Fener means lighthouse. It is under the lamp.”",
+    "tr": "Kütüphane kitabının arasına saklanmış, savcıya yazılmış: defter hiçbir büroda değil. “Fener, deniz feneri demek. Lambanın altında.”"
+  },
+  "C4_E05_BODY": {
+    "en": "To Savcı Zeynep Arıkan —\n\nIf I do not reach Monday, read this.\n\nI retyped page 12 in 1998 and I was paid for it, and I killed a man to keep it quiet. I will say so.\n\nThe book they pay from is not in any office. Karaca keeps it and has never once signed it. Fener means lighthouse. It is under the lamp.\n\nThe page torn out of 47-B is with it. I tore it out myself, and I kept it, because it has his name on it.\n\nS. V.",
+    "tr": "Savcı Zeynep Arıkan'a —\n\nPazartesiye çıkamazsam bunu okuyun.\n\n1998'de 12. sayfayı ben yeniden daktilo ettim, karşılığında para aldım; bunu örtmek için de bir adam öldürdüm. Hepsini söyleyeceğim.\n\nÖdemelerin yapıldığı defter hiçbir büroda değil. Karaca saklıyor ama bir kez bile imzalamadı. Fener, deniz feneri demek. Lambanın altında.\n\n47-B'den koparılan sayfa da onun yanında. O sayfayı ben kopardım ve sakladım, çünkü üzerinde onun adı var.\n\nS. V."
+  },
+  "C4_E06_NAME": {
+    "en": "Duty Roster",
+    "tr": "Nöbet Çizelgesi"
+  },
+  "C4_E06_DESC": {
+    "en": "Yıldız asked to be moved to the visiting block for Thursday. At 17:55 the second escort was sent to the gate “by telephone order”.",
+    "tr": "Yıldız perşembe günü için görüş bloğuna verilmeyi kendisi istemiş. 17.55'te ikinci refakatçi “telefon emriyle” kapıya gönderilmiş."
+  },
+  "C4_E06_GIST": {
+    "en": "Yıldız asked to be moved to the visiting block for Thursday. At 17:55 the second escort was sent to the gate “by telephone order”.",
+    "tr": "Yıldız perşembe günü için görüş bloğuna verilmeyi kendisi istemiş. 17.55'te ikinci refakatçi “telefon emriyle” kapıya gönderilmiş."
+  },
+  "C4_E06_BODY": {
+    "en": "DUTY ROSTER — Thursday\n\nVisiting block, 16:00 to 20:00:\nK. YILDIZ (swap, at his own request, entered Wednesday)\nM. Acar\n\nNote, 17:55:\n“Acar to main gate. Telephone order to Yıldız's mobile. — K.Y.”",
+    "tr": "NÖBET ÇİZELGESİ — Perşembe\n\nGörüş bloğu, 16.00–20.00:\nK. YILDIZ (değişim, kendi isteğiyle, çarşamba günü işlendi)\nM. Acar\n\nNot, 17.55:\n“Acar ana kapıya. Yıldız'ın cebine gelen telefon emri. — K.Y.”"
+  },
+  "C4_E07_NAME": {
+    "en": "Karaca's Appointment Book",
+    "tr": "Karaca'nın Randevu Defteri"
+  },
+  "C4_E07_DESC": {
+    "en": "Thursday: “17:00 S.V. — the last offer.” and “19:30 H.S., here.”",
+    "tr": "Perşembe: “17.00 S.V. — son teklif.” ve “19.30 H.S., burada.”"
+  },
+  "C4_E07_GIST": {
+    "en": "Thursday: “17:00 S.V. — the last offer.” and “19:30 H.S., here.”",
+    "tr": "Perşembe: “17.00 S.V. — son teklif.” ve “19.30 H.S., burada.”"
+  },
+  "C4_E07_BODY": {
+    "en": "THURSDAY\n\n17:00  S.V. — the last offer.\n19:30  H.S., here.\n\nFRIDAY\n09:00  Bank — F.D. transfer.",
+    "tr": "PERŞEMBE\n\n17.00  S.V. — son teklif.\n19.30  H.S., burada.\n\nCUMA\n09.00  Banka — F.D. havalesi."
+  },
+  "C4_E08_NAME": {
+    "en": "Brass Plate: Fener Danışmanlık",
+    "tr": "Pirinç Levha: Fener Danışmanlık"
+  },
+  "C4_E08_DESC": {
+    "en": "Fener Danışmanlık Ltd. has no office of its own: its plate hangs in Karaca's. Under the name: “Founded 1997” and a small lighthouse.",
+    "tr": "Fener Danışmanlık Ltd.'nin kendi bürosu yok: levhası Karaca'nın bürosunda asılı. Adın altında “Kuruluş 1997” ve küçük bir deniz feneri var."
+  },
+  "C4_E08_GIST": {
+    "en": "Fener Danışmanlık Ltd. has no office of its own: its plate hangs in Karaca's. Under the name: “Founded 1997” and a small lighthouse.",
+    "tr": "Fener Danışmanlık Ltd.'nin kendi bürosu yok: levhası Karaca'nın bürosunda asılı. Adın altında “Kuruluş 1997” ve küçük bir deniz feneri var."
+  },
+  "C4_E08_BODY": {
+    "en": "FENER DANIŞMANLIK LTD.\nFounded 1997\n\nRegistered office: c/o Av. Nedim Karaca.\n\nEngraved under the name: a lighthouse.",
+    "tr": "FENER DANIŞMANLIK LTD.\nKuruluş 1997\n\nKayıtlı adres: Av. Nedim Karaca nezdinde.\n\nAdın altına bir deniz feneri kazınmış."
+  },
+  "C4_E09_NAME": {
+    "en": "Consultancy Agreement: K. Yıldız",
+    "tr": "Danışmanlık Sözleşmesi: K. Yıldız"
+  },
+  "C4_E09_DESC": {
+    "en": "Fener Danışmanlık has paid prison officer Kenan Yıldız a monthly “consultancy” fee since 2019.",
+    "tr": "Fener Danışmanlık, cezaevi memuru Kenan Yıldız'a 2019'dan beri her ay “danışmanlık” ücreti ödüyor."
+  },
+  "C4_E09_GIST": {
+    "en": "Fener Danışmanlık has paid prison officer Kenan Yıldız a monthly “consultancy” fee since 2019.",
+    "tr": "Fener Danışmanlık, cezaevi memuru Kenan Yıldız'a 2019'dan beri her ay “danışmanlık” ücreti ödüyor."
+  },
+  "C4_E09_BODY": {
+    "en": "AGREEMENT\n\nFener Danışmanlık Ltd. and Kenan YILDIZ, prison officer.\n\n“Security consultancy.” Monthly fee, from January 2019.\n\nSigned for the company: N. Karaca, “as registered agent only”.",
+    "tr": "SÖZLEŞME\n\nFener Danışmanlık Ltd. ile cezaevi memuru Kenan YILDIZ arasında.\n\n“Güvenlik danışmanlığı.” Aylık ücret, Ocak 2019'dan itibaren.\n\nŞirket adına imza: N. Karaca, “yalnızca kayıtlı temsilci sıfatıyla”."
+  },
+  "C4_E10_NAME": {
+    "en": "Key Board",
+    "tr": "Anahtar Panosu"
+  },
+  "C4_E10_DESC": {
+    "en": "Four hooks. Three hold office keys. The third hook holds only a paper tag: “Old lighthouse — lamp room. Out: Thursday 20:10, H.S.”",
+    "tr": "Dört kanca. Üçünde büro anahtarları asılı. Üçüncü kancada yalnızca bir etiket var: “Eski fener — lamba odası. Alındı: Perşembe 20.10, H.S.”"
+  },
+  "C4_E10_GIST": {
+    "en": "Four hooks. Three hold office keys. The third hook holds only a paper tag: “Old lighthouse — lamp room. Out: Thursday 20:10, H.S.”",
+    "tr": "Dört kanca. Üçünde büro anahtarları asılı. Üçüncü kancada yalnızca bir etiket var: “Eski fener — lamba odası. Alındı: Perşembe 20.10, H.S.”"
+  },
+  "C4_E10_BODY": {
+    "en": "KEY BOARD\n\n1  Office\n2  Strong room\n3  — (tag only)\n4  Cellar\n\nTag on hook 3:\n“Old lighthouse — lamp room.\nOut: Thursday 20:10, H.S.”",
+    "tr": "ANAHTAR PANOSU\n\n1  Büro\n2  Kasa dairesi\n3  — (yalnızca etiket)\n4  Bodrum\n\n3. kancadaki etiket:\n“Eski fener — lamba odası.\nAlındı: Perşembe 20.10, H.S.”"
+  },
+  "C4_E11_NAME": {
+    "en": "Official Car Log",
+    "tr": "Makam Aracı Defteri"
+  },
+  "C4_E11_DESC": {
+    "en": "The chief's car left the directorate at 17:35 on Thursday and came back at 18:40. Purpose: “prison”. Nothing about it is in his diary.",
+    "tr": "Müdürün makam aracı perşembe 17.35'te müdürlükten çıkmış, 18.40'ta dönmüş. Gerekçe: “cezaevi”. Ajandasında buna dair bir şey yok."
+  },
+  "C4_E11_GIST": {
+    "en": "The chief's car left the directorate at 17:35 on Thursday and came back at 18:40. Purpose: “prison”. Nothing about it is in his diary.",
+    "tr": "Müdürün makam aracı perşembe 17.35'te müdürlükten çıkmış, 18.40'ta dönmüş. Gerekçe: “cezaevi”. Ajandasında buna dair bir şey yok."
+  },
+  "C4_E11_BODY": {
+    "en": "OFFICIAL CAR 82 A 0001 — Thursday\n\n17:35  out — “prison”\n18:40  in\n19:20  out — “private”\n21:05  in\n\nDesk diary, Thursday 17:00 to 19:00:\n“Budget papers. No calls.”",
+    "tr": "MAKAM ARACI 82 A 0001 — Perşembe\n\n17.35  çıkış — “cezaevi”\n18.40  giriş\n19.20  çıkış — “özel”\n21.05  giriş\n\nMasa ajandası, Perşembe 17.00–19.00:\n“Bütçe evrakı. Telefon bağlanmasın.”"
+  },
+  "C4_E12_NAME": {
+    "en": "Framed Photograph, 1997",
+    "tr": "Çerçeveli Fotoğraf, 1997"
+  },
+  "C4_E12_DESC": {
+    "en": "1997, the old lighthouse: “Restoration committee”. Three young men: N. Karaca, D. Aras and Kom. Yrd. H. Soykan.",
+    "tr": "1997, eski deniz feneri: “Restorasyon komitesi”. Üç genç adam: N. Karaca, D. Aras ve Kom. Yrd. H. Soykan."
+  },
+  "C4_E12_GIST": {
+    "en": "1997, the old lighthouse: “Restoration committee”. Three young men: N. Karaca, D. Aras and Kom. Yrd. H. Soykan.",
+    "tr": "1997, eski deniz feneri: “Restorasyon komitesi”. Üç genç adam: N. Karaca, D. Aras ve Kom. Yrd. H. Soykan."
+  },
+  "C4_E12_BODY": {
+    "en": "Photograph, black and white.\n\nThree men in front of the old Karaliman lighthouse.\n\nCaption, typed:\n“Lighthouse restoration committee, 1997.\nAv. N. Karaca — D. Aras — Kom. Yrd. H. Soykan.”",
+    "tr": "Siyah beyaz fotoğraf.\n\nEski Karaliman fenerinin önünde üç adam.\n\nDaktiloyla yazılmış alt yazı:\n“Fener restorasyon komitesi, 1997.\nAv. N. Karaca — D. Aras — Kom. Yrd. H. Soykan.”"
+  },
+  "C4_E13_NAME": {
+    "en": "Transfer Order",
+    "tr": "Tayin Emri"
+  },
+  "C4_E13_DESC": {
+    "en": "An order transferring Komiser Mira Kaya to Hakkâri, dated tomorrow, signed “H. Soykan” with the initials H.S. in the margin.",
+    "tr": "Komiser Mira Kaya'nın Hakkâri'ye tayin emri; yarının tarihiyle, “H. Soykan” imzalı, kenarında H.S. parafı var."
+  },
+  "C4_E13_GIST": {
+    "en": "An order transferring Komiser Mira Kaya to Hakkâri, dated tomorrow, signed “H. Soykan” with the initials H.S. in the margin.",
+    "tr": "Komiser Mira Kaya'nın Hakkâri'ye tayin emri; yarının tarihiyle, “H. Soykan” imzalı, kenarında H.S. parafı var."
+  },
+  "C4_E13_BODY": {
+    "en": "ORDER\n\nKomiser Mira KAYA is transferred to Hakkâri Provincial Directorate, traffic branch, with immediate effect.\n\nDated: tomorrow.\n\nSigned: H. Soykan\nInitialled in the margin, in green ink: H.S.",
+    "tr": "EMİR\n\nKomiser Mira KAYA, derhâl geçerli olmak üzere Hakkâri İl Emniyet Müdürlüğü trafik şubesine tayin edilmiştir.\n\nTarih: yarın.\n\nİmza: H. Soykan\nKenarda yeşil mürekkeple paraf: H.S."
+  },
+  "C4_E14_NAME": {
+    "en": "The Ledger: 103-F",
+    "tr": "Defter: 103-F"
+  },
+  "C4_E14_DESC": {
+    "en": "Twenty-eight years of “consultancy” payments: clerks, an editor, a policeman, a prison officer. Every line is initialled in green ink: H.S.",
+    "tr": "Yirmi sekiz yıllık “danışmanlık” ödemeleri: kâtipler, bir yayın yönetmeni, bir polis, bir gardiyan. Her satırda yeşil mürekkeple paraf var: H.S."
+  },
+  "C4_E14_GIST": {
+    "en": "Twenty-eight years of “consultancy” payments: clerks, an editor, a policeman, a prison officer. Every line is initialled in green ink: H.S.",
+    "tr": "Yirmi sekiz yıllık “danışmanlık” ödemeleri: kâtipler, bir yayın yönetmeni, bir polis, bir gardiyan. Her satırda yeşil mürekkeple paraf var: H.S."
+  },
+  "C4_E14_BODY": {
+    "en": "MUNICIPAL FINANCE FILE 103-F\nand the book kept with it\n\n1998  Records clerk, archive — page 12, file 47-B\n1999  Harbour police — R. Bulut — file 12-C\n2004  Editor, Postası — file 58-D\n2019  Prison officer — K. Yıldız\n...\n\nEvery entry is paid through Fener Danışmanlık.\nEvery entry is initialled in the margin, in green ink:\n\nH.S.",
+    "tr": "BELEDİYE MALİ DOSYASI 103-F\nve onunla birlikte tutulan defter\n\n1998  Arşiv kâtibi — 12. sayfa, dosya 47-B\n1999  Liman polisi — R. Bulut — dosya 12-C\n2004  Yayın yönetmeni, Postası — dosya 58-D\n2019  Cezaevi memuru — K. Yıldız\n...\n\nHer ödeme Fener Danışmanlık üzerinden yapılmış.\nHer satırın kenarında yeşil mürekkeple paraf var:\n\nH.S."
+  },
+  "C4_E14X_NAME": {
+    "en": "What Is Left of the Ledger",
+    "tr": "Defterden Geriye Kalan"
+  },
+  "C4_E14X_DESC": {
+    "en": "A green cover, burnt through, and a floor of wet ash. Somebody got here before you with a can of petrol.",
+    "tr": "Baştan başa yanmış yeşil bir kapak ve ıslak küllerle kaplı bir zemin. Biri buraya sizden önce bir bidon benzinle gelmiş."
+  },
+  "C4_E14X_GIST": {
+    "en": "A green cover, burnt through, and a floor of wet ash. Somebody got here before you with a can of petrol.",
+    "tr": "Baştan başa yanmış yeşil bir kapak ve ıslak küllerle kaplı bir zemin. Biri buraya sizden önce bir bidon benzinle gelmiş."
+  },
+  "C4_E14X_BODY": {
+    "en": "SCENE NOTE — lamp room\n\nA cloth-bound cover, green, burnt through.\nAsh. The spine. Nothing that can be read.\n\nThe fire was set tonight.",
+    "tr": "OLAY YERİ NOTU — lamba odası\n\nBez ciltli, yeşil, baştan başa yanmış bir kapak.\nKül. Bir sırt. Okunabilecek hiçbir şey yok.\n\nYangın bu gece çıkarılmış."
+  },
+  "C4_E15_NAME": {
+    "en": "The Torn Page",
+    "tr": "Koparılmış Sayfa"
+  },
+  "C4_E15_DESC": {
+    "en": "Pushed into the lamp housing: the page torn from file 47-B in 1998. “Payment authorised by — Kom. Yrd. H. Soykan.”",
+    "tr": "Lamba yuvasına sıkıştırılmış: 1998'de 47-B dosyasından koparılan sayfa. “Ödemeyi onaylayan — Kom. Yrd. H. Soykan.”"
+  },
+  "C4_E15_GIST": {
+    "en": "Pushed into the lamp housing: the page torn from file 47-B in 1998. “Payment authorised by — Kom. Yrd. H. Soykan.”",
+    "tr": "Lamba yuvasına sıkıştırılmış: 1998'de 47-B dosyasından koparılan sayfa. “Ödemeyi onaylayan — Kom. Yrd. H. Soykan.”"
+  },
+  "C4_E15_BODY": {
+    "en": "FILE 47-B — page 31\n\nThe torn edge fits the stub in the archive.\n\n“Payment authorised by —\nKom. Yrd. H. SOYKAN.”\n\nBelow it, the same hand, green ink: H.S.",
+    "tr": "DOSYA 47-B — sayfa 31\n\nYırtık kenarı arşivdeki koçana tam oturuyor.\n\n“Ödemeyi onaylayan —\nKom. Yrd. H. SOYKAN.”\n\nAltında aynı el, yeşil mürekkep: H.S."
+  },
+  "C4_E16_NAME": {
+    "en": "Tin Box: Three Files",
+    "tr": "Teneke Kutu: Üç Dosya"
+  },
+  "C4_E16_DESC": {
+    "en": "Files 31-A, 66-B and 90-A: the last three numbers on the routing slip, each with a page retyped and a receipt stub.",
+    "tr": "31-A, 66-B ve 90-A dosyaları: sevk pusulasındaki son üç numara. Her birinde yeniden daktilo edilmiş bir sayfa ve bir makbuz koçanı var."
+  },
+  "C4_E16_GIST": {
+    "en": "Files 31-A, 66-B and 90-A: the last three numbers on the routing slip, each with a page retyped and a receipt stub.",
+    "tr": "31-A, 66-B ve 90-A dosyaları: sevk pusulasındaki son üç numara. Her birinde yeniden daktilo edilmiş bir sayfa ve bir makbuz koçanı var."
+  },
+  "C4_E16_BODY": {
+    "en": "TIN BOX\n\n31-A  A customs inspection, 2001.\n66-B  A building permit, 2009.\n90-A  A tender for the harbour road, 2015.\n\nIn each: one page in a different typeface, and a stub:\n“Payment authorised by —”",
+    "tr": "TENEKE KUTU\n\n31-A  Bir gümrük denetimi, 2001.\n66-B  Bir yapı ruhsatı, 2009.\n90-A  Rıhtım Yolu ihalesi, 2015.\n\nHer birinde farklı yazı karakteriyle yazılmış bir sayfa ve bir koçan:\n“Ödemeyi onaylayan —”"
+  },
+  "C4_E17_NAME": {
+    "en": "Petrol Can",
+    "tr": "Benzin Bidonu"
+  },
+  "C4_E17_DESC": {
+    "en": "A full can of petrol and a box of matches, left by the hatch. A receipt is taped to it: bought on Thursday at 19:40, paid with a directorate fuel card.",
+    "tr": "Kapağın yanına bırakılmış dolu bir benzin bidonu ve bir kutu kibrit. Üzerine bir fiş bantlanmış: perşembe 19.40'ta, müdürlüğün yakıt kartıyla alınmış."
+  },
+  "C4_E17_GIST": {
+    "en": "A full can of petrol and a box of matches, left by the hatch. A receipt is taped to it: bought on Thursday at 19:40, paid with a directorate fuel card.",
+    "tr": "Kapağın yanına bırakılmış dolu bir benzin bidonu ve bir kutu kibrit. Üzerine bir fiş bantlanmış: perşembe 19.40'ta, müdürlüğün yakıt kartıyla alınmış."
+  },
+  "C4_E17_BODY": {
+    "en": "SCENE NOTE — lamp room\n\nPetrol can, 10 litres, full.\nMatches.\n\nReceipt taped to the can:\nThursday 19:40\nPaid: fuel card, Emniyet Müdürlüğü, vehicle 82 A 0001.",
+    "tr": "OLAY YERİ NOTU — lamba odası\n\nBenzin bidonu, 10 litre, dolu.\nKibrit.\n\nBidona bantlanmış fiş:\nPerşembe 19.40\nÖdeme: yakıt kartı, Emniyet Müdürlüğü, araç 82 A 0001."
+  },
+  "C4_E21_NAME": {
+    "en": "Call to Yıldız, 17:42",
+    "tr": "Yıldız'a Gelen Arama, 17.42"
+  },
+  "C4_E21_DESC": {
+    "en": "At 17:42 on Thursday Yıldız's mobile was rung for two minutes from the direct line of the Emniyet Müdürü's office.",
+    "tr": "Perşembe 17.42'de Yıldız'ın cep telefonu, Emniyet Müdürü makamının direkt hattından aranmış; iki dakika."
+  },
+  "C4_E21_GIST": {
+    "en": "At 17:42 on Thursday Yıldız's mobile was rung for two minutes from the direct line of the Emniyet Müdürü's office.",
+    "tr": "Perşembe 17.42'de Yıldız'ın cep telefonu, Emniyet Müdürü makamının direkt hattından aranmış; iki dakika."
+  },
+  "C4_E21_BODY": {
+    "en": "QUERY: mobile of K. YILDIZ — Thursday\n\n17:42  IN  2 min\nFrom: Emniyet Müdürlüğü, direct line 01\n(office of the Emniyet Müdürü)\n\nNo other calls between 16:00 and 20:00.",
+    "tr": "SORGU: K. YILDIZ'ın cep telefonu — Perşembe\n\n17.42  GELEN  2 dk\nArayan: Emniyet Müdürlüğü, direkt hat 01\n(Emniyet Müdürü makamı)\n\n16.00–20.00 arasında başka arama yok."
+  },
+  "C4_E22_NAME": {
+    "en": "Call to the Control Room, 17:58",
+    "tr": "Kontrol Odasına Gelen Arama, 17.58"
+  },
+  "C4_E22_DESC": {
+    "en": "The “maintenance” on camera 3 was ordered at 17:58 from a mobile registered to the Emniyet Müdürlüğü, calling from inside the prison.",
+    "tr": "3 numaralı kameradaki “bakım” emri 17.58'de, Emniyet Müdürlüğü adına kayıtlı bir cep telefonundan verilmiş; arama cezaevinin içinden yapılmış."
+  },
+  "C4_E22_GIST": {
+    "en": "The “maintenance” on camera 3 was ordered at 17:58 from a mobile registered to the Emniyet Müdürlüğü, calling from inside the prison.",
+    "tr": "3 numaralı kameradaki “bakım” emri 17.58'de, Emniyet Müdürlüğü adına kayıtlı bir cep telefonundan verilmiş; arama cezaevinin içinden yapılmış."
+  },
+  "C4_E22_BODY": {
+    "en": "QUERY: prison control room, incoming — Thursday\n\n17:58  1 min\nFrom: mobile registered to Emniyet Müdürlüğü, “Müdür — official”\nMast: Karaliman Closed Prison (indoor cell)",
+    "tr": "SORGU: cezaevi kontrol odası, gelen aramalar — Perşembe\n\n17.58  1 dk\nArayan: Emniyet Müdürlüğü adına kayıtlı cep telefonu, “Müdür — makam”\nBaz: Karaliman Kapalı Cezaevi (bina içi)"
+  },
+  "C4_E23_NAME": {
+    "en": "Bank Record: Fener to Yıldız",
+    "tr": "Banka Kaydı: Fener'den Yıldız'a"
+  },
+  "C4_E23_DESC": {
+    "en": "On Friday at 09:12, the morning after she died, Fener Danışmanlık paid Kenan Yıldız twenty times his usual monthly fee.",
+    "tr": "Cuma 09.12'de, kadının öldüğü gecenin sabahında, Fener Danışmanlık Kenan Yıldız'a olağan aylık ücretinin yirmi katını ödemiş."
+  },
+  "C4_E23_GIST": {
+    "en": "On Friday at 09:12, the morning after she died, Fener Danışmanlık paid Kenan Yıldız twenty times his usual monthly fee.",
+    "tr": "Cuma 09.12'de, kadının öldüğü gecenin sabahında, Fener Danışmanlık Kenan Yıldız'a olağan aylık ücretinin yirmi katını ödemiş."
+  },
+  "C4_E23_BODY": {
+    "en": "QUERY: Fener Danışmanlık Ltd. — payments to K. YILDIZ\n\nMonthly since 01/2019: 6,000\n\nFriday 09:12: 120,000 — “bonus”",
+    "tr": "SORGU: Fener Danışmanlık Ltd. — K. YILDIZ'a ödemeler\n\n01/2019'dan beri aylık: 6.000\n\nCuma 09.12: 120.000 — “prim”"
+  },
+  "C4_E24_NAME": {
+    "en": "Service Record: K. Yıldız",
+    "tr": "Sicil: K. Yıldız"
+  },
+  "C4_E24_DESC": {
+    "en": "Before the prison service Kenan Yıldız was a harbour policeman, 2005 to 2010, under Rıza Bulut. His transfer was recommended by H. Soykan.",
+    "tr": "Kenan Yıldız cezaevine geçmeden önce 2005–2010 arasında, Rıza Bulut'un emrinde liman polisiymiş. Geçişini H. Soykan tavsiye etmiş."
+  },
+  "C4_E24_GIST": {
+    "en": "Before the prison service Kenan Yıldız was a harbour policeman, 2005 to 2010, under Rıza Bulut. His transfer was recommended by H. Soykan.",
+    "tr": "Kenan Yıldız cezaevine geçmeden önce 2005–2010 arasında, Rıza Bulut'un emrinde liman polisiymiş. Geçişini H. Soykan tavsiye etmiş."
+  },
+  "C4_E24_BODY": {
+    "en": "YILDIZ, Kenan\n\n2005–2010  Harbour Police, Karaliman.\n           Shift supervisor: R. Bulut.\n2010       Transferred to the prison service.\n           Recommendation: H. Soykan.",
+    "tr": "YILDIZ, Kenan\n\n2005–2010  Liman Polisi, Karaliman.\n           Vardiya amiri: R. Bulut.\n2010       Cezaevi teşkilatına geçiş.\n           Tavsiye eden: H. Soykan."
+  },
+  "C4_R_PHONE": {
+    "en": "Who rang Yıldız's mobile with the “telephone order”?",
+    "tr": "Yıldız'ın cebine “telefon emrini” kim verdi?"
+  },
+  "C4_R_CCTV": {
+    "en": "Who rang the control room about camera 3?",
+    "tr": "3 numaralı kamera için kontrol odasını kim aradı?"
+  },
+  "C4_R_BANK": {
+    "en": "Fener Danışmanlık's payments to Kenan Yıldız",
+    "tr": "Fener Danışmanlık'ın Kenan Yıldız'a ödemeleri"
+  },
+  "C4_R_PERSON": {
+    "en": "Service record of Kenan Yıldız",
+    "tr": "Kenan Yıldız'ın sicili"
+  },
+  "C4_LOC_PRISON": {
+    "en": "Prison, Visiting Block",
+    "tr": "Cezaevi, Görüş Bloğu"
+  },
+  "C4_D_CAMERA": {
+    "en": "Camera 3. It looks straight down the service stairs. Its light is on now.",
+    "tr": "3 numaralı kamera. Servis merdivenini tam karşıdan görüyor. Şu an ışığı yanıyor."
+  },
+  "C4_ENTER_NUR": {
+    "en": "A message from Dr. Nur, who examined her at dawn. It is in your statements.",
+    "tr": "Onu şafakta muayene eden Dr. Nur'dan bir mesaj. İfadelerinize eklendi."
+  },
+  "C4_LOC_LAWOFFICE": {
+    "en": "Karaca's Law Office",
+    "tr": "Karaca'nın Hukuk Bürosu"
+  },
+  "C4_D_WINDOW": {
+    "en": "The whole of Karaliman from here: the archive, the harbour road, Pier 9.",
+    "tr": "Karaliman buradan bütünüyle görünüyor: arşiv, Rıhtım Yolu, 9. İskele."
+  },
+  "C4_D_BOOKS": {
+    "en": "Law reports, bound in red. Not one spine is cracked.",
+    "tr": "Kırmızı ciltli içtihat külliyatı. Tek bir cildin bile sırtı kırılmamış."
+  },
+  "C4_LOC_CHIEF": {
+    "en": "The Chief's Office",
+    "tr": "Müdürün Odası"
+  },
+  "C4_D_FLAG": {
+    "en": "The flag of the directorate. He has stood beside it in every photograph for nine years.",
+    "tr": "Müdürlük sancağı. Dokuz yıldır her fotoğrafta onun yanında durur."
+  },
+  "C4_D_PHONE": {
+    "en": "Direct line 01. The receiver is still warm.",
+    "tr": "Direkt hat 01. Ahize hâlâ ılık."
+  },
+  "C4_D_CABINET": {
+    "en": "A filing cabinet with three drawers. All three are empty.",
+    "tr": "Üç çekmeceli bir dosya dolabı. Üçü de boş."
+  },
+  "C4_LOC_LIGHTHOUSE": {
+    "en": "Old Lighthouse, Lamp Room",
+    "tr": "Eski Fener, Lamba Odası"
+  },
+  "C4_D_LAMP": {
+    "en": "The lamp has not turned since 1996. Somebody has kept the glass clean.",
+    "tr": "Lamba 1996'dan beri dönmüyor. Ama biri camını hep temiz tutmuş."
+  },
+  "C4_D_HATCH": {
+    "en": "The hatch to the stairs. A hundred and twelve steps down, and one car on the road below, lights off.",
+    "tr": "Merdivene inen kapak. Yüz on iki basamak aşağıda, yolda farları sönük tek bir araba."
+  },
+  "C4_NAME_MIRA": {
+    "en": "Mira Kaya",
+    "tr": "Mira Kaya"
+  },
+  "C4_NAME_ARIKAN": {
+    "en": "Savcı Zeynep Arıkan",
+    "tr": "Savcı Zeynep Arıkan"
+  },
+  "C4_NAME_YILDIZ": {
+    "en": "Kenan Yıldız",
+    "tr": "Kenan Yıldız"
+  },
+  "C4_NAME_KARACA": {
+    "en": "Av. Nedim Karaca",
+    "tr": "Av. Nedim Karaca"
+  },
+  "C4_NAME_ARAS": {
+    "en": "Demir Aras",
+    "tr": "Demir Aras"
+  },
+  "C4_NAME_SOYKAN": {
+    "en": "Halil Soykan",
+    "tr": "Halil Soykan"
+  },
+  "C4_T_ARIKAN_1_TITLE": {
+    "en": "Arıkan: who knew",
+    "tr": "Arıkan: kimler biliyordu"
+  },
+  "C4_T_ARIKAN_1": {
+    "en": "Dr. Vardar was to testify on Monday. By law the prosecutor had to notify the Emniyet Müdürlüğü of the transfer, and did so on Wednesday.",
+    "tr": "Dr. Vardar pazartesi günü ifade verecekti. Savcı, nakli yasa gereği Emniyet Müdürlüğü'ne bildirmek zorundaydı; çarşamba günü bildirdi."
+  },
+  "C4_T_YILDIZ_1_TITLE": {
+    "en": "Yıldız: “She slipped”",
+    "tr": "Yıldız: “Ayağı kaydı”"
+  },
+  "C4_T_YILDIZ_1": {
+    "en": "Says the steps were wet, she slipped and fell forwards, and he was a step behind her.",
+    "tr": "Basamakların ıslak olduğunu, kadının kayıp öne doğru düştüğünü, kendisinin bir basamak arkada olduğunu söylüyor."
+  },
+  "C4_T_YILDIZ_2_TITLE": {
+    "en": "Yıldız: “I tried to catch her”",
+    "tr": "Yıldız: “Tutmaya çalıştım”"
+  },
+  "C4_T_YILDIZ_2": {
+    "en": "Now says she turned to face him on the stairs and he took her by the arms “to steady her”.",
+    "tr": "Artık kadının merdivende ona doğru döndüğünü, “dengesini bulsun diye” kollarından tuttuğunu söylüyor."
+  },
+  "C4_T_YILDIZ_3_TITLE": {
+    "en": "Yıldız: the voice on the telephone",
+    "tr": "Yıldız: telefondaki ses"
+  },
+  "C4_T_YILDIZ_3": {
+    "en": "“At 17:42 a voice I have known for twenty years said: ‘The stairs. Alone. I will see to the camera.’ Then he came to watch that I did it.”",
+    "tr": "“17.42'de yirmi yıldır tanıdığım bir ses şunu söyledi: ‘Merdiven. Yalnız. Kamerayı ben hallederim.’ Sonra da yaptığımı görmek için kendi geldi.”"
+  },
+  "C4_T_KARACA_1_TITLE": {
+    "en": "Karaca: left at half past five",
+    "tr": "Karaca: beş buçukta çıktı"
+  },
+  "C4_T_KARACA_1": {
+    "en": "Saw his client from 17:00 to 17:30, conveyed an offer, was refused, and left. She was alive.",
+    "tr": "Müvekkiliyle 17.00–17.30 arasında görüşmüş, bir teklif iletmiş, reddedilmiş ve çıkmış. Kadın hayattaymış."
+  },
+  "C4_T_KARACA_2_TITLE": {
+    "en": "Karaca: “I kept the minutes”",
+    "tr": "Karaca: “Tutanakları ben tuttum”"
+  },
+  "C4_T_KARACA_2": {
+    "en": "“Three young men restored a lighthouse. I kept the minutes. I have kept them ever since, and I have never signed one line of them.”",
+    "tr": "“Üç genç adam bir feneri restore etti. Tutanakları ben tuttum. O günden beri de tutuyorum; tek bir satırına imza atmadım.”"
+  },
+  "C4_T_ARAS_1_TITLE": {
+    "en": "Aras: “I pay, I do not run it”",
+    "tr": "Aras: “Ben öderim, yönetmem”"
+  },
+  "C4_T_ARAS_1": {
+    "en": "Says he pays Fener what he is told to pay and has never seen its book.",
+    "tr": "Fener'e kendisine söylenen miktarı ödediğini, defterini hiç görmediğini söylüyor."
+  },
+  "C4_T_ARAS_2_TITLE": {
+    "en": "Aras: “Halil handled it”",
+    "tr": "Aras: “Halil halletti”"
+  },
+  "C4_T_ARAS_2": {
+    "en": "“In 1998 Halil said the fire inquiry would be handled. It was. Everything since has been handled. I have never once been asked to decide anything.”",
+    "tr": "“1998'de Halil yangın tahkikatının halledileceğini söyledi. Halledildi. Ondan sonra her şey halledildi. Bana bir kez bile bir karar sorulmadı.”"
+  },
+  "C4_T_SOYKAN_5_TITLE": {
+    "en": "Soykan: “At my desk until seven”",
+    "tr": "Soykan: “Yediye kadar masamdaydım”"
+  },
+  "C4_T_SOYKAN_5": {
+    "en": "The chief says he was at his desk with the budget papers from five until seven on Thursday.",
+    "tr": "Müdür, perşembe günü beşten yediye kadar masasında bütçe evrakıyla uğraştığını söylüyor."
+  },
+  "C4_T_SOYKAN_6_TITLE": {
+    "en": "Soykan: “An unannounced inspection”",
+    "tr": "Soykan: “Habersiz bir denetim”"
+  },
+  "C4_T_SOYKAN_6": {
+    "en": "Shown the visitors' book, the chief says he made an unannounced inspection of the prison and saw nothing unusual.",
+    "tr": "Ziyaretçi defteri gösterilince müdür, cezaevine habersiz bir denetim yaptığını ve olağandışı bir şey görmediğini söylüyor."
+  },
+  "C4_T_NUR_TIP_TITLE": {
+    "en": "Dr. Nur: the marks on her arms",
+    "tr": "Dr. Nur: kollarındaki izler"
+  },
+  "C4_T_NUR_TIP": {
+    "en": "From Dr. Nur: “The thumbs are on the inside of her arms. Whoever held her was standing in front of her, a step below, and pushed.”",
+    "tr": "Dr. Nur'dan: “Başparmak izleri kollarının iç tarafında. Onu tutan kişi karşısında, bir basamak aşağıda duruyormuş ve itmiş.”"
+  },
+  "C4_I_NOT_FALL_TITLE": {
+    "en": "She was pushed",
+    "tr": "İtildi"
+  },
+  "C4_I_NOT_FALL": {
+    "en": "The report says she slipped on wet steps and fell forwards. She landed on her back, on dry steel, with a man's grip on both arms. She was held and thrown.",
+    "tr": "Tutanağa göre ıslak basamakta kayıp öne düşmüş. Oysa sırtüstü, kuru çeliğin üzerine düşmüş; iki kolunda da bir erkeğin kavrama izleri var. Tutulup itilmiş."
+  },
+  "C4_I_NOT_FALL_W1": {
+    "en": "She jumped.",
+    "tr": "Kendini attı."
+  },
+  "C4_I_NOT_FALL_W2": {
+    "en": "She fainted and fell backwards.",
+    "tr": "Bayılıp arkaya düştü."
+  },
+  "C4_I_BLIND_TITLE": {
+    "en": "He switched the camera off himself",
+    "tr": "Kamerayı kendi kapattırdı"
+  },
+  "C4_I_BLIND": {
+    "en": "The only camera on the stairs went dark at 18:00. The order came two minutes earlier from the chief's official mobile, used inside the prison.",
+    "tr": "Merdiveni gören tek kamera 18.00'de karardı. Emir iki dakika önce, müdürün makam cep telefonundan, cezaevinin içinden verildi."
+  },
+  "C4_I_BLIND_W1": {
+    "en": "A technician ordered routine maintenance.",
+    "tr": "Bir teknisyen olağan bakım emri verdi."
+  },
+  "C4_I_BLIND_W2": {
+    "en": "Yıldız switched it off from the control room.",
+    "tr": "Kamerayı kontrol odasından Yıldız kapattı."
+  },
+  "C4_I_ALONE_TITLE": {
+    "en": "The order to be alone with her",
+    "tr": "Onunla yalnız kalma emri"
+  },
+  "C4_I_ALONE": {
+    "en": "Yıldız asked for that shift on Wednesday. At 17:42 the chief's direct line rang his mobile; at 17:55 he sent the second escort away “by telephone order”.",
+    "tr": "Yıldız o nöbeti çarşamba günü kendisi istedi. 17.42'de müdürün direkt hattı cebini aradı; 17.55'te ikinci refakatçiyi “telefon emriyle” uzaklaştırdı."
+  },
+  "C4_I_ALONE_W1": {
+    "en": "The second officer left on his own initiative.",
+    "tr": "İkinci memur kendi isteğiyle ayrıldı."
+  },
+  "C4_I_ALONE_W2": {
+    "en": "The call was from the prison governor.",
+    "tr": "Arayan cezaevi müdürüydü."
+  },
+  "C4_I_PRESENT_TITLE": {
+    "en": "He was in the building",
+    "tr": "Binadaydı"
+  },
+  "C4_I_PRESENT": {
+    "en": "His diary says budget papers. His car log and the prison's own book say he was inside the visiting block from 17:50 to 18:25. She died at 18:10.",
+    "tr": "Ajandasında bütçe evrakı yazıyor. Makam aracı defteri ve cezaevinin kendi kaydı ise 17.50–18.25 arasında görüş bloğunda olduğunu gösteriyor. Kadın 18.10'da öldü."
+  },
+  "C4_I_PRESENT_W1": {
+    "en": "Somebody else signed in under his name.",
+    "tr": "Onun adına başka biri giriş yaptı."
+  },
+  "C4_I_PRESENT_W2": {
+    "en": "He arrived after she had fallen.",
+    "tr": "Kadın düştükten sonra geldi."
+  },
+  "C4_I_PAID_TITLE": {
+    "en": "Paid the morning after",
+    "tr": "Ertesi sabah ödendi"
+  },
+  "C4_I_PAID": {
+    "en": "Fener has kept Yıldız on a fee since 2019. The morning after Dr. Vardar died it paid him twenty times that fee.",
+    "tr": "Fener, Yıldız'a 2019'dan beri ücret ödüyor. Dr. Vardar'ın öldüğü gecenin sabahında bu ücretin yirmi katını ödedi."
+  },
+  "C4_I_PAID_W1": {
+    "en": "It was a loan he had applied for.",
+    "tr": "Başvurduğu bir krediydi."
+  },
+  "C4_I_PAID_W2": {
+    "en": "The payment came from the prison service.",
+    "tr": "Ödemeyi cezaevi idaresi yaptı."
+  },
+  "C4_I_LIGHTHOUSE_TITLE": {
+    "en": "Under the lamp",
+    "tr": "Lambanın altında"
+  },
+  "C4_I_LIGHTHOUSE": {
+    "en": "Her letter says the ledger is under the lamp of a lighthouse. Karaca's board has an empty hook for the lamp room of the old lighthouse, and the key went out last night.",
+    "tr": "Mektubuna göre defter bir fenerin lambasının altında. Karaca'nın panosunda eski fenerin lamba odasına ait boş bir kanca var; anahtar dün gece alınmış."
+  },
+  "C4_I_LIGHTHOUSE_W1": {
+    "en": "The ledger is in Karaca's strong room.",
+    "tr": "Defter Karaca'nın kasa dairesinde."
+  },
+  "C4_I_LIGHTHOUSE_W2": {
+    "en": "“Fener” is only the name of the company.",
+    "tr": "“Fener” yalnızca şirketin adı."
+  },
+  "C4_I_AUTHORISED_TITLE": {
+    "en": "The name on the page",
+    "tr": "Sayfadaki isim"
+  },
+  "C4_I_AUTHORISED": {
+    "en": "The page torn from 47-B completes the stub: “Payment authorised by — H. Soykan.” The same green initials stand beside every payment in the ledger for twenty-eight years.",
+    "tr": "47-B'den koparılan sayfa koçanı tamamlıyor: “Ödemeyi onaylayan — H. Soykan.” Aynı yeşil paraf, defterdeki yirmi sekiz yıllık her ödemenin yanında duruyor."
+  },
+  "C4_I_AUTHORISED_W1": {
+    "en": "The initials are Karaca's.",
+    "tr": "Paraf Karaca'ya ait."
+  },
+  "C4_I_AUTHORISED_W2": {
+    "en": "The page is a forgery made by Dr. Vardar.",
+    "tr": "Sayfa, Dr. Vardar'ın düzdüğü bir sahte."
+  },
+  "C4_I_MOTIVE_TITLE": {
+    "en": "She was going to give them his name",
+    "tr": "Onun adını verecekti"
+  },
+  "C4_I_MOTIVE": {
+    "en": "On Monday Dr. Vardar would have told the prosecutor where the torn page was. It carries one name, and it is the name of the man the prosecutor had to notify of her transfer.",
+    "tr": "Dr. Vardar pazartesi günü savcıya koparılan sayfanın yerini söyleyecekti. Sayfada tek bir isim var; o da savcının nakli bildirmek zorunda olduğu adamın ismi."
+  },
+  "C4_I_MOTIVE_W1": {
+    "en": "She was killed for what she did in the archive.",
+    "tr": "Arşivde yaptığı şey yüzünden öldürüldü."
+  },
+  "C4_I_MOTIVE_W2": {
+    "en": "She was going to accuse Karaca.",
+    "tr": "Karaca'yı suçlayacaktı."
+  },
+  "C4_I_COMMITTEE_TITLE": {
+    "en": "Three men and a lighthouse",
+    "tr": "Üç adam ve bir fener"
+  },
+  "C4_I_COMMITTEE": {
+    "en": "Fener Danışmanlık was founded in 1997, the year a lawyer, a shipowner and a young police officer formed a committee to restore a lighthouse.",
+    "tr": "Fener Danışmanlık 1997'de kuruldu; bir avukatın, bir armatörün ve genç bir polis memurunun bir feneri restore etmek için komite kurduğu yıl."
+  },
+  "C4_I_COMMITTEE_W1": {
+    "en": "The committee was a charity and nothing more.",
+    "tr": "Komite bir hayır işinden ibaretti."
+  },
+  "C4_I_COMMITTEE_W2": {
+    "en": "Aras founded the firm alone.",
+    "tr": "Şirketi Aras tek başına kurdu."
+  },
+  "C4_I_KARACA_TITLE": {
+    "en": "The last offer",
+    "tr": "Son teklif"
+  },
+  "C4_I_KARACA": {
+    "en": "Karaca carried “the last offer” at five and was out of the building by half past. At half past seven he received H.S. He knew what refusal meant; he was not there when it happened.",
+    "tr": "Karaca saat beşte “son teklifi” götürdü, beş buçukta binadan çıkmıştı. Yedi buçukta H.S.'yi ağırladı. Reddin ne anlama geldiğini biliyordu; olay olurken orada değildi."
+  },
+  "C4_I_KARACA_W1": {
+    "en": "Karaca pushed her himself.",
+    "tr": "Onu Karaca kendi elleriyle itti."
+  },
+  "C4_I_KARACA_W2": {
+    "en": "Karaca knew nothing about it.",
+    "tr": "Karaca'nın hiçbir şeyden haberi yoktu."
+  },
+  "C4_I_SIGNATURE_TITLE": {
+    "en": "Green ink",
+    "tr": "Yeşil mürekkep"
+  },
+  "C4_I_SIGNATURE": {
+    "en": "The initials on tomorrow's transfer order and the initials beside twenty-eight years of payments are the same hand and the same green ink.",
+    "tr": "Yarının tarihli tayin emrindeki parafla yirmi sekiz yıllık ödemelerin yanındaki paraf aynı elden, aynı yeşil mürekkepten çıkma."
+  },
+  "C4_I_SIGNATURE_W1": {
+    "en": "Many officers initial in green.",
+    "tr": "Pek çok memur yeşil mürekkeple paraf atar."
+  },
+  "C4_I_SIGNATURE_W2": {
+    "en": "His secretary initials for him.",
+    "tr": "Onun yerine sekreteri paraf atıyor."
+  },
+  "C4_ARIKAN_INTRO_1": {
+    "en": "Komiser Kaya. I asked for you by name, and I did not ask through your directorate.",
+    "tr": "Komiser Kaya. Sizi adınızla istedim; müdürlüğünüz üzerinden de istemedim."
+  },
+  "C4_ARIKAN_INTRO_2": {
+    "en": "Selin Vardar was going to stand in front of me on Monday and say who has been paying for this city's paperwork since 1998. The prison says she fell down the stairs.",
+    "tr": "Selin Vardar pazartesi günü karşıma çıkıp 1998'den beri bu şehrin evrakının parasını kimin ödediğini söyleyecekti. Cezaevi merdivenden düştüğünü söylüyor."
+  },
+  "C4_ARIKAN_INTRO_3": {
+    "en": "Then I will start with the stairs.",
+    "tr": "O zaman merdivenden başlıyorum."
+  },
+  "C4_ARIKAN_RETURN": {
+    "en": "Komiser.",
+    "tr": "Komiser."
+  },
+  "C4_ARIKAN_CLOSED": {
+    "en": "Bring me something I can put in front of a judge, Komiser.",
+    "tr": "Bana bir hâkimin önüne koyabileceğim bir şey getirin Komiser."
+  },
+  "C4_ARIKAN_Q_KNEW": {
+    "en": "Who knew she was going to testify?",
+    "tr": "İfade vereceğini kimler biliyordu?"
+  },
+  "C4_ARIKAN_KNEW_1": {
+    "en": "My clerk, her lawyer, and by law the Emniyet Müdürlüğü: I must notify them of any transfer of a remand prisoner. I sent the notice on Wednesday.",
+    "tr": "Kâtibim, avukatı ve yasa gereği Emniyet Müdürlüğü: bir tutuklunun her naklini bildirmek zorundayım. Bildirimi çarşamba günü gönderdim."
+  },
+  "C4_ARIKAN_P_KNEW_1": {
+    "en": "To whom, at the directorate?",
+    "tr": "Müdürlükte kime?"
+  },
+  "C4_ARIKAN_P_KNEW_2": {
+    "en": "To the office of the Müdür. There is only one box on the form.",
+    "tr": "Müdürlük makamına. Formda tek bir kutu var."
+  },
+  "C4_ARIKAN_Q_REPORT": {
+    "en": "Who do I report to on this?",
+    "tr": "Bu dosyada kime rapor veriyorum?"
+  },
+  "C4_ARIKAN_REPORT_1": {
+    "en": "To me. If your chief asks, you are within your rights to tell him the prosecutor has the file. Whether you tell him more than that is your decision, and I will not make it for you.",
+    "tr": "Bana. Müdürünüz sorarsa dosyanın savcıda olduğunu söylemek hakkınız. Bundan fazlasını söyleyip söylememek sizin kararınız; bu kararı sizin yerinize ben vermem."
+  },
+  "C4_ARIKAN_Q_HER": {
+    "en": "What was she like, at the end?",
+    "tr": "Son günlerinde nasıldı?"
+  },
+  "C4_ARIKAN_HER_1": {
+    "en": "Calm. She asked for paper on Wednesday and a library book about lighthouse keepers. I thought the book was an odd choice.",
+    "tr": "Sakindi. Çarşamba günü kâğıt istedi, bir de fener bekçileri hakkında bir kütüphane kitabı. Kitabı tuhaf bir seçim sanmıştım."
+  },
+  "C4_ARIKAN_Q_BYE": {
+    "en": "I will be back, Savcım.",
+    "tr": "Döneceğim Savcım."
+  },
+  "C4_YILDIZ_INTRO_1": {
+    "en": "Başgardiyan Yıldız. I wrote the report. I have nothing to add to it.",
+    "tr": "Başgardiyan Yıldız. Tutanağı ben yazdım. Ekleyecek bir şeyim yok."
+  },
+  "C4_YILDIZ_INTRO_2": {
+    "en": "Then it will not take long.",
+    "tr": "O zaman uzun sürmez."
+  },
+  "C4_YILDIZ_RETURN": {
+    "en": "Komiserim.",
+    "tr": "Komiserim."
+  },
+  "C4_YILDIZ_CLOSED": {
+    "en": "My shift is over. Put it in writing to the governor.",
+    "tr": "Nöbetim bitti. Yazıyla cezaevi müdürüne bildirin."
+  },
+  "C4_YILDIZ_WRONG": {
+    "en": "I do not see what that has to do with it.",
+    "tr": "Bunun konuyla ne ilgisi var, anlamadım."
+  },
+  "C4_YILDIZ_Q_FALL": {
+    "en": "Tell me how she fell.",
+    "tr": "Nasıl düştüğünü anlatın."
+  },
+  "C4_YILDIZ_FALL_1": {
+    "en": "The steps were wet. She slipped and went forwards, head first. I was a step behind. It was over before I could move.",
+    "tr": "Basamaklar ıslaktı. Ayağı kaydı, baş aşağı öne gitti. Bir basamak arkasındaydım. Ben kıpırdayamadan olup bitti."
+  },
+  "C4_YILDIZ_P_FALL_1": {
+    "en": "Wet from what?",
+    "tr": "Ne yüzünden ıslaktı?"
+  },
+  "C4_YILDIZ_P_FALL_2": {
+    "en": "Cleaners. Rain off somebody's boots. I do not inspect the floor.",
+    "tr": "Temizlikçiler. Birinin botundan akan yağmur. Yeri denetlemek benim işim değil."
+  },
+  "C4_YILDIZ_GRIP_1": {
+    "en": "She was on her back on dry steel, and somebody's fingers are printed on both her arms.",
+    "tr": "Kuru çeliğin üzerinde sırtüstü yatıyordu; iki kolunda da birinin parmakları çıkmış."
+  },
+  "C4_YILDIZ_GRIP_2": {
+    "en": "...She turned round on the stairs. She said she was not going back to the wing. I took her by the arms to steady her. That is all.",
+    "tr": "...Merdivende bana döndü. Koğuşa dönmeyeceğini söyledi. Dengesini bulsun diye kollarından tuttum. O kadar."
+  },
+  "C4_YILDIZ_Q_ALONE": {
+    "en": "Why were you alone with her?",
+    "tr": "Onunla neden yalnızdınız?"
+  },
+  "C4_YILDIZ_ALONE_1": {
+    "en": "Acar was wanted at the gate. It happens ten times a week.",
+    "tr": "Acar kapıya çağrıldı. Haftada on kez olur."
+  },
+  "C4_YILDIZ_P_ALONE_1": {
+    "en": "Who wanted him?",
+    "tr": "Kim çağırdı?"
+  },
+  "C4_YILDIZ_P_ALONE_2": {
+    "en": "The gate.",
+    "tr": "Kapı."
+  },
+  "C4_YILDIZ_ORDER_1": {
+    "en": "You sent him, on an order that came to your own telephone at 17:42 from direct line 01 at the directorate.",
+    "tr": "Onu siz gönderdiniz; 17.42'de müdürlüğün 01 numaralı direkt hattından kendi telefonunuza gelen bir emirle."
+  },
+  "C4_YILDIZ_ORDER_2": {
+    "en": "...I have two children, Komiserim.",
+    "tr": "...İki çocuğum var Komiserim."
+  },
+  "C4_YILDIZ_ORDER_THINK": {
+    "en": "(He is the hand, not the head. The prosecutor can protect a witness. Or I can simply frighten him, and he will reach for the same lawyer they all reach for.)",
+    "tr": "(O yalnızca el; baş değil. Savcı bir tanığı koruyabilir. Ya da onu korkuturum, o da hepsinin sığındığı avukata sığınır.)"
+  },
+  "C4_YILDIZ_CHOICE_DEAL": {
+    "en": "Say it to the prosecutor and she will keep you and your children alive.",
+    "tr": "Bunu savcıya anlatın; sizi de çocuklarınızı da o korur."
+  },
+  "C4_YILDIZ_CHOICE_THREAT": {
+    "en": "You will go down for murder alone. Think about that.",
+    "tr": "Cinayetten tek başınıza yanacaksınız. Bunu bir düşünün."
+  },
+  "C4_YILDIZ_DEAL_1": {
+    "en": "A voice I have known for twenty years said: “The stairs. Alone. I will see to the camera.” Then he came himself, and stood at the top, and watched that I did it.",
+    "tr": "Yirmi yıldır tanıdığım bir ses, “Merdiven. Yalnız. Kamerayı ben hallederim,” dedi. Sonra kendi geldi, yukarıda durdu, yaptığımı seyretti."
+  },
+  "C4_YILDIZ_DEAL_2": {
+    "en": "I will not say the name in this building.",
+    "tr": "O ismi bu binada söylemem."
+  },
+  "C4_YILDIZ_THREAT_1": {
+    "en": "Then I will say nothing, and Nedim Bey will say it for me. He told me this morning he would.",
+    "tr": "O zaman ben hiçbir şey söylemem; benim yerime Nedim Bey söyler. Bu sabah öyle yapacağını bildirdi."
+  },
+  "C4_YILDIZ_Q_CAMERA": {
+    "en": "Camera 3 was off.",
+    "tr": "3 numaralı kamera kapalıydı."
+  },
+  "C4_YILDIZ_CAMERA_1": {
+    "en": "Maintenance. I do not run the control room.",
+    "tr": "Bakım. Kontrol odasına ben bakmıyorum."
+  },
+  "C4_YILDIZ_P_CAMERA_1": {
+    "en": "For exactly the twenty minutes you needed.",
+    "tr": "Tam da size lazım olan yirmi dakika boyunca."
+  },
+  "C4_YILDIZ_P_CAMERA_2": {
+    "en": "I did not need anything.",
+    "tr": "Bana hiçbir şey lazım değildi."
+  },
+  "C4_YILDIZ_Q_BYE": {
+    "en": "Stay where I can find you.",
+    "tr": "Sizi bulabileceğim bir yerde olun."
+  },
+  "C4_KARACA_INTRO_1": {
+    "en": "Komiser Kaya. We meet at last. Please, sit; you have been in three of my clients' lives and never once in my office.",
+    "tr": "Komiser Kaya. Nihayet tanışıyoruz. Buyurun oturun; üç müvekkilimin hayatına girdiniz ama büroma hiç gelmediniz."
+  },
+  "C4_KARACA_INTRO_2": {
+    "en": "A fourth client of yours died yesterday.",
+    "tr": "Dördüncü bir müvekkiliniz dün öldü."
+  },
+  "C4_KARACA_INTRO_3": {
+    "en": "She did. I will answer what I can. I do not lie, Komiser; it is a professional habit. I decline.",
+    "tr": "Öldü. Cevaplayabildiğimi cevaplarım. Ben yalan söylemem Komiser; meslek alışkanlığı. Yalnızca cevap vermeyi reddederim."
+  },
+  "C4_KARACA_RETURN": {
+    "en": "Komiser.",
+    "tr": "Komiser."
+  },
+  "C4_KARACA_CLOSED": {
+    "en": "I think we have reached the end of what I can usefully say. My secretary will see you out.",
+    "tr": "Sanırım faydalı olabileceğim sınıra geldik. Sekreterim size kapıya kadar eşlik eder."
+  },
+  "C4_KARACA_WRONG": {
+    "en": "I am afraid that is not responsive, as we say.",
+    "tr": "Korkarım bu, bizim tabirimizle, konuyla ilgili değil."
+  },
+  "C4_KARACA_Q_VISIT": {
+    "en": "Your visit at five o'clock.",
+    "tr": "Saat beşteki ziyaretiniz."
+  },
+  "C4_KARACA_VISIT_1": {
+    "en": "I saw my client from five until half past. I conveyed an offer. She declined it. I left. She was alive and, if I may say so, unwise.",
+    "tr": "Müvekkilimi beşten beş buçuğa kadar gördüm. Bir teklif ilettim. Reddetti. Çıktım. Hayattaydı ve, izninizle söyleyeyim, akılsızca davranıyordu."
+  },
+  "C4_KARACA_P_VISIT_1": {
+    "en": "Whose offer?",
+    "tr": "Kimin teklifi?"
+  },
+  "C4_KARACA_P_VISIT_2": {
+    "en": "I decline to say.",
+    "tr": "Bunu söylemeyi reddediyorum."
+  },
+  "C4_KARACA_Q_FENER": {
+    "en": "Fener Danışmanlık.",
+    "tr": "Fener Danışmanlık."
+  },
+  "C4_KARACA_FENER_1": {
+    "en": "A client. Registered at this address, as the public register says. I am its agent. I am not its owner, and I do not decide what it pays or to whom.",
+    "tr": "Bir müvekkil. Sicilde de yazdığı gibi bu adreste kayıtlı. Temsilcisiyim. Sahibi değilim; kime ne ödeyeceğine de ben karar vermem."
+  },
+  "C4_KARACA_P_FENER_1": {
+    "en": "Who decides?",
+    "tr": "Kim karar veriyor?"
+  },
+  "C4_KARACA_P_FENER_2": {
+    "en": "I decline to say.",
+    "tr": "Bunu söylemeyi reddediyorum."
+  },
+  "C4_KARACA_MINUTES_1": {
+    "en": "1997. You, Demir Aras and a young police officer, in front of a lighthouse.",
+    "tr": "1997. Siz, Demir Aras ve genç bir polis memuru, bir fenerin önünde."
+  },
+  "C4_KARACA_MINUTES_2": {
+    "en": "Three young men restored a lighthouse. I kept the minutes. I have kept them ever since, and I have never signed one line of them. You will find that I was very careful about that.",
+    "tr": "Üç genç adam bir feneri restore etti. Tutanakları ben tuttum. O günden beri de tutuyorum; tek bir satırına imza atmadım. Bu konuda ne kadar titiz olduğumu göreceksiniz."
+  },
+  "C4_KARACA_MINUTES_3": {
+    "en": "If you need a name for your prosecutor, Komiser, I am sixty-eight and tired. Mine would do. The city would stay quiet. Think about it.",
+    "tr": "Savcınız için bir isim lazımsa Komiser, altmış sekiz yaşındayım ve yorgunum. Benimki iş görür. Şehir de sakin kalır. Bir düşünün."
+  },
+  "C4_KARACA_Q_EVENING": {
+    "en": "19:30, “H.S., here.”",
+    "tr": "19.30, “H.S., burada.”"
+  },
+  "C4_KARACA_EVENING_1": {
+    "en": "An old friend called. He took a key from the board and left. I did not ask what for. I have found it best not to.",
+    "tr": "Eski bir dost uğradı. Panodan bir anahtar aldı, gitti. Ne için olduğunu sormadım. Sormamanın en iyisi olduğunu öğrendim."
+  },
+  "C4_KARACA_P_EVENING_1": {
+    "en": "Which key?",
+    "tr": "Hangi anahtar?"
+  },
+  "C4_KARACA_P_EVENING_2": {
+    "en": "The board is on the wall behind you, Komiser. You can read.",
+    "tr": "Pano arkanızdaki duvarda Komiser. Okuma yazmanız var."
+  },
+  "C4_KARACA_Q_BYE": {
+    "en": "We will speak again.",
+    "tr": "Yine görüşeceğiz."
+  },
+  "C4_ARAS_INTRO_1": {
+    "en": "You. Of course it is you. I came here to ask Nedim whether I should leave the country, and you walk in.",
+    "tr": "Siz. Tabii ki siz. Nedim'e ülkeden ayrılmalı mıyım diye sormaya geldim, içeri siz girdiniz."
+  },
+  "C4_ARAS_INTRO_2": {
+    "en": "Should you?",
+    "tr": "Ayrılmalı mısınız?"
+  },
+  "C4_ARAS_INTRO_3": {
+    "en": "She fell down a staircase in a locked building, Komiser. You tell me.",
+    "tr": "Kadın kilitli bir binada merdivenden düştü Komiser. Siz söyleyin."
+  },
+  "C4_ARAS_RETURN": {
+    "en": "What now?",
+    "tr": "Yine ne var?"
+  },
+  "C4_ARAS_CLOSED": {
+    "en": "I am not saying another word without Nedim. And I am no longer sure about Nedim.",
+    "tr": "Nedim olmadan tek kelime etmem. Nedim'den de artık pek emin değilim."
+  },
+  "C4_ARAS_WRONG": {
+    "en": "That means nothing to me.",
+    "tr": "Bunun benim için bir anlamı yok."
+  },
+  "C4_ARAS_Q_FENER": {
+    "en": "What is Fener to you?",
+    "tr": "Fener sizin için ne?"
+  },
+  "C4_ARAS_FENER_1": {
+    "en": "An invoice. Every month a figure arrives and I pay it. I have never seen its book, I do not know who is on it, and I have learned not to ask.",
+    "tr": "Bir fatura. Her ay bir rakam gelir, öderim. Defterini hiç görmedim, içinde kimler var bilmem; sormamayı da öğrendim."
+  },
+  "C4_ARAS_P_FENER_1": {
+    "en": "Who sends the figure?",
+    "tr": "Rakamı kim gönderiyor?"
+  },
+  "C4_ARAS_P_FENER_2": {
+    "en": "Nedim's office. On whose word, I could not say.",
+    "tr": "Nedim'in bürosu. Kimin sözüyle, bilemem."
+  },
+  "C4_ARAS_HALIL_1": {
+    "en": "You were on the committee. There were three of you.",
+    "tr": "Komitedeydiniz. Üç kişiydiniz."
+  },
+  "C4_ARAS_HALIL_2": {
+    "en": "In 1998 Halil came to my office and said the fire inquiry would be handled. It was. Everything since has been handled. I have paid for all of it and I have never once been asked to decide anything.",
+    "tr": "1998'de Halil büroma geldi, yangın tahkikatının halledileceğini söyledi. Halledildi. O günden beri her şey halledildi. Hepsinin parasını ben ödedim; bana bir kez bile bir karar sorulmadı."
+  },
+  "C4_ARAS_HALIL_THINK": {
+    "en": "(He is a witness now, and a frightened one. I can hold him for the prosecutor, or let him run and hope he is still alive to testify.)",
+    "tr": "(Artık bir tanık; hem de korkmuş bir tanık. Onu savcı için gözaltında tutabilirim ya da kaçmasına izin verip ifade verecek kadar yaşamasını umabilirim.)"
+  },
+  "C4_ARAS_CHOICE_HOLD": {
+    "en": "You are coming with me, as a protected witness.",
+    "tr": "Benimle geliyorsunuz; koruma altında tanık olarak."
+  },
+  "C4_ARAS_CHOICE_RELEASE": {
+    "en": "Go. Stay reachable.",
+    "tr": "Gidin. Ama ulaşabileceğim bir yerde olun."
+  },
+  "C4_ARAS_HOLD_1": {
+    "en": "A cell. Yes. Do you know, I think that is the safest room in Karaliman tonight, provided it has no stairs.",
+    "tr": "Bir hücre. Evet. Biliyor musunuz, merdiveni olmadığı sürece bu gece Karaliman'ın en güvenli odası orası sanırım."
+  },
+  "C4_ARAS_RELEASE_1": {
+    "en": "Thank you. I have a boat. I will be on it within the hour.",
+    "tr": "Teşekkür ederim. Bir teknem var. Bir saate kalmaz üzerinde olurum."
+  },
+  "C4_ARAS_Q_BYE": {
+    "en": "Do not leave this room yet.",
+    "tr": "Bu odadan henüz ayrılmayın."
+  },
+  "C4_SOYKAN_INTRO_1": {
+    "en": "Kaya. Come in. A death in custody; a wretched thing. I hear the prosecutor has you running about on it.",
+    "tr": "Kaya. Gel. Gözetim altında bir ölüm; berbat bir iş. Duyduğuma göre savcı seni bunun peşinde koşturuyormuş."
+  },
+  "C4_SOYKAN_INTRO_2": {
+    "en": "She has, Müdürüm.",
+    "tr": "Öyle Müdürüm."
+  },
+  "C4_SOYKAN_INTRO_3": {
+    "en": "Then let us make it quick and clean, for the department's sake.",
+    "tr": "O zaman teşkilatın hatırı için çabuk ve temiz halledelim."
+  },
+  "C4_SOYKAN_RETURN": {
+    "en": "Yes, Kaya?",
+    "tr": "Evet Kaya?"
+  },
+  "C4_SOYKAN_CLOSED": {
+    "en": "That will be all, Komiser.",
+    "tr": "Bu kadar yeter Komiser."
+  },
+  "C4_SOYKAN_WRONG": {
+    "en": "You are wasting my time, Kaya.",
+    "tr": "Vaktimi harcıyorsun Kaya."
+  },
+  "C4_SOYKAN_Q_WHERE": {
+    "en": "Where were you on Thursday evening, Müdürüm?",
+    "tr": "Perşembe akşamı neredeydiniz Müdürüm?"
+  },
+  "C4_SOYKAN_WHERE_1": {
+    "en": "At this desk, with the budget papers, from five until seven. Ask my secretary; I told her to put no calls through.",
+    "tr": "Bu masada, bütçe evrakının başında; beşten yediye kadar. Sekreterime sor; telefon bağlamamasını söylemiştim."
+  },
+  "C4_SOYKAN_P_WHERE_1": {
+    "en": "You did not leave the building?",
+    "tr": "Binadan hiç çıkmadınız mı?"
+  },
+  "C4_SOYKAN_P_WHERE_2": {
+    "en": "Are you taking my statement, Komiser?",
+    "tr": "İfademi mi alıyorsun Komiser?"
+  },
+  "C4_SOYKAN_CAUGHT_1": {
+    "en": "The prison's book has you signing in at 17:50 and out at 18:25. She died at 18:10.",
+    "tr": "Cezaevinin defterine göre 17.50'de giriş, 18.25'te çıkış yapmışsınız. Kadın 18.10'da öldü."
+  },
+  "C4_SOYKAN_CAUGHT_2": {
+    "en": "An unannounced inspection. I do them when I choose; that is the point of them. I saw nothing unusual, and I was told about the accident as I left.",
+    "tr": "Habersiz bir denetim. İstediğim zaman yaparım; zaten amacı da budur. Olağandışı bir şey görmedim; kazayı da çıkarken haber verdiler."
+  },
+  "C4_SOYKAN_CAUGHT_3": {
+    "en": "You are a good detective, Mira. I said so the day I gave you the archive. I did not think you would be this good.",
+    "tr": "İyi bir dedektifsin Mira. Sana arşivi verdiğim gün de söylemiştim. Bu kadar iyi olacağını düşünmemiştim."
+  },
+  "C4_SOYKAN_Q_NOTES": {
+    "en": "You wanted to know where I am going next.",
+    "tr": "Bundan sonra nereye gideceğimi bilmek istemişsiniz."
+  },
+  "C4_SOYKAN_NOTES_1": {
+    "en": "I do. Before the prosecutor hears it. Where are you going from here, Kaya, and what do you expect to find?",
+    "tr": "Evet. Hem de savcıdan önce. Buradan nereye gidiyorsun Kaya, ne bulmayı bekliyorsun?"
+  },
+  "C4_SOYKAN_NOTES_THINK": {
+    "en": "(If I tell him, he will know where I am going an hour before I get there.)",
+    "tr": "(Söylersem, gideceğim yeri benden bir saat önce bilecek.)"
+  },
+  "C4_SOYKAN_CHOICE_INFORM": {
+    "en": "Tell him everything you have, and where you are going.",
+    "tr": "Elinizdeki her şeyi ve nereye gideceğinizi söyleyin."
+  },
+  "C4_SOYKAN_CHOICE_HOLD": {
+    "en": "“The prosecutor has the file, Müdürüm.”",
+    "tr": "“Dosya savcıda Müdürüm.”"
+  },
+  "C4_SOYKAN_INFORM_1": {
+    "en": "Thank you, Kaya. That is very useful. Take your time getting there; the roads are bad tonight.",
+    "tr": "Sağ ol Kaya. Çok işe yarar. Oraya giderken acele etme; bu gece yollar kötü."
+  },
+  "C4_SOYKAN_HOLD_1": {
+    "en": "Is that so.",
+    "tr": "Öyle mi."
+  },
+  "C4_SOYKAN_HOLD_2": {
+    "en": "There is a paper on my desk with your name on it. Read it on your way out.",
+    "tr": "Masamda üzerinde adın yazan bir kâğıt var. Çıkarken oku."
+  },
+  "C4_SOYKAN_Q_ORDER": {
+    "en": "Hakkâri.",
+    "tr": "Hakkâri."
+  },
+  "C4_SOYKAN_ORDER_1": {
+    "en": "A fine posting. Mountain air. It is dated tomorrow, Kaya, which gives you tonight to decide what kind of report you would like to hand in.",
+    "tr": "Güzel bir görev yeri. Dağ havası. Tarihi yarın Kaya; yani nasıl bir rapor vermek istediğine karar vermek için bu geceyi sana bırakıyor."
+  },
+  "C4_SOYKAN_P_ORDER_1": {
+    "en": "You initial in green ink, Müdürüm.",
+    "tr": "Yeşil mürekkeple paraf atıyorsunuz Müdürüm."
+  },
+  "C4_SOYKAN_P_ORDER_2": {
+    "en": "For twenty-eight years. It is a small vanity.",
+    "tr": "Yirmi sekiz yıldır. Küçük bir kibir işte."
+  },
+  "C4_SOYKAN_Q_BYE": {
+    "en": "By your leave, Müdürüm.",
+    "tr": "Müsaadenizle Müdürüm."
+  },
+  "C4_TITLE": {
+    "en": "File 103-F",
+    "tr": "Dosya 103-F"
+  },
+  "C4_TIMELINE_TITLE": {
+    "en": "Thursday evening",
+    "tr": "Perşembe akşamı"
+  },
+  "C4_INTRO_1": {
+    "en": "Friday, 07:30.\nKaraliman Closed Prison, visiting block.",
+    "tr": "Cuma, 07.30.\nKaraliman Kapalı Cezaevi, görüş bloğu."
+  },
+  "C4_INTRO_2": {
+    "en": "Dr. Selin Vardar has been on remand since the archive. Last night, three days before she was due to testify, she was found dead at the foot of the service stairs.",
+    "tr": "Dr. Selin Vardar arşiv olayından beri tutuklu. Dün gece, ifade vermesine üç gün kala, servis merdiveninin dibinde ölü bulundu."
+  },
+  "C4_INTRO_3": {
+    "en": "Three files are with the prosecutor. Three numbers from the routing slip are still missing, and so is the book they were paid from.\n\nSavcı Arıkan is waiting for you.",
+    "tr": "Üç dosya savcıda. Sevk pusulasındaki üç numara hâlâ kayıp; ödemelerin yapıldığı defter de öyle.\n\nSavcı Arıkan sizi bekliyor."
+  },
+  "C4_OBJ_ARIKAN": {
+    "en": "Speak to Savcı Arıkan.",
+    "tr": "Savcı Arıkan'la konuşun."
+  },
+  "C4_OBJ_SCENE": {
+    "en": "Examine the visiting block.",
+    "tr": "Görüş bloğunu inceleyin."
+  },
+  "C4_OBJ_FALL": {
+    "en": "Find out how Dr. Vardar really died.",
+    "tr": "Dr. Vardar'ın gerçekte nasıl öldüğünü bulun."
+  },
+  "C4_OBJ_ORDER": {
+    "en": "Find out who arranged for Yıldız to be alone with her.",
+    "tr": "Yıldız'ın onunla yalnız kalmasını kimin ayarladığını bulun."
+  },
+  "C4_OBJ_LEDGER": {
+    "en": "Find where the ledger is kept.",
+    "tr": "Defterin nerede saklandığını bulun."
+  },
+  "C4_OBJ_BOOK": {
+    "en": "Reach the lamp room before anyone else does.",
+    "tr": "Lamba odasına herkesten önce ulaşın."
+  },
+  "C4_OBJ_ACCUSE": {
+    "en": "Open the Case File and give the prosecutor a name.",
+    "tr": "Dava Dosyası'nı açıp savcıya bir isim verin."
+  },
+  "C4_HINT_ARIKAN": {
+    "en": "Savcı Arıkan is waiting at the counter. Speak to her first.",
+    "tr": "Savcı Arıkan bankoda bekliyor. Önce onunla konuşun."
+  },
+  "C4_HINT_MAP": {
+    "en": "Her lawyer was the last visitor she had. Open the Map.",
+    "tr": "Onu en son ziyaret eden avukatıydı. Haritayı açın."
+  },
+  "C4_HINT_YILDIZ": {
+    "en": "Yıldız says she slipped. Ask him how she fell, then present the conclusion “She was pushed”.",
+    "tr": "Yıldız, kadının ayağının kaydığını söylüyor. Nasıl düştüğünü sorun, sonra “İtildi” sonucunu gösterin."
+  },
+  "C4_HINT_YILDIZ2": {
+    "en": "Ask Yıldız why he was alone with her, then present “The order to be alone with her”.",
+    "tr": "Yıldız'a onunla neden yalnız olduğunu sorun, sonra “Onunla yalnız kalma emri” sonucunu gösterin."
+  },
+  "C4_HINT_ARAS": {
+    "en": "Demir Aras says Fener is only an invoice. Ask him about it, then present the Framed Photograph.",
+    "tr": "Demir Aras, Fener'in yalnızca bir fatura olduğunu söylüyor. Bunu sorun, sonra Çerçeveli Fotoğraf'ı gösterin."
+  },
+  "C4_HINT_LIGHTHOUSE": {
+    "en": "You know where the ledger is. Open the Map and go to the old lighthouse.",
+    "tr": "Defterin yerini biliyorsunuz. Haritayı açıp eski fenere gidin."
+  },
+  "C4_HINT_ACCUSE": {
+    "en": "You have a motive, an opportunity and a link. Open the Case File and give the prosecutor a name.",
+    "tr": "Elinizde bir sebep, bir fırsat ve bir bağlantı var. Dava Dosyası'nı açıp savcıya bir isim verin."
+  },
+  "C4_SUS_YILDIZ_ROLE": {
+    "en": "Senior prison officer · 44",
+    "tr": "Başgardiyan · 44"
+  },
+  "C4_SUS_YILDIZ_BIO": {
+    "en": "He was alone with her on the stairs and wrote the report.",
+    "tr": "Merdivende onunla yalnızdı; tutanağı da o yazdı."
+  },
+  "C4_SUS_YILDIZ_N1": {
+    "en": "Says she slipped and fell forwards.",
+    "tr": "Kadının kayıp öne düştüğünü söylüyor."
+  },
+  "C4_SUS_YILDIZ_N2": {
+    "en": "She was held by the arms and thrown backwards.",
+    "tr": "Kadın kollarından tutulup arkaya itilmiş."
+  },
+  "C4_SUS_YILDIZ_N3": {
+    "en": "On Fener's payroll since 2019; paid twenty times over the morning after.",
+    "tr": "2019'dan beri Fener'den maaşlı; ertesi sabah yirmi katı ödenmiş."
+  },
+  "C4_SUS_YILDIZ_N4": {
+    "en": "Acted on a call from the chief's direct line.",
+    "tr": "Müdürün direkt hattından gelen bir aramayla hareket etmiş."
+  },
+  "C4_SUS_KARACA_ROLE": {
+    "en": "Lawyer · 68",
+    "tr": "Avukat · 68"
+  },
+  "C4_SUS_KARACA_BIO": {
+    "en": "Her lawyer, and the lawyer of everyone the files have touched. Fener Danışmanlık is registered at his office.",
+    "tr": "Onun avukatı; dosyaların dokunduğu herkesin de avukatı. Fener Danışmanlık onun bürosunda kayıtlı."
+  },
+  "C4_SUS_KARACA_N1": {
+    "en": "Saw her from 17:00 to 17:30 with “the last offer”.",
+    "tr": "Onu 17.00–17.30 arasında “son teklifle” görmüş."
+  },
+  "C4_SUS_KARACA_N2": {
+    "en": "Out of the building forty minutes before she died.",
+    "tr": "Kadın ölmeden kırk dakika önce binadan çıkmış."
+  },
+  "C4_SUS_KARACA_N3": {
+    "en": "Keeps the ledger and has never signed a line of it. Offers his own name.",
+    "tr": "Defteri o tutuyor ama tek satırına imza atmamış. Kendi adını öneriyor."
+  },
+  "C4_SUS_ARAS_ROLE": {
+    "en": "Shipowner · 62",
+    "tr": "Armatör · 62"
+  },
+  "C4_SUS_ARAS_BIO": {
+    "en": "Aras Denizcilik. He has paid for every correction since the fire.",
+    "tr": "Aras Denizcilik. Yangından beri yapılan her düzeltmenin parasını o ödedi."
+  },
+  "C4_SUS_ARAS_N1": {
+    "en": "Says he pays what he is told and has never seen the book.",
+    "tr": "Söyleneni ödediğini, defteri hiç görmediğini söylüyor."
+  },
+  "C4_SUS_ARAS_N2": {
+    "en": "“Halil handled it. I was never asked to decide anything.”",
+    "tr": "“Halil halletti. Bana hiçbir karar sorulmadı.”"
+  },
+  "C4_SUS_SOYKAN_ROLE": {
+    "en": "Emniyet Müdürü · 58",
+    "tr": "Emniyet Müdürü · 58"
+  },
+  "C4_SUS_SOYKAN_BIO": {
+    "en": "Your chief. He gave you the archive, the harbour road and the coroner.",
+    "tr": "Müdürünüz. Size arşivi, Rıhtım Yolu'nu ve adli tabibi o verdi."
+  },
+  "C4_SUS_SOYKAN_N1": {
+    "en": "Says he was at his desk from five until seven.",
+    "tr": "Beşten yediye kadar masasında olduğunu söylüyor."
+  },
+  "C4_SUS_SOYKAN_N2": {
+    "en": "Was inside the visiting block from 17:50 to 18:25.",
+    "tr": "17.50–18.25 arasında görüş bloğundaymış."
+  },
+  "C4_SUS_SOYKAN_N3": {
+    "en": "The camera was switched off from his official mobile.",
+    "tr": "Kamera onun makam telefonundan kapattırılmış."
+  },
+  "C4_SUS_SOYKAN_N4": {
+    "en": "“Payment authorised by — H. Soykan.”",
+    "tr": "“Ödemeyi onaylayan — H. Soykan.”"
+  },
+  "C4_TL_KARACA_IN": {
+    "en": "Karaca sees Dr. Vardar: “the last offer”.",
+    "tr": "Karaca, Dr. Vardar'la görüşüyor: “son teklif”."
+  },
+  "C4_TL_SOYKAN_DESK": {
+    "en": "The chief says he is at his desk until seven.",
+    "tr": "Müdür yediye kadar masasında olduğunu söylüyor."
+  },
+  "C4_TL_KARACA_OUT": {
+    "en": "Karaca leaves the prison.",
+    "tr": "Karaca cezaevinden çıkıyor."
+  },
+  "C4_TL_CAR_OUT": {
+    "en": "The chief's car leaves the directorate.",
+    "tr": "Müdürün arabası müdürlükten çıkıyor."
+  },
+  "C4_TL_CALL": {
+    "en": "Direct line 01 rings Yıldız's mobile.",
+    "tr": "01 numaralı direkt hat Yıldız'ın cebini arıyor."
+  },
+  "C4_TL_SOYKAN_IN": {
+    "en": "The chief signs in: “inspection”.",
+    "tr": "Müdür giriş yapıyor: “denetim”."
+  },
+  "C4_TL_ACAR": {
+    "en": "The second escort is sent to the gate.",
+    "tr": "İkinci refakatçi kapıya gönderiliyor."
+  },
+  "C4_TL_CCTV_CALL": {
+    "en": "The chief's mobile rings the control room.",
+    "tr": "Müdürün cep telefonu kontrol odasını arıyor."
+  },
+  "C4_TL_CAM_OFF": {
+    "en": "Camera 3 goes dark.",
+    "tr": "3 numaralı kamera kararıyor."
+  },
+  "C4_TL_DEATH": {
+    "en": "Dr. Vardar dies at the foot of the service stairs.",
+    "tr": "Dr. Vardar servis merdiveninin dibinde ölüyor."
+  },
+  "C4_TL_SOYKAN_OUT": {
+    "en": "The chief signs out.",
+    "tr": "Müdür çıkış yapıyor."
+  },
+  "C4_TL_MEETING": {
+    "en": "“H.S., here.” at Karaca's office.",
+    "tr": "Karaca'nın bürosunda “H.S., burada.”"
+  },
+  "C4_TL_PETROL": {
+    "en": "Ten litres of petrol on the directorate's fuel card.",
+    "tr": "Müdürlüğün yakıt kartıyla on litre benzin."
+  },
+  "C4_TL_KEY": {
+    "en": "The lamp-room key leaves Karaca's board.",
+    "tr": "Lamba odasının anahtarı Karaca'nın panosundan alınıyor."
+  },
+  "C4_EPI_YILDIZ_DEAL": {
+    "en": "Kenan Yıldız says the name in front of a judge, with two officers from another province at his door.",
+    "tr": "Kenan Yıldız o ismi bir hâkimin önünde söylüyor; kapısında başka bir ilden gelen iki memur bekliyor."
+  },
+  "C4_EPI_YILDIZ_THREAT": {
+    "en": "Kenan Yıldız says nothing at all. He is convicted alone, of what he did with his own hands.",
+    "tr": "Kenan Yıldız tek kelime etmiyor. Kendi elleriyle yaptığı şeyden tek başına mahkûm oluyor."
+  },
+  "C4_EPI_ARAS_HELD": {
+    "en": "Demir Aras testifies for two days. He seems relieved to be asked, at last, to decide something.",
+    "tr": "Demir Aras iki gün boyunca ifade veriyor. Sonunda kendisine bir karar sorulmasından rahatlamış görünüyor."
+  },
+  "C4_EPI_ARAS_GONE": {
+    "en": "Demir Aras's boat is found drifting off the point on Sunday, engine running. He is not on it.",
+    "tr": "Demir Aras'ın teknesi pazar günü burnun açığında, motoru çalışır hâlde sürüklenirken bulunuyor. Kendisi içinde değil."
+  },
+  "C4_EPI_KEPT_OUT": {
+    "en": "The transfer order to Hakkâri is still on his desk when they come for him. Nobody ever dates it.",
+    "tr": "Onu almaya geldiklerinde Hakkâri'ye tayin emri hâlâ masasında duruyor. Kimse üzerine tarih atmıyor."
+  },
+  "C4_ACCUSE_QUESTION": {
+    "en": "Whose name do you give the prosecutor?",
+    "tr": "Savcıya kimin adını veriyorsunuz?"
+  },
+  "C4_ACCUSE_FALL": {
+    "en": "Nobody. She fell.",
+    "tr": "Hiç kimse. Düştü."
+  },
+  "C4_ACCUSE_FALL_CONFIRM": {
+    "en": "Sign the prison's report",
+    "tr": "Cezaevi tutanağını imzala"
+  },
+  "C4_END_A_TITLE": {
+    "en": "Under the Lamp",
+    "tr": "Lambanın Altında"
+  },
+  "C4_END_A_TEXT": {
+    "en": "Savcı Arıkan reads the ledger standing up, in the lamp room, by the light of your torch. When she reaches the torn page she closes the book and says, “Not through your directorate. I will ring Ankara myself.”\n\nHalil Soykan is arrested in his office at dawn. He asks for Nedim Karaca. Karaca, for the first time in twenty-eight years, declines.\n\nSix files and one green book go into the evidence room of another city. Salih Tekin, Ekrem Vural, Kerem Tunç, Nazım Erol, Selin Vardar: five names are read into the record, in order.\n\nIt has stopped raining over Karaliman. You notice it on the way down the hundred and twelve steps.",
+    "tr": "Savcı Arıkan defteri lamba odasında, ayakta, sizin fenerinizin ışığında okuyor. Koparılmış sayfaya gelince defteri kapatıp, “Sizin müdürlüğünüz üzerinden değil. Ankara'yı ben arayacağım,” diyor.\n\nHalil Soykan şafakta odasında tutuklanıyor. Nedim Karaca'yı istiyor. Karaca, yirmi sekiz yılda ilk kez, reddediyor.\n\nAltı dosya ve yeşil bir defter başka bir şehrin adli emanetine giriyor. Salih Tekin, Ekrem Vural, Kerem Tunç, Nazım Erol, Selin Vardar: beş isim sırayla tutanağa okunuyor.\n\nKaraliman'ın üzerinde yağmur dinmiş. Bunu yüz on iki basamağı inerken fark ediyorsunuz."
+  },
+  "C4_END_B_TITLE": {
+    "en": "Ash",
+    "tr": "Kül"
+  },
+  "C4_END_B_TEXT": {
+    "en": "You give the prosecutor his name, and what you have is enough to end his career and not enough to end him. Without the whole of the proof, Karaca's successor turns a murder into “a failure of supervision”.\n\nHalil Soykan retires on medical grounds, with his pension. He is seen now and then on the point, walking a dog.\n\nThe corrections stop. Nobody is ever asked who paid for them.",
+    "tr": "Savcıya onun adını veriyorsunuz; elinizdeki, meslek hayatını bitirmeye yetiyor ama kendisini bitirmeye yetmiyor. Kanıtın tamamı olmayınca Karaca'nın halefi bir cinayeti “gözetim kusuruna” çeviriyor.\n\nHalil Soykan sağlık gerekçesiyle, maaşıyla birlikte emekli oluyor. Ara sıra burunda, köpek gezdirirken görülüyor.\n\nDüzeltmeler kesiliyor. Parasını kimin ödediği hiç kimseye sorulmuyor."
+  },
+  "C4_END_C_TITLE": {
+    "en": "The Minutes",
+    "tr": "Tutanaklar"
+  },
+  "C4_END_C_TEXT": {
+    "en": "Nedim Karaca confesses to everything in a single afternoon, in complete sentences, and asks for no lawyer. It is the tidiest file the prosecutor has ever been handed, and she says so, and she does not smile.\n\nThe city stays quiet, as he promised. Your chief shakes your hand in front of the cameras.\n\nOn the first of the month the payments are made as usual, from a firm with a new name.",
+    "tr": "Nedim Karaca tek bir öğleden sonra, eksiksiz cümlelerle her şeyi itiraf ediyor; avukat da istemiyor. Savcının eline geçen en derli toplu dosya bu; bunu söylüyor da, ama gülümsemiyor.\n\nŞehir, onun söz verdiği gibi sakin kalıyor. Müdürünüz kameraların önünde elinizi sıkıyor.\n\nAyın birinde ödemeler her zamanki gibi yapılıyor; yeni adlı bir şirketten."
+  },
+  "C4_END_D_TITLE": {
+    "en": "The Hand",
+    "tr": "El"
+  },
+  "C4_END_D_TEXT": {
+    "en": "It holds together well enough for a courtroom: a man with a motive of his own, and nobody above him. The verdict comes quickly.\n\nThe chief calls it a credit to the department and signs a paper that has been waiting on his desk. Your train to Hakkâri leaves on Monday.\n\nFrom the window, for a moment, you can see the lighthouse.",
+    "tr": "Bir mahkeme salonu için yeterince derli toplu: kendi sebebi olan bir adam ve tepesinde kimse yok. Karar çabuk çıkıyor.\n\nMüdür bunu teşkilat için bir övünç sayıyor ve masasında bekleyen bir kâğıdı imzalıyor. Hakkâri treniniz pazartesi kalkıyor.\n\nPencereden bir an için fener görünüyor."
+  },
+  "C4_END_E_TITLE": {
+    "en": "Wet Steps",
+    "tr": "Islak Basamaklar"
+  },
+  "C4_END_E_TEXT": {
+    "en": "You sign under the officer's name. Wet steps, a tired woman, an accident.\n\nSavcı Arıkan looks at the page for a long time and then at you. She does not ask for you again.\n\nThe transfer order is dated the next morning. They say the air in Hakkâri is very clean.",
+    "tr": "Memurun adının altına imzanızı atıyorsunuz. Islak basamaklar, yorgun bir kadın, bir kaza.\n\nSavcı Arıkan uzun uzun kâğıda, sonra size bakıyor. Sizi bir daha istemiyor.\n\nTayin emrine ertesi sabahın tarihi atılıyor. Hakkâri'nin havası çok temizmiş, öyle diyorlar."
+  },
+  "C4_TREE_CHIEF": {
+    "en": "The chief's question",
+    "tr": "Müdürün sorusu"
+  },
+  "C4_TREE_CHIEF_KEPT": {
+    "en": "You told him the prosecutor had the file",
+    "tr": "Dosyanın savcıda olduğunu söylediniz"
+  },
+  "C4_TREE_CHIEF_INFORMED": {
+    "en": "You told him where you were going",
+    "tr": "Nereye gideceğinizi söylediniz"
+  },
+  "C4_TREE_CHIEF_OPEN": {
+    "en": "He never got to ask",
+    "tr": "Sormasına fırsat olmadı"
+  },
+  "C4_TREE_YILDIZ": {
+    "en": "Kenan Yıldız",
+    "tr": "Kenan Yıldız"
+  },
+  "C4_TREE_YILDIZ_DEAL": {
+    "en": "You offered him the prosecutor's protection",
+    "tr": "Ona savcının korumasını önerdiniz"
+  },
+  "C4_TREE_YILDIZ_THREAT": {
+    "en": "You threatened him",
+    "tr": "Onu tehdit ettiniz"
+  },
+  "C4_TREE_YILDIZ_OPEN": {
+    "en": "He never admitted the order",
+    "tr": "Emri hiç kabul etmedi"
+  },
+  "C4_TREE_ARAS": {
+    "en": "Demir Aras",
+    "tr": "Demir Aras"
+  },
+  "C4_TREE_ARAS_HELD": {
+    "en": "You took him in as a protected witness",
+    "tr": "Onu korumalı tanık olarak aldınız"
+  },
+  "C4_TREE_ARAS_RELEASED": {
+    "en": "You let him go to his boat",
+    "tr": "Teknesine gitmesine izin verdiniz"
+  },
+  "C4_TREE_ARAS_OPEN": {
+    "en": "He never spoke about 1998",
+    "tr": "1998'i hiç anlatmadı"
+  },
+  "C4_TREE_LEDGER": {
+    "en": "The lamp room",
+    "tr": "Lamba odası"
+  },
+  "C4_TREE_LEDGER_FOUND": {
+    "en": "You reached the ledger first",
+    "tr": "Deftere ilk siz ulaştınız"
+  },
+  "C4_TREE_LEDGER_BURNT": {
+    "en": "It was ash when you arrived",
+    "tr": "Vardığınızda külden ibaretti"
+  },
+  "C4_TREE_LEDGER_NEVER": {
+    "en": "You never climbed the stairs",
+    "tr": "O merdiveni hiç çıkmadınız"
+  },
+  "C4_I_NOT_FALL_Q": {
+    "en": "Did she slip?",
+    "tr": "Ayağı mı kaydı?"
+  },
+  "C4_I_NOT_FALL_KEY": {
+    "en": "the stairs",
+    "tr": "merdiven"
+  },
+  "C4_I_NOT_FALL_WS1": {
+    "en": "She jumped",
+    "tr": "Kendini attı"
+  },
+  "C4_I_NOT_FALL_WS2": {
+    "en": "She fainted backwards",
+    "tr": "Bayılıp arkaya düştü"
+  },
+  "C4_I_BLIND_Q": {
+    "en": "Who switched camera 3 off?",
+    "tr": "3 numaralı kamerayı kim kapattı?"
+  },
+  "C4_I_BLIND_KEY": {
+    "en": "camera 3",
+    "tr": "kamera 3"
+  },
+  "C4_I_BLIND_WS1": {
+    "en": "A technician",
+    "tr": "Bir teknisyen"
+  },
+  "C4_I_BLIND_WS2": {
+    "en": "Yıldız, from the control room",
+    "tr": "Kontrol odasından Yıldız"
+  },
+  "C4_I_ALONE_Q": {
+    "en": "Why was Yıldız alone with her?",
+    "tr": "Yıldız onunla neden yalnızdı?"
+  },
+  "C4_I_ALONE_KEY": {
+    "en": "telephone order",
+    "tr": "telefon emri"
+  },
+  "C4_I_ALONE_WS1": {
+    "en": "The escort left on his own",
+    "tr": "Refakatçi kendi gitti"
+  },
+  "C4_I_ALONE_WS2": {
+    "en": "The governor rang",
+    "tr": "Cezaevi müdürü aradı"
+  },
+  "C4_I_PRESENT_Q": {
+    "en": "Where was the chief at ten past six?",
+    "tr": "Müdür altıyı on geçe neredeydi?"
+  },
+  "C4_I_PRESENT_KEY": {
+    "en": "H. Soykan",
+    "tr": "H. Soykan"
+  },
+  "C4_I_PRESENT_WS1": {
+    "en": "Someone used his name",
+    "tr": "Biri onun adını kullandı"
+  },
+  "C4_I_PRESENT_WS2": {
+    "en": "He arrived afterwards",
+    "tr": "Olaydan sonra geldi"
+  },
+  "C4_I_PAID_Q": {
+    "en": "What was Yıldız paid for?",
+    "tr": "Yıldız neyin parasını aldı?"
+  },
+  "C4_I_PAID_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "C4_I_PAID_WS1": {
+    "en": "A loan",
+    "tr": "Bir kredi"
+  },
+  "C4_I_PAID_WS2": {
+    "en": "Pay from the prison",
+    "tr": "Cezaevinden maaş"
+  },
+  "C4_I_LIGHTHOUSE_Q": {
+    "en": "Where is the ledger?",
+    "tr": "Defter nerede?"
+  },
+  "C4_I_LIGHTHOUSE_KEY": {
+    "en": "lighthouse",
+    "tr": "fener"
+  },
+  "C4_I_LIGHTHOUSE_WS1": {
+    "en": "In Karaca's strong room",
+    "tr": "Karaca'nın kasa dairesinde"
+  },
+  "C4_I_LIGHTHOUSE_WS2": {
+    "en": "“Fener” is just a name",
+    "tr": "“Fener” yalnızca bir isim"
+  },
+  "C4_I_AUTHORISED_Q": {
+    "en": "Who authorised the payments?",
+    "tr": "Ödemeleri kim onayladı?"
+  },
+  "C4_I_AUTHORISED_KEY": {
+    "en": "H.S.",
+    "tr": "H.S."
+  },
+  "C4_I_AUTHORISED_WS1": {
+    "en": "Karaca's initials",
+    "tr": "Karaca'nın parafı"
+  },
+  "C4_I_AUTHORISED_WS2": {
+    "en": "Vardar forged the page",
+    "tr": "Sayfayı Vardar düzdü"
+  },
+  "C4_I_MOTIVE_Q": {
+    "en": "Why did she have to die before Monday?",
+    "tr": "Neden pazartesiden önce ölmesi gerekiyordu?"
+  },
+  "C4_I_MOTIVE_KEY": {
+    "en": "torn page",
+    "tr": "koparılmış sayfa"
+  },
+  "C4_I_MOTIVE_WS1": {
+    "en": "For what she did in 1998",
+    "tr": "1998'de yaptığı şey yüzünden"
+  },
+  "C4_I_MOTIVE_WS2": {
+    "en": "She would name Karaca",
+    "tr": "Karaca'yı ele verecekti"
+  },
+  "C4_I_COMMITTEE_Q": {
+    "en": "Who founded Fener?",
+    "tr": "Fener'i kim kurdu?"
+  },
+  "C4_I_COMMITTEE_KEY": {
+    "en": "1997",
+    "tr": "1997"
+  },
+  "C4_I_COMMITTEE_WS1": {
+    "en": "A charity, nothing more",
+    "tr": "Bir hayır işi, o kadar"
+  },
+  "C4_I_COMMITTEE_WS2": {
+    "en": "Aras alone",
+    "tr": "Yalnızca Aras"
+  },
+  "C4_I_KARACA_Q": {
+    "en": "What did Karaca do that evening?",
+    "tr": "Karaca o akşam ne yaptı?"
+  },
+  "C4_I_KARACA_KEY": {
+    "en": "17:00",
+    "tr": "17.00"
+  },
+  "C4_I_KARACA_WS1": {
+    "en": "He pushed her himself",
+    "tr": "Onu kendisi itti"
+  },
+  "C4_I_KARACA_WS2": {
+    "en": "He knew nothing",
+    "tr": "Hiçbir şey bilmiyordu"
+  },
+  "C4_I_SIGNATURE_Q": {
+    "en": "Whose initials are in green ink?",
+    "tr": "Yeşil mürekkepli paraf kimin?"
+  },
+  "C4_I_SIGNATURE_KEY": {
+    "en": "H.S.",
+    "tr": "H.S."
+  },
+  "C4_I_SIGNATURE_WS1": {
+    "en": "Many officers use green",
+    "tr": "Pek çok memur yeşil kullanır"
+  },
+  "C4_I_SIGNATURE_WS2": {
+    "en": "His secretary's",
+    "tr": "Sekreterinin"
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "road": {
+    "name": "C2_LOC_ROAD",
+    "background": "res://assets/scenes/road.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "hotspots": [
+      {
+        "id": "patrol",
+        "type": "detail",
+        "rect": [
+          110,
+          640,
+          430,
+          190
+        ],
+        "text": "C2_D_PATROL"
+      },
+      {
+        "id": "skid",
+        "type": "detail",
+        "rect": [
+          1400,
+          880,
+          620,
+          170
+        ],
+        "text": "C2_D_SKID"
+      },
+      {
+        "id": "rail",
+        "type": "detail",
+        "rect": [
+          2520,
+          560,
+          330,
+          150
+        ],
+        "text": "C2_D_RAIL"
+      },
+      {
+        "id": "report",
+        "type": "evidence",
+        "rect": [
+          560,
+          480,
+          150,
+          160
+        ],
+        "evidence": "E01"
+      },
+      {
+        "id": "phone",
+        "type": "evidence",
+        "rect": [
+          1000,
+          575,
+          115,
+          90
+        ],
+        "evidence": "E03"
+      },
+      {
+        "id": "key",
+        "type": "evidence",
+        "rect": [
+          1122,
+          585,
+          116,
+          80
+        ],
+        "evidence": "E04"
+      },
+      {
+        "id": "pass",
+        "type": "evidence",
+        "rect": [
+          1246,
+          580,
+          116,
+          85
+        ],
+        "evidence": "E05"
+      },
+      {
+        "id": "recorder",
+        "type": "evidence",
+        "rect": [
+          1374,
+          575,
+          130,
+          90
+        ],
+        "evidence": "E06"
+      },
+      {
+        "id": "soykan",
+        "type": "talk",
+        "rect": [
+          1670,
+          310,
+          250,
+          400
+        ],
+        "character": "soykan"
+      },
+      {
+        "id": "paint",
+        "type": "evidence",
+        "rect": [
+          2160,
+          520,
+          330,
+          250
+        ],
+        "evidence": "E02"
+      }
+    ],
+    "hints": []
+  },
+  "newsroom": {
+    "name": "C2_LOC_NEWSROOM",
+    "background": "res://assets/scenes/newsroom.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "unlock": [
+      {
+        "flag": "soykan_met"
+      }
+    ],
+    "on_enter": [
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_01.aydin_told"
+          }
+        ],
+        "effects": [
+          {
+            "add_testimony": "T_AYDIN_TIP"
+          }
+        ],
+        "caption": "C2_ENTER_AYDIN"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "pinboard",
+        "type": "detail",
+        "rect": [
+          790,
+          210,
+          380,
+          270
+        ],
+        "text": "C2_D_PINBOARD"
+      },
+      {
+        "id": "drawers",
+        "type": "detail",
+        "rect": [
+          2550,
+          270,
+          300,
+          560
+        ],
+        "text": "C2_D_DRAWERS",
+        "conditions": [
+          {
+            "no_insight": "I_DRAWER"
+          }
+        ]
+      },
+      {
+        "id": "drawers_open",
+        "type": "detail",
+        "rect": [
+          2550,
+          270,
+          300,
+          560
+        ],
+        "text": "C2_D_DRAWERS_OPEN",
+        "conditions": [
+          {
+            "has_insight": "I_DRAWER"
+          }
+        ]
+      },
+      {
+        "id": "signin",
+        "type": "evidence",
+        "rect": [
+          115,
+          380,
+          145,
+          190
+        ],
+        "evidence": "E09"
+      },
+      {
+        "id": "switchboard",
+        "type": "evidence",
+        "rect": [
+          325,
+          585,
+          290,
+          120
+        ],
+        "evidence": "E07"
+      },
+      {
+        "id": "desk",
+        "type": "evidence",
+        "rect": [
+          840,
+          580,
+          300,
+          75
+        ],
+        "evidence": "E08"
+      },
+      {
+        "id": "aktas",
+        "type": "talk",
+        "rect": [
+          1380,
+          230,
+          250,
+          400
+        ],
+        "character": "aktas"
+      },
+      {
+        "id": "adverts",
+        "type": "evidence",
+        "rect": [
+          1880,
+          230,
+          150,
+          200
+        ],
+        "evidence": "E11"
+      },
+      {
+        "id": "soylu",
+        "type": "talk",
+        "rect": [
+          2060,
+          250,
+          250,
+          390
+        ],
+        "character": "soylu"
+      },
+      {
+        "id": "index",
+        "type": "evidence",
+        "rect": [
+          2550,
+          190,
+          300,
+          75
+        ],
+        "evidence": "E10"
+      },
+      {
+        "id": "drawer117",
+        "type": "evidence",
+        "rect": [
+          2650,
+          545,
+          102,
+          94
+        ],
+        "evidence": "E13",
+        "conditions": [
+          {
+            "has_insight": "I_DRAWER"
+          }
+        ]
+      }
+    ],
+    "hints": [
+      {
+        "conditions": [
+          {
+            "has_evidence": "E04"
+          },
+          {
+            "no_insight": "I_DRAWER"
+          },
+          {
+            "not_flag": "file_found"
+          }
+        ],
+        "text": "C2_HINT_DRAWER"
+      }
+    ]
+  },
+  "site": {
+    "name": "C2_LOC_SITE",
+    "background": "res://assets/scenes/site.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1300,
+    "ambience": "rain",
+    "unlock": [
+      {
+        "flag": "soykan_met"
+      }
+    ],
+    "on_enter": [
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_01.erdem_spared"
+          }
+        ],
+        "effects": [
+          {
+            "add_testimony": "T_ERDEM_TIP"
+          }
+        ],
+        "caption": "C2_ENTER_ERDEM"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "tower",
+        "type": "detail",
+        "rect": [
+          1260,
+          110,
+          620,
+          420
+        ],
+        "text": "C2_D_TOWER"
+      },
+      {
+        "id": "mixer",
+        "type": "detail",
+        "rect": [
+          2440,
+          500,
+          420,
+          330
+        ],
+        "text": "C2_D_MIXER"
+      },
+      {
+        "id": "gatelog",
+        "type": "evidence",
+        "rect": [
+          195,
+          590,
+          215,
+          105
+        ],
+        "evidence": "E14"
+      },
+      {
+        "id": "camera",
+        "type": "evidence",
+        "rect": [
+          425,
+          475,
+          180,
+          135
+        ],
+        "evidence": "E15"
+      },
+      {
+        "id": "pickup",
+        "type": "evidence",
+        "rect": [
+          810,
+          630,
+          300,
+          180
+        ],
+        "evidence": "E16"
+      },
+      {
+        "id": "kaplan",
+        "type": "talk",
+        "rect": [
+          1580,
+          310,
+          250,
+          400
+        ],
+        "character": "kaplan"
+      },
+      {
+        "id": "incident",
+        "type": "evidence",
+        "rect": [
+          1980,
+          470,
+          180,
+          170
+        ],
+        "evidence": "E17"
+      },
+      {
+        "id": "tickets",
+        "type": "evidence",
+        "rect": [
+          2205,
+          480,
+          140,
+          150
+        ],
+        "evidence": "E18"
+      }
+    ],
+    "hints": []
+  },
+  "planning": {
+    "name": "C2_LOC_PLANNING",
+    "background": "res://assets/scenes/planning.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "unlock": [
+      {
+        "flag": "soykan_met"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "chest",
+        "type": "detail",
+        "rect": [
+          130,
+          420,
+          330,
+          410
+        ],
+        "text": "C2_D_CHEST"
+      },
+      {
+        "id": "map",
+        "type": "detail",
+        "rect": [
+          1990,
+          150,
+          760,
+          460
+        ],
+        "text": "C2_D_MAP"
+      },
+      {
+        "id": "photo",
+        "type": "detail",
+        "rect": [
+          1280,
+          585,
+          110,
+          70
+        ],
+        "text": "C2_D_PHOTO"
+      },
+      {
+        "id": "register",
+        "type": "evidence",
+        "rect": [
+          520,
+          510,
+          230,
+          170
+        ],
+        "evidence": "E19"
+      },
+      {
+        "id": "guven",
+        "type": "talk",
+        "rect": [
+          1380,
+          280,
+          250,
+          370
+        ],
+        "character": "guven"
+      },
+      {
+        "id": "calendar",
+        "type": "evidence",
+        "rect": [
+          1710,
+          565,
+          120,
+          90
+        ],
+        "evidence": "E20"
+      }
+    ],
+    "hints": []
+  }
+}

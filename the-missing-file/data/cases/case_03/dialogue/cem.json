@@ -1,0 +1,203 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "cem_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "cem",
+          "t": "C3_CEM_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C3_CEM_INTRO_2"
+        },
+        {
+          "s": "cem",
+          "t": "C3_CEM_INTRO_3",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "cem_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "cem",
+          "t": "C3_CEM_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "cem",
+          "t": "C3_CEM_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "cem",
+          "t": "C3_CEM_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "where": {
+      "lines": [
+        {
+          "s": "cem",
+          "t": "C3_CEM_WHERE_1",
+          "effects": [
+            {
+              "add_testimony": "T_CEM_1"
+            }
+          ],
+          "press": "press_where",
+          "present": {
+            "accept": [
+              "E23",
+              "E06"
+            ],
+            "next": "admit",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_where": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_CEM_P_WHERE_1"
+        },
+        {
+          "s": "cem",
+          "t": "C3_CEM_P_WHERE_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "admit": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_CEM_ADMIT_1"
+        },
+        {
+          "s": "cem",
+          "t": "C3_CEM_ADMIT_2",
+          "mood": "shaken"
+        },
+        {
+          "s": "cem",
+          "t": "C3_CEM_ADMIT_3",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_CEM_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "cem_admit"
+        }
+      ]
+    },
+    "money": {
+      "lines": [
+        {
+          "s": "cem",
+          "t": "C3_CEM_MONEY_1",
+          "press": "press_money"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_money": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_CEM_P_MONEY_1"
+        },
+        {
+          "s": "cem",
+          "t": "C3_CEM_P_MONEY_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "father": {
+      "lines": [
+        {
+          "s": "cem",
+          "t": "C3_CEM_FATHER_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "where",
+          "t": "C3_CEM_Q_WHERE",
+          "next": "where",
+          "conditions": [
+            {
+              "not_flag": "cem_admit"
+            }
+          ]
+        },
+        {
+          "id": "money",
+          "t": "C3_CEM_Q_MONEY",
+          "next": "money",
+          "conditions": [
+            {
+              "has_evidence": "E08"
+            },
+            {
+              "flag": "cem_admit"
+            }
+          ]
+        },
+        {
+          "id": "father",
+          "t": "C3_CEM_Q_FATHER",
+          "next": "father"
+        },
+        {
+          "id": "bye",
+          "t": "C3_CEM_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

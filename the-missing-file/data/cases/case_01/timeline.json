@@ -1,0 +1,206 @@
+[
+  {
+    "time": "18:30",
+    "text": "C1_TL_VARDAR_HOME",
+    "conditions": [
+      {
+        "has_testimony": "T_VARDAR_1"
+      }
+    ],
+    "disputed": [
+      {
+        "has_insight": "I_VARDAR_RETURNED"
+      }
+    ]
+  },
+  {
+    "time": "18:32",
+    "text": "C1_TL_VARDAR_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E02"
+      }
+    ]
+  },
+  {
+    "time": "18:40",
+    "text": "C1_TL_ARAS_IN",
+    "conditions": [
+      {
+        "has_evidence": "E01"
+      }
+    ]
+  },
+  {
+    "time": "18:50",
+    "text": "C1_TL_ARGUMENT",
+    "conditions": [
+      {
+        "has_testimony": "T_AYDIN_4"
+      }
+    ]
+  },
+  {
+    "time": "19:05",
+    "text": "C1_TL_ARAS_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E01"
+      }
+    ]
+  },
+  {
+    "time": "19:30",
+    "text": "C1_TL_AYDIN_HOME",
+    "conditions": [
+      {
+        "has_testimony": "T_ERDEM_4"
+      }
+    ],
+    "disputed": [
+      {
+        "has_insight": "I_AYDIN_STAYED"
+      }
+    ]
+  },
+  {
+    "time": "20:03",
+    "text": "C1_TL_EMAIL",
+    "conditions": [
+      {
+        "has_evidence": "E07"
+      }
+    ]
+  },
+  {
+    "time": "20:44",
+    "text": "C1_TL_DESK_RELEASE_1",
+    "conditions": [
+      {
+        "has_evidence": "E02"
+      }
+    ]
+  },
+  {
+    "time": "20:45",
+    "text": "C1_TL_ERDEM_LEAVES",
+    "conditions": [
+      {
+        "has_testimony": "T_ERDEM_2"
+      }
+    ]
+  },
+  {
+    "time": "20:52",
+    "text": "C1_TL_CAR_IN",
+    "conditions": [
+      {
+        "has_evidence": "E06"
+      }
+    ]
+  },
+  {
+    "time": "21:00",
+    "text": "C1_TL_PATROL",
+    "conditions": [
+      {
+        "has_evidence": "E04"
+      }
+    ],
+    "disputed": [
+      {
+        "flag": "erdem_confessed"
+      }
+    ]
+  },
+  {
+    "time": "21:05",
+    "text": "C1_TL_ARAS_STAGE",
+    "conditions": [
+      {
+        "has_evidence": "E15"
+      }
+    ]
+  },
+  {
+    "time": "21:07",
+    "text": "C1_TL_SLIP",
+    "conditions": [
+      {
+        "has_evidence": "E05"
+      }
+    ]
+  },
+  {
+    "time": "21:10",
+    "text": "C1_TL_VOICES",
+    "conditions": [
+      {
+        "has_testimony": "T_AYDIN_2"
+      }
+    ]
+  },
+  {
+    "time": "21:17",
+    "text": "C1_TL_WATCH",
+    "conditions": [
+      {
+        "has_evidence": "E12"
+      }
+    ]
+  },
+  {
+    "time": "21:20",
+    "text": "C1_TL_ELEVATOR",
+    "conditions": [
+      {
+        "has_testimony": "T_AYDIN_2"
+      }
+    ]
+  },
+  {
+    "time": "21:26",
+    "text": "C1_TL_AYDIN_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E02"
+      }
+    ]
+  },
+  {
+    "time": "21:34",
+    "text": "C1_TL_CAR_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E06"
+      }
+    ]
+  },
+  {
+    "time": "21:40",
+    "text": "C1_TL_ERDEM_BACK",
+    "conditions": [
+      {
+        "has_testimony": "T_ERDEM_2"
+      }
+    ]
+  },
+  {
+    "time": "07:02",
+    "text": "C1_TL_AYDIN_IN",
+    "conditions": [
+      {
+        "has_evidence": "E02"
+      }
+    ]
+  },
+  {
+    "time": "07:10",
+    "text": "C1_TL_FOUND",
+    "conditions": [
+      {
+        "flag": "aydin_met"
+      }
+    ]
+  }
+]

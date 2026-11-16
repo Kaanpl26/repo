@@ -1,0 +1,538 @@
+{
+  "OF_L01_NAME": {
+    "en": "Routing Slip",
+    "tr": "Sevk Fişi"
+  },
+  "OF_L01_DESC": {
+    "en": "From file 47-B: a slip stapled inside the cover, listing six more files in the same hand.",
+    "tr": "47-B dosyasından: kapağın içine zımbalanmış, aynı el yazısıyla altı dosyanın daha sıralandığı bir fiş."
+  },
+  "OF_L01_GIST": {
+    "en": "Six more files in the same hand as the altered page of 47-B: 12-C, 31-A, 58-D, 66-B, 90-A, 103-F.",
+    "tr": "47-B'nin değiştirilen sayfasıyla aynı el yazısıyla altı dosya daha: 12-C, 31-A, 58-D, 66-B, 90-A, 103-F."
+  },
+  "OF_L01_BODY": {
+    "en": "ROUTING SLIP — from file 47-B\n\n12-C\n31-A\n58-D\n66-B\n90-A\n103-F\n\nNone of these files is on its shelf in the municipal archive.",
+    "tr": "SEVK FİŞİ — 47-B dosyasından\n\n12-C\n31-A\n58-D\n66-B\n90-A\n103-F\n\nBu dosyaların hiçbiri belediye arşivindeki rafında değil."
+  },
+  "OF_L02_NAME": {
+    "en": "Torn Page, 1998",
+    "tr": "Koparılmış Sayfa, 1998"
+  },
+  "OF_L02_DESC": {
+    "en": "From file 47-B: the stub of a page that was torn out long ago.",
+    "tr": "47-B dosyasından: çok önce koparılmış bir sayfanın kalan parçası."
+  },
+  "OF_L02_GIST": {
+    "en": "File 47-B, 1998, the fire inquiry. A page was torn out. The stub reads: “Payment authorised by —”.",
+    "tr": "47-B dosyası, 1998, yangın soruşturması. Bir sayfa koparılmış. Kalan parçada şu yazıyor: “Ödemeyi onaylayan —”."
+  },
+  "OF_L02_BODY": {
+    "en": "FILE 47-B — Pier 9 fire inquiry, 1998\n\nOne page removed.\n\nWhat is left of it, at the binding:\n\n“Payment authorised by —”\n\nThe tear is old and brown at the edges.",
+    "tr": "DOSYA 47-B — 9. İskele yangını soruşturması, 1998\n\nBir sayfa çıkarılmış.\n\nCiltte ondan geriye kalan:\n\n“Ödemeyi onaylayan —”\n\nYırtık eski; kenarları kararmış."
+  },
+  "OF_L03_NAME": {
+    "en": "Receipt Stub, 2004",
+    "tr": "Makbuz Koçanı, 2004"
+  },
+  "OF_L03_DESC": {
+    "en": "From drawer 117: a bank slip and the stub of a receipt, kept with the spiked article.",
+    "tr": "117 numaralı çekmeceden: rafa kaldırılan haberle birlikte saklanmış bir dekont ve bir makbuz koçanı."
+  },
+  "OF_L03_GIST": {
+    "en": "2004: Fener Danışmanlık paid Nilgün Soylu to bury the Pier 9 story. The receipt stub reads: “Payment authorised by —”.",
+    "tr": "2004: Fener Danışmanlık, 9. İskele haberini gömmesi için Nilgün Soylu'ya ödeme yapmış. Makbuz koçanında şu yazıyor: “Ödemeyi onaylayan —”."
+  },
+  "OF_L03_BODY": {
+    "en": "FROM DRAWER 117\n\nBank slip, 2004:\nFener Danışmanlık Ltd. to N. Soylu\n“editorial consultancy”\n\nStub of the receipt:\n\n“Payment authorised by —”\n\nThe same printed form as the stub in file 47-B.",
+    "tr": "117 NUMARALI ÇEKMECEDEN\n\nBanka dekontu, 2004:\nFener Danışmanlık Ltd.'den N. Soylu'ya\n“yayın danışmanlığı”\n\nMakbuzun koçanı:\n\n“Ödemeyi onaylayan —”\n\n47-B dosyasındaki koçanla aynı matbu form."
+  },
+  "OF_L04_NAME": {
+    "en": "Fener Danışmanlık Ltd.",
+    "tr": "Fener Danışmanlık Ltd."
+  },
+  "OF_L04_DESC": {
+    "en": "From the trade registry: the firm behind fifteen per cent of the tower.",
+    "tr": "Ticaret sicilinden: kulenin yüzde on beşinin arkasındaki şirket."
+  },
+  "OF_L04_GIST": {
+    "en": "Founded in 1997, a year before the fire. Owns 15% of the tower's builder. Registered at Nedim Karaca's law office.",
+    "tr": "1997'de, yangından bir yıl önce kurulmuş. Kuleyi yapan şirketin %15'ine sahip. Kayıtlı adresi Nedim Karaca'nın hukuk bürosu."
+  },
+  "OF_L04_BODY": {
+    "en": "FENER DANIŞMANLIK LTD.\n\nFounded: 1997\nBusiness: “consultancy”\nShareholding: 15% of Kıyı Yapı A.Ş.\n\nRegistered address:\ncare of the law office of Av. Nedim Karaca.\n\nNo employees are listed.",
+    "tr": "FENER DANIŞMANLIK LTD.\n\nKuruluş: 1997\nFaaliyet: “danışmanlık”\nİştirak: Kıyı Yapı A.Ş.'nin %15'i\n\nKayıtlı adres:\nAv. Nedim Karaca Hukuk Bürosu eliyle.\n\nKayıtlı çalışanı yok."
+  },
+  "OF_L05_NAME": {
+    "en": "Güven's Account",
+    "tr": "Güven'in Anlattıkları"
+  },
+  "OF_L05_DESC": {
+    "en": "What Tarık Güven said about the day his report was corrected.",
+    "tr": "Tarık Güven'in, raporunun düzeltildiği gün hakkında anlattıkları."
+  },
+  "OF_L05_GIST": {
+    "en": "In 2004 the corrected pages of ruling 58-D arrived already typed, through a law office. The lawyer is still in the city.",
+    "tr": "2004'te 58-D kararının düzeltilmiş sayfaları yazılmış hâlde, bir avukatlık bürosu aracılığıyla gelmiş. O avukat hâlâ şehirde."
+  },
+  "OF_L05_BODY": {
+    "en": "STATEMENT — T. Güven, Head of Planning\n\n“A week after my report, a man came with the corrected pages already typed. I signed them.”\n\n“I never knew his name. The pages came through a law office. The same lawyer is still in this city.”",
+    "tr": "İFADE — T. Güven, İmar Müdürü\n\n“Raporumdan bir hafta sonra bir adam, düzeltilmiş sayfalar yazılmış hâlde elinde, çıkageldi. İmzaladım.”\n\n“Adını hiç öğrenmedim. Sayfalar bir avukatlık bürosu aracılığıyla geldi. O avukat hâlâ bu şehirde.”"
+  },
+  "OF_L06_NAME": {
+    "en": "Karaca's Clients",
+    "tr": "Karaca'nın Müvekkilleri"
+  },
+  "OF_L06_DESC": {
+    "en": "A list you have started keeping.",
+    "tr": "Tutmaya başladığınız bir liste."
+  },
+  "OF_L06_GIST": {
+    "en": "Nedim Karaca has appeared for Selin Vardar, Demir Aras and Nilgün Soylu: everyone the two files touched.",
+    "tr": "Nedim Karaca; Selin Vardar, Demir Aras ve Nilgün Soylu adına ortaya çıktı: iki dosyanın dokunduğu herkes."
+  },
+  "OF_L06_BODY": {
+    "en": "Av. NEDİM KARACA — appearing for:\n\nDr. Selin Vardar   (File 47-B)\nDemir Aras         (File 47-B)\nNilgün Soylu       (File 58-D)\n\nHe was briefed each time before you had finished asking your questions.",
+    "tr": "Av. NEDİM KARACA — vekili olduğu kişiler:\n\nDr. Selin Vardar   (Dosya 47-B)\nDemir Aras         (Dosya 47-B)\nNilgün Soylu       (Dosya 58-D)\n\nHer seferinde, siz sorularınızı bitirmeden dosyadan haberdardı."
+  },
+  "OF_L07_NAME": {
+    "en": "The Chief's Remark",
+    "tr": "Müdürün Sözü"
+  },
+  "OF_L07_DESC": {
+    "en": "Something Emniyet Müdürü Soykan said at the harbour road.",
+    "tr": "Emniyet Müdürü Soykan'ın Rıhtım Yolu'nda söylediği bir söz."
+  },
+  "OF_L07_GIST": {
+    "en": "At 06:20 the chief already knew Kerem Tunç was due to meet the prosecutor at nine. The appointment had been made by telephone the evening before.",
+    "tr": "Müdür, saat 06.20'de Kerem Tunç'un dokuzda savcıyla görüşeceğini biliyordu. Randevu bir akşam önce telefonla alınmıştı."
+  },
+  "OF_L07_BODY": {
+    "en": "NOTE TO SELF\n\nHarbour road, 06:20. The chief: “A reporter dies the night before he talks to a prosecutor. Tragic timing.”\n\nKerem rang the prosecutor at 20:02 the evening before.\n\nThe chief says her office rang his “first thing”. Her office opens at half past eight.",
+    "tr": "KENDİME NOT\n\nRıhtım Yolu, 06.20. Müdür: “Bir muhabir, savcıyla konuşmasından bir gece önce ölüyor. Talihsiz bir zamanlama.”\n\nKerem savcıyı bir akşam önce 20.02'de aramıştı.\n\nMüdür, savcının kaleminin kendisini “sabah ilk iş” aradığını söylüyor. Kalem sekiz buçukta açılıyor."
+  },
+  "OF_L08_NAME": {
+    "en": "The Chief's Suspect",
+    "tr": "Müdürün Şüphelisi"
+  },
+  "OF_L08_DESC": {
+    "en": "Who the chief wanted brought in on the first morning.",
+    "tr": "Müdürün ilk sabah getirtilmesini istediği kişi."
+  },
+  "OF_L08_GIST": {
+    "en": "The chief named Bora Kaplan before any evidence was in. Kaplan was signing for concrete three kilometres away when the car was hit.",
+    "tr": "Müdür, ortada hiçbir delil yokken Bora Kaplan'ın adını verdi. Arabaya çarpıldığı sırada Kaplan üç kilometre ötede beton teslim alıyordu."
+  },
+  "OF_L08_BODY": {
+    "en": "NOTE TO SELF\n\n“Bring him in tonight and we can all go home.”\n\nBora Kaplan: white pickup, dent from a gate post on Monday, on site all night.\n\nHad he been charged, nobody would have looked for a dark red saloon.",
+    "tr": "KENDİME NOT\n\n“Bu gece getirtin, hepimiz evimize gidelim.”\n\nBora Kaplan: beyaz kamyonet, pazartesi günü kapı direğinden kalma ezik, bütün gece şantiyede.\n\nHakkında işlem yapılsaydı, koyu kırmızı bir sedanı kimse aramazdı."
+  },
+  "OF_LI_LIST_TITLE": {
+    "en": "The slip is a list of jobs",
+    "tr": "Fiş bir iş listesi"
+  },
+  "OF_LI_LIST": {
+    "en": "58-D was on the routing slip from 1998, and 58-D turned out to be another altered record. The slip is not a filing note. It is a list of things that were paid for.",
+    "tr": "58-D, 1998'deki sevk fişinde yazıyordu; 58-D'nin de değiştirilmiş bir kayıt olduğu ortaya çıktı. Fiş bir dosyalama notu değil. Parası ödenmiş işlerin listesi."
+  },
+  "OF_LI_LIST_W1": {
+    "en": "The slip lists files that Ekrem Vural wanted to scan next.",
+    "tr": "Fişte Ekrem Vural'ın sırada taramak istediği dosyalar yazıyor."
+  },
+  "OF_LI_LIST_W2": {
+    "en": "The numbers are shelf locations and mean nothing together.",
+    "tr": "Numaralar raf yerleri; bir arada bir anlam ifade etmiyor."
+  },
+  "OF_LI_SAME_HAND_TITLE": {
+    "en": "One hand authorised both",
+    "tr": "İkisini de aynı el onayladı"
+  },
+  "OF_LI_SAME_HAND": {
+    "en": "The same printed form and the same words in 1998 and in 2004: “Payment authorised by —”. Six years apart, the same person approved both payments.",
+    "tr": "1998'de de 2004'te de aynı matbu form, aynı sözler: “Ödemeyi onaylayan —”. Aradan altı yıl geçmiş; iki ödemeyi de aynı kişi onaylamış."
+  },
+  "OF_LI_SAME_HAND_W1": {
+    "en": "Every receipt in Karaliman uses that form, so it proves nothing.",
+    "tr": "Karaliman'daki bütün makbuzlar bu formu kullanır; bir şey kanıtlamaz."
+  },
+  "OF_LI_SAME_HAND_W2": {
+    "en": "Selin Vardar authorised both payments.",
+    "tr": "İki ödemeyi de Selin Vardar onaylamış."
+  },
+  "OF_LI_FENER_TITLE": {
+    "en": "Fener is the paymaster",
+    "tr": "Parayı Fener ödüyor"
+  },
+  "OF_LI_FENER": {
+    "en": "The firm that paid a reporter in 2004 was founded in 1997, a year before the fire, and has no staff. It exists to make payments, and it profits from what they buy.",
+    "tr": "2004'te bir muhabire ödeme yapan şirket 1997'de, yangından bir yıl önce kurulmuş; çalışanı da yok. Ödeme yapmak için var ve o ödemelerin satın aldığı şeyden kâr ediyor."
+  },
+  "OF_LI_FENER_W1": {
+    "en": "Fener Danışmanlık is an ordinary advertising agency.",
+    "tr": "Fener Danışmanlık sıradan bir reklam ajansı."
+  },
+  "OF_LI_FENER_W2": {
+    "en": "The firm was founded after the fire to help rebuild the pier.",
+    "tr": "Şirket yangından sonra iskeleyi yeniden inşa etmek için kurulmuş."
+  },
+  "OF_LI_LAW_OFFICE_TITLE": {
+    "en": "The law office is Karaca's",
+    "tr": "O avukatlık bürosu Karaca'nın"
+  },
+  "OF_LI_LAW_OFFICE": {
+    "en": "Güven's corrected pages came “through a law office”, and the paymaster's address is Nedim Karaca's office. The corrections are delivered from the same desk that pays for them.",
+    "tr": "Güven'in düzeltilmiş sayfaları “bir avukatlık bürosu aracılığıyla” gelmiş; parayı ödeyen şirketin adresi de Nedim Karaca'nın bürosu. Düzeltmeler, parasını ödeyen masadan çıkıyor."
+  },
+  "OF_LI_LAW_OFFICE_W1": {
+    "en": "Güven invented the law office to protect himself.",
+    "tr": "Güven kendini korumak için avukatlık bürosunu uydurmuş."
+  },
+  "OF_LI_LAW_OFFICE_W2": {
+    "en": "Any law office in the city could have delivered the pages.",
+    "tr": "Sayfaları şehirdeki herhangi bir avukatlık bürosu getirmiş olabilir."
+  },
+  "OF_LI_KARACA_TITLE": {
+    "en": "Karaca works for the ledger",
+    "tr": "Karaca defter için çalışıyor"
+  },
+  "OF_LI_KARACA": {
+    "en": "Karaca is not simply a lawyer whom guilty people hire. He holds the paymaster's address and turns up for everyone it has paid. He is defending the arrangement, not the clients.",
+    "tr": "Karaca, suçluların tuttuğu sıradan bir avukat değil. Parayı ödeyen şirketin adresi onda ve o şirketin ödeme yaptığı herkes için ortaya çıkıyor. Müvekkilleri değil, düzeni savunuyor."
+  },
+  "OF_LI_KARACA_W1": {
+    "en": "Karaca is simply the best-known lawyer in a small city.",
+    "tr": "Karaca yalnızca küçük bir şehrin en tanınmış avukatı."
+  },
+  "OF_LI_KARACA_W2": {
+    "en": "Karaca is the person who authorised the payments.",
+    "tr": "Ödemeleri onaylayan kişi Karaca'nın kendisi."
+  },
+  "OF_LI_CHIEF_TITLE": {
+    "en": "The chief was ahead of me twice",
+    "tr": "Müdür iki kez benden öndeydi"
+  },
+  "OF_LI_CHIEF": {
+    "en": "Before half past six he knew about an appointment made by telephone the night before, and he had a suspect ready who could not have done it. Either somebody is briefing the chief, or the chief is briefing somebody.",
+    "tr": "Saat altı buçuk olmadan, bir gece önce telefonla alınmış bir randevudan haberdardı; elinde de bu işi yapmış olamayacak hazır bir şüpheli vardı. Ya biri müdüre bilgi veriyor ya da müdür birine."
+  },
+  "OF_LI_CHIEF_W1": {
+    "en": "The chief is simply well informed; that is his job.",
+    "tr": "Müdür yalnızca işini iyi biliyor; görevi bu."
+  },
+  "OF_LI_CHIEF_W2": {
+    "en": "The prosecutor is leaking to the chief.",
+    "tr": "Müdüre bilgi sızdıran kişi savcı."
+  },
+  "OF_LOC": {
+    "en": "Your Office",
+    "tr": "Odanız"
+  },
+  "OF_D_WINDOW": {
+    "en": "Third floor of the Karaliman police headquarters. The harbour is somewhere behind the rain.",
+    "tr": "Karaliman Emniyet Müdürlüğü'nün üçüncü katı. Liman, yağmurun arkasında bir yerde."
+  },
+  "OF_D_SHELF": {
+    "en": "The shelf. One thing from every case, so that none of them is ever only a file number.",
+    "tr": "Raf. Her dosyadan bir şey; hiçbiri yalnızca bir dosya numarasından ibaret kalmasın diye."
+  },
+  "OF_D_CABINET": {
+    "en": "Closed cases. The drawer you want is always the bottom one.",
+    "tr": "Kapanmış dosyalar. Aradığınız çekmece hep en alttaki olur."
+  },
+  "OF_NAME_MIRA": {
+    "en": "Mira Kaya",
+    "tr": "Mira Kaya"
+  },
+  "OF_TL_FENER": {
+    "en": "Fener Danışmanlık Ltd. is founded, at a law office address.",
+    "tr": "Fener Danışmanlık Ltd. bir avukatlık bürosunun adresinde kuruluyor."
+  },
+  "OF_TL_FIRE": {
+    "en": "The Pier 9 warehouse burns. A witness statement in the inquiry is retyped. Someone authorises a payment.",
+    "tr": "9. İskele deposu yanıyor. Soruşturmadaki bir tanık ifadesi yeniden yazılıyor. Biri bir ödemeyi onaylıyor."
+  },
+  "OF_TL_ZONING": {
+    "en": "Ruling 58-D is “corrected” and the burnt land is opened for building. A reporter is paid to bury the story. Someone authorises a payment.",
+    "tr": "58-D sayılı karar “düzeltiliyor” ve yanan arazi imara açılıyor. Bir muhabire haberi gömmesi için ödeme yapılıyor. Biri bir ödemeyi onaylıyor."
+  },
+  "OF_TL_VURAL": {
+    "en": "Ekrem Vural finds the altered page and dies on the archive stairs.",
+    "tr": "Ekrem Vural değiştirilen sayfayı buluyor ve arşiv merdiveninde ölüyor."
+  },
+  "OF_TL_TUNC": {
+    "en": "Kerem Tunç is driven off the harbour road the night before he meets the prosecutor.",
+    "tr": "Kerem Tunç, savcıyla görüşmesinden bir gece önce Rıhtım Yolu'nda yoldan çıkarılıyor."
+  },
+  "OF_TITLE": {
+    "en": "The Lighthouse Ledger",
+    "tr": "Fener Defteri"
+  },
+  "OF_TIMELINE_TITLE": {
+    "en": "What the files have in common",
+    "tr": "Dosyaların ortak noktası"
+  },
+  "OF_BOARD_TITLE": {
+    "en": "The Ledger Wall",
+    "tr": "Defter Duvarı"
+  },
+  "OF_BOARD_BUTTON": {
+    "en": "Ledger",
+    "tr": "Defter"
+  },
+  "OF_INTRO_1": {
+    "en": "Your office.\nThird floor, Karaliman police headquarters.",
+    "tr": "Odanız.\nKaraliman Emniyet Müdürlüğü, üçüncü kat."
+  },
+  "OF_INTRO_2": {
+    "en": "The case folders are on the desk. What you carry out of each case goes up on the wall.\n\nSomewhere on that wall is a name that has been torn off every page so far.",
+    "tr": "Dava dosyaları masanın üzerinde. Her dosyadan çıkardıklarınız duvara asılıyor.\n\nO duvarda bir yerde, şimdiye kadar her sayfadan koparılmış bir isim var."
+  },
+  "OF_OBJ_C1": {
+    "en": "Reach a verdict in File 47-B (the case folders on the desk).",
+    "tr": "47-B dosyasında bir karara varın (masadaki dava dosyaları)."
+  },
+  "OF_OBJ_C2": {
+    "en": "Reach a verdict in File 58-D.",
+    "tr": "58-D dosyasında bir karara varın."
+  },
+  "OF_OBJ_WALL": {
+    "en": "Use the Ledger wall to work out what the two files have in common.",
+    "tr": "Defter duvarını kullanarak iki dosyanın ortak noktasını bulun."
+  },
+  "OF_OBJ_NEXT": {
+    "en": "Four files on the routing slip are still missing. The next case is in preparation.",
+    "tr": "Sevk fişindeki dört dosya hâlâ kayıp. Sıradaki dosya hazırlanıyor."
+  },
+  "OF_HINT_WALL": {
+    "en": "What you carried out of the cases is on the Ledger wall. Tap the wall, or the Ledger button.",
+    "tr": "Dosyalardan çıkardıklarınız Defter duvarında. Duvara ya da Defter düğmesine dokunun."
+  },
+  "OF_TOAST_CARD": {
+    "en": "New card on the Ledger wall",
+    "tr": "Defter duvarına yeni bir kart eklendi"
+  },
+  "OF_L09_NAME": {
+    "en": "File 12-C, 1999",
+    "tr": "Dosya 12-C, 1999"
+  },
+  "OF_L09_GIST": {
+    "en": "1999: the Pier 9 watchman was drowned in fresh water and his autopsy rewritten. Investigating officer: H. Soykan. A stub reads: “Payment authorised by —”.",
+    "tr": "1999: 9. İskele bekçisi tatlı suda boğuldu, otopsisi yeniden yazıldı. Soruşturmayı yürüten: H. Soykan. Bir koçanda “Ödemeyi onaylayan —” yazıyor."
+  },
+  "OF_L09_DESC": {
+    "en": "1999: the Pier 9 watchman was drowned in fresh water and his autopsy rewritten. Investigating officer: H. Soykan. A stub reads: “Payment authorised by —”.",
+    "tr": "1999: 9. İskele bekçisi tatlı suda boğuldu, otopsisi yeniden yazıldı. Soruşturmayı yürüten: H. Soykan. Bir koçanda “Ödemeyi onaylayan —” yazıyor."
+  },
+  "OF_L09_BODY": {
+    "en": "FILE 12-C\n\nSalih Tekin, night watchman, Pier 9.\nThe witness from page 12 of file 47-B.\n\nDrowned in fresh water, grip marks on both wrists.\nFiled three days later as an accident.\n\nBody recovered by: R. Bulut.\nInvestigating officer: Kom. Yrd. H. Soykan.\n\nReceipt stub: “Payment authorised by —”",
+    "tr": "DOSYA 12-C\n\nSalih Tekin, gece bekçisi, 9. İskele.\n47-B dosyasının 12. sayfasındaki tanık.\n\nTatlı suda boğulmuş, iki bileğinde kavrama izi.\nÜç gün sonra kaza olarak dosyalanmış.\n\nCesedi bulan: R. Bulut.\nSoruşturmayı yürüten: Kom. Yrd. H. Soykan.\n\nMakbuz koçanı: “Ödemeyi onaylayan —”"
+  },
+  "OF_L10_NAME": {
+    "en": "Archive Register, 2003",
+    "tr": "Arşiv Defteri, 2003"
+  },
+  "OF_L10_GIST": {
+    "en": "In 2003 Kom. H. Soykan signed out the harbour police report on the watchman and never returned it. “Lost in the flood”: water 20 cm, shelf 1.8 m.",
+    "tr": "2003'te Kom. H. Soykan bekçiyle ilgili liman polisi raporunu imzayla aldı, iade etmedi. “Selde kayboldu”: su 20 cm, raf 1,8 m."
+  },
+  "OF_L10_DESC": {
+    "en": "In 2003 Kom. H. Soykan signed out the harbour police report on the watchman and never returned it. “Lost in the flood”: water 20 cm, shelf 1.8 m.",
+    "tr": "2003'te Kom. H. Soykan bekçiyle ilgili liman polisi raporunu imzayla aldı, iade etmedi. “Selde kayboldu”: su 20 cm, raf 1,8 m."
+  },
+  "OF_L10_BODY": {
+    "en": "POLICE RECORDS\n\nBox H-99/3, Harbour Police, 1999.\n\nSigned out 14 May 2003 by Kom. H. SOYKAN.\nReturned: —\n\n“Reported lost, flood of 2003.”\n\nThe flood reached 20 cm.\nThe box was shelved at 1.8 m.",
+    "tr": "EMNİYET ARŞİVİ\n\nKutu H-99/3, Liman Polisi, 1999.\n\n14 Mayıs 2003'te Kom. H. SOYKAN imzayla almış.\nİade: —\n\n“2003 selinde kaybolduğu bildirildi.”\n\nSu 20 cm yükseldi.\nKutu 1,8 m'deki raftaydı."
+  },
+  "OF_L11_NAME": {
+    "en": "Fener's Payroll",
+    "tr": "Fener'in Maaş Listesi"
+  },
+  "OF_L11_GIST": {
+    "en": "Fener Danışmanlık has paid harbour policeman Rıza Bulut every month since March 1999. On the night Dr. Erol died, Bulut rang Nedim Karaca's office.",
+    "tr": "Fener Danışmanlık, liman polisi Rıza Bulut'a Mart 1999'dan beri her ay ödeme yapıyor. Dr. Erol'un öldüğü gece Bulut, Nedim Karaca'nın bürosunu aradı."
+  },
+  "OF_L11_DESC": {
+    "en": "Fener Danışmanlık has paid harbour policeman Rıza Bulut every month since March 1999. On the night Dr. Erol died, Bulut rang Nedim Karaca's office.",
+    "tr": "Fener Danışmanlık, liman polisi Rıza Bulut'a Mart 1999'dan beri her ay ödeme yapıyor. Dr. Erol'un öldüğü gece Bulut, Nedim Karaca'nın bürosunu aradı."
+  },
+  "OF_L11_BODY": {
+    "en": "R. BULUT\n\nPaid monthly by Fener Danışmanlık Ltd.\n“harbour security consultancy”\nFirst payment: March 1999.\n\nThursday 21:22:\ncall to the law office of N. Karaca, three minutes.",
+    "tr": "R. BULUT\n\nFener Danışmanlık Ltd.'den aylık ödeme.\n“liman güvenlik danışmanlığı”\nİlk ödeme: Mart 1999.\n\nPerşembe 21.22:\nAv. N. Karaca'nın bürosuna arama, üç dakika."
+  },
+  "OF_LI_OFFICER_TITLE": {
+    "en": "He closed it, then he emptied the shelf",
+    "tr": "Önce kapattı, sonra rafı boşalttı"
+  },
+  "OF_LI_OFFICER": {
+    "en": "Halil Soykan led the 1999 investigation that called a drowning an accident. Four years later he removed the only police report on it. The same hand at both ends of the file.",
+    "tr": "1999'da boğulmayı kaza sayan soruşturmayı Halil Soykan yürüttü. Dört yıl sonra da olayla ilgili tek polis raporunu arşivden o aldı. Dosyanın iki ucunda da aynı el var."
+  },
+  "OF_LI_OFFICER_W1": {
+    "en": "Two different officers happen to share the name.",
+    "tr": "İki ayrı memurun adı tesadüfen aynı."
+  },
+  "OF_LI_OFFICER_W2": {
+    "en": "The flood destroyed the report before he could return it.",
+    "tr": "Rapor, o iade edemeden selde yok oldu."
+  },
+  "OF_LI_PAYROLL_TITLE": {
+    "en": "One firm, one address",
+    "tr": "Tek şirket, tek adres"
+  },
+  "OF_LI_PAYROLL": {
+    "en": "The firm that has paid the watchman's “finder” since 1999 is registered at Nedim Karaca's law office, and Karaca is the first number that man rang after the murder. Fener pays for silence, and Karaca keeps the book.",
+    "tr": "Bekçiyi “bulan” adama 1999'dan beri para ödeyen şirket, Nedim Karaca'nın hukuk bürosunda kayıtlı; o adamın cinayetten sonra aradığı ilk numara da Karaca. Fener susmanın parasını ödüyor, defteri Karaca tutuyor."
+  },
+  "OF_LI_PAYROLL_W1": {
+    "en": "Bulut is simply one of Karaca's ordinary clients.",
+    "tr": "Bulut, Karaca'nın sıradan müvekkillerinden biri yalnızca."
+  },
+  "OF_LI_PAYROLL_W2": {
+    "en": "Fener is a genuine security consultancy.",
+    "tr": "Fener gerçek bir güvenlik danışmanlığı şirketi."
+  },
+  "OF_TL_TEKIN": {
+    "en": "The Pier 9 watchman drowns. Inquest 12-C calls it an accident.",
+    "tr": "9. İskele bekçisi boğuluyor. 12-C tahkikatı buna kaza diyor."
+  },
+  "OF_TL_REPORT": {
+    "en": "The harbour police report leaves the archive and does not come back.",
+    "tr": "Liman polisi raporu arşivden çıkıyor, geri dönmüyor."
+  },
+  "OF_TL_EROL": {
+    "en": "Dr. Nazım Erol dies the week he agreed to talk.",
+    "tr": "Dr. Nazım Erol, konuşmayı kabul ettiği hafta ölüyor."
+  },
+  "OF_OBJ_C4": {
+    "en": "Three files recovered. The last numbers on the slip are still out there.",
+    "tr": "Üç dosya bulundu. Pusuladaki son numaralar hâlâ ortada yok."
+  },
+  "OF_LI_LIST_Q": {
+    "en": "What is the routing slip?",
+    "tr": "Sevk pusulası ne?"
+  },
+  "OF_LI_LIST_KEY": {
+    "en": "58-D",
+    "tr": "58-D"
+  },
+  "OF_LI_LIST_WS1": {
+    "en": "A list of old fire files",
+    "tr": "Eski yangın dosyalarının listesi"
+  },
+  "OF_LI_LIST_WS2": {
+    "en": "A clerk's filing order",
+    "tr": "Bir kâtibin dosyalama sırası"
+  },
+  "OF_LI_SAME_HAND_Q": {
+    "en": "Who authorised both payments?",
+    "tr": "İki ödemeyi kim onayladı?"
+  },
+  "OF_LI_SAME_HAND_KEY": {
+    "en": "Payment authorised by —",
+    "tr": "Ödemeyi onaylayan —"
+  },
+  "OF_LI_SAME_HAND_WS1": {
+    "en": "Two different people",
+    "tr": "İki ayrı kişi"
+  },
+  "OF_LI_SAME_HAND_WS2": {
+    "en": "Nobody; they are forms",
+    "tr": "Kimse; bunlar matbu form"
+  },
+  "OF_LI_FENER_Q": {
+    "en": "Who paid Soylu in 2004?",
+    "tr": "2004'te Soylu'ya kim ödedi?"
+  },
+  "OF_LI_FENER_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "OF_LI_FENER_WS1": {
+    "en": "The newspaper",
+    "tr": "Gazete"
+  },
+  "OF_LI_FENER_WS2": {
+    "en": "Aras directly",
+    "tr": "Doğrudan Aras"
+  },
+  "OF_LI_LAW_OFFICE_Q": {
+    "en": "Which law office sent the pages?",
+    "tr": "Sayfaları hangi hukuk bürosu yolladı?"
+  },
+  "OF_LI_LAW_OFFICE_KEY": {
+    "en": "law office",
+    "tr": "hukuk bürosu"
+  },
+  "OF_LI_LAW_OFFICE_WS1": {
+    "en": "A firm in Ankara",
+    "tr": "Ankara'da bir büro"
+  },
+  "OF_LI_LAW_OFFICE_WS2": {
+    "en": "The city's own lawyers",
+    "tr": "Belediyenin avukatları"
+  },
+  "OF_LI_KARACA_Q": {
+    "en": "What is Karaca's role?",
+    "tr": "Karaca'nın rolü ne?"
+  },
+  "OF_LI_KARACA_KEY": {
+    "en": "Nedim Karaca",
+    "tr": "Nedim Karaca"
+  },
+  "OF_LI_KARACA_WS1": {
+    "en": "He is an ordinary lawyer",
+    "tr": "Sıradan bir avukat"
+  },
+  "OF_LI_KARACA_WS2": {
+    "en": "He is the paymaster",
+    "tr": "Parayı veren o"
+  },
+  "OF_LI_CHIEF_Q": {
+    "en": "What did the chief know too early?",
+    "tr": "Müdür neyi fazla erken biliyordu?"
+  },
+  "OF_LI_CHIEF_KEY": {
+    "en": "the chief",
+    "tr": "müdür"
+  },
+  "OF_LI_CHIEF_WS1": {
+    "en": "Nothing; it was luck",
+    "tr": "Hiçbir şey; şanstı"
+  },
+  "OF_LI_CHIEF_WS2": {
+    "en": "The prosecutor told him",
+    "tr": "Savcı ona söylemişti"
+  },
+  "OF_LI_OFFICER_Q": {
+    "en": "Who closed 12-C and emptied the shelf?",
+    "tr": "12-C'yi kim kapattı, rafı kim boşalttı?"
+  },
+  "OF_LI_OFFICER_KEY": {
+    "en": "H. Soykan",
+    "tr": "H. Soykan"
+  },
+  "OF_LI_OFFICER_WS1": {
+    "en": "Two men with one name",
+    "tr": "Aynı adlı iki kişi"
+  },
+  "OF_LI_OFFICER_WS2": {
+    "en": "The flood took it",
+    "tr": "Sel götürdü"
+  },
+  "OF_LI_PAYROLL_Q": {
+    "en": "Who pays Rıza Bulut?",
+    "tr": "Rıza Bulut'a kim ödüyor?"
+  },
+  "OF_LI_PAYROLL_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "OF_LI_PAYROLL_WS1": {
+    "en": "He is Karaca's client",
+    "tr": "Karaca'nın müvekkili"
+  },
+  "OF_LI_PAYROLL_WS2": {
+    "en": "Real security work",
+    "tr": "Gerçek güvenlik işi"
+  }
+}

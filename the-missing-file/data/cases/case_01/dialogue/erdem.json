@@ -1,0 +1,411 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "erdem_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "erdem_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_INTRO_2"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_INTRO_3"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "night",
+          "t": "C1_ERDEM_Q_NIGHT",
+          "next": "night"
+        },
+        {
+          "id": "patrol",
+          "t": "C1_ERDEM_Q_PATROL",
+          "next": "patrol",
+          "conditions": [
+            {
+              "has_evidence": "E04"
+            },
+            {
+              "not_flag": "erdem_confessed"
+            }
+          ]
+        },
+        {
+          "id": "vural",
+          "t": "C1_ERDEM_Q_VURAL",
+          "next": "vural"
+        },
+        {
+          "id": "absence",
+          "t": "C1_ERDEM_Q_ABSENCE",
+          "next": "absence",
+          "conditions": [
+            {
+              "flag": "erdem_confessed"
+            }
+          ]
+        },
+        {
+          "id": "report",
+          "t": "C1_ERDEM_Q_REPORT",
+          "next": "report",
+          "conditions": [
+            {
+              "flag": "erdem_confessed"
+            },
+            {
+              "not_flag": "erdem_decided"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C1_ERDEM_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "night": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_NIGHT_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_NIGHT_2",
+          "effects": [
+            {
+              "add_testimony": "T_ERDEM_1"
+            }
+          ],
+          "press": "press_radio"
+        }
+      ],
+      "choices": [
+        {
+          "id": "night_firm",
+          "t": "C1_ERDEM_NIGHT_FIRM",
+          "next": "night_firm"
+        },
+        {
+          "id": "night_kind",
+          "t": "C1_ERDEM_NIGHT_KIND",
+          "next": "night_kind"
+        }
+      ]
+    },
+    "night_firm": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_NIGHT_FIRM_A",
+          "effects": [
+            {
+              "add_testimony": "T_ERDEM_4"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "night_kind": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_NIGHT_KIND_A"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_NIGHT_FIRM_A",
+          "effects": [
+            {
+              "add_testimony": "T_ERDEM_4"
+            }
+          ]
+        }
+      ],
+      "next": "hub"
+    },
+    "patrol": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_PATROL_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_PATROL_2",
+          "present": {
+            "accept": "E05",
+            "next": "confess",
+            "wrong": "patrol_wrong"
+          },
+          "press": "press_patrol"
+        }
+      ],
+      "next": "hub"
+    },
+    "patrol_wrong": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_PATROL_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "confess": {
+      "effects": [
+        {
+          "set_flag": "erdem_confessed"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_CONFESS_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_CONFESS_2",
+          "mood": "shaken"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_CONFESS_3",
+          "effects": [
+            {
+              "add_testimony": "T_ERDEM_2"
+            }
+          ],
+          "mood": "shaken"
+        }
+      ],
+      "choices": [
+        {
+          "id": "confess_firm",
+          "t": "C1_ERDEM_CONFESS_FIRM",
+          "next": "confess_firm"
+        },
+        {
+          "id": "confess_kind",
+          "t": "C1_ERDEM_CONFESS_KIND",
+          "next": "confess_kind"
+        }
+      ]
+    },
+    "confess_firm": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_CONFESS_FIRM_A",
+          "mood": "shaken"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_SIDE_DOOR",
+          "effects": [
+            {
+              "add_testimony": "T_ERDEM_3"
+            }
+          ]
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_TERMINAL"
+        }
+      ],
+      "next": "hub"
+    },
+    "confess_kind": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_CONFESS_KIND_A"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_TERMINAL"
+        }
+      ],
+      "next": "hub"
+    },
+    "absence": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_ABSENCE_A"
+        }
+      ],
+      "next": "hub"
+    },
+    "vural": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_VURAL_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_VURAL_2",
+          "press": "press_cameras"
+        }
+      ],
+      "next": "hub"
+    },
+    "report": {
+      "effects": [
+        {
+          "set_flag": "erdem_decided"
+        }
+      ],
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_REPORT_1"
+        }
+      ],
+      "choices": [
+        {
+          "id": "report_yes",
+          "t": "C1_ERDEM_REPORT_YES",
+          "next": "report_yes",
+          "effects": [
+            {
+              "set_flag": "erdem_reported"
+            }
+          ]
+        },
+        {
+          "id": "report_no",
+          "t": "C1_ERDEM_REPORT_NO",
+          "next": "report_no",
+          "effects": [
+            {
+              "set_flag": "erdem_spared"
+            }
+          ]
+        }
+      ]
+    },
+    "report_yes": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_REPORT_YES_A"
+        }
+      ],
+      "next": "hub"
+    },
+    "report_no": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_REPORT_NO_A"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_radio": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_RADIO_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_RADIO_2",
+          "mood": "defensive"
+        },
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_RADIO_3"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_RADIO_4"
+        }
+      ]
+    },
+    "press_patrol": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_PATROL_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_PATROL_2",
+          "mood": "defensive"
+        },
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_PATROL_3"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_PATROL_4",
+          "mood": "shaken"
+        }
+      ]
+    },
+    "press_cameras": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_ERDEM_P_CAM_1"
+        },
+        {
+          "s": "erdem",
+          "t": "C1_ERDEM_P_CAM_2"
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

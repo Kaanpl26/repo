@@ -1,0 +1,482 @@
+{
+  "house": {
+    "name": "C3_LOC_HOUSE",
+    "background": "res://assets/scenes/house.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "on_enter": [
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_02.guven_protected"
+          }
+        ],
+        "effects": [
+          {
+            "add_testimony": "T_GUVEN_TIP"
+          }
+        ],
+        "caption": "C3_ENTER_GUVEN"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "kitchen_window",
+        "type": "detail",
+        "rect": [
+          494,
+          154,
+          282,
+          302
+        ],
+        "text": "C3_D_KITCHEN_WINDOW"
+      },
+      {
+        "id": "armchair",
+        "type": "detail",
+        "rect": [
+          1250,
+          400,
+          360,
+          430
+        ],
+        "text": "C3_D_ARMCHAIR"
+      },
+      {
+        "id": "books",
+        "type": "detail",
+        "rect": [
+          1940,
+          170,
+          660,
+          330
+        ],
+        "text": "C3_D_BOOKS"
+      },
+      {
+        "id": "fridge",
+        "type": "evidence",
+        "rect": [
+          120,
+          300,
+          250,
+          530
+        ],
+        "evidence": "E05"
+      },
+      {
+        "id": "rack",
+        "type": "evidence",
+        "rect": [
+          430,
+          545,
+          310,
+          100
+        ],
+        "evidence": "E04"
+      },
+      {
+        "id": "hatice",
+        "type": "talk",
+        "rect": [
+          800,
+          250,
+          230,
+          390
+        ],
+        "character": "hatice"
+      },
+      {
+        "id": "note",
+        "type": "evidence",
+        "rect": [
+          1095,
+          550,
+          145,
+          180
+        ],
+        "evidence": "E01"
+      },
+      {
+        "id": "tray",
+        "type": "evidence",
+        "rect": [
+          1630,
+          490,
+          200,
+          150
+        ],
+        "evidence": "E03"
+      },
+      {
+        "id": "pills",
+        "type": "evidence",
+        "rect": [
+          1945,
+          565,
+          245,
+          80
+        ],
+        "evidence": "E02"
+      },
+      {
+        "id": "diary",
+        "type": "evidence",
+        "rect": [
+          2190,
+          575,
+          175,
+          72
+        ],
+        "evidence": "E06"
+      },
+      {
+        "id": "phone",
+        "type": "evidence",
+        "rect": [
+          2378,
+          572,
+          122,
+          72
+        ],
+        "evidence": "E07"
+      },
+      {
+        "id": "envelope",
+        "type": "evidence",
+        "rect": [
+          2492,
+          598,
+          112,
+          72
+        ],
+        "evidence": "E08"
+      },
+      {
+        "id": "cem",
+        "type": "talk",
+        "rect": [
+          2650,
+          270,
+          220,
+          380
+        ],
+        "character": "cem"
+      }
+    ],
+    "hints": []
+  },
+  "institute": {
+    "name": "C3_LOC_INSTITUTE",
+    "background": "res://assets/scenes/institute.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "basement",
+    "unlock": [
+      {
+        "flag": "hatice_met"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "table",
+        "type": "detail",
+        "rect": [
+          130,
+          560,
+          760,
+          270
+        ],
+        "text": "C3_D_TABLE"
+      },
+      {
+        "id": "analyser",
+        "type": "detail",
+        "rect": [
+          1810,
+          510,
+          190,
+          145
+        ],
+        "text": "C3_D_ANALYSER"
+      },
+      {
+        "id": "shelf",
+        "type": "detail",
+        "rect": [
+          2330,
+          110,
+          460,
+          380
+        ],
+        "text": "C3_D_SHELF"
+      },
+      {
+        "id": "stock",
+        "type": "evidence",
+        "rect": [
+          1010,
+          600,
+          170,
+          200
+        ],
+        "evidence": "E10"
+      },
+      {
+        "id": "nur",
+        "type": "talk",
+        "rect": [
+          1440,
+          270,
+          240,
+          380
+        ],
+        "character": "nur"
+      },
+      {
+        "id": "tox",
+        "type": "evidence",
+        "rect": [
+          1350,
+          575,
+          130,
+          85
+        ],
+        "evidence": "E09"
+      },
+      {
+        "id": "raki_lab",
+        "type": "evidence",
+        "rect": [
+          1660,
+          585,
+          125,
+          80
+        ],
+        "evidence": "E11"
+      },
+      {
+        "id": "register",
+        "type": "evidence",
+        "rect": [
+          2440,
+          570,
+          240,
+          150
+        ],
+        "evidence": "E12"
+      }
+    ],
+    "hints": []
+  },
+  "harbour": {
+    "name": "C3_LOC_HARBOUR",
+    "background": "res://assets/scenes/harbour.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "unlock": [
+      {
+        "flag": "hatice_met"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "boat",
+        "type": "detail",
+        "rect": [
+          120,
+          430,
+          500,
+          290
+        ],
+        "text": "C3_D_BOAT"
+      },
+      {
+        "id": "backgammon",
+        "type": "detail",
+        "rect": [
+          955,
+          600,
+          220,
+          70
+        ],
+        "text": "C3_D_BACKGAMMON"
+      },
+      {
+        "id": "plate",
+        "type": "detail",
+        "rect": [
+          2050,
+          385,
+          150,
+          70
+        ],
+        "text": "C3_D_PLATE"
+      },
+      {
+        "id": "crates",
+        "type": "detail",
+        "rect": [
+          2650,
+          660,
+          200,
+          170
+        ],
+        "text": "C3_D_CRATES"
+      },
+      {
+        "id": "bulut",
+        "type": "talk",
+        "rect": [
+          1060,
+          260,
+          240,
+          400
+        ],
+        "character": "bulut"
+      },
+      {
+        "id": "tally",
+        "type": "evidence",
+        "rect": [
+          1310,
+          550,
+          150,
+          120
+        ],
+        "evidence": "E14"
+      },
+      {
+        "id": "slips",
+        "type": "evidence",
+        "rect": [
+          1740,
+          350,
+          230,
+          200
+        ],
+        "evidence": "E15"
+      },
+      {
+        "id": "papers",
+        "type": "evidence",
+        "rect": [
+          1785,
+          695,
+          185,
+          120
+        ],
+        "evidence": "E17"
+      },
+      {
+        "id": "stove",
+        "type": "evidence",
+        "rect": [
+          2330,
+          640,
+          170,
+          190
+        ],
+        "evidence": "E16",
+        "conditions": [
+          {
+            "not_flag": "chief_informed"
+          }
+        ]
+      },
+      {
+        "id": "stove_ash",
+        "type": "evidence",
+        "rect": [
+          2330,
+          640,
+          170,
+          190
+        ],
+        "evidence": "E16X",
+        "conditions": [
+          {
+            "flag": "chief_informed"
+          }
+        ]
+      }
+    ],
+    "hints": []
+  },
+  "records": {
+    "name": "C3_LOC_RECORDS",
+    "background": "res://assets/scenes/records.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1900,
+    "ambience": "basement",
+    "unlock": [
+      {
+        "flag": "hatice_met"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "shelves",
+        "type": "detail",
+        "rect": [
+          120,
+          130,
+          560,
+          700
+        ],
+        "text": "C3_D_SHELVES"
+      },
+      {
+        "id": "gap",
+        "type": "detail",
+        "rect": [
+          760,
+          130,
+          560,
+          700
+        ],
+        "text": "C3_D_GAP"
+      },
+      {
+        "id": "register",
+        "type": "evidence",
+        "rect": [
+          1590,
+          555,
+          230,
+          95
+        ],
+        "evidence": "E18"
+      },
+      {
+        "id": "cards",
+        "type": "evidence",
+        "rect": [
+          1895,
+          495,
+          240,
+          150
+        ],
+        "evidence": "E19"
+      },
+      {
+        "id": "soykan",
+        "type": "talk",
+        "rect": [
+          2380,
+          300,
+          240,
+          390
+        ],
+        "character": "soykan"
+      }
+    ],
+    "hints": []
+  }
+}

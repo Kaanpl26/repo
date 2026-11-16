@@ -1,0 +1,1854 @@
+{
+  "C2_E01_NAME": {
+    "en": "Traffic Unit Report",
+    "tr": "Trafik Ekibi Raporu"
+  },
+  "C2_E01_DESC": {
+    "en": "The first report from the officers who reached the crash. It is clipped to the patrol car.",
+    "tr": "Kaza yerine ilk ulaşan ekibin raporu. Ekip aracının üzerine iliştirilmiş."
+  },
+  "C2_E01_BODY": {
+    "en": "TRAFFIC UNIT — Rıhtım Yolu, km 3\nTuesday night\n\nVehicle: grey saloon, 82 KT 2291.\nRegistered keeper and driver: Kerem TUNÇ.\n\nLeft the road on the bend, went through the barrier and down the embankment. Driver dead at the scene.\n\nRoad wet. First assessment: lost control in the rain.\n\nNotes:\n- No braking marks from this vehicle before the barrier.\n- A second set of tyre marks runs beside it for forty metres and carries on along the road.",
+    "tr": "TRAFİK EKİBİ — Rıhtım Yolu, 3. km\nSalı gecesi\n\nAraç: gri sedan, 82 KT 2291.\nRuhsat sahibi ve sürücü: Kerem TUNÇ.\n\nVirajda yoldan çıkmış, bariyeri aşıp şevden aşağı yuvarlanmış. Sürücü olay yerinde hayatını kaybetmiş.\n\nYol ıslak. İlk değerlendirme: yağışta direksiyon hâkimiyetinin kaybedilmesi.\n\nNotlar:\n- Bariyerden önce bu araca ait fren izi yok.\n- Yanında kırk metre boyunca ikinci bir lastik izi uzanıyor ve yol boyunca devam ediyor."
+  },
+  "C2_E02_NAME": {
+    "en": "Paint on the Rear Bumper",
+    "tr": "Arka Tampondaki Boya"
+  },
+  "C2_E02_DESC": {
+    "en": "The rear left corner of the reporter's car, where it hangs over the embankment.",
+    "tr": "Gazetecinin arabasının şevden sarkan sol arka köşesi."
+  },
+  "C2_E02_BODY": {
+    "en": "SCENE NOTE — grey saloon 82 KT 2291\n\nRear left corner crushed inward.\n\nIn the dent: long streaks of dark red paint that is not this car's.\n\nThe grey paint around it is scraped to bare metal.\n\nHeight of the damage: bumper level of another saloon.",
+    "tr": "OLAY YERİ NOTU — gri sedan 82 KT 2291\n\nSol arka köşe içe doğru ezilmiş.\n\nEziğin içinde bu araca ait olmayan, uzun koyu kırmızı boya izleri var.\n\nÇevresindeki gri boya sac görünene kadar kazınmış.\n\nHasarın yüksekliği: başka bir sedanın tampon hizası."
+  },
+  "C2_E03_NAME": {
+    "en": "The Reporter's Phone",
+    "tr": "Gazetecinin Telefonu"
+  },
+  "C2_E03_DESC": {
+    "en": "Kerem Tunç's mobile phone, found in the footwell. The screen is cracked but it still works.",
+    "tr": "Kerem Tunç'un cep telefonu, ayak boşluğunda bulunmuş. Ekranı çatlak ama çalışıyor."
+  },
+  "C2_E03_BODY": {
+    "en": "CALLS — Tuesday\n\n18:40  OUT  “T.”  4 min\n20:02  OUT  “Savcı Z. Arıkan”  2 min\n21:15  IN   0 282 555 01 00  1 min 10 s\n\nMESSAGES — Tuesday\n\n21:18  to “T.”:\n“On my way. Ten o'clock at the tower gate, as your office said.”\n\nDelivered. Not read.",
+    "tr": "ARAMALAR — Salı\n\n18.40  GİDEN  “T.”  4 dk\n20.02  GİDEN  “Savcı Z. Arıkan”  2 dk\n21.15  GELEN  0 282 555 01 00  1 dk 10 sn\n\nMESAJLAR — Salı\n\n21.18  “T.” kişisine:\n“Yoldayım. Ofisinizin dediği gibi, saat onda kule kapısında.”\n\nİletildi. Okunmadı."
+  },
+  "C2_E04_NAME": {
+    "en": "Key with Tag 117",
+    "tr": "117 Etiketli Anahtar"
+  },
+  "C2_E04_DESC": {
+    "en": "A small brass key on the reporter's key ring, with a paper tag.",
+    "tr": "Gazetecinin anahtarlığında, üzerinde kâğıt etiket olan küçük pirinç bir anahtar."
+  },
+  "C2_E04_BODY": {
+    "en": "PERSONAL EFFECTS — K. Tunç\n\nKey ring: car key, two house keys.\n\nOne small brass cabinet key. Paper tag in his handwriting:\n\n117\n\nIt fits nothing in the car and, according to his landlady, nothing in his flat.",
+    "tr": "KİŞİSEL EŞYALAR — K. Tunç\n\nAnahtarlık: araba anahtarı, iki ev anahtarı.\n\nKüçük pirinç bir dolap anahtarı. Üzerinde kendi el yazısıyla kâğıt etiket:\n\n117\n\nArabadaki hiçbir yere uymuyor; ev sahibesine göre dairesindeki hiçbir yere de."
+  },
+  "C2_E05_NAME": {
+    "en": "Site Visitor Pass",
+    "tr": "Şantiye Ziyaretçi Kartı"
+  },
+  "C2_E05_DESC": {
+    "en": "A visitor pass from the tower building site, found in the glove box.",
+    "tr": "Kule şantiyesine ait bir ziyaretçi kartı, torpido gözünde bulunmuş."
+  },
+  "C2_E05_BODY": {
+    "en": "KIYI YAPI A.Ş.\nLiman Kule building site\n\nVISITOR\n\nName: K. Tunç\nIn: Tuesday 22:02\nTo see: —\n\nIssued at the gate.",
+    "tr": "KIYI YAPI A.Ş.\nLiman Kule şantiyesi\n\nZİYARETÇİ\n\nAdı: K. Tunç\nGiriş: Salı 22.02\nGörüşeceği kişi: —\n\nKapıda düzenlenmiştir."
+  },
+  "C2_E06_NAME": {
+    "en": "Crash Recorder",
+    "tr": "Kaza Kayıt Cihazı"
+  },
+  "C2_E06_DESC": {
+    "en": "The emergency-call unit from the reporter's car, read out on the traffic unit's tablet.",
+    "tr": "Gazetecinin arabasındaki acil çağrı cihazı; kaydı trafik ekibinin tabletinden okunmuş."
+  },
+  "C2_E06_BODY": {
+    "en": "EMERGENCY CALL UNIT — 82 KT 2291\nTuesday\n\n22:41:07  Impact detected: REAR LEFT.\n          Speed 68 km/h.\n22:41:09  Second impact: FRONT (barrier).\n22:41:12  Automatic emergency call.\n\nBrake input in the five seconds before the first impact: none.\nSteering input after first impact: hard right.",
+    "tr": "ACİL ÇAĞRI CİHAZI — 82 KT 2291\nSalı\n\n22.41.07  Darbe algılandı: SOL ARKA.\n          Hız 68 km/sa.\n22.41.09  İkinci darbe: ÖN (bariyer).\n22.41.12  Otomatik acil çağrı.\n\nİlk darbeden önceki beş saniyede fren: yok.\nİlk darbeden sonra direksiyon: sert sağa."
+  },
+  "C2_E07_NAME": {
+    "en": "Switchboard Log",
+    "tr": "Santral Kaydı"
+  },
+  "C2_E07_DESC": {
+    "en": "The outgoing-call log on the newspaper's reception switchboard.",
+    "tr": "Gazetenin danışmasındaki santralin giden arama kaydı."
+  },
+  "C2_E07_BODY": {
+    "en": "KARALİMAN POSTASI — OUTGOING CALLS\nTuesday evening\n\nNumber shown to the person called:\n0 282 555 01 00\n\n20:48  ext. 09  →  mobile …38 20   1 min\n21:05  ext. 14  →  mobile …61 47   38 s\n21:15  ext. 14  →  mobile …22 91   1 min 10 s\n\nEXTENSIONS\n09  Newsroom\n11  K. Tunç\n12  D. Aktaş\n14  Editor's office",
+    "tr": "KARALİMAN POSTASI — GİDEN ARAMALAR\nSalı akşamı\n\nAranan kişide görünen numara:\n0 282 555 01 00\n\n20.48  dahili 09  →  cep …38 20   1 dk\n21.05  dahili 14  →  cep …61 47   38 sn\n21.15  dahili 14  →  cep …22 91   1 dk 10 sn\n\nDAHİLİ NUMARALAR\n09  Haber merkezi\n11  K. Tunç\n12  D. Aktaş\n14  Genel yayın yönetmeni odası"
+  },
+  "C2_E08_NAME": {
+    "en": "The Empty Desk",
+    "tr": "Boş Masa"
+  },
+  "C2_E08_DESC": {
+    "en": "Kerem Tunç's desk in the newsroom. Something is missing from it.",
+    "tr": "Kerem Tunç'un haber merkezindeki masası. Üzerinden bir şey eksik."
+  },
+  "C2_E08_BODY": {
+    "en": "SCENE NOTE — K. Tunç's desk\n\nA clean rectangle in the dust, the size of a laptop. The charger is still plugged into the wall.\n\nThe cleaner dusts on Mondays, so the laptop stood here until at least Tuesday.\n\nHis notebook is not in the drawers. It was not in the car either.",
+    "tr": "OLAY YERİ NOTU — K. Tunç'un masası\n\nTozun içinde dizüstü bilgisayar boyutunda temiz bir dikdörtgen. Şarj aleti hâlâ prizde.\n\nTemizlikçi pazartesi günleri toz alıyor; demek ki bilgisayar en azından salı gününe kadar buradaydı.\n\nNot defteri çekmecelerde yok. Arabada da yoktu."
+  },
+  "C2_E09_NAME": {
+    "en": "Staff Sign-in Sheet",
+    "tr": "Personel İmza Föyü"
+  },
+  "C2_E09_DESC": {
+    "en": "The sign-in sheet by the newsroom door, for Tuesday and Wednesday.",
+    "tr": "Haber merkezinin kapısındaki imza föyü; salı ve çarşamba sayfaları."
+  },
+  "C2_E09_BODY": {
+    "en": "KARALİMAN POSTASI — STAFF\n\nTUESDAY — OUT\n21:20  K. Tunç\n21:40  N. Soylu\n22:10  D. Aktaş\n\nWEDNESDAY — IN\n07:00  D. Aktaş\n08:15  Reception\n08:50  N. Soylu\n09:05  Newsroom (6)",
+    "tr": "KARALİMAN POSTASI — PERSONEL\n\nSALI — ÇIKIŞ\n21.20  K. Tunç\n21.40  N. Soylu\n22.10  D. Aktaş\n\nÇARŞAMBA — GİRİŞ\n07.00  D. Aktaş\n08.15  Danışma\n08.50  N. Soylu\n09.05  Haber merkezi (6)"
+  },
+  "C2_E10_NAME": {
+    "en": "Archive Drawer Index",
+    "tr": "Arşiv Çekmece Dizini"
+  },
+  "C2_E10_DESC": {
+    "en": "The index plate on the newspaper's cuttings archive.",
+    "tr": "Gazetenin kupür arşivinin üzerindeki dizin levhası."
+  },
+  "C2_E10_BODY": {
+    "en": "ARCHIVE — DRAWER INDEX\n\n101–110  Council, 2003\n111–116  Harbour, 2004\n117      Spiked stories, 2004\n         (written, never printed)\n118–124  Courts, 2004\n\nKeys: with the archivist, or by arrangement.",
+    "tr": "ARŞİV — ÇEKMECE DİZİNİ\n\n101–110  Belediye meclisi, 2003\n111–116  Liman, 2004\n117      Rafa kaldırılan haberler, 2004\n         (yazıldı, basılmadı)\n118–124  Adliye, 2004\n\nAnahtarlar: arşiv görevlisinde ya da önceden haber verilerek."
+  },
+  "C2_E11_NAME": {
+    "en": "Advertising Report",
+    "tr": "Reklam Raporu"
+  },
+  "C2_E11_DESC": {
+    "en": "A sheet pinned up in the editor's office: where the paper's money comes from.",
+    "tr": "Genel yayın yönetmeninin odasında asılı bir kâğıt: gazetenin parasının nereden geldiği."
+  },
+  "C2_E11_BODY": {
+    "en": "ADVERTISING — THIS QUARTER\n\nAras Holding group\n(including Kıyı Yapı A.Ş.)   41%\nMunicipality notices          17%\nAll others                    42%\n\nIn pen, in the margin:\n“Do not upset. — N.S.”",
+    "tr": "REKLAM GELİRLERİ — BU ÇEYREK\n\nAras Holding grubu\n(Kıyı Yapı A.Ş. dahil)        %41\nBelediye ilanları             %17\nDiğerleri                     %42\n\nKenarda, tükenmez kalemle:\n“Küstürmeyelim. — N.S.”"
+  },
+  "C2_E12_NAME": {
+    "en": "Kerem's Draft",
+    "tr": "Kerem'in Taslağı"
+  },
+  "C2_E12_DESC": {
+    "en": "The unfinished article on Kerem Tunç's laptop.",
+    "tr": "Kerem Tunç'un dizüstü bilgisayarındaki bitmemiş haber."
+  },
+  "C2_E12_BODY": {
+    "en": "DRAFT — K. Tunç — not filed\n\nWHO REZONED PIER 9?\n\nIn 2004 the burnt Pier 9 land was opened for building by ruling 58-D. The planner's own report said no. The version on file says yes. I now have the original.\n\nThis newspaper had the story in 2004. It was spiked. The reporter who wrote it was paid by a firm called Fener Danışmanlık, and today that reporter is\n\n[the sentence is not finished]\n\nNote to self: tell N. before I file? No. Prosecutor first, Wednesday 09:00.\n\nFile last opened: Tuesday 20:31.",
+    "tr": "TASLAK — K. Tunç — gönderilmedi\n\n9. İSKELE'NİN İMARINI KİM DEĞİŞTİRDİ?\n\n2004'te yanmış 9. İskele arazisi 58-D sayılı kararla imara açıldı. Plancının kendi raporu hayır diyordu. Dosyadaki nüsha evet diyor. Raporun aslı artık bende.\n\nBu gazete haberi 2004'te yakalamıştı. Haber rafa kaldırıldı. Yazan muhabire Fener Danışmanlık adlı bir şirket ödeme yaptı ve o muhabir bugün\n\n[cümle yarım kalmış]\n\nKendime not: göndermeden önce N.'ye söyleyeyim mi? Hayır. Önce savcı, çarşamba 09.00.\n\nDosyanın son açılışı: Salı 20.31."
+  },
+  "C2_E13_NAME": {
+    "en": "File 58-D",
+    "tr": "Dosya 58-D"
+  },
+  "C2_E13_DESC": {
+    "en": "What Kerem Tunç locked in drawer 117 of his own newspaper's archive.",
+    "tr": "Kerem Tunç'un kendi gazetesinin arşivinde, 117 numaralı çekmeceye kilitledikleri."
+  },
+  "C2_E13_BODY": {
+    "en": "IN DRAWER 117\n\n1. RULING 58-D, 2004 — the planner's original report:\n“Rezoning of the Pier 9 plot is NOT recommended. Contaminated ground; fire inquiry unresolved.”\nSigned: T. Güven.\n\n2. The version on file: “Rezoning recommended.” Same signature, different paper.\n\n3. An article from 2004, “Who rezoned Pier 9?”, by Nilgün Soylu. Stamped: SPIKED.\n\n4. A bank slip, 2004: Fener Danışmanlık Ltd. to N. Soylu, “editorial consultancy”.\n\n5. The stub of a torn receipt: “Payment authorised by —”",
+    "tr": "117 NUMARALI ÇEKMECEDE\n\n1. 58-D SAYILI KARAR, 2004 — plancının asıl raporu:\n“9. İskele parselinde imar değişikliği ÖNERİLMEZ. Zemin kirli; yangın soruşturması sonuçlanmamış.”\nİmza: T. Güven.\n\n2. Dosyadaki nüsha: “İmar değişikliği önerilir.” Aynı imza, farklı kâğıt.\n\n3. 2004 tarihli bir haber: “9. İskele'nin imarını kim değiştirdi?” Yazan: Nilgün Soylu. Üzerinde damga: RAFA KALDIRILDI.\n\n4. 2004 tarihli bir banka dekontu: Fener Danışmanlık Ltd.'den N. Soylu'ya, “yayın danışmanlığı”.\n\n5. Yırtılmış bir makbuzun koçanı: “Ödemeyi onaylayan —”"
+  },
+  "C2_E14_NAME": {
+    "en": "Site Gate Log",
+    "tr": "Şantiye Kapı Defteri"
+  },
+  "C2_E14_DESC": {
+    "en": "The visitor and vehicle log kept in the gate hut of the tower site.",
+    "tr": "Kule şantiyesinin kapı kulübesinde tutulan ziyaretçi ve araç defteri."
+  },
+  "C2_E14_BODY": {
+    "en": "LİMAN KULE — GATE\nTuesday night\n\n21:00  Concrete pour begins. B. Kaplan on site.\n22:02  Visitor K. Tunç IN.\n       “Meeting someone.” Nobody came for him.\n22:28  K. Tunç OUT.\n\nNo other visitors.\nSite vehicles leaving between 21:00 and 02:00: none.",
+    "tr": "LİMAN KULE — KAPI\nSalı gecesi\n\n21.00  Beton dökümü başladı. B. Kaplan şantiyede.\n22.02  Ziyaretçi K. Tunç GİRİŞ.\n       “Biriyle buluşacağım.” Onu almaya kimse gelmedi.\n22.28  K. Tunç ÇIKIŞ.\n\nBaşka ziyaretçi yok.\n21.00 ile 02.00 arasında çıkan şantiye aracı: yok."
+  },
+  "C2_E15_NAME": {
+    "en": "Gate Camera Still",
+    "tr": "Kapı Kamerası Görüntüsü"
+  },
+  "C2_E15_DESC": {
+    "en": "A still from the camera over the site gate. It looks across the road.",
+    "tr": "Şantiye kapısının üstündeki kameradan bir kare. Yolun karşısını görüyor."
+  },
+  "C2_E15_BODY": {
+    "en": "GATE CAMERA — Tuesday\n\n22:10  A dark red saloon parks across the road. Lights off.\n22:28  Grey saloon leaves the gate.\n22:29  The red saloon pulls out behind it.\n\nNumber plate, partly readable:\n82 N? 04??\n\nThe driver cannot be seen.",
+    "tr": "KAPI KAMERASI — Salı\n\n22.10  Koyu kırmızı bir sedan yolun karşısına park ediyor. Farları kapalı.\n22.28  Gri sedan kapıdan çıkıyor.\n22.29  Kırmızı sedan onun arkasından hareket ediyor.\n\nPlaka, kısmen okunuyor:\n82 N? 04??\n\nSürücü görünmüyor."
+  },
+  "C2_E16_NAME": {
+    "en": "The Site Pickup",
+    "tr": "Şantiye Kamyoneti"
+  },
+  "C2_E16_DESC": {
+    "en": "The white pickup used by the site manager. One rear corner is dented.",
+    "tr": "Şantiye şefinin kullandığı beyaz kamyonet. Arka köşelerinden biri ezik."
+  },
+  "C2_E16_BODY": {
+    "en": "SCENE NOTE — white pickup, Kıyı Yapı\n\nRear left corner dented, tail light cracked.\n\nPaint in the dent: yellow, the same yellow as the gate posts.\n\nNo red paint. No grey paint.\n\nFront of the vehicle: undamaged.",
+    "tr": "OLAY YERİ NOTU — beyaz kamyonet, Kıyı Yapı\n\nSol arka köşe ezik, stop lambası çatlak.\n\nEzikteki boya: sarı; kapı direklerinin sarısıyla aynı.\n\nKırmızı boya yok. Gri boya yok.\n\nAracın önü: hasarsız."
+  },
+  "C2_E17_NAME": {
+    "en": "Site Incident Book",
+    "tr": "Şantiye Olay Defteri"
+  },
+  "C2_E17_DESC": {
+    "en": "The accident and incident book on the site office wall.",
+    "tr": "Şantiye ofisinin duvarındaki kaza ve olay defteri."
+  },
+  "C2_E17_BODY": {
+    "en": "LİMAN KULE — INCIDENTS\n\nMonday 16:40\nSite pickup reversed into gate post B.\nDamage: rear left corner of vehicle; post.\nDriver: B. Kaplan. No injury.\nAction: post to be repainted.\n\nSigned: gate guard.",
+    "tr": "LİMAN KULE — OLAYLAR\n\nPazartesi 16.40\nŞantiye kamyoneti geri geri giderken B kapı direğine çarptı.\nHasar: aracın sol arka köşesi; direk.\nSürücü: B. Kaplan. Yaralanma yok.\nYapılacak: direk yeniden boyanacak.\n\nİmza: kapı görevlisi."
+  },
+  "C2_E18_NAME": {
+    "en": "Concrete Delivery Tickets",
+    "tr": "Beton İrsaliyeleri"
+  },
+  "C2_E18_DESC": {
+    "en": "Tuesday night's delivery tickets, on the spike in the site office.",
+    "tr": "Salı gecesinin irsaliyeleri, şantiye ofisindeki fiş şişinde."
+  },
+  "C2_E18_BODY": {
+    "en": "CONCRETE DELIVERIES — Tuesday\n\nLoad 1   21:10\nLoad 2   22:20\nLoad 3   23:30\nLoad 4   00:45\n\nEach load signed for on arrival:\nB. Kaplan",
+    "tr": "BETON TESLİMATLARI — Salı\n\n1. sefer   21.10\n2. sefer   22.20\n3. sefer   23.30\n4. sefer   00.45\n\nHer sefer gelişinde imzayla teslim alınmış:\nB. Kaplan"
+  },
+  "C2_E19_NAME": {
+    "en": "Planning File Register",
+    "tr": "İmar Dosya Defteri"
+  },
+  "C2_E19_DESC": {
+    "en": "The register of rulings in the municipal planning office.",
+    "tr": "Belediye imar müdürlüğündeki kararlar defteri."
+  },
+  "C2_E19_BODY": {
+    "en": "PLANNING FILES — REGISTER\n\n58-D   Pier 9 plot, rezoning.\n       Ruling 2004.\n\nRemoved: 2004, “for correction”.\nInitials: T.G.\nReturned: —\n\nIn pencil, a later hand:\n“The original is kept safe. T.G.”",
+    "tr": "İMAR DOSYALARI — DEFTER\n\n58-D   9. İskele parseli, imar değişikliği.\n       Karar 2004.\n\nDosyadan alındı: 2004, “düzeltme için”.\nParaf: T.G.\nİade: —\n\nKurşun kalemle, sonradan eklenmiş:\n“Aslı güvende saklanıyor. T.G.”"
+  },
+  "C2_E20_NAME": {
+    "en": "Güven's Desk Calendar",
+    "tr": "Güven'in Masa Takvimi"
+  },
+  "C2_E20_DESC": {
+    "en": "The desk calendar of the head of planning, open at Tuesday.",
+    "tr": "İmar müdürünün masa takvimi; salı sayfası açık."
+  },
+  "C2_E20_BODY": {
+    "en": "TUESDAY\n\n22:00  K.T. — tower gate.\n       Bring nothing. He has it all.\n\n(the line above is crossed out)\n\n21:05  The paper rang.\n       K.T. cannot come tonight.\n       Phone off. Bed.",
+    "tr": "SALI\n\n22.00  K.T. — kule kapısı.\n       Yanına bir şey alma. Hepsi onda.\n\n(üstteki satırın üzeri çizilmiş)\n\n21.05  Gazeteden aradılar.\n       K.T. bu gece gelemiyor.\n       Telefon kapalı. Yat."
+  },
+  "C2_E21_NAME": {
+    "en": "Vehicle Record: 82 NS 0412",
+    "tr": "Araç Kaydı: 82 NS 0412"
+  },
+  "C2_E21_DESC": {
+    "en": "Database search for a dark red saloon with a plate like 82 N? 04??.",
+    "tr": "82 N? 04?? benzeri plakalı koyu kırmızı sedan için veri tabanı sorgusu."
+  },
+  "C2_E21_BODY": {
+    "en": "QUERY: 82 N? 04?? — Karaliman\n\n82 NK 0447   white van\n             Kordon Fırını\n82 NA 0409   blue hatchback\n82 NS 0412   DARK RED SALOON\n             Keeper: Nilgün SOYLU\n\nInsurance note, 82 NS 0412:\nClaim opened Wednesday 08:40.\nFront right wing.\n“Struck a bollard in the office car park.”",
+    "tr": "SORGU: 82 N? 04?? — Karaliman\n\n82 NK 0447   beyaz minibüs\n             Kordon Fırını\n82 NA 0409   mavi hatchback\n82 NS 0412   KOYU KIRMIZI SEDAN\n             Ruhsat sahibi: Nilgün SOYLU\n\nSigorta notu, 82 NS 0412:\nHasar dosyası çarşamba 08.40'ta açılmış.\nSağ ön çamurluk.\n“İş yeri otoparkında babaya çarptım.”"
+  },
+  "C2_E22_NAME": {
+    "en": "Subscriber: 0 282 555 01 00",
+    "tr": "Abone: 0 282 555 01 00"
+  },
+  "C2_E22_DESC": {
+    "en": "Database search for the number that rang the reporter at 21:15.",
+    "tr": "Gazeteciyi 21.15'te arayan numara için veri tabanı sorgusu."
+  },
+  "C2_E22_BODY": {
+    "en": "QUERY: 0 282 555 01 00\n\nSubscriber:\nKaraliman Postası Gazetecilik A.Ş.\nMain switchboard.\n\nNote: every call made from inside the building shows this number. The extension that made the call is recorded only on the switchboard itself.",
+    "tr": "SORGU: 0 282 555 01 00\n\nAbone:\nKaraliman Postası Gazetecilik A.Ş.\nAna santral.\n\nNot: binanın içinden yapılan her arama bu numarayla görünür. Aramayı yapan dahili numara yalnızca santralin kendisinde kayıtlıdır."
+  },
+  "C2_E23_NAME": {
+    "en": "Trade Registry: Kıyı Yapı A.Ş.",
+    "tr": "Ticaret Sicili: Kıyı Yapı A.Ş."
+  },
+  "C2_E23_DESC": {
+    "en": "Database search for the company named on the visitor pass.",
+    "tr": "Ziyaretçi kartında adı geçen şirket için veri tabanı sorgusu."
+  },
+  "C2_E23_BODY": {
+    "en": "KIYI YAPI A.Ş.\nBuilder of the Liman Kule tower.\n\nShareholders\nAras Holding           60%\nKordon Yatırım         25%\nFener Danışmanlık Ltd. 15%\n\nFENER DANIŞMANLIK LTD.\nFounded 1997.\nRegistered address: care of the law office of Av. Nedim Karaca.",
+    "tr": "KIYI YAPI A.Ş.\nLiman Kule'nin yüklenicisi.\n\nOrtaklar\nAras Holding           %60\nKordon Yatırım         %25\nFener Danışmanlık Ltd. %15\n\nFENER DANIŞMANLIK LTD.\nKuruluş 1997.\nKayıtlı adres: Av. Nedim Karaca Hukuk Bürosu eliyle."
+  },
+  "C2_E24_NAME": {
+    "en": "Criminal Record: Bora Kaplan",
+    "tr": "Adli Sicil: Bora Kaplan"
+  },
+  "C2_E24_DESC": {
+    "en": "Database search for the site manager the chief mentioned.",
+    "tr": "Müdürün sözünü ettiği şantiye şefi için veri tabanı sorgusu."
+  },
+  "C2_E24_BODY": {
+    "en": "KAPLAN, Bora\nSite manager, Kıyı Yapı A.Ş.\n\n2011  Reckless driving. Licence suspended for six months.\n\nNothing before. Nothing since.",
+    "tr": "KAPLAN, Bora\nŞantiye şefi, Kıyı Yapı A.Ş.\n\n2011  Tehlikeli araç kullanma. Ehliyetine altı ay el konulmuş.\n\nÖncesinde kayıt yok. Sonrasında kayıt yok."
+  },
+  "C2_R_PHONE": {
+    "en": "Who owns 0 282 555 01 00, the number that rang him at 21:15?",
+    "tr": "Onu 21.15'te arayan 0 282 555 01 00 kimin?"
+  },
+  "C2_R_COMPANY": {
+    "en": "Who is behind Kıyı Yapı A.Ş., the firm on the visitor pass?",
+    "tr": "Ziyaretçi kartındaki Kıyı Yapı A.Ş.'nin arkasında kim var?"
+  },
+  "C2_R_PERSON": {
+    "en": "Bora Kaplan, site manager",
+    "tr": "Bora Kaplan, şantiye şefi"
+  },
+  "C2_R_VEHICLE": {
+    "en": "Dark red saloon, plate 82 N? 04??",
+    "tr": "Koyu kırmızı sedan, plaka 82 N? 04??"
+  },
+  "C2_LOC_ROAD": {
+    "en": "Harbour Road",
+    "tr": "Rıhtım Yolu"
+  },
+  "C2_D_PATROL": {
+    "en": "The traffic unit was first here. They taped the bend off and rang it in as an accident.",
+    "tr": "Olay yerine ilk trafik ekibi gelmiş. Virajı şeritle kapatıp kaza olarak bildirmişler."
+  },
+  "C2_D_SKID": {
+    "en": "Two sets of marks. The pale ones are his, and they do not start until the barrier. The darker pair runs beside them and keeps going down the road.",
+    "tr": "İki ayrı iz var. Soluk olanlar onun; bariyere kadar da başlamıyor. Koyu çift onların yanından ilerliyor ve yol boyunca devam ediyor."
+  },
+  "C2_D_RAIL": {
+    "en": "The barrier is bent outward. He went through it at speed, and he did not brake.",
+    "tr": "Bariyer dışarı doğru bükülmüş. Buradan hızla geçmiş, fren de yapmamış."
+  },
+  "C2_LOC_NEWSROOM": {
+    "en": "Karaliman Postası Newsroom",
+    "tr": "Karaliman Postası Haber Merkezi"
+  },
+  "C2_ENTER_AYDIN": {
+    "en": "A call from Leyla Aydın at the archive: Kerem was the journalist she copied files for. She has something to tell you. It is in your statements.",
+    "tr": "Arşivden Leyla Aydın aradı: dosya kopyaladığı gazeteci Kerem'miş. Size anlatacağı bir şey var. İfadelerinize eklendi."
+  },
+  "C2_D_PINBOARD": {
+    "en": "His pinboard. Pier 9, the fire, the tower, a planning ruling, all joined by red thread. One pin in the middle has nothing on it.",
+    "tr": "Mantar panosu. 9. İskele, yangın, kule, bir imar kararı; hepsi kırmızı iplikle birbirine bağlanmış. Ortadaki raptiyede hiçbir şey yok."
+  },
+  "C2_D_DRAWERS": {
+    "en": "The cuttings archive. Reporters call it the morgue. Hundreds of locked drawers.",
+    "tr": "Kupür arşivi. Muhabirler buraya morg diyor. Yüzlerce kilitli çekmece."
+  },
+  "C2_D_DRAWERS_OPEN": {
+    "en": "The cuttings archive. Somewhere in here is drawer 117.",
+    "tr": "Kupür arşivi. 117 numaralı çekmece bunların arasında bir yerde."
+  },
+  "C2_HINT_DRAWER": {
+    "en": "The small key on his ring is tagged 117. Something in this newsroom is numbered. Find the index, then connect it with the key on the Board.",
+    "tr": "Anahtarlığındaki küçük anahtarın etiketinde 117 yazıyor. Bu haber merkezinde numaralı bir şey var. Dizini bulun, sonra Pano'da anahtarla bağlayın."
+  },
+  "C2_LOC_SITE": {
+    "en": "Liman Kule Building Site",
+    "tr": "Liman Kule Şantiyesi"
+  },
+  "C2_ENTER_ERDEM": {
+    "en": "A call from Veysel Erdem at the archive night desk. He has been keeping his eyes open, and he saw something last week. It is in your statements.",
+    "tr": "Arşivin gece masasından Veysel Erdem aradı. Gözünü dört açmış; geçen hafta bir şey görmüş. İfadelerinize eklendi."
+  },
+  "C2_D_TOWER": {
+    "en": "Liman Kule. Twenty-two floors when it is finished, on land that burned in 1998.",
+    "tr": "Liman Kule. Bittiğinde yirmi iki kat olacak; 1998'de yanan arazinin üzerinde."
+  },
+  "C2_D_MIXER": {
+    "en": "The pour went on until two in the morning. Once concrete starts, nobody leaves.",
+    "tr": "Döküm gece ikiye kadar sürmüş. Beton başladı mı kimse şantiyeden ayrılamaz."
+  },
+  "C2_LOC_PLANNING": {
+    "en": "Municipal Planning Office",
+    "tr": "Belediye İmar Müdürlüğü"
+  },
+  "C2_D_CHEST": {
+    "en": "Plan chests. Every plot in Karaliman has a sheet in here.",
+    "tr": "Plan dolapları. Karaliman'daki her parselin burada bir paftası var."
+  },
+  "C2_D_MAP": {
+    "en": "The zoning map. One plot on the waterfront is outlined in red: Pier 9, where the tower is going up.",
+    "tr": "İmar planı. Sahilde bir parselin çevresi kırmızıyla çizilmiş: 9. İskele, kulenin yükseldiği yer."
+  },
+  "C2_D_PHOTO": {
+    "en": "A photograph on the desk: a much younger Tarık Güven beside a mayor, both smiling at a model of the waterfront.",
+    "tr": "Masadaki fotoğraf: çok daha genç bir Tarık Güven, bir belediye başkanının yanında; ikisi de sahil maketine gülümsüyor."
+  },
+  "C2_NAME_MIRA": {
+    "en": "Mira Kaya",
+    "tr": "Mira Kaya"
+  },
+  "C2_NAME_KARACA": {
+    "en": "Av. Nedim Karaca",
+    "tr": "Av. Nedim Karaca"
+  },
+  "C2_NAME_SOYKAN": {
+    "en": "Halil Soykan",
+    "tr": "Halil Soykan"
+  },
+  "C2_NAME_SOYLU": {
+    "en": "Nilgün Soylu",
+    "tr": "Nilgün Soylu"
+  },
+  "C2_NAME_AKTAS": {
+    "en": "Deniz Aktaş",
+    "tr": "Deniz Aktaş"
+  },
+  "C2_NAME_KAPLAN": {
+    "en": "Bora Kaplan",
+    "tr": "Bora Kaplan"
+  },
+  "C2_NAME_GUVEN": {
+    "en": "Tarık Güven",
+    "tr": "Tarık Güven"
+  },
+  "C2_T_SOYKAN_1_TITLE": {
+    "en": "Soykan: look at the site manager",
+    "tr": "Soykan: şantiye şefine bakın"
+  },
+  "C2_T_SOYKAN_1": {
+    "en": "The chief points at Bora Kaplan, site manager at the tower: a reckless-driving conviction and a freshly dented pickup.",
+    "tr": "Müdür, kuledeki şantiye şefi Bora Kaplan'ı işaret ediyor: tehlikeli araç kullanmaktan sabıkası ve yeni ezilmiş bir kamyoneti var."
+  },
+  "C2_T_SOYKAN_2_TITLE": {
+    "en": "Soykan: “tragic timing”",
+    "tr": "Soykan: “talihsiz bir zamanlama”"
+  },
+  "C2_T_SOYKAN_2": {
+    "en": "The chief knew that Kerem Tunç was due to meet the prosecutor at nine this morning. He says her office rang his first thing.",
+    "tr": "Müdür, Kerem Tunç'un bu sabah dokuzda savcıyla görüşeceğini biliyordu. Savcının kaleminin sabah ilk iş kendi makamını aradığını söylüyor."
+  },
+  "C2_T_SOYLU_1_TITLE": {
+    "en": "Soylu: “I told him to go home”",
+    "tr": "Soylu: “Ona evine gitmesini söyledim”"
+  },
+  "C2_T_SOYLU_1": {
+    "en": "Says she rang Kerem at about a quarter past nine to tell him the zoning story was not ready and to go home.",
+    "tr": "Kerem'i dokuzu çeyrek geçe arayıp imar haberinin hazır olmadığını, evine gitmesini söylediğini anlatıyor."
+  },
+  "C2_T_SOYLU_2_TITLE": {
+    "en": "Soylu: admits ringing the planner",
+    "tr": "Soylu: plancıyı aradığını kabul ediyor"
+  },
+  "C2_T_SOYLU_2": {
+    "en": "Now admits she rang Tarık Güven at 21:05, “to check a fact”. She does not explain why he understood that Kerem was not coming.",
+    "tr": "Artık 21.05'te Tarık Güven'i “bir bilgiyi teyit etmek için” aradığını kabul ediyor. Güven'in bundan neden Kerem'in gelmeyeceğini anladığını açıklamıyor."
+  },
+  "C2_T_SOYLU_3_TITLE": {
+    "en": "Soylu: the bollard",
+    "tr": "Soylu: otoparktaki baba"
+  },
+  "C2_T_SOYLU_3": {
+    "en": "Says the damage to her front right wing is from a bollard in the office car park on Wednesday morning.",
+    "tr": "Sağ ön çamurluğundaki hasarın çarşamba sabahı iş yeri otoparkındaki bir babadan kaynaklandığını söylüyor."
+  },
+  "C2_T_SOYLU_4_TITLE": {
+    "en": "Soylu: “straight home”",
+    "tr": "Soylu: “doğruca eve”"
+  },
+  "C2_T_SOYLU_4": {
+    "en": "Says she signed out at 21:40, drove straight home and was in bed by half past ten.",
+    "tr": "21.40'ta imza atıp çıktığını, doğruca eve gittiğini ve on buçukta yatakta olduğunu söylüyor."
+  },
+  "C2_T_AKTAS_1_TITLE": {
+    "en": "Aktaş: “In at nine”",
+    "tr": "Aktaş: “Dokuzda geldim”"
+  },
+  "C2_T_AKTAS_1": {
+    "en": "Says she came in at nine on Wednesday, like everyone else.",
+    "tr": "Çarşamba günü herkes gibi dokuzda geldiğini söylüyor."
+  },
+  "C2_T_AKTAS_2_TITLE": {
+    "en": "Aktaş: the editor at his desk",
+    "tr": "Aktaş: yayın yönetmeni onun masasındaydı"
+  },
+  "C2_T_AKTAS_2": {
+    "en": "At about half past eight on Tuesday, while Kerem was fetching coffee, Nilgün Soylu stood at his desk reading his screen. She said she was looking for a stapler.",
+    "tr": "Salı akşamı sekiz buçuk sularında, Kerem kahve almaya gittiğinde Nilgün Soylu onun masasında durmuş, ekranını okuyormuş. Zımba aradığını söylemiş."
+  },
+  "C2_T_AKTAS_3_TITLE": {
+    "en": "Aktaş: took the laptop",
+    "tr": "Aktaş: bilgisayarı o aldı"
+  },
+  "C2_T_AKTAS_3": {
+    "en": "Admits she came in at seven, as soon as she heard, and took Kerem's laptop to finish his story herself.",
+    "tr": "Haberi duyar duymaz saat yedide geldiğini ve hikâyeyi kendisi bitirmek için Kerem'in bilgisayarını aldığını kabul ediyor."
+  },
+  "C2_T_KAPLAN_1_TITLE": {
+    "en": "Kaplan: on the pour all night",
+    "tr": "Kaplan: bütün gece dökümdeydi"
+  },
+  "C2_T_KAPLAN_1": {
+    "en": "Says he never left the site: four loads of concrete between nine and one, and he signed for each.",
+    "tr": "Şantiyeden hiç ayrılmadığını söylüyor: dokuz ile bir arasında dört sefer beton gelmiş, hepsini kendisi imzalayıp teslim almış."
+  },
+  "C2_T_KAPLAN_2_TITLE": {
+    "en": "Kaplan: a woman in a red car",
+    "tr": "Kaplan: kırmızı arabada bir kadın"
+  },
+  "C2_T_KAPLAN_2": {
+    "en": "At about ten past ten he went to the gate for a cigarette. A red saloon was parked across the road with its lights off. A woman at the wheel, short pale hair. When the reporter drove off, so did she.",
+    "tr": "Onu on geçe sigara içmek için kapıya inmiş. Yolun karşısında farları kapalı kırmızı bir sedan duruyormuş. Direksiyonda kısa, açık renk saçlı bir kadın varmış. Gazeteci gidince o da gitmiş."
+  },
+  "C2_T_GUVEN_1_TITLE": {
+    "en": "Güven: “The paper rang to cancel”",
+    "tr": "Güven: “Gazeteden arayıp iptal ettiler”"
+  },
+  "C2_T_GUVEN_1": {
+    "en": "At 21:05 a woman rang from the newspaper: Kerem could not come tonight. He turned his phone off and went to bed. The voice was calm, educated and not young.",
+    "tr": "21.05'te gazeteden bir kadın aramış: Kerem bu gece gelemiyormuş. Telefonunu kapatıp yatmış. Ses sakin, kültürlü ve genç değilmiş."
+  },
+  "C2_T_GUVEN_2_TITLE": {
+    "en": "Güven: he was the source",
+    "tr": "Güven: kaynak oydu"
+  },
+  "C2_T_GUVEN_2": {
+    "en": "In 2004 he was told to “correct” his own report on Pier 9, and the corrected pages arrived already typed, through a law office. He signed, but kept the original for twenty years. Last week he gave it to Kerem.",
+    "tr": "2004'te 9. İskele hakkındaki kendi raporunu “düzeltmesi” istenmiş; düzeltilmiş sayfalar bir avukatlık bürosu aracılığıyla, yazılmış hâlde gelmiş. İmzalamış ama aslını yirmi yıl saklamış. Geçen hafta Kerem'e vermiş."
+  },
+  "C2_T_ERDEM_TIP_TITLE": {
+    "en": "Erdem (by phone): a red car at the archive",
+    "tr": "Erdem (telefonda): arşivin önünde kırmızı bir araba"
+  },
+  "C2_T_ERDEM_TIP": {
+    "en": "Veysel Erdem: on two evenings last week a dark red saloon sat opposite the archive while the reporter was inside with Leyla Hanım. A woman was driving. He wrote down nothing, but this time he was at his desk.",
+    "tr": "Veysel Erdem: geçen hafta iki akşam, gazeteci içeride Leyla Hanım'layken arşivin karşısında koyu kırmızı bir sedan beklemiş. Direksiyonda bir kadın varmış. Bir şey not etmemiş, ama bu kez masasının başındaymış."
+  },
+  "C2_T_AYDIN_TIP_TITLE": {
+    "en": "Leyla Aydın (by phone): “My own paper buried it”",
+    "tr": "Leyla Aydın (telefonda): “Kendi gazetem bu haberi gömmüş”"
+  },
+  "C2_T_AYDIN_TIP": {
+    "en": "Leyla Aydın: last week Kerem told her, “My own paper had this story in 2004 and buried it. I think I know who.”",
+    "tr": "Leyla Aydın: Kerem geçen hafta ona şöyle demiş: “Kendi gazetem bu haberi 2004'te yakalamış ve gömmüş. Kimin yaptığını sanırım biliyorum.”"
+  },
+  "C2_I_NOT_ACCIDENT_TITLE": {
+    "en": "He was pushed off the road",
+    "tr": "Yoldan itildi"
+  },
+  "C2_I_NOT_ACCIDENT": {
+    "en": "He was hit from behind on the left at 68 km/h without ever braking, and another car's tyre marks run beside his. Someone drove him through the barrier.",
+    "tr": "Hiç fren yapmadan, saatte 68 km hızla giderken sol arkadan darbe almış; yanında da başka bir aracın lastik izleri var. Biri onu bariyerden aşağı itmiş."
+  },
+  "C2_I_NOT_ACCIDENT_W1": {
+    "en": "He fell asleep at the wheel and drifted off the bend.",
+    "tr": "Direksiyonda uyuyakalmış ve virajda yoldan çıkmış."
+  },
+  "C2_I_NOT_ACCIDENT_W2": {
+    "en": "He braked too late on the wet road and slid into the barrier.",
+    "tr": "Islak yolda frene geç basmış ve bariyere doğru kaymış."
+  },
+  "C2_I_KAPLAN_PAINT_TITLE": {
+    "en": "It was not the pickup",
+    "tr": "Kamyonet değildi"
+  },
+  "C2_I_KAPLAN_PAINT": {
+    "en": "The car that hit him left dark red paint. The site pickup is white, its dent is at the back, and the paint in it is yellow from a gate post. It was not Kaplan's truck.",
+    "tr": "Ona çarpan araç koyu kırmızı boya bırakmış. Şantiye kamyoneti beyaz, eziği arkada, içindeki boya da kapı direğinden gelen sarı. Çarpan Kaplan'ın kamyoneti değil."
+  },
+  "C2_I_KAPLAN_PAINT_W1": {
+    "en": "The pickup was repainted white after the crash.",
+    "tr": "Kamyonet kazadan sonra beyaza boyanmış."
+  },
+  "C2_I_KAPLAN_PAINT_W2": {
+    "en": "Kaplan hit the reporter's car while reversing out of the gate.",
+    "tr": "Kaplan kapıdan geri geri çıkarken gazetecinin arabasına çarpmış."
+  },
+  "C2_I_KAPLAN_ALIBI_TITLE": {
+    "en": "Kaplan never left the site",
+    "tr": "Kaplan şantiyeden ayrılmadı"
+  },
+  "C2_I_KAPLAN_ALIBI": {
+    "en": "Kaplan signed for concrete at 22:20 and 23:30, and no site vehicle left between nine and two. At 22:41 he was at the pour, three kilometres from the bend.",
+    "tr": "Kaplan 22.20'de ve 23.30'da betonu imzayla teslim almış; dokuz ile iki arasında hiçbir şantiye aracı çıkmamış. 22.41'de dökümün başındaydı, viraja üç kilometre uzakta."
+  },
+  "C2_I_KAPLAN_ALIBI_W1": {
+    "en": "Kaplan signed all four tickets in advance and slipped away.",
+    "tr": "Kaplan dört irsaliyeyi de önceden imzalayıp sıvışmış."
+  },
+  "C2_I_KAPLAN_ALIBI_W2": {
+    "en": "The gate guard was covering for him.",
+    "tr": "Kapı görevlisi onu kolluyormuş."
+  },
+  "C2_I_CALLER_TITLE": {
+    "en": "The call came from his own newspaper",
+    "tr": "Arama kendi gazetesinden geldi"
+  },
+  "C2_I_CALLER": {
+    "en": "The number that rang him at 21:15 is the Karaliman Postası switchboard. Someone inside his own building made that call.",
+    "tr": "Onu 21.15'te arayan numara Karaliman Postası'nın santrali. O aramayı kendi binasının içinden biri yapmış."
+  },
+  "C2_I_CALLER_W1": {
+    "en": "The prosecutor's office rang him to change the appointment.",
+    "tr": "Savcılık randevuyu değiştirmek için onu aramış."
+  },
+  "C2_I_CALLER_W2": {
+    "en": "His source rang him from a call box.",
+    "tr": "Kaynağı onu bir ankesörlü telefondan aramış."
+  },
+  "C2_I_LURE_TITLE": {
+    "en": "One caller, two calls",
+    "tr": "Tek kişi, iki arama"
+  },
+  "C2_I_LURE": {
+    "en": "At 21:05 the editor's extension rang Güven to say Kerem was not coming. Ten minutes later the same extension rang Kerem. He drove to the tower to meet a man who had been told to stay at home.",
+    "tr": "21.05'te genel yayın yönetmeninin dahilisi Güven'i arayıp Kerem'in gelmeyeceğini söylemiş. On dakika sonra aynı dahili Kerem'i aramış. Kerem, evde kalması söylenmiş bir adamla buluşmak için kuleye gitmiş."
+  },
+  "C2_I_LURE_W1": {
+    "en": "Güven cancelled the meeting himself and the paper passed the message on.",
+    "tr": "Buluşmayı Güven kendisi iptal etmiş, gazete de haberi iletmiş."
+  },
+  "C2_I_LURE_W2": {
+    "en": "Two different people happened to use the editor's phone that evening.",
+    "tr": "O akşam iki farklı kişi tesadüfen yayın yönetmeninin telefonunu kullanmış."
+  },
+  "C2_I_CAR_TITLE": {
+    "en": "Her car was waiting for him",
+    "tr": "Arabası onu bekliyordu"
+  },
+  "C2_I_CAR": {
+    "en": "Of the three cars that fit the plate, one is a white van and one is blue. The dark red saloon that waited outside the gate and pulled out behind him belongs to Nilgün Soylu.",
+    "tr": "Plakaya uyan üç araçtan biri beyaz minibüs, biri mavi. Kapının karşısında bekleyip onun arkasından hareket eden koyu kırmızı sedan Nilgün Soylu'nun."
+  },
+  "C2_I_CAR_W1": {
+    "en": "The red car belongs to the bakery and was making a late delivery.",
+    "tr": "Kırmızı araba fırına ait; geç saatte teslimat yapıyormuş."
+  },
+  "C2_I_CAR_W2": {
+    "en": "The plate cannot be narrowed down, so the camera proves nothing.",
+    "tr": "Plaka tek bir araca indirgenemiyor; kamera hiçbir şeyi kanıtlamıyor."
+  },
+  "C2_I_PAINT_TITLE": {
+    "en": "Her car hit his",
+    "tr": "Onun arabası çarptı"
+  },
+  "C2_I_PAINT": {
+    "en": "Dark red paint in the dent at his rear left; a dark red saloon with its front right wing damaged, reported the next morning as a bollard. Her car struck his.",
+    "tr": "Sol arkasındaki ezikte koyu kırmızı boya var; sağ ön çamurluğu hasarlı koyu kırmızı bir sedan da ertesi sabah “babaya çarptım” diye bildirilmiş. Onun arabası Kerem'inkine çarpmış."
+  },
+  "C2_I_PAINT_W1": {
+    "en": "The paint came from the barrier, which is painted red.",
+    "tr": "Boya, kırmızıya boyalı bariyerden bulaşmış."
+  },
+  "C2_I_PAINT_W2": {
+    "en": "She hit a bollard, as she says; the red paint is a coincidence.",
+    "tr": "Dediği gibi babaya çarpmış; kırmızı boya bir tesadüf."
+  },
+  "C2_I_LAPTOP_TITLE": {
+    "en": "Someone came for the laptop",
+    "tr": "Biri bilgisayar için geldi"
+  },
+  "C2_I_LAPTOP": {
+    "en": "The laptop stood on his desk until at least Tuesday. Deniz Aktaş signed in at seven on Wednesday, two hours before anyone else, the morning after he died.",
+    "tr": "Bilgisayar en azından salı gününe kadar masasındaydı. Deniz Aktaş çarşamba sabahı, onun ölümünün ertesi günü, herkesten iki saat önce, saat yedide imza atmış."
+  },
+  "C2_I_LAPTOP_W1": {
+    "en": "Kerem took the laptop with him and it was stolen from the wreck.",
+    "tr": "Kerem bilgisayarı yanına almış, kaza yerinden çalınmış."
+  },
+  "C2_I_LAPTOP_W2": {
+    "en": "The cleaner moved it on Monday.",
+    "tr": "Temizlikçi pazartesi günü yerini değiştirmiş."
+  },
+  "C2_I_DRAWER_TITLE": {
+    "en": "The key opens drawer 117",
+    "tr": "Anahtar 117 numaralı çekmeceyi açıyor"
+  },
+  "C2_I_DRAWER": {
+    "en": "The tag on his key matches the archive index: drawer 117, spiked stories from 2004. He hid what he had in his own newspaper's archive.",
+    "tr": "Anahtarındaki etiket arşiv diziniyle örtüşüyor: 117 numaralı çekmece, 2004'te rafa kaldırılan haberler. Elindekileri kendi gazetesinin arşivine saklamış."
+  },
+  "C2_I_DRAWER_W1": {
+    "en": "117 is a locker at the ferry terminal.",
+    "tr": "117, vapur iskelesindeki bir emanet dolabı."
+  },
+  "C2_I_DRAWER_W2": {
+    "en": "117 is the number of his flat.",
+    "tr": "117 onun daire numarası."
+  },
+  "C2_I_READ_TITLE": {
+    "en": "She read the draft",
+    "tr": "Taslağı okudu"
+  },
+  "C2_I_READ": {
+    "en": "The draft was last opened at 20:31, when Kerem was away from his desk and Nilgün Soylu was standing at it. She knew what he had, and that he was going to the prosecutor.",
+    "tr": "Taslak en son 20.31'de açılmış; o sırada Kerem masasında değildi, Nilgün Soylu ise masanın başındaydı. Kerem'in elinde ne olduğunu ve savcıya gideceğini biliyordu."
+  },
+  "C2_I_READ_W1": {
+    "en": "Deniz opened the draft herself and is blaming the editor.",
+    "tr": "Taslağı Deniz kendisi açmış, suçu yayın yönetmenine atıyor."
+  },
+  "C2_I_READ_W2": {
+    "en": "Kerem opened it from his phone on the way to the coffee machine.",
+    "tr": "Kerem kahve makinesine giderken taslağı telefonundan açmış."
+  },
+  "C2_I_MOTIVE_TITLE": {
+    "en": "The reporter he was about to name",
+    "tr": "Adını yazmak üzere olduğu muhabir"
+  },
+  "C2_I_MOTIVE": {
+    "en": "The unfinished sentence ends with her. In 2004 Nilgün Soylu wrote the Pier 9 story and was paid by Fener Danışmanlık to let it die. Kerem was about to say so to a prosecutor.",
+    "tr": "Yarım kalan cümle onunla bitiyor. 2004'te 9. İskele haberini Nilgün Soylu yazmış ve haberi öldürmesi için Fener Danışmanlık'tan para almış. Kerem bunu bir savcıya anlatmak üzereydi."
+  },
+  "C2_I_MOTIVE_W1": {
+    "en": "The reporter who was paid in 2004 is Deniz Aktaş.",
+    "tr": "2004'te para alan muhabir Deniz Aktaş."
+  },
+  "C2_I_MOTIVE_W2": {
+    "en": "Soylu spiked the story in 2004 because it was simply wrong.",
+    "tr": "Soylu haberi 2004'te düpedüz yanlış olduğu için rafa kaldırmış."
+  },
+  "C2_I_FENER_TITLE": {
+    "en": "The same firm, twenty years apart",
+    "tr": "Yirmi yıl arayla aynı şirket"
+  },
+  "C2_I_FENER": {
+    "en": "Fener Danışmanlık paid a reporter in 2004 to bury the Pier 9 story, and today owns fifteen per cent of the tower built on that land. Its address is Nedim Karaca's law office.",
+    "tr": "Fener Danışmanlık 2004'te 9. İskele haberini gömmesi için bir muhabire para vermiş; bugün o arazide yükselen kulenin yüzde on beşine sahip. Adresi de Nedim Karaca'nın avukatlık bürosu."
+  },
+  "C2_I_FENER_W1": {
+    "en": "Two unrelated firms happen to share a name.",
+    "tr": "Birbiriyle ilgisiz iki şirket tesadüfen aynı adı taşıyor."
+  },
+  "C2_I_FENER_W2": {
+    "en": "Fener Danışmanlık is the newspaper's own advertising agency.",
+    "tr": "Fener Danışmanlık gazetenin kendi reklam ajansı."
+  },
+  "C2_SOYKAN_INTRO_1": {
+    "en": "Komiser Kaya. Halil Soykan. We have not had a proper talk since the archive. That was good work.",
+    "tr": "Komiser Kaya. Halil Soykan. Arşiv işinden beri doğru dürüst konuşma fırsatımız olmadı. İyi işti."
+  },
+  "C2_SOYKAN_INTRO_2": {
+    "en": "Thank you, Müdürüm.",
+    "tr": "Sağ olun, Müdürüm."
+  },
+  "C2_SOYKAN_INTRO_3": {
+    "en": "Traffic call this an accident and they are probably right. But the prosecutor asked for you by name, so here we both are, in the rain.",
+    "tr": "Trafik buna kaza diyor, muhtemelen de haklılar. Ama savcı adınızı vererek sizi istedi; işte ikimiz de buradayız, yağmurun altında."
+  },
+  "C2_SOYKAN_RETURN": {
+    "en": "Komiser. Anything for me?",
+    "tr": "Komiser. Bana söyleyeceğiniz bir şey var mı?"
+  },
+  "C2_SOYKAN_Q_WHAT": {
+    "en": "What do we know so far?",
+    "tr": "Şu ana kadar ne biliyoruz?"
+  },
+  "C2_SOYKAN_Q_WHY": {
+    "en": "Why did the prosecutor ask for me?",
+    "tr": "Savcı neden beni istedi?"
+  },
+  "C2_SOYKAN_Q_WHO": {
+    "en": "If it was not an accident, who would you look at?",
+    "tr": "Kaza değilse siz kime bakardınız?"
+  },
+  "C2_SOYKAN_Q_BYE": {
+    "en": "I will get to work, Müdürüm.",
+    "tr": "Ben işe koyulayım, Müdürüm."
+  },
+  "C2_SOYKAN_WHAT_1": {
+    "en": "Kerem Tunç, forty-one, reporter at the Postası. He came down this road a little after half past ten and went through the barrier on the bend. The traffic unit's report is on their car.",
+    "tr": "Kerem Tunç, kırk bir yaşında, Postası'nda muhabir. On buçuğu biraz geçe bu yoldan inmiş ve virajda bariyeri aşmış. Trafik ekibinin raporu araçlarının üzerinde."
+  },
+  "C2_SOYKAN_WHAT_2": {
+    "en": "His things are bagged on the table. Look at whatever you like. I would rather you were thorough than fast.",
+    "tr": "Eşyaları torbalanıp masaya dizildi. İstediğinize bakın. Hızlı olmanızdansa titiz olmanızı tercih ederim."
+  },
+  "C2_SOYKAN_WHY_1": {
+    "en": "He had an appointment with Savcı Arıkan at nine this morning. A reporter dies the night before he talks to a prosecutor. Tragic timing, nothing more. But I understand why she is uneasy.",
+    "tr": "Bu sabah dokuzda Savcı Arıkan'la randevusu varmış. Bir muhabir, savcıyla konuşmasından bir gece önce ölüyor. Talihsiz bir zamanlama, o kadar. Ama savcının neden huzursuz olduğunu anlıyorum."
+  },
+  "C2_SOYKAN_P_WHY_1": {
+    "en": "How did you hear about the appointment, Müdürüm?",
+    "tr": "Randevuyu nereden duydunuz, Müdürüm?"
+  },
+  "C2_SOYKAN_P_WHY_2": {
+    "en": "…Arıkan's office rang mine first thing this morning. These things travel, Komiser.",
+    "tr": "…Arıkan'ın kalemi sabah ilk iş benim makamımı aradı. Böyle şeyler çabuk yayılır, Komiser."
+  },
+  "C2_SOYKAN_WHO_1": {
+    "en": "If it was not, and I say if, look at the tower up the road. The site manager, Bora Kaplan. He has a conviction for reckless driving, and my officers tell me his pickup has a fresh dent.",
+    "tr": "Değilse, ki değilse diyorum, yolun yukarısındaki kuleye bakın. Şantiye şefi Bora Kaplan. Tehlikeli araç kullanmaktan sabıkası var; memurlarım da kamyonetinde yeni bir ezik olduğunu söylüyor."
+  },
+  "C2_SOYKAN_WHO_2": {
+    "en": "A man like that, a wet road, a reporter sniffing round his employer. I have seen simpler cases.",
+    "tr": "Öyle bir adam, ıslak bir yol, patronunun etrafında dolanan bir muhabir. Bundan basit dosyalar gördüm."
+  },
+  "C2_SOYKAN_HOLD": {
+    "en": "I will have him brought in tonight.",
+    "tr": "Bu gece getirteceğim."
+  },
+  "C2_SOYKAN_WAIT": {
+    "en": "Not until I have seen the truck for myself.",
+    "tr": "Kamyoneti kendi gözümle görmeden olmaz."
+  },
+  "C2_SOYKAN_BACK": {
+    "en": "I will keep it in mind.",
+    "tr": "Aklımda tutacağım."
+  },
+  "C2_SOYKAN_HOLD_A": {
+    "en": "Good. Decisive. I like that in an officer.",
+    "tr": "Güzel. Kararlı. Bir amirde bunu severim."
+  },
+  "C2_SOYKAN_WAIT_A": {
+    "en": "Your case, Komiser. Do not take too long over it.",
+    "tr": "Dosya sizin, Komiser. Fazla da uzatmayın."
+  },
+  "C2_KAPLAN_INTRO_1": {
+    "en": "You are police. I have had no sleep and I have a site to run, so make it quick.",
+    "tr": "Polissiniz. Hiç uyumadım, başımda da bir şantiye var; kısa kesin."
+  },
+  "C2_KAPLAN_INTRO_2": {
+    "en": "A man who visited this site last night is dead, Mr. Kaplan.",
+    "tr": "Dün gece bu şantiyeye gelen bir adam öldü, Bora Bey."
+  },
+  "C2_KAPLAN_INTRO_3": {
+    "en": "The reporter. I heard. He stood at my gate for half an hour and nobody came for him. That is all I know about it.",
+    "tr": "Gazeteci. Duydum. Yarım saat kapımda bekledi, onu almaya kimse gelmedi. Bu konuda bildiğim bu kadar."
+  },
+  "C2_KAPLAN_HELD_1": {
+    "en": "Komiser Kaya. Nedim Karaca. Mr. Kaplan spent the night in one of your cells because your chief asked for him. He will answer questions that are supported by something.",
+    "tr": "Komiser Kaya. Nedim Karaca. Bora Bey, müdürünüz öyle istediği için geceyi nezarethanenizde geçirdi. Bir dayanağı olan sorulara cevap verecektir."
+  },
+  "C2_KAPLAN_HELD_2": {
+    "en": "I trust you have brought something.",
+    "tr": "Bir şey getirdiğinizi umuyorum."
+  },
+  "C2_KAPLAN_HELD_3": {
+    "en": "…",
+    "tr": "…"
+  },
+  "C2_KAPLAN_RETURN": {
+    "en": "Again? Go on, then.",
+    "tr": "Yine mi? Buyurun."
+  },
+  "C2_KAPLAN_Q_WHERE": {
+    "en": "Where were you between ten and eleven last night?",
+    "tr": "Dün gece on ile on bir arasında neredeydiniz?"
+  },
+  "C2_KAPLAN_Q_TRUCK": {
+    "en": "Your pickup has a dented corner.",
+    "tr": "Kamyonetinizin bir köşesi ezik."
+  },
+  "C2_KAPLAN_Q_SEEN": {
+    "en": "Did you see anyone else near the gate?",
+    "tr": "Kapının yakınında başka birini gördünüz mü?"
+  },
+  "C2_KAPLAN_Q_OWNER": {
+    "en": "Who owns this tower?",
+    "tr": "Bu kulenin sahibi kim?"
+  },
+  "C2_KAPLAN_Q_BYE": {
+    "en": "That is all for now.",
+    "tr": "Şimdilik bu kadar."
+  },
+  "C2_KAPLAN_WHERE_1": {
+    "en": "Here. Concrete does not wait for anybody. Four loads between nine and one, and I signed for every one of them.",
+    "tr": "Burada. Beton kimseyi beklemez. Dokuz ile bir arasında dört sefer geldi, hepsini ben imzalayıp aldım."
+  },
+  "C2_KAPLAN_P_WHERE_1": {
+    "en": "You have been careless behind a wheel before.",
+    "tr": "Direksiyonda daha önce de dikkatsizlik etmişsiniz."
+  },
+  "C2_KAPLAN_P_WHERE_2": {
+    "en": "In 2011. I paid for it. I have driven like an old man ever since. Ask anyone on this site.",
+    "tr": "2011'de. Bedelini ödedim. O günden beri ihtiyar gibi araba kullanıyorum. Bu şantiyede kime isterseniz sorun."
+  },
+  "C2_KAPLAN_TRUCK_1": {
+    "en": "Monday afternoon. I reversed into the gate post. It is in the incident book, signed by the guard. Go and read it.",
+    "tr": "Pazartesi öğleden sonra. Geri geri giderken kapı direğine çarptım. Olay defterinde yazıyor, altında görevlinin imzası var. Gidin okuyun."
+  },
+  "C2_KAPLAN_SEEN_1": {
+    "en": "About ten past ten I went down to the gate for a cigarette. There was a red saloon across the road, lights off, engine off. A woman at the wheel. Short pale hair.",
+    "tr": "Onu on geçe sigara içmeye kapıya indim. Yolun karşısında kırmızı bir sedan duruyordu; farlar kapalı, motor kapalı. Direksiyonda bir kadın vardı. Kısa, açık renk saçlı."
+  },
+  "C2_KAPLAN_SEEN_2": {
+    "en": "I thought she was waiting for somebody from the site. When the reporter drove off, so did she.",
+    "tr": "Şantiyeden birini bekliyor sandım. Gazeteci gidince o da gitti."
+  },
+  "C2_KAPLAN_SEENH_1": {
+    "en": "My client saw concrete, Komiser. A great deal of it. Next question.",
+    "tr": "Müvekkilim beton gördü, Komiser. Hem de epey. Sıradaki soru."
+  },
+  "C2_KAPLAN_OWNER_1": {
+    "en": "Kıyı Yapı. Above that I do not ask. The wages arrive on time.",
+    "tr": "Kıyı Yapı. Ondan yukarısını sormam. Maaşlar gününde yatıyor."
+  },
+  "C2_AKTAS_INTRO_1": {
+    "en": "You are the detective. Deniz Aktaş. Kerem sat right there. I keep looking at the chair.",
+    "tr": "Komiser siz olmalısınız. Deniz Aktaş. Kerem tam orada otururdu. Gözüm hep sandalyesine gidiyor."
+  },
+  "C2_AKTAS_INTRO_2": {
+    "en": "I am sorry. Were you close?",
+    "tr": "Başınız sağ olsun. Yakın mıydınız?"
+  },
+  "C2_AKTAS_INTRO_3": {
+    "en": "He taught me everything I know. He also never let me near a real story.",
+    "tr": "Bildiğim her şeyi o öğretti. Gerçek bir habere yaklaşmama da hiç izin vermedi."
+  },
+  "C2_AKTAS_RETURN": {
+    "en": "Yes?",
+    "tr": "Efendim?"
+  },
+  "C2_AKTAS_CLOSED": {
+    "en": "I have a deadline and a dead colleague. Come back when you know what you are asking.",
+    "tr": "Yetiştirmem gereken bir sayfa ve ölmüş bir meslektaşım var. Ne sorduğunuzu bildiğinizde gelin."
+  },
+  "C2_AKTAS_Q_MORNING": {
+    "en": "When did you come in this morning?",
+    "tr": "Bu sabah kaçta geldiniz?"
+  },
+  "C2_AKTAS_Q_DESK": {
+    "en": "Was anyone at Kerem's desk last night?",
+    "tr": "Dün gece Kerem'in masasına giden oldu mu?"
+  },
+  "C2_AKTAS_Q_STORY": {
+    "en": "What was Kerem working on?",
+    "tr": "Kerem ne üzerinde çalışıyordu?"
+  },
+  "C2_AKTAS_Q_EDITOR": {
+    "en": "Tell me about your editor.",
+    "tr": "Bana yayın yönetmeninizi anlatın."
+  },
+  "C2_AKTAS_Q_BYE": {
+    "en": "Thank you. That is all for now.",
+    "tr": "Teşekkürler. Şimdilik bu kadar."
+  },
+  "C2_AKTAS_MORNING_1": {
+    "en": "Nine. Like everyone.",
+    "tr": "Dokuzda. Herkes gibi."
+  },
+  "C2_AKTAS_WRONG": {
+    "en": "I write about evidence for a living, Detective. That is not it.",
+    "tr": "Ekmeğimi delil yazarak kazanıyorum, Komiserim. Bu delil değil."
+  },
+  "C2_AKTAS_CAUGHT_1": {
+    "en": "The sign-in sheet has you here at seven. Two hours before anyone else, the morning after he died. And his laptop is gone.",
+    "tr": "İmza föyüne göre yedide buradaymışsınız. Onun öldüğü gecenin sabahı, herkesten iki saat önce. Bilgisayarı da ortada yok."
+  },
+  "C2_AKTAS_CAUGHT_2": {
+    "en": "…I heard it on the radio at six. I came straight in. It is in my bag.",
+    "tr": "…Altıda radyodan duydum. Doğruca buraya geldim. Çantamda."
+  },
+  "C2_AKTAS_CAUGHT_3": {
+    "en": "I wanted to finish it. His story. Somebody had to, and nobody here was going to.",
+    "tr": "Bitirmek istedim. Onun haberini. Birinin bitirmesi gerekiyordu, buradan da kimse bitirmeyecekti."
+  },
+  "C2_AKTAS_SPARE": {
+    "en": "Give it to me now, and as far as my report goes it never left this room.",
+    "tr": "Şimdi bana verin; raporuma göre bu odadan hiç çıkmamış olsun."
+  },
+  "C2_AKTAS_CHARGE": {
+    "en": "You removed evidence from a death investigation. That goes in my report.",
+    "tr": "Bir ölüm soruşturmasında delil kaçırdınız. Bu raporuma girecek."
+  },
+  "C2_AKTAS_SPARE_1": {
+    "en": "Thank you. Here. I could not get past the first page anyway. I kept hearing his voice.",
+    "tr": "Teşekkür ederim. Buyurun. Zaten ilk sayfadan öteye geçemedim. Kulağımda hep onun sesi vardı."
+  },
+  "C2_AKTAS_SPARE_2": {
+    "en": "There is something else. Last night about half past eight Kerem went for coffee. When I looked up, Nilgün Hanım was at his desk, reading his screen. She saw me and said she was looking for a stapler.",
+    "tr": "Bir şey daha var. Dün akşam sekiz buçuk gibi Kerem kahve almaya gitti. Başımı kaldırdığımda Nilgün Hanım onun masasındaydı, ekranını okuyordu. Beni görünce zımba aradığını söyledi."
+  },
+  "C2_AKTAS_CHARGE_1": {
+    "en": "Fine. Take it. Write what you like.",
+    "tr": "Peki. Alın. Ne isterseniz yazın."
+  },
+  "C2_AKTAS_DESK_1": {
+    "en": "…You are going to charge me and I am still going to tell you, because it is Kerem. About half past eight he went for coffee. Nilgün Hanım stood at his desk and read his screen. She said she was looking for a stapler.",
+    "tr": "…Hakkımda işlem yapacaksınız, ben yine de söyleyeceğim; çünkü söz konusu olan Kerem. Sekiz buçuk gibi kahve almaya gitti. Nilgün Hanım masasının başına geçip ekranını okudu. Zımba aradığını söyledi."
+  },
+  "C2_AKTAS_STORY_1": {
+    "en": "Zoning. The Pier 9 land and the tower. He said it was the same story as the business at the archive, only six years later. He would not show me a word of it.",
+    "tr": "İmar. 9. İskele arazisi ve kule. Arşivdeki işle aynı hikâye olduğunu söylüyordu, yalnızca altı yıl sonrası. Tek kelimesini bile göstermedi."
+  },
+  "C2_AKTAS_EDITOR_1": {
+    "en": "Nilgün Hanım has killed that story twice this year. “We do not have it nailed down.” Kerem said she would never run it. He stopped telling her what he had.",
+    "tr": "Nilgün Hanım o haberi bu yıl iki kez öldürdü. “Elimizde sağlam bir şey yok.” Kerem, onun bu haberi asla yayımlamayacağını söylerdi. Elinde ne olduğunu ona anlatmayı bıraktı."
+  },
+  "C2_AKTAS_P_EDITOR_1": {
+    "en": "Why would she never run it?",
+    "tr": "Neden asla yayımlamasın?"
+  },
+  "C2_AKTAS_P_EDITOR_2": {
+    "en": "Look at the advertising figures pinned up in her office and work it out.",
+    "tr": "Odasında asılı reklam rakamlarına bakın, gerisini siz çıkarın."
+  },
+  "C2_SOYLU_INTRO_1": {
+    "en": "Nilgün Soylu, editor. Kerem was the best reporter I ever had, and the most stubborn. Whatever you need from this paper, Detective, you have it.",
+    "tr": "Nilgün Soylu, genel yayın yönetmeni. Kerem çalıştığım en iyi muhabirdi, en inatçısı da. Bu gazeteden neye ihtiyacınız varsa emrinizde, Komiserim."
+  },
+  "C2_SOYLU_INTRO_2": {
+    "en": "Thank you. I am sorry for your loss.",
+    "tr": "Teşekkür ederim. Başınız sağ olsun."
+  },
+  "C2_SOYLU_RETURN": {
+    "en": "Detective. What can I do for you?",
+    "tr": "Komiserim. Sizin için ne yapabilirim?"
+  },
+  "C2_SOYLU_CLOSED": {
+    "en": "I have a front page to fill and an obituary to write, Detective. When you have a real question, my door is open.",
+    "tr": "Doldurmam gereken bir birinci sayfa ve yazmam gereken bir ölüm ilanı var, Komiserim. Gerçek bir sorunuz olduğunda kapım açık."
+  },
+  "C2_SOYLU_WRONG": {
+    "en": "I am not sure what you would like me to say about that.",
+    "tr": "Bu konuda benden ne duymak istediğinizi anlayamadım."
+  },
+  "C2_SOYLU_Q_CALL": {
+    "en": "You spoke to Kerem last night.",
+    "tr": "Dün gece Kerem'le konuşmuşsunuz."
+  },
+  "C2_SOYLU_Q_HOME": {
+    "en": "Where did you go when you left the office?",
+    "tr": "Gazeteden çıkınca nereye gittiniz?"
+  },
+  "C2_SOYLU_Q_DAMAGE": {
+    "en": "Your car has been damaged.",
+    "tr": "Arabanız hasar görmüş."
+  },
+  "C2_SOYLU_Q_SPIKED": {
+    "en": "Why was the zoning story held back?",
+    "tr": "İmar haberi neden bekletildi?"
+  },
+  "C2_SOYLU_Q_BYE": {
+    "en": "That is all for now.",
+    "tr": "Şimdilik bu kadar."
+  },
+  "C2_SOYLU_CALL_1": {
+    "en": "I rang him at about a quarter past nine. I told him the zoning piece was not ready and that he should go home and sleep. I wish he had listened.",
+    "tr": "Dokuzu çeyrek geçe aradım. İmar haberinin hazır olmadığını, evine gidip uyumasını söyledim. Keşke dinleseydi."
+  },
+  "C2_SOYLU_P_CALL_1": {
+    "en": "From your office telephone, to a man sitting twenty metres away?",
+    "tr": "Yirmi metre ötede oturan bir adamı, odanızdaki telefondan mı?"
+  },
+  "C2_SOYLU_P_CALL_2": {
+    "en": "He wore headphones when he wrote. It was the only way to get his attention.",
+    "tr": "Yazarken kulaklık takardı. Dikkatini çekmenin tek yolu buydu."
+  },
+  "C2_SOYLU_LURE_1": {
+    "en": "At 21:05 your extension rang Tarık Güven and told him Kerem could not come. Ten minutes later it rang Kerem. He went to the tower, and nobody met him.",
+    "tr": "21.05'te sizin dahiliniz Tarık Güven'i arayıp Kerem'in gelemeyeceğini söylemiş. On dakika sonra da Kerem'i aramış. Kerem kuleye gitmiş, onu karşılayan olmamış."
+  },
+  "C2_SOYLU_LURE_2": {
+    "en": "…I rang the planning office to check a fact for the piece. If Mr. Güven misunderstood me, that is unfortunate.",
+    "tr": "…İmar müdürlüğünü haberle ilgili bir bilgiyi teyit etmek için aradım. Tarık Bey beni yanlış anladıysa, bu talihsizlik."
+  },
+  "C2_SOYLU_LURE_3": {
+    "en": "At five past nine at night.",
+    "tr": "Gece dokuzu beş geçe."
+  },
+  "C2_SOYLU_LURE_4": {
+    "en": "Newspapers keep late hours, Detective.",
+    "tr": "Gazeteler geç saate kadar çalışır, Komiserim."
+  },
+  "C2_SOYLU_HOME_1": {
+    "en": "I signed out at twenty to ten and drove straight home. I was in bed by half past.",
+    "tr": "Ona yirmi kala imza atıp çıktım, doğruca eve gittim. On buçukta yataktaydım."
+  },
+  "C2_SOYLU_CAR_1": {
+    "en": "Your car was parked opposite the tower gate from ten past ten until Kerem left. It pulled out behind him.",
+    "tr": "Arabanız onu on geçeden Kerem çıkana kadar kule kapısının karşısında park hâlindeymiş. Onun arkasından hareket etmiş."
+  },
+  "C2_SOYLU_CAR_2": {
+    "en": "A dark red saloon. There must be fifty in this city.",
+    "tr": "Koyu kırmızı bir sedan. Bu şehirde elli tane vardır."
+  },
+  "C2_SOYLU_CAR_3": {
+    "en": "Three with that plate. One is a bakery van. One is blue.",
+    "tr": "O plakaya uyan üç tane var. Biri bir fırının minibüsü. Biri mavi."
+  },
+  "C2_SOYLU_CAR_4": {
+    "en": "…I should like to stop there.",
+    "tr": "…Burada kesmek isterim."
+  },
+  "C2_SOYLU_DAMAGE_1": {
+    "en": "A bollard in our car park, on Wednesday morning. I reported it at once, as one should.",
+    "tr": "Otoparkımızdaki bir baba, çarşamba sabahı. Olması gerektiği gibi hemen bildirdim."
+  },
+  "C2_SOYLU_P_DAMAGE_1": {
+    "en": "Which bollard?",
+    "tr": "Hangi baba?"
+  },
+  "C2_SOYLU_P_DAMAGE_2": {
+    "en": "…The one by the entrance. I did not stop to look.",
+    "tr": "…Girişteki. Durup bakmadım."
+  },
+  "C2_SOYLU_PAINT_1": {
+    "en": "There is dark red paint in the dent on Kerem's car. Rear left. Your damage is front right.",
+    "tr": "Kerem'in arabasındaki ezikte koyu kırmızı boya var. Sol arkada. Sizin hasarınız sağ önde."
+  },
+  "C2_SOYLU_PAINT_2": {
+    "en": "…",
+    "tr": "…"
+  },
+  "C2_SOYLU_PAINT_3": {
+    "en": "I think I would like to telephone Nedim Karaca.",
+    "tr": "Sanırım Nedim Karaca'yı aramak istiyorum."
+  },
+  "C2_SOYLU_SPIKED_1": {
+    "en": "Because it was not proved. I have spiked better stories than that for the same reason. It is the job.",
+    "tr": "Çünkü kanıtlanmamıştı. Aynı sebeple ondan daha iyi haberleri de rafa kaldırdım. İşin gereği bu."
+  },
+  "C2_SOYLU_P_SPIKED_1": {
+    "en": "Did you ever write about Pier 9 yourself?",
+    "tr": "9. İskele hakkında siz hiç yazdınız mı?"
+  },
+  "C2_SOYLU_P_SPIKED_2": {
+    "en": "…Twenty years ago I wrote about everything. I do not recall.",
+    "tr": "…Yirmi yıl önce her şey hakkında yazardım. Hatırlamıyorum."
+  },
+  "C2_GUVEN_INTRO_1": {
+    "en": "I wondered who would come first, the police or somebody else. Sit down, Detective. Tarık Güven. I have run this department for eleven years and worked in it for thirty.",
+    "tr": "Önce kim gelecek diye merak ediyordum; polis mi, yoksa başkası mı. Oturun, Komiserim. Tarık Güven. On bir yıldır bu müdürlüğü yönetiyorum, otuz yıldır da burada çalışıyorum."
+  },
+  "C2_GUVEN_RETURN": {
+    "en": "Detective.",
+    "tr": "Komiserim."
+  },
+  "C2_GUVEN_CLOSED": {
+    "en": "Forgive me. I am an old man and I am frightened, and that is not helping me think. Let me have a little time.",
+    "tr": "Kusura bakmayın. Yaşlı bir adamım ve korkuyorum; bu da düşünmeme yardımcı olmuyor. Bana biraz zaman verin."
+  },
+  "C2_GUVEN_WRONG": {
+    "en": "I do not see what that has to do with this department.",
+    "tr": "Bunun bu müdürlükle ne ilgisi olduğunu göremiyorum."
+  },
+  "C2_GUVEN_Q_KNEW": {
+    "en": "Did you know Kerem Tunç?",
+    "tr": "Kerem Tunç'u tanır mıydınız?"
+  },
+  "C2_GUVEN_Q_MEET": {
+    "en": "Why did you not meet him last night?",
+    "tr": "Dün gece onunla neden buluşmadınız?"
+  },
+  "C2_GUVEN_Q_TOLD": {
+    "en": "Who told you to correct the report in 2004?",
+    "tr": "2004'te raporu düzeltmenizi kim söyledi?"
+  },
+  "C2_GUVEN_Q_NOW": {
+    "en": "You are asking what happens to you now.",
+    "tr": "Şimdi size ne olacağını soruyorsunuz."
+  },
+  "C2_GUVEN_Q_BYE": {
+    "en": "That is all for now.",
+    "tr": "Şimdilik bu kadar."
+  },
+  "C2_GUVEN_KNEW_1": {
+    "en": "The reporter. He telephoned the department now and then, as they all do. I could not tell you more than that.",
+    "tr": "Gazeteci. Hepsi gibi arada bir müdürlüğü arardı. Bundan fazlasını söyleyemem."
+  },
+  "C2_GUVEN_SOURCE_1": {
+    "en": "You were going to meet him at ten o'clock last night at the tower gate. He rang you for four minutes that evening.",
+    "tr": "Dün gece saat onda kule kapısında onunla buluşacaktınız. O akşam sizi arayıp dört dakika konuşmuş."
+  },
+  "C2_GUVEN_SOURCE_2": {
+    "en": "…Yes. I was his source.",
+    "tr": "…Evet. Kaynağı bendim."
+  },
+  "C2_GUVEN_SOURCE_3": {
+    "en": "In 2004 I wrote a report saying that land should never be built on. A week later a man came with the corrected pages already typed. I signed them. I was forty and I had two children.",
+    "tr": "2004'te o araziye asla inşaat yapılmaması gerektiğini söyleyen bir rapor yazdım. Bir hafta sonra bir adam, düzeltilmiş sayfalar yazılmış hâlde elinde, çıkageldi. İmzaladım. Kırk yaşındaydım, iki çocuğum vardı."
+  },
+  "C2_GUVEN_SOURCE_4": {
+    "en": "But I kept my original. Twenty years, in my own house. Last week I gave it to Kerem.",
+    "tr": "Ama raporun aslını sakladım. Yirmi yıl, kendi evimde. Geçen hafta Kerem'e verdim."
+  },
+  "C2_GUVEN_MEET_1": {
+    "en": "At five past nine a woman rang from the newspaper. “Kerem cannot come tonight. He will ring you tomorrow.” God forgive me, I was relieved. I turned my phone off and went to bed.",
+    "tr": "Dokuzu beş geçe gazeteden bir kadın aradı. “Kerem bu gece gelemiyor. Sizi yarın arayacak.” Allah affetsin, rahatladım. Telefonumu kapatıp yattım."
+  },
+  "C2_GUVEN_P_MEET_1": {
+    "en": "Did you know her voice?",
+    "tr": "Sesini tanıdınız mı?"
+  },
+  "C2_GUVEN_P_MEET_2": {
+    "en": "No. Educated. Calm. Not young. She did not give a name and I did not ask for one.",
+    "tr": "Hayır. Kültürlü. Sakin. Genç değildi. Adını söylemedi, ben de sormadım."
+  },
+  "C2_GUVEN_TOLD_1": {
+    "en": "I never knew his name. The pages came through a law office. The same lawyer is still in this city. You will meet him, if you have not already.",
+    "tr": "Adını hiç öğrenmedim. Sayfalar bir avukatlık bürosu aracılığıyla geldi. O avukat hâlâ bu şehirde. Henüz karşılaşmadıysanız, karşılaşacaksınız."
+  },
+  "C2_GUVEN_NOW_1": {
+    "en": "I signed a false ruling. I know what that is. I only ask what you intend to do with my name.",
+    "tr": "Sahte bir karara imza attım. Bunun ne demek olduğunu biliyorum. Yalnızca adımla ne yapmayı düşündüğünüzü soruyorum."
+  },
+  "C2_GUVEN_PROTECT": {
+    "en": "Your name stays out of my report until the prosecutor can protect you.",
+    "tr": "Savcı sizi koruma altına alana kadar adınız raporuma girmeyecek."
+  },
+  "C2_GUVEN_NAME": {
+    "en": "You signed a false ruling. That goes on the record today.",
+    "tr": "Sahte bir kararı imzaladınız. Bu bugün kayda geçecek."
+  },
+  "C2_GUVEN_PROTECT_A": {
+    "en": "Then I will tell her everything. All of it, from the first day.",
+    "tr": "O zaman ona her şeyi anlatırım. İlk günden başlayarak, hepsini."
+  },
+  "C2_GUVEN_NAME_A": {
+    "en": "I expected nothing else. Twenty years late, but I expected it.",
+    "tr": "Başka bir şey beklemiyordum. Yirmi yıl gecikmeyle, ama bekliyordum."
+  },
+  "C2_TITLE": {
+    "en": "File 58-D",
+    "tr": "Dosya 58-D"
+  },
+  "C2_TIMELINE_TITLE": {
+    "en": "Tuesday night",
+    "tr": "Salı gecesi"
+  },
+  "C2_INTRO_1": {
+    "en": "Wednesday, 06:20.\nRıhtım Yolu, the harbour road.",
+    "tr": "Çarşamba, 06.20.\nRıhtım Yolu."
+  },
+  "C2_INTRO_2": {
+    "en": "Two weeks after the archive. Last night a grey saloon went through the barrier on the bend. The driver, a reporter named Kerem Tunç, died at the scene.",
+    "tr": "Arşiv dosyasının üzerinden iki hafta geçti. Dün gece gri bir sedan virajda bariyeri aştı. Sürücü, Kerem Tunç adlı bir muhabir, olay yerinde hayatını kaybetti."
+  },
+  "C2_INTRO_3": {
+    "en": "The traffic unit calls it rain and speed.\n\nThe prosecutor he was due to meet this morning has asked for you.",
+    "tr": "Trafik ekibi yağmur ve hız diyor.\n\nBu sabah görüşeceği savcı ise sizi istedi."
+  },
+  "C2_OBJ_CHIEF": {
+    "en": "Report to Emniyet Müdürü Soykan at the tape.",
+    "tr": "Şeridin başındaki Emniyet Müdürü Soykan'a görünün."
+  },
+  "C2_OBJ_SCENE": {
+    "en": "Examine the crash scene on the harbour road.",
+    "tr": "Rıhtım Yolu'ndaki kaza yerini inceleyin."
+  },
+  "C2_OBJ_ACCIDENT": {
+    "en": "Use the Board to decide whether this was an accident.",
+    "tr": "Panoyu kullanarak bunun kaza olup olmadığına karar verin."
+  },
+  "C2_OBJ_NEWSROOM": {
+    "en": "Search the newsroom of the Karaliman Postası.",
+    "tr": "Karaliman Postası'nın haber merkezini arayın."
+  },
+  "C2_OBJ_SITE": {
+    "en": "Search the tower building site.",
+    "tr": "Kule şantiyesini arayın."
+  },
+  "C2_OBJ_PLANNING": {
+    "en": "Search the municipal planning office.",
+    "tr": "Belediye imar müdürlüğünü arayın."
+  },
+  "C2_OBJ_PEOPLE": {
+    "en": "Speak to Nilgün Soylu, Deniz Aktaş, Bora Kaplan and Tarık Güven.",
+    "tr": "Nilgün Soylu, Deniz Aktaş, Bora Kaplan ve Tarık Güven'le konuşun."
+  },
+  "C2_OBJ_DATABASE": {
+    "en": "Use the police database (Case File, Database).",
+    "tr": "Polis veri tabanını kullanın (Dava Dosyası, Kayıtlar)."
+  },
+  "C2_OBJ_LAPTOP": {
+    "en": "Find Kerem Tunç's laptop.",
+    "tr": "Kerem Tunç'un bilgisayarını bulun."
+  },
+  "C2_OBJ_KEY": {
+    "en": "Find out what key 117 opens.",
+    "tr": "117 numaralı anahtarın neyi açtığını bulun."
+  },
+  "C2_OBJ_WHO": {
+    "en": "Find out who followed him from the tower.",
+    "tr": "Kuleden çıkınca onu kimin takip ettiğini bulun."
+  },
+  "C2_OBJ_ACCUSE": {
+    "en": "When your Board conclusions prove a motive, an opportunity and a physical link, make your accusation (Case File, Suspects).",
+    "tr": "Pano'daki sonuçlarınız sebebi, fırsatı ve fiziksel bağı kanıtladığında suçlamada bulunun (Dava Dosyası, Şüpheliler)."
+  },
+  "C2_HINT_CHIEF": {
+    "en": "Start with Emniyet Müdürü Soykan, standing at the tape. Tap him to talk.",
+    "tr": "Önce şeridin başında duran Emniyet Müdürü Soykan'la konuşun. Konuşmak için ona dokunun."
+  },
+  "C2_HINT_MAP": {
+    "en": "The newsroom, the building site and the planning office are open to you. Tap Map.",
+    "tr": "Haber merkezi, şantiye ve imar müdürlüğü size açık. Harita'ya dokunun."
+  },
+  "C2_HINT_AKTAS": {
+    "en": "Deniz Aktaş says she came in at nine. Ask her when she came in, then present the Staff Sign-in Sheet.",
+    "tr": "Deniz Aktaş dokuzda geldiğini söylüyor. Ona kaçta geldiğini sorun, sonra Personel İmza Föyü'nü gösterin."
+  },
+  "C2_HINT_GUVEN": {
+    "en": "Tarık Güven says he hardly knew the reporter. Ask him, then present his own desk calendar.",
+    "tr": "Tarık Güven gazeteciyi pek tanımadığını söylüyor. Ona sorun, sonra kendi masa takvimini gösterin."
+  },
+  "C2_HINT_ACCUSE": {
+    "en": "You can now prove a motive, an opportunity and a physical link. Open the Case File, go to Suspects and make your accusation.",
+    "tr": "Artık sebebi, fırsatı ve fiziksel bağı kanıtlayabilirsiniz. Dava Dosyası'nı açın, Şüpheliler'e gidin ve suçlamada bulunun."
+  },
+  "C2_SUS_SOYLU_ROLE": {
+    "en": "Editor, Karaliman Postası · 55",
+    "tr": "Genel Yayın Yönetmeni, Karaliman Postası · 55"
+  },
+  "C2_SUS_SOYLU_BIO": {
+    "en": "Editor for nine years, at the paper for twenty-six. She held Kerem's zoning story back twice this year.",
+    "tr": "Dokuz yıldır genel yayın yönetmeni, yirmi altı yıldır gazetede. Kerem'in imar haberini bu yıl iki kez bekletti."
+  },
+  "C2_SUS_SOYLU_N1": {
+    "en": "Says she rang Kerem at 21:15 to send him home.",
+    "tr": "Kerem'i 21.15'te evine göndermek için aradığını söylüyor."
+  },
+  "C2_SUS_SOYLU_N2": {
+    "en": "Signed out at 21:40.",
+    "tr": "21.40'ta imza atıp çıkmış."
+  },
+  "C2_SUS_SOYLU_N3": {
+    "en": "Her extension rang the planner at 21:05 and Kerem at 21:15.",
+    "tr": "Dahilisi 21.05'te plancıyı, 21.15'te Kerem'i aramış."
+  },
+  "C2_SUS_SOYLU_N4": {
+    "en": "Her car waited outside the tower gate and left behind his.",
+    "tr": "Arabası kule kapısının karşısında beklemiş ve onun arkasından ayrılmış."
+  },
+  "C2_SUS_SOYLU_N5": {
+    "en": "Paid in 2004 to bury the Pier 9 story she wrote.",
+    "tr": "2004'te, kendi yazdığı 9. İskele haberini gömmesi için para almış."
+  },
+  "C2_SUS_KAPLAN_ROLE": {
+    "en": "Site Manager, Kıyı Yapı · 40",
+    "tr": "Şantiye Şefi, Kıyı Yapı · 40"
+  },
+  "C2_SUS_KAPLAN_BIO": {
+    "en": "Runs the Liman Kule building site. A reckless-driving conviction in 2011.",
+    "tr": "Liman Kule şantiyesini yönetiyor. 2011'de tehlikeli araç kullanmaktan sabıkası var."
+  },
+  "C2_SUS_KAPLAN_N1": {
+    "en": "The chief's first suspect: a dented pickup and a record.",
+    "tr": "Müdürün ilk şüphelisi: ezik bir kamyonet ve bir sabıka."
+  },
+  "C2_SUS_KAPLAN_N2": {
+    "en": "His pickup is white and its dent is from a gate post on Monday.",
+    "tr": "Kamyoneti beyaz; eziği de pazartesi günü kapı direğinden kalma."
+  },
+  "C2_SUS_KAPLAN_N3": {
+    "en": "Signing for concrete on site at 22:20 and 23:30.",
+    "tr": "22.20'de ve 23.30'da şantiyede beton teslim alıyordu."
+  },
+  "C2_SUS_GUVEN_ROLE": {
+    "en": "Head of Planning · 60",
+    "tr": "İmar Müdürü · 60"
+  },
+  "C2_SUS_GUVEN_BIO": {
+    "en": "Thirty years in the planning department. His initials are on the removal of ruling 58-D in 2004.",
+    "tr": "Otuz yıldır imar müdürlüğünde. 2004'te 58-D sayılı kararın dosyadan alınışında onun parafı var."
+  },
+  "C2_SUS_GUVEN_N1": {
+    "en": "Removed file 58-D “for correction” in 2004 and never returned it.",
+    "tr": "2004'te 58-D dosyasını “düzeltme için” almış, bir daha iade etmemiş."
+  },
+  "C2_SUS_GUVEN_N2": {
+    "en": "He was Kerem's source and gave him the original ruling.",
+    "tr": "Kerem'in kaynağıymış; kararın aslını ona o vermiş."
+  },
+  "C2_SUS_GUVEN_N3": {
+    "en": "Was told by telephone that the meeting was off, and stayed at home.",
+    "tr": "Telefonla buluşmanın iptal edildiği söylenmiş, evde kalmış."
+  },
+  "C2_SUS_AKTAS_ROLE": {
+    "en": "Reporter, Karaliman Postası · 29",
+    "tr": "Muhabir, Karaliman Postası · 29"
+  },
+  "C2_SUS_AKTAS_BIO": {
+    "en": "Kerem's junior colleague for four years. Wanted his story.",
+    "tr": "Dört yıldır Kerem'in yanında çalışan genç muhabir. Onun haberini istiyordu."
+  },
+  "C2_SUS_AKTAS_N1": {
+    "en": "Signed out at 22:10 on Tuesday. First in on Wednesday, at 07:00.",
+    "tr": "Salı günü 22.10'da çıkmış. Çarşamba günü ilk gelen o: 07.00."
+  },
+  "C2_SUS_AKTAS_N2": {
+    "en": "Took Kerem's laptop from his desk the morning after he died.",
+    "tr": "Kerem'in öldüğü gecenin sabahı bilgisayarını masasından almış."
+  },
+  "C2_TL_CALL_T": {
+    "en": "Kerem rings “T.” for four minutes.",
+    "tr": "Kerem “T.” kişisini arıyor; dört dakika konuşuyor."
+  },
+  "C2_TL_CALL_DA": {
+    "en": "Kerem rings the prosecutor and makes an appointment for 09:00.",
+    "tr": "Kerem savcıyı arıyor ve 09.00 için randevu alıyor."
+  },
+  "C2_TL_DRAFT": {
+    "en": "Kerem's draft is opened on his laptop.",
+    "tr": "Kerem'in taslağı bilgisayarında açılıyor."
+  },
+  "C2_TL_EXT_GUVEN": {
+    "en": "The editor's extension rings a mobile for 38 seconds.",
+    "tr": "Yayın yönetmeninin dahilisi bir cep telefonunu arıyor; 38 saniye."
+  },
+  "C2_TL_EXT_KEREM": {
+    "en": "The editor's extension rings Kerem.",
+    "tr": "Yayın yönetmeninin dahilisi Kerem'i arıyor."
+  },
+  "C2_TL_KEREM_OUT": {
+    "en": "Kerem signs out of the newsroom.",
+    "tr": "Kerem haber merkezinden imza atıp çıkıyor."
+  },
+  "C2_TL_SOYLU_OUT": {
+    "en": "Nilgün Soylu signs out.",
+    "tr": "Nilgün Soylu imza atıp çıkıyor."
+  },
+  "C2_TL_SOYLU_HOME": {
+    "en": "Soylu drives straight home (her statement).",
+    "tr": "Soylu doğruca eve gidiyor (kendi ifadesi)."
+  },
+  "C2_TL_GATE_IN": {
+    "en": "Kerem signs in at the tower gate. Nobody meets him.",
+    "tr": "Kerem kule kapısında giriş yapıyor. Onu karşılayan olmuyor."
+  },
+  "C2_TL_RED_CAR": {
+    "en": "A dark red saloon parks opposite the gate, lights off.",
+    "tr": "Koyu kırmızı bir sedan kapının karşısına park ediyor; farları kapalı."
+  },
+  "C2_TL_LOAD2": {
+    "en": "Kaplan signs for the second load of concrete.",
+    "tr": "Kaplan ikinci sefer betonu imzayla teslim alıyor."
+  },
+  "C2_TL_GATE_OUT": {
+    "en": "Kerem leaves the tower.",
+    "tr": "Kerem kuleden ayrılıyor."
+  },
+  "C2_TL_RED_FOLLOWS": {
+    "en": "The red saloon pulls out behind him.",
+    "tr": "Kırmızı sedan onun arkasından hareket ediyor."
+  },
+  "C2_TL_IMPACT": {
+    "en": "Kerem's car is struck from behind and goes through the barrier.",
+    "tr": "Kerem'in arabası arkadan darbe alıyor ve bariyeri aşıyor."
+  },
+  "C2_TL_AKTAS_IN": {
+    "en": "Deniz Aktaş signs in (Wednesday).",
+    "tr": "Deniz Aktaş imza atıp giriyor (Çarşamba)."
+  },
+  "C2_TL_CLAIM": {
+    "en": "Soylu opens an insurance claim for her front right wing (Wednesday).",
+    "tr": "Soylu sağ ön çamurluğu için hasar dosyası açtırıyor (Çarşamba)."
+  },
+  "C2_ACCUSE_QUESTION": {
+    "en": "Who is responsible for the death of Kerem Tunç?",
+    "tr": "Kerem Tunç'un ölümünden kim sorumlu?"
+  },
+  "C2_EPI_KAPLAN_HELD": {
+    "en": "Bora Kaplan spent a night in a cell for nothing. Karaca's complaint about it is on the chief's desk. The chief has not mentioned it to you.",
+    "tr": "Bora Kaplan bir geceyi boş yere nezarette geçirdi. Karaca'nın bu konudaki şikâyet dilekçesi müdürün masasında. Müdür size bundan hiç söz etmedi."
+  },
+  "C2_EPI_KAPLAN_FREE": {
+    "en": "Bora Kaplan gives a statement about the woman in the red car without being asked twice. The chief reads your report and says only, “You took your time.”",
+    "tr": "Bora Kaplan kırmızı arabadaki kadın hakkında, ikiletmeden ifade veriyor. Müdür raporunuzu okuyor ve yalnızca şunu söylüyor: “Acele etmemişsiniz.”"
+  },
+  "C2_EPI_GUVEN_PROTECTED": {
+    "en": "Tarık Güven talks to the prosecutor for six hours, starting with a man from a law office in 2004.",
+    "tr": "Tarık Güven savcıyla altı saat konuşuyor; 2004'te bir avukatlık bürosundan gelen adamdan başlayarak."
+  },
+  "C2_EPI_GUVEN_NAMED": {
+    "en": "Tarık Güven is suspended the same afternoon. By evening Nedim Karaca is his lawyer too, and he has stopped talking.",
+    "tr": "Tarık Güven aynı gün öğleden sonra açığa alınıyor. Akşama Nedim Karaca onun da avukatı oluyor; Güven konuşmayı kesiyor."
+  },
+  "C2_EPI_AKTAS": {
+    "en": "The Karaliman Postası finally prints “Who rezoned Pier 9?” on its front page. The byline reads: Kerem Tunç and Deniz Aktaş.",
+    "tr": "Karaliman Postası “9. İskele'nin imarını kim değiştirdi?” haberini nihayet birinci sayfadan veriyor. İmza: Kerem Tunç ve Deniz Aktaş."
+  },
+  "C2_END_A_TITLE": {
+    "en": "Spiked",
+    "tr": "Rafa Kaldırıldı"
+  },
+  "C2_END_A_TEXT": {
+    "en": "Shown the paint, the camera still and her own article from 2004, Nilgün Soylu asks for Nedim Karaca and says nothing more. She does not need to. Twenty years ago she was paid to let a story die. On Tuesday night she read it again on Kerem Tunç's screen, with her own name one sentence away.\n\nRuling 58-D goes to the prosecutor: the second file from the routing slip. The money that bought her silence came from a firm called Fener Danışmanlık, and the stub of its receipt reads exactly like the one in the archive: “Payment authorised by —”.",
+    "tr": "Boya, kamera görüntüsü ve 2004'te yazdığı kendi haberi önüne konunca Nilgün Soylu Nedim Karaca'yı istiyor, başka da bir şey söylemiyor. Söylemesine gerek yok. Yirmi yıl önce bir haberi öldürmesi için ona para ödenmişti. Salı gecesi o haberi Kerem Tunç'un ekranında yeniden okudu; kendi adına bir cümle kalmıştı.\n\n58-D sayılı karar savcıya gidiyor: sevk fişindeki ikinci dosya. Sessizliğini satın alan para Fener Danışmanlık adlı bir şirketten gelmiş; makbuzun koçanında da arşivdekiyle birebir aynı satır yazıyor: “Ödemeyi onaylayan —”."
+  },
+  "C2_END_B_TITLE": {
+    "en": "No Comment",
+    "tr": "Yorum Yok"
+  },
+  "C2_END_B_TEXT": {
+    "en": "Nilgün Soylu admits she followed him. She wanted to talk him out of it, she says; the road was wet; he braked and she could not stop. With a piece of the proof missing, Nedim Karaca makes that sound almost reasonable.\n\nShe resigns as editor. The newspaper prints a short, careful obituary. Whatever Kerem Tunç was going to tell the prosecutor is never told.",
+    "tr": "Nilgün Soylu onu takip ettiğini kabul ediyor. Vazgeçirmek istediğini söylüyor; yol ıslakmış, Kerem frene basmış, kendisi duramamış. Kanıtın bir parçası eksik olunca Nedim Karaca bunu neredeyse makul gösteriyor.\n\nSoylu yayın yönetmenliğinden istifa ediyor. Gazete kısa ve özenli bir ölüm ilanı basıyor. Kerem Tunç'un savcıya anlatacakları ise hiç anlatılmıyor."
+  },
+  "C2_END_C_TITLE": {
+    "en": "The Obvious Man, Again",
+    "tr": "Yine Akla İlk Gelen"
+  },
+  "C2_END_C_TEXT": {
+    "en": "Bora Kaplan is charged on a conviction from 2011 and a dent in a white pickup. It takes Nedim Karaca one afternoon and a page from a site incident book to have him released.\n\nThe chief tells the newspapers that the investigation continues. The newspapers, on the whole, print what their editor decides.",
+    "tr": "Bora Kaplan, 2011'deki bir sabıka ve beyaz bir kamyonetteki ezik yüzünden suçlanıyor. Nedim Karaca'nın onu serbest bıraktırması bir öğleden sonrayı ve şantiye olay defterinden bir sayfayı alıyor.\n\nMüdür gazetelere soruşturmanın sürdüğünü söylüyor. Gazeteler de, genel olarak, yayın yönetmenleri neye karar verirse onu basıyor."
+  },
+  "C2_END_D_TITLE": {
+    "en": "The Wrong Deadline",
+    "tr": "Yanlış Kişi"
+  },
+  "C2_END_D_TEXT": {
+    "en": "It makes a tidy story: someone who lied to you about that night. The charge is laid, and the lie is real.\n\nBut it was never the lie that mattered, and you knew the pieces did not fit. The person who waited outside the tower with the lights off goes back to work on Thursday.",
+    "tr": "Derli toplu bir hikâye: o gece hakkında size yalan söyleyen biri. Suçlama yapılıyor; yalan da gerçek.\n\nAma asıl önemli olan o yalan değildi, parçaların oturmadığını da biliyordunuz. Farları kapalı hâlde kulenin karşısında bekleyen kişi perşembe günü işinin başına dönüyor."
+  },
+  "C2_END_E_TITLE": {
+    "en": "Rain and Speed",
+    "tr": "Yağmur ve Hız"
+  },
+  "C2_END_E_TEXT": {
+    "en": "A wet bend, a tired man, a car a little too fast. You sign the traffic unit's report.\n\nThe chief thanks you for not wasting anyone's time. A week later the small brass key is returned to the family with the rest of his things. Nobody knows what it opens.",
+    "tr": "Islak bir viraj, yorgun bir adam, biraz fazla hızlı bir araba. Trafik ekibinin raporunu imzalıyorsunuz.\n\nMüdür kimsenin vaktini almadığınız için teşekkür ediyor. Bir hafta sonra küçük pirinç anahtar, diğer eşyalarıyla birlikte ailesine teslim ediliyor. Neyi açtığını bilen yok."
+  },
+  "C2_E01_GIST": {
+    "en": "No braking marks from his car. A second set of tyre marks runs beside it for forty metres.",
+    "tr": "Arabasına ait fren izi yok. Yanında kırk metre boyunca ikinci bir lastik izi uzanıyor."
+  },
+  "C2_E02_GIST": {
+    "en": "Dark red paint in the dent at his rear left corner, at the bumper height of another saloon.",
+    "tr": "Sol arka köşedeki ezikte koyu kırmızı boya var; başka bir sedanın tampon hizasında."
+  },
+  "C2_E03_GIST": {
+    "en": "A call from 0 282 555 01 00 at 21:15. At 21:18 he texted “T.”: ten o'clock at the tower gate, “as your office said”.",
+    "tr": "21.15'te 0 282 555 01 00 numarasından arama. 21.18'de “T.” kişisine mesaj: saat onda kule kapısında, “ofisinizin dediği gibi”."
+  },
+  "C2_E04_GIST": {
+    "en": "A small cabinet key tagged 117. It fits nothing in his car or his flat.",
+    "tr": "117 etiketli küçük bir dolap anahtarı. Arabasında da evinde de hiçbir yere uymuyor."
+  },
+  "C2_E05_GIST": {
+    "en": "He signed in at the Kıyı Yapı tower site at 22:02. The “to see” line is blank.",
+    "tr": "22.02'de Kıyı Yapı'nın kule şantiyesine giriş yapmış. “Görüşeceği kişi” satırı boş."
+  },
+  "C2_E06_GIST": {
+    "en": "Struck at the rear left at 22:41, at 68 km/h. No braking before the impact.",
+    "tr": "22.41'de, saatte 68 km hızla giderken sol arkadan darbe almış. Darbeden önce fren yok."
+  },
+  "C2_E07_GIST": {
+    "en": "The editor's extension, 14, rang one mobile at 21:05 and Kerem's mobile at 21:15. People called see only the main number.",
+    "tr": "Yayın yönetmeninin dahilisi (14) 21.05'te bir cep telefonunu, 21.15'te Kerem'in cebini aramış. Arananlar yalnızca ana numarayı görür."
+  },
+  "C2_E08_GIST": {
+    "en": "His laptop and notebook are gone. The laptop stood on the desk until at least Tuesday.",
+    "tr": "Bilgisayarı ve not defteri yok. Bilgisayar en azından salı gününe kadar masadaydı."
+  },
+  "C2_E09_GIST": {
+    "en": "Tuesday out: Kerem 21:20, Soylu 21:40, Aktaş 22:10. Wednesday in: Aktaş at 07:00, two hours before anyone else.",
+    "tr": "Salı çıkış: Kerem 21.20, Soylu 21.40, Aktaş 22.10. Çarşamba giriş: Aktaş 07.00, herkesten iki saat önce."
+  },
+  "C2_E10_GIST": {
+    "en": "Drawer 117 of the newspaper archive: spiked stories from 2004.",
+    "tr": "Gazete arşivinin 117 numaralı çekmecesi: 2004'te rafa kaldırılan haberler."
+  },
+  "C2_E11_GIST": {
+    "en": "The Aras group, including Kıyı Yapı, pays for 41% of the paper's advertising. “Do not upset. — N.S.”",
+    "tr": "Kıyı Yapı dahil Aras grubu, gazetenin reklam gelirinin %41'ini sağlıyor. “Küstürmeyelim. — N.S.”"
+  },
+  "C2_E12_GIST": {
+    "en": "His draft: the paper spiked this story in 2004 and its reporter was paid by Fener Danışmanlık. The name is unfinished. Last opened Tuesday 20:31.",
+    "tr": "Taslağı: gazete bu haberi 2004'te rafa kaldırmış, yazan muhabire Fener Danışmanlık ödeme yapmış. İsim yarım kalmış. Son açılış salı 20.31."
+  },
+  "C2_E13_GIST": {
+    "en": "The original ruling said no to building. With it: Soylu's spiked 2004 article and a payment to her from Fener Danışmanlık.",
+    "tr": "Kararın aslı inşaata hayır diyor. Yanında: Soylu'nun 2004'te rafa kaldırılan haberi ve Fener Danışmanlık'tan ona yapılmış bir ödeme."
+  },
+  "C2_E14_GIST": {
+    "en": "Kerem was at the gate from 22:02 to 22:28 and nobody came for him. No site vehicle left between 21:00 and 02:00.",
+    "tr": "Kerem 22.02'den 22.28'e kadar kapıdaymış, onu almaya gelen olmamış. 21.00 ile 02.00 arasında hiçbir şantiye aracı çıkmamış."
+  },
+  "C2_E15_GIST": {
+    "en": "A dark red saloon waited opposite the gate from 22:10 and pulled out behind him at 22:29. Plate: 82 N? 04??.",
+    "tr": "Koyu kırmızı bir sedan 22.10'dan itibaren kapının karşısında beklemiş, 22.29'da onun arkasından hareket etmiş. Plaka: 82 N? 04??."
+  },
+  "C2_E16_GIST": {
+    "en": "A white pickup. The dent is at the rear, and the paint in it is yellow, from a gate post.",
+    "tr": "Beyaz bir kamyonet. Ezik arkada; içindeki boya da kapı direğinden gelen sarı."
+  },
+  "C2_E17_GIST": {
+    "en": "On Monday Kaplan reversed the pickup into a gate post. Signed by the gate guard.",
+    "tr": "Kaplan pazartesi günü kamyonetle geri geri giderken kapı direğine çarpmış. Kapı görevlisi imzalamış."
+  },
+  "C2_E18_GIST": {
+    "en": "Kaplan signed for concrete on site at 21:10, 22:20, 23:30 and 00:45.",
+    "tr": "Kaplan 21.10, 22.20, 23.30 ve 00.45'te şantiyede beton teslim almış."
+  },
+  "C2_E19_GIST": {
+    "en": "File 58-D was removed “for correction” in 2004 by T.G. and never returned. “The original is kept safe.”",
+    "tr": "58-D dosyası 2004'te T.G. tarafından “düzeltme için” alınmış, iade edilmemiş. “Aslı güvende saklanıyor.”"
+  },
+  "C2_E20_GIST": {
+    "en": "Güven was to meet K.T. at the tower gate at 22:00. At 21:05 the paper rang him: K.T. cannot come.",
+    "tr": "Güven 22.00'de kule kapısında K.T. ile buluşacakmış. 21.05'te gazeteden aramışlar: K.T. gelemiyor."
+  },
+  "C2_E21_GIST": {
+    "en": "The only dark red saloon that fits the plate belongs to Nilgün Soylu. She claimed for front-right damage on Wednesday morning.",
+    "tr": "Plakaya uyan tek koyu kırmızı sedan Nilgün Soylu'nun. Çarşamba sabahı sağ ön hasarı için dosya açtırmış."
+  },
+  "C2_E22_GIST": {
+    "en": "0 282 555 01 00 is the Karaliman Postası switchboard. Every call from inside the building shows this number.",
+    "tr": "0 282 555 01 00, Karaliman Postası'nın santrali. Binanın içinden yapılan her arama bu numarayla görünür."
+  },
+  "C2_E23_GIST": {
+    "en": "Fener Danışmanlık owns 15% of the firm building the tower. Its address is Nedim Karaca's law office.",
+    "tr": "Fener Danışmanlık, kuleyi yapan şirketin %15'ine sahip. Adresi Nedim Karaca'nın hukuk bürosu."
+  },
+  "C2_E24_GIST": {
+    "en": "Bora Kaplan has one conviction, for reckless driving in 2011. Nothing since.",
+    "tr": "Bora Kaplan'ın tek sabıkası var: 2011'de tehlikeli araç kullanma. Sonrasında kayıt yok."
+  },
+  "C2_TREE_KAPLAN": {
+    "en": "The chief's suspect",
+    "tr": "Müdürün şüphelisi"
+  },
+  "C2_TREE_KAPLAN_FREE": {
+    "en": "You refused to bring Bora Kaplan in",
+    "tr": "Bora Kaplan'ı gözaltına aldırmadınız"
+  },
+  "C2_TREE_KAPLAN_HELD": {
+    "en": "You had him brought in",
+    "tr": "Onu gözaltına aldırdınız"
+  },
+  "C2_TREE_KAPLAN_OPEN": {
+    "en": "You never decided",
+    "tr": "Karar vermediniz"
+  },
+  "C2_TREE_DENIZ": {
+    "en": "Deniz Aktaş",
+    "tr": "Deniz Aktaş"
+  },
+  "C2_TREE_DENIZ_SPARED": {
+    "en": "You let the laptop go unreported",
+    "tr": "Dizüstü bilgisayar meselesini rapora yazmadınız"
+  },
+  "C2_TREE_DENIZ_CHARGED": {
+    "en": "You charged her for taking it",
+    "tr": "Onu aldığı için hakkında işlem yaptınız"
+  },
+  "C2_TREE_DENIZ_OPEN": {
+    "en": "You never caught her lie",
+    "tr": "Yalanını hiç yakalamadınız"
+  },
+  "C2_TREE_GUVEN": {
+    "en": "Tarık Güven",
+    "tr": "Tarık Güven"
+  },
+  "C2_TREE_GUVEN_PROTECTED": {
+    "en": "You kept his name out of it",
+    "tr": "Adını işin dışında tuttunuz"
+  },
+  "C2_TREE_GUVEN_NAMED": {
+    "en": "You named him as the source",
+    "tr": "Kaynak olarak adını verdiniz"
+  },
+  "C2_TREE_GUVEN_OPEN": {
+    "en": "He never admitted being the source",
+    "tr": "Kaynak olduğunu hiç kabul etmedi"
+  },
+  "C2_TREE_FILE": {
+    "en": "Drawer 117",
+    "tr": "117 numaralı çekmece"
+  },
+  "C2_TREE_FILE_FOUND": {
+    "en": "You found ruling 58-D",
+    "tr": "58-D kararını buldunuz"
+  },
+  "C2_TREE_FILE_LOST": {
+    "en": "The drawer stayed shut",
+    "tr": "Çekmece kapalı kaldı"
+  },
+  "C2_TREE_SOYLU": {
+    "en": "Nilgün Soylu",
+    "tr": "Nilgün Soylu"
+  },
+  "C2_TREE_SOYLU_CORNERED": {
+    "en": "She asked for her lawyer",
+    "tr": "Avukatını istedi"
+  },
+  "C2_TREE_SOYLU_STANDING": {
+    "en": "She kept her composure",
+    "tr": "Soğukkanlılığını korudu"
+  },
+  "C2_I_NOT_ACCIDENT_Q": {
+    "en": "Was it really rain and speed?",
+    "tr": "Gerçekten yağmur ve hız mıydı?"
+  },
+  "C2_I_NOT_ACCIDENT_KEY": {
+    "en": "no braking",
+    "tr": "fren izi yok"
+  },
+  "C2_I_NOT_ACCIDENT_WS1": {
+    "en": "He fell asleep at the wheel",
+    "tr": "Direksiyonda uyuyakaldı"
+  },
+  "C2_I_NOT_ACCIDENT_WS2": {
+    "en": "He braked too late",
+    "tr": "Fren yapmakta geç kaldı"
+  },
+  "C2_I_KAPLAN_PAINT_Q": {
+    "en": "Did the site pickup hit him?",
+    "tr": "Şantiye kamyoneti mi çarptı?"
+  },
+  "C2_I_KAPLAN_PAINT_KEY": {
+    "en": "paint",
+    "tr": "boya"
+  },
+  "C2_I_KAPLAN_PAINT_WS1": {
+    "en": "The pickup was repainted",
+    "tr": "Kamyonet yeniden boyandı"
+  },
+  "C2_I_KAPLAN_PAINT_WS2": {
+    "en": "Kaplan hit him reversing",
+    "tr": "Kaplan geri giderken çarptı"
+  },
+  "C2_I_KAPLAN_ALIBI_Q": {
+    "en": "Could Kaplan have left the site?",
+    "tr": "Kaplan şantiyeden çıkabilir miydi?"
+  },
+  "C2_I_KAPLAN_ALIBI_KEY": {
+    "en": "Bora Kaplan",
+    "tr": "Bora Kaplan"
+  },
+  "C2_I_KAPLAN_ALIBI_WS1": {
+    "en": "He signed the tickets in advance",
+    "tr": "Fişleri önceden imzaladı"
+  },
+  "C2_I_KAPLAN_ALIBI_WS2": {
+    "en": "The guard covered for him",
+    "tr": "Bekçi onu kolladı"
+  },
+  "C2_I_CALLER_Q": {
+    "en": "Who rang Kerem at 21:15?",
+    "tr": "Kerem'i 21.15'te kim aradı?"
+  },
+  "C2_I_CALLER_KEY": {
+    "en": "0 282 555 01 00",
+    "tr": "0 282 555 01 00"
+  },
+  "C2_I_CALLER_WS1": {
+    "en": "The prosecutor's office",
+    "tr": "Savcılık"
+  },
+  "C2_I_CALLER_WS2": {
+    "en": "His source, from a call box",
+    "tr": "Kaynağı, ankesörlü telefondan"
+  },
+  "C2_I_LURE_Q": {
+    "en": "Who sent him to the tower gate?",
+    "tr": "Onu kule kapısına kim yolladı?"
+  },
+  "C2_I_LURE_KEY": {
+    "en": "extension 14",
+    "tr": "dahili 14"
+  },
+  "C2_I_LURE_WS1": {
+    "en": "Güven cancelled it himself",
+    "tr": "Güven kendisi iptal etti"
+  },
+  "C2_I_LURE_WS2": {
+    "en": "Two people used the phone",
+    "tr": "Telefonu iki kişi kullandı"
+  },
+  "C2_I_CAR_Q": {
+    "en": "Whose car was waiting at the gate?",
+    "tr": "Kapıda bekleyen araba kimindi?"
+  },
+  "C2_I_CAR_KEY": {
+    "en": "dark red saloon",
+    "tr": "koyu kırmızı sedan"
+  },
+  "C2_I_CAR_WS1": {
+    "en": "A bakery van",
+    "tr": "Bir fırın arabası"
+  },
+  "C2_I_CAR_WS2": {
+    "en": "The plate proves nothing",
+    "tr": "Plaka hiçbir şey kanıtlamaz"
+  },
+  "C2_I_PAINT_Q": {
+    "en": "What hit his car?",
+    "tr": "Arabasına ne çarptı?"
+  },
+  "C2_I_PAINT_KEY": {
+    "en": "dark red paint",
+    "tr": "koyu kırmızı boya"
+  },
+  "C2_I_PAINT_WS1": {
+    "en": "The red barrier",
+    "tr": "Kırmızı bariyer"
+  },
+  "C2_I_PAINT_WS2": {
+    "en": "A bollard, as she says",
+    "tr": "Söylediği gibi bir direk"
+  },
+  "C2_I_LAPTOP_Q": {
+    "en": "Where is his laptop?",
+    "tr": "Dizüstü bilgisayarı nerede?"
+  },
+  "C2_I_LAPTOP_KEY": {
+    "en": "laptop",
+    "tr": "dizüstü"
+  },
+  "C2_I_LAPTOP_WS1": {
+    "en": "Stolen from the wreck",
+    "tr": "Kaza yerinden çalındı"
+  },
+  "C2_I_LAPTOP_WS2": {
+    "en": "The cleaner moved it",
+    "tr": "Temizlikçi kaldırdı"
+  },
+  "C2_I_DRAWER_Q": {
+    "en": "What does the key 117 open?",
+    "tr": "117 numaralı anahtar neyi açıyor?"
+  },
+  "C2_I_DRAWER_KEY": {
+    "en": "117",
+    "tr": "117"
+  },
+  "C2_I_DRAWER_WS1": {
+    "en": "A ferry locker",
+    "tr": "Feribot dolabı"
+  },
+  "C2_I_DRAWER_WS2": {
+    "en": "His flat",
+    "tr": "Dairesi"
+  },
+  "C2_I_READ_Q": {
+    "en": "Who read Kerem's draft?",
+    "tr": "Kerem'in taslağını kim okudu?"
+  },
+  "C2_I_READ_KEY": {
+    "en": "20:31",
+    "tr": "20.31"
+  },
+  "C2_I_READ_WS1": {
+    "en": "Deniz read it herself",
+    "tr": "Deniz kendisi okudu"
+  },
+  "C2_I_READ_WS2": {
+    "en": "Kerem opened it on his phone",
+    "tr": "Kerem telefonundan açtı"
+  },
+  "C2_I_MOTIVE_Q": {
+    "en": "Whose name was Kerem about to write?",
+    "tr": "Kerem kimin adını yazmak üzereydi?"
+  },
+  "C2_I_MOTIVE_KEY": {
+    "en": "2004",
+    "tr": "2004"
+  },
+  "C2_I_MOTIVE_WS1": {
+    "en": "Deniz Aktaş's",
+    "tr": "Deniz Aktaş'ın"
+  },
+  "C2_I_MOTIVE_WS2": {
+    "en": "Nobody's; the story was wrong",
+    "tr": "Kimsenin; haber yanlıştı"
+  },
+  "C2_I_FENER_Q": {
+    "en": "What links 2004 to the tower?",
+    "tr": "2004'le kuleyi ne bağlıyor?"
+  },
+  "C2_I_FENER_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "C2_I_FENER_WS1": {
+    "en": "Two firms share a name",
+    "tr": "İki şirketin adı aynı"
+  },
+  "C2_I_FENER_WS2": {
+    "en": "It is the paper's ad agency",
+    "tr": "Gazetenin reklam ajansı"
+  }
+}

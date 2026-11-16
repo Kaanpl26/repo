@@ -1,0 +1,218 @@
+{
+  "I_NOT_ACCIDENT": {
+    "cards": [
+      "E01",
+      "E06"
+    ],
+    "title": "C2_I_NOT_ACCIDENT_TITLE",
+    "text": "C2_I_NOT_ACCIDENT",
+    "wrong": [
+      "C2_I_NOT_ACCIDENT_W1",
+      "C2_I_NOT_ACCIDENT_W2"
+    ],
+    "question": "C2_I_NOT_ACCIDENT_Q",
+    "key": "C2_I_NOT_ACCIDENT_KEY",
+    "wrong_short": [
+      "C2_I_NOT_ACCIDENT_WS1",
+      "C2_I_NOT_ACCIDENT_WS2"
+    ]
+  },
+  "I_KAPLAN_PAINT": {
+    "cards": [
+      "E02",
+      "E16"
+    ],
+    "title": "C2_I_KAPLAN_PAINT_TITLE",
+    "text": "C2_I_KAPLAN_PAINT",
+    "wrong": [
+      "C2_I_KAPLAN_PAINT_W1",
+      "C2_I_KAPLAN_PAINT_W2"
+    ],
+    "question": "C2_I_KAPLAN_PAINT_Q",
+    "key": "C2_I_KAPLAN_PAINT_KEY",
+    "wrong_short": [
+      "C2_I_KAPLAN_PAINT_WS1",
+      "C2_I_KAPLAN_PAINT_WS2"
+    ]
+  },
+  "I_KAPLAN_ALIBI": {
+    "cards": [
+      "E14",
+      "E18"
+    ],
+    "title": "C2_I_KAPLAN_ALIBI_TITLE",
+    "text": "C2_I_KAPLAN_ALIBI",
+    "wrong": [
+      "C2_I_KAPLAN_ALIBI_W1",
+      "C2_I_KAPLAN_ALIBI_W2"
+    ],
+    "question": "C2_I_KAPLAN_ALIBI_Q",
+    "key": "C2_I_KAPLAN_ALIBI_KEY",
+    "wrong_short": [
+      "C2_I_KAPLAN_ALIBI_WS1",
+      "C2_I_KAPLAN_ALIBI_WS2"
+    ]
+  },
+  "I_CALLER": {
+    "cards": [
+      "E03",
+      "E22"
+    ],
+    "title": "C2_I_CALLER_TITLE",
+    "text": "C2_I_CALLER",
+    "wrong": [
+      "C2_I_CALLER_W1",
+      "C2_I_CALLER_W2"
+    ],
+    "question": "C2_I_CALLER_Q",
+    "key": "C2_I_CALLER_KEY",
+    "wrong_short": [
+      "C2_I_CALLER_WS1",
+      "C2_I_CALLER_WS2"
+    ]
+  },
+  "I_LURE": {
+    "cards": [
+      "E07",
+      "E20"
+    ],
+    "title": "C2_I_LURE_TITLE",
+    "text": "C2_I_LURE",
+    "wrong": [
+      "C2_I_LURE_W1",
+      "C2_I_LURE_W2"
+    ],
+    "question": "C2_I_LURE_Q",
+    "key": "C2_I_LURE_KEY",
+    "wrong_short": [
+      "C2_I_LURE_WS1",
+      "C2_I_LURE_WS2"
+    ]
+  },
+  "I_CAR": {
+    "cards": [
+      "E15",
+      "E21"
+    ],
+    "title": "C2_I_CAR_TITLE",
+    "text": "C2_I_CAR",
+    "wrong": [
+      "C2_I_CAR_W1",
+      "C2_I_CAR_W2"
+    ],
+    "question": "C2_I_CAR_Q",
+    "key": "C2_I_CAR_KEY",
+    "wrong_short": [
+      "C2_I_CAR_WS1",
+      "C2_I_CAR_WS2"
+    ]
+  },
+  "I_PAINT": {
+    "cards": [
+      "E02",
+      "E21"
+    ],
+    "title": "C2_I_PAINT_TITLE",
+    "text": "C2_I_PAINT",
+    "wrong": [
+      "C2_I_PAINT_W1",
+      "C2_I_PAINT_W2"
+    ],
+    "question": "C2_I_PAINT_Q",
+    "key": "C2_I_PAINT_KEY",
+    "wrong_short": [
+      "C2_I_PAINT_WS1",
+      "C2_I_PAINT_WS2"
+    ]
+  },
+  "I_LAPTOP": {
+    "cards": [
+      "E08",
+      "E09"
+    ],
+    "title": "C2_I_LAPTOP_TITLE",
+    "text": "C2_I_LAPTOP",
+    "wrong": [
+      "C2_I_LAPTOP_W1",
+      "C2_I_LAPTOP_W2"
+    ],
+    "question": "C2_I_LAPTOP_Q",
+    "key": "C2_I_LAPTOP_KEY",
+    "wrong_short": [
+      "C2_I_LAPTOP_WS1",
+      "C2_I_LAPTOP_WS2"
+    ]
+  },
+  "I_DRAWER": {
+    "cards": [
+      "E04",
+      "E10"
+    ],
+    "title": "C2_I_DRAWER_TITLE",
+    "text": "C2_I_DRAWER",
+    "wrong": [
+      "C2_I_DRAWER_W1",
+      "C2_I_DRAWER_W2"
+    ],
+    "question": "C2_I_DRAWER_Q",
+    "key": "C2_I_DRAWER_KEY",
+    "wrong_short": [
+      "C2_I_DRAWER_WS1",
+      "C2_I_DRAWER_WS2"
+    ]
+  },
+  "I_READ": {
+    "cards": [
+      "E12",
+      "T_AKTAS_2"
+    ],
+    "title": "C2_I_READ_TITLE",
+    "text": "C2_I_READ",
+    "wrong": [
+      "C2_I_READ_W1",
+      "C2_I_READ_W2"
+    ],
+    "question": "C2_I_READ_Q",
+    "key": "C2_I_READ_KEY",
+    "wrong_short": [
+      "C2_I_READ_WS1",
+      "C2_I_READ_WS2"
+    ]
+  },
+  "I_MOTIVE": {
+    "cards": [
+      "E12",
+      "E13"
+    ],
+    "title": "C2_I_MOTIVE_TITLE",
+    "text": "C2_I_MOTIVE",
+    "wrong": [
+      "C2_I_MOTIVE_W1",
+      "C2_I_MOTIVE_W2"
+    ],
+    "question": "C2_I_MOTIVE_Q",
+    "key": "C2_I_MOTIVE_KEY",
+    "wrong_short": [
+      "C2_I_MOTIVE_WS1",
+      "C2_I_MOTIVE_WS2"
+    ]
+  },
+  "I_FENER": {
+    "cards": [
+      "E23",
+      "E13"
+    ],
+    "title": "C2_I_FENER_TITLE",
+    "text": "C2_I_FENER",
+    "wrong": [
+      "C2_I_FENER_W1",
+      "C2_I_FENER_W2"
+    ],
+    "question": "C2_I_FENER_Q",
+    "key": "C2_I_FENER_KEY",
+    "wrong_short": [
+      "C2_I_FENER_WS1",
+      "C2_I_FENER_WS2"
+    ]
+  }
+}

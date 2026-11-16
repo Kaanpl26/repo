@@ -1,0 +1,129 @@
+[
+  {
+    "id": "hatice",
+    "title": "C3_TREE_HATICE",
+    "options": [
+      {
+        "id": "comforted",
+        "text": "C3_TREE_HATICE_COMFORTED",
+        "conditions": [
+          {
+            "flag": "hatice_comforted"
+          }
+        ]
+      },
+      {
+        "id": "blamed",
+        "text": "C3_TREE_HATICE_BLAMED",
+        "conditions": [
+          {
+            "flag": "hatice_blamed"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C3_TREE_HATICE_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "nur",
+    "title": "C3_TREE_NUR",
+    "options": [
+      {
+        "id": "trusted",
+        "text": "C3_TREE_NUR_TRUSTED",
+        "conditions": [
+          {
+            "flag": "nur_trusted"
+          }
+        ]
+      },
+      {
+        "id": "reported",
+        "text": "C3_TREE_NUR_REPORTED",
+        "conditions": [
+          {
+            "flag": "nur_reported"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C3_TREE_NUR_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "chief",
+    "title": "C3_TREE_CHIEF",
+    "options": [
+      {
+        "id": "kept",
+        "text": "C3_TREE_CHIEF_KEPT",
+        "conditions": [
+          {
+            "flag": "chief_kept_out"
+          }
+        ]
+      },
+      {
+        "id": "informed",
+        "text": "C3_TREE_CHIEF_INFORMED",
+        "conditions": [
+          {
+            "flag": "chief_informed"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C3_TREE_CHIEF_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "signature",
+    "title": "C3_TREE_SIGNATURE",
+    "options": [
+      {
+        "id": "seen",
+        "text": "C3_TREE_SIGNATURE_SEEN",
+        "conditions": [
+          {
+            "flag": "signature_seen"
+          }
+        ]
+      },
+      {
+        "id": "missed",
+        "text": "C3_TREE_SIGNATURE_MISSED",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "bulut",
+    "title": "C3_TREE_BULUT",
+    "options": [
+      {
+        "id": "cornered",
+        "text": "C3_TREE_BULUT_CORNERED",
+        "conditions": [
+          {
+            "flag": "bulut_cornered"
+          }
+        ]
+      },
+      {
+        "id": "standing",
+        "text": "C3_TREE_BULUT_STANDING",
+        "conditions": []
+      }
+    ]
+  }
+]

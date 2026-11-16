@@ -1,0 +1,127 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "arikan_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_INTRO_1"
+        },
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_INTRO_2"
+        },
+        {
+          "s": "mira",
+          "t": "C4_ARIKAN_INTRO_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "arikan_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "knew": {
+      "lines": [
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_KNEW_1",
+          "effects": [
+            {
+              "add_testimony": "T_ARIKAN_1"
+            }
+          ],
+          "press": "press_knew"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_knew": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_ARIKAN_P_KNEW_1"
+        },
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_P_KNEW_2"
+        }
+      ]
+    },
+    "report": {
+      "lines": [
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_REPORT_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "her": {
+      "lines": [
+        {
+          "s": "arikan",
+          "t": "C4_ARIKAN_HER_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "knew",
+          "t": "C4_ARIKAN_Q_KNEW",
+          "next": "knew"
+        },
+        {
+          "id": "report",
+          "t": "C4_ARIKAN_Q_REPORT",
+          "next": "report"
+        },
+        {
+          "id": "her",
+          "t": "C4_ARIKAN_Q_HER",
+          "next": "her"
+        },
+        {
+          "id": "bye",
+          "t": "C4_ARIKAN_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

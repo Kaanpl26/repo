@@ -1,0 +1,458 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "vardar_met"
+        }
+      ]
+    },
+    {
+      "node": "ask",
+      "conditions": [
+        {
+          "has_evidence": "E09"
+        },
+        {
+          "not_flag": "vardar_asked"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "effects": [
+        {
+          "set_flag": "vardar_met"
+        }
+      ],
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_INTRO_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "ask": {
+      "effects": [
+        {
+          "set_flag": "vardar_asked"
+        }
+      ],
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_ASK_1"
+        },
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_ASK_2"
+        }
+      ],
+      "choices": [
+        {
+          "id": "tell_early",
+          "t": "C1_VARDAR_TELL",
+          "next": "ask_told",
+          "conditions": [
+            {
+              "has_evidence": "E09"
+            },
+            {
+              "not_flag": "file_found"
+            }
+          ],
+          "effects": [
+            {
+              "set_flag": "told_vardar"
+            },
+            {
+              "set_flag": "file_compromised"
+            }
+          ]
+        },
+        {
+          "id": "tell_late",
+          "t": "C1_VARDAR_TELL",
+          "next": "ask_told",
+          "conditions": [
+            {
+              "has_evidence": "E09"
+            },
+            {
+              "flag": "file_found"
+            }
+          ],
+          "effects": [
+            {
+              "set_flag": "told_vardar"
+            }
+          ]
+        },
+        {
+          "id": "keep",
+          "t": "C1_VARDAR_KEEP",
+          "next": "ask_kept"
+        }
+      ]
+    },
+    "ask_told": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_ASK_TOLD"
+        }
+      ],
+      "next": "hub"
+    },
+    "ask_kept": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_ASK_KEPT"
+        }
+      ],
+      "next": "hub"
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "night",
+          "t": "C1_VARDAR_Q_NIGHT",
+          "next": "night",
+          "conditions": [
+            {
+              "not_flag": "vardar_returned"
+            }
+          ]
+        },
+        {
+          "id": "stacks",
+          "t": "C1_VARDAR_Q_STACKS",
+          "next": "stacks",
+          "conditions": [
+            {
+              "flag": "vardar_returned"
+            },
+            {
+              "not_flag": "vardar_cornered"
+            }
+          ]
+        },
+        {
+          "id": "email",
+          "t": "C1_VARDAR_Q_EMAIL",
+          "next": "email",
+          "conditions": [
+            {
+              "has_evidence": "E07"
+            }
+          ]
+        },
+        {
+          "id": "y1998",
+          "t": "C1_VARDAR_Q_1998",
+          "next": "y1998",
+          "conditions": [
+            {
+              "has_evidence": "E08"
+            },
+            {
+              "not_flag": "vardar_maden"
+            }
+          ]
+        },
+        {
+          "id": "earrings",
+          "t": "C1_VARDAR_Q_EARRINGS",
+          "next": "earrings",
+          "conditions": [
+            {
+              "has_evidence": "E03"
+            },
+            {
+              "has_evidence": "E13"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C1_VARDAR_Q_BYE",
+          "end": true
+        }
+      ]
+    },
+    "night": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_NIGHT_1",
+          "press": "press_book"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_NIGHT_2",
+          "effects": [
+            {
+              "add_testimony": "T_VARDAR_1"
+            }
+          ],
+          "present": {
+            "accept": [
+              "E06",
+              "I_VARDAR_RETURNED",
+              "I_EMAIL"
+            ],
+            "next": "returned",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "returned": {
+      "effects": [
+        {
+          "set_flag": "vardar_returned"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_RET_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_RET_2",
+          "effects": [
+            {
+              "add_testimony": "T_VARDAR_2"
+            }
+          ],
+          "mood": "shaken"
+        },
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_RET_3"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_RET_4",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "stacks": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_STACKS_1",
+          "present": {
+            "accept": [
+              "I_ELEVATOR"
+            ],
+            "next": "cornered",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "cornered": {
+      "effects": [
+        {
+          "set_flag": "vardar_cornered"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_CORN_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_CORN_2"
+        },
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_CORN_3"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_CORN_4",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "email": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_EMAIL_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_EMAIL_2",
+          "present": {
+            "accept": [
+              "E07"
+            ],
+            "next": "slip",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "slip": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_SLIP_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_SLIP_2",
+          "effects": [
+            {
+              "add_testimony": "T_VARDAR_3"
+            }
+          ],
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "y1998": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_1998_1",
+          "present": {
+            "accept": [
+              "E18",
+              "I_SM"
+            ],
+            "next": "maden",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "maden": {
+      "effects": [
+        {
+          "set_flag": "vardar_maden"
+        }
+      ],
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_MADEN_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_MADEN_2",
+          "effects": [
+            {
+              "add_testimony": "T_VARDAR_4"
+            }
+          ],
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "earrings": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_EAR_1"
+        },
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_EAR_2"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_EAR_3",
+          "press": "press_earring",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_book": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_P_BOOK_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_P_BOOK_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "press_earring": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C1_VARDAR_P_EAR_1"
+        },
+        {
+          "s": "vardar",
+          "t": "C1_VARDAR_P_EAR_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_VARDAR_5"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

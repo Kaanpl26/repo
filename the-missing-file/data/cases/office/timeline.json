@@ -1,0 +1,74 @@
+[
+  {
+    "time": "1997",
+    "text": "OF_TL_FENER",
+    "conditions": [
+      {
+        "has_evidence": "L04"
+      }
+    ]
+  },
+  {
+    "time": "1998",
+    "text": "OF_TL_FIRE",
+    "conditions": [
+      {
+        "has_evidence": "L02"
+      }
+    ]
+  },
+  {
+    "time": "1999",
+    "text": "OF_TL_TEKIN",
+    "conditions": [
+      {
+        "has_evidence": "L09"
+      }
+    ]
+  },
+  {
+    "time": "2003",
+    "text": "OF_TL_REPORT",
+    "conditions": [
+      {
+        "has_evidence": "L10"
+      }
+    ]
+  },
+  {
+    "time": "2004",
+    "text": "OF_TL_ZONING",
+    "conditions": [
+      {
+        "has_evidence": "L03"
+      }
+    ]
+  },
+  {
+    "time": "2026",
+    "text": "OF_TL_VURAL",
+    "conditions": [
+      {
+        "case_closed": "case_01"
+      }
+    ]
+  },
+  {
+    "time": "2026",
+    "text": "OF_TL_TUNC",
+    "conditions": [
+      {
+        "case_closed": "case_02"
+      }
+    ]
+  },
+  {
+    "time": "2026",
+    "text": "OF_TL_EROL",
+    "conditions": [
+      {
+        "case_closed": "case_03"
+      }
+    ]
+  }
+]

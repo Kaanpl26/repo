@@ -1,0 +1,129 @@
+[
+  {
+    "id": "guard",
+    "title": "C1_TREE_GUARD",
+    "options": [
+      {
+        "id": "spared",
+        "text": "C1_TREE_GUARD_SPARED",
+        "conditions": [
+          {
+            "flag": "erdem_spared"
+          }
+        ]
+      },
+      {
+        "id": "reported",
+        "text": "C1_TREE_GUARD_REPORTED",
+        "conditions": [
+          {
+            "flag": "erdem_reported"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C1_TREE_GUARD_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "leyla",
+    "title": "C1_TREE_LEYLA",
+    "options": [
+      {
+        "id": "told",
+        "text": "C1_TREE_LEYLA_TOLD",
+        "conditions": [
+          {
+            "flag": "aydin_told"
+          }
+        ]
+      },
+      {
+        "id": "pressured",
+        "text": "C1_TREE_LEYLA_PRESSURED",
+        "conditions": [
+          {
+            "flag": "aydin_pressured"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C1_TREE_LEYLA_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "note",
+    "title": "C1_TREE_NOTE",
+    "options": [
+      {
+        "id": "early",
+        "text": "C1_TREE_NOTE_EARLY",
+        "conditions": [
+          {
+            "flag": "file_compromised"
+          }
+        ]
+      },
+      {
+        "id": "late",
+        "text": "C1_TREE_NOTE_LATE",
+        "conditions": [
+          {
+            "flag": "told_vardar"
+          }
+        ]
+      },
+      {
+        "id": "never",
+        "text": "C1_TREE_NOTE_NEVER",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "aras",
+    "title": "C1_TREE_ARAS",
+    "options": [
+      {
+        "id": "admitted",
+        "text": "C1_TREE_ARAS_ADMITTED",
+        "conditions": [
+          {
+            "flag": "aras_admitted"
+          }
+        ]
+      },
+      {
+        "id": "silent",
+        "text": "C1_TREE_ARAS_SILENT",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "vardar",
+    "title": "C1_TREE_VARDAR",
+    "options": [
+      {
+        "id": "cornered",
+        "text": "C1_TREE_VARDAR_CORNERED",
+        "conditions": [
+          {
+            "flag": "vardar_cornered"
+          }
+        ]
+      },
+      {
+        "id": "standing",
+        "text": "C1_TREE_VARDAR_STANDING",
+        "conditions": []
+      }
+    ]
+  }
+]
