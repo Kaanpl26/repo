@@ -39,6 +39,8 @@ func _ready() -> void:
 	_test_case_02()
 	print("== Case 3")
 	_test_case_03()
+	print("== Case 4")
+	_test_case_04()
 	print("== Decision tree")
 	_test_decision_tree()
 	print("== Office")
@@ -996,6 +998,143 @@ func _test_case_03() -> void:
 	_open_case("case_01")
 
 
+# The whole of Case 4, the finale.
+func _test_case_04() -> void:
+	Profile.reset()
+	_open_case("case_04")
+	print("- full playthrough")
+	ok(not CaseDB.location_unlocked("lawoffice"), "other places open after speaking to the prosecutor")
+	var arikan := _talk("arikan")
+	_press(arikan, "knew")
+	_ask(arikan, "report")
+	_ask(arikan, "her")
+	_pick(arikan, "bye")
+	_visit("prison")
+	for i in range(1, 7):
+		ok(GameState.has_evidence("E0%d" % i), "prison evidence E0%d collected" % i)
+	ok(not ("T_NUR_TIP" in GameState.testimony), "no message from Dr. Nur without the Case 3 decision")
+	ok(_look_up_all() == 3, "three searches open after the visiting block")
+	ok(not CaseDB.location_unlocked("lighthouse"), "the lighthouse is not on the map yet")
+	_connect_all()
+	var yildiz := _talk("yildiz")
+	_press(yildiz, "fall")
+	ok(_confront(yildiz, "fall", "I_NOT_FALL"), "Yıldız: the injuries break his report")
+	_press(yildiz, "alone")
+	ok(_confront(yildiz, "alone", "I_ALONE"), "Yıldız: the call breaks him")
+	_ask(yildiz, "deal")
+	ok("T_YILDIZ_3" in GameState.testimony and GameState.has_flag("yildiz_deal"), "the deal gets the voice on the telephone")
+	_press(yildiz, "camera")
+	_pick(yildiz, "bye")
+
+	_visit("lawoffice")
+	for id in ["E07", "E08", "E09", "E10"]:
+		ok(GameState.has_evidence(id), "law office evidence %s collected" % id)
+	ok(_look_up_all() == 1 and GameState.has_evidence("E23"), "the bank can be searched after the agreement")
+	_connect_all()
+	ok(CaseDB.location_unlocked("lighthouse"), "letter and key board put the lighthouse on the map")
+	_visit("chief")
+	for id in ["E11", "E12", "E13"]:
+		ok(GameState.has_evidence(id), "chief's office evidence %s collected" % id)
+	_connect_all()
+	var chief := _talk("soykan")
+	_press(chief, "where")
+	ok(_confront(chief, "where", "I_PRESENT"), "the chief: the visitors' book breaks his alibi")
+	_ask(chief, "notes")
+	_ask(chief, "hold")
+	ok(GameState.has_flag("chief_kept_out"), "decision: the chief is told nothing")
+	_press(chief, "order")
+	_pick(chief, "bye")
+	_visit("lawoffice")
+	var karaca := _talk("karaca")
+	_press(karaca, "visit")
+	_press(karaca, "fener")
+	ok(_confront(karaca, "fener", "I_COMMITTEE"), "Karaca: the committee")
+	_press(karaca, "evening")
+	_pick(karaca, "bye")
+	var aras := _talk("aras")
+	_press(aras, "fener")
+	ok(_confront(aras, "fener", "E12"), "Aras: the photograph")
+	_ask(aras, "hold")
+	ok(GameState.has_flag("aras_held"), "decision about Aras recorded")
+	_pick(aras, "bye")
+
+	_visit("lighthouse")
+	for id in ["E14", "E15", "E16", "E17"]:
+		ok(GameState.has_evidence(id), "lighthouse evidence %s collected" % id)
+	ok(GameState.has_flag("file_found") and not GameState.has_evidence("E14X"), "the ledger is intact")
+	_connect_all()
+	for id in CaseDB.insights:
+		ok(GameState.has_insight(id), "conclusion %s can be reached" % id)
+	for id in CaseDB.countable_evidence():
+		ok(GameState.has_evidence(id), "evidence %s was found on the main path" % id)
+	for id in CaseDB.meta["testimony"]:
+		if id != "T_NUR_TIP":
+			ok(id in GameState.testimony, "statement %s was recorded on the main path" % id)
+
+	print("- verdicts")
+	var proof := {"motive": "I_MOTIVE", "opportunity": "I_PRESENT", "link": "I_BLIND"}
+	ok(Verdict.resolve(Verdict.ACCIDENT, {}) == "E", "she fell -> ending E")
+	ok(Verdict.resolve("karaca", proof) == "C", "Karaca takes the fall -> ending C")
+	ok(Verdict.resolve("yildiz", proof) == "D" and Verdict.resolve("aras", proof) == "D", "the hand or the payer -> ending D")
+	ok(Verdict.resolve("soykan", {"motive": "I_MOTIVE", "link": "I_BLIND"}) == "B", "one proof missing -> ending B")
+	ok(Verdict.resolve("soykan", {"motive": "I_AUTHORISED", "opportunity": "I_PRESENT", "link": "I_ALONE"}) == "A", "the alternative conclusions count")
+	ok(Verdict.resolve("soykan", proof) == "A", "full proof and the ledger -> ending A")
+	ok(Verdict.epilogue("A").size() == 3, "the true ending has a line for each decision")
+	_test_wall_layout("Case 4")
+	GameState.set_flag("case_solved")
+	for o in CaseDB.meta["objectives"]:
+		ok(GameState.check(o.get("show", [])) and GameState.check(o["done"]), "objective %s is complete at the end" % o["id"])
+	ok(Hints.next(GameState.location).is_empty(), "no hints remain when the case is solved")
+	var rating := Verdict.rating()
+	ok(rating["evidence"] == rating["evidence_total"] and rating["insights"] == rating["insights_total"], "rating counts everything found")
+	Profile.flags["case_01.file_found"] = true
+	Profile.flags["case_02.file_found"] = true
+	Profile.flags["case_03.file_found"] = true
+	Profile.record_verdict("case_04", "A", true, rating, ["file_found"])
+	var earned := Achievements.evaluate("A")
+	for id in ["C4_SOLVED", "C4_DEAL", "C4_GREEN", "SEASON"]:
+		ok(id in earned or Profile.achievements.has(id), "achievement %s earned on the main path" % id)
+
+	print("- alternative branches")
+	# Telling the chief where you are going costs the ledger, not the case.
+	_open_case("case_04")
+	GameState.set_flag("arikan_met")
+	_visit("prison")
+	_visit("lawoffice")
+	_visit("chief")
+	chief = _talk("soykan")
+	_ask(chief, "notes")
+	_ask(chief, "inform")
+	_look_up_all()
+	_connect_all()
+	_visit("lighthouse")
+	ok(GameState.has_evidence("E14X") and not GameState.has_evidence("E14") and GameState.has_flag("ledger_burnt"), "the ledger is ash when the chief was told")
+	ok(GameState.has_evidence("E15"), "the torn page survives in the lamp housing")
+	_connect_all()
+	ok(GameState.has_insight("I_MOTIVE") and not GameState.has_insight("I_AUTHORISED"), "the motive can still be shown")
+	ok(Verdict.resolve("soykan", proof) == "B", "with the ledger burnt the best verdict is ending B")
+
+	# Threatening Yıldız loses his statement only.
+	_open_case("case_04")
+	GameState.set_flag("arikan_met")
+	_visit("prison")
+	_look_up_all()
+	_connect_all()
+	yildiz = _talk("yildiz")
+	_confront(yildiz, "fall", "E02")
+	_confront(yildiz, "alone", "E21")
+	_ask(yildiz, "threat")
+	ok(GameState.has_flag("yildiz_threatened") and "T_YILDIZ_3" not in GameState.testimony, "threatening Yıldız loses the voice on the telephone")
+
+	# The Case 3 decision about Dr. Nur brings his message.
+	_open_case("case_04")
+	Profile.flags["case_03.nur_trusted"] = true
+	_visit("prison")
+	ok("T_NUR_TIP" in GameState.testimony, "trusting Dr. Nur in Case 3 earns his message in Case 4")
+	Profile.reset()
+	_open_case("case_01")
+
+
 # Decision trees: every case has one, texts exist, and a verdict records a route.
 func _test_decision_tree() -> void:
 	Profile.reset()
@@ -1083,7 +1222,7 @@ func _test_office() -> void:
 	ok("LEDGER_WALL" in Achievements.evaluate() or Profile.achievements.has("LEDGER_WALL"), "Ledger achievement earned")
 	_test_wall_layout("Ledger")
 	ok(Profile.achievements.has("LEDGER_CHIEF"), "hidden achievement for noticing the chief")
-	ok(Hints.current_objective().get("id") == "O_C4", "the office points at the next case")
+	ok(Hints.current_objective().get("id") == "O_C4", "the office points at the last case")
 	ok(props.filter(func(p): return GameState.check(p["conditions"])).size() == 4, "four mementos: both cases, the front page and the promotion")
 
 	# Missing pieces stay missing: no file in Case 1, so no slip on the wall.

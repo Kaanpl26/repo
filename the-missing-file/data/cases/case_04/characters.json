@@ -1,0 +1,41 @@
+{
+  "mira": {
+    "name": "C4_NAME_MIRA",
+    "voice": 1.24
+  },
+  "arikan": {
+    "name": "C4_NAME_ARIKAN",
+    "portrait": "res://assets/portraits/arikan.png",
+    "dialogue": "arikan.json",
+    "voice": 1.08,
+    "patience": 3
+  },
+  "yildiz": {
+    "name": "C4_NAME_YILDIZ",
+    "portrait": "res://assets/portraits/yildiz.png",
+    "dialogue": "yildiz.json",
+    "voice": 0.9,
+    "patience": 2
+  },
+  "karaca": {
+    "name": "C4_NAME_KARACA",
+    "portrait": "res://assets/portraits/karaca.png",
+    "dialogue": "karaca.json",
+    "voice": 0.8,
+    "patience": 2
+  },
+  "aras": {
+    "name": "C4_NAME_ARAS",
+    "portrait": "res://assets/portraits/aras.png",
+    "dialogue": "aras.json",
+    "voice": 0.76,
+    "patience": 2
+  },
+  "soykan": {
+    "name": "C4_NAME_SOYKAN",
+    "portrait": "res://assets/portraits/soykan.png",
+    "dialogue": "soykan.json",
+    "voice": 0.66,
+    "patience": 3
+  }
+}

@@ -361,7 +361,8 @@ Each milestone ends with something the owner can look at and approve.
 - [x] v1.4.1 checked on the owner's phone
 - [x] v1.5.0: Case 3 “File 12-C”: four rooms, five interviews, 24 pieces of evidence, 13 conclusions, 4 database searches, three carried decisions, five endings, 7 achievements; 3 new Ledger cards and 2 Ledger conclusions; a case can rename the “accident” verdict (here: natural death)
 - [x] v1.5.1: Decisions screen (after every verdict and from the case list): each decision point of the case with its outcomes; the last route is highlighted, routes never taken stay hidden; data in data/cases/<case>/tree.json
-- [ ] v1.5.1 checked on the owner's phone
+- [x] v1.6.0: Case 4 “File 103-F”, the finale: four rooms, five interviews, 21 pieces of evidence, 11 conclusions, 4 database searches, three decisions, five endings, 6 achievements; decision tree for the case
+- [ ] v1.5.1 and v1.6.0 checked on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

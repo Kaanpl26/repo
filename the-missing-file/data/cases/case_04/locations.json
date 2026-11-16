@@ -1,0 +1,449 @@
+{
+  "prison": {
+    "name": "C4_LOC_PRISON",
+    "background": "res://assets/scenes/prison.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "basement",
+    "hotspots": [
+      {
+        "id": "camera",
+        "type": "detail",
+        "rect": [
+          640,
+          150,
+          140,
+          100
+        ],
+        "text": "C4_D_CAMERA"
+      },
+      {
+        "id": "stairs",
+        "type": "evidence",
+        "rect": [
+          110,
+          330,
+          640,
+          540
+        ],
+        "evidence": "E02"
+      },
+      {
+        "id": "arikan",
+        "type": "talk",
+        "rect": [
+          920,
+          270,
+          240,
+          380
+        ],
+        "character": "arikan"
+      },
+      {
+        "id": "visitors",
+        "type": "evidence",
+        "rect": [
+          1290,
+          558,
+          210,
+          84
+        ],
+        "evidence": "E03"
+      },
+      {
+        "id": "report",
+        "type": "evidence",
+        "rect": [
+          1552,
+          552,
+          146,
+          100
+        ],
+        "evidence": "E01"
+      },
+      {
+        "id": "roster",
+        "type": "evidence",
+        "rect": [
+          1740,
+          240,
+          170,
+          230
+        ],
+        "evidence": "E06"
+      },
+      {
+        "id": "monitor",
+        "type": "evidence",
+        "rect": [
+          1980,
+          500,
+          220,
+          140
+        ],
+        "evidence": "E04"
+      },
+      {
+        "id": "tray",
+        "type": "evidence",
+        "rect": [
+          2260,
+          565,
+          190,
+          80
+        ],
+        "evidence": "E05"
+      },
+      {
+        "id": "yildiz",
+        "type": "talk",
+        "rect": [
+          2460,
+          270,
+          240,
+          380
+        ],
+        "character": "yildiz"
+      }
+    ],
+    "hints": [],
+    "on_enter": [
+      {
+        "conditions": [
+          {
+            "profile_flag": "case_03.nur_trusted"
+          }
+        ],
+        "effects": [
+          {
+            "add_testimony": "T_NUR_TIP"
+          }
+        ],
+        "caption": "C4_ENTER_NUR"
+      }
+    ]
+  },
+  "lawoffice": {
+    "name": "C4_LOC_LAWOFFICE",
+    "background": "res://assets/scenes/lawoffice.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "hotspots": [
+      {
+        "id": "window",
+        "type": "detail",
+        "rect": [
+          124,
+          134,
+          412,
+          472
+        ],
+        "text": "C4_D_WINDOW"
+      },
+      {
+        "id": "books",
+        "type": "detail",
+        "rect": [
+          2010,
+          150,
+          400,
+          680
+        ],
+        "text": "C4_D_BOOKS"
+      },
+      {
+        "id": "plate",
+        "type": "evidence",
+        "rect": [
+          640,
+          270,
+          210,
+          110
+        ],
+        "evidence": "E08"
+      },
+      {
+        "id": "keys",
+        "type": "evidence",
+        "rect": [
+          900,
+          300,
+          150,
+          110
+        ],
+        "evidence": "E10"
+      },
+      {
+        "id": "karaca",
+        "type": "talk",
+        "rect": [
+          1300,
+          280,
+          240,
+          370
+        ],
+        "character": "karaca"
+      },
+      {
+        "id": "diary",
+        "type": "evidence",
+        "rect": [
+          1560,
+          560,
+          190,
+          84
+        ],
+        "evidence": "E07"
+      },
+      {
+        "id": "folder",
+        "type": "evidence",
+        "rect": [
+          1778,
+          585,
+          134,
+          74
+        ],
+        "evidence": "E09"
+      },
+      {
+        "id": "aras",
+        "type": "talk",
+        "rect": [
+          2520,
+          280,
+          240,
+          400
+        ],
+        "character": "aras"
+      }
+    ],
+    "hints": [],
+    "unlock": [
+      {
+        "flag": "arikan_met"
+      }
+    ]
+  },
+  "chief": {
+    "name": "C4_LOC_CHIEF",
+    "background": "res://assets/scenes/chief.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "hotspots": [
+      {
+        "id": "flag",
+        "type": "detail",
+        "rect": [
+          180,
+          150,
+          300,
+          680
+        ],
+        "text": "C4_D_FLAG"
+      },
+      {
+        "id": "phone",
+        "type": "detail",
+        "rect": [
+          1852,
+          580,
+          86,
+          74
+        ],
+        "text": "C4_D_PHONE"
+      },
+      {
+        "id": "window",
+        "type": "detail",
+        "rect": [
+          2234,
+          124,
+          492,
+          492
+        ],
+        "text": "C4_D_WINDOW"
+      },
+      {
+        "id": "cabinet",
+        "type": "detail",
+        "rect": [
+          2100,
+          560,
+          110,
+          270
+        ],
+        "text": "C4_D_CABINET"
+      },
+      {
+        "id": "photo",
+        "type": "evidence",
+        "rect": [
+          560,
+          200,
+          250,
+          190
+        ],
+        "evidence": "E12"
+      },
+      {
+        "id": "carlog",
+        "type": "evidence",
+        "rect": [
+          1100,
+          565,
+          190,
+          78
+        ],
+        "evidence": "E11"
+      },
+      {
+        "id": "soykan",
+        "type": "talk",
+        "rect": [
+          1320,
+          280,
+          240,
+          370
+        ],
+        "character": "soykan"
+      },
+      {
+        "id": "order",
+        "type": "evidence",
+        "rect": [
+          1692,
+          548,
+          146,
+          104
+        ],
+        "evidence": "E13"
+      }
+    ],
+    "hints": [],
+    "unlock": [
+      {
+        "flag": "arikan_met"
+      }
+    ]
+  },
+  "lighthouse": {
+    "name": "C4_LOC_LIGHTHOUSE",
+    "background": "res://assets/scenes/lighthouse.png",
+    "width": 2880,
+    "height": 1080,
+    "start_x": 1500,
+    "ambience": "rain",
+    "hotspots": [
+      {
+        "id": "lamp",
+        "type": "detail",
+        "rect": [
+          1380,
+          240,
+          240,
+          380
+        ],
+        "text": "C4_D_LAMP"
+      },
+      {
+        "id": "hatch",
+        "type": "detail",
+        "rect": [
+          2610,
+          640,
+          240,
+          190
+        ],
+        "text": "C4_D_HATCH"
+      },
+      {
+        "id": "window",
+        "type": "detail",
+        "rect": [
+          140,
+          180,
+          240,
+          420
+        ],
+        "text": "C4_D_WINDOW"
+      },
+      {
+        "id": "box",
+        "type": "evidence",
+        "rect": [
+          420,
+          700,
+          280,
+          130
+        ],
+        "evidence": "E16"
+      },
+      {
+        "id": "ledger",
+        "type": "evidence",
+        "rect": [
+          1020,
+          620,
+          220,
+          90
+        ],
+        "evidence": "E14",
+        "conditions": [
+          {
+            "not_flag": "chief_informed"
+          }
+        ]
+      },
+      {
+        "id": "ledger_burnt",
+        "type": "evidence",
+        "rect": [
+          1020,
+          620,
+          220,
+          90
+        ],
+        "evidence": "E14X",
+        "conditions": [
+          {
+            "flag": "chief_informed"
+          }
+        ]
+      },
+      {
+        "id": "page",
+        "type": "evidence",
+        "rect": [
+          1430,
+          690,
+          140,
+          90
+        ],
+        "evidence": "E15"
+      },
+      {
+        "id": "can",
+        "type": "evidence",
+        "rect": [
+          2230,
+          650,
+          240,
+          180
+        ],
+        "evidence": "E17"
+      }
+    ],
+    "hints": [],
+    "unlock": [
+      {
+        "has_insight": "I_LIGHTHOUSE"
+      }
+    ]
+  }
+}

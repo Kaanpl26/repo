@@ -129,3 +129,20 @@ Accuse **Nilgün Soylu** with:
 **Endings:** A full proof with the file; B a proof missing or the file reported through the chief; C accusing Dr. Nur; D accusing Cem or Hatice; E signing it as a natural death.
 
 **Carried forward:** whether Nur was trusted, whether the chief got your notes, how you left Hatice, and whether you saw the chief's name in the file and the register.
+
+---
+
+# Case 4 — File 103-F (spoilers)
+
+**The name to give the prosecutor:** Emniyet Müdürü Halil Soykan. He authorised every payment since 1998 and ordered Dr. Vardar's death; prison officer Kenan Yıldız was the hand.
+
+**Shortest route to the true ending (A, “Under the Lamp”)**
+
+1. Prison: speak to Savcı Arıkan, collect all six items. Database: run the three searches.
+2. Law office: plate, key board, appointment book, agreement. Board: connect **Her Unsent Letter + Key Board** to put the lighthouse on the map.
+3. Chief's office: car log, photograph, transfer order. When he asks where you are going, answer **“The prosecutor has the file”**. If you tell him, the ledger is burnt before you reach it and the best verdict is ending B.
+4. Lighthouse: ledger, torn page, tin box, petrol can.
+5. Board: Motive = *She was going to give them his name* or *The name on the page*. Opportunity = *He was in the building* (Visitors' Book + Official Car Log). Link = *He switched the camera off himself* or *The order to be alone with her*.
+6. Case File → give the prosecutor Halil Soykan with those three conclusions.
+
+**Endings:** A full proof with the ledger intact; B a proof missing or the ledger burnt; C Nedim Karaca takes the fall; D Yıldız or Aras; E signing the prison's report.

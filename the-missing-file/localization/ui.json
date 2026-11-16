@@ -926,5 +926,53 @@
   "TREE_VERDICT": {
     "en": "The verdict",
     "tr": "Karar"
+  },
+  "ACH_C4_SOLVED_TITLE": {
+    "en": "Under the Lamp",
+    "tr": "Lambanın Altında"
+  },
+  "ACH_C4_SOLVED_DESC": {
+    "en": "Close File 103-F with the ledger intact.",
+    "tr": "Dosya 103-F'yi defter sağlamken kapatın."
+  },
+  "ACH_C4_ALL_ENDINGS_TITLE": {
+    "en": "Every Verdict: 103-F",
+    "tr": "Bütün Kararlar: 103-F"
+  },
+  "ACH_C4_ALL_ENDINGS_DESC": {
+    "en": "See all five endings of File 103-F.",
+    "tr": "Dosya 103-F'nin beş sonunu da görün."
+  },
+  "ACH_C4_NO_HINTS_TITLE": {
+    "en": "Her Own Detective",
+    "tr": "Kendi Dedektifi"
+  },
+  "ACH_C4_NO_HINTS_DESC": {
+    "en": "Solve File 103-F without using a hint.",
+    "tr": "Dosya 103-F'yi hiç ipucu kullanmadan çözün."
+  },
+  "ACH_C4_DEAL_TITLE": {
+    "en": "The Hand Speaks",
+    "tr": "El Konuşuyor"
+  },
+  "ACH_C4_DEAL_DESC": {
+    "en": "Get Kenan Yıldız to describe the voice on the telephone.",
+    "tr": "Kenan Yıldız'a telefondaki sesi anlattırın."
+  },
+  "ACH_C4_GREEN_TITLE": {
+    "en": "Green Ink",
+    "tr": "Yeşil Mürekkep"
+  },
+  "ACH_C4_GREEN_DESC": {
+    "en": "Match the initials on your transfer order to the ledger.",
+    "tr": "Tayin emrinizdeki parafı defterle eşleştirin."
+  },
+  "ACH_SEASON_TITLE": {
+    "en": "The Lighthouse Ledger",
+    "tr": "Fener Defteri"
+  },
+  "ACH_SEASON_DESC": {
+    "en": "Recover every file from the routing slip and name the man who authorised the payments.",
+    "tr": "Sevk pusulasındaki bütün dosyaları bulun ve ödemeleri onaylayan adamın adını verin."
   }
 }

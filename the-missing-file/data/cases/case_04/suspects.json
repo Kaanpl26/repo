@@ -1,0 +1,130 @@
+{
+  "yildiz": {
+    "role": "C4_SUS_YILDIZ_ROLE",
+    "bio": "C4_SUS_YILDIZ_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_YILDIZ_1"
+          }
+        ],
+        "text": "C4_SUS_YILDIZ_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_NOT_FALL"
+          }
+        ],
+        "text": "C4_SUS_YILDIZ_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_PAID"
+          }
+        ],
+        "text": "C4_SUS_YILDIZ_N3"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_ALONE"
+          }
+        ],
+        "text": "C4_SUS_YILDIZ_N4"
+      }
+    ]
+  },
+  "karaca": {
+    "role": "C4_SUS_KARACA_ROLE",
+    "bio": "C4_SUS_KARACA_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_KARACA_1"
+          }
+        ],
+        "text": "C4_SUS_KARACA_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_KARACA"
+          }
+        ],
+        "text": "C4_SUS_KARACA_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_KARACA_2"
+          }
+        ],
+        "text": "C4_SUS_KARACA_N3"
+      }
+    ]
+  },
+  "aras": {
+    "role": "C4_SUS_ARAS_ROLE",
+    "bio": "C4_SUS_ARAS_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_ARAS_1"
+          }
+        ],
+        "text": "C4_SUS_ARAS_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_ARAS_2"
+          }
+        ],
+        "text": "C4_SUS_ARAS_N2"
+      }
+    ]
+  },
+  "soykan": {
+    "role": "C4_SUS_SOYKAN_ROLE",
+    "bio": "C4_SUS_SOYKAN_BIO",
+    "notes": [
+      {
+        "conditions": [
+          {
+            "has_testimony": "T_SOYKAN_5"
+          }
+        ],
+        "text": "C4_SUS_SOYKAN_N1"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_PRESENT"
+          }
+        ],
+        "text": "C4_SUS_SOYKAN_N2"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_BLIND"
+          }
+        ],
+        "text": "C4_SUS_SOYKAN_N3"
+      },
+      {
+        "conditions": [
+          {
+            "has_insight": "I_AUTHORISED"
+          }
+        ],
+        "text": "C4_SUS_SOYKAN_N4"
+      }
+    ]
+  }
+}

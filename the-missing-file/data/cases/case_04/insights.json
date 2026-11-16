@@ -1,0 +1,139 @@
+{
+  "I_NOT_FALL": {
+    "cards": [
+      "E01",
+      "E02"
+    ],
+    "title": "C4_I_NOT_FALL_TITLE",
+    "text": "C4_I_NOT_FALL",
+    "wrong": [
+      "C4_I_NOT_FALL_W1",
+      "C4_I_NOT_FALL_W2"
+    ]
+  },
+  "I_BLIND": {
+    "cards": [
+      "E04",
+      "E22"
+    ],
+    "title": "C4_I_BLIND_TITLE",
+    "text": "C4_I_BLIND",
+    "wrong": [
+      "C4_I_BLIND_W1",
+      "C4_I_BLIND_W2"
+    ]
+  },
+  "I_ALONE": {
+    "cards": [
+      "E06",
+      "E21"
+    ],
+    "title": "C4_I_ALONE_TITLE",
+    "text": "C4_I_ALONE",
+    "wrong": [
+      "C4_I_ALONE_W1",
+      "C4_I_ALONE_W2"
+    ]
+  },
+  "I_PRESENT": {
+    "cards": [
+      "E03",
+      "E11"
+    ],
+    "title": "C4_I_PRESENT_TITLE",
+    "text": "C4_I_PRESENT",
+    "wrong": [
+      "C4_I_PRESENT_W1",
+      "C4_I_PRESENT_W2"
+    ]
+  },
+  "I_PAID": {
+    "cards": [
+      "E09",
+      "E23"
+    ],
+    "title": "C4_I_PAID_TITLE",
+    "text": "C4_I_PAID",
+    "wrong": [
+      "C4_I_PAID_W1",
+      "C4_I_PAID_W2"
+    ]
+  },
+  "I_LIGHTHOUSE": {
+    "cards": [
+      "E05",
+      "E10"
+    ],
+    "title": "C4_I_LIGHTHOUSE_TITLE",
+    "text": "C4_I_LIGHTHOUSE",
+    "wrong": [
+      "C4_I_LIGHTHOUSE_W1",
+      "C4_I_LIGHTHOUSE_W2"
+    ],
+    "effects": [
+      {
+        "set_flag": "lighthouse_known"
+      }
+    ]
+  },
+  "I_AUTHORISED": {
+    "cards": [
+      "E14",
+      "E15"
+    ],
+    "title": "C4_I_AUTHORISED_TITLE",
+    "text": "C4_I_AUTHORISED",
+    "wrong": [
+      "C4_I_AUTHORISED_W1",
+      "C4_I_AUTHORISED_W2"
+    ]
+  },
+  "I_MOTIVE": {
+    "cards": [
+      "E05",
+      "E15"
+    ],
+    "title": "C4_I_MOTIVE_TITLE",
+    "text": "C4_I_MOTIVE",
+    "wrong": [
+      "C4_I_MOTIVE_W1",
+      "C4_I_MOTIVE_W2"
+    ]
+  },
+  "I_COMMITTEE": {
+    "cards": [
+      "E12",
+      "E08"
+    ],
+    "title": "C4_I_COMMITTEE_TITLE",
+    "text": "C4_I_COMMITTEE",
+    "wrong": [
+      "C4_I_COMMITTEE_W1",
+      "C4_I_COMMITTEE_W2"
+    ]
+  },
+  "I_KARACA": {
+    "cards": [
+      "E07",
+      "E03"
+    ],
+    "title": "C4_I_KARACA_TITLE",
+    "text": "C4_I_KARACA",
+    "wrong": [
+      "C4_I_KARACA_W1",
+      "C4_I_KARACA_W2"
+    ]
+  },
+  "I_SIGNATURE": {
+    "cards": [
+      "E13",
+      "E14"
+    ],
+    "title": "C4_I_SIGNATURE_TITLE",
+    "text": "C4_I_SIGNATURE",
+    "wrong": [
+      "C4_I_SIGNATURE_W1",
+      "C4_I_SIGNATURE_W2"
+    ]
+  }
+}

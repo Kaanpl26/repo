@@ -1,0 +1,269 @@
+{
+  "id": "case_04",
+  "title": "C4_TITLE",
+  "start_location": "prison",
+  "timeline_title": "C4_TIMELINE_TITLE",
+  "intro": [
+    "C4_INTRO_1",
+    "C4_INTRO_2",
+    "C4_INTRO_3"
+  ],
+  "testimony": {
+    "T_ARIKAN_1": {
+      "speaker": "arikan",
+      "title": "C4_T_ARIKAN_1_TITLE",
+      "text": "C4_T_ARIKAN_1"
+    },
+    "T_YILDIZ_1": {
+      "speaker": "yildiz",
+      "title": "C4_T_YILDIZ_1_TITLE",
+      "text": "C4_T_YILDIZ_1"
+    },
+    "T_YILDIZ_2": {
+      "speaker": "yildiz",
+      "title": "C4_T_YILDIZ_2_TITLE",
+      "text": "C4_T_YILDIZ_2"
+    },
+    "T_YILDIZ_3": {
+      "speaker": "yildiz",
+      "title": "C4_T_YILDIZ_3_TITLE",
+      "text": "C4_T_YILDIZ_3"
+    },
+    "T_KARACA_1": {
+      "speaker": "karaca",
+      "title": "C4_T_KARACA_1_TITLE",
+      "text": "C4_T_KARACA_1"
+    },
+    "T_KARACA_2": {
+      "speaker": "karaca",
+      "title": "C4_T_KARACA_2_TITLE",
+      "text": "C4_T_KARACA_2"
+    },
+    "T_ARAS_1": {
+      "speaker": "aras",
+      "title": "C4_T_ARAS_1_TITLE",
+      "text": "C4_T_ARAS_1"
+    },
+    "T_ARAS_2": {
+      "speaker": "aras",
+      "title": "C4_T_ARAS_2_TITLE",
+      "text": "C4_T_ARAS_2"
+    },
+    "T_SOYKAN_5": {
+      "speaker": "soykan",
+      "title": "C4_T_SOYKAN_5_TITLE",
+      "text": "C4_T_SOYKAN_5"
+    },
+    "T_SOYKAN_6": {
+      "speaker": "soykan",
+      "title": "C4_T_SOYKAN_6_TITLE",
+      "text": "C4_T_SOYKAN_6"
+    },
+    "T_NUR_TIP": {
+      "speaker": "mira",
+      "title": "C4_T_NUR_TIP_TITLE",
+      "text": "C4_T_NUR_TIP"
+    }
+  },
+  "objectives": [
+    {
+      "id": "O_ARIKAN",
+      "text": "C4_OBJ_ARIKAN",
+      "show": [],
+      "done": [
+        {
+          "flag": "arikan_met"
+        }
+      ]
+    },
+    {
+      "id": "O_SCENE",
+      "text": "C4_OBJ_SCENE",
+      "show": [],
+      "done": [
+        {
+          "has_evidence": "E01"
+        },
+        {
+          "has_evidence": "E02"
+        },
+        {
+          "has_evidence": "E03"
+        },
+        {
+          "has_evidence": "E04"
+        },
+        {
+          "has_evidence": "E05"
+        },
+        {
+          "has_evidence": "E06"
+        }
+      ]
+    },
+    {
+      "id": "O_FALL",
+      "text": "C4_OBJ_FALL",
+      "show": [
+        {
+          "flag": "arikan_met"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_NOT_FALL"
+        }
+      ]
+    },
+    {
+      "id": "O_ORDER",
+      "text": "C4_OBJ_ORDER",
+      "show": [
+        {
+          "has_insight": "I_NOT_FALL"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_ALONE"
+        },
+        {
+          "has_insight": "I_BLIND"
+        }
+      ]
+    },
+    {
+      "id": "O_LEDGER",
+      "text": "C4_OBJ_LEDGER",
+      "show": [
+        {
+          "has_evidence": "E05"
+        }
+      ],
+      "done": [
+        {
+          "has_insight": "I_LIGHTHOUSE"
+        }
+      ]
+    },
+    {
+      "id": "O_BOOK",
+      "text": "C4_OBJ_BOOK",
+      "show": [
+        {
+          "has_insight": "I_LIGHTHOUSE"
+        }
+      ],
+      "done": [
+        {
+          "has_evidence": "E15"
+        }
+      ]
+    },
+    {
+      "id": "O_ACCUSE",
+      "text": "C4_OBJ_ACCUSE",
+      "show": [
+        {
+          "has_insight": "I_NOT_FALL"
+        }
+      ],
+      "done": [
+        {
+          "flag": "case_solved"
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "conditions": [
+        {
+          "not_flag": "arikan_met"
+        }
+      ],
+      "text": "C4_HINT_ARIKAN"
+    },
+    {
+      "conditions": [
+        {
+          "flag": "arikan_met"
+        },
+        {
+          "not_flag": "visited_lawoffice"
+        }
+      ],
+      "text": "C4_HINT_MAP"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_NOT_FALL"
+        },
+        {
+          "flag": "yildiz_met"
+        },
+        {
+          "not_flag": "yildiz_grip"
+        }
+      ],
+      "text": "C4_HINT_YILDIZ"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_ALONE"
+        },
+        {
+          "flag": "yildiz_grip"
+        },
+        {
+          "not_flag": "yildiz_decided"
+        }
+      ],
+      "text": "C4_HINT_YILDIZ2"
+    },
+    {
+      "conditions": [
+        {
+          "has_evidence": "E12"
+        },
+        {
+          "flag": "aras_met"
+        },
+        {
+          "not_flag": "aras_talked"
+        }
+      ],
+      "text": "C4_HINT_ARAS"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_LIGHTHOUSE"
+        },
+        {
+          "not_flag": "visited_lighthouse"
+        }
+      ],
+      "text": "C4_HINT_LIGHTHOUSE"
+    },
+    {
+      "conditions": [
+        {
+          "has_insight": "I_MOTIVE"
+        },
+        {
+          "has_insight": "I_PRESENT"
+        },
+        {
+          "has_insight": "I_BLIND"
+        },
+        {
+          "not_flag": "case_solved"
+        }
+      ],
+      "text": "C4_HINT_ACCUSE"
+    }
+  ]
+}

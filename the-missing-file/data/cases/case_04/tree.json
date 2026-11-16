@@ -1,0 +1,118 @@
+[
+  {
+    "id": "chief",
+    "title": "C4_TREE_CHIEF",
+    "options": [
+      {
+        "id": "kept",
+        "text": "C4_TREE_CHIEF_KEPT",
+        "conditions": [
+          {
+            "flag": "chief_kept_out"
+          }
+        ]
+      },
+      {
+        "id": "informed",
+        "text": "C4_TREE_CHIEF_INFORMED",
+        "conditions": [
+          {
+            "flag": "chief_informed"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C4_TREE_CHIEF_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "yildiz",
+    "title": "C4_TREE_YILDIZ",
+    "options": [
+      {
+        "id": "deal",
+        "text": "C4_TREE_YILDIZ_DEAL",
+        "conditions": [
+          {
+            "flag": "yildiz_deal"
+          }
+        ]
+      },
+      {
+        "id": "threat",
+        "text": "C4_TREE_YILDIZ_THREAT",
+        "conditions": [
+          {
+            "flag": "yildiz_threatened"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C4_TREE_YILDIZ_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "aras",
+    "title": "C4_TREE_ARAS",
+    "options": [
+      {
+        "id": "held",
+        "text": "C4_TREE_ARAS_HELD",
+        "conditions": [
+          {
+            "flag": "aras_held"
+          }
+        ]
+      },
+      {
+        "id": "released",
+        "text": "C4_TREE_ARAS_RELEASED",
+        "conditions": [
+          {
+            "flag": "aras_released"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C4_TREE_ARAS_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "ledger",
+    "title": "C4_TREE_LEDGER",
+    "options": [
+      {
+        "id": "found",
+        "text": "C4_TREE_LEDGER_FOUND",
+        "conditions": [
+          {
+            "flag": "file_found"
+          }
+        ]
+      },
+      {
+        "id": "burnt",
+        "text": "C4_TREE_LEDGER_BURNT",
+        "conditions": [
+          {
+            "flag": "ledger_burnt"
+          }
+        ]
+      },
+      {
+        "id": "never",
+        "text": "C4_TREE_LEDGER_NEVER",
+        "conditions": []
+      }
+    ]
+  }
+]

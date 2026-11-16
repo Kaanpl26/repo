@@ -1,0 +1,46 @@
+[
+  {
+    "id": "R_PHONE",
+    "type": "phone",
+    "query": "C4_R_PHONE",
+    "conditions": [
+      {
+        "has_evidence": "E06"
+      }
+    ],
+    "evidence": "E21"
+  },
+  {
+    "id": "R_CCTV",
+    "type": "phone",
+    "query": "C4_R_CCTV",
+    "conditions": [
+      {
+        "has_evidence": "E04"
+      }
+    ],
+    "evidence": "E22"
+  },
+  {
+    "id": "R_BANK",
+    "type": "company",
+    "query": "C4_R_BANK",
+    "conditions": [
+      {
+        "has_evidence": "E09"
+      }
+    ],
+    "evidence": "E23"
+  },
+  {
+    "id": "R_PERSON",
+    "type": "person",
+    "query": "C4_R_PERSON",
+    "conditions": [
+      {
+        "has_evidence": "E01"
+      }
+    ],
+    "evidence": "E24"
+  }
+]

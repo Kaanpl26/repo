@@ -1,0 +1,296 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "yildiz_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C4_YILDIZ_INTRO_2"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "yildiz_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "fall": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_FALL_1",
+          "effects": [
+            {
+              "add_testimony": "T_YILDIZ_1"
+            }
+          ],
+          "press": "press_fall",
+          "present": {
+            "accept": [
+              "I_NOT_FALL",
+              "E02"
+            ],
+            "next": "grip",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_fall": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_YILDIZ_P_FALL_1"
+        },
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_P_FALL_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "grip": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_YILDIZ_GRIP_1"
+        },
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_GRIP_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_YILDIZ_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "yildiz_grip"
+        }
+      ]
+    },
+    "alone": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_ALONE_1",
+          "mood": "defensive",
+          "press": "press_alone",
+          "present": {
+            "accept": [
+              "I_ALONE",
+              "E21"
+            ],
+            "next": "order",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_alone": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_YILDIZ_P_ALONE_1"
+        },
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_P_ALONE_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "order": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_YILDIZ_ORDER_1"
+        },
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_ORDER_2",
+          "mood": "shaken"
+        },
+        {
+          "s": "mira",
+          "t": "C4_YILDIZ_ORDER_THINK"
+        }
+      ],
+      "choices": [
+        {
+          "id": "deal",
+          "t": "C4_YILDIZ_CHOICE_DEAL",
+          "next": "deal",
+          "effects": [
+            {
+              "set_flag": "yildiz_deal"
+            },
+            {
+              "set_flag": "yildiz_decided"
+            }
+          ]
+        },
+        {
+          "id": "threat",
+          "t": "C4_YILDIZ_CHOICE_THREAT",
+          "next": "threat",
+          "effects": [
+            {
+              "set_flag": "yildiz_threatened"
+            },
+            {
+              "set_flag": "yildiz_decided"
+            }
+          ]
+        }
+      ]
+    },
+    "deal": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_DEAL_1",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_YILDIZ_3"
+            }
+          ]
+        },
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_DEAL_2",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub"
+    },
+    "threat": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_THREAT_1",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "camera": {
+      "lines": [
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_CAMERA_1",
+          "press": "press_camera"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_camera": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C4_YILDIZ_P_CAMERA_1"
+        },
+        {
+          "s": "yildiz",
+          "t": "C4_YILDIZ_P_CAMERA_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "fall",
+          "t": "C4_YILDIZ_Q_FALL",
+          "next": "fall",
+          "conditions": [
+            {
+              "not_flag": "yildiz_grip"
+            }
+          ]
+        },
+        {
+          "id": "alone",
+          "t": "C4_YILDIZ_Q_ALONE",
+          "next": "alone",
+          "conditions": [
+            {
+              "flag": "yildiz_grip"
+            },
+            {
+              "not_flag": "yildiz_decided"
+            }
+          ]
+        },
+        {
+          "id": "camera",
+          "t": "C4_YILDIZ_Q_CAMERA",
+          "next": "camera",
+          "conditions": [
+            {
+              "has_evidence": "E04"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C4_YILDIZ_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

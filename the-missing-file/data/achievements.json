@@ -289,6 +289,74 @@
     ]
   },
   {
+    "id": "C4_SOLVED",
+    "title": "ACH_C4_SOLVED_TITLE",
+    "desc": "ACH_C4_SOLVED_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "ending": "A"
+  },
+  {
+    "id": "C4_ALL_ENDINGS",
+    "title": "ACH_C4_ALL_ENDINGS_TITLE",
+    "desc": "ACH_C4_ALL_ENDINGS_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "all_endings": true
+  },
+  {
+    "id": "C4_NO_HINTS",
+    "title": "ACH_C4_NO_HINTS_TITLE",
+    "desc": "ACH_C4_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "C4_DEAL",
+    "title": "ACH_C4_DEAL_TITLE",
+    "desc": "ACH_C4_DEAL_DESC",
+    "hidden": false,
+    "case": "case_04",
+    "conditions": [
+      {
+        "has_testimony": "T_YILDIZ_3"
+      }
+    ]
+  },
+  {
+    "id": "C4_GREEN",
+    "title": "ACH_C4_GREEN_TITLE",
+    "desc": "ACH_C4_GREEN_DESC",
+    "hidden": true,
+    "case": "case_04",
+    "conditions": [
+      {
+        "has_insight": "I_SIGNATURE"
+      }
+    ]
+  },
+  {
+    "id": "SEASON",
+    "title": "ACH_SEASON_TITLE",
+    "desc": "ACH_SEASON_DESC",
+    "hidden": true,
+    "case": "case_04",
+    "ending": "A",
+    "conditions": [
+      {
+        "profile_flag": "case_01.file_found"
+      },
+      {
+        "profile_flag": "case_02.file_found"
+      },
+      {
+        "profile_flag": "case_03.file_found"
+      }
+    ]
+  },
+  {
     "id": "LEDGER_WALL",
     "title": "ACH_LEDGER_WALL_TITLE",
     "desc": "ACH_LEDGER_WALL_DESC",
