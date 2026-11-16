@@ -126,6 +126,18 @@ func _ui() -> void:
 	game._open_board()
 	var board: Node = game._overlays.get_child(0)
 	await _snap("07_wall_en")
+	var q: Array = Hints.open_questions()
+	if not q.is_empty():
+		board._set_focus(q[0])
+		await _snap("07a_question_en")
+		var pair: Array = CaseDB.insights[q[0]]["cards"]
+		board._wall.string_begin(pair[0], board._wall.note(pair[1]).position + Vector2(60, 60))
+		await _snap("07b_string_en")
+		board._wall.string_cancel()
+		board._set_focus("")
+	board._show_result(CaseDB.insights.keys()[0])
+	await _snap("07c_result_en")
+	board.get_child(board.get_child_count() - 1).queue_free()
 	board._on_hint()
 	await _snap("07_wall_hint_en")
 	board._wall.zoom_by(1.5)

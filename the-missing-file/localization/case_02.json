@@ -1658,5 +1658,197 @@
   "C2_TREE_SOYLU_STANDING": {
     "en": "She kept her composure",
     "tr": "Soğukkanlılığını korudu"
+  },
+  "C2_I_NOT_ACCIDENT_Q": {
+    "en": "Was it really rain and speed?",
+    "tr": "Gerçekten yağmur ve hız mıydı?"
+  },
+  "C2_I_NOT_ACCIDENT_KEY": {
+    "en": "no braking",
+    "tr": "fren izi yok"
+  },
+  "C2_I_NOT_ACCIDENT_WS1": {
+    "en": "He fell asleep at the wheel",
+    "tr": "Direksiyonda uyuyakaldı"
+  },
+  "C2_I_NOT_ACCIDENT_WS2": {
+    "en": "He braked too late",
+    "tr": "Fren yapmakta geç kaldı"
+  },
+  "C2_I_KAPLAN_PAINT_Q": {
+    "en": "Did the site pickup hit him?",
+    "tr": "Şantiye kamyoneti mi çarptı?"
+  },
+  "C2_I_KAPLAN_PAINT_KEY": {
+    "en": "paint",
+    "tr": "boya"
+  },
+  "C2_I_KAPLAN_PAINT_WS1": {
+    "en": "The pickup was repainted",
+    "tr": "Kamyonet yeniden boyandı"
+  },
+  "C2_I_KAPLAN_PAINT_WS2": {
+    "en": "Kaplan hit him reversing",
+    "tr": "Kaplan geri giderken çarptı"
+  },
+  "C2_I_KAPLAN_ALIBI_Q": {
+    "en": "Could Kaplan have left the site?",
+    "tr": "Kaplan şantiyeden çıkabilir miydi?"
+  },
+  "C2_I_KAPLAN_ALIBI_KEY": {
+    "en": "Bora Kaplan",
+    "tr": "Bora Kaplan"
+  },
+  "C2_I_KAPLAN_ALIBI_WS1": {
+    "en": "He signed the tickets in advance",
+    "tr": "Fişleri önceden imzaladı"
+  },
+  "C2_I_KAPLAN_ALIBI_WS2": {
+    "en": "The guard covered for him",
+    "tr": "Bekçi onu kolladı"
+  },
+  "C2_I_CALLER_Q": {
+    "en": "Who rang Kerem at 21:15?",
+    "tr": "Kerem'i 21.15'te kim aradı?"
+  },
+  "C2_I_CALLER_KEY": {
+    "en": "0 282 555 01 00",
+    "tr": "0 282 555 01 00"
+  },
+  "C2_I_CALLER_WS1": {
+    "en": "The prosecutor's office",
+    "tr": "Savcılık"
+  },
+  "C2_I_CALLER_WS2": {
+    "en": "His source, from a call box",
+    "tr": "Kaynağı, ankesörlü telefondan"
+  },
+  "C2_I_LURE_Q": {
+    "en": "Who sent him to the tower gate?",
+    "tr": "Onu kule kapısına kim yolladı?"
+  },
+  "C2_I_LURE_KEY": {
+    "en": "extension 14",
+    "tr": "dahili 14"
+  },
+  "C2_I_LURE_WS1": {
+    "en": "Güven cancelled it himself",
+    "tr": "Güven kendisi iptal etti"
+  },
+  "C2_I_LURE_WS2": {
+    "en": "Two people used the phone",
+    "tr": "Telefonu iki kişi kullandı"
+  },
+  "C2_I_CAR_Q": {
+    "en": "Whose car was waiting at the gate?",
+    "tr": "Kapıda bekleyen araba kimindi?"
+  },
+  "C2_I_CAR_KEY": {
+    "en": "dark red saloon",
+    "tr": "koyu kırmızı sedan"
+  },
+  "C2_I_CAR_WS1": {
+    "en": "A bakery van",
+    "tr": "Bir fırın arabası"
+  },
+  "C2_I_CAR_WS2": {
+    "en": "The plate proves nothing",
+    "tr": "Plaka hiçbir şey kanıtlamaz"
+  },
+  "C2_I_PAINT_Q": {
+    "en": "What hit his car?",
+    "tr": "Arabasına ne çarptı?"
+  },
+  "C2_I_PAINT_KEY": {
+    "en": "dark red paint",
+    "tr": "koyu kırmızı boya"
+  },
+  "C2_I_PAINT_WS1": {
+    "en": "The red barrier",
+    "tr": "Kırmızı bariyer"
+  },
+  "C2_I_PAINT_WS2": {
+    "en": "A bollard, as she says",
+    "tr": "Söylediği gibi bir direk"
+  },
+  "C2_I_LAPTOP_Q": {
+    "en": "Where is his laptop?",
+    "tr": "Dizüstü bilgisayarı nerede?"
+  },
+  "C2_I_LAPTOP_KEY": {
+    "en": "laptop",
+    "tr": "dizüstü"
+  },
+  "C2_I_LAPTOP_WS1": {
+    "en": "Stolen from the wreck",
+    "tr": "Kaza yerinden çalındı"
+  },
+  "C2_I_LAPTOP_WS2": {
+    "en": "The cleaner moved it",
+    "tr": "Temizlikçi kaldırdı"
+  },
+  "C2_I_DRAWER_Q": {
+    "en": "What does the key 117 open?",
+    "tr": "117 numaralı anahtar neyi açıyor?"
+  },
+  "C2_I_DRAWER_KEY": {
+    "en": "117",
+    "tr": "117"
+  },
+  "C2_I_DRAWER_WS1": {
+    "en": "A ferry locker",
+    "tr": "Feribot dolabı"
+  },
+  "C2_I_DRAWER_WS2": {
+    "en": "His flat",
+    "tr": "Dairesi"
+  },
+  "C2_I_READ_Q": {
+    "en": "Who read Kerem's draft?",
+    "tr": "Kerem'in taslağını kim okudu?"
+  },
+  "C2_I_READ_KEY": {
+    "en": "20:31",
+    "tr": "20.31"
+  },
+  "C2_I_READ_WS1": {
+    "en": "Deniz read it herself",
+    "tr": "Deniz kendisi okudu"
+  },
+  "C2_I_READ_WS2": {
+    "en": "Kerem opened it on his phone",
+    "tr": "Kerem telefonundan açtı"
+  },
+  "C2_I_MOTIVE_Q": {
+    "en": "Whose name was Kerem about to write?",
+    "tr": "Kerem kimin adını yazmak üzereydi?"
+  },
+  "C2_I_MOTIVE_KEY": {
+    "en": "2004",
+    "tr": "2004"
+  },
+  "C2_I_MOTIVE_WS1": {
+    "en": "Deniz Aktaş's",
+    "tr": "Deniz Aktaş'ın"
+  },
+  "C2_I_MOTIVE_WS2": {
+    "en": "Nobody's; the story was wrong",
+    "tr": "Kimsenin; haber yanlıştı"
+  },
+  "C2_I_FENER_Q": {
+    "en": "What links 2004 to the tower?",
+    "tr": "2004'le kuleyi ne bağlıyor?"
+  },
+  "C2_I_FENER_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "C2_I_FENER_WS1": {
+    "en": "Two firms share a name",
+    "tr": "İki şirketin adı aynı"
+  },
+  "C2_I_FENER_WS2": {
+    "en": "It is the paper's ad agency",
+    "tr": "Gazetenin reklam ajansı"
   }
 }

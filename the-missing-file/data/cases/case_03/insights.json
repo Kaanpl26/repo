@@ -9,6 +9,12 @@
     "wrong": [
       "C3_I_NOT_NATURAL_W1",
       "C3_I_NOT_NATURAL_W2"
+    ],
+    "question": "C3_I_NOT_NATURAL_Q",
+    "key": "C3_I_NOT_NATURAL_KEY",
+    "wrong_short": [
+      "C3_I_NOT_NATURAL_WS1",
+      "C3_I_NOT_NATURAL_WS2"
     ]
   },
   "I_SECOND_GLASS": {
@@ -21,6 +27,12 @@
     "wrong": [
       "C3_I_SECOND_GLASS_W1",
       "C3_I_SECOND_GLASS_W2"
+    ],
+    "question": "C3_I_SECOND_GLASS_Q",
+    "key": "C3_I_SECOND_GLASS_KEY",
+    "wrong_short": [
+      "C3_I_SECOND_GLASS_WS1",
+      "C3_I_SECOND_GLASS_WS2"
     ]
   },
   "I_ALIVE": {
@@ -33,6 +45,12 @@
     "wrong": [
       "C3_I_ALIVE_W1",
       "C3_I_ALIVE_W2"
+    ],
+    "question": "C3_I_ALIVE_Q",
+    "key": "C3_I_ALIVE_KEY",
+    "wrong_short": [
+      "C3_I_ALIVE_WS1",
+      "C3_I_ALIVE_WS2"
     ]
   },
   "I_CALLER": {
@@ -45,6 +63,12 @@
     "wrong": [
       "C3_I_CALLER_W1",
       "C3_I_CALLER_W2"
+    ],
+    "question": "C3_I_CALLER_Q",
+    "key": "C3_I_CALLER_KEY",
+    "wrong_short": [
+      "C3_I_CALLER_WS1",
+      "C3_I_CALLER_WS2"
     ]
   },
   "I_FISH": {
@@ -57,6 +81,12 @@
     "wrong": [
       "C3_I_FISH_W1",
       "C3_I_FISH_W2"
+    ],
+    "question": "C3_I_FISH_Q",
+    "key": "C3_I_FISH_KEY",
+    "wrong_short": [
+      "C3_I_FISH_WS1",
+      "C3_I_FISH_WS2"
     ]
   },
   "I_VISIT": {
@@ -69,6 +99,12 @@
     "wrong": [
       "C3_I_VISIT_W1",
       "C3_I_VISIT_W2"
+    ],
+    "question": "C3_I_VISIT_Q",
+    "key": "C3_I_VISIT_KEY",
+    "wrong_short": [
+      "C3_I_VISIT_WS1",
+      "C3_I_VISIT_WS2"
     ]
   },
   "I_POISON": {
@@ -81,6 +117,12 @@
     "wrong": [
       "C3_I_POISON_W1",
       "C3_I_POISON_W2"
+    ],
+    "question": "C3_I_POISON_Q",
+    "key": "C3_I_POISON_KEY",
+    "wrong_short": [
+      "C3_I_POISON_WS1",
+      "C3_I_POISON_WS2"
     ]
   },
   "I_BLISTER": {
@@ -93,6 +135,12 @@
     "wrong": [
       "C3_I_BLISTER_W1",
       "C3_I_BLISTER_W2"
+    ],
+    "question": "C3_I_BLISTER_Q",
+    "key": "C3_I_BLISTER_KEY",
+    "wrong_short": [
+      "C3_I_BLISTER_WS1",
+      "C3_I_BLISTER_WS2"
     ]
   },
   "I_NUR_CLEAR": {
@@ -105,6 +153,12 @@
     "wrong": [
       "C3_I_NUR_CLEAR_W1",
       "C3_I_NUR_CLEAR_W2"
+    ],
+    "question": "C3_I_NUR_CLEAR_Q",
+    "key": "C3_I_NUR_CLEAR_KEY",
+    "wrong_short": [
+      "C3_I_NUR_CLEAR_WS1",
+      "C3_I_NUR_CLEAR_WS2"
     ]
   },
   "I_DEAD_WIFE": {
@@ -117,6 +171,12 @@
     "wrong": [
       "C3_I_DEAD_WIFE_W1",
       "C3_I_DEAD_WIFE_W2"
+    ],
+    "question": "C3_I_DEAD_WIFE_Q",
+    "key": "C3_I_DEAD_WIFE_KEY",
+    "wrong_short": [
+      "C3_I_DEAD_WIFE_WS1",
+      "C3_I_DEAD_WIFE_WS2"
     ]
   },
   "I_MOTIVE": {
@@ -129,6 +189,12 @@
     "wrong": [
       "C3_I_MOTIVE_W1",
       "C3_I_MOTIVE_W2"
+    ],
+    "question": "C3_I_MOTIVE_Q",
+    "key": "C3_I_MOTIVE_KEY",
+    "wrong_short": [
+      "C3_I_MOTIVE_WS1",
+      "C3_I_MOTIVE_WS2"
     ]
   },
   "I_LEAK": {
@@ -141,6 +207,12 @@
     "wrong": [
       "C3_I_LEAK_W1",
       "C3_I_LEAK_W2"
+    ],
+    "question": "C3_I_LEAK_Q",
+    "key": "C3_I_LEAK_KEY",
+    "wrong_short": [
+      "C3_I_LEAK_WS1",
+      "C3_I_LEAK_WS2"
     ]
   },
   "I_SIGNATURE": {
@@ -158,6 +230,12 @@
       {
         "set_flag": "signature_seen"
       }
+    ],
+    "question": "C3_I_SIGNATURE_Q",
+    "key": "C3_I_SIGNATURE_KEY",
+    "wrong_short": [
+      "C3_I_SIGNATURE_WS1",
+      "C3_I_SIGNATURE_WS2"
     ]
   }
 }

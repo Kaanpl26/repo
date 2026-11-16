@@ -1490,5 +1490,181 @@
   "C4_TREE_LEDGER_NEVER": {
     "en": "You never climbed the stairs",
     "tr": "O merdiveni hiç çıkmadınız"
+  },
+  "C4_I_NOT_FALL_Q": {
+    "en": "Did she slip?",
+    "tr": "Ayağı mı kaydı?"
+  },
+  "C4_I_NOT_FALL_KEY": {
+    "en": "the stairs",
+    "tr": "merdiven"
+  },
+  "C4_I_NOT_FALL_WS1": {
+    "en": "She jumped",
+    "tr": "Kendini attı"
+  },
+  "C4_I_NOT_FALL_WS2": {
+    "en": "She fainted backwards",
+    "tr": "Bayılıp arkaya düştü"
+  },
+  "C4_I_BLIND_Q": {
+    "en": "Who switched camera 3 off?",
+    "tr": "3 numaralı kamerayı kim kapattı?"
+  },
+  "C4_I_BLIND_KEY": {
+    "en": "camera 3",
+    "tr": "kamera 3"
+  },
+  "C4_I_BLIND_WS1": {
+    "en": "A technician",
+    "tr": "Bir teknisyen"
+  },
+  "C4_I_BLIND_WS2": {
+    "en": "Yıldız, from the control room",
+    "tr": "Kontrol odasından Yıldız"
+  },
+  "C4_I_ALONE_Q": {
+    "en": "Why was Yıldız alone with her?",
+    "tr": "Yıldız onunla neden yalnızdı?"
+  },
+  "C4_I_ALONE_KEY": {
+    "en": "telephone order",
+    "tr": "telefon emri"
+  },
+  "C4_I_ALONE_WS1": {
+    "en": "The escort left on his own",
+    "tr": "Refakatçi kendi gitti"
+  },
+  "C4_I_ALONE_WS2": {
+    "en": "The governor rang",
+    "tr": "Cezaevi müdürü aradı"
+  },
+  "C4_I_PRESENT_Q": {
+    "en": "Where was the chief at ten past six?",
+    "tr": "Müdür altıyı on geçe neredeydi?"
+  },
+  "C4_I_PRESENT_KEY": {
+    "en": "H. Soykan",
+    "tr": "H. Soykan"
+  },
+  "C4_I_PRESENT_WS1": {
+    "en": "Someone used his name",
+    "tr": "Biri onun adını kullandı"
+  },
+  "C4_I_PRESENT_WS2": {
+    "en": "He arrived afterwards",
+    "tr": "Olaydan sonra geldi"
+  },
+  "C4_I_PAID_Q": {
+    "en": "What was Yıldız paid for?",
+    "tr": "Yıldız neyin parasını aldı?"
+  },
+  "C4_I_PAID_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "C4_I_PAID_WS1": {
+    "en": "A loan",
+    "tr": "Bir kredi"
+  },
+  "C4_I_PAID_WS2": {
+    "en": "Pay from the prison",
+    "tr": "Cezaevinden maaş"
+  },
+  "C4_I_LIGHTHOUSE_Q": {
+    "en": "Where is the ledger?",
+    "tr": "Defter nerede?"
+  },
+  "C4_I_LIGHTHOUSE_KEY": {
+    "en": "lighthouse",
+    "tr": "fener"
+  },
+  "C4_I_LIGHTHOUSE_WS1": {
+    "en": "In Karaca's strong room",
+    "tr": "Karaca'nın kasa dairesinde"
+  },
+  "C4_I_LIGHTHOUSE_WS2": {
+    "en": "“Fener” is just a name",
+    "tr": "“Fener” yalnızca bir isim"
+  },
+  "C4_I_AUTHORISED_Q": {
+    "en": "Who authorised the payments?",
+    "tr": "Ödemeleri kim onayladı?"
+  },
+  "C4_I_AUTHORISED_KEY": {
+    "en": "H.S.",
+    "tr": "H.S."
+  },
+  "C4_I_AUTHORISED_WS1": {
+    "en": "Karaca's initials",
+    "tr": "Karaca'nın parafı"
+  },
+  "C4_I_AUTHORISED_WS2": {
+    "en": "Vardar forged the page",
+    "tr": "Sayfayı Vardar düzdü"
+  },
+  "C4_I_MOTIVE_Q": {
+    "en": "Why did she have to die before Monday?",
+    "tr": "Neden pazartesiden önce ölmesi gerekiyordu?"
+  },
+  "C4_I_MOTIVE_KEY": {
+    "en": "torn page",
+    "tr": "koparılmış sayfa"
+  },
+  "C4_I_MOTIVE_WS1": {
+    "en": "For what she did in 1998",
+    "tr": "1998'de yaptığı şey yüzünden"
+  },
+  "C4_I_MOTIVE_WS2": {
+    "en": "She would name Karaca",
+    "tr": "Karaca'yı ele verecekti"
+  },
+  "C4_I_COMMITTEE_Q": {
+    "en": "Who founded Fener?",
+    "tr": "Fener'i kim kurdu?"
+  },
+  "C4_I_COMMITTEE_KEY": {
+    "en": "1997",
+    "tr": "1997"
+  },
+  "C4_I_COMMITTEE_WS1": {
+    "en": "A charity, nothing more",
+    "tr": "Bir hayır işi, o kadar"
+  },
+  "C4_I_COMMITTEE_WS2": {
+    "en": "Aras alone",
+    "tr": "Yalnızca Aras"
+  },
+  "C4_I_KARACA_Q": {
+    "en": "What did Karaca do that evening?",
+    "tr": "Karaca o akşam ne yaptı?"
+  },
+  "C4_I_KARACA_KEY": {
+    "en": "17:00",
+    "tr": "17.00"
+  },
+  "C4_I_KARACA_WS1": {
+    "en": "He pushed her himself",
+    "tr": "Onu kendisi itti"
+  },
+  "C4_I_KARACA_WS2": {
+    "en": "He knew nothing",
+    "tr": "Hiçbir şey bilmiyordu"
+  },
+  "C4_I_SIGNATURE_Q": {
+    "en": "Whose initials are in green ink?",
+    "tr": "Yeşil mürekkepli paraf kimin?"
+  },
+  "C4_I_SIGNATURE_KEY": {
+    "en": "H.S.",
+    "tr": "H.S."
+  },
+  "C4_I_SIGNATURE_WS1": {
+    "en": "Many officers use green",
+    "tr": "Pek çok memur yeşil kullanır"
+  },
+  "C4_I_SIGNATURE_WS2": {
+    "en": "His secretary's",
+    "tr": "Sekreterinin"
   }
 }

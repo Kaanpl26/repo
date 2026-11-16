@@ -23,6 +23,12 @@ var _scroll: TouchScroll
 var _wall: BoardCanvas
 var _view_toggle: Button
 var _popups := 0                # pop-ups of this board that are open
+var _focus := ""                # the question being looked at (an insight id)
+var _show_all := false          # the drawer is open
+var _fresh: Array = []          # conclusions made while the board is open stay on the wall
+var _questions: HBoxContainer
+var _progress: HBoxContainer
+var _drawer: Button
 
 
 func _ready() -> void:
@@ -43,16 +49,26 @@ func _ready() -> void:
 	titles.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	titles.add_child(UI.label(CaseDB.meta.get("board_title", "BOARD_TITLE"), "HeaderLabel"))
 	titles.add_theme_constant_override("separation", 0)
+	_progress = HBoxContainer.new()
+	_progress.add_theme_constant_override("separation", 18)
+	titles.add_child(_progress)
 	_possible = UI.label("", "SmallLabel")
 	_possible.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
 	titles.add_child(_possible)
 	head.add_child(titles)
+	_drawer = UI.button("")
+	_drawer.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+	_drawer.custom_minimum_size = Vector2(180, UI.MIN_TOUCH)
+	_drawer.pressed.connect(func():
+		_show_all = not _show_all
+		_rebuild())
+	head.add_child(_drawer)
 	_view_toggle = UI.button("")
-	_view_toggle.custom_minimum_size = Vector2(200, UI.MIN_TOUCH)
+	_view_toggle.custom_minimum_size = Vector2(160, UI.MIN_TOUCH)
 	_view_toggle.pressed.connect(func(): _set_view("list" if Settings.board_view == "wall" else "wall"))
 	head.add_child(_view_toggle)
 	var hint := UI.button("HUD_HINT")
-	hint.custom_minimum_size = Vector2(200, UI.MIN_TOUCH)
+	hint.custom_minimum_size = Vector2(160, UI.MIN_TOUCH)
 	hint.pressed.connect(_on_hint)
 	head.add_child(hint)
 	var close := UI.button("COMMON_CLOSE")
@@ -60,8 +76,17 @@ func _ready() -> void:
 	close.pressed.connect(_close)
 	head.add_child(close)
 
+	var qscroll := ScrollContainer.new()
+	qscroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	qscroll.custom_minimum_size = Vector2(0, UI.MIN_TOUCH + 8)
+	col.add_child(qscroll)
+	_questions = HBoxContainer.new()
+	_questions.add_theme_constant_override("separation", 12)
+	qscroll.add_child(_questions)
+
 	_wall = BoardCanvas.new()
 	_wall.note_tapped.connect(_on_card)
+	_wall.string_tied.connect(_on_string)
 	_wall.accepts_gestures = _is_front
 	col.add_child(_wall)
 
@@ -155,12 +180,75 @@ func _rebuild() -> void:
 	for c in _body.get_children():
 		c.queue_free()
 	_buttons.clear()
-	_section("BOARD_CONCLUSIONS", GameState.insights, "BOARD_NO_CONCLUSIONS")
-	_section("CASEFILE_EVIDENCE", GameState.evidence, "CASEFILE_NO_EVIDENCE")
+	if _focus != "" and GameState.has_insight(_focus):
+		_focus = ""
+	_section("BOARD_CONCLUSIONS", GameState.insights.filter(_shown), "BOARD_NO_CONCLUSIONS")
+	_section("CASEFILE_EVIDENCE", GameState.evidence.filter(_shown), "CASEFILE_NO_EVIDENCE")
 	if not CaseDB.meta["testimony"].is_empty():      # the office has no statements
-		_section("BOARD_STATEMENTS", GameState.testimony, "CASEFILE_NO_TESTIMONY")
+		_section("BOARD_STATEMENTS", GameState.testimony.filter(_shown), "CASEFILE_NO_TESTIMONY")
+	_wall.show_all = _show_all
+	_wall.extra = _fresh
 	_wall.build()
+	var hidden := GameState.all_cards().filter(func(c): return not _shown(c)).size()
+	_drawer.text = tr("BOARD_DRAWER_CLOSE") if _show_all else tr("BOARD_DRAWER") % hidden
+	_drawer.disabled = hidden == 0 and not _show_all
+	_build_progress()
+	_build_questions()
 	_refresh_selection()
+
+
+## Whether a card is on the Board right now (the rest wait in the drawer).
+func _shown(id: String) -> bool:
+	return _show_all or id in _fresh or Hints.card_live(id)
+
+
+func _build_progress() -> void:
+	for c in _progress.get_children():
+		c.queue_free()
+	var parts := Hints.proof_progress()
+	if parts.is_empty():
+		_progress.visible = false
+		return
+	_progress.add_child(UI.label("BOARD_PROGRESS", "SmallLabel"))
+	for p in parts:
+		var l := UI.label("", "SmallLabel")
+		l.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
+		l.text = ("● " if p["done"] else "○ ") + tr("BOARD_SLOT_" + str(p["slot"]).to_upper())
+		l.add_theme_color_override("font_color", Palette.JADE if p["done"] else Palette.MUTED)
+		_progress.add_child(l)
+
+
+func _build_questions() -> void:
+	for c in _questions.get_children():
+		c.queue_free()
+	var open := Hints.open_questions()
+	if open.is_empty():
+		_questions.add_child(UI.label("BOARD_QUESTIONS_NONE", "SmallLabel"))
+		return
+	_questions.add_child(UI.label("BOARD_QUESTIONS", "NameLabel"))
+	if _focus != "":
+		var all := UI.button("BOARD_QUESTION_ALL")
+		all.custom_minimum_size = Vector2(140, UI.MIN_TOUCH)
+		all.pressed.connect(func(): _set_focus(""))
+		_questions.add_child(all)
+	for id in open:
+		var b := UI.button(CaseDB.insights[id].get("question", "BOARD_QUESTION"), "AccentButton" if id == _focus else "")
+		b.custom_minimum_size = Vector2(0, UI.MIN_TOUCH)
+		b.pressed.connect(_set_focus.bind("" if id == _focus else id))
+		_questions.add_child(b)
+
+
+## Looks at one question: only its cards stay bright.
+func _set_focus(id: String) -> void:
+	_focus = id
+	_selected.clear()
+	_build_questions()
+	_refresh_selection()
+	if id != "":
+		_say("BOARD_QUESTION_FOCUS", Palette.AMBER)
+		_wall.show_cards(Hints.focus_cards(id))
+	else:
+		_say(_help_key, Palette.MUTED)
 
 
 func _section(title_key: String, cards: Array, empty_key: String) -> void:
@@ -193,9 +281,11 @@ func _on_card(id: String) -> void:
 
 
 func _refresh_selection() -> void:
+	var focus: Array = Hints.focus_cards(_focus) if _focus != "" else []
 	for id in _buttons:
 		_buttons[id].set_state(id in _selected, Hints.card_used_up(id))
-	_wall.set_states(_selected)
+		_buttons[id].visible = focus.is_empty() or id in focus
+	_wall.set_states(_selected, focus)
 	for i in 2:
 		var chosen: bool = i < _selected.size()
 		_slot_labels[i].text = CaseDB.card_title(_selected[i]) if chosen else "BOARD_SLOT_EMPTY"
@@ -214,7 +304,8 @@ func _on_connect() -> void:
 	var result := Deduction.try_link(_selected[0], _selected[1])
 	match result["status"]:
 		Deduction.NONE:
-			_say("BOARD_NO_LINK", Palette.RED)
+			Audio.sfx("wrong")
+			_say(Deduction.nudge(_selected[0], _selected[1]), Palette.AMBER)
 		Deduction.KNOWN:
 			_say("BOARD_KNOWN", Palette.MUTED)
 		Deduction.FOUND:
@@ -258,10 +349,14 @@ func _ask(insight_id: String) -> void:
 		b.pressed.connect(func():
 			root.queue_free()
 			if Deduction.confirm(insight_id, key):
+				Audio.sfx("stamp")
 				Audio.sfx("insight")
 				_selected.clear()
+				_fresh.append(insight_id)
 				_rebuild()
+				_wall.drop_in(insight_id)
 				_say("BOARD_RIGHT", Palette.JADE)
+				_show_result(insight_id)
 			else:
 				Audio.sfx("wrong")
 				_say("BOARD_WRONG", Palette.RED))
@@ -271,6 +366,38 @@ func _ask(insight_id: String) -> void:
 	cancel.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)
 	cancel.pressed.connect(root.queue_free)
 	box.add_child(cancel)
+
+
+## A string was tied between two notes on the wall.
+func _on_string(a: String, b: String) -> void:
+	_selected = [a, b]
+	_refresh_selection()
+	_on_connect()
+
+
+## The full conclusion, once the player has picked the right short answer.
+func _show_result(insight_id: String) -> void:
+	var parts := UI.popup(1300.0, 0.6)
+	var root: Control = parts[0]
+	var box: VBoxContainer = parts[1]
+	add_child(root)
+	_popups += 1
+	root.tree_exited.connect(func(): _popups -= 1)
+	var kicker := UI.label("BOARD_RIGHT_TITLE", "SmallLabel")
+	kicker.add_theme_color_override("font_color", Palette.JADE)
+	box.add_child(kicker)
+	box.add_child(UI.label(CaseDB.insights[insight_id]["title"], "HeaderLabel", true))
+	var text := UI.label(CaseDB.insights[insight_id]["text"], "", true)
+	UI.scaled_font(text, 32)
+	box.add_child(text)
+	var mira := UI.label("BOARD_MIRA_%d" % (1 + GameState.insights.size() % 4), "SmallLabel", true)
+	mira.add_theme_color_override("font_color", Palette.AMBER)
+	box.add_child(mira)
+	var ok := UI.button("BOARD_CONTINUE", "AccentButton")
+	ok.size_flags_horizontal = Control.SIZE_SHRINK_END
+	ok.custom_minimum_size = Vector2(300, UI.MIN_TOUCH)
+	ok.pressed.connect(root.queue_free)
+	box.add_child(ok)
 
 
 func _close() -> void:

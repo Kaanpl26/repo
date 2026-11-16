@@ -14,15 +14,23 @@ const MARGIN := 110.0
 const TOP := 150.0                    # room above the first row for conclusions
 
 
-static func grid_cards() -> Array:
+## Evidence and statements on the wall. With show_all false only live cards
+## (see Hints.card_live) and the ids in "extra" are included.
+static func grid_cards(show_all: bool = true, extra: Array = []) -> Array:
 	var out: Array = []
-	out.append_array(GameState.evidence)
-	out.append_array(GameState.testimony)
+	for id in GameState.evidence + GameState.testimony:
+		if show_all or id in extra or Hints.card_live(id):
+			out.append(id)
 	return out
 
 
-static func canvas_size() -> Vector2:
-	var rows := maxi(1, ceili(grid_cards().size() / float(COLS)))
+## Conclusions on the wall.
+static func shown_insight(id: String, show_all: bool, extra: Array) -> bool:
+	return GameState.has_insight(id) and (show_all or id in extra or Hints.card_live(id))
+
+
+static func canvas_size(show_all: bool = true, extra: Array = []) -> Vector2:
+	var rows := maxi(1, ceili(grid_cards(show_all, extra).size() / float(COLS)))
 	return Vector2(MARGIN * 2 + COLS * PITCH.x - (PITCH.x - NOTE.x), MARGIN * 2 + TOP + rows * PITCH.y)
 
 
@@ -31,10 +39,10 @@ static func note_size(card_id: String) -> Vector2:
 
 
 ## Returns {card id: Vector2 top-left position} for every card the player holds.
-static func positions() -> Dictionary:
+static func positions(show_all: bool = true, extra: Array = []) -> Dictionary:
 	var pos := {}
 	var stored: Dictionary = GameState.board_layout
-	var cards := grid_cards()
+	var cards := grid_cards(show_all, extra)
 	for i in cards.size():
 		var id: String = cards[i]
 		pos[id] = Vector2(MARGIN + (i % COLS) * PITCH.x, MARGIN + TOP + (i / COLS) * PITCH.y)
@@ -42,11 +50,11 @@ static func positions() -> Dictionary:
 		if stored.has(id):
 			pos[id] = Vector2(stored[id][0], stored[id][1])
 
-	var size := canvas_size()
+	var size := canvas_size(show_all, extra)
 	var rows := maxi(1, ceili(cards.size() / float(COLS)))
 	var taken: Array = []      # rectangles of conclusions already placed
 	for id in CaseDB.insights:       # file order, so a conclusion's sources come first
-		if not GameState.has_insight(id):
+		if not shown_insight(id, show_all, extra):
 			continue
 		if stored.has(id):
 			pos[id] = Vector2(stored[id][0], stored[id][1])

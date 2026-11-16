@@ -1782,5 +1782,213 @@
   "C3_TREE_BULUT_STANDING": {
     "en": "He finished his tea",
     "tr": "Çayını bitirdi"
+  },
+  "C3_I_NOT_NATURAL_Q": {
+    "en": "Did his heart simply stop?",
+    "tr": "Kalbi kendiliğinden mi durdu?"
+  },
+  "C3_I_NOT_NATURAL_KEY": {
+    "en": "digoxin",
+    "tr": "digoksin"
+  },
+  "C3_I_NOT_NATURAL_WS1": {
+    "en": "He muddled his pills",
+    "tr": "Haplarını karıştırdı"
+  },
+  "C3_I_NOT_NATURAL_WS2": {
+    "en": "His level was normal",
+    "tr": "Düzeyi normaldi"
+  },
+  "C3_I_SECOND_GLASS_Q": {
+    "en": "Was he drinking alone?",
+    "tr": "Yalnız mı içiyordu?"
+  },
+  "C3_I_SECOND_GLASS_KEY": {
+    "en": "rakı glass",
+    "tr": "rakı kadehi"
+  },
+  "C3_I_SECOND_GLASS_WS1": {
+    "en": "He used two glasses himself",
+    "tr": "İki kadehi kendisi kullandı"
+  },
+  "C3_I_SECOND_GLASS_WS2": {
+    "en": "Hatice washed it on Friday",
+    "tr": "Hatice cuma günü yıkadı"
+  },
+  "C3_I_ALIVE_Q": {
+    "en": "Was he alive after Cem left?",
+    "tr": "Cem gittikten sonra hayatta mıydı?"
+  },
+  "C3_I_ALIVE_KEY": {
+    "en": "Thursday evening",
+    "tr": "perşembe akşamı"
+  },
+  "C3_I_ALIVE_WS1": {
+    "en": "Cem came back on foot",
+    "tr": "Cem yürüyerek geri geldi"
+  },
+  "C3_I_ALIVE_WS2": {
+    "en": "Cem made the 19:10 call",
+    "tr": "19.10 aramasını Cem yaptı"
+  },
+  "C3_I_CALLER_Q": {
+    "en": "Who rang him at 20:05?",
+    "tr": "Onu 20.05'te kim aradı?"
+  },
+  "C3_I_CALLER_KEY": {
+    "en": "77 31",
+    "tr": "77 31"
+  },
+  "C3_I_CALLER_WS1": {
+    "en": "Dr. Nur",
+    "tr": "Dr. Nur"
+  },
+  "C3_I_CALLER_WS2": {
+    "en": "A wrong number",
+    "tr": "Yanlış numara"
+  },
+  "C3_I_FISH_Q": {
+    "en": "Who brought the fish?",
+    "tr": "Balığı kim getirdi?"
+  },
+  "C3_I_FISH_KEY": {
+    "en": "Barınak No: 7",
+    "tr": "Barınak No: 7"
+  },
+  "C3_I_FISH_WS1": {
+    "en": "He bought it himself",
+    "tr": "Kendisi aldı"
+  },
+  "C3_I_FISH_WS2": {
+    "en": "The label means nothing",
+    "tr": "Etiketin anlamı yok"
+  },
+  "C3_I_VISIT_Q": {
+    "en": "Where was Bulut while he was away from the table?",
+    "tr": "Bulut masada değilken neredeydi?"
+  },
+  "C3_I_VISIT_KEY": {
+    "en": "20:15–21:40",
+    "tr": "20.15–21.40"
+  },
+  "C3_I_VISIT_WS1": {
+    "en": "Checking his boat",
+    "tr": "Teknesine bakıyordu"
+  },
+  "C3_I_VISIT_WS2": {
+    "en": "Someone had his phone",
+    "tr": "Telefonu başkasındaydı"
+  },
+  "C3_I_POISON_Q": {
+    "en": "Where did the tablets in the rakı come from?",
+    "tr": "Rakıdaki tabletler nereden geldi?"
+  },
+  "C3_I_POISON_KEY": {
+    "en": "twenty tablets",
+    "tr": "yirmi tablet"
+  },
+  "C3_I_POISON_WS1": {
+    "en": "They were his own",
+    "tr": "Kendi tabletleriydi"
+  },
+  "C3_I_POISON_WS2": {
+    "en": "A pharmacy error",
+    "tr": "Eczane hatası"
+  },
+  "C3_I_BLISTER_Q": {
+    "en": "What happened to the twenty tablets?",
+    "tr": "Yirmi tablete ne oldu?"
+  },
+  "C3_I_BLISTER_KEY": {
+    "en": "E. Bulut",
+    "tr": "E. Bulut"
+  },
+  "C3_I_BLISTER_WS1": {
+    "en": "He takes them himself",
+    "tr": "Kendisi kullanıyor"
+  },
+  "C3_I_BLISTER_WS2": {
+    "en": "Old strips from years ago",
+    "tr": "Yıllar önceden kalma"
+  },
+  "C3_I_NUR_CLEAR_Q": {
+    "en": "Could the poison have come from the laboratory?",
+    "tr": "Zehir laboratuvardan çıkmış olabilir mi?"
+  },
+  "C3_I_NUR_CLEAR_KEY": {
+    "en": "ampoule",
+    "tr": "ampul"
+  },
+  "C3_I_NUR_CLEAR_WS1": {
+    "en": "Nur emptied twenty ampoules",
+    "tr": "Nur yirmi ampul boşalttı"
+  },
+  "C3_I_NUR_CLEAR_WS2": {
+    "en": "Nur faked the result",
+    "tr": "Nur sonucu değiştirdi"
+  },
+  "C3_I_DEAD_WIFE_Q": {
+    "en": "Why does Bulut still collect heart tablets?",
+    "tr": "Bulut neden hâlâ kalp hapı alıyor?"
+  },
+  "C3_I_DEAD_WIFE_KEY": {
+    "en": "Emine Bulut",
+    "tr": "Emine Bulut"
+  },
+  "C3_I_DEAD_WIFE_WS1": {
+    "en": "There are two Emines",
+    "tr": "İki ayrı Emine var"
+  },
+  "C3_I_DEAD_WIFE_WS2": {
+    "en": "The pharmacy's mistake",
+    "tr": "Eczanenin hatası"
+  },
+  "C3_I_MOTIVE_Q": {
+    "en": "Why would anyone kill him now?",
+    "tr": "Biri onu neden şimdi öldürsün?"
+  },
+  "C3_I_MOTIVE_KEY": {
+    "en": "1999",
+    "tr": "1999"
+  },
+  "C3_I_MOTIVE_WS1": {
+    "en": "Genuine security work",
+    "tr": "Gerçek bir güvenlik işi"
+  },
+  "C3_I_MOTIVE_WS2": {
+    "en": "Erol was blackmailing him",
+    "tr": "Erol ona şantaj yapıyordu"
+  },
+  "C3_I_LEAK_Q": {
+    "en": "Who knew about Monday?",
+    "tr": "Pazartesiyi kim biliyordu?"
+  },
+  "C3_I_LEAK_KEY": {
+    "en": "Monday",
+    "tr": "pazartesi"
+  },
+  "C3_I_LEAK_WS1": {
+    "en": "The prosecutor's office",
+    "tr": "Savcılık"
+  },
+  "C3_I_LEAK_WS2": {
+    "en": "Erol invited him",
+    "tr": "Erol onu kendisi çağırdı"
+  },
+  "C3_I_SIGNATURE_Q": {
+    "en": "Whose name is on both papers?",
+    "tr": "İki kâğıtta da kimin adı var?"
+  },
+  "C3_I_SIGNATURE_KEY": {
+    "en": "H. Soykan",
+    "tr": "H. Soykan"
+  },
+  "C3_I_SIGNATURE_WS1": {
+    "en": "The report was lost",
+    "tr": "Rapor gerçekten kayboldu"
+  },
+  "C3_I_SIGNATURE_WS2": {
+    "en": "A clerk signed for him",
+    "tr": "Bir memur onun yerine imzaladı"
   }
 }

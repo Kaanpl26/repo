@@ -369,6 +369,19 @@ func _test_case_structure() -> void:
 		ok(d["wrong"].size() >= 2, w + " needs at least two wrong answers")
 		for k in d["wrong"]:
 			_key(k, w)
+		_key(d.get("question", ""), w + ".question")
+		_key(d.get("key", ""), w + ".key")
+		ok(d.get("wrong_short", []).size() == 2, w + " needs two short wrong answers")
+		for k in d.get("wrong_short", []):
+			_key(k, w + ".wrong_short")
+			for lang in ["en", "tr"]:
+				TranslationServer.set_locale(lang)
+				ok(tr(k).length() <= 42, "%s: short answer too long (%s)" % [w, lang])
+		for lang in ["en", "tr"]:
+			TranslationServer.set_locale(lang)
+			ok(tr(d.get("key", "")).length() <= 26, "%s: key fact too long (%s)" % [w, lang])
+			ok(tr(d["title"]).length() <= 48, "%s: title too long to be an answer (%s)" % [w, lang])
+		TranslationServer.set_locale("en")
 		_check_effects(d.get("effects", []), w)
 		ok(CaseDB.card_title(id) != "" and ResourceLoader.exists(CaseDB.card_icon(id)), w + ": card info")
 
@@ -497,12 +510,13 @@ func _test_board_and_verdict() -> void:
 	var res := Deduction.try_link("E06", "E02")
 	ok(res["status"] == Deduction.FOUND and res["id"] == "I_VARDAR_RETURNED", "card order does not matter")
 	var opts := Deduction.options("I_VARDAR_RETURNED")
-	ok(opts.size() == 3 and CaseDB.insights["I_VARDAR_RETURNED"]["text"] in opts, "three possible conclusions offered")
+	ok(opts.size() == 3 and CaseDB.insights["I_VARDAR_RETURNED"]["title"] in opts, "three short possible conclusions offered")
 	var m := GameState.mistakes
 	ok(not Deduction.confirm("I_VARDAR_RETURNED", CaseDB.insights["I_VARDAR_RETURNED"]["wrong"][0]), "wrong conclusion rejected")
 	ok(GameState.mistakes == m + 1 and not GameState.has_insight("I_VARDAR_RETURNED"), "wrong conclusion costs a mistake")
 	ok(Deduction.confirm("I_VARDAR_RETURNED", CaseDB.insights["I_VARDAR_RETURNED"]["text"]), "right conclusion accepted")
 	ok(Deduction.try_link("E02", "E06")["status"] == Deduction.KNOWN, "same connection is not offered twice")
+	_test_board2()
 	ok(Verdict.resolve("vardar", {"opportunity": "I_VARDAR_RETURNED"}) == "B", "culprit with only one proof -> ending B")
 	ok(Verdict.weak_points("vardar", {"opportunity": "I_VARDAR_RETURNED"}) == ["WEAK_MOTIVE", "WEAK_LINK", "WEAK_FILE_MISSING"], "a weak verdict says what was missing")
 	ok(Verdict.weak_points("aras", {}).is_empty(), "no weak points are listed for the wrong person")
@@ -1133,6 +1147,33 @@ func _test_case_04() -> void:
 	ok("T_NUR_TIP" in GameState.testimony, "trusting Dr. Nur in Case 3 earns his message in Case 4")
 	Profile.reset()
 	_open_case("case_01")
+
+
+# Board 2.0: questions, the drawer, key facts, nudges and the proof bar.
+func _test_board2() -> void:
+	print("- board 2.0")
+	var open := Hints.open_questions()
+	ok(open.size() == Hints.link_count(), "one open question for every connection that can be made")
+	for id in open:
+		var f := Hints.focus_cards(id)
+		ok(f.size() >= 2 and f.size() <= 5, "a question lights up between two and five cards")
+		for c in CaseDB.insights[id]["cards"]:
+			ok(c in f, "the question %s lights up its own cards" % id)
+			ok(Hints.card_live(c), "cards of an open question stay on the wall")
+		var a: String = CaseDB.insights[id]["cards"][0]
+		var b: String = CaseDB.insights[id]["cards"][1]
+		ok(b in Hints.key_matches(a), "the two cards of %s share a key fact" % id)
+	ok(not Hints.card_live("E06"), "a card with nothing left to connect goes into the drawer")
+	ok(not BoardLayout.positions(false).has("E06") and BoardLayout.positions(true).has("E06"), "the drawer hides it from the wall until opened")
+	ok(BoardLayout.positions(false, ["E06"]).has("E06"), "a card can be kept on the wall")
+	TranslationServer.set_locale("en")
+	var n := Deduction.nudge("E06", "E03")
+	ok(n.begins_with("The") or n.begins_with("Close"), "a finished card with one still open: not cold (%s)" % n)
+	ok(Deduction.nudge("E06", "I_VARDAR_RETURNED") != "" , "nudge always says something")
+	var warm := Deduction.nudge("E02", "E03")
+	ok(warm.begins_with("Close") or warm.begins_with("The"), "a card with a connection left: warm (%s)" % warm)
+	var parts := Hints.proof_progress()
+	ok(parts.size() == 3, "the proof bar has three parts")
 
 
 # Decision trees: every case has one, texts exist, and a verdict records a route.

@@ -9,6 +9,12 @@
     "wrong": [
       "C1_I_UNGUARDED_W1",
       "C1_I_UNGUARDED_W2"
+    ],
+    "question": "C1_I_UNGUARDED_Q",
+    "key": "C1_I_UNGUARDED_KEY",
+    "wrong_short": [
+      "C1_I_UNGUARDED_WS1",
+      "C1_I_UNGUARDED_WS2"
     ]
   },
   "I_VARDAR_RETURNED": {
@@ -21,6 +27,12 @@
     "wrong": [
       "C1_I_VARDAR_RETURNED_W1",
       "C1_I_VARDAR_RETURNED_W2"
+    ],
+    "question": "C1_I_VARDAR_RETURNED_Q",
+    "key": "C1_I_VARDAR_RETURNED_KEY",
+    "wrong_short": [
+      "C1_I_VARDAR_RETURNED_WS1",
+      "C1_I_VARDAR_RETURNED_WS2"
     ]
   },
   "I_ARAS_ELSEWHERE": {
@@ -33,6 +45,12 @@
     "wrong": [
       "C1_I_ARAS_ELSEWHERE_W1",
       "C1_I_ARAS_ELSEWHERE_W2"
+    ],
+    "question": "C1_I_ARAS_ELSEWHERE_Q",
+    "key": "C1_I_ARAS_ELSEWHERE_KEY",
+    "wrong_short": [
+      "C1_I_ARAS_ELSEWHERE_WS1",
+      "C1_I_ARAS_ELSEWHERE_WS2"
     ]
   },
   "I_AYDIN_STAYED": {
@@ -45,6 +63,12 @@
     "wrong": [
       "C1_I_AYDIN_STAYED_W1",
       "C1_I_AYDIN_STAYED_W2"
+    ],
+    "question": "C1_I_AYDIN_STAYED_Q",
+    "key": "C1_I_AYDIN_STAYED_KEY",
+    "wrong_short": [
+      "C1_I_AYDIN_STAYED_WS1",
+      "C1_I_AYDIN_STAYED_WS2"
     ]
   },
   "I_SIDE_DOOR": {
@@ -57,6 +81,12 @@
     "wrong": [
       "C1_I_SIDE_DOOR_W1",
       "C1_I_SIDE_DOOR_W2"
+    ],
+    "question": "C1_I_SIDE_DOOR_Q",
+    "key": "C1_I_SIDE_DOOR_KEY",
+    "wrong_short": [
+      "C1_I_SIDE_DOOR_WS1",
+      "C1_I_SIDE_DOOR_WS2"
     ]
   },
   "I_NOT_ACCIDENT": {
@@ -69,6 +99,12 @@
     "wrong": [
       "C1_I_NOT_ACCIDENT_W1",
       "C1_I_NOT_ACCIDENT_W2"
+    ],
+    "question": "C1_I_NOT_ACCIDENT_Q",
+    "key": "C1_I_NOT_ACCIDENT_KEY",
+    "wrong_short": [
+      "C1_I_NOT_ACCIDENT_WS1",
+      "C1_I_NOT_ACCIDENT_WS2"
     ]
   },
   "I_SEARCH": {
@@ -81,6 +117,12 @@
     "wrong": [
       "C1_I_SEARCH_W1",
       "C1_I_SEARCH_W2"
+    ],
+    "question": "C1_I_SEARCH_Q",
+    "key": "C1_I_SEARCH_KEY",
+    "wrong_short": [
+      "C1_I_SEARCH_WS1",
+      "C1_I_SEARCH_WS2"
     ]
   },
   "I_SM": {
@@ -93,6 +135,12 @@
     "wrong": [
       "C1_I_SM_W1",
       "C1_I_SM_W2"
+    ],
+    "question": "C1_I_SM_Q",
+    "key": "C1_I_SM_KEY",
+    "wrong_short": [
+      "C1_I_SM_WS1",
+      "C1_I_SM_WS2"
     ]
   },
   "I_EMAIL": {
@@ -105,6 +153,12 @@
     "wrong": [
       "C1_I_EMAIL_W1",
       "C1_I_EMAIL_W2"
+    ],
+    "question": "C1_I_EMAIL_Q",
+    "key": "C1_I_EMAIL_KEY",
+    "wrong_short": [
+      "C1_I_EMAIL_WS1",
+      "C1_I_EMAIL_WS2"
     ]
   },
   "I_ELEVATOR": {
@@ -117,6 +171,12 @@
     "wrong": [
       "C1_I_ELEVATOR_W1",
       "C1_I_ELEVATOR_W2"
+    ],
+    "question": "C1_I_ELEVATOR_Q",
+    "key": "C1_I_ELEVATOR_KEY",
+    "wrong_short": [
+      "C1_I_ELEVATOR_WS1",
+      "C1_I_ELEVATOR_WS2"
     ]
   },
   "I_EARRING": {
@@ -129,6 +189,12 @@
     "wrong": [
       "C1_I_EARRING_W1",
       "C1_I_EARRING_W2"
+    ],
+    "question": "C1_I_EARRING_Q",
+    "key": "C1_I_EARRING_KEY",
+    "wrong_short": [
+      "C1_I_EARRING_WS1",
+      "C1_I_EARRING_WS2"
     ]
   },
   "I_MIRROR": {
@@ -141,6 +207,12 @@
     "wrong": [
       "C1_I_MIRROR_W1",
       "C1_I_MIRROR_W2"
+    ],
+    "question": "C1_I_MIRROR_Q",
+    "key": "C1_I_MIRROR_KEY",
+    "wrong_short": [
+      "C1_I_MIRROR_WS1",
+      "C1_I_MIRROR_WS2"
     ]
   }
 }

@@ -406,5 +406,133 @@
   "OF_OBJ_C4": {
     "en": "Three files recovered. The last numbers on the slip are still out there.",
     "tr": "Üç dosya bulundu. Pusuladaki son numaralar hâlâ ortada yok."
+  },
+  "OF_LI_LIST_Q": {
+    "en": "What is the routing slip?",
+    "tr": "Sevk pusulası ne?"
+  },
+  "OF_LI_LIST_KEY": {
+    "en": "58-D",
+    "tr": "58-D"
+  },
+  "OF_LI_LIST_WS1": {
+    "en": "A list of old fire files",
+    "tr": "Eski yangın dosyalarının listesi"
+  },
+  "OF_LI_LIST_WS2": {
+    "en": "A clerk's filing order",
+    "tr": "Bir kâtibin dosyalama sırası"
+  },
+  "OF_LI_SAME_HAND_Q": {
+    "en": "Who authorised both payments?",
+    "tr": "İki ödemeyi kim onayladı?"
+  },
+  "OF_LI_SAME_HAND_KEY": {
+    "en": "Payment authorised by —",
+    "tr": "Ödemeyi onaylayan —"
+  },
+  "OF_LI_SAME_HAND_WS1": {
+    "en": "Two different people",
+    "tr": "İki ayrı kişi"
+  },
+  "OF_LI_SAME_HAND_WS2": {
+    "en": "Nobody; they are forms",
+    "tr": "Kimse; bunlar matbu form"
+  },
+  "OF_LI_FENER_Q": {
+    "en": "Who paid Soylu in 2004?",
+    "tr": "2004'te Soylu'ya kim ödedi?"
+  },
+  "OF_LI_FENER_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "OF_LI_FENER_WS1": {
+    "en": "The newspaper",
+    "tr": "Gazete"
+  },
+  "OF_LI_FENER_WS2": {
+    "en": "Aras directly",
+    "tr": "Doğrudan Aras"
+  },
+  "OF_LI_LAW_OFFICE_Q": {
+    "en": "Which law office sent the pages?",
+    "tr": "Sayfaları hangi hukuk bürosu yolladı?"
+  },
+  "OF_LI_LAW_OFFICE_KEY": {
+    "en": "law office",
+    "tr": "hukuk bürosu"
+  },
+  "OF_LI_LAW_OFFICE_WS1": {
+    "en": "A firm in Ankara",
+    "tr": "Ankara'da bir büro"
+  },
+  "OF_LI_LAW_OFFICE_WS2": {
+    "en": "The city's own lawyers",
+    "tr": "Belediyenin avukatları"
+  },
+  "OF_LI_KARACA_Q": {
+    "en": "What is Karaca's role?",
+    "tr": "Karaca'nın rolü ne?"
+  },
+  "OF_LI_KARACA_KEY": {
+    "en": "Nedim Karaca",
+    "tr": "Nedim Karaca"
+  },
+  "OF_LI_KARACA_WS1": {
+    "en": "He is an ordinary lawyer",
+    "tr": "Sıradan bir avukat"
+  },
+  "OF_LI_KARACA_WS2": {
+    "en": "He is the paymaster",
+    "tr": "Parayı veren o"
+  },
+  "OF_LI_CHIEF_Q": {
+    "en": "What did the chief know too early?",
+    "tr": "Müdür neyi fazla erken biliyordu?"
+  },
+  "OF_LI_CHIEF_KEY": {
+    "en": "the chief",
+    "tr": "müdür"
+  },
+  "OF_LI_CHIEF_WS1": {
+    "en": "Nothing; it was luck",
+    "tr": "Hiçbir şey; şanstı"
+  },
+  "OF_LI_CHIEF_WS2": {
+    "en": "The prosecutor told him",
+    "tr": "Savcı ona söylemişti"
+  },
+  "OF_LI_OFFICER_Q": {
+    "en": "Who closed 12-C and emptied the shelf?",
+    "tr": "12-C'yi kim kapattı, rafı kim boşalttı?"
+  },
+  "OF_LI_OFFICER_KEY": {
+    "en": "H. Soykan",
+    "tr": "H. Soykan"
+  },
+  "OF_LI_OFFICER_WS1": {
+    "en": "Two men with one name",
+    "tr": "Aynı adlı iki kişi"
+  },
+  "OF_LI_OFFICER_WS2": {
+    "en": "The flood took it",
+    "tr": "Sel götürdü"
+  },
+  "OF_LI_PAYROLL_Q": {
+    "en": "Who pays Rıza Bulut?",
+    "tr": "Rıza Bulut'a kim ödüyor?"
+  },
+  "OF_LI_PAYROLL_KEY": {
+    "en": "Fener Danışmanlık",
+    "tr": "Fener Danışmanlık"
+  },
+  "OF_LI_PAYROLL_WS1": {
+    "en": "He is Karaca's client",
+    "tr": "Karaca'nın müvekkili"
+  },
+  "OF_LI_PAYROLL_WS2": {
+    "en": "Real security work",
+    "tr": "Gerçek güvenlik işi"
   }
 }

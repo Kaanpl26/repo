@@ -4,11 +4,13 @@ extends Control
 ## note for every card and red thread from each conclusion to the two cards
 ## it came from.
 ##
-## Touch: drag the cork to pan, pinch with two fingers to zoom, drag a note to
-## move it, tap a note to select it. The + and - buttons zoom without a
+## Touch: drag the cork to pan, pinch with two fingers to zoom, drag from a
+## note to another to tie them with string, press-and-hold then drag to move a
+## note, tap a note to select it. The + and - buttons zoom without a
 ## gesture, and Tidy puts every note back in its automatic place.
 
 signal note_tapped(card_id: String)
+signal string_tied(from_id: String, to_id: String)
 
 const ZOOM_MIN := 0.45
 const ZOOM_MAX := 1.6
@@ -30,6 +32,11 @@ var _panning := false
 var _press := Vector2.ZERO
 var _press_on_note := false
 var _fitted := false
+var show_all := false           # the drawer is open: every card is on the wall
+var extra: Array = []           # cards kept on the wall although nothing is left to connect
+var _string_from := ""
+var _string_pos := Vector2.ZERO
+var _string_over := ""
 
 
 func _init() -> void:
@@ -81,8 +88,8 @@ func build() -> void:
 	for id in _notes:
 		_notes[id].queue_free()
 	_notes.clear()
-	var pos := BoardLayout.positions()
-	_content.size = BoardLayout.canvas_size()
+	var pos := BoardLayout.positions(show_all, extra)
+	_content.size = BoardLayout.canvas_size(show_all, extra)
 	_threads.size = _content.size
 	for id in pos:
 		var note := BoardNote.new(id)
@@ -103,9 +110,72 @@ func note(card_id: String) -> BoardNote:
 	return _notes[card_id]
 
 
-func set_states(selected: Array) -> void:
+## focus: the cards of the question being looked at (empty = no question).
+func set_states(selected: Array, focus: Array = []) -> void:
+	var glow: Array = Hints.key_matches(selected[0]) if selected.size() == 1 else []
 	for id in _notes:
-		_notes[id].set_state(id in selected, Hints.card_used_up(id))
+		_notes[id].set_state(id in selected, Hints.card_used_up(id), id in glow or id == _string_over,
+				not focus.is_empty() and id not in focus)
+
+
+## Plays the arrival of a new conclusion: it drops onto the wall.
+func drop_in(card_id: String) -> void:
+	if not _notes.has(card_id):
+		return
+	var n: BoardNote = _notes[card_id]
+	n.pivot_offset = n.size / 2.0
+	n.scale = Vector2(1.6, 1.6)
+	n.modulate.a = 0.0
+	var tw := n.create_tween().set_parallel(true)
+	tw.tween_property(n, "scale", Vector2.ONE, 0.45).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_property(n, "modulate:a", 1.0, 0.25)
+	show_cards([card_id])
+
+
+# ---------------------------------------------------------------- string
+
+func string_begin(from_id: String, at: Vector2) -> void:
+	_string_from = from_id
+	string_to(at)
+
+
+func string_to(at: Vector2) -> void:
+	_string_pos = at
+	var over := ""
+	for id in _notes:
+		if id != _string_from and Rect2(_notes[id].position, _notes[id].size).has_point(at):
+			over = id
+	if over != _string_over:
+		_string_over = over
+		if over != "" and string_tight():
+			Audio.sfx("click")
+	_threads.queue_redraw()
+
+
+## True while the string is over a note it really belongs with.
+func string_tight() -> bool:
+	if _string_from == "" or _string_over == "":
+		return false
+	var id := Deduction.find(_string_from, _string_over)
+	return id != "" and not GameState.has_insight(id)
+
+
+func string_end() -> void:
+	var a := _string_from
+	var b := _string_over
+	string_cancel()
+	if a != "" and b != "":
+		string_tied.emit(a, b)
+
+
+func string_cancel() -> void:
+	_string_from = ""
+	_string_over = ""
+	_threads.queue_redraw()
+
+
+func stringing() -> bool:
+	return _string_from != ""
 
 
 func _draw_threads() -> void:
@@ -118,6 +188,24 @@ func _draw_threads() -> void:
 				var from: Vector2 = _notes[source].position + Vector2(_notes[source].size.x / 2.0, 12)
 				_threads.draw_line(from, to, Color(0, 0, 0, 0.3), 7.0, true)
 				_threads.draw_line(from, to, Palette.RED, 4.0, true)
+	if _string_from != "" and _notes.has(_string_from):
+		var a: Vector2 = _notes[_string_from].position + Vector2(_notes[_string_from].size.x / 2.0, 12)
+		var b := _string_pos
+		if _string_over != "":
+			b = _notes[_string_over].position + Vector2(_notes[_string_over].size.x / 2.0, 12)
+		if string_tight():
+			_threads.draw_line(a, b, Color(Palette.JADE, 0.35), 18.0, true)
+			_threads.draw_line(a, b, Palette.JADE.lightened(0.3), 6.0, true)
+		else:
+			# slack string sags under its own weight
+			var sag := minf(a.distance_to(b) * 0.25, 160.0)
+			var mid := (a + b) / 2.0 + Vector2(0, sag)
+			var pts := PackedVector2Array()
+			for i in 17:
+				var t := i / 16.0
+				pts.append(a.lerp(mid, t).lerp(mid.lerp(b, t), t))
+			_threads.draw_polyline(pts, Palette.RED, 4.0, true)
+		_threads.draw_circle(b, 9, Palette.RED)
 
 
 func note_dragged() -> void:

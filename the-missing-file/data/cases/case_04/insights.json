@@ -9,6 +9,12 @@
     "wrong": [
       "C4_I_NOT_FALL_W1",
       "C4_I_NOT_FALL_W2"
+    ],
+    "question": "C4_I_NOT_FALL_Q",
+    "key": "C4_I_NOT_FALL_KEY",
+    "wrong_short": [
+      "C4_I_NOT_FALL_WS1",
+      "C4_I_NOT_FALL_WS2"
     ]
   },
   "I_BLIND": {
@@ -21,6 +27,12 @@
     "wrong": [
       "C4_I_BLIND_W1",
       "C4_I_BLIND_W2"
+    ],
+    "question": "C4_I_BLIND_Q",
+    "key": "C4_I_BLIND_KEY",
+    "wrong_short": [
+      "C4_I_BLIND_WS1",
+      "C4_I_BLIND_WS2"
     ]
   },
   "I_ALONE": {
@@ -33,6 +45,12 @@
     "wrong": [
       "C4_I_ALONE_W1",
       "C4_I_ALONE_W2"
+    ],
+    "question": "C4_I_ALONE_Q",
+    "key": "C4_I_ALONE_KEY",
+    "wrong_short": [
+      "C4_I_ALONE_WS1",
+      "C4_I_ALONE_WS2"
     ]
   },
   "I_PRESENT": {
@@ -45,6 +63,12 @@
     "wrong": [
       "C4_I_PRESENT_W1",
       "C4_I_PRESENT_W2"
+    ],
+    "question": "C4_I_PRESENT_Q",
+    "key": "C4_I_PRESENT_KEY",
+    "wrong_short": [
+      "C4_I_PRESENT_WS1",
+      "C4_I_PRESENT_WS2"
     ]
   },
   "I_PAID": {
@@ -57,6 +81,12 @@
     "wrong": [
       "C4_I_PAID_W1",
       "C4_I_PAID_W2"
+    ],
+    "question": "C4_I_PAID_Q",
+    "key": "C4_I_PAID_KEY",
+    "wrong_short": [
+      "C4_I_PAID_WS1",
+      "C4_I_PAID_WS2"
     ]
   },
   "I_LIGHTHOUSE": {
@@ -74,6 +104,12 @@
       {
         "set_flag": "lighthouse_known"
       }
+    ],
+    "question": "C4_I_LIGHTHOUSE_Q",
+    "key": "C4_I_LIGHTHOUSE_KEY",
+    "wrong_short": [
+      "C4_I_LIGHTHOUSE_WS1",
+      "C4_I_LIGHTHOUSE_WS2"
     ]
   },
   "I_AUTHORISED": {
@@ -86,6 +122,12 @@
     "wrong": [
       "C4_I_AUTHORISED_W1",
       "C4_I_AUTHORISED_W2"
+    ],
+    "question": "C4_I_AUTHORISED_Q",
+    "key": "C4_I_AUTHORISED_KEY",
+    "wrong_short": [
+      "C4_I_AUTHORISED_WS1",
+      "C4_I_AUTHORISED_WS2"
     ]
   },
   "I_MOTIVE": {
@@ -98,6 +140,12 @@
     "wrong": [
       "C4_I_MOTIVE_W1",
       "C4_I_MOTIVE_W2"
+    ],
+    "question": "C4_I_MOTIVE_Q",
+    "key": "C4_I_MOTIVE_KEY",
+    "wrong_short": [
+      "C4_I_MOTIVE_WS1",
+      "C4_I_MOTIVE_WS2"
     ]
   },
   "I_COMMITTEE": {
@@ -110,6 +158,12 @@
     "wrong": [
       "C4_I_COMMITTEE_W1",
       "C4_I_COMMITTEE_W2"
+    ],
+    "question": "C4_I_COMMITTEE_Q",
+    "key": "C4_I_COMMITTEE_KEY",
+    "wrong_short": [
+      "C4_I_COMMITTEE_WS1",
+      "C4_I_COMMITTEE_WS2"
     ]
   },
   "I_KARACA": {
@@ -122,6 +176,12 @@
     "wrong": [
       "C4_I_KARACA_W1",
       "C4_I_KARACA_W2"
+    ],
+    "question": "C4_I_KARACA_Q",
+    "key": "C4_I_KARACA_KEY",
+    "wrong_short": [
+      "C4_I_KARACA_WS1",
+      "C4_I_KARACA_WS2"
     ]
   },
   "I_SIGNATURE": {
@@ -134,6 +194,12 @@
     "wrong": [
       "C4_I_SIGNATURE_W1",
       "C4_I_SIGNATURE_W2"
+    ],
+    "question": "C4_I_SIGNATURE_Q",
+    "key": "C4_I_SIGNATURE_KEY",
+    "wrong_short": [
+      "C4_I_SIGNATURE_WS1",
+      "C4_I_SIGNATURE_WS2"
     ]
   }
 }

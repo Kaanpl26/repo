@@ -1726,5 +1726,197 @@
   "C1_TREE_VARDAR_STANDING": {
     "en": "Her account was never broken",
     "tr": "Anlattıkları hiç çürütülmedi"
+  },
+  "C1_I_UNGUARDED_Q": {
+    "en": "Who was watching the door that night?",
+    "tr": "O gece kapıya kim bakıyordu?"
+  },
+  "C1_I_UNGUARDED_KEY": {
+    "en": "20:44",
+    "tr": "20.44"
+  },
+  "C1_I_UNGUARDED_WS1": {
+    "en": "Erdem let a visitor in",
+    "tr": "Erdem bir ziyaretçiyi içeri aldı"
+  },
+  "C1_I_UNGUARDED_WS2": {
+    "en": "The door clock is wrong",
+    "tr": "Kapı sisteminin saati yanlış"
+  },
+  "C1_I_VARDAR_RETURNED_Q": {
+    "en": "Did the Director really go home?",
+    "tr": "Müdire gerçekten eve gitti mi?"
+  },
+  "C1_I_VARDAR_RETURNED_KEY": {
+    "en": "Dr. Vardar",
+    "tr": "Dr. Vardar"
+  },
+  "C1_I_VARDAR_RETURNED_WS1": {
+    "en": "Someone else took her car",
+    "tr": "Arabasını başka biri aldı"
+  },
+  "C1_I_VARDAR_RETURNED_WS2": {
+    "en": "She never left the building",
+    "tr": "Binadan hiç çıkmadı"
+  },
+  "C1_I_ARAS_ELSEWHERE_Q": {
+    "en": "Where was Demir Aras at nine?",
+    "tr": "Demir Aras saat dokuzda neredeydi?"
+  },
+  "C1_I_ARAS_ELSEWHERE_KEY": {
+    "en": "Demir Aras",
+    "tr": "Demir Aras"
+  },
+  "C1_I_ARAS_ELSEWHERE_WS1": {
+    "en": "Aras hid in the building",
+    "tr": "Aras binada saklandı"
+  },
+  "C1_I_ARAS_ELSEWHERE_WS2": {
+    "en": "The photo was taken earlier",
+    "tr": "Fotoğraf daha önce çekildi"
+  },
+  "C1_I_AYDIN_STAYED_Q": {
+    "en": "Did Leyla Aydın go home at half past seven?",
+    "tr": "Leyla Aydın yedi buçukta eve gitti mi?"
+  },
+  "C1_I_AYDIN_STAYED_KEY": {
+    "en": "Leyla Aydın",
+    "tr": "Leyla Aydın"
+  },
+  "C1_I_AYDIN_STAYED_WS1": {
+    "en": "She came back later",
+    "tr": "Daha sonra geri geldi"
+  },
+  "C1_I_AYDIN_STAYED_WS2": {
+    "en": "Erdem let her out",
+    "tr": "Onu Erdem çıkardı"
+  },
+  "C1_I_SIDE_DOOR_Q": {
+    "en": "Why was the side door unlocked?",
+    "tr": "Yan kapı neden kilitli değildi?"
+  },
+  "C1_I_SIDE_DOOR_KEY": {
+    "en": "side door",
+    "tr": "yan kapı"
+  },
+  "C1_I_SIDE_DOOR_WS1": {
+    "en": "An intruder forced it",
+    "tr": "Biri zorla açtı"
+  },
+  "C1_I_SIDE_DOOR_WS2": {
+    "en": "Erdem forgot to lock it",
+    "tr": "Erdem kilitlemeyi unuttu"
+  },
+  "C1_I_NOT_ACCIDENT_Q": {
+    "en": "Did Ekrem Vural really fall?",
+    "tr": "Ekrem Vural gerçekten düştü mü?"
+  },
+  "C1_I_NOT_ACCIDENT_KEY": {
+    "en": "21:17",
+    "tr": "21.17"
+  },
+  "C1_I_NOT_ACCIDENT_WS1": {
+    "en": "He slipped with a heavy box",
+    "tr": "Ağır bir kutuyla kaydı"
+  },
+  "C1_I_NOT_ACCIDENT_WS2": {
+    "en": "He died somewhere else",
+    "tr": "Başka bir yerde öldü"
+  },
+  "C1_I_SEARCH_Q": {
+    "en": "Who opened his desk?",
+    "tr": "Masasını kim açtı?"
+  },
+  "C1_I_SEARCH_KEY": {
+    "en": "drawer keys",
+    "tr": "çekmece anahtarları"
+  },
+  "C1_I_SEARCH_WS1": {
+    "en": "He broke into it himself",
+    "tr": "Kendi masasını kendisi kırdı"
+  },
+  "C1_I_SEARCH_WS2": {
+    "en": "A burglar wanted cash",
+    "tr": "Bir hırsız para aradı"
+  },
+  "C1_I_SM_Q": {
+    "en": "Who is S.M.?",
+    "tr": "S.M. kim?"
+  },
+  "C1_I_SM_KEY": {
+    "en": "S.M.",
+    "tr": "S.M."
+  },
+  "C1_I_SM_WS1": {
+    "en": "A job title, “Senior Manager”",
+    "tr": "Bir unvan: “Kıdemli Müdür”"
+  },
+  "C1_I_SM_WS2": {
+    "en": "The night watchman",
+    "tr": "Gece bekçisi"
+  },
+  "C1_I_EMAIL_Q": {
+    "en": "Why did the Director come back?",
+    "tr": "Müdire neden geri döndü?"
+  },
+  "C1_I_EMAIL_KEY": {
+    "en": "47-B",
+    "tr": "47-B"
+  },
+  "C1_I_EMAIL_WS1": {
+    "en": "He asked her to help",
+    "tr": "Yardım etmesini istedi"
+  },
+  "C1_I_EMAIL_WS2": {
+    "en": "She came for budget papers",
+    "tr": "Bütçe evrakı için geldi"
+  },
+  "C1_I_ELEVATOR_Q": {
+    "en": "Who could run the elevator after seven?",
+    "tr": "Yediden sonra asansörü kim çalıştırabilirdi?"
+  },
+  "C1_I_ELEVATOR_KEY": {
+    "en": "master key",
+    "tr": "ana anahtar"
+  },
+  "C1_I_ELEVATOR_WS1": {
+    "en": "Erdem, with the security keys",
+    "tr": "Güvenlik anahtarlarıyla Erdem"
+  },
+  "C1_I_ELEVATOR_WS2": {
+    "en": "Leyla Aydın, to get out",
+    "tr": "Çıkmak için Leyla Aydın"
+  },
+  "C1_I_EARRING_Q": {
+    "en": "Whose earring is under the shelf?",
+    "tr": "Rafın altındaki küpe kimin?"
+  },
+  "C1_I_EARRING_KEY": {
+    "en": "jade earring",
+    "tr": "yeşim küpe"
+  },
+  "C1_I_EARRING_WS1": {
+    "en": "Leyla Aydın's",
+    "tr": "Leyla Aydın'ın"
+  },
+  "C1_I_EARRING_WS2": {
+    "en": "It has lain there for years",
+    "tr": "Yıllardır orada duruyor"
+  },
+  "C1_I_MIRROR_Q": {
+    "en": "What does “the mirror tells the truth” mean?",
+    "tr": "“Ayna doğruyu söyler” ne demek?"
+  },
+  "C1_I_MIRROR_KEY": {
+    "en": "47-B",
+    "tr": "47-B"
+  },
+  "C1_I_MIRROR_WS1": {
+    "en": "The file is behind a mirror",
+    "tr": "Dosya bir aynanın arkasında"
+  },
+  "C1_I_MIRROR_WS2": {
+    "en": "He made a second copy",
+    "tr": "İkinci bir kopya çıkardı"
   }
 }

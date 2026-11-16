@@ -279,9 +279,9 @@ func _mouse(pos: Vector2, pressed: bool) -> void:
 	Input.parse_input_event(e)
 
 
-func _mouse_drag(from: Vector2, delta: Vector2, steps: int = 10) -> void:
+func _mouse_drag(from: Vector2, delta: Vector2, steps: int = 10, hold: float = 0.05) -> void:
 	_mouse(from, true)
-	await _wait(0.05)
+	await _wait(hold)
 	for i in steps:
 		var m := InputEventMouseMotion.new()
 		m.position = from + delta * float(i + 1) / steps
@@ -315,7 +315,8 @@ func _finger_move(index: int, pos: Vector2, relative: Vector2) -> void:
 func _test_wall(board: Node) -> void:
 	var wall: BoardCanvas = board._wall
 	_check(wall.visible and not board._scroll.visible, "the board opens on the wall")
-	_check(wall._notes.size() == GameState.all_cards().size(), "one note per card")
+	_check(wall._notes.size() == GameState.all_cards().filter(func(c): return Hints.card_live(c)).size(), "one note per card still in play")
+	_check(board._drawer.text.begins_with("Drawer") or board._drawer.text.begins_with("Çekmece"), "the drawer button shows")
 	var id: String = GameState.evidence[0]
 	var n: BoardNote = wall.note(id)
 	var at: Vector2 = n.get_global_rect().get_center()
@@ -328,9 +329,24 @@ func _test_wall(board: Node) -> void:
 	board._selected.clear()
 	board._refresh_selection()
 
+	# a quick drag pulls a string and does not move the note
+	var still: Vector2 = n.position
+	var other: BoardNote = null
+	for k in wall._notes:
+		if k != id and Deduction.find(id, k) == "":
+			other = wall._notes[k]
+			break
+	if other != null:
+		await _mouse_drag(at, other.get_global_rect().get_center() - at)
+		_check(n.position == still, "a quick drag does not move the note")
+		_check(not wall.stringing(), "the string is let go after the drag")
+		_check(board._message.text != "", "tying two unrelated notes gets a nudge")
+	board._selected.clear()
+	board._refresh_selection()
+
 	var before: Vector2 = n.position
-	await _mouse_drag(at, Vector2(160, 90))
-	_check(n.position.distance_to(before) > 100, "dragging a note moves it")
+	await _mouse_drag(at, Vector2(160, 90), 10, 0.6)
+	_check(n.position.distance_to(before) > 100, "press, hold and drag moves a note")
 	_check(board._selected.is_empty(), "dragging a note does not select it")
 	_check(GameState.board_layout.has(id), "the new place is remembered")
 	var moved_by: Vector2 = (n.position - before) * wall.zoom

@@ -200,8 +200,8 @@
     "tr": "Delil Panosu"
   },
   "BOARD_HELP": {
-    "en": "Choose two cards that belong together, then tap Connect. Faded cards have nothing more to give.",
-    "tr": "Birbiriyle ilgili iki kart seçin, sonra Bağla'ya dokunun. Soluk kartlardan çıkacak başka bir şey kalmadı."
+    "en": "Tap two cards and press Connect. Tap a question above to see which cards matter.",
+    "tr": "İki karta dokunup Bağla'ya basın. Hangi kartların önemli olduğunu görmek için yukarıdaki bir soruya dokunun."
   },
   "BOARD_CONCLUSIONS": {
     "en": "Conclusions",
@@ -828,8 +828,8 @@
     "tr": "Düzenle"
   },
   "BOARD_HELP_WALL": {
-    "en": "Tap two notes that belong together, then tap Connect. Drag the cork to move around, pinch or use + and − to zoom, drag a note to move it.",
-    "tr": "Birbiriyle ilgili iki nota dokunun, sonra Bağla'ya dokunun. Gezinmek için panoyu sürükleyin, yakınlaştırmak için iki parmağınızı ya da + ve − düğmelerini kullanın, bir notu taşımak için sürükleyin."
+    "en": "Drag from one card to another to tie them with string. Tap a question above to see which cards matter.",
+    "tr": "Bir karttan diğerine sürükleyerek ip bağlayın. Hangi kartların önemli olduğunu görmek için yukarıdaki bir soruya dokunun."
   },
   "SETTINGS_VOICES": {
     "en": "Speech sounds",
@@ -974,5 +974,101 @@
   "ACH_SEASON_DESC": {
     "en": "Recover every file from the routing slip and name the man who authorised the payments.",
     "tr": "Sevk pusulasındaki bütün dosyaları bulun ve ödemeleri onaylayan adamın adını verin."
+  },
+  "BOARD_QUESTIONS": {
+    "en": "Open questions",
+    "tr": "Açık sorular"
+  },
+  "BOARD_QUESTIONS_NONE": {
+    "en": "No question can be answered with the cards you hold. Find more evidence.",
+    "tr": "Elinizdeki kartlarla cevaplanabilecek soru yok. Daha fazla delil bulun."
+  },
+  "BOARD_QUESTION_FOCUS": {
+    "en": "The answer is in the bright cards. Connect two of them.",
+    "tr": "Cevap parlayan kartlarda. İkisini birbirine bağlayın."
+  },
+  "BOARD_QUESTION_ALL": {
+    "en": "All",
+    "tr": "Tümü"
+  },
+  "BOARD_DRAWER": {
+    "en": "Drawer (%d)",
+    "tr": "Çekmece (%d)"
+  },
+  "BOARD_DRAWER_CLOSE": {
+    "en": "Hide drawer",
+    "tr": "Çekmeceyi gizle"
+  },
+  "BOARD_PROGRESS": {
+    "en": "Proof:",
+    "tr": "Kanıt:"
+  },
+  "BOARD_RIGHT_TITLE": {
+    "en": "New conclusion",
+    "tr": "Yeni sonuç"
+  },
+  "BOARD_CONTINUE": {
+    "en": "Continue",
+    "tr": "Devam"
+  },
+  "BOARD_MIRA_1": {
+    "en": "Mira: “That's it. That's how it fits.”",
+    "tr": "Mira: “İşte bu. Böyle oturuyor.”"
+  },
+  "BOARD_MIRA_2": {
+    "en": "Mira: “Now we're getting somewhere.”",
+    "tr": "Mira: “Şimdi bir yere varıyoruz.”"
+  },
+  "BOARD_MIRA_3": {
+    "en": "Mira: “One more thread pulled tight.”",
+    "tr": "Mira: “Bir ip daha gerildi.”"
+  },
+  "BOARD_MIRA_4": {
+    "en": "Mira: “They didn't think anyone would put those two together.”",
+    "tr": "Mira: “Kimsenin bu ikisini yan yana koyacağını düşünmemişler.”"
+  },
+  "BOARD_WARM": {
+    "en": "Close. The “%s” matters, but it goes with %s.",
+    "tr": "Yaklaştınız. “%s” önemli ama şununla birlikte: %s."
+  },
+  "BOARD_WARM_LATER": {
+    "en": "The “%s” matters, but you haven't found what it goes with yet.",
+    "tr": "“%s” önemli ama neyle birlikte olduğunu henüz bulmadınız."
+  },
+  "BOARD_COLD": {
+    "en": "Cold. These two have nothing more to tell you.",
+    "tr": "Soğuk. Bu ikisinin size söyleyecek başka bir şeyi yok."
+  },
+  "BOARD_FROM_PLACE": {
+    "en": "something from %s",
+    "tr": "bir delil (%s)"
+  },
+  "BOARD_FROM_DATABASE": {
+    "en": "a database search",
+    "tr": "bir veri tabanı sorgusu"
+  },
+  "BOARD_FROM_PERSON": {
+    "en": "something %s said",
+    "tr": "bir ifade (%s)"
+  },
+  "BOARD_FROM_CONCLUSION": {
+    "en": "one of your conclusions",
+    "tr": "sonuçlarınızdan biri"
+  },
+  "BOARD_FROM_CARD": {
+    "en": "another card",
+    "tr": "başka bir kart"
+  },
+  "BOARD_SLOT_MOTIVE": {
+    "en": "Motive",
+    "tr": "Sebep"
+  },
+  "BOARD_SLOT_OPPORTUNITY": {
+    "en": "Opportunity",
+    "tr": "Fırsat"
+  },
+  "BOARD_SLOT_LINK": {
+    "en": "Link",
+    "tr": "Bağlantı"
   }
 }
