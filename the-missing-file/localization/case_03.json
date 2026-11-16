@@ -1710,5 +1710,77 @@
   "C3_END_E_TEXT": {
     "en": "Seventy-eight, a weak heart, a bottle of rakı. You countersign the family doctor's note.\n\nThe chief says Nazım Bey would have wanted a quiet funeral. On Monday at ten the prosecutor's diary has an empty hour in it.\n\nAt the fishermen's shelter someone is paid, as usual, on the first of the month.",
     "tr": "Yetmiş sekiz yaş, zayıf bir kalp, bir şişe rakı. Aile hekiminin notunun altına siz de imza atıyorsunuz.\n\nMüdür, Nazım Bey'in sessiz bir cenaze isteyeceğini söylüyor. Pazartesi saat onda savcının ajandasında boş bir saat kalıyor.\n\nBalıkçı barınağında biri, her zamanki gibi, ayın birinde parasını alıyor."
+  },
+  "C3_TREE_HATICE": {
+    "en": "Hatice Demir",
+    "tr": "Hatice Demir"
+  },
+  "C3_TREE_HATICE_COMFORTED": {
+    "en": "You told her it was not hers to carry",
+    "tr": "Bunun onun yükü olmadığını söylediniz"
+  },
+  "C3_TREE_HATICE_BLAMED": {
+    "en": "You told her the call killed him",
+    "tr": "O aramanın onu öldürdüğünü söylediniz"
+  },
+  "C3_TREE_HATICE_OPEN": {
+    "en": "She never said whom she told",
+    "tr": "Kime söylediğini hiç anlatmadı"
+  },
+  "C3_TREE_NUR": {
+    "en": "Dr. Nur's copy",
+    "tr": "Dr. Nur'un kopyası"
+  },
+  "C3_TREE_NUR_TRUSTED": {
+    "en": "You left the file with him",
+    "tr": "Dosyayı onda bıraktınız"
+  },
+  "C3_TREE_NUR_REPORTED": {
+    "en": "You sent it through the chief's office",
+    "tr": "Müdürlük üzerinden kayda geçirdiniz"
+  },
+  "C3_TREE_NUR_OPEN": {
+    "en": "He never admitted the visit",
+    "tr": "Ziyareti hiç kabul etmedi"
+  },
+  "C3_TREE_CHIEF": {
+    "en": "The chief's request",
+    "tr": "Müdürün isteği"
+  },
+  "C3_TREE_CHIEF_KEPT": {
+    "en": "You kept your notes from him",
+    "tr": "Notlarınızı ondan sakladınız"
+  },
+  "C3_TREE_CHIEF_INFORMED": {
+    "en": "You sent him your notes",
+    "tr": "Notlarınızı ona gönderdiniz"
+  },
+  "C3_TREE_CHIEF_OPEN": {
+    "en": "He never got to ask",
+    "tr": "Sormasına fırsat olmadı"
+  },
+  "C3_TREE_SIGNATURE": {
+    "en": "Page four",
+    "tr": "Dördüncü sayfa"
+  },
+  "C3_TREE_SIGNATURE_SEEN": {
+    "en": "You noticed the same name twice",
+    "tr": "Aynı ismi iki kez fark ettiniz"
+  },
+  "C3_TREE_SIGNATURE_MISSED": {
+    "en": "The signature went unnoticed",
+    "tr": "İmza gözden kaçtı"
+  },
+  "C3_TREE_BULUT": {
+    "en": "Rıza Bulut",
+    "tr": "Rıza Bulut"
+  },
+  "C3_TREE_BULUT_CORNERED": {
+    "en": "He asked for Nedim Karaca",
+    "tr": "Nedim Karaca'yı istedi"
+  },
+  "C3_TREE_BULUT_STANDING": {
+    "en": "He finished his tea",
+    "tr": "Çayını bitirdi"
   }
 }

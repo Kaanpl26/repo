@@ -146,6 +146,7 @@ func _confirm() -> void:
 		if GameState.has_flag(flag):
 			carried.append(flag)
 	var result := Profile.record_verdict(GameState.case_id, ending, is_solved, Verdict.rating(), carried)
+	DecisionTree.record(ending)
 	result["achievements"] = Achievements.evaluate(ending)
 	result["weak"] = Verdict.weak_points(_suspect, _slots)
 	Audio.sfx("stamp")

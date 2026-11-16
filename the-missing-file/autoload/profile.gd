@@ -14,6 +14,8 @@ var solved: Dictionary = {}    # case id -> true
 var endings: Dictionary = {}   # case id -> [ending ids seen]
 var flags: Dictionary = {}     # "case_id.flag" -> true (decisions carried forward)
 var achievements: Dictionary = {}   # achievement id -> true
+var tree: Dictionary = {}       # case id -> [decision outcomes ever reached]
+var tree_last: Dictionary = {}  # case id -> [outcomes of the last verdict]
 var last_case := ""            # the case the player was last in
 
 
@@ -27,6 +29,8 @@ func reset() -> void:
 	endings = {}
 	flags = {}
 	achievements = {}
+	tree = {}
+	tree_last = {}
 	last_case = ""
 
 
@@ -41,6 +45,8 @@ func load_profile() -> void:
 	endings = Dictionary(d.get("endings", {}))
 	flags = Dictionary(d.get("flags", {}))
 	achievements = Dictionary(d.get("achievements", {}))
+	tree = Dictionary(d.get("tree", {}))
+	tree_last = Dictionary(d.get("tree_last", {}))
 	last_case = str(d.get("last_case", ""))
 
 
@@ -53,6 +59,7 @@ func save_profile() -> void:
 		f.store_string(JSON.stringify({
 			"version": VERSION, "best": best, "solved": solved, "endings": endings,
 			"flags": flags, "achievements": achievements, "last_case": last_case,
+			"tree": tree, "tree_last": tree_last,
 		}))
 
 

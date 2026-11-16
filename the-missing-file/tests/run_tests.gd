@@ -39,6 +39,8 @@ func _ready() -> void:
 	_test_case_02()
 	print("== Case 3")
 	_test_case_03()
+	print("== Decision tree")
+	_test_decision_tree()
 	print("== Office")
 	_test_office()
 	print("\n%d checks, %d failed" % [_checks, _fails])
@@ -990,6 +992,34 @@ func _test_case_03() -> void:
 	Profile.flags["case_02.guven_protected"] = true
 	_visit("house")
 	ok("T_GUVEN_TIP" in GameState.testimony, "protecting Güven in Case 2 earns his statement in Case 3")
+	Profile.reset()
+	_open_case("case_01")
+
+
+# Decision trees: every case has one, texts exist, and a verdict records a route.
+func _test_decision_tree() -> void:
+	Profile.reset()
+	for entry in CaseDB.index:
+		if not entry.get("available", false):
+			continue
+		_open_case(entry["id"])
+		var all := DecisionTree.nodes(entry["id"])
+		ok(all.size() >= 4, "%s has decision points" % entry["id"])
+		for n in all:
+			_key(n["title"], "tree title")
+			ok(n["options"].size() >= 2, "decision %s has at least two outcomes" % n["id"])
+			for o in n["options"]:
+				_key(o["text"], "tree outcome")
+		var route := DecisionTree.taken("E")
+		ok(route.size() == all.size(), "%s: exactly one outcome per decision at the start" % entry["id"])
+		DecisionTree.record("E")
+		ok(Profile.tree[entry["id"]].size() == all.size() and Profile.tree_last[entry["id"]] == route, "the route is remembered")
+	_open_case("case_03")
+	GameState.set_flag("nur_trusted")
+	DecisionTree.record("A")
+	ok("nur.trusted" in Profile.tree["case_03"] and "nur.open" in Profile.tree["case_03"], "routes found in earlier attempts stay revealed")
+	ok("nur.reported" not in Profile.tree["case_03"], "a route never taken stays hidden")
+	ok("nur.trusted" in Profile.tree_last["case_03"] and "nur.open" not in Profile.tree_last["case_03"], "only the last route is highlighted")
 	Profile.reset()
 	_open_case("case_01")
 

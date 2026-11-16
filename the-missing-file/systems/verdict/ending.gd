@@ -102,6 +102,9 @@ func _ready() -> void:
 	var menu := UI.button("ENDING_TO_OFFICE")
 	menu.pressed.connect(func(): menu_requested.emit())
 	buttons.add_child(menu)
+	var tree := UI.button("TREE_BUTTON")
+	tree.pressed.connect(func(): add_child(DecisionTreeView.new(GameState.case_id)))
+	buttons.add_child(tree)
 	if not def["solved"]:
 		var back := UI.button("ENDING_RETURN", "AccentButton")
 		back.pressed.connect(func():

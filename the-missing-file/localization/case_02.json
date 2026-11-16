@@ -1586,5 +1586,77 @@
   "C2_E24_GIST": {
     "en": "Bora Kaplan has one conviction, for reckless driving in 2011. Nothing since.",
     "tr": "Bora Kaplan'ın tek sabıkası var: 2011'de tehlikeli araç kullanma. Sonrasında kayıt yok."
+  },
+  "C2_TREE_KAPLAN": {
+    "en": "The chief's suspect",
+    "tr": "Müdürün şüphelisi"
+  },
+  "C2_TREE_KAPLAN_FREE": {
+    "en": "You refused to bring Bora Kaplan in",
+    "tr": "Bora Kaplan'ı gözaltına aldırmadınız"
+  },
+  "C2_TREE_KAPLAN_HELD": {
+    "en": "You had him brought in",
+    "tr": "Onu gözaltına aldırdınız"
+  },
+  "C2_TREE_KAPLAN_OPEN": {
+    "en": "You never decided",
+    "tr": "Karar vermediniz"
+  },
+  "C2_TREE_DENIZ": {
+    "en": "Deniz Aktaş",
+    "tr": "Deniz Aktaş"
+  },
+  "C2_TREE_DENIZ_SPARED": {
+    "en": "You let the laptop go unreported",
+    "tr": "Dizüstü bilgisayar meselesini rapora yazmadınız"
+  },
+  "C2_TREE_DENIZ_CHARGED": {
+    "en": "You charged her for taking it",
+    "tr": "Onu aldığı için hakkında işlem yaptınız"
+  },
+  "C2_TREE_DENIZ_OPEN": {
+    "en": "You never caught her lie",
+    "tr": "Yalanını hiç yakalamadınız"
+  },
+  "C2_TREE_GUVEN": {
+    "en": "Tarık Güven",
+    "tr": "Tarık Güven"
+  },
+  "C2_TREE_GUVEN_PROTECTED": {
+    "en": "You kept his name out of it",
+    "tr": "Adını işin dışında tuttunuz"
+  },
+  "C2_TREE_GUVEN_NAMED": {
+    "en": "You named him as the source",
+    "tr": "Kaynak olarak adını verdiniz"
+  },
+  "C2_TREE_GUVEN_OPEN": {
+    "en": "He never admitted being the source",
+    "tr": "Kaynak olduğunu hiç kabul etmedi"
+  },
+  "C2_TREE_FILE": {
+    "en": "Drawer 117",
+    "tr": "117 numaralı çekmece"
+  },
+  "C2_TREE_FILE_FOUND": {
+    "en": "You found ruling 58-D",
+    "tr": "58-D kararını buldunuz"
+  },
+  "C2_TREE_FILE_LOST": {
+    "en": "The drawer stayed shut",
+    "tr": "Çekmece kapalı kaldı"
+  },
+  "C2_TREE_SOYLU": {
+    "en": "Nilgün Soylu",
+    "tr": "Nilgün Soylu"
+  },
+  "C2_TREE_SOYLU_CORNERED": {
+    "en": "She asked for her lawyer",
+    "tr": "Avukatını istedi"
+  },
+  "C2_TREE_SOYLU_STANDING": {
+    "en": "She kept her composure",
+    "tr": "Soğukkanlılığını korudu"
   }
 }

@@ -902,5 +902,29 @@
   "ACH_C3_QUIET_DESC": {
     "en": "Solve File 12-C without sending the chief your notes.",
     "tr": "Dosya 12-C'yi müdüre notlarınızı göndermeden çözün."
+  },
+  "TREE_BUTTON": {
+    "en": "Decisions",
+    "tr": "Kararlar"
+  },
+  "TREE_TITLE": {
+    "en": "Your Decisions",
+    "tr": "Kararlarınız"
+  },
+  "TREE_FOUND": {
+    "en": "Routes found: %d / %d",
+    "tr": "Bulunan yollar: %d / %d"
+  },
+  "TREE_HELP": {
+    "en": "Your last route is highlighted. Routes you have never taken stay hidden until you take them.",
+    "tr": "Son izlediğiniz yol vurgulanır. Hiç seçmediğiniz yollar, seçene kadar gizli kalır."
+  },
+  "TREE_HIDDEN": {
+    "en": "?  ?  ?",
+    "tr": "?  ?  ?"
+  },
+  "TREE_VERDICT": {
+    "en": "The verdict",
+    "tr": "Karar"
   }
 }

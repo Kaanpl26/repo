@@ -62,6 +62,10 @@ func _case_row(entry: Dictionary) -> Control:
 		status.text = tr("CASES_IN_PROGRESS")
 	else:
 		status.text = tr("CASES_NEW")
+	if Profile.tree.has(id):
+		var tree := UI.button("TREE_BUTTON")
+		tree.pressed.connect(func(): add_child(DecisionTreeView.new(id)))
+		h.add_child(tree)
 	if has_save:
 		var cont := UI.button("MENU_CONTINUE", "AccentButton")
 		cont.pressed.connect(_resume.bind(id))

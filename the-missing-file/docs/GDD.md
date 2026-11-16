@@ -360,7 +360,8 @@ Each milestone ends with something the owner can look at and approve.
 - [x] v1.4.1: wordless speech (a short voice-like syllable every few letters while a line appears, at a different pitch for each character; can be switched off in Settings); room pictures stored as lossy WebP; screenshots in build/ are no longer packed into the APK (they had been adding about 19 MB)
 - [x] v1.4.1 checked on the owner's phone
 - [x] v1.5.0: Case 3 “File 12-C”: four rooms, five interviews, 24 pieces of evidence, 13 conclusions, 4 database searches, three carried decisions, five endings, 7 achievements; 3 new Ledger cards and 2 Ledger conclusions; a case can rename the “accident” verdict (here: natural death)
-- [ ] v1.5.0 checked on the owner's phone
+- [x] v1.5.1: Decisions screen (after every verdict and from the case list): each decision point of the case with its outcomes; the last route is highlighted, routes never taken stay hidden; data in data/cases/<case>/tree.json
+- [ ] v1.5.1 checked on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

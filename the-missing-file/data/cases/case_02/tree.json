@@ -1,0 +1,129 @@
+[
+  {
+    "id": "kaplan",
+    "title": "C2_TREE_KAPLAN",
+    "options": [
+      {
+        "id": "free",
+        "text": "C2_TREE_KAPLAN_FREE",
+        "conditions": [
+          {
+            "flag": "kaplan_free"
+          }
+        ]
+      },
+      {
+        "id": "held",
+        "text": "C2_TREE_KAPLAN_HELD",
+        "conditions": [
+          {
+            "flag": "kaplan_held"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C2_TREE_KAPLAN_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "deniz",
+    "title": "C2_TREE_DENIZ",
+    "options": [
+      {
+        "id": "spared",
+        "text": "C2_TREE_DENIZ_SPARED",
+        "conditions": [
+          {
+            "flag": "aktas_spared"
+          }
+        ]
+      },
+      {
+        "id": "charged",
+        "text": "C2_TREE_DENIZ_CHARGED",
+        "conditions": [
+          {
+            "flag": "aktas_charged"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C2_TREE_DENIZ_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "guven",
+    "title": "C2_TREE_GUVEN",
+    "options": [
+      {
+        "id": "protected",
+        "text": "C2_TREE_GUVEN_PROTECTED",
+        "conditions": [
+          {
+            "flag": "guven_protected"
+          }
+        ]
+      },
+      {
+        "id": "named",
+        "text": "C2_TREE_GUVEN_NAMED",
+        "conditions": [
+          {
+            "flag": "guven_named"
+          }
+        ]
+      },
+      {
+        "id": "open",
+        "text": "C2_TREE_GUVEN_OPEN",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "file",
+    "title": "C2_TREE_FILE",
+    "options": [
+      {
+        "id": "found",
+        "text": "C2_TREE_FILE_FOUND",
+        "conditions": [
+          {
+            "flag": "file_found"
+          }
+        ]
+      },
+      {
+        "id": "lost",
+        "text": "C2_TREE_FILE_LOST",
+        "conditions": []
+      }
+    ]
+  },
+  {
+    "id": "soylu",
+    "title": "C2_TREE_SOYLU",
+    "options": [
+      {
+        "id": "cornered",
+        "text": "C2_TREE_SOYLU_CORNERED",
+        "conditions": [
+          {
+            "flag": "soylu_cornered"
+          }
+        ]
+      },
+      {
+        "id": "standing",
+        "text": "C2_TREE_SOYLU_STANDING",
+        "conditions": []
+      }
+    ]
+  }
+]

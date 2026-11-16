@@ -1654,5 +1654,77 @@
   "C1_VARDAR_ASK_2": {
     "en": "(She wants this badly. And I have not yet seen where that note leads.)",
     "tr": "(Bunu çok istiyor. Ben ise o notun nereye çıktığını henüz görmedim.)"
+  },
+  "C1_TREE_GUARD": {
+    "en": "The night guard",
+    "tr": "Gece bekçisi"
+  },
+  "C1_TREE_GUARD_SPARED": {
+    "en": "You kept his absence out of the report",
+    "tr": "Yokluğunu rapora yazmadınız"
+  },
+  "C1_TREE_GUARD_REPORTED": {
+    "en": "You reported his absence",
+    "tr": "Yokluğunu rapora yazdınız"
+  },
+  "C1_TREE_GUARD_OPEN": {
+    "en": "You never settled it",
+    "tr": "Bu konuyu hiç kapatmadınız"
+  },
+  "C1_TREE_LEYLA": {
+    "en": "Leyla Aydın",
+    "tr": "Leyla Aydın"
+  },
+  "C1_TREE_LEYLA_TOLD": {
+    "en": "She told you about the journalist herself",
+    "tr": "Gazeteciyi size kendisi anlattı"
+  },
+  "C1_TREE_LEYLA_PRESSURED": {
+    "en": "You forced it out of her",
+    "tr": "Ağzından zorla aldınız"
+  },
+  "C1_TREE_LEYLA_OPEN": {
+    "en": "Her secret stayed hers",
+    "tr": "Sırrı kendisinde kaldı"
+  },
+  "C1_TREE_NOTE": {
+    "en": "The calendar note",
+    "tr": "Takvimdeki not"
+  },
+  "C1_TREE_NOTE_EARLY": {
+    "en": "You told Dr. Vardar about it too soon",
+    "tr": "Dr. Vardar'a bunu erkenden söylediniz"
+  },
+  "C1_TREE_NOTE_LATE": {
+    "en": "You told her once the file was safe",
+    "tr": "Dosya güvendeyken söylediniz"
+  },
+  "C1_TREE_NOTE_NEVER": {
+    "en": "You kept it to yourself",
+    "tr": "Kendinize sakladınız"
+  },
+  "C1_TREE_ARAS": {
+    "en": "Demir Aras",
+    "tr": "Demir Aras"
+  },
+  "C1_TREE_ARAS_ADMITTED": {
+    "en": "He admitted trying to buy the file",
+    "tr": "Dosyayı satın almaya çalıştığını kabul etti"
+  },
+  "C1_TREE_ARAS_SILENT": {
+    "en": "He admitted nothing",
+    "tr": "Hiçbir şeyi kabul etmedi"
+  },
+  "C1_TREE_VARDAR": {
+    "en": "Dr. Selin Vardar",
+    "tr": "Dr. Selin Vardar"
+  },
+  "C1_TREE_VARDAR_CORNERED": {
+    "en": "You broke her account in the interview",
+    "tr": "Sorguda anlattıklarını çürüttünüz"
+  },
+  "C1_TREE_VARDAR_STANDING": {
+    "en": "Her account was never broken",
+    "tr": "Anlattıkları hiç çürütülmedi"
   }
 }
