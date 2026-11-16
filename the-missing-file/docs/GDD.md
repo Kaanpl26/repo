@@ -358,7 +358,9 @@ Each milestone ends with something the owner can look at and approve.
 - [x] v1.4.0: evidence wall. The Board (and the Ledger) can be shown as a wall of pinned notes with red thread from each conclusion to its two cards: drag to pan, pinch or + and − to zoom, drag a note to move it (remembered per case), Tidy to reset, Hint frames the pair. The list view remains one tap away and the choice is remembered
 - [x] v1.4.0 checked on the owner's phone: the wall works fine
 - [x] v1.4.1: wordless speech (a short voice-like syllable every few letters while a line appears, at a different pitch for each character; can be switched off in Settings); room pictures stored as lossy WebP; screenshots in build/ are no longer packed into the APK (they had been adding about 19 MB)
-- [ ] v1.4.1 checked on the owner's phone on the owner's phone
+- [x] v1.4.1 checked on the owner's phone
+- [x] v1.5.0: Case 3 “File 12-C”: four rooms, five interviews, 24 pieces of evidence, 13 conclusions, 4 database searches, three carried decisions, five endings, 7 achievements; 3 new Ledger cards and 2 Ledger conclusions; a case can rename the “accident” verdict (here: natural death)
+- [ ] v1.5.0 checked on the owner's phone
 - [ ] Release build signed with the owner's own key (owner action, see docs/BUILD.md)
 
 ## 10. Decisions Awaiting Owner Approval

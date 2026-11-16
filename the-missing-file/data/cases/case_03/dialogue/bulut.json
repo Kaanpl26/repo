@@ -1,0 +1,336 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "bulut_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C3_BULUT_INTRO_2"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_INTRO_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "bulut_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "evening": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_EVENING_1",
+          "effects": [
+            {
+              "add_testimony": "T_BULUT_1"
+            }
+          ],
+          "press": "press_evening",
+          "present": {
+            "accept": [
+              "I_VISIT"
+            ],
+            "next": "out",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_evening": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_BULUT_P_EVENING_1"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_P_EVENING_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "out": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_BULUT_OUT_1"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_OUT_2",
+          "mood": "defensive",
+          "effects": [
+            {
+              "add_testimony": "T_BULUT_2"
+            }
+          ]
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "bulut_out"
+        }
+      ]
+    },
+    "door": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_DOOR_1",
+          "mood": "defensive",
+          "press": "press_door",
+          "present": {
+            "accept": [
+              "I_CALLER",
+              "I_SECOND_GLASS"
+            ],
+            "next": "cornered",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_door": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_BULUT_P_DOOR_1"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_P_DOOR_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "cornered": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_BULUT_CORNERED_1"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_CORNERED_2",
+          "mood": "shaken"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_CORNERED_3",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "bulut_cornered"
+        }
+      ]
+    },
+    "tablets": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_TABLETS_1",
+          "effects": [
+            {
+              "add_testimony": "T_BULUT_3"
+            }
+          ],
+          "press": "press_tablets",
+          "present": {
+            "accept": [
+              "I_BLISTER",
+              "I_DEAD_WIFE"
+            ],
+            "next": "tablets_caught",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_tablets": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_BULUT_P_TABLETS_1"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_P_TABLETS_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "tablets_caught": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_BULUT_TABLETS_C1"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_TABLETS_C2",
+          "mood": "shaken"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "bulut_tablets"
+        }
+      ]
+    },
+    "payments": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_PAYMENTS_1",
+          "press": "press_payments"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_payments": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_BULUT_P_PAYMENTS_1"
+        },
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_P_PAYMENTS_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "y1999": {
+      "lines": [
+        {
+          "s": "bulut",
+          "t": "C3_BULUT_Y1999_1",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "evening",
+          "t": "C3_BULUT_Q_EVENING",
+          "next": "evening",
+          "conditions": [
+            {
+              "not_flag": "bulut_out"
+            }
+          ]
+        },
+        {
+          "id": "door",
+          "t": "C3_BULUT_Q_DOOR",
+          "next": "door",
+          "conditions": [
+            {
+              "flag": "bulut_out"
+            },
+            {
+              "not_flag": "bulut_cornered"
+            }
+          ]
+        },
+        {
+          "id": "tablets",
+          "t": "C3_BULUT_Q_TABLETS",
+          "next": "tablets",
+          "conditions": [
+            {
+              "has_evidence": "E22"
+            },
+            {
+              "not_flag": "bulut_tablets"
+            }
+          ]
+        },
+        {
+          "id": "payments",
+          "t": "C3_BULUT_Q_PAYMENTS",
+          "next": "payments",
+          "conditions": [
+            {
+              "has_evidence": "E15"
+            }
+          ]
+        },
+        {
+          "id": "y1999",
+          "t": "C3_BULUT_Q_Y1999",
+          "next": "y1999",
+          "conditions": [
+            {
+              "has_evidence": "E13"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C3_BULUT_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

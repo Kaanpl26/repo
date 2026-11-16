@@ -1,0 +1,170 @@
+{
+  "question": "C3_ACCUSE_QUESTION",
+  "culprit": "bulut",
+  "suspects": [
+    "nur",
+    "cem",
+    "hatice",
+    "bulut"
+  ],
+  "slots": [
+    "motive",
+    "opportunity",
+    "link"
+  ],
+  "proof": {
+    "bulut": {
+      "motive": [
+        "I_MOTIVE"
+      ],
+      "opportunity": [
+        "I_VISIT",
+        "I_FISH"
+      ],
+      "link": [
+        "I_POISON",
+        "I_BLISTER"
+      ]
+    }
+  },
+  "full_requires": [
+    {
+      "has_evidence": "E13"
+    }
+  ],
+  "full": "A",
+  "partial": "B",
+  "accident": "E",
+  "wrong": {
+    "nur": "C",
+    "cem": "D",
+    "hatice": "D"
+  },
+  "accident_label": "C3_ACCUSE_NATURAL",
+  "accident_confirm": "C3_ACCUSE_NATURAL_CONFIRM",
+  "spoiled_flag": "file_compromised",
+  "carry": [
+    "bulut_cornered",
+    "chief_informed",
+    "chief_kept_out",
+    "file_found",
+    "hatice_blamed",
+    "hatice_comforted",
+    "nur_reported",
+    "nur_trusted",
+    "register_seen",
+    "signature_seen",
+    "soykan_slip"
+  ],
+  "endings": {
+    "A": {
+      "title": "C3_END_A_TITLE",
+      "solved": true,
+      "epilogue": [
+        {
+          "conditions": [
+            {
+              "flag": "nur_trusted"
+            }
+          ],
+          "text": "C3_EPI_NUR_TRUSTED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "hatice_comforted"
+            }
+          ],
+          "text": "C3_EPI_HATICE_COMFORTED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "hatice_blamed"
+            }
+          ],
+          "text": "C3_EPI_HATICE_BLAMED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "chief_kept_out"
+            }
+          ],
+          "text": "C3_EPI_CHIEF_OUT"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "chief_informed"
+            }
+          ],
+          "text": "C3_EPI_CHIEF_IN"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "signature_seen"
+            }
+          ],
+          "text": "C3_EPI_SIGNATURE"
+        }
+      ],
+      "text": "C3_END_A_TEXT"
+    },
+    "B": {
+      "title": "C3_END_B_TITLE",
+      "solved": false,
+      "epilogue": [
+        {
+          "conditions": [
+            {
+              "flag": "nur_reported"
+            }
+          ],
+          "text": "C3_EPI_NUR_REPORTED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "hatice_comforted"
+            }
+          ],
+          "text": "C3_EPI_HATICE_COMFORTED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "hatice_blamed"
+            }
+          ],
+          "text": "C3_EPI_HATICE_BLAMED"
+        },
+        {
+          "conditions": [
+            {
+              "flag": "chief_informed"
+            }
+          ],
+          "text": "C3_EPI_CHIEF_IN"
+        }
+      ],
+      "text": "C3_END_B_TEXT"
+    },
+    "C": {
+      "title": "C3_END_C_TITLE",
+      "solved": false,
+      "text": "C3_END_C_TEXT"
+    },
+    "D": {
+      "title": "C3_END_D_TITLE",
+      "solved": false,
+      "text": "C3_END_D_TEXT"
+    },
+    "E": {
+      "title": "C3_END_E_TITLE",
+      "solved": false,
+      "text": "C3_END_E_TEXT"
+    }
+  }
+}

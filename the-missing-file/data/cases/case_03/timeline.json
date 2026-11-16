@@ -1,0 +1,147 @@
+[
+  {
+    "time": "21:04",
+    "text": "C3_TL_LEAK",
+    "conditions": [
+      {
+        "has_evidence": "E24"
+      }
+    ]
+  },
+  {
+    "time": "13:00",
+    "text": "C3_TL_HATICE_OUT",
+    "conditions": [
+      {
+        "has_testimony": "T_HATICE_1"
+      }
+    ]
+  },
+  {
+    "time": "12:00",
+    "text": "C3_TL_CEM_ALIBI",
+    "conditions": [
+      {
+        "has_testimony": "T_CEM_1"
+      }
+    ],
+    "disputed": [
+      {
+        "has_evidence": "E23"
+      }
+    ]
+  },
+  {
+    "time": "16:42",
+    "text": "C3_TL_CEM_CAR",
+    "conditions": [
+      {
+        "has_evidence": "E23"
+      }
+    ]
+  },
+  {
+    "time": "17:20",
+    "text": "C3_TL_CEM_OUT",
+    "conditions": [
+      {
+        "has_testimony": "T_CEM_2"
+      }
+    ]
+  },
+  {
+    "time": "18:00",
+    "text": "C3_TL_NUR_IN",
+    "conditions": [
+      {
+        "has_testimony": "T_NUR_2"
+      }
+    ]
+  },
+  {
+    "time": "18:40",
+    "text": "C3_TL_NUR_OUT",
+    "conditions": [
+      {
+        "has_testimony": "T_NUR_2"
+      }
+    ]
+  },
+  {
+    "time": "19:10",
+    "text": "C3_TL_GLASSES",
+    "conditions": [
+      {
+        "has_evidence": "E07"
+      }
+    ]
+  },
+  {
+    "time": "19:00",
+    "text": "C3_TL_BULUT_ALIBI",
+    "conditions": [
+      {
+        "has_testimony": "T_BULUT_1"
+      }
+    ],
+    "disputed": [
+      {
+        "has_insight": "I_VISIT"
+      }
+    ]
+  },
+  {
+    "time": "20:05",
+    "text": "C3_TL_CALL",
+    "conditions": [
+      {
+        "has_evidence": "E07"
+      }
+    ]
+  },
+  {
+    "time": "20:15",
+    "text": "C3_TL_BULUT_OUT",
+    "conditions": [
+      {
+        "has_evidence": "E14"
+      }
+    ]
+  },
+  {
+    "time": "21:22",
+    "text": "C3_TL_KARACA",
+    "conditions": [
+      {
+        "has_evidence": "E24"
+      }
+    ]
+  },
+  {
+    "time": "21:40",
+    "text": "C3_TL_BULUT_BACK",
+    "conditions": [
+      {
+        "has_evidence": "E14"
+      }
+    ]
+  },
+  {
+    "time": "22:00",
+    "text": "C3_TL_DEATH",
+    "conditions": [
+      {
+        "has_evidence": "E09"
+      }
+    ]
+  },
+  {
+    "time": "08:00",
+    "text": "C3_TL_FOUND",
+    "conditions": [
+      {
+        "has_evidence": "E04"
+      }
+    ]
+  }
+]

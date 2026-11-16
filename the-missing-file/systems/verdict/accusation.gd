@@ -65,7 +65,7 @@ func _show_who() -> void:
 	back.custom_minimum_size = Vector2(260, UI.MIN_TOUCH)
 	back.pressed.connect(queue_free)
 	bottom.add_child(back)
-	var accident := UI.button("ACCUSE_ACCIDENT")
+	var accident := UI.button(CaseDB.endings.get("accident_label", "ACCUSE_ACCIDENT"))
 	accident.pressed.connect(_choose.bind(Verdict.ACCIDENT))
 	bottom.add_child(accident)
 
@@ -82,7 +82,7 @@ func _show_proof() -> void:
 	var title := UI.label("", "HeaderLabel")
 	title.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	title.text = tr("ACCUSE_ACCIDENT") if accident else tr("ACCUSE_PROOF_TITLE") % tr(CaseDB.characters[_suspect]["name"])
+	title.text = tr(CaseDB.endings.get("accident_label", "ACCUSE_ACCIDENT")) if accident else tr("ACCUSE_PROOF_TITLE") % tr(CaseDB.characters[_suspect]["name"])
 	_content.add_child(title)
 	if not accident:
 		for slot in CaseDB.endings["slots"]:
@@ -117,7 +117,7 @@ func _show_proof() -> void:
 	back.custom_minimum_size = Vector2(260, UI.MIN_TOUCH)
 	back.pressed.connect(_show_who)
 	bottom.add_child(back)
-	var go := UI.button("ACCUSE_CONFIRM_ACCIDENT" if accident else "ACCUSE_CONFIRM", "DangerButton")
+	var go := UI.button(CaseDB.endings.get("accident_confirm", "ACCUSE_CONFIRM_ACCIDENT") if accident else "ACCUSE_CONFIRM", "DangerButton")
 	go.custom_minimum_size = Vector2(360, UI.MIN_TOUCH)
 	go.pressed.connect(_confirm)
 	bottom.add_child(go)

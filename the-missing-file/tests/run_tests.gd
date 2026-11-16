@@ -37,6 +37,8 @@ func _ready() -> void:
 	_test_save_migration()
 	print("== Case 2")
 	_test_case_02()
+	print("== Case 3")
+	_test_case_03()
 	print("== Office")
 	_test_office()
 	print("\n%d checks, %d failed" % [_checks, _fails])
@@ -833,6 +835,165 @@ func _test_case_02() -> void:
 	_open_case("case_01")
 
 
+# The whole of Case 3: the visitors, the poison, the three decisions.
+func _test_case_03() -> void:
+	Profile.reset()
+	_open_case("case_03")
+	print("- full playthrough")
+	ok(not CaseDB.location_unlocked("institute"), "other places open after speaking to Hatice")
+	ok(Hints.next("house").get("type") == "point", "hint points at evidence at the start")
+	var hatice := _talk("hatice")
+	_press(hatice, "found")
+	_pick(hatice, "bye")
+	_visit("house")
+	for i in range(1, 9):
+		ok(GameState.has_evidence("E0%d" % i), "house evidence E0%d collected" % i)
+	ok(not ("T_GUVEN_TIP" in GameState.testimony), "no tip from Güven without the Case 2 decision")
+	ok(_look_up_all() == 2, "the caller and the parking ticket can be looked up after the house")
+	ok(_look_up_all() == 1 and GameState.has_evidence("E24"), "Bulut's calls can be looked up once the caller is known")
+	ok(not GameState.has_evidence("E22"), "the pharmacy cannot be searched before the cause of death is known")
+	hatice = _talk("hatice")
+	_press(hatice, "call")
+	ok(not _confront(hatice, "monday", "E07"), "Hatice: unrelated card rejected")
+	ok(_confront(hatice, "monday", "E24"), "Hatice: the call record makes her say whom she told")
+	_ask(hatice, "comfort")
+	ok(GameState.has_flag("hatice_comforted") and "T_HATICE_4" in GameState.testimony, "decision about Hatice recorded")
+	ok("monday" not in hatice.choices().map(func(c): return c["id"]), "the question is not offered again")
+	_ask(hatice, "cem")
+	_pick(hatice, "bye")
+	var cem := _talk("cem")
+	_press(cem, "where")
+	ok(_confront(cem, "where", "E23"), "Cem: the parking ticket breaks his alibi")
+	_press(cem, "money")
+	_ask(cem, "father")
+	_pick(cem, "bye")
+
+	_visit("institute")
+	for id in ["E09", "E10", "E11", "E12"]:
+		ok(GameState.has_evidence(id), "institute evidence %s collected" % id)
+	ok(not GameState.has_evidence("E13"), "file 12-C is not lying about")
+	ok(_look_up_all() == 1 and GameState.has_evidence("E22"), "the pharmacy can be searched after the autopsy")
+	var nur := _talk("nur")
+	_ask(nur, "cause")
+	_press(nur, "saw")
+	ok(_confront(nur, "saw", "E06"), "Nur: the diary makes him admit the visit")
+	ok(GameState.has_evidence("E13") and GameState.has_flag("file_found"), "Nur hands over his copy of 12-C")
+	_ask(nur, "trust")
+	ok(GameState.has_flag("nur_trusted") and "T_NUR_3" in GameState.testimony and not GameState.has_flag("file_compromised"), "trusting Nur keeps the file safe")
+	_press(nur, "ampoule")
+	_ask(nur, "y1999")
+	_pick(nur, "bye")
+	hatice = _talk("hatice")
+	_press(hatice, "y1999")
+	_pick(hatice, "bye")
+
+	_visit("records")
+	ok(GameState.has_evidence("E18") and GameState.has_evidence("E19"), "records room evidence collected")
+	var chief := _talk("soykan")
+	_press(chief, "report")
+	ok(_confront(chief, "report", "E18"), "the chief: the register answers the flood")
+	_ask(chief, "notes")
+	_ask(chief, "hold")
+	ok(GameState.has_flag("chief_kept_out"), "decision: the chief does not get the notes")
+	ok("notes" not in chief.choices().map(func(c): return c["id"]), "the decision is only offered once")
+	_press(chief, "nur")
+	_pick(chief, "bye")
+
+	_visit("harbour")
+	for id in ["E14", "E15", "E16", "E17"]:
+		ok(GameState.has_evidence(id), "harbour evidence %s collected" % id)
+	ok(not GameState.has_evidence("E16X"), "the stove was not cleaned out")
+	_connect_all()
+	for id in CaseDB.insights:
+		ok(GameState.has_insight(id), "conclusion %s can be reached" % id)
+	var bulut := _talk("bulut")
+	_press(bulut, "evening")
+	ok(not _confront(bulut, "evening", "E14"), "Bulut: the slate alone is not enough")
+	ok(_confront(bulut, "evening", "I_VISIT"), "Bulut: slate and mast together break his alibi")
+	_press(bulut, "door")
+	ok(_confront(bulut, "door", "I_CALLER"), "Bulut: the call corners him")
+	ok(GameState.has_flag("bulut_cornered"), "Bulut asks for Karaca")
+	_press(bulut, "tablets")
+	ok(_confront(bulut, "tablets", "I_DEAD_WIFE"), "Bulut: the prescription")
+	_press(bulut, "payments")
+	_ask(bulut, "y1999")
+	_pick(bulut, "bye")
+
+	for id in CaseDB.countable_evidence():
+		ok(GameState.has_evidence(id), "evidence %s was found on the main path" % id)
+	for id in CaseDB.meta["testimony"]:
+		if id != "T_GUVEN_TIP":
+			ok(id in GameState.testimony, "statement %s was recorded on the main path" % id)
+
+	print("- verdicts")
+	var proof := {"motive": "I_MOTIVE", "opportunity": "I_VISIT", "link": "I_POISON"}
+	ok(Verdict.resolve(Verdict.ACCIDENT, {}) == "E", "natural causes -> ending E")
+	ok(Verdict.resolve("nur", proof) == "C", "accusing Dr. Nur -> ending C")
+	ok(Verdict.resolve("cem", proof) == "D" and Verdict.resolve("hatice", proof) == "D", "family -> ending D")
+	ok(Verdict.resolve("bulut", {"motive": "I_MOTIVE", "link": "I_POISON"}) == "B", "one proof missing -> ending B")
+	ok(Verdict.resolve("bulut", {"motive": "I_MOTIVE", "opportunity": "I_FISH", "link": "I_BLISTER"}) == "A", "the alternative conclusions count")
+	ok(Verdict.resolve("bulut", proof) == "A", "full proof and the file -> ending A")
+	ok(Verdict.epilogue("A").size() == 4, "true ending has an epilogue line for each decision and the signature")
+	_test_wall_layout("Case 3")
+	GameState.set_flag("case_solved")
+	for o in CaseDB.meta["objectives"]:
+		ok(GameState.check(o.get("show", [])) and GameState.check(o["done"]), "objective %s is complete at the end" % o["id"])
+	ok(Hints.next(GameState.location).is_empty(), "no hints remain when the case is solved")
+	var rating := Verdict.rating()
+	ok(rating["evidence"] == rating["evidence_total"] and rating["insights"] == rating["insights_total"], "rating counts everything found")
+	var carried: Array = []
+	for flag in CaseDB.endings["carry"]:
+		if GameState.has_flag(flag):
+			carried.append(flag)
+	Profile.record_verdict("case_03", "A", true, rating, carried)
+	var earned := Achievements.evaluate("A")
+	for id in ["C3_SOLVED", "C3_CORNERED", "C3_NUR_CLEAR", "C3_SIGNATURE", "C3_QUIET"]:
+		ok(id in earned or Profile.achievements.has(id), "achievement %s earned on the main path" % id)
+	ok(Profile.has_flag("case_03.nur_trusted") and Profile.has_flag("case_03.chief_kept_out"), "Case 3 decisions are carried forward")
+
+	print("- alternative branches")
+	# Reporting Nur sends the copy through the chief's office.
+	_open_case("case_03")
+	GameState.set_flag("hatice_met")
+	_visit("house")
+	_visit("institute")
+	nur = _talk("nur")
+	_confront(nur, "saw", "E06")
+	_ask(nur, "report")
+	ok(GameState.has_flag("file_compromised") and "T_NUR_3" not in GameState.testimony, "reporting Nur costs the file its safety")
+	for id in CaseDB.insights:
+		GameState.insights.append(id)
+	ok(Verdict.resolve("bulut", proof) == "B", "with the file compromised the best verdict is ending B")
+
+	# Sending the chief the notes gets the stove cleaned out, but the case stays solvable.
+	_open_case("case_03")
+	GameState.set_flag("hatice_met")
+	_visit("house")
+	_visit("institute")
+	_visit("records")
+	chief = _talk("soykan")
+	_ask(chief, "notes")
+	_ask(chief, "inform")
+	_visit("harbour")
+	ok(GameState.has_evidence("E16X") and not GameState.has_evidence("E16"), "the blister packs are ash when the chief was told")
+	nur = _talk("nur")
+	_confront(nur, "saw", "E06")
+	_ask(nur, "trust")
+	_look_up_all()
+	_look_up_all()
+	_connect_all()
+	ok(not GameState.has_insight("I_BLISTER") and GameState.has_insight("I_POISON"), "the pharmacy record still links the tablets")
+	ok(Verdict.resolve("bulut", proof) == "A", "the case stays fully solvable")
+
+	# The Case 2 decision about Güven brings a name.
+	_open_case("case_03")
+	Profile.flags["case_02.guven_protected"] = true
+	_visit("house")
+	ok("T_GUVEN_TIP" in GameState.testimony, "protecting Güven in Case 2 earns his statement in Case 3")
+	Profile.reset()
+	_open_case("case_01")
+
+
 ## The automatic layout of the evidence wall for the cards held right now:
 ## every card has a place, nothing overlaps, everything is on the wall, and a
 ## note the player has moved stays where they put it.
@@ -883,6 +1044,7 @@ func _test_office() -> void:
 
 	# Case 2 solved with everything.
 	Profile.record_verdict("case_02", "A", true, {"score": 90, "grade": "S"}, ["file_found", "registry_seen", "guven_source", "soykan_remark", "kaplan_free"])
+	Profile.record_verdict("case_03", "A", true, {"score": 90, "grade": "S"}, ["file_found", "register_seen", "nur_trusted"])
 	_visit("office")
 	for id in CaseDB.evidence:
 		ok(GameState.has_evidence(id), "card %s arrives on the wall" % id)
@@ -891,7 +1053,7 @@ func _test_office() -> void:
 	ok("LEDGER_WALL" in Achievements.evaluate() or Profile.achievements.has("LEDGER_WALL"), "Ledger achievement earned")
 	_test_wall_layout("Ledger")
 	ok(Profile.achievements.has("LEDGER_CHIEF"), "hidden achievement for noticing the chief")
-	ok(Hints.current_objective().get("id") == "O_NEXT", "the office points at the next case")
+	ok(Hints.current_objective().get("id") == "O_C4", "the office points at the next case")
 	ok(props.filter(func(p): return GameState.check(p["conditions"])).size() == 4, "four mementos: both cases, the front page and the promotion")
 
 	# Missing pieces stay missing: no file in Case 1, so no slip on the wall.

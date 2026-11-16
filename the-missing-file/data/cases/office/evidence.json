@@ -54,5 +54,26 @@
     "gist": "OF_L08_GIST",
     "body": "OF_L08_BODY",
     "icon": "res://assets/evidence/c2_pickup.png"
+  },
+  "L09": {
+    "name": "OF_L09_NAME",
+    "desc": "OF_L09_DESC",
+    "gist": "OF_L09_GIST",
+    "body": "OF_L09_BODY",
+    "icon": "res://assets/evidence/e17.png"
+  },
+  "L10": {
+    "name": "OF_L10_NAME",
+    "desc": "OF_L10_DESC",
+    "gist": "OF_L10_GIST",
+    "body": "OF_L10_BODY",
+    "icon": "res://assets/evidence/e01.png"
+  },
+  "L11": {
+    "name": "OF_L11_NAME",
+    "desc": "OF_L11_DESC",
+    "gist": "OF_L11_GIST",
+    "body": "OF_L11_BODY",
+    "icon": "res://assets/evidence/c3_slips.png"
   }
 }

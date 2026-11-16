@@ -1,0 +1,289 @@
+{
+  "start": [
+    {
+      "node": "intro",
+      "conditions": [
+        {
+          "not_flag": "nur_met"
+        }
+      ]
+    },
+    {
+      "node": "return"
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_INTRO_1"
+        },
+        {
+          "s": "mira",
+          "t": "C3_NUR_INTRO_2"
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_INTRO_3"
+        }
+      ],
+      "next": "hub",
+      "effects": [
+        {
+          "set_flag": "nur_met"
+        }
+      ]
+    },
+    "return": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_RETURN"
+        }
+      ],
+      "next": "hub"
+    },
+    "closed": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_CLOSED",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "wrong": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_WRONG",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "cause": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_CAUSE_1"
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_CAUSE_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "saw": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_SAW_1",
+          "effects": [
+            {
+              "add_testimony": "T_NUR_1"
+            }
+          ],
+          "press": "press_saw",
+          "present": {
+            "accept": [
+              "E06"
+            ],
+            "next": "admit",
+            "wrong": "wrong"
+          }
+        }
+      ],
+      "next": "hub"
+    },
+    "press_saw": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_NUR_P_SAW_1"
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_P_SAW_2",
+          "mood": "defensive"
+        }
+      ]
+    },
+    "admit": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_NUR_ADMIT_1"
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_ADMIT_2",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_testimony": "T_NUR_2"
+            }
+          ]
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_ADMIT_3",
+          "mood": "shaken",
+          "effects": [
+            {
+              "add_evidence": "E13"
+            },
+            {
+              "set_flag": "file_found"
+            }
+          ]
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_ADMIT_4",
+          "mood": "shaken"
+        },
+        {
+          "s": "mira",
+          "t": "C3_NUR_ADMIT_THINK"
+        }
+      ],
+      "effects": [
+        {
+          "set_flag": "nur_admit"
+        }
+      ],
+      "choices": [
+        {
+          "id": "trust",
+          "t": "C3_NUR_CHOICE_TRUST",
+          "next": "trust",
+          "effects": [
+            {
+              "set_flag": "nur_trusted"
+            }
+          ]
+        },
+        {
+          "id": "report",
+          "t": "C3_NUR_CHOICE_REPORT",
+          "next": "report",
+          "effects": [
+            {
+              "set_flag": "nur_reported"
+            },
+            {
+              "set_flag": "file_compromised"
+            }
+          ]
+        }
+      ]
+    },
+    "trust": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_TRUST_1",
+          "effects": [
+            {
+              "add_testimony": "T_NUR_3"
+            }
+          ]
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_TRUST_2"
+        }
+      ],
+      "next": "hub"
+    },
+    "report": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_REPORT_1",
+          "mood": "defensive"
+        }
+      ],
+      "next": "hub"
+    },
+    "ampoule": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_AMPOULE_1",
+          "press": "press_ampoule"
+        }
+      ],
+      "next": "hub"
+    },
+    "press_ampoule": {
+      "lines": [
+        {
+          "s": "mira",
+          "t": "C3_NUR_P_AMPOULE_1"
+        },
+        {
+          "s": "nur",
+          "t": "C3_NUR_P_AMPOULE_2"
+        }
+      ]
+    },
+    "y1999": {
+      "lines": [
+        {
+          "s": "nur",
+          "t": "C3_NUR_Y1999_1"
+        }
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "choices": [
+        {
+          "id": "cause",
+          "t": "C3_NUR_Q_CAUSE",
+          "next": "cause"
+        },
+        {
+          "id": "saw",
+          "t": "C3_NUR_Q_SAW",
+          "next": "saw",
+          "conditions": [
+            {
+              "not_flag": "nur_admit"
+            }
+          ]
+        },
+        {
+          "id": "ampoule",
+          "t": "C3_NUR_Q_AMPOULE",
+          "next": "ampoule",
+          "conditions": [
+            {
+              "has_evidence": "E10"
+            }
+          ]
+        },
+        {
+          "id": "y1999",
+          "t": "C3_NUR_Q_Y1999",
+          "next": "y1999",
+          "conditions": [
+            {
+              "has_evidence": "E12"
+            }
+          ]
+        },
+        {
+          "id": "bye",
+          "t": "C3_NUR_Q_BYE",
+          "end": true
+        }
+      ]
+    }
+  },
+  "closed": "closed"
+}

@@ -70,5 +70,29 @@
       "OF_LI_CHIEF_W1",
       "OF_LI_CHIEF_W2"
     ]
+  },
+  "LI_OFFICER": {
+    "cards": [
+      "L09",
+      "L10"
+    ],
+    "title": "OF_LI_OFFICER_TITLE",
+    "text": "OF_LI_OFFICER",
+    "wrong": [
+      "OF_LI_OFFICER_W1",
+      "OF_LI_OFFICER_W2"
+    ]
+  },
+  "LI_PAYROLL": {
+    "cards": [
+      "L11",
+      "L04"
+    ],
+    "title": "OF_LI_PAYROLL_TITLE",
+    "text": "OF_LI_PAYROLL",
+    "wrong": [
+      "OF_LI_PAYROLL_W1",
+      "OF_LI_PAYROLL_W2"
+    ]
   }
 }

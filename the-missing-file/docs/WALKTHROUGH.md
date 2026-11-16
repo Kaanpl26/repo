@@ -108,3 +108,24 @@ Accuse **Nilgün Soylu** with:
 | The Obvious Man, Again | Accuse Bora Kaplan |
 | The Wrong Deadline | Accuse Tarık Güven or Deniz Aktaş |
 | Rain and Speed | Close the case as an accident |
+
+---
+
+# Case 3 — File 12-C (spoilers)
+
+**Killer:** Rıza Bulut, retired harbour policeman. He put twenty crushed Digoksin tablets, collected on his dead wife's prescription, into the rakı he shared with Dr. Erol on Thursday night.
+
+**Shortest route to the true ending (A, “Fresh Water”)**
+
+1. House: speak to Hatice, collect all eight items.
+2. Case File → Database: look up the 77 31 caller, the parking ticket, then Bulut's calls.
+3. Institute: collect the four items; ask Dr. Nur when he last saw Dr. Erol and present the **Desk Diary**. He hands over **File 12-C**. Choose **“The copy stays here”** (reporting him spoils the file and caps the verdict at ending B).
+4. Database: search the pharmacy.
+5. Records room: register and personnel card. If you send the chief your notes before visiting the harbour, the blister packs in the stove will be ash.
+6. Harbour: tally slate, payment slips, newspapers, stove.
+7. Board: Motive = *Paid since the month the watchman died* (File 12-C + Payment Slips). Opportunity = *He was in the upper town* (Tally Slate + Bulut's Call Record) or *The fish came from shed No. 7*. Link = *The tablets were his wife's* (Rakı Analysis + Pharmacy Record) or *Twenty empty pockets*.
+8. Case File → accuse Rıza Bulut with those three conclusions.
+
+**Endings:** A full proof with the file; B a proof missing or the file reported through the chief; C accusing Dr. Nur; D accusing Cem or Hatice; E signing it as a natural death.
+
+**Carried forward:** whether Nur was trusted, whether the chief got your notes, how you left Hatice, and whether you saw the chief's name in the file and the register.

@@ -310,5 +310,101 @@
   "OF_TOAST_CARD": {
     "en": "New card on the Ledger wall",
     "tr": "Defter duvarına yeni bir kart eklendi"
+  },
+  "OF_L09_NAME": {
+    "en": "File 12-C, 1999",
+    "tr": "Dosya 12-C, 1999"
+  },
+  "OF_L09_GIST": {
+    "en": "1999: the Pier 9 watchman was drowned in fresh water and his autopsy rewritten. Investigating officer: H. Soykan. A stub reads: “Payment authorised by —”.",
+    "tr": "1999: 9. İskele bekçisi tatlı suda boğuldu, otopsisi yeniden yazıldı. Soruşturmayı yürüten: H. Soykan. Bir koçanda “Ödemeyi onaylayan —” yazıyor."
+  },
+  "OF_L09_DESC": {
+    "en": "1999: the Pier 9 watchman was drowned in fresh water and his autopsy rewritten. Investigating officer: H. Soykan. A stub reads: “Payment authorised by —”.",
+    "tr": "1999: 9. İskele bekçisi tatlı suda boğuldu, otopsisi yeniden yazıldı. Soruşturmayı yürüten: H. Soykan. Bir koçanda “Ödemeyi onaylayan —” yazıyor."
+  },
+  "OF_L09_BODY": {
+    "en": "FILE 12-C\n\nSalih Tekin, night watchman, Pier 9.\nThe witness from page 12 of file 47-B.\n\nDrowned in fresh water, grip marks on both wrists.\nFiled three days later as an accident.\n\nBody recovered by: R. Bulut.\nInvestigating officer: Kom. Yrd. H. Soykan.\n\nReceipt stub: “Payment authorised by —”",
+    "tr": "DOSYA 12-C\n\nSalih Tekin, gece bekçisi, 9. İskele.\n47-B dosyasının 12. sayfasındaki tanık.\n\nTatlı suda boğulmuş, iki bileğinde kavrama izi.\nÜç gün sonra kaza olarak dosyalanmış.\n\nCesedi bulan: R. Bulut.\nSoruşturmayı yürüten: Kom. Yrd. H. Soykan.\n\nMakbuz koçanı: “Ödemeyi onaylayan —”"
+  },
+  "OF_L10_NAME": {
+    "en": "Archive Register, 2003",
+    "tr": "Arşiv Defteri, 2003"
+  },
+  "OF_L10_GIST": {
+    "en": "In 2003 Kom. H. Soykan signed out the harbour police report on the watchman and never returned it. “Lost in the flood”: water 20 cm, shelf 1.8 m.",
+    "tr": "2003'te Kom. H. Soykan bekçiyle ilgili liman polisi raporunu imzayla aldı, iade etmedi. “Selde kayboldu”: su 20 cm, raf 1,8 m."
+  },
+  "OF_L10_DESC": {
+    "en": "In 2003 Kom. H. Soykan signed out the harbour police report on the watchman and never returned it. “Lost in the flood”: water 20 cm, shelf 1.8 m.",
+    "tr": "2003'te Kom. H. Soykan bekçiyle ilgili liman polisi raporunu imzayla aldı, iade etmedi. “Selde kayboldu”: su 20 cm, raf 1,8 m."
+  },
+  "OF_L10_BODY": {
+    "en": "POLICE RECORDS\n\nBox H-99/3, Harbour Police, 1999.\n\nSigned out 14 May 2003 by Kom. H. SOYKAN.\nReturned: —\n\n“Reported lost, flood of 2003.”\n\nThe flood reached 20 cm.\nThe box was shelved at 1.8 m.",
+    "tr": "EMNİYET ARŞİVİ\n\nKutu H-99/3, Liman Polisi, 1999.\n\n14 Mayıs 2003'te Kom. H. SOYKAN imzayla almış.\nİade: —\n\n“2003 selinde kaybolduğu bildirildi.”\n\nSu 20 cm yükseldi.\nKutu 1,8 m'deki raftaydı."
+  },
+  "OF_L11_NAME": {
+    "en": "Fener's Payroll",
+    "tr": "Fener'in Maaş Listesi"
+  },
+  "OF_L11_GIST": {
+    "en": "Fener Danışmanlık has paid harbour policeman Rıza Bulut every month since March 1999. On the night Dr. Erol died, Bulut rang Nedim Karaca's office.",
+    "tr": "Fener Danışmanlık, liman polisi Rıza Bulut'a Mart 1999'dan beri her ay ödeme yapıyor. Dr. Erol'un öldüğü gece Bulut, Nedim Karaca'nın bürosunu aradı."
+  },
+  "OF_L11_DESC": {
+    "en": "Fener Danışmanlık has paid harbour policeman Rıza Bulut every month since March 1999. On the night Dr. Erol died, Bulut rang Nedim Karaca's office.",
+    "tr": "Fener Danışmanlık, liman polisi Rıza Bulut'a Mart 1999'dan beri her ay ödeme yapıyor. Dr. Erol'un öldüğü gece Bulut, Nedim Karaca'nın bürosunu aradı."
+  },
+  "OF_L11_BODY": {
+    "en": "R. BULUT\n\nPaid monthly by Fener Danışmanlık Ltd.\n“harbour security consultancy”\nFirst payment: March 1999.\n\nThursday 21:22:\ncall to the law office of N. Karaca, three minutes.",
+    "tr": "R. BULUT\n\nFener Danışmanlık Ltd.'den aylık ödeme.\n“liman güvenlik danışmanlığı”\nİlk ödeme: Mart 1999.\n\nPerşembe 21.22:\nAv. N. Karaca'nın bürosuna arama, üç dakika."
+  },
+  "OF_LI_OFFICER_TITLE": {
+    "en": "He closed it, then he emptied the shelf",
+    "tr": "Önce kapattı, sonra rafı boşalttı"
+  },
+  "OF_LI_OFFICER": {
+    "en": "Halil Soykan led the 1999 investigation that called a drowning an accident. Four years later he removed the only police report on it. The same hand at both ends of the file.",
+    "tr": "1999'da boğulmayı kaza sayan soruşturmayı Halil Soykan yürüttü. Dört yıl sonra da olayla ilgili tek polis raporunu arşivden o aldı. Dosyanın iki ucunda da aynı el var."
+  },
+  "OF_LI_OFFICER_W1": {
+    "en": "Two different officers happen to share the name.",
+    "tr": "İki ayrı memurun adı tesadüfen aynı."
+  },
+  "OF_LI_OFFICER_W2": {
+    "en": "The flood destroyed the report before he could return it.",
+    "tr": "Rapor, o iade edemeden selde yok oldu."
+  },
+  "OF_LI_PAYROLL_TITLE": {
+    "en": "One firm, one address",
+    "tr": "Tek şirket, tek adres"
+  },
+  "OF_LI_PAYROLL": {
+    "en": "The firm that has paid the watchman's “finder” since 1999 is registered at Nedim Karaca's law office, and Karaca is the first number that man rang after the murder. Fener pays for silence, and Karaca keeps the book.",
+    "tr": "Bekçiyi “bulan” adama 1999'dan beri para ödeyen şirket, Nedim Karaca'nın hukuk bürosunda kayıtlı; o adamın cinayetten sonra aradığı ilk numara da Karaca. Fener susmanın parasını ödüyor, defteri Karaca tutuyor."
+  },
+  "OF_LI_PAYROLL_W1": {
+    "en": "Bulut is simply one of Karaca's ordinary clients.",
+    "tr": "Bulut, Karaca'nın sıradan müvekkillerinden biri yalnızca."
+  },
+  "OF_LI_PAYROLL_W2": {
+    "en": "Fener is a genuine security consultancy.",
+    "tr": "Fener gerçek bir güvenlik danışmanlığı şirketi."
+  },
+  "OF_TL_TEKIN": {
+    "en": "The Pier 9 watchman drowns. Inquest 12-C calls it an accident.",
+    "tr": "9. İskele bekçisi boğuluyor. 12-C tahkikatı buna kaza diyor."
+  },
+  "OF_TL_REPORT": {
+    "en": "The harbour police report leaves the archive and does not come back.",
+    "tr": "Liman polisi raporu arşivden çıkıyor, geri dönmüyor."
+  },
+  "OF_TL_EROL": {
+    "en": "Dr. Nazım Erol dies the week he agreed to talk.",
+    "tr": "Dr. Nazım Erol, konuşmayı kabul ettiği hafta ölüyor."
+  },
+  "OF_OBJ_C4": {
+    "en": "Three files recovered. The last numbers on the slip are still out there.",
+    "tr": "Üç dosya bulundu. Pusuladaki son numaralar hâlâ ortada yok."
   }
 }

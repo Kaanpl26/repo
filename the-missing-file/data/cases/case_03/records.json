@@ -1,0 +1,46 @@
+[
+  {
+    "id": "R_PHONE",
+    "type": "phone",
+    "query": "C3_R_PHONE",
+    "conditions": [
+      {
+        "has_evidence": "E07"
+      }
+    ],
+    "evidence": "E21"
+  },
+  {
+    "id": "R_PHARMACY",
+    "type": "pharmacy",
+    "query": "C3_R_PHARMACY",
+    "conditions": [
+      {
+        "has_evidence": "E09"
+      }
+    ],
+    "evidence": "E22"
+  },
+  {
+    "id": "R_PARKING",
+    "type": "vehicle",
+    "query": "C3_R_PARKING",
+    "conditions": [
+      {
+        "has_evidence": "E06"
+      }
+    ],
+    "evidence": "E23"
+  },
+  {
+    "id": "R_CALLS",
+    "type": "phone",
+    "query": "C3_R_CALLS",
+    "conditions": [
+      {
+        "has_evidence": "E21"
+      }
+    ],
+    "evidence": "E24"
+  }
+]

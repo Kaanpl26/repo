@@ -1,0 +1,1714 @@
+{
+  "C3_E01_NAME": {
+    "en": "Family Doctor's Note",
+    "tr": "Aile Hekiminin Notu"
+  },
+  "C3_E01_DESC": {
+    "en": "The note left by the family doctor who was called on Friday morning.",
+    "tr": "Cuma sabahı çağrılan aile hekiminin bıraktığı not."
+  },
+  "C3_E01_GIST": {
+    "en": "The family doctor was ready to sign it as a natural death from heart failure. No sign of violence.",
+    "tr": "Aile hekimi bunu kalp yetmezliğine bağlı doğal ölüm olarak imzalamaya hazırdı. Şiddet izi yok."
+  },
+  "C3_E01_BODY": {
+    "en": "FRIDAY 08:40\n\nDr. Nazım EROL, 78. Retired.\n\nKnown heart failure, on digoxin for six years.\n\nFound seated in his armchair by his housekeeper. Cold. No sign of violence. No sign of a struggle.\n\nProvisional: natural death, cardiac.\n\nI would have signed the certificate. The prosecutor has asked for an autopsy instead.",
+    "tr": "CUMA 08.40\n\nDr. Nazım EROL, 78. Emekli.\n\nBilinen kalp yetmezliği; altı yıldır digoksin kullanıyor.\n\nKoltuğunda otururken, evine bakan hanım tarafından bulunmuş. Soğumuş. Şiddet izi yok. Boğuşma izi yok.\n\nÖn kanaat: kalbe bağlı doğal ölüm.\n\nÖlüm belgesini imzalayacaktım. Savcı bunun yerine otopsi istedi."
+  },
+  "C3_E02_NAME": {
+    "en": "Pill Organiser and Bottle",
+    "tr": "Hap Kutusu ve Şişe"
+  },
+  "C3_E02_DESC": {
+    "en": "His weekly pill organiser and the pharmacy bottle, on the desk.",
+    "tr": "Masanın üzerindeki haftalık hap kutusu ve eczane şişesi."
+  },
+  "C3_E02_GIST": {
+    "en": "Every one of his own tablets is accounted for: 15 taken, 3 left in the organiser, 12 in the bottle. 30 were dispensed.",
+    "tr": "Kendi tabletlerinin hepsinin hesabı tutuyor: 15 içilmiş, kutuda 3, şişede 12 kalmış. Eczaneden 30 tablet verilmiş."
+  },
+  "C3_E02_BODY": {
+    "en": "DIGOKSİN 0.25 mg — one tablet daily\n\nBottle: 30 tablets, dispensed on the 2nd.\n\nOrganiser: Monday to Thursday empty.\nFriday, Saturday, Sunday: one tablet each.\n\nBottle now holds: 12.\n\n15 days taken + 3 in the organiser + 12 in the bottle = 30.\n\nNothing is missing.",
+    "tr": "DİGOKSİN 0,25 mg — günde bir tablet\n\nŞişe: 30 tablet, ayın 2'sinde verilmiş.\n\nHap kutusu: Pazartesi–Perşembe boş.\nCuma, Cumartesi, Pazar: birer tablet.\n\nŞişede kalan: 12.\n\n15 gün içilen + kutudaki 3 + şişedeki 12 = 30.\n\nEksik yok."
+  },
+  "C3_E03_NAME": {
+    "en": "Rakı Bottle and One Glass",
+    "tr": "Rakı Şişesi ve Tek Kadeh"
+  },
+  "C3_E03_DESC": {
+    "en": "The tray on the side table next to the armchair.",
+    "tr": "Koltuğun yanındaki sehpanın üzerindeki tepsi."
+  },
+  "C3_E03_GIST": {
+    "en": "A rakı bottle, one third gone, a water jug and one glass. There is no second glass on the tray.",
+    "tr": "Üçte biri içilmiş bir rakı şişesi, bir su sürahisi ve tek bir kadeh. Tepside ikinci bir kadeh yok."
+  },
+  "C3_E03_BODY": {
+    "en": "SCENE NOTE — side table\n\nRakı, 70 cl, about one third gone.\nWater jug.\nOne glass, a finger of cloudy rakı left in it.\n\nNo second glass. No plate, no food.\n\nThe bottle is clean: not one fingerprint on it, not even his.",
+    "tr": "OLAY YERİ NOTU — sehpa\n\nRakı, 70 cl, yaklaşık üçte biri içilmiş.\nSu sürahisi.\nBir kadeh; dibinde bir parmak sulu rakı.\n\nİkinci kadeh yok. Tabak yok, yiyecek yok.\n\nŞişe tertemiz: üzerinde tek bir parmak izi yok, onunki bile."
+  },
+  "C3_E04_NAME": {
+    "en": "Glass in the Dish Rack",
+    "tr": "Bulaşıklıktaki Kadeh"
+  },
+  "C3_E04_DESC": {
+    "en": "A rakı glass in the kitchen dish rack.",
+    "tr": "Mutfaktaki bulaşıklıkta bir rakı kadehi."
+  },
+  "C3_E04_GIST": {
+    "en": "A second rakı glass, washed and still damp at eight on Friday morning. The rack was empty when the housekeeper left on Thursday.",
+    "tr": "İkinci bir rakı kadehi; yıkanmış, cuma sabahı sekizde hâlâ nemli. Evine bakan hanım perşembe günü çıktığında bulaşıklık boştu."
+  },
+  "C3_E04_BODY": {
+    "en": "SCENE NOTE — kitchen\n\nOne rakı glass in the dish rack, the pair of the one on the tray.\n\nWashed. Still damp when the first officers arrived at 08:15 on Friday.\n\nThe housekeeper left on Thursday at 13:00 with the rack empty, and washed nothing on Friday.",
+    "tr": "OLAY YERİ NOTU — mutfak\n\nBulaşıklıkta bir rakı kadehi; tepsidekinin eşi.\n\nYıkanmış. İlk ekip cuma günü 08.15'te geldiğinde hâlâ nemliymiş.\n\nEvine bakan hanım perşembe 13.00'te çıkarken bulaşıklık boşmuş; cuma günü de hiçbir şey yıkamamış."
+  },
+  "C3_E05_NAME": {
+    "en": "Fish Wrapped in Newspaper",
+    "tr": "Gazeteye Sarılı Balık"
+  },
+  "C3_E05_DESC": {
+    "en": "Two sea bass in the fridge, wrapped in newspaper.",
+    "tr": "Buzdolabında, gazeteye sarılmış iki levrek."
+  },
+  "C3_E05_GIST": {
+    "en": "Two fresh sea bass wrapped in Thursday's evening paper, on sale from 17:00. A delivery label is still stuck to it: “…ULUT — Barınak No: 7”.",
+    "tr": "Perşembe günkü akşam baskısına sarılmış iki taze levrek; o baskı 17.00'de satışa çıkar. Üzerinde hâlâ bir abone etiketi var: “…ULUT — Barınak No: 7”."
+  },
+  "C3_E05_BODY": {
+    "en": "SCENE NOTE — fridge\n\nTwo sea bass, gutted, fresh.\n\nWrapped in the Karaliman Postası, EVENING EDITION, Thursday. The evening edition goes on sale at 17:00.\n\nA subscriber's address label is stuck to the outer page, torn across:\n\n“…ULUT\nBalıkçı Barınağı No: 7”",
+    "tr": "OLAY YERİ NOTU — buzdolabı\n\nİki levrek; temizlenmiş, taze.\n\nKaraliman Postası'nın perşembe günkü AKŞAM BASKISINA sarılmış. Akşam baskısı 17.00'de satışa çıkar.\n\nDış sayfada, ortasından yırtılmış bir abone adres etiketi yapışık:\n\n“…ULUT\nBalıkçı Barınağı No: 7”"
+  },
+  "C3_E06_NAME": {
+    "en": "Desk Diary",
+    "tr": "Masa Ajandası"
+  },
+  "C3_E06_DESC": {
+    "en": "Dr. Erol's desk diary, open at this week.",
+    "tr": "Dr. Erol'un masa ajandası; bu haftanın sayfası açık."
+  },
+  "C3_E06_GIST": {
+    "en": "Thursday: “Cem 16:30” and “İ.N. 18:00 — he is bringing it”. Monday: “10:00 Savcı Arıkan — 12-C. Time I said it.”",
+    "tr": "Perşembe: “Cem 16.30” ve “İ.N. 18.00 — onu getiriyor”. Pazartesi: “10.00 Savcı Arıkan — 12-C. Söylemenin vakti geldi.”"
+  },
+  "C3_E06_BODY": {
+    "en": "THURSDAY\n16:30  Cem (the house, again)\n18:00  İ.N. — he is bringing it\n\nMONDAY\n10:00  Savcı Arıkan — 12-C.\n       Time I said it.",
+    "tr": "PERŞEMBE\n16.30  Cem (yine ev meselesi)\n18.00  İ.N. — onu getiriyor\n\nPAZARTESİ\n10.00  Savcı Arıkan — 12-C.\n       Söylemenin vakti geldi."
+  },
+  "C3_E07_NAME": {
+    "en": "The Telephone",
+    "tr": "Telefon"
+  },
+  "C3_E07_DESC": {
+    "en": "The landline on his desk keeps a list of calls.",
+    "tr": "Masasındaki sabit telefon arama listesini saklıyor."
+  },
+  "C3_E07_GIST": {
+    "en": "Thursday: he rang H. Demir at 19:10 for four minutes. At 20:05 a mobile ending 77 31 rang him for one minute.",
+    "tr": "Perşembe: 19.10'da H. Demir'i aramış, dört dakika konuşmuş. 20.05'te sonu 77 31 olan bir cep telefonu onu aramış, bir dakika."
+  },
+  "C3_E07_BODY": {
+    "en": "CALLS — Thursday\n\n19:10  OUT  H. Demir         4 min\n20:05  IN   0 5xx 555 77 31  1 min\n\nNo calls after 20:05.",
+    "tr": "ARAMALAR — Perşembe\n\n19.10  GİDEN  H. Demir         4 dk\n20.05  GELEN  0 5xx 555 77 31  1 dk\n\n20.05'ten sonra arama yok."
+  },
+  "C3_E08_NAME": {
+    "en": "Empty Bank Envelope",
+    "tr": "Boş Banka Zarfı"
+  },
+  "C3_E08_DESC": {
+    "en": "A bank envelope on the desk, with the withdrawal slip still in it.",
+    "tr": "Masada bir banka zarfı; içinde hâlâ para çekme dekontu var."
+  },
+  "C3_E08_GIST": {
+    "en": "He withdrew 20,000 lira in cash on Wednesday. The envelope is empty.",
+    "tr": "Çarşamba günü 20.000 lira nakit çekmiş. Zarf boş."
+  },
+  "C3_E08_BODY": {
+    "en": "KARALİMAN BANK — cash withdrawal\nWednesday\n\nN. Erol       20,000.00\n\nThe paper band that held the notes is in the envelope. The notes are not.",
+    "tr": "KARALİMAN BANKASI — nakit çekim\nÇarşamba\n\nN. Erol       20.000,00\n\nBanknotları tutan kâğıt bant zarfın içinde. Banknotlar yok."
+  },
+  "C3_E09_NAME": {
+    "en": "Autopsy and Toxicology",
+    "tr": "Otopsi ve Toksikoloji"
+  },
+  "C3_E09_DESC": {
+    "en": "Dr. İdris Nur's report on Dr. Erol.",
+    "tr": "Dr. İdris Nur'un Dr. Erol hakkındaki raporu."
+  },
+  "C3_E09_GIST": {
+    "en": "Death between 22:00 and midnight on Thursday. Digoxin in his blood at about five times the safe level, roughly twenty tablets. Only rakı in his stomach.",
+    "tr": "Ölüm perşembe 22.00 ile gece yarısı arasında. Kanındaki digoksin güvenli düzeyin yaklaşık beş katı; kabaca yirmi tablet. Midesinde yalnızca rakı var."
+  },
+  "C3_E09_BODY": {
+    "en": "AUTOPSY — N. EROL — Dr. İ. Nur\n\nTime of death: Thursday, 22:00 to 24:00.\n\nCause: cardiac arrest from digoxin poisoning.\n\nSerum digoxin: 9.6 ng/ml.\nSafe range: 0.8 to 2.0.\nEquivalent to about twenty 0.25 mg tablets taken together.\n\nStomach: rakı. No food.\n\nRun twice. A sample has gone to Ankara for confirmation.",
+    "tr": "OTOPSİ — N. EROL — Dr. İ. Nur\n\nÖlüm zamanı: Perşembe, 22.00–24.00.\n\nÖlüm sebebi: digoksin zehirlenmesine bağlı kalp durması.\n\nSerum digoksin: 9,6 ng/ml.\nGüvenli aralık: 0,8–2,0.\nAynı anda alınmış yaklaşık yirmi adet 0,25 mg tablete denk.\n\nMide: rakı. Yiyecek yok.\n\nİki kez çalışıldı. Teyit için Ankara'ya numune gönderildi."
+  },
+  "C3_E10_NAME": {
+    "en": "Laboratory Stock Log",
+    "tr": "Laboratuvar Stok Kaydı"
+  },
+  "C3_E10_DESC": {
+    "en": "The controlled-substances log on the door of the institute's fridge.",
+    "tr": "Enstitü buzdolabının kapağındaki kontrole tabi madde kaydı."
+  },
+  "C3_E10_GIST": {
+    "en": "The institute keeps digoxin only as liquid in 1 ml ampoules, each holding one tablet's worth. Dr. Nur used one on Wednesday to calibrate the test.",
+    "tr": "Enstitüde digoksin yalnızca 1 ml'lik ampullerde, sıvı hâlde bulunuyor; her biri bir tabletlik doz. Dr. Nur çarşamba günü testi kalibre etmek için bir tane kullanmış."
+  },
+  "C3_E10_BODY": {
+    "en": "CONTROLLED STOCK — forensic laboratory\n\nDIGOXIN reference standard\nLiquid, 1 ml ampoules, 0.25 mg each.\nNo tablets are held.\n\nWednesday 14:10\nOUT  1 ampoule  İ. Nur\n“assay calibration”\n\nWednesday 15:00\nEmpty ampoule logged in sharps bin.\n\nStock: 9 ampoules. Count correct.",
+    "tr": "KONTROLE TABİ STOK — adli laboratuvar\n\nDİGOKSİN referans standardı\nSıvı, 1 ml'lik ampul, her biri 0,25 mg.\nTablet bulundurulmaz.\n\nÇarşamba 14.10\nÇIKIŞ  1 ampul  İ. Nur\n“test kalibrasyonu”\n\nÇarşamba 15.00\nBoş ampul kesici atık kutusuna kaydedildi.\n\nStok: 9 ampul. Sayım doğru."
+  },
+  "C3_E11_NAME": {
+    "en": "Analysis of the Rakı",
+    "tr": "Rakı Analizi"
+  },
+  "C3_E11_DESC": {
+    "en": "The laboratory's result for the bottle and glass from the tray.",
+    "tr": "Tepsideki şişe ve kadeh için laboratuvar sonucu."
+  },
+  "C3_E11_GIST": {
+    "en": "The digoxin was in the rakı, as crushed tablets: the bottle holds tablet filler and undissolved fragments. It was put in the bottle, not the glass.",
+    "tr": "Digoksin rakının içindeymiş; ezilmiş tablet hâlinde. Şişede tablet dolgu maddesi ve çözünmemiş parçacıklar var. Kadehe değil, şişeye konmuş."
+  },
+  "C3_E11_BODY": {
+    "en": "LABORATORY — rakı bottle and glass\n\nBottle: digoxin, in solution and as a white sediment.\n\nSediment: lactose and maize starch, the fillers of a pressed tablet, with undissolved tablet fragments.\n\nGlass: the same, at lower concentration.\n\nConclusion: crushed tablets were added to the bottle. A laboratory standard would leave no filler.",
+    "tr": "LABORATUVAR — rakı şişesi ve kadeh\n\nŞişe: digoksin; hem çözelti hâlinde hem beyaz tortu olarak.\n\nTortu: laktoz ve mısır nişastası, yani preslenmiş tablet dolgu maddeleri; ayrıca çözünmemiş tablet parçacıkları.\n\nKadeh: aynısı, daha düşük yoğunlukta.\n\nSonuç: ezilmiş tabletler şişeye eklenmiş. Laboratuvar standardı dolgu maddesi bırakmaz."
+  },
+  "C3_E12_NAME": {
+    "en": "Autopsy Register, 1999",
+    "tr": "Otopsi Defteri, 1999"
+  },
+  "C3_E12_DESC": {
+    "en": "The institute's bound register of examinations for 1999.",
+    "tr": "Enstitünün 1999 yılına ait ciltli muayene defteri."
+  },
+  "C3_E12_GIST": {
+    "en": "1999, entry 99/212: watchman Salih Tekin. “Suspicious” is crossed out and “accidental” written three days later. Erol examined; H. Demir and İ. Nur assisted.",
+    "tr": "1999, kayıt 99/212: bekçi Salih Tekin. “Şüpheli” çizilmiş, üç gün sonra “kaza” yazılmış. Muayeneyi Erol yapmış; H. Demir ve İ. Nur yardım etmiş."
+  },
+  "C3_E12_BODY": {
+    "en": "REGISTER 1999 — No. 99/212\n\nTEKİN, Salih, 54. Night watchman, Pier 9.\nRecovered from the harbour basin.\n\nExamined by: Dr. N. Erol\nTechnician: H. Demir\nTrainee: İ. Nur\n\nCause (crossed out):\n“Drowning. Fresh water in the lungs. Bruising to wrists and neck. Suspicious.”\n\nCause (entered three days later):\n“Accidental drowning. Alcohol.”\n\nFile reference: 12-C.",
+    "tr": "DEFTER 1999 — No. 99/212\n\nTEKİN, Salih, 54. Gece bekçisi, 9. İskele.\nLiman havuzundan çıkarılmış.\n\nMuayene eden: Dr. N. Erol\nTeknisyen: H. Demir\nStajyer: İ. Nur\n\nÖlüm sebebi (üzeri çizilmiş):\n“Suda boğulma. Akciğerlerde tatlı su. Bileklerde ve boyunda morluk. Şüpheli.”\n\nÖlüm sebebi (üç gün sonra yazılmış):\n“Kaza sonucu boğulma. Alkol.”\n\nDosya numarası: 12-C."
+  },
+  "C3_E13_NAME": {
+    "en": "File 12-C",
+    "tr": "Dosya 12-C"
+  },
+  "C3_E13_DESC": {
+    "en": "Dr. Nur's copy of the 1999 inquest file, which he made as a trainee and has kept ever since.",
+    "tr": "Dr. Nur'un 1999 tarihli tahkikat dosyasından, stajyerken çıkardığı ve o günden beri sakladığı kopya."
+  },
+  "C3_E13_GIST": {
+    "en": "The watchman drowned in fresh water with grip marks on his wrists. Body “recovered” by harbour policeman R. Bulut. Investigating officer: H. Soykan.",
+    "tr": "Bekçi, bileklerinde kavrama izleriyle tatlı suda boğulmuş. Cesedi liman polisi R. Bulut “bulmuş”. Soruşturmayı yürüten: H. Soykan."
+  },
+  "C3_E13_BODY": {
+    "en": "FILE 12-C — inquest, Salih Tekin, 1999\n\n1. The original autopsy report, Dr. N. Erol:\n“Drowned in FRESH water. The harbour is salt. Grip marks on both wrists and the back of the neck. He was held under somewhere else and put in the basin afterwards.”\n\n2. The report as filed three days later:\n“Accidental drowning. Alcohol.”\n\n3. Body recovered and reported by:\nHarbour Police Officer R. BULUT.\n\n4. Investigating officer:\nKom. Yrd. H. SOYKAN.\n\n5. The stub of a receipt:\n“Payment authorised by —”",
+    "tr": "DOSYA 12-C — tahkikat, Salih Tekin, 1999\n\n1. Asıl otopsi raporu, Dr. N. Erol:\n“TATLI suda boğulmuş. Liman suyu tuzludur. İki bilekte ve ensede kavrama izleri var. Başka bir yerde suyun altında tutulmuş, sonra havuza bırakılmış.”\n\n2. Üç gün sonra dosyaya giren rapor:\n“Kaza sonucu boğulma. Alkol.”\n\n3. Cesedi bulan ve bildiren:\nLiman Polisi Memuru R. BULUT.\n\n4. Soruşturmayı yürüten:\nKom. Yrd. H. SOYKAN.\n\n5. Bir makbuz koçanı:\n“Ödemeyi onaylayan —”"
+  },
+  "C3_E14_NAME": {
+    "en": "Café Tally Slate",
+    "tr": "Kahvehane Çetelesi"
+  },
+  "C3_E14_DESC": {
+    "en": "The slate where the shelter café keeps the backgammon scores and what is owed.",
+    "tr": "Barınak kahvesinin tavla skorlarını ve borçları yazdığı kara tahta."
+  },
+  "C3_E14_GIST": {
+    "en": "Thursday's backgammon: Rıza was away from the table from 20:15 to 21:40.",
+    "tr": "Perşembe günkü tavla: Rıza 20.15'ten 21.40'a kadar masada değilmiş."
+  },
+  "C3_E14_BODY": {
+    "en": "BALIKÇI BARINAĞI CAFÉ — Thursday\n\nRıza v. Hasan\nRıza  ||||| |\nHasan ||||\n\n“R. out 20:15.\nBack 21:40.\nOwes two teas.”",
+    "tr": "BALIKÇI BARINAĞI KAHVESİ — Perşembe\n\nRıza – Hasan\nRıza  ||||| |\nHasan ||||\n\n“R. 20.15'te kalktı.\n21.40'ta döndü.\nİki çay borcu var.”"
+  },
+  "C3_E15_NAME": {
+    "en": "Payment Slips",
+    "tr": "Ödeme Dekontları"
+  },
+  "C3_E15_DESC": {
+    "en": "Bank slips pinned to a board on the wall of shed No. 7.",
+    "tr": "7 numaralı barınağın duvarındaki panoya iğnelenmiş banka dekontları."
+  },
+  "C3_E15_GIST": {
+    "en": "Fener Danışmanlık has paid Rıza Bulut every month since March 1999 for “harbour security consultancy”.",
+    "tr": "Fener Danışmanlık, Mart 1999'dan beri her ay Rıza Bulut'a “liman güvenlik danışmanlığı” adı altında ödeme yapıyor."
+  },
+  "C3_E15_BODY": {
+    "en": "BANK SLIPS — R. Bulut\n\nFrom: Fener Danışmanlık Ltd.\nFor: “harbour security consultancy”\nMonthly.\n\nOldest slip on the board: March 1999.\nNewest: this month.\n\nSalih Tekin was taken out of the harbour in February 1999.",
+    "tr": "BANKA DEKONTLARI — R. Bulut\n\nGönderen: Fener Danışmanlık Ltd.\nAçıklama: “liman güvenlik danışmanlığı”\nAylık.\n\nPanodaki en eski dekont: Mart 1999.\nEn yenisi: bu ay.\n\nSalih Tekin limandan Şubat 1999'da çıkarılmıştı."
+  },
+  "C3_E16_NAME": {
+    "en": "Burnt Blister Packs",
+    "tr": "Yanmış Hap Blisterleri"
+  },
+  "C3_E16_DESC": {
+    "en": "Half-burnt foil in the stove outside shed No. 7.",
+    "tr": "7 numaralı barınağın önündeki sobada yarı yanmış folyolar."
+  },
+  "C3_E16_GIST": {
+    "en": "Two Digoksin strips of ten, all twenty pockets empty, pushed into the stove. A pharmacy sticker survives: “E. BULUT”.",
+    "tr": "Onluk iki Digoksin blisteri; yirmi gözün hepsi boş, sobaya tıkılmış. Bir eczane etiketi yanmadan kalmış: “E. BULUT”."
+  },
+  "C3_E16_BODY": {
+    "en": "SCENE NOTE — stove, shed No. 7\n\nTwo blister strips, DİGOKSİN 0.25 mg, ten tablets each.\n\nAll twenty pockets pressed out and empty.\n\nHalf burnt. The fire was not hot enough.\n\nPharmacy sticker on one strip:\n“E. BULUT”",
+    "tr": "OLAY YERİ NOTU — soba, 7 numaralı barınak\n\nİki blister, DİGOKSİN 0,25 mg, onar tabletlik.\n\nYirmi gözün hepsi bastırılıp boşaltılmış.\n\nYarı yanmış. Ateş yeterince harlı değilmiş.\n\nBlisterlerden birinde eczane etiketi:\n“E. BULUT”"
+  },
+  "C3_E16X_NAME": {
+    "en": "Ashes in the Stove",
+    "tr": "Sobadaki Küller"
+  },
+  "C3_E16X_DESC": {
+    "en": "The stove outside shed No. 7 has been cleaned out and relit.",
+    "tr": "7 numaralı barınağın önündeki soba boşaltılıp yeniden yakılmış."
+  },
+  "C3_E16X_GIST": {
+    "en": "Fresh ash and a few beads of melted foil. Whatever was burnt here was burnt properly, this morning.",
+    "tr": "Taze kül ve birkaç damla erimiş folyo. Burada ne yakıldıysa bu sabah, bu kez iyice yakılmış."
+  },
+  "C3_E16X_BODY": {
+    "en": "SCENE NOTE — stove, shed No. 7\n\nRaked out and relit this morning. The ash is still warm.\n\nA few beads of melted foil. Nothing that can be read.\n\nSomebody knew to come back and finish the job.",
+    "tr": "OLAY YERİ NOTU — soba, 7 numaralı barınak\n\nBu sabah boşaltılıp yeniden yakılmış. Kül hâlâ ılık.\n\nBirkaç damla erimiş folyo. Okunabilecek hiçbir şey yok.\n\nBiri geri gelip işi bitirmesi gerektiğini biliyormuş."
+  },
+  "C3_E17_NAME": {
+    "en": "Newspaper Bundle",
+    "tr": "Gazete Destesi"
+  },
+  "C3_E17_DESC": {
+    "en": "A stack of newspapers by the door of shed No. 7.",
+    "tr": "7 numaralı barınağın kapısının yanında bir gazete destesi."
+  },
+  "C3_E17_GIST": {
+    "en": "Rıza Bulut's subscription copies, labelled “R. BULUT — Balıkçı Barınağı No: 7”. Thursday's evening edition has lost its outer pages.",
+    "tr": "Rıza Bulut'un abonelik gazeteleri; üzerlerinde “R. BULUT — Balıkçı Barınağı No: 7” etiketi var. Perşembe günkü akşam baskısının dış sayfaları eksik."
+  },
+  "C3_E17_BODY": {
+    "en": "SHED No. 7 — R. BULUT\n\nKaraliman Postası, by subscription. Each copy carries the address label:\n\n“R. BULUT\nBalıkçı Barınağı No: 7”\n\nThursday, evening edition: the outer sheets, pages 1 to 4 and 13 to 16, are gone. The label was on page 1.",
+    "tr": "BARINAK No: 7 — R. BULUT\n\nKaraliman Postası, abonelikle geliyor. Her sayının üzerinde adres etiketi var:\n\n“R. BULUT\nBalıkçı Barınağı No: 7”\n\nPerşembe, akşam baskısı: dış yapraklar, yani 1–4. ve 13–16. sayfalar yok. Etiket 1. sayfadaydı."
+  },
+  "C3_E18_NAME": {
+    "en": "Records Room Register",
+    "tr": "Arşiv Defteri"
+  },
+  "C3_E18_DESC": {
+    "en": "The register on the counter of the police records room.",
+    "tr": "Emniyet arşivindeki bankonun üzerindeki defter."
+  },
+  "C3_E18_GIST": {
+    "en": "The 1999 harbour police report was signed out in 2003 by Kom. H. Soykan and never returned. “Lost in the flood”: water 20 cm, shelf 1.8 m.",
+    "tr": "1999 liman polisi raporunu 2003'te Kom. H. Soykan imzayla almış, iade etmemiş. “Selde kayboldu”: su 20 cm, raf 1,8 m."
+  },
+  "C3_E18_BODY": {
+    "en": "POLICE RECORDS — REGISTER\n\nBox H-99/3\nHarbour Police reports, 1999.\nIncludes report 1999/212: recovery of a body, Pier 9.\n\nSigned out: 14 May 2003\nBy: Kom. H. SOYKAN — “review”\nReturned: —\n\nNote: “Reported lost, flood of 2003.”\n\nIn pencil, another hand:\n“Flood level 20 cm. This box was shelved at 1.8 m.”",
+    "tr": "EMNİYET ARŞİVİ — DEFTER\n\nKutu H-99/3\nLiman Polisi raporları, 1999.\n1999/212 sayılı rapor dahil: 9. İskele'de ceset çıkarma.\n\nİmzayla alındı: 14 Mayıs 2003\nAlan: Kom. H. SOYKAN — “inceleme”\nİade: —\n\nNot: “2003 selinde kaybolduğu bildirildi.”\n\nKurşun kalemle, başka bir el yazısı:\n“Sel seviyesi 20 cm. Bu kutu 1,8 m'deki raftaydı.”"
+  },
+  "C3_E19_NAME": {
+    "en": "Personnel Card: R. Bulut",
+    "tr": "Sicil Kartı: R. Bulut"
+  },
+  "C3_E19_DESC": {
+    "en": "Rıza Bulut's card from the police personnel index.",
+    "tr": "Rıza Bulut'un emniyet sicil kartoteksindeki kartı."
+  },
+  "C3_E19_GIST": {
+    "en": "Harbour police 1985 to 2010. Commended in 1999 for recovering a body at Pier 9, on the proposal of H. Soykan. His wife, Emine Bulut, died in 2024.",
+    "tr": "1985–2010 arası liman polisi. 1999'da 9. İskele'de bir cesedi çıkardığı için, H. Soykan'ın teklifiyle takdir almış. Eşi Emine Bulut 2024'te ölmüş."
+  },
+  "C3_E19_BODY": {
+    "en": "BULUT, Rıza\nHarbour Police, 1985 to 2010. Retired.\n\n1999  Commendation: “recovery of a body, Pier 9”.\n      Proposed by: Kom. Yrd. H. Soykan.\n\nNext of kin:\nWife: Emine BULUT (died 2024)\nSister-in-law: Hatice DEMİR",
+    "tr": "BULUT, Rıza\nLiman Polisi, 1985–2010. Emekli.\n\n1999  Takdirname: “9. İskele'de ceset çıkarma”.\n      Teklif eden: Kom. Yrd. H. Soykan.\n\nYakınları:\nEşi: Emine BULUT (ölümü 2024)\nBaldızı: Hatice DEMİR"
+  },
+  "C3_E21_NAME": {
+    "en": "Subscriber: 0 5xx 555 77 31",
+    "tr": "Abone: 0 5xx 555 77 31"
+  },
+  "C3_E21_DESC": {
+    "en": "Database search for the mobile that rang Dr. Erol at 20:05.",
+    "tr": "Dr. Erol'u 20.05'te arayan cep telefonu için veri tabanı sorgusu."
+  },
+  "C3_E21_GIST": {
+    "en": "The mobile that rang Dr. Erol at 20:05 on Thursday belongs to Rıza Bulut, a retired harbour policeman.",
+    "tr": "Dr. Erol'u perşembe 20.05'te arayan cep telefonu, emekli liman polisi Rıza Bulut'a ait."
+  },
+  "C3_E21_BODY": {
+    "en": "QUERY: 0 5xx 555 77 31\n\nSubscriber:\nRıza BULUT\nBalıkçı Barınağı No: 7, Karaliman\n\nRetired police officer (harbour).",
+    "tr": "SORGU: 0 5xx 555 77 31\n\nAbone:\nRıza BULUT\nBalıkçı Barınağı No: 7, Karaliman\n\nEmekli polis memuru (liman)."
+  },
+  "C3_E22_NAME": {
+    "en": "Pharmacy Record: Digoksin",
+    "tr": "Eczane Kaydı: Digoksin"
+  },
+  "C3_E22_DESC": {
+    "en": "Database search for digoxin tablets dispensed in Karaliman in the last thirty days.",
+    "tr": "Karaliman'da son otuz günde verilen digoksin tabletleri için veri tabanı sorgusu."
+  },
+  "C3_E22_GIST": {
+    "en": "Twenty Digoksin tablets were dispensed on Tuesday for Emine Bulut and collected by her husband, R. Bulut. The only other patient is Dr. Erol himself.",
+    "tr": "Salı günü Emine Bulut adına yirmi Digoksin tableti verilmiş; ilacı eşi R. Bulut teslim almış. Diğer tek hasta Dr. Erol'un kendisi."
+  },
+  "C3_E22_BODY": {
+    "en": "QUERY: DİGOKSİN 0.25 mg tablets\nKaraliman, last 30 days\n\nN. EROL        30 tablets   the 2nd\n               collected by H. Demir\n\nE. BULUT       20 tablets   Tuesday\n               collected by R. Bulut (husband)\n               repeat prescription, monthly\n\nNo other patients.\n\nForensic Institute: ampoules only, not tablets.",
+    "tr": "SORGU: DİGOKSİN 0,25 mg tablet\nKaraliman, son 30 gün\n\nN. EROL        30 tablet   ayın 2'si\n               teslim alan: H. Demir\n\nE. BULUT       20 tablet   Salı\n               teslim alan: R. Bulut (eşi)\n               tekrarlayan reçete, aylık\n\nBaşka hasta yok.\n\nAdli Tıp Enstitüsü: yalnızca ampul, tablet değil."
+  },
+  "C3_E23_NAME": {
+    "en": "Parking Ticket: 82 CE 1907",
+    "tr": "Park Cezası: 82 CE 1907"
+  },
+  "C3_E23_DESC": {
+    "en": "Database search for vehicles ticketed in Yokuş Sokak on Thursday.",
+    "tr": "Perşembe günü Yokuş Sokak'ta ceza yazılan araçlar için veri tabanı sorgusu."
+  },
+  "C3_E23_GIST": {
+    "en": "Cem Erol's car was ticketed outside his father's house at 16:42 on Thursday. It was gone by the warden's next round at 17:25.",
+    "tr": "Cem Erol'un arabasına perşembe 16.42'de babasının evinin önünde ceza yazılmış. Görevlinin 17.25'teki bir sonraki turunda araç gitmişmiş."
+  },
+  "C3_E23_BODY": {
+    "en": "QUERY: Yokuş Sokak, Thursday\n\n82 CE 1907 — keeper: Cem EROL\nTicketed 16:42, outside No. 14.\n“Parked across a gateway.”\n\nWarden's next round, 17:25:\nvehicle no longer present.",
+    "tr": "SORGU: Yokuş Sokak, Perşembe\n\n82 CE 1907 — ruhsat sahibi: Cem EROL\n16.42'de, 14 numaranın önünde ceza yazıldı.\n“Garaj girişine park.”\n\nGörevlinin bir sonraki turu, 17.25:\naraç yerinde değil."
+  },
+  "C3_E24_NAME": {
+    "en": "Call Record: R. Bulut",
+    "tr": "Arama Kaydı: R. Bulut"
+  },
+  "C3_E24_DESC": {
+    "en": "Database search for Rıza Bulut's mobile, Wednesday and Thursday.",
+    "tr": "Rıza Bulut'un cep telefonu için veri tabanı sorgusu; çarşamba ve perşembe."
+  },
+  "C3_E24_GIST": {
+    "en": "Wednesday 21:04: Hatice Demir rang him for six minutes. Thursday 21:22: he rang Nedim Karaca's law office from the upper town, not the harbour.",
+    "tr": "Çarşamba 21.04: Hatice Demir onu arayıp altı dakika konuşmuş. Perşembe 21.22: Nedim Karaca'nın hukuk bürosunu aramış; limandan değil, Yukarı Mahalle'den."
+  },
+  "C3_E24_BODY": {
+    "en": "QUERY: 0 5xx 555 77 31 — R. BULUT\n\nWEDNESDAY\n21:04  IN   H. Demir             6 min\n\nTHURSDAY\n20:05  OUT  N. Erol (landline)   1 min\n       mast: Balıkçı Barınağı\n21:22  OUT  Law office, N. Karaca 3 min\n       mast: YUKARI MAHALLE\n\nYokuş Sokak is in Yukarı Mahalle.",
+    "tr": "SORGU: 0 5xx 555 77 31 — R. BULUT\n\nÇARŞAMBA\n21.04  GELEN  H. Demir             6 dk\n\nPERŞEMBE\n20.05  GİDEN  N. Erol (sabit hat)   1 dk\n       baz: Balıkçı Barınağı\n21.22  GİDEN  Av. N. Karaca bürosu  3 dk\n       baz: YUKARI MAHALLE\n\nYokuş Sokak, Yukarı Mahalle'dedir."
+  },
+  "C3_R_PHONE": {
+    "en": "Who owns the mobile ending 77 31 that rang him at 20:05?",
+    "tr": "Onu 20.05'te arayan, sonu 77 31 olan cep telefonu kimin?"
+  },
+  "C3_R_PHARMACY": {
+    "en": "Who has been given digoxin tablets in Karaliman this month?",
+    "tr": "Bu ay Karaliman'da kimlere digoksin tableti verilmiş?"
+  },
+  "C3_R_PARKING": {
+    "en": "Vehicles ticketed in Yokuş Sokak on Thursday",
+    "tr": "Perşembe günü Yokuş Sokak'ta ceza yazılan araçlar"
+  },
+  "C3_R_CALLS": {
+    "en": "Rıza Bulut's calls on Wednesday and Thursday",
+    "tr": "Rıza Bulut'un çarşamba ve perşembe günkü aramaları"
+  },
+  "C3_LOC_HOUSE": {
+    "en": "Dr. Erol's House",
+    "tr": "Dr. Erol'un Evi"
+  },
+  "C3_ENTER_GUVEN": {
+    "en": "A message from the prosecutor: Tarık Güven's statement names someone. It is in your statements.",
+    "tr": "Savcıdan bir mesaj: Tarık Güven'in ifadesinde bir isim geçiyor. İfadelerinize eklendi."
+  },
+  "C3_D_KITCHEN_WINDOW": {
+    "en": "It has not stopped raining since the harbour road.",
+    "tr": "Rıhtım Yolu'ndan beri yağmur dinmedi."
+  },
+  "C3_D_ARMCHAIR": {
+    "en": "His armchair. The blanket is still folded over the arm. He sat down, poured a drink and did not get up again.",
+    "tr": "Koltuğu. Battaniye hâlâ kolçağa katlanmış duruyor. Oturmuş, bir kadeh doldurmuş ve bir daha kalkmamış."
+  },
+  "C3_D_BOOKS": {
+    "en": "Forty years of forensic medicine, and one shelf of sea stories.",
+    "tr": "Kırk yıllık adli tıp kitapları; bir raf da deniz hikâyeleri."
+  },
+  "C3_LOC_INSTITUTE": {
+    "en": "Forensic Institute",
+    "tr": "Adli Tıp Enstitüsü"
+  },
+  "C3_D_TABLE": {
+    "en": "Dr. Erol worked at this table for thirty-one years. Now he is under the sheet on it.",
+    "tr": "Dr. Erol otuz bir yıl bu masada çalıştı. Şimdi üzerindeki örtünün altında yatıyor."
+  },
+  "C3_D_ANALYSER": {
+    "en": "The analyser that measured the digoxin. A sticker on it reads: “Calibrated Wednesday. İ.N.”",
+    "tr": "Digoksini ölçen cihaz. Üzerindeki etikette şöyle yazıyor: “Çarşamba günü kalibre edildi. İ.N.”"
+  },
+  "C3_D_SHELF": {
+    "en": "Bound registers, one for every year back to 1961.",
+    "tr": "Ciltli defterler; 1961'e kadar her yıl için bir tane."
+  },
+  "C3_LOC_HARBOUR": {
+    "en": "Fishermen's Shelter",
+    "tr": "Balıkçı Barınağı"
+  },
+  "C3_D_BOAT": {
+    "en": "A small fishing boat, well kept. On the bow: “EMİNE”.",
+    "tr": "Küçük, bakımlı bir balıkçı teknesi. Pruvasında “EMİNE” yazıyor."
+  },
+  "C3_D_BACKGAMMON": {
+    "en": "A backgammon board, mid-game. The dice are worn smooth.",
+    "tr": "Yarım kalmış bir tavla. Zarlar aşınmaktan yuvarlanmış."
+  },
+  "C3_D_PLATE": {
+    "en": "The door plate: “Barınak No: 7 — R. Bulut”.",
+    "tr": "Kapı levhası: “Barınak No: 7 — R. Bulut”."
+  },
+  "C3_D_CRATES": {
+    "en": "Fish crates. Sea bass on ice, caught this week.",
+    "tr": "Balık kasaları. Buza yatırılmış levrekler; bu hafta tutulmuş."
+  },
+  "C3_LOC_RECORDS": {
+    "en": "Police Records Room",
+    "tr": "Emniyet Arşivi"
+  },
+  "C3_D_SHELVES": {
+    "en": "Case boxes back to the 1970s. The tide mark from the flood of 2003 is at ankle height.",
+    "tr": "1970'lere kadar uzanan dosya kutuları. 2003 selinin bıraktığı su izi ayak bileği hizasında."
+  },
+  "C3_D_GAP": {
+    "en": "One box is missing from the top shelf, well above head height. The label under the gap reads: “Harbour Police, 1999”.",
+    "tr": "En üst raftan, boy hizasının epey yukarısından bir kutu eksik. Boşluğun altındaki etikette “Liman Polisi, 1999” yazıyor."
+  },
+  "C3_NAME_MIRA": {
+    "en": "Mira Kaya",
+    "tr": "Mira Kaya"
+  },
+  "C3_NAME_SOYKAN": {
+    "en": "Halil Soykan",
+    "tr": "Halil Soykan"
+  },
+  "C3_NAME_HATICE": {
+    "en": "Hatice Demir",
+    "tr": "Hatice Demir"
+  },
+  "C3_NAME_CEM": {
+    "en": "Cem Erol",
+    "tr": "Cem Erol"
+  },
+  "C3_NAME_NUR": {
+    "en": "Dr. İdris Nur",
+    "tr": "Dr. İdris Nur"
+  },
+  "C3_NAME_BULUT": {
+    "en": "Rıza Bulut",
+    "tr": "Rıza Bulut"
+  },
+  "C3_T_HATICE_1_TITLE": {
+    "en": "Hatice: left at one, found him at eight",
+    "tr": "Hatice: birde çıktı, sekizde buldu"
+  },
+  "C3_T_HATICE_1": {
+    "en": "She left on Thursday at 13:00 with the kitchen tidy and the dish rack empty. She found him in his armchair at 08:00 on Friday.",
+    "tr": "Perşembe günü 13.00'te, mutfağı toplayıp bulaşıklığı boş bırakarak çıkmış. Onu cuma sabahı 08.00'de koltuğunda bulmuş."
+  },
+  "C3_T_HATICE_2_TITLE": {
+    "en": "Hatice: “An old friend is bringing fish”",
+    "tr": "Hatice: “Eski bir dost balık getiriyor”"
+  },
+  "C3_T_HATICE_2": {
+    "en": "He rang her at 19:10 to ask where the good rakı glasses were. He said an old friend was bringing fish.",
+    "tr": "19.10'da onu arayıp iyi rakı kadehlerinin nerede olduğunu sormuş. Eski bir dostunun balık getireceğini söylemiş."
+  },
+  "C3_T_HATICE_3_TITLE": {
+    "en": "Hatice: “I told no one”",
+    "tr": "Hatice: “Kimseye söylemedim”"
+  },
+  "C3_T_HATICE_3": {
+    "en": "Says she told nobody that Dr. Erol was going to the prosecutor on Monday.",
+    "tr": "Dr. Erol'un pazartesi günü savcıya gideceğini kimseye söylemediğini belirtiyor."
+  },
+  "C3_T_HATICE_4_TITLE": {
+    "en": "Hatice: she told Rıza",
+    "tr": "Hatice: Rıza'ya söylemiş"
+  },
+  "C3_T_HATICE_4": {
+    "en": "On Wednesday night she told her brother-in-law, Rıza Bulut, that Nazım Bey was finally going to talk about the watchman. Rıza was married to her sister Emine, who died two years ago.",
+    "tr": "Çarşamba gecesi eniştesi Rıza Bulut'a, Nazım Bey'in sonunda bekçi meselesini anlatacağını söylemiş. Rıza, iki yıl önce ölen ablası Emine'nin kocasıymış."
+  },
+  "C3_T_HATICE_5_TITLE": {
+    "en": "Hatice: the watchman's wrists",
+    "tr": "Hatice: bekçinin bilekleri"
+  },
+  "C3_T_HATICE_5": {
+    "en": "In 1999 she washed the watchman's body. There were marks on his wrists. Nazım Bey wrote what he saw, and three days later a different report was typed.",
+    "tr": "1999'da bekçinin cesedini o yıkamış. Bileklerinde izler varmış. Nazım Bey gördüğünü yazmış; üç gün sonra başka bir rapor daktilo edilmiş."
+  },
+  "C3_T_CEM_1_TITLE": {
+    "en": "Cem: “At the restaurant all day”",
+    "tr": "Cem: “Bütün gün lokantadaydım”"
+  },
+  "C3_T_CEM_1": {
+    "en": "Says he was at his restaurant from noon until midnight on Thursday.",
+    "tr": "Perşembe günü öğleden gece yarısına kadar lokantasında olduğunu söylüyor."
+  },
+  "C3_T_CEM_2_TITLE": {
+    "en": "Cem: admits the visit",
+    "tr": "Cem: ziyareti kabul ediyor"
+  },
+  "C3_T_CEM_2": {
+    "en": "Admits he was at the house from about 16:30 to 17:20. They argued about selling it. He left with the 20,000 lira, which he says his father gave him. His father was alive and angry when he left.",
+    "tr": "16.30 ile 17.20 arasında evde olduğunu kabul ediyor. Evi satma konusunda tartışmışlar. 20.000 lirayı alıp çıkmış; babasının verdiğini söylüyor. Çıktığında babası hayattaymış ve öfkeliymiş."
+  },
+  "C3_T_NUR_1_TITLE": {
+    "en": "Nur: “Not for weeks”",
+    "tr": "Nur: “Haftalardır görmedim”"
+  },
+  "C3_T_NUR_1": {
+    "en": "Says he had not seen Dr. Erol for weeks, since a retirement dinner.",
+    "tr": "Dr. Erol'u haftalardır, bir emeklilik yemeğinden beri görmediğini söylüyor."
+  },
+  "C3_T_NUR_2_TITLE": {
+    "en": "Nur: he was there at six",
+    "tr": "Nur: saat altıda oradaydı"
+  },
+  "C3_T_NUR_2": {
+    "en": "Admits he visited from 18:00 to 18:40 to bring Dr. Erol his copy of file 12-C. Erol was sober, calm, and expecting someone later. Nur left with the copy; Erol wanted it kept safe until Monday.",
+    "tr": "18.00'den 18.40'a kadar orada olduğunu, Dr. Erol'a 12-C dosyasının kopyasını götürdüğünü kabul ediyor. Erol ayıkmış, sakinmiş ve daha sonra birini bekliyormuş. Nur kopyayı yanında geri götürmüş; Erol pazartesiye kadar güvende kalmasını istemiş."
+  },
+  "C3_T_NUR_3_TITLE": {
+    "en": "Nur: the name on the inquest",
+    "tr": "Nur: tahkikattaki isim"
+  },
+  "C3_T_NUR_3": {
+    "en": "“Look at who signed as investigating officer in 1999. I have worked under that name for my entire career.”",
+    "tr": "“1999'da soruşturmayı yürüten olarak kimin imza attığına bakın. Bütün meslek hayatım boyunca o ismin emrinde çalıştım.”"
+  },
+  "C3_T_BULUT_1_TITLE": {
+    "en": "Bulut: backgammon all evening",
+    "tr": "Bulut: bütün akşam tavla oynadı"
+  },
+  "C3_T_BULUT_1": {
+    "en": "Says he played backgammon at the shelter café all Thursday evening and never left the harbour.",
+    "tr": "Perşembe akşamı boyunca barınak kahvesinde tavla oynadığını, limandan hiç ayrılmadığını söylüyor."
+  },
+  "C3_T_BULUT_2_TITLE": {
+    "en": "Bulut: “I left the fish at the door”",
+    "tr": "Bulut: “Balığı kapıya bıraktım”"
+  },
+  "C3_T_BULUT_2": {
+    "en": "Now says he took two sea bass up to the house at about half past eight, left them at the door and did not go in.",
+    "tr": "Artık sekiz buçuk sularında eve iki levrek götürdüğünü, kapıya bırakıp içeri girmediğini söylüyor."
+  },
+  "C3_T_BULUT_3_TITLE": {
+    "en": "Bulut: his wife's tablets",
+    "tr": "Bulut: karısının hapları"
+  },
+  "C3_T_BULUT_3": {
+    "en": "Says the heart tablets are Emine's prescription and he keeps forgetting to cancel it.",
+    "tr": "Kalp haplarının Emine'nin reçetesi olduğunu, iptal ettirmeyi hep unuttuğunu söylüyor."
+  },
+  "C3_T_SOYKAN_3_TITLE": {
+    "en": "Soykan: “Lost in the flood”",
+    "tr": "Soykan: “Selde kayboldu”"
+  },
+  "C3_T_SOYKAN_3": {
+    "en": "The chief says the 1999 harbour police report was lost in the flood of 2003.",
+    "tr": "Müdür, 1999 tarihli liman polisi raporunun 2003 selinde kaybolduğunu söylüyor."
+  },
+  "C3_T_SOYKAN_4_TITLE": {
+    "en": "Soykan: “I signed out a hundred files”",
+    "tr": "Soykan: “Yüz dosyaya imza attım”"
+  },
+  "C3_T_SOYKAN_4": {
+    "en": "Shown the register, the chief says he signed out a hundred files that year because the archive was being moved.",
+    "tr": "Defter gösterilince müdür, o yıl arşiv taşındığı için yüz dosyaya imza attığını söylüyor."
+  },
+  "C3_T_GUVEN_TIP_TITLE": {
+    "en": "Prosecutor: Güven names a harbour policeman",
+    "tr": "Savcı: Güven bir liman polisinin adını verdi"
+  },
+  "C3_T_GUVEN_TIP": {
+    "en": "From Tarık Güven's statement to the prosecutor: the man who brought the corrected pages in 2004 was driven by “a harbour policeman called Rıza”.",
+    "tr": "Tarık Güven'in savcıya verdiği ifadeden: 2004'te düzeltilmiş sayfaları getiren adamın arabasını “Rıza adında bir liman polisi” kullanıyormuş."
+  },
+  "C3_I_NOT_NATURAL_TITLE": {
+    "en": "He was poisoned",
+    "tr": "Zehirlendi"
+  },
+  "C3_I_NOT_NATURAL": {
+    "en": "He had about twenty tablets' worth of digoxin in his blood, and every one of his own tablets is still accounted for. The dose came from somewhere else. This was not his heart and not a mistake.",
+    "tr": "Kanında yaklaşık yirmi tabletlik digoksin var; kendi tabletlerinin ise tek tek hesabı tutuyor. Doz başka bir yerden gelmiş. Bu ne kalbiydi ne de bir yanlışlık."
+  },
+  "C3_I_NOT_NATURAL_W1": {
+    "en": "He muddled his pills and took a week's worth at once.",
+    "tr": "Haplarını karıştırıp bir haftalık dozu birden içmiş."
+  },
+  "C3_I_NOT_NATURAL_W2": {
+    "en": "His heart simply gave out; the digoxin level is normal for a patient.",
+    "tr": "Kalbi dayanmamış; digoksin düzeyi bir hasta için normal."
+  },
+  "C3_I_SECOND_GLASS_TITLE": {
+    "en": "Somebody drank with him",
+    "tr": "Biri onunla içti"
+  },
+  "C3_I_SECOND_GLASS": {
+    "en": "One glass on the tray, and its pair washed and still damp in the rack the next morning. Someone sat with him, then washed their own glass and wiped the bottle.",
+    "tr": "Tepside bir kadeh; eşi ise yıkanmış, ertesi sabah bulaşıklıkta hâlâ nemli. Biri onunla oturmuş, sonra kendi kadehini yıkayıp şişeyi silmiş."
+  },
+  "C3_I_SECOND_GLASS_W1": {
+    "en": "He used two glasses himself, one for rakı and one for water.",
+    "tr": "İki kadehi de kendisi kullanmış; biri rakı, biri su için."
+  },
+  "C3_I_SECOND_GLASS_W2": {
+    "en": "Hatice washed the glass on Friday morning.",
+    "tr": "Kadehi cuma sabahı Hatice yıkamış."
+  },
+  "C3_I_ALIVE_TITLE": {
+    "en": "Alive long after his son left",
+    "tr": "Oğlu gittikten çok sonra hayattaydı"
+  },
+  "C3_I_ALIVE": {
+    "en": "Cem's car had gone by 17:25. At 19:10 Dr. Erol was on the telephone to Hatice. Whatever the argument was about, he was alive two hours after his son drove away.",
+    "tr": "Cem'in arabası 17.25'te gitmişti. Dr. Erol 19.10'da Hatice'yle telefonda konuşuyordu. Tartışma ne hakkında olursa olsun, oğlu gittikten iki saat sonra hayattaydı."
+  },
+  "C3_I_ALIVE_W1": {
+    "en": "Cem came back on foot after dark.",
+    "tr": "Cem hava karardıktan sonra yürüyerek geri gelmiş."
+  },
+  "C3_I_ALIVE_W2": {
+    "en": "The call at 19:10 was made by Cem from his father's telephone.",
+    "tr": "19.10'daki aramayı Cem babasının telefonundan yapmış."
+  },
+  "C3_I_CALLER_TITLE": {
+    "en": "Rıza Bulut rang at five past eight",
+    "tr": "Sekizi beş geçe arayan Rıza Bulut'tu"
+  },
+  "C3_I_CALLER": {
+    "en": "The last call Dr. Erol ever received came from Rıza Bulut's mobile at 20:05: a retired harbour policeman, ringing to say he was on his way.",
+    "tr": "Dr. Erol'a gelen son arama 20.05'te Rıza Bulut'un cep telefonundan yapılmış: emekli bir liman polisi, yola çıktığını haber veriyor."
+  },
+  "C3_I_CALLER_W1": {
+    "en": "The number belongs to Dr. Nur.",
+    "tr": "Numara Dr. Nur'a ait."
+  },
+  "C3_I_CALLER_W2": {
+    "en": "It was a wrong number: the call lasted one minute.",
+    "tr": "Yanlış numaraymış; görüşme bir dakika sürmüş."
+  },
+  "C3_I_FISH_TITLE": {
+    "en": "The fish came from shed No. 7",
+    "tr": "Balık 7 numaralı barınaktan geldi"
+  },
+  "C3_I_FISH": {
+    "en": "The fish in his fridge is wrapped in the missing outer pages of Rıza Bulut's own copy of Thursday's evening paper. Bulut brought it to the house himself, after five o'clock.",
+    "tr": "Buzdolabındaki balık, Rıza Bulut'un perşembe günkü akşam gazetesinin eksik dış sayfalarına sarılmış. Balığı eve Bulut kendisi getirmiş; saat beşten sonra."
+  },
+  "C3_I_FISH_W1": {
+    "en": "Dr. Erol bought the fish at the harbour that morning.",
+    "tr": "Dr. Erol balığı o sabah limandan almış."
+  },
+  "C3_I_FISH_W2": {
+    "en": "Half the town wraps fish in the Postası; the label means nothing.",
+    "tr": "Şehrin yarısı balığı Postası'na sarar; etiketin bir anlamı yok."
+  },
+  "C3_I_VISIT_TITLE": {
+    "en": "He was in the upper town",
+    "tr": "Yukarı Mahalle'deydi"
+  },
+  "C3_I_VISIT": {
+    "en": "Bulut was away from the backgammon table from 20:15 to 21:40, and at 21:22 his telephone was in Yukarı Mahalle, where Dr. Erol lived. He was not at the harbour.",
+    "tr": "Bulut 20.15'ten 21.40'a kadar tavla masasında değildi; 21.22'de telefonu Dr. Erol'un oturduğu Yukarı Mahalle'deydi. Limanda değildi."
+  },
+  "C3_I_VISIT_W1": {
+    "en": "He stepped out to check his boat's mooring lines.",
+    "tr": "Teknesinin halatlarına bakmak için dışarı çıkmış."
+  },
+  "C3_I_VISIT_W2": {
+    "en": "Someone else was carrying his telephone.",
+    "tr": "Telefonunu başka biri taşıyormuş."
+  },
+  "C3_I_POISON_TITLE": {
+    "en": "The tablets were his wife's",
+    "tr": "Tabletler karısınındı"
+  },
+  "C3_I_POISON": {
+    "en": "The rakı was poisoned with crushed digoxin tablets, about twenty. Twenty were collected on Tuesday by Rıza Bulut, on a prescription in the name of his wife.",
+    "tr": "Rakı, ezilmiş digoksin tabletleriyle zehirlenmiş; yaklaşık yirmi tane. Salı günü Rıza Bulut, karısının adına yazılmış bir reçeteyle tam yirmi tablet almış."
+  },
+  "C3_I_POISON_W1": {
+    "en": "The tablets in the rakı were Dr. Erol's own.",
+    "tr": "Rakıdaki tabletler Dr. Erol'un kendi tabletleriydi."
+  },
+  "C3_I_POISON_W2": {
+    "en": "The pharmacy made a dispensing error.",
+    "tr": "Eczane ilacı yanlış vermiş."
+  },
+  "C3_I_BLISTER_TITLE": {
+    "en": "Twenty empty pockets",
+    "tr": "Yirmi boş göz"
+  },
+  "C3_I_BLISTER": {
+    "en": "The twenty tablets Bulut collected on Tuesday are not in a medicine cupboard. Their empty strips were pushed into his stove, still carrying the pharmacy's sticker.",
+    "tr": "Bulut'un salı günü aldığı yirmi tablet bir ilaç dolabında durmuyor. Boş blisterleri sobasına tıkılmış; üzerlerinde hâlâ eczanenin etiketi var."
+  },
+  "C3_I_BLISTER_W1": {
+    "en": "Bulut takes the tablets himself for his own heart.",
+    "tr": "Bulut tabletleri kendi kalbi için kendisi kullanıyor."
+  },
+  "C3_I_BLISTER_W2": {
+    "en": "The strips are old ones from when his wife was alive.",
+    "tr": "Blisterler, karısı hayattayken kalma eski kutulardan."
+  },
+  "C3_I_NUR_CLEAR_TITLE": {
+    "en": "Not the laboratory's digoxin",
+    "tr": "Laboratuvarın digoksini değil"
+  },
+  "C3_I_NUR_CLEAR": {
+    "en": "The institute holds digoxin only as liquid ampoules, one tablet's worth each, and the count is correct. The rakı held crushed tablets with their filler. It did not come from Dr. Nur's bench.",
+    "tr": "Enstitüde digoksin yalnızca sıvı ampul hâlinde bulunuyor; her biri bir tabletlik doz, sayım da doğru. Rakıda ise dolgu maddesiyle birlikte ezilmiş tablet vardı. Dr. Nur'un tezgâhından çıkmadı."
+  },
+  "C3_I_NUR_CLEAR_W1": {
+    "en": "Dr. Nur emptied twenty ampoules into the bottle.",
+    "tr": "Dr. Nur şişeye yirmi ampul boşaltmış."
+  },
+  "C3_I_NUR_CLEAR_W2": {
+    "en": "Dr. Nur falsified the laboratory result to protect himself.",
+    "tr": "Dr. Nur kendini korumak için laboratuvar sonucunu değiştirmiş."
+  },
+  "C3_I_DEAD_WIFE_TITLE": {
+    "en": "A prescription for a dead woman",
+    "tr": "Ölmüş bir kadının reçetesi"
+  },
+  "C3_I_DEAD_WIFE": {
+    "en": "Emine Bulut died in 2024. Her husband has gone on collecting her heart tablets every month since. He did not forget to cancel the prescription.",
+    "tr": "Emine Bulut 2024'te öldü. Kocası o günden beri her ay onun kalp haplarını almayı sürdürmüş. Reçeteyi iptal ettirmeyi unutmuş değil."
+  },
+  "C3_I_DEAD_WIFE_W1": {
+    "en": "There are two women called Emine Bulut.",
+    "tr": "Emine Bulut adında iki ayrı kadın var."
+  },
+  "C3_I_DEAD_WIFE_W2": {
+    "en": "The pharmacy dispensed to her by mistake.",
+    "tr": "Eczane ilacı yanlışlıkla onun adına vermiş."
+  },
+  "C3_I_MOTIVE_TITLE": {
+    "en": "Paid since the month the watchman died",
+    "tr": "Bekçinin öldüğü aydan beri maaşlı"
+  },
+  "C3_I_MOTIVE": {
+    "en": "In February 1999 Rıza Bulut “recovered” a body that had been drowned in fresh water. Since March 1999 Fener Danışmanlık has paid him every month. On Monday Dr. Erol was going to say what he really found.",
+    "tr": "Şubat 1999'da Rıza Bulut, tatlı suda boğulmuş bir cesedi “buldu”. Mart 1999'dan beri Fener Danışmanlık ona her ay ödeme yapıyor. Dr. Erol pazartesi günü gerçekte ne bulduğunu anlatacaktı."
+  },
+  "C3_I_MOTIVE_W1": {
+    "en": "Bulut is paid for genuine security work at the harbour.",
+    "tr": "Bulut limandaki gerçek bir güvenlik işi için maaş alıyor."
+  },
+  "C3_I_MOTIVE_W2": {
+    "en": "Dr. Erol was blackmailing Bulut with the file.",
+    "tr": "Dr. Erol dosyayı kullanarak Bulut'a şantaj yapıyordu."
+  },
+  "C3_I_LEAK_TITLE": {
+    "en": "How he knew",
+    "tr": "Nereden biliyordu"
+  },
+  "C3_I_LEAK": {
+    "en": "Dr. Erol's appointment with the prosecutor was written only in his diary. Hatice told her brother-in-law on Wednesday night. On Thursday night he was at the door with fish and a bottle.",
+    "tr": "Dr. Erol'un savcıyla randevusu yalnızca ajandasında yazılıydı. Hatice bunu çarşamba gecesi eniştesine söyledi. Perşembe gecesi enişte elinde balık ve bir şişeyle kapıdaydı."
+  },
+  "C3_I_LEAK_W1": {
+    "en": "The prosecutor's office told Bulut.",
+    "tr": "Bulut'a savcılık haber vermiş."
+  },
+  "C3_I_LEAK_W2": {
+    "en": "Dr. Erol invited Bulut to confess to him.",
+    "tr": "Dr. Erol, itiraf etsin diye Bulut'u kendisi çağırmış."
+  },
+  "C3_I_SIGNATURE_TITLE": {
+    "en": "The same name, twice",
+    "tr": "Aynı isim, iki kez"
+  },
+  "C3_I_SIGNATURE": {
+    "en": "The officer who investigated the watchman's death in 1999 is the officer who took the harbour police report out of the archive in 2003 and never brought it back: Halil Soykan.",
+    "tr": "1999'da bekçinin ölümünü soruşturan memur, 2003'te liman polisi raporunu arşivden alıp bir daha geri getirmeyen memurla aynı kişi: Halil Soykan."
+  },
+  "C3_I_SIGNATURE_W1": {
+    "en": "The report really was lost in the flood.",
+    "tr": "Rapor gerçekten selde kaybolmuş."
+  },
+  "C3_I_SIGNATURE_W2": {
+    "en": "A clerk signed the chief's name without telling him.",
+    "tr": "Bir memur, haberi olmadan müdürün adına imza atmış."
+  },
+  "C3_HATICE_INTRO_1": {
+    "en": "I have kept this house for eleven years, Komiserim. Before that I stood beside him in the mortuary for twenty. I know what a dead man looks like. I still shook him by the shoulder.",
+    "tr": "Bu eve on bir yıldır ben bakarım Komiserim. Ondan önce de yirmi yıl morgda yanında durdum. Ölü bir adamın neye benzediğini bilirim. Yine de omzundan sarstım."
+  },
+  "C3_HATICE_INTRO_2": {
+    "en": "I am sorry, Hatice Hanım. I need to know about yesterday, and about anyone who came to this house.",
+    "tr": "Başınız sağ olsun Hatice Hanım. Dünü ve bu eve gelen herkesi öğrenmem gerekiyor."
+  },
+  "C3_HATICE_INTRO_3": {
+    "en": "Look at whatever you need. His son is in the study, counting the furniture.",
+    "tr": "Neye lazımsa bakın. Oğlu çalışma odasında, eşyaları sayıyor."
+  },
+  "C3_HATICE_RETURN": {
+    "en": "Yes, Komiserim?",
+    "tr": "Buyurun Komiserim?"
+  },
+  "C3_HATICE_CLOSED": {
+    "en": "I have to find his good suit and ring the mosque. Come back when you know what you are asking me.",
+    "tr": "İyi takımını bulmam, camiyi aramam lazım. Bana ne soracağınızı bildiğinizde gelin."
+  },
+  "C3_HATICE_WRONG": {
+    "en": "I do not see what that has to do with what I just said.",
+    "tr": "Bunun az önce söylediğimle ne ilgisi var, anlamadım."
+  },
+  "C3_HATICE_Q_FOUND": {
+    "en": "Tell me about yesterday and this morning.",
+    "tr": "Dünü ve bu sabahı anlatın."
+  },
+  "C3_HATICE_FOUND_1": {
+    "en": "I came at ten yesterday, cooked, cleaned, and left at one. I left the kitchen as I always do: nothing in the sink, nothing in the rack. This morning at eight he was in his chair with the lamp still on.",
+    "tr": "Dün onda geldim, yemek yaptım, temizlik yaptım, birde çıktım. Mutfağı her zamanki gibi bıraktım: lavaboda bir şey yok, bulaşıklıkta bir şey yok. Bu sabah sekizde koltuğundaydı; lamba hâlâ yanıyordu."
+  },
+  "C3_HATICE_P_FOUND_1": {
+    "en": "Did you wash anything this morning? A glass?",
+    "tr": "Bu sabah bir şey yıkadınız mı? Bir kadeh mesela?"
+  },
+  "C3_HATICE_P_FOUND_2": {
+    "en": "I touched his shoulder and then the telephone. Nothing else. I know better than to tidy around the dead.",
+    "tr": "Omzuna dokundum, sonra telefona. Başka hiçbir şeye. Ölünün etrafını toplamamak gerektiğini bilirim."
+  },
+  "C3_HATICE_Q_CALL": {
+    "en": "He rang you at ten past seven last night.",
+    "tr": "Dün akşam yediyi on geçe sizi aramış."
+  },
+  "C3_HATICE_CALL_1": {
+    "en": "He wanted to know where I keep the good rakı glasses. He said an old friend was bringing fish. He sounded pleased. He did not have many old friends left.",
+    "tr": "İyi rakı kadehlerini nereye koyduğumu sordu. Eski bir dostunun balık getireceğini söyledi. Sesi keyifliydi. Pek eski dostu kalmamıştı."
+  },
+  "C3_HATICE_P_CALL_1": {
+    "en": "Did he say a name?",
+    "tr": "İsim verdi mi?"
+  },
+  "C3_HATICE_P_CALL_2": {
+    "en": "No. And I did not ask. I told him the top shelf, behind the tea glasses.",
+    "tr": "Hayır. Ben de sormadım. En üst raf, çay bardaklarının arkası dedim."
+  },
+  "C3_HATICE_Q_MONDAY": {
+    "en": "Who knew he was seeing the prosecutor on Monday?",
+    "tr": "Pazartesi günü savcıyla görüşeceğini kim biliyordu?"
+  },
+  "C3_HATICE_MONDAY_1": {
+    "en": "He told me on Wednesday, while I was ironing. I told no one. Who would I tell?",
+    "tr": "Bana çarşamba günü söyledi, ben ütü yaparken. Kimseye söylemedim. Kime söyleyeceğim?"
+  },
+  "C3_HATICE_P_MONDAY_1": {
+    "en": "Nobody at all? Not family?",
+    "tr": "Hiç kimseye mi? Aileden birine de mi?"
+  },
+  "C3_HATICE_P_MONDAY_2": {
+    "en": "My family is a sister in the cemetery and the man she married. I told no one, Komiserim.",
+    "tr": "Benim ailem mezarlıktaki bir abla ile onun evlendiği adamdan ibaret. Kimseye söylemedim Komiserim."
+  },
+  "C3_HATICE_TOLD_1": {
+    "en": "Wednesday, 21:04. You rang Rıza Bulut and spoke for six minutes.",
+    "tr": "Çarşamba, 21.04. Rıza Bulut'u aramış, altı dakika konuşmuşsunuz."
+  },
+  "C3_HATICE_TOLD_2": {
+    "en": "Rıza is my eniște. Emine's husband. He was there in 1999; he pulled that poor watchman out of the water. I thought he would be glad. I said, “Nazım Bey is finally going to tell it.”",
+    "tr": "Rıza benim eniştem. Emine'nin kocası. 1999'da oradaydı; o zavallı bekçiyi sudan o çıkardı. Sevinir sandım. “Nazım Bey sonunda anlatacak,” dedim."
+  },
+  "C3_HATICE_TOLD_3": {
+    "en": "He was quiet for a long time. Then he asked me which day.",
+    "tr": "Uzun süre sustu. Sonra hangi gün olduğunu sordu."
+  },
+  "C3_HATICE_TOLD_THINK": {
+    "en": "(She has not understood yet what that call did. I can tell her, or I can leave her that for now.)",
+    "tr": "(O aramanın neye yol açtığını henüz anlamadı. Söyleyebilirim ya da şimdilik bunu ona bırakabilirim.)"
+  },
+  "C3_HATICE_CHOICE_COMFORT": {
+    "en": "You could not have known. This is not yours to carry.",
+    "tr": "Bilemezdiniz. Bu sizin taşıyacağınız bir yük değil."
+  },
+  "C3_HATICE_CHOICE_BLAME": {
+    "en": "That call is why he is dead, Hatice Hanım.",
+    "tr": "O arama yüzünden öldü Hatice Hanım."
+  },
+  "C3_HATICE_COMFORT_1": {
+    "en": "...Rıza? No. He brought my sister flowers every Friday for thirty years.",
+    "tr": "...Rıza mı? Yok. Otuz yıl boyunca her cuma ablama çiçek getirdi o."
+  },
+  "C3_HATICE_COMFORT_2": {
+    "en": "If you need me to say it in front of a judge, I will say it.",
+    "tr": "Bunu bir hâkimin önünde söylemem gerekirse söylerim."
+  },
+  "C3_HATICE_BLAME_1": {
+    "en": "Then I killed him. Twenty years I handed him his instruments, and I killed him with a telephone.",
+    "tr": "O zaman onu ben öldürdüm. Yirmi yıl aletlerini elimle uzattım, sonunda bir telefonla öldürdüm."
+  },
+  "C3_HATICE_BLAME_2": {
+    "en": "Ask me what you like. I have nothing left to keep back.",
+    "tr": "Ne isterseniz sorun. Saklayacak bir şeyim kalmadı."
+  },
+  "C3_HATICE_Q_Y1999": {
+    "en": "You were the technician on the watchman's autopsy.",
+    "tr": "Bekçinin otopsisinde teknisyen sizdiniz."
+  },
+  "C3_HATICE_Y1999_1": {
+    "en": "I washed him. He had marks here, on both wrists, like bracelets. Nazım Bey wrote down what he saw. Three days later a different report was typed, and he signed it, and he never spoke of it again until this week.",
+    "tr": "Onu ben yıkadım. Şurasında, iki bileğinde de bilezik gibi izler vardı. Nazım Bey gördüğünü yazdı. Üç gün sonra başka bir rapor daktilo edildi, o da imzaladı; bu haftaya kadar bir daha ağzına almadı."
+  },
+  "C3_HATICE_P_1999_1": {
+    "en": "Why did he sign it?",
+    "tr": "Neden imzaladı?"
+  },
+  "C3_HATICE_P_1999_2": {
+    "en": "A young officer came to the mortuary twice that week. After the second visit Nazım Bey sent me home early. Cem was nine years old then. That is all I know.",
+    "tr": "O hafta genç bir polis memuru morga iki kez geldi. İkinci gelişinden sonra Nazım Bey beni erken yolladı. Cem o zaman dokuz yaşındaydı. Bütün bildiğim bu."
+  },
+  "C3_HATICE_Q_CEM": {
+    "en": "What about his son?",
+    "tr": "Peki ya oğlu?"
+  },
+  "C3_HATICE_CEM_1": {
+    "en": "Cem wants the house sold. His restaurant is drowning. They shouted about it most weeks. But he is a boy who shouts, Komiserim, not a boy who plans.",
+    "tr": "Cem evin satılmasını istiyor. Lokantası batıyor. Çoğu hafta bu yüzden bağrışırlardı. Ama o bağıran bir çocuktur Komiserim, plan yapan bir çocuk değil."
+  },
+  "C3_HATICE_Q_BYE": {
+    "en": "Thank you, Hatice Hanım.",
+    "tr": "Teşekkür ederim Hatice Hanım."
+  },
+  "C3_CEM_INTRO_1": {
+    "en": "You are the detective. Good. Then you can tell me why my father is in a refrigerator at the institute instead of at the mosque.",
+    "tr": "Dedektif sizsiniz demek. Güzel. O zaman babamın neden camide değil de enstitüde bir buzdolabında olduğunu söyleyin."
+  },
+  "C3_CEM_INTRO_2": {
+    "en": "Because the prosecutor is not sure his heart stopped by itself. My condolences, Cem Bey.",
+    "tr": "Çünkü savcı, kalbinin kendiliğinden durduğundan emin değil. Başınız sağ olsun Cem Bey."
+  },
+  "C3_CEM_INTRO_3": {
+    "en": "He was seventy-eight and he drank. What is there to be sure about?",
+    "tr": "Yetmiş sekiz yaşındaydı ve içerdi. Emin olunacak ne var?"
+  },
+  "C3_CEM_RETURN": {
+    "en": "Again? Fine.",
+    "tr": "Yine mi? Peki."
+  },
+  "C3_CEM_CLOSED": {
+    "en": "I am burying my father this week. Unless you are arresting me, I am done.",
+    "tr": "Bu hafta babamı gömüyorum. Beni tutuklamıyorsanız konuşacak bir şeyim kalmadı."
+  },
+  "C3_CEM_WRONG": {
+    "en": "And? What is that supposed to prove?",
+    "tr": "Ee? Bu neyi kanıtlıyor?"
+  },
+  "C3_CEM_Q_WHERE": {
+    "en": "Where were you yesterday?",
+    "tr": "Dün neredeydiniz?"
+  },
+  "C3_CEM_WHERE_1": {
+    "en": "At the restaurant, from noon until we closed at midnight. Ask my staff.",
+    "tr": "Lokantadaydım; öğleden gece yarısı kapatana kadar. Çalışanlarıma sorun."
+  },
+  "C3_CEM_P_WHERE_1": {
+    "en": "You did not leave at all? Not even for an hour?",
+    "tr": "Hiç çıkmadınız mı? Bir saatliğine bile?"
+  },
+  "C3_CEM_P_WHERE_2": {
+    "en": "Thursday is delivery day. I was in the kitchen. I did not leave.",
+    "tr": "Perşembe mal günüdür. Mutfaktaydım. Çıkmadım."
+  },
+  "C3_CEM_ADMIT_1": {
+    "en": "Your father wrote “Cem 16:30” in his diary, and at 16:42 your car was ticketed outside this house.",
+    "tr": "Babanız ajandasına “Cem 16.30” yazmış; 16.42'de de arabanıza bu evin önünde ceza kesilmiş."
+  },
+  "C3_CEM_ADMIT_2": {
+    "en": "...All right. I came. We argued about the house, the way we always do. He said he had more important things to settle this week than my debts.",
+    "tr": "...Tamam. Geldim. Her zamanki gibi ev yüzünden tartıştık. Bu hafta benim borçlarımdan daha önemli halledecek işleri olduğunu söyledi."
+  },
+  "C3_CEM_ADMIT_3": {
+    "en": "Then he gave me the envelope from the desk and told me to get out. Twenty thousand. I was gone by twenty past five, and he was alive and furious.",
+    "tr": "Sonra masadaki zarfı uzattı, defol dedi. Yirmi bin. Beşi yirmi geçe çıkmıştım; hayattaydı, küplere biniyordu."
+  },
+  "C3_CEM_Q_MONEY": {
+    "en": "The cash from the envelope.",
+    "tr": "Zarftaki para."
+  },
+  "C3_CEM_MONEY_1": {
+    "en": "It is in the restaurant safe, minus what I paid the fish supplier this morning. He gave it to me. I lied because I knew how it would look.",
+    "tr": "Lokantanın kasasında; bu sabah balıkçıya ödediğim kısım hariç. Onu bana kendi verdi. Yalan söyledim çünkü nasıl görüneceğini biliyordum."
+  },
+  "C3_CEM_P_MONEY_1": {
+    "en": "It looks like a son who took twenty thousand lira from a dead man's desk.",
+    "tr": "Ölmüş bir adamın masasından yirmi bin lira alan bir oğul gibi görünüyor."
+  },
+  "C3_CEM_P_MONEY_2": {
+    "en": "From a living man's hand. There is a difference, and you will find it, because it is true.",
+    "tr": "Yaşayan bir adamın elinden. Arada fark var; siz de bulacaksınız, çünkü doğru."
+  },
+  "C3_CEM_Q_FATHER": {
+    "en": "What was he settling this week?",
+    "tr": "Bu hafta neyi halledecekti?"
+  },
+  "C3_CEM_FATHER_1": {
+    "en": "Some old file. He had been strange since the newspapers started on about the archive and that journalist. He said, “I signed one thing in my life that I should not have.” I told him everyone has.",
+    "tr": "Eski bir dosya. Gazeteler arşiv meselesini, o gazeteciyi yazmaya başladığından beri bir tuhaftı. “Hayatımda imzalamamam gereken tek bir şeye imza attım,” dedi. Herkes atmıştır dedim."
+  },
+  "C3_CEM_Q_BYE": {
+    "en": "That is all for now.",
+    "tr": "Şimdilik bu kadar."
+  },
+  "C3_NUR_INTRO_1": {
+    "en": "Komiser Kaya. I did not expect to see you across this particular table.",
+    "tr": "Komiser Kaya. Sizi bu masanın başında göreceğimi hiç düşünmemiştim."
+  },
+  "C3_NUR_INTRO_2": {
+    "en": "He taught you.",
+    "tr": "Hocanızdı."
+  },
+  "C3_NUR_INTRO_3": {
+    "en": "Everything, including when to distrust a death certificate. The results are on the bench. Read them before you ask me anything.",
+    "tr": "Her şeyi o öğretti; bir ölüm belgesine ne zaman güvenilmeyeceğini de. Sonuçlar tezgâhta. Bana bir şey sormadan önce onları okuyun."
+  },
+  "C3_NUR_RETURN": {
+    "en": "Komiserim.",
+    "tr": "Komiserim."
+  },
+  "C3_NUR_CLOSED": {
+    "en": "I have told you what the instruments say. If you want more than that, bring me something that is not a guess.",
+    "tr": "Cihazların ne dediğini söyledim. Fazlasını istiyorsanız bana tahmin olmayan bir şey getirin."
+  },
+  "C3_NUR_WRONG": {
+    "en": "That does not contradict anything I have said. Look at it again.",
+    "tr": "Bu, söylediğim hiçbir şeyle çelişmiyor. Bir daha bakın."
+  },
+  "C3_NUR_Q_CAUSE": {
+    "en": "What killed him?",
+    "tr": "Onu ne öldürdü?"
+  },
+  "C3_NUR_CAUSE_1": {
+    "en": "Digoxin. His own medicine, in a quantity nobody takes by accident. It slows the heart until the heart forgets how to start again. It would have taken an hour or two, and he would have thought he was only tired.",
+    "tr": "Digoksin. Kendi ilacı; ama kimsenin yanlışlıkla alamayacağı bir miktarda. Kalbi yavaşlatır; ta ki kalp yeniden atmayı unutana dek. Bir iki saat sürmüştür; kendisi yalnızca yorulduğunu sanmıştır."
+  },
+  "C3_NUR_CAUSE_2": {
+    "en": "Count his tablets before you decide anything. I did not have access to the house.",
+    "tr": "Bir karara varmadan önce tabletlerini sayın. Benim eve girme iznim yoktu."
+  },
+  "C3_NUR_Q_SAW": {
+    "en": "When did you last see him?",
+    "tr": "Onu en son ne zaman gördünüz?"
+  },
+  "C3_NUR_SAW_1": {
+    "en": "Not for weeks. A retirement dinner for one of the technicians. We spoke for five minutes.",
+    "tr": "Haftalardır görmedim. Teknisyenlerden birinin emeklilik yemeğinde. Beş dakika konuştuk."
+  },
+  "C3_NUR_P_SAW_1": {
+    "en": "You did not go to the house this week?",
+    "tr": "Bu hafta eve gitmediniz mi?"
+  },
+  "C3_NUR_P_SAW_2": {
+    "en": "I have forty open cases, Komiserim. I do not make house calls.",
+    "tr": "Kırk açık dosyam var Komiserim. Ev ziyaretine çıkmam."
+  },
+  "C3_NUR_ADMIT_1": {
+    "en": "Thursday, in his own hand: “İ.N. 18:00 — he is bringing it.” You are the only İ.N. he knew.",
+    "tr": "Perşembe, kendi el yazısıyla: “İ.N. 18.00 — onu getiriyor.” Tanıdığı tek İ.N. sizsiniz."
+  },
+  "C3_NUR_ADMIT_2": {
+    "en": "...Yes. From six until twenty to seven. He was sober and calm, and he was expecting someone later; he had put the rakı out already.",
+    "tr": "...Evet. Altıdan yediye yirmi kalaya kadar. Ayıktı, sakindi ve daha sonra birini bekliyordu; rakıyı çoktan çıkarmıştı."
+  },
+  "C3_NUR_ADMIT_3": {
+    "en": "What I brought him was this. In 1999 I was the trainee who held the lamp. I photocopied the whole file the night before it was changed, because I did not believe what I was watching. He read it on Thursday and asked me to keep it safe until Monday.",
+    "tr": "Ona götürdüğüm şey buydu. 1999'da lambayı tutan stajyer bendim. Değiştirilmeden önceki gece bütün dosyanın fotokopisini çektim, çünkü gözümün önünde olana inanamıyordum. Perşembe günü okudu, pazartesiye kadar güvende tutmamı istedi."
+  },
+  "C3_NUR_ADMIT_4": {
+    "en": "I should not have done his autopsy. I was in that house four hours before he died. But if I had stepped aside, the chief would have chosen who held the knife.",
+    "tr": "Otopsisini benim yapmamam gerekirdi. Ölümünden dört saat önce o evdeydim. Ama kenara çekilseydim bıçağı kimin tutacağına müdür karar verecekti."
+  },
+  "C3_NUR_ADMIT_THINK": {
+    "en": "(By the book I report this, and a report goes to the chief's desk with the copy attached. Once that file leaves this room, I cannot promise what comes back.)",
+    "tr": "(Kurallara göre bunu bildirmem gerekir; rapor da ekindeki kopyayla birlikte müdürün masasına gider. O dosya bu odadan çıkarsa geriye ne döneceğine söz veremem.)"
+  },
+  "C3_NUR_CHOICE_TRUST": {
+    "en": "The copy stays here, with you. This stays between us until Monday.",
+    "tr": "Kopya burada, sizde kalıyor. Bu da pazartesiye kadar aramızda."
+  },
+  "C3_NUR_CHOICE_REPORT": {
+    "en": "I have to report it. The file goes into evidence through the chief's office.",
+    "tr": "Bunu bildirmek zorundayım. Dosya müdürlük üzerinden delil olarak kayda girecek."
+  },
+  "C3_NUR_TRUST_1": {
+    "en": "Then look at page four before you go. Look at who signed as investigating officer in 1999. I have worked under that name for my entire career.",
+    "tr": "O zaman gitmeden dördüncü sayfaya bakın. 1999'da soruşturmayı yürüten olarak kimin imza attığına bakın. Bütün meslek hayatım boyunca o ismin emrinde çalıştım."
+  },
+  "C3_NUR_TRUST_2": {
+    "en": "And go down to the records room. See what is left of the police side of it.",
+    "tr": "Sonra arşive inin. Meselenin emniyet tarafından geriye ne kalmış, bir görün."
+  },
+  "C3_NUR_REPORT_1": {
+    "en": "You are right, of course. That is the procedure. I kept it safe for twenty-seven years; I hope the procedure manages a weekend.",
+    "tr": "Haklısınız elbette. Usul bu. Onu yirmi yedi yıl sakladım; umarım usul bir hafta sonunu çıkarabilir."
+  },
+  "C3_NUR_Q_AMPOULE": {
+    "en": "You signed out a digoxin ampoule on Wednesday.",
+    "tr": "Çarşamba günü bir digoksin ampulü almışsınız."
+  },
+  "C3_NUR_AMPOULE_1": {
+    "en": "To calibrate the analyser. One ampoule, one millilitre, a quarter of a milligram, and the empty glass is in the sharps bin with a number on it. I know how it reads, Komiserim. I wrote the log knowing how it would read.",
+    "tr": "Cihazı kalibre etmek için. Bir ampul, bir mililitre, çeyrek miligram; boş cam da üzerinde numarasıyla kesici atık kutusunda. Nasıl göründüğünü biliyorum Komiserim. O kaydı nasıl görüneceğini bile bile yazdım."
+  },
+  "C3_NUR_P_AMPOULE_1": {
+    "en": "Could the dose have come from here?",
+    "tr": "Doz buradan çıkmış olabilir mi?"
+  },
+  "C3_NUR_P_AMPOULE_2": {
+    "en": "Read the rakı analysis and tell me yourself. What we keep is a clear liquid. Ask what was at the bottom of that bottle.",
+    "tr": "Rakı analizini okuyun, siz söyleyin. Bizdeki berrak bir sıvıdır. O şişenin dibinde ne olduğunu sorun."
+  },
+  "C3_NUR_Q_Y1999": {
+    "en": "Tell me about the watchman's autopsy.",
+    "tr": "Bekçinin otopsisini anlatın."
+  },
+  "C3_NUR_Y1999_1": {
+    "en": "Fresh water in the lungs of a man found in salt water. Bruises a hand's width apart. Dr. Erol dictated it and I wrote it down. Three days later he dictated something else, and he would not look at me while he did it.",
+    "tr": "Tuzlu suda bulunan bir adamın ciğerlerinde tatlı su. Bir el genişliğinde aralıklarla morluklar. Dr. Erol söyledi, ben yazdım. Üç gün sonra başka bir şey yazdırdı; yazdırırken yüzüme bakmadı."
+  },
+  "C3_NUR_Q_BYE": {
+    "en": "Thank you, Doctor.",
+    "tr": "Teşekkürler Doktor."
+  },
+  "C3_BULUT_INTRO_1": {
+    "en": "Police? Sit, kızım, sit. Twenty-five years I wore that badge on this harbour. Tea?",
+    "tr": "Polis misin? Otur kızım, otur. Yirmi beş yıl bu limanda o rozeti taşıdım. Çay?"
+  },
+  "C3_BULUT_INTRO_2": {
+    "en": "Komiser Kaya. I am here about Dr. Nazım Erol.",
+    "tr": "Komiser Kaya. Dr. Nazım Erol için geldim."
+  },
+  "C3_BULUT_INTRO_3": {
+    "en": "Hatice rang me. God rest him. We go back a long way, the doctor and I.",
+    "tr": "Hatice aradı. Allah rahmet eylesin. Doktorla eskiye dayanır bizim tanışıklığımız."
+  },
+  "C3_BULUT_RETURN": {
+    "en": "Back again, Komiserim? The tea is still hot.",
+    "tr": "Yine mi geldin Komiserim? Çay hâlâ sıcak."
+  },
+  "C3_BULUT_CLOSED": {
+    "en": "I answered questions like yours for twenty-five years, kızım, and I asked them too. You have nothing. Talk to Nedim Bey if you want more of my time.",
+    "tr": "Seninki gibi sorulara yirmi beş yıl cevap verdim kızım, sordum da. Elinde bir şey yok. Daha fazla vaktimi istiyorsan Nedim Bey'le konuş."
+  },
+  "C3_BULUT_WRONG": {
+    "en": "That is how they teach you to do it now? In my day we brought the right paper.",
+    "tr": "Şimdi böyle mi öğretiyorlar? Bizim zamanımızda doğru kâğıdı getirirdik."
+  },
+  "C3_BULUT_Q_EVENING": {
+    "en": "Where were you on Thursday evening?",
+    "tr": "Perşembe akşamı neredeydiniz?"
+  },
+  "C3_BULUT_EVENING_1": {
+    "en": "Here. Backgammon with Hasan from seven until the café shut. I did not leave the harbour. Ask anyone.",
+    "tr": "Burada. Yediden kahve kapanana kadar Hasan'la tavla oynadım. Limandan ayrılmadım. Kime istersen sor."
+  },
+  "C3_BULUT_P_EVENING_1": {
+    "en": "The whole evening, at that table?",
+    "tr": "Bütün akşam, o masada mı?"
+  },
+  "C3_BULUT_P_EVENING_2": {
+    "en": "A man gets up for the toilet at my age. Do you want the times of that as well?",
+    "tr": "İnsan benim yaşımda tuvalete kalkar. Onun saatlerini de ister misin?"
+  },
+  "C3_BULUT_OUT_1": {
+    "en": "The café slate has you away from the table from 20:15 to 21:40. At 21:22 your telephone was in Yukarı Mahalle.",
+    "tr": "Kahvenin çetelesine göre 20.15'ten 21.40'a kadar masada yoksunuz. 21.22'de telefonunuz Yukarı Mahalle'deymiş."
+  },
+  "C3_BULUT_OUT_2": {
+    "en": "...All right. I took him two sea bass. He liked them. I left them at the door and came back down. I did not go in. I did not want Hatice hearing I was up there bothering him.",
+    "tr": "...Peki. Ona iki levrek götürdüm. Severdi. Kapıya bıraktım, geri indim. İçeri girmedim. Hatice oraya gidip adamı rahatsız ettiğimi duysun istemedim."
+  },
+  "C3_BULUT_Q_DOOR": {
+    "en": "You left the fish at the door.",
+    "tr": "Balığı kapıya bıraktınız."
+  },
+  "C3_BULUT_DOOR_1": {
+    "en": "At the door. I knocked, nobody came, I left them on the step. I never saw him.",
+    "tr": "Kapıya. Çaldım, açan olmadı, basamağa bıraktım. Onu hiç görmedim."
+  },
+  "C3_BULUT_P_DOOR_1": {
+    "en": "An hour and a half, to leave two fish on a step?",
+    "tr": "Bir basamağa iki balık bırakmak bir buçuk saat mi sürdü?"
+  },
+  "C3_BULUT_P_DOOR_2": {
+    "en": "It is a steep hill and I am sixty-eight.",
+    "tr": "Yokuş dik, ben de altmış sekiz yaşındayım."
+  },
+  "C3_BULUT_CORNERED_1": {
+    "en": "You rang him at 20:05. He told Hatice an old friend was bringing fish, and he asked her where the good glasses were. The fish was in his fridge, and the second glass was washed and put in the rack. He let you in, and you sat down with him.",
+    "tr": "Onu 20.05'te aradınız. Hatice'ye eski bir dostunun balık getireceğini söylemiş, iyi kadehlerin yerini sormuş. Balık buzdolabındaydı; ikinci kadeh yıkanıp bulaşıklığa konmuştu. Sizi içeri aldı, karşısına oturdunuz."
+  },
+  "C3_BULUT_CORNERED_2": {
+    "en": "...",
+    "tr": "..."
+  },
+  "C3_BULUT_CORNERED_3": {
+    "en": "You will want to talk to Nedim Bey now. Nedim Karaca. I rang him already. I rang him on the way down the hill.",
+    "tr": "Artık Nedim Bey'le konuşursun. Nedim Karaca. Onu aradım zaten. Yokuştan inerken aradım."
+  },
+  "C3_BULUT_Q_TABLETS": {
+    "en": "The Digoksin you collect every month.",
+    "tr": "Her ay aldığınız Digoksin."
+  },
+  "C3_BULUT_TABLETS_1": {
+    "en": "Emine's prescription. The doctor's computer sends it by itself and the girl at the pharmacy hands it over. I keep meaning to cancel it. They are in a drawer somewhere.",
+    "tr": "Emine'nin reçetesi. Doktorun bilgisayarı kendiliğinden yolluyor, eczanedeki kız da uzatıveriyor. İptal ettireceğim diyorum, kalıyor. Bir çekmecede duruyorlar."
+  },
+  "C3_BULUT_P_TABLETS_1": {
+    "en": "Which drawer?",
+    "tr": "Hangi çekmece?"
+  },
+  "C3_BULUT_P_TABLETS_2": {
+    "en": "I am an old man with a shed full of nets, kızım. Somewhere.",
+    "tr": "Ağ dolu bir barınağı olan yaşlı bir adamım kızım. Bir yerlerde."
+  },
+  "C3_BULUT_TABLETS_C1": {
+    "en": "Emine died two years ago. You have collected her tablets twenty-four times since, and you did not forget once.",
+    "tr": "Emine iki yıl önce öldü. O günden beri haplarını yirmi dört kez aldınız; bir kez bile unutmadınız."
+  },
+  "C3_BULUT_TABLETS_C2": {
+    "en": "I gave her one every morning for eleven years, with her tea. I know that medicine better than the doctor did. One is life. I know what twenty are.",
+    "tr": "On bir yıl boyunca her sabah çayının yanında bir tane verdim ona. O ilacı doktordan iyi bilirim. Bir tanesi hayattır. Yirmisinin ne olduğunu da bilirim."
+  },
+  "C3_BULUT_Q_PAYMENTS": {
+    "en": "Fener Danışmanlık pays you every month.",
+    "tr": "Fener Danışmanlık size her ay ödeme yapıyor."
+  },
+  "C3_BULUT_PAYMENTS_1": {
+    "en": "Consultancy. I know every mooring and every watchman on this harbour. They pay for that.",
+    "tr": "Danışmanlık. Bu limandaki her iskeleyi, her bekçiyi tanırım. Bunun için ödüyorlar."
+  },
+  "C3_BULUT_P_PAYMENTS_1": {
+    "en": "Since March 1999. What did you advise them on that month?",
+    "tr": "Mart 1999'dan beri. O ay onlara ne danışmanlığı yaptınız?"
+  },
+  "C3_BULUT_P_PAYMENTS_2": {
+    "en": "You were in primary school in March 1999. Do not ask about things that were settled before you could read.",
+    "tr": "Mart 1999'da sen ilkokuldaydın. Sen okuma yazma öğrenmeden kapanmış işleri kurcalama."
+  },
+  "C3_BULUT_Q_Y1999": {
+    "en": "You recovered Salih Tekin's body.",
+    "tr": "Salih Tekin'in cesedini siz çıkardınız."
+  },
+  "C3_BULUT_Y1999_1": {
+    "en": "I pulled a drunk out of the basin at six in the morning and I got a commendation for it. That is in my file. Read it.",
+    "tr": "Sabahın altısında havuzdan bir sarhoşu çıkardım, karşılığında takdirname aldım. Sicilimde yazar. Oku."
+  },
+  "C3_BULUT_Q_BYE": {
+    "en": "Enjoy your tea, Rıza Bey.",
+    "tr": "Çayınız afiyet olsun Rıza Bey."
+  },
+  "C3_SOYKAN_INTRO_1": {
+    "en": "Kaya. I thought I would find you down here sooner or later. Sad business. Nazım Bey was a friend of this department for forty years.",
+    "tr": "Kaya. Seni er geç burada bulacağımı düşünmüştüm. Üzücü bir iş. Nazım Bey kırk yıl bu teşkilatın dostuydu."
+  },
+  "C3_SOYKAN_INTRO_2": {
+    "en": "Müdürüm. I did not expect you in the archive.",
+    "tr": "Müdürüm. Sizi arşivde görmeyi beklemiyordum."
+  },
+  "C3_SOYKAN_INTRO_3": {
+    "en": "An old man's heart, an old file, and a prosecutor who reads too many newspapers. I like to see for myself what my officers are being sent to dig up.",
+    "tr": "Yaşlı bir adamın kalbi, eski bir dosya ve fazla gazete okuyan bir savcı. Memurlarımın neyi kazmaya yollandığını kendi gözümle görmek isterim."
+  },
+  "C3_SOYKAN_RETURN": {
+    "en": "Yes, Kaya?",
+    "tr": "Evet Kaya?"
+  },
+  "C3_SOYKAN_CLOSED": {
+    "en": "That is enough for today, Komiser. I have a meeting upstairs.",
+    "tr": "Bugünlük bu kadar yeter Komiser. Yukarıda toplantım var."
+  },
+  "C3_SOYKAN_WRONG": {
+    "en": "I do not follow you, Kaya. Be precise.",
+    "tr": "Ne demek istediğini anlamadım Kaya. Açık konuş."
+  },
+  "C3_SOYKAN_Q_REPORT": {
+    "en": "The 1999 harbour police report on the watchman.",
+    "tr": "Bekçiyle ilgili 1999 tarihli liman polisi raporu."
+  },
+  "C3_SOYKAN_REPORT_1": {
+    "en": "Gone, I am afraid. We lost half of this room in the flood of 2003. A great pity.",
+    "tr": "Yok, ne yazık ki. 2003 selinde bu odanın yarısını kaybettik. Çok yazık oldu."
+  },
+  "C3_SOYKAN_P_REPORT_1": {
+    "en": "The tide mark on these shelves is at my ankle, Müdürüm.",
+    "tr": "Bu raflardaki su izi ayak bileğimde Müdürüm."
+  },
+  "C3_SOYKAN_P_REPORT_2": {
+    "en": "Paper does not need to be under water to be ruined, Kaya. Damp is enough.",
+    "tr": "Kâğıdın mahvolması için suyun altında kalması gerekmez Kaya. Rutubet yeter."
+  },
+  "C3_SOYKAN_REGISTER_1": {
+    "en": "The register says the box was signed out on 14 May 2003, for review, and never returned. The signature is yours.",
+    "tr": "Deftere göre kutu 14 Mayıs 2003'te inceleme için imzayla alınmış, bir daha iade edilmemiş. İmza sizin."
+  },
+  "C3_SOYKAN_REGISTER_2": {
+    "en": "I signed out a hundred boxes that spring; we were moving the archive upstairs before the water came. Some did not come back. If you would like to write that I mislaid a box twenty-three years ago, Komiser, write it.",
+    "tr": "O bahar yüz kutuya imza attım; su gelmeden arşivi yukarı taşıyorduk. Bazıları geri dönmedi. Yirmi üç yıl önce bir kutuyu kaybettiğimi yazmak istiyorsan Komiser, yaz."
+  },
+  "C3_SOYKAN_REGISTER_3": {
+    "en": "You have a careful eye. Be careful where you point it.",
+    "tr": "Dikkatli bir gözün var. Onu nereye çevirdiğine de dikkat et."
+  },
+  "C3_SOYKAN_Q_NOTES": {
+    "en": "You wanted a word about the case.",
+    "tr": "Dosya hakkında konuşmak istemişsiniz."
+  },
+  "C3_SOYKAN_NOTES_1": {
+    "en": "The prosecutor's office leaks, Kaya. You saw what that did to the journalist. Send me your notes tonight: where you have been, who you like for it, what you still mean to search. I will keep it tight.",
+    "tr": "Savcılık sızdırıyor Kaya. Bunun o gazeteciye neye mal olduğunu gördün. Bu akşam notlarını bana gönder: nereye gittin, kimden şüpheleniyorsun, daha nereyi arayacaksın. Ben sıkı tutarım."
+  },
+  "C3_SOYKAN_NOTES_THINK": {
+    "en": "(He is my chief and it is a lawful order. It is also a list of everything I have not collected yet.)",
+    "tr": "(O benim müdürüm ve bu yasal bir emir. Aynı zamanda henüz toplamadığım her şeyin listesi.)"
+  },
+  "C3_SOYKAN_CHOICE_INFORM": {
+    "en": "You will have them tonight, Müdürüm.",
+    "tr": "Bu akşam elinizde olur Müdürüm."
+  },
+  "C3_SOYKAN_CHOICE_HOLD": {
+    "en": "When I have something solid, Müdürüm. Not before.",
+    "tr": "Elimde sağlam bir şey olduğunda Müdürüm. Daha önce değil."
+  },
+  "C3_SOYKAN_INFORM_1": {
+    "en": "Good. That is how a department works.",
+    "tr": "Güzel. Teşkilat dediğin böyle çalışır."
+  },
+  "C3_SOYKAN_HOLD_1": {
+    "en": "As you like. I had a komiser once who kept things from me. He is directing traffic in Hakkâri.",
+    "tr": "Nasıl istersen. Bir zamanlar benden bir şeyler saklayan bir komiserim vardı. Şimdi Hakkâri'de trafiğe bakıyor."
+  },
+  "C3_SOYKAN_Q_NUR": {
+    "en": "Dr. Nur did the autopsy.",
+    "tr": "Otopsiyi Dr. Nur yaptı."
+  },
+  "C3_SOYKAN_NUR_1": {
+    "en": "Strictly, İdris should not have. He was the old man's pupil, and I hear he keeps his own key to the poison cupboard. I would look at him before I looked anywhere near the harbour.",
+    "tr": "Aslına bakarsan İdris'in yapmaması gerekirdi. İhtiyarın öğrencisiydi; zehir dolabının anahtarını da kendi cebinde taşırmış. Ben olsam limana bakmadan önce ona bakardım."
+  },
+  "C3_SOYKAN_P_NUR_1": {
+    "en": "I did not mention the harbour, Müdürüm.",
+    "tr": "Limandan söz etmedim Müdürüm."
+  },
+  "C3_SOYKAN_P_NUR_2": {
+    "en": "The watchman drowned in it, Kaya. It is hardly a secret.",
+    "tr": "Bekçi orada boğuldu Kaya. Sır sayılmaz."
+  },
+  "C3_SOYKAN_Q_BYE": {
+    "en": "I will get on, Müdürüm.",
+    "tr": "İşime döneyim Müdürüm."
+  },
+  "C3_TITLE": {
+    "en": "File 12-C",
+    "tr": "Dosya 12-C"
+  },
+  "C3_TIMELINE_TITLE": {
+    "en": "Thursday",
+    "tr": "Perşembe"
+  },
+  "C3_INTRO_1": {
+    "en": "Friday, 09:10.\nYokuş Sokak 14, Yukarı Mahalle.",
+    "tr": "Cuma, 09.10.\nYokuş Sokak 14, Yukarı Mahalle."
+  },
+  "C3_INTRO_2": {
+    "en": "Dr. Nazım Erol, retired coroner, 78, was found dead in his armchair this morning. In 1999 he signed the inquest on Salih Tekin, the night watchman of Pier 9.",
+    "tr": "Emekli adli tabip Dr. Nazım Erol, 78, bu sabah koltuğunda ölü bulundu. 1999'da, 9. İskele'nin gece bekçisi Salih Tekin'in ölüm tahkikatını o imzalamıştı."
+  },
+  "C3_INTRO_3": {
+    "en": "His family doctor says it was his heart.\n\nSavcı Arıkan says he had an appointment with her on Monday, and that the file he wanted to talk about is 12-C.",
+    "tr": "Aile hekimi kalpten diyor.\n\nSavcı Arıkan ise pazartesi günü kendisiyle randevusu olduğunu, konuşmak istediği dosyanın da 12-C olduğunu söylüyor."
+  },
+  "C3_OBJ_HATICE": {
+    "en": "Speak to Hatice Demir, who found him.",
+    "tr": "Onu bulan Hatice Demir'le konuşun."
+  },
+  "C3_OBJ_SCENE": {
+    "en": "Examine the house.",
+    "tr": "Evi inceleyin."
+  },
+  "C3_OBJ_CAUSE": {
+    "en": "Find out what really killed Dr. Erol.",
+    "tr": "Dr. Erol'u gerçekte neyin öldürdüğünü bulun."
+  },
+  "C3_OBJ_VISITORS": {
+    "en": "Find out who came to the house on Thursday.",
+    "tr": "Perşembe günü eve kimlerin geldiğini bulun."
+  },
+  "C3_OBJ_FILE": {
+    "en": "Find file 12-C.",
+    "tr": "12-C dosyasını bulun."
+  },
+  "C3_OBJ_POISON": {
+    "en": "Find out where the tablets in the rakı came from.",
+    "tr": "Rakıdaki tabletlerin nereden geldiğini bulun."
+  },
+  "C3_OBJ_WHO": {
+    "en": "Prove who sat down with him that night.",
+    "tr": "O gece karşısına kimin oturduğunu kanıtlayın."
+  },
+  "C3_OBJ_ACCUSE": {
+    "en": "Open the Case File and name the killer.",
+    "tr": "Dava Dosyası'nı açıp katili belirleyin."
+  },
+  "C3_HINT_HATICE": {
+    "en": "Hatice Demir found him. She is standing in the kitchen doorway. Speak to her first.",
+    "tr": "Onu Hatice Demir bulmuş. Mutfak kapısının önünde duruyor. Önce onunla konuşun."
+  },
+  "C3_HINT_MAP": {
+    "en": "The autopsy results are at the Forensic Institute. Open the Map.",
+    "tr": "Otopsi sonuçları Adli Tıp Enstitüsü'nde. Haritayı açın."
+  },
+  "C3_HINT_NUR": {
+    "en": "Dr. Nur says he had not seen Dr. Erol for weeks. Ask him when he last saw him, then present the Desk Diary.",
+    "tr": "Dr. Nur, Dr. Erol'u haftalardır görmediğini söylüyor. Onu en son ne zaman gördüğünü sorun, sonra Masa Ajandası'nı gösterin."
+  },
+  "C3_HINT_CEM": {
+    "en": "Cem Erol says he was at his restaurant all day. Ask him where he was, then present the Parking Ticket.",
+    "tr": "Cem Erol bütün gün lokantasında olduğunu söylüyor. Nerede olduğunu sorun, sonra Park Cezası'nı gösterin."
+  },
+  "C3_HINT_TOLD": {
+    "en": "Hatice says she told no one about Monday. Ask her who knew, then present Rıza Bulut's Call Record.",
+    "tr": "Hatice pazartesiyi kimseye söylemediğini belirtiyor. Kimin bildiğini sorun, sonra Rıza Bulut'un Arama Kaydı'nı gösterin."
+  },
+  "C3_HINT_BULUT": {
+    "en": "Rıza Bulut says he never left the harbour. Ask him about Thursday evening, then present the conclusion “He was in the upper town”.",
+    "tr": "Rıza Bulut limandan hiç ayrılmadığını söylüyor. Perşembe akşamını sorun, sonra “Yukarı Mahalle'deydi” sonucunu gösterin."
+  },
+  "C3_HINT_ACCUSE": {
+    "en": "You have a motive, an opportunity and a link. Open the Case File and make your accusation.",
+    "tr": "Elinizde bir sebep, bir fırsat ve bir bağlantı var. Dava Dosyası'nı açıp suçlamanızı yapın."
+  },
+  "C3_SUS_NUR_ROLE": {
+    "en": "Forensic pathologist · 51",
+    "tr": "Adli tıp uzmanı · 51"
+  },
+  "C3_SUS_NUR_BIO": {
+    "en": "Dr. Erol's trainee in 1999 and his successor. He performed the autopsy himself.",
+    "tr": "1999'da Dr. Erol'un stajyeri, sonra halefi. Otopsiyi kendisi yaptı."
+  },
+  "C3_SUS_NUR_N1": {
+    "en": "Says he had not seen Dr. Erol for weeks.",
+    "tr": "Dr. Erol'u haftalardır görmediğini söylüyor."
+  },
+  "C3_SUS_NUR_N2": {
+    "en": "Signed a digoxin ampoule out of the laboratory on Wednesday.",
+    "tr": "Çarşamba günü laboratuvardan bir digoksin ampulü almış."
+  },
+  "C3_SUS_NUR_N3": {
+    "en": "Was at the house from 18:00 to 18:40, bringing his copy of file 12-C.",
+    "tr": "18.00–18.40 arasında evdeymiş; 12-C dosyasının kopyasını götürmüş."
+  },
+  "C3_SUS_NUR_N4": {
+    "en": "The poison was crushed tablets. The laboratory holds only liquid, and none is missing.",
+    "tr": "Zehir, ezilmiş tabletti. Laboratuvarda yalnızca sıvı var; eksik de yok."
+  },
+  "C3_SUS_CEM_ROLE": {
+    "en": "Restaurant owner, the victim's son · 36",
+    "tr": "Lokanta sahibi, maktulün oğlu · 36"
+  },
+  "C3_SUS_CEM_BIO": {
+    "en": "In debt. He wanted his father to sell the house.",
+    "tr": "Borç içinde. Babasının evi satmasını istiyordu."
+  },
+  "C3_SUS_CEM_N1": {
+    "en": "Says he was at his restaurant from noon to midnight.",
+    "tr": "Öğleden gece yarısına kadar lokantasında olduğunu söylüyor."
+  },
+  "C3_SUS_CEM_N2": {
+    "en": "His car was ticketed outside the house at 16:42.",
+    "tr": "Arabasına 16.42'de evin önünde ceza yazılmış."
+  },
+  "C3_SUS_CEM_N3": {
+    "en": "Admits the visit and the 20,000 lira. Says his father handed it to him.",
+    "tr": "Ziyareti ve 20.000 lirayı kabul ediyor. Parayı babasının verdiğini söylüyor."
+  },
+  "C3_SUS_CEM_N4": {
+    "en": "His father was on the telephone two hours after he left.",
+    "tr": "Babası, o çıktıktan iki saat sonra telefonda konuşuyordu."
+  },
+  "C3_SUS_HATICE_ROLE": {
+    "en": "Housekeeper, former mortuary technician · 63",
+    "tr": "Evin bakıcısı, eski morg teknisyeni · 63"
+  },
+  "C3_SUS_HATICE_BIO": {
+    "en": "Worked beside Dr. Erol for twenty years and has kept his house for eleven. She collects his prescription.",
+    "tr": "Yirmi yıl Dr. Erol'un yanında çalışmış, on bir yıldır evine bakıyor. Reçetesini o alıyor."
+  },
+  "C3_SUS_HATICE_N1": {
+    "en": "Left at 13:00 on Thursday. Found him at 08:00 on Friday.",
+    "tr": "Perşembe 13.00'te çıkmış. Onu cuma 08.00'de bulmuş."
+  },
+  "C3_SUS_HATICE_N2": {
+    "en": "Every tablet she collected for him is accounted for.",
+    "tr": "Onun için aldığı her tabletin hesabı tutuyor."
+  },
+  "C3_SUS_HATICE_N3": {
+    "en": "Told her brother-in-law on Wednesday night about the appointment with the prosecutor.",
+    "tr": "Çarşamba gecesi eniştesine savcıyla randevuyu anlatmış."
+  },
+  "C3_SUS_BULUT_ROLE": {
+    "en": "Retired harbour policeman · 68",
+    "tr": "Emekli liman polisi · 68"
+  },
+  "C3_SUS_BULUT_BIO": {
+    "en": "Recovered the watchman's body in 1999. Keeps a boat and shed No. 7 at the fishermen's shelter. Hatice Demir's brother-in-law.",
+    "tr": "1999'da bekçinin cesedini o çıkarmış. Balıkçı barınağında bir teknesi ve 7 numaralı barınağı var. Hatice Demir'in eniştesi."
+  },
+  "C3_SUS_BULUT_N1": {
+    "en": "Says he played backgammon all evening and never left the harbour.",
+    "tr": "Bütün akşam tavla oynadığını, limandan hiç ayrılmadığını söylüyor."
+  },
+  "C3_SUS_BULUT_N2": {
+    "en": "Rang Dr. Erol at 20:05, the last call he received.",
+    "tr": "Dr. Erol'u 20.05'te aramış; aldığı son arama bu."
+  },
+  "C3_SUS_BULUT_N3": {
+    "en": "Away from the café from 20:15 to 21:40; his telephone was in Yukarı Mahalle at 21:22.",
+    "tr": "20.15–21.40 arasında kahvede yokmuş; 21.22'de telefonu Yukarı Mahalle'deymiş."
+  },
+  "C3_SUS_BULUT_N4": {
+    "en": "Collected twenty Digoksin tablets on Tuesday in his dead wife's name.",
+    "tr": "Salı günü ölmüş karısının adına yirmi Digoksin tableti almış."
+  },
+  "C3_SUS_BULUT_N5": {
+    "en": "Paid by Fener Danışmanlık every month since March 1999.",
+    "tr": "Mart 1999'dan beri her ay Fener Danışmanlık'tan para alıyor."
+  },
+  "C3_TL_LEAK": {
+    "en": "Wednesday night: Hatice rings Rıza Bulut. Six minutes.",
+    "tr": "Çarşamba gecesi: Hatice, Rıza Bulut'u arıyor. Altı dakika."
+  },
+  "C3_TL_HATICE_OUT": {
+    "en": "Hatice leaves. The dish rack is empty.",
+    "tr": "Hatice çıkıyor. Bulaşıklık boş."
+  },
+  "C3_TL_CEM_ALIBI": {
+    "en": "Cem says he is at his restaurant until midnight.",
+    "tr": "Cem gece yarısına kadar lokantasında olduğunu söylüyor."
+  },
+  "C3_TL_CEM_CAR": {
+    "en": "Cem's car is ticketed outside the house.",
+    "tr": "Cem'in arabasına evin önünde ceza yazılıyor."
+  },
+  "C3_TL_CEM_OUT": {
+    "en": "Cem leaves with the cash. His father is alive.",
+    "tr": "Cem parayı alıp çıkıyor. Babası hayatta."
+  },
+  "C3_TL_NUR_IN": {
+    "en": "Dr. Nur arrives with his copy of 12-C.",
+    "tr": "Dr. Nur, 12-C kopyasıyla geliyor."
+  },
+  "C3_TL_NUR_OUT": {
+    "en": "Dr. Nur leaves. The rakı is already out.",
+    "tr": "Dr. Nur çıkıyor. Rakı çoktan çıkarılmış."
+  },
+  "C3_TL_GLASSES": {
+    "en": "Dr. Erol rings Hatice: “An old friend is bringing fish.”",
+    "tr": "Dr. Erol, Hatice'yi arıyor: “Eski bir dost balık getiriyor.”"
+  },
+  "C3_TL_BULUT_ALIBI": {
+    "en": "Bulut says he is at the backgammon table all evening.",
+    "tr": "Bulut bütün akşam tavla masasında olduğunu söylüyor."
+  },
+  "C3_TL_CALL": {
+    "en": "A mobile ending 77 31 rings the house for one minute.",
+    "tr": "Sonu 77 31 olan bir cep telefonu evi arıyor; bir dakika."
+  },
+  "C3_TL_BULUT_OUT": {
+    "en": "Bulut leaves the café.",
+    "tr": "Bulut kahveden kalkıyor."
+  },
+  "C3_TL_KARACA": {
+    "en": "Bulut rings Nedim Karaca's office from Yukarı Mahalle.",
+    "tr": "Bulut, Yukarı Mahalle'den Nedim Karaca'nın bürosunu arıyor."
+  },
+  "C3_TL_BULUT_BACK": {
+    "en": "Bulut is back at the café.",
+    "tr": "Bulut kahveye dönüyor."
+  },
+  "C3_TL_DEATH": {
+    "en": "Dr. Erol dies between now and midnight.",
+    "tr": "Dr. Erol şu andan gece yarısına kadar bir vakitte ölüyor."
+  },
+  "C3_TL_FOUND": {
+    "en": "Friday morning: Hatice finds him. A glass in the rack is still damp.",
+    "tr": "Cuma sabahı: Hatice onu buluyor. Bulaşıklıktaki kadeh hâlâ nemli."
+  },
+  "C3_EPI_NUR_TRUSTED": {
+    "en": "Dr. Nur carries his copy to the prosecutor himself on Monday morning, in the same envelope it has lived in for twenty-seven years.",
+    "tr": "Dr. Nur kopyasını pazartesi sabahı savcıya kendi eliyle götürüyor; yirmi yedi yıldır içinde durduğu zarfla."
+  },
+  "C3_EPI_HATICE_COMFORTED": {
+    "en": "Hatice Demir gives her statement without being asked twice. Afterwards she goes back to Yokuş Sokak and waters his plants.",
+    "tr": "Hatice Demir ifadesini ikiletmeden veriyor. Sonra Yokuş Sokak'a dönüp onun çiçeklerini suluyor."
+  },
+  "C3_EPI_HATICE_BLAMED": {
+    "en": "Hatice Demir gives her statement in a voice you can hardly hear. She does not go back to the house.",
+    "tr": "Hatice Demir ifadesini güçlükle duyulan bir sesle veriyor. Eve bir daha dönmüyor."
+  },
+  "C3_EPI_CHIEF_OUT": {
+    "en": "The chief reads about the arrest in the newspaper. He rings to congratulate you. It is a short call.",
+    "tr": "Müdür tutuklamayı gazeteden öğreniyor. Sizi kutlamak için arıyor. Kısa bir görüşme oluyor."
+  },
+  "C3_EPI_CHIEF_IN": {
+    "en": "The chief knew where you were going each day before you got there. Somebody raked out a stove at the shelter in the meantime.",
+    "tr": "Müdür her gün nereye gideceğinizi sizden önce biliyordu. Bu arada biri barınaktaki bir sobayı boşalttı."
+  },
+  "C3_EPI_SIGNATURE": {
+    "en": "On page four of the file, and in the archive register, the same name. You have not said it aloud to anyone yet.",
+    "tr": "Dosyanın dördüncü sayfasında ve arşiv defterinde aynı isim. Bunu henüz kimseye yüksek sesle söylemediniz."
+  },
+  "C3_EPI_NUR_REPORTED": {
+    "en": "The copy of 12-C comes back from the chief's office on Tuesday. Page four is not in it. The covering note says it was received that way.",
+    "tr": "12-C kopyası müdürlükten salı günü geri geliyor. Dördüncü sayfa içinde yok. Üst yazıda o hâlde teslim alındığı yazıyor."
+  },
+  "C3_ACCUSE_QUESTION": {
+    "en": "Who killed Dr. Nazım Erol?",
+    "tr": "Dr. Nazım Erol'u kim öldürdü?"
+  },
+  "C3_ACCUSE_NATURAL": {
+    "en": "It was a natural death",
+    "tr": "Doğal bir ölümdü"
+  },
+  "C3_ACCUSE_NATURAL_CONFIRM": {
+    "en": "Sign it as natural causes",
+    "tr": "Doğal ölüm olarak imzala"
+  },
+  "C3_END_A_TITLE": {
+    "en": "Fresh Water",
+    "tr": "Tatlı Su"
+  },
+  "C3_END_A_TEXT": {
+    "en": "Rıza Bulut listens to all of it without touching his tea: the slate, the newspaper, the mast in the upper town, twenty empty pockets of foil. Then he says, “He was going to take my pension and my name for a man who has been dead twenty-seven years,” and asks for Nedim Karaca.\n\nFile 12-C goes to the prosecutor: the third number from the routing slip. Salih Tekin did not fall into the harbour. He was held under fresh water somewhere else, and the policeman who “found” him has been paid for it every month since.\n\nThe file also names the officer who led that investigation.",
+    "tr": "Rıza Bulut hepsini çayına dokunmadan dinliyor: çeteleyi, gazeteyi, Yukarı Mahalle'deki bazı, folyodaki yirmi boş gözü. Sonra, “Yirmi yedi yıldır ölü olan bir adam için emekli maaşımı da adımı da elimden alacaktı,” diyor ve Nedim Karaca'yı istiyor.\n\n12-C dosyası savcıya gidiyor: sevk pusulasındaki üçüncü numara. Salih Tekin limana düşmedi. Başka bir yerde tatlı suyun altında tutuldu; onu “bulan” polis de o günden beri her ay bunun parasını aldı.\n\nDosyada o soruşturmayı yürüten memurun adı da yazıyor."
+  },
+  "C3_END_B_TITLE": {
+    "en": "An Old Man's Heart",
+    "tr": "Yaşlı Bir Adamın Kalbi"
+  },
+  "C3_END_B_TEXT": {
+    "en": "Rıza Bulut is charged. Nedim Karaca is in the room within the hour, and by the evening the story has a new shape: a lonely widower, a bottle shared between old friends, tablets that an old man with a bad heart could have added himself.\n\nWith a piece of the proof missing, it holds. Bulut is released pending trial and goes back to his boat.\n\nDr. Erol is buried on Sunday. What he meant to say on Monday is not said.",
+    "tr": "Rıza Bulut hakkında dava açılıyor. Nedim Karaca bir saat geçmeden odada; akşama doğru hikâye başka bir şekle girmiş oluyor: yalnız bir dul, iki eski dostun paylaştığı bir şişe, kalbi zayıf yaşlı bir adamın kendi eliyle katmış olabileceği tabletler.\n\nKanıtın bir parçası eksik olunca bu hikâye tutuyor. Bulut tutuksuz yargılanmak üzere serbest bırakılıyor ve teknesine dönüyor.\n\nDr. Erol pazar günü toprağa veriliyor. Pazartesi günü söyleyeceği şey söylenmiyor."
+  },
+  "C3_END_C_TITLE": {
+    "en": "The Pupil",
+    "tr": "Öğrenci"
+  },
+  "C3_END_C_TEXT": {
+    "en": "Dr. İdris Nur does not argue. He hands over his keys, his log books and, last, a brown envelope, which goes into the chief's safe as evidence.\n\nThe chief says he always thought there was something cold about that man. Ankara confirms within the month that the laboratory's digoxin could not have left tablet filler in a bottle, but by then the envelope has been mislaid.\n\nA retired policeman sends flowers to the funeral.",
+    "tr": "Dr. İdris Nur itiraz etmiyor. Anahtarlarını, kayıt defterlerini ve en son kahverengi bir zarfı teslim ediyor; zarf delil olarak müdürün kasasına giriyor.\n\nMüdür, o adamda öteden beri soğuk bir şey sezdiğini söylüyor. Ankara bir ay içinde, laboratuvardaki digoksinin şişede tablet dolgusu bırakamayacağını doğruluyor; ama zarf o vakte kadar kaybolmuş oluyor.\n\nEmekli bir polis cenazeye çiçek gönderiyor."
+  },
+  "C3_END_D_TITLE": {
+    "en": "Family Matters",
+    "tr": "Aile Meselesi"
+  },
+  "C3_END_D_TEXT": {
+    "en": "It is a simple story and the newspapers like it: money, an old man, someone close to him. It lasts until the first hearing, when the defence puts the telephone record on the table and asks how a man could ring his housekeeper two hours after he was supposedly poisoned by his family.\n\nThe case is withdrawn. By then nobody is looking at the harbour.",
+    "tr": "Basit bir hikâye; gazeteler de seviyor: para, yaşlı bir adam, yakınındaki biri. İlk duruşmaya kadar dayanıyor; savunma telefon kaydını masaya koyup, ailesi tarafından zehirlendiği söylenen bir adamın iki saat sonra evine bakan kadını nasıl aradığını soruyor.\n\nDava düşüyor. O vakte kadar limana bakan kimse kalmıyor."
+  },
+  "C3_END_E_TITLE": {
+    "en": "Heart Failure",
+    "tr": "Kalp Yetmezliği"
+  },
+  "C3_END_E_TEXT": {
+    "en": "Seventy-eight, a weak heart, a bottle of rakı. You countersign the family doctor's note.\n\nThe chief says Nazım Bey would have wanted a quiet funeral. On Monday at ten the prosecutor's diary has an empty hour in it.\n\nAt the fishermen's shelter someone is paid, as usual, on the first of the month.",
+    "tr": "Yetmiş sekiz yaş, zayıf bir kalp, bir şişe rakı. Aile hekiminin notunun altına siz de imza atıyorsunuz.\n\nMüdür, Nazım Bey'in sessiz bir cenaze isteyeceğini söylüyor. Pazartesi saat onda savcının ajandasında boş bir saat kalıyor.\n\nBalıkçı barınağında biri, her zamanki gibi, ayın birinde parasını alıyor."
+  }
+}

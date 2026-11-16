@@ -1,0 +1,163 @@
+{
+  "I_NOT_NATURAL": {
+    "cards": [
+      "E09",
+      "E02"
+    ],
+    "title": "C3_I_NOT_NATURAL_TITLE",
+    "text": "C3_I_NOT_NATURAL",
+    "wrong": [
+      "C3_I_NOT_NATURAL_W1",
+      "C3_I_NOT_NATURAL_W2"
+    ]
+  },
+  "I_SECOND_GLASS": {
+    "cards": [
+      "E03",
+      "E04"
+    ],
+    "title": "C3_I_SECOND_GLASS_TITLE",
+    "text": "C3_I_SECOND_GLASS",
+    "wrong": [
+      "C3_I_SECOND_GLASS_W1",
+      "C3_I_SECOND_GLASS_W2"
+    ]
+  },
+  "I_ALIVE": {
+    "cards": [
+      "E23",
+      "E07"
+    ],
+    "title": "C3_I_ALIVE_TITLE",
+    "text": "C3_I_ALIVE",
+    "wrong": [
+      "C3_I_ALIVE_W1",
+      "C3_I_ALIVE_W2"
+    ]
+  },
+  "I_CALLER": {
+    "cards": [
+      "E07",
+      "E21"
+    ],
+    "title": "C3_I_CALLER_TITLE",
+    "text": "C3_I_CALLER",
+    "wrong": [
+      "C3_I_CALLER_W1",
+      "C3_I_CALLER_W2"
+    ]
+  },
+  "I_FISH": {
+    "cards": [
+      "E05",
+      "E17"
+    ],
+    "title": "C3_I_FISH_TITLE",
+    "text": "C3_I_FISH",
+    "wrong": [
+      "C3_I_FISH_W1",
+      "C3_I_FISH_W2"
+    ]
+  },
+  "I_VISIT": {
+    "cards": [
+      "E14",
+      "E24"
+    ],
+    "title": "C3_I_VISIT_TITLE",
+    "text": "C3_I_VISIT",
+    "wrong": [
+      "C3_I_VISIT_W1",
+      "C3_I_VISIT_W2"
+    ]
+  },
+  "I_POISON": {
+    "cards": [
+      "E11",
+      "E22"
+    ],
+    "title": "C3_I_POISON_TITLE",
+    "text": "C3_I_POISON",
+    "wrong": [
+      "C3_I_POISON_W1",
+      "C3_I_POISON_W2"
+    ]
+  },
+  "I_BLISTER": {
+    "cards": [
+      "E16",
+      "E22"
+    ],
+    "title": "C3_I_BLISTER_TITLE",
+    "text": "C3_I_BLISTER",
+    "wrong": [
+      "C3_I_BLISTER_W1",
+      "C3_I_BLISTER_W2"
+    ]
+  },
+  "I_NUR_CLEAR": {
+    "cards": [
+      "E10",
+      "E11"
+    ],
+    "title": "C3_I_NUR_CLEAR_TITLE",
+    "text": "C3_I_NUR_CLEAR",
+    "wrong": [
+      "C3_I_NUR_CLEAR_W1",
+      "C3_I_NUR_CLEAR_W2"
+    ]
+  },
+  "I_DEAD_WIFE": {
+    "cards": [
+      "E19",
+      "E22"
+    ],
+    "title": "C3_I_DEAD_WIFE_TITLE",
+    "text": "C3_I_DEAD_WIFE",
+    "wrong": [
+      "C3_I_DEAD_WIFE_W1",
+      "C3_I_DEAD_WIFE_W2"
+    ]
+  },
+  "I_MOTIVE": {
+    "cards": [
+      "E13",
+      "E15"
+    ],
+    "title": "C3_I_MOTIVE_TITLE",
+    "text": "C3_I_MOTIVE",
+    "wrong": [
+      "C3_I_MOTIVE_W1",
+      "C3_I_MOTIVE_W2"
+    ]
+  },
+  "I_LEAK": {
+    "cards": [
+      "T_HATICE_4",
+      "E06"
+    ],
+    "title": "C3_I_LEAK_TITLE",
+    "text": "C3_I_LEAK",
+    "wrong": [
+      "C3_I_LEAK_W1",
+      "C3_I_LEAK_W2"
+    ]
+  },
+  "I_SIGNATURE": {
+    "cards": [
+      "E13",
+      "E18"
+    ],
+    "title": "C3_I_SIGNATURE_TITLE",
+    "text": "C3_I_SIGNATURE",
+    "wrong": [
+      "C3_I_SIGNATURE_W1",
+      "C3_I_SIGNATURE_W2"
+    ],
+    "effects": [
+      {
+        "set_flag": "signature_seen"
+      }
+    ]
+  }
+}

@@ -842,5 +842,65 @@
   "SETTINGS_OFF": {
     "en": "Off",
     "tr": "Kapalı"
+  },
+  "RECORD_TYPE_PHARMACY": {
+    "en": "Pharmacy",
+    "tr": "Eczane"
+  },
+  "ACH_C3_SOLVED_TITLE": {
+    "en": "Fresh Water",
+    "tr": "Tatlı Su"
+  },
+  "ACH_C3_SOLVED_DESC": {
+    "en": "Close File 12-C with the full proof.",
+    "tr": "Dosya 12-C'yi eksiksiz kanıtla kapatın."
+  },
+  "ACH_C3_ALL_ENDINGS_TITLE": {
+    "en": "Every Verdict: 12-C",
+    "tr": "Bütün Kararlar: 12-C"
+  },
+  "ACH_C3_ALL_ENDINGS_DESC": {
+    "en": "See all five endings of File 12-C.",
+    "tr": "Dosya 12-C'nin beş sonunu da görün."
+  },
+  "ACH_C3_NO_HINTS_TITLE": {
+    "en": "Second Opinion Not Needed",
+    "tr": "İkinci Görüşe Gerek Yok"
+  },
+  "ACH_C3_NO_HINTS_DESC": {
+    "en": "Solve File 12-C without using a hint.",
+    "tr": "Dosya 12-C'yi hiç ipucu kullanmadan çözün."
+  },
+  "ACH_C3_CORNERED_TITLE": {
+    "en": "Two Glasses",
+    "tr": "İki Kadeh"
+  },
+  "ACH_C3_CORNERED_DESC": {
+    "en": "Make Rıza Bulut ask for his lawyer.",
+    "tr": "Rıza Bulut'a avukatını istetin."
+  },
+  "ACH_C3_NUR_CLEAR_TITLE": {
+    "en": "Not His Bench",
+    "tr": "Onun Tezgâhı Değil"
+  },
+  "ACH_C3_NUR_CLEAR_DESC": {
+    "en": "Prove the poison did not come from the laboratory.",
+    "tr": "Zehrin laboratuvardan çıkmadığını kanıtlayın."
+  },
+  "ACH_C3_SIGNATURE_TITLE": {
+    "en": "The Same Name, Twice",
+    "tr": "Aynı İsim, İki Kez"
+  },
+  "ACH_C3_SIGNATURE_DESC": {
+    "en": "Notice who investigated in 1999 and who emptied the shelf in 2003.",
+    "tr": "1999'da soruşturmayı kimin yürüttüğünü ve 2003'te rafı kimin boşalttığını fark edin."
+  },
+  "ACH_C3_QUIET_TITLE": {
+    "en": "Not Before",
+    "tr": "Daha Önce Değil"
+  },
+  "ACH_C3_QUIET_DESC": {
+    "en": "Solve File 12-C without sending the chief your notes.",
+    "tr": "Dosya 12-C'yi müdüre notlarınızı göndermeden çözün."
   }
 }

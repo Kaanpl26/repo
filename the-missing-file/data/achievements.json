@@ -215,6 +215,80 @@
     ]
   },
   {
+    "id": "C3_SOLVED",
+    "title": "ACH_C3_SOLVED_TITLE",
+    "desc": "ACH_C3_SOLVED_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "ending": "A"
+  },
+  {
+    "id": "C3_ALL_ENDINGS",
+    "title": "ACH_C3_ALL_ENDINGS_TITLE",
+    "desc": "ACH_C3_ALL_ENDINGS_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "all_endings": true
+  },
+  {
+    "id": "C3_NO_HINTS",
+    "title": "ACH_C3_NO_HINTS_TITLE",
+    "desc": "ACH_C3_NO_HINTS_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "ending": "A",
+    "max_hints": 0
+  },
+  {
+    "id": "C3_CORNERED",
+    "title": "ACH_C3_CORNERED_TITLE",
+    "desc": "ACH_C3_CORNERED_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "conditions": [
+      {
+        "flag": "bulut_cornered"
+      }
+    ]
+  },
+  {
+    "id": "C3_NUR_CLEAR",
+    "title": "ACH_C3_NUR_CLEAR_TITLE",
+    "desc": "ACH_C3_NUR_CLEAR_DESC",
+    "hidden": false,
+    "case": "case_03",
+    "conditions": [
+      {
+        "has_insight": "I_NUR_CLEAR"
+      }
+    ]
+  },
+  {
+    "id": "C3_SIGNATURE",
+    "title": "ACH_C3_SIGNATURE_TITLE",
+    "desc": "ACH_C3_SIGNATURE_DESC",
+    "hidden": true,
+    "case": "case_03",
+    "conditions": [
+      {
+        "has_insight": "I_SIGNATURE"
+      }
+    ]
+  },
+  {
+    "id": "C3_QUIET",
+    "title": "ACH_C3_QUIET_TITLE",
+    "desc": "ACH_C3_QUIET_DESC",
+    "hidden": true,
+    "case": "case_03",
+    "ending": "A",
+    "conditions": [
+      {
+        "flag": "chief_kept_out"
+      }
+    ]
+  },
+  {
     "id": "LEDGER_WALL",
     "title": "ACH_LEDGER_WALL_TITLE",
     "desc": "ACH_LEDGER_WALL_DESC",

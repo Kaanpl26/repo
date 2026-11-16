@@ -251,6 +251,7 @@ func _visible_card(board: Node, n: int) -> Control:
 func _office() -> void:
 	Profile.record_verdict("case_01", "B", false, {"score": 40, "grade": "C"}, ["file_found"])
 	Profile.record_verdict("case_02", "A", true, {"score": 90, "grade": "S"}, ["file_found", "registry_seen", "guven_source", "soykan_remark"])
+	Profile.record_verdict("case_03", "A", true, {"score": 90, "grade": "S"}, ["file_found", "register_seen"])
 	SceneRouter.open_office()
 	await _wait(1.4)
 	_check(GameState.case_id == "office" and GameState.location == "office")

@@ -74,6 +74,20 @@
           "case_closed": "case_03"
         }
       ]
+    },
+    {
+      "id": "O_C4",
+      "text": "OF_OBJ_C4",
+      "show": [
+        {
+          "case_closed": "case_03"
+        }
+      ],
+      "done": [
+        {
+          "case_closed": "case_04"
+        }
+      ]
     }
   ],
   "hints": [

@@ -18,6 +18,24 @@
     ]
   },
   {
+    "time": "1999",
+    "text": "OF_TL_TEKIN",
+    "conditions": [
+      {
+        "has_evidence": "L09"
+      }
+    ]
+  },
+  {
+    "time": "2003",
+    "text": "OF_TL_REPORT",
+    "conditions": [
+      {
+        "has_evidence": "L10"
+      }
+    ]
+  },
+  {
     "time": "2004",
     "text": "OF_TL_ZONING",
     "conditions": [
@@ -41,6 +59,15 @@
     "conditions": [
       {
         "case_closed": "case_02"
+      }
+    ]
+  },
+  {
+    "time": "2026",
+    "text": "OF_TL_EROL",
+    "conditions": [
+      {
+        "case_closed": "case_03"
       }
     ]
   }

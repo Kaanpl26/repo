@@ -20,8 +20,8 @@
   {
     "id": "case_03",
     "number": 3,
-    "title": "CASE_COMING_SOON",
-    "available": false,
+    "title": "C3_TITLE",
+    "available": true,
     "unlock": [
       {
         "case_closed": "case_02"
